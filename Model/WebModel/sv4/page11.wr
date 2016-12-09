@@ -223,26 +223,7 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:SubPage pageId="sv4#page11#page20">
-          <layout:Grid containerType="grid">
-            <layout:Row>
-              <layout:Cell colspan="12"/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-            </layout:Row>
-          </layout:Grid>
-        </layout:SubPage>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -319,9 +300,6 @@
     </ContentUnits>
   </Page>
   <Page gr:x="440" gr:y="470" id="sv4#page11#page16" name="Gestione Utenti">
-    <ContentUnits/>
-  </Page>
-  <Page gr:x="220" gr:y="80" id="sv4#page11#page20" name="Nuova pag">
     <ContentUnits/>
   </Page>
 </Page>
