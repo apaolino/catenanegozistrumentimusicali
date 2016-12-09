@@ -1,0 +1,152 @@
+[24 nov 2016 12:20:33] DEBUG Executing SQL script
+[24 nov 2016 12:20:33] INFO ================================================================================
+[24 nov 2016 12:20:33] INFO onError= 'stop'
+[24 nov 2016 12:20:33] INFO autoCommit= 'false'
+[24 nov 2016 12:20:33] INFO username= 'root'
+[24 nov 2016 12:20:33] INFO outputPath= 'C:\Users\Samuel\Google Drive\Progetto SISR\webratio\CatenaNegoziStrumentiMusicali\.Temp~\RollbackSQL.xml'
+[24 nov 2016 12:20:33] INFO outputLogPath= 'C:\Users\Samuel\Google Drive\Progetto SISR\webratio\CatenaNegoziStrumentiMusicali\.Temp~\RollbackSQL.xml.log'
+[24 nov 2016 12:20:33] INFO encoding= ''
+[24 nov 2016 12:20:33] INFO driverClass= 'com.mysql.jdbc.Driver'
+[24 nov 2016 12:20:33] INFO sqlScript= 'C:\Users\Samuel\Google Drive\Progetto SISR\webratio\CatenaNegoziStrumentiMusicali\.Temp~\RollbackSQL.sql'
+[24 nov 2016 12:20:33] INFO eventSocketPort= '56847'
+[24 nov 2016 12:20:33] INFO statementSeparator= ';'
+[24 nov 2016 12:20:33] INFO derby.system.home= 'C:\Users\Samuel\Google Drive\Progetto SISR\webratio\.metadata\.plugins\com.webratio.commons.db\derby'
+[24 nov 2016 12:20:33] INFO password= ''
+[24 nov 2016 12:20:33] INFO url= 'jdbc:mysql://localhost/CatenaDB_MySql'
+[24 nov 2016 12:20:33] INFO ================================================================================
+[24 nov 2016 12:20:33] INFO Connecting to the Database...
+[24 nov 2016 12:20:33] INFO Database connection estabilished
+[24 nov 2016 12:20:33] INFO transaction isolation: 4
+[24 nov 2016 12:20:33] DEBUG ================================================================================
+[24 nov 2016 12:20:33] DEBUG Executing SQL script file: C:\Users\Samuel\Google Drive\Progetto SISR\webratio\CatenaNegoziStrumentiMusicali\.Temp~\RollbackSQL.sql
+[24 nov 2016 12:20:33] DEBUG Executing statement:  drop view `utente_registrato_indirizzo_pr`
+[24 nov 2016 12:20:33] DEBUG Executing statement:  alter table `cliente`   drop foreign key `fk_cliente_utente_registrato`
+[24 nov 2016 12:20:33] DEBUG Executing statement:  alter table `gestore_singolo_negozio`   drop foreign key `fk_gestore_singolo_negozio_ute`
+[24 nov 2016 12:20:33] DEBUG Executing statement:  alter table `gestore_catena`   drop foreign key `fk_gestore_catena_utente_reg_3`
+[24 nov 2016 12:20:33] DEBUG Executing statement:  alter table `prenotazione_noleggio_prodotto`   drop foreign key `fk_prenotazione_noleggio_prodo`
+[24 nov 2016 12:20:33] DEBUG Executing statement:  alter table `specifico`   drop foreign key `fk_specifico_catalogo`
+[24 nov 2016 12:20:33] DEBUG Executing statement:  alter table `base`   drop foreign key `fk_base_catalogo`
+[24 nov 2016 12:20:33] DEBUG Executing statement:  alter table `prenotazione`   drop foreign key `fk_prenotazione_sala_prove`
+[24 nov 2016 12:20:33] DEBUG Executing statement:  alter table `prenotazione`  drop column  `sala_prove_oid`
+[24 nov 2016 12:20:33] DEBUG Executing statement:  alter table `negozio`   drop foreign key `fk_negozio_base`
+[24 nov 2016 12:20:33] DEBUG Executing statement:  alter table `negozio`  drop column  `base_oid`
+[24 nov 2016 12:20:33] DEBUG Executing statement:  alter table `negozio`   drop foreign key `fk_negozio_sala_prove`
+[24 nov 2016 12:20:33] DEBUG Executing statement:  alter table `negozio`  drop column  `sala_prove_oid`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `prenotazione`   drop foreign key `fk_prenotazione_evento`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `prenotazione`  drop column  `evento_oid`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `evento`   drop foreign key `fk_evento_gestore_singolo_nego`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `evento`  drop column  `gestore_singolo_negozio_oid`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `evento_tipo_evento`   drop foreign key `fk_evento_tipo_evento_tipo_eve`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `evento_tipo_evento`   drop foreign key `fk_evento_tipo_evento_evento`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  drop table `evento_tipo_evento`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `evento`   drop foreign key `fk_evento_periodo`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `evento`  drop column  `periodo_oid`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `negozio`   drop foreign key `fk_negozio_gestore_singolo_neg`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `negozio`  drop column  `gestore_singolo_negozio_oid`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `prodotto`   drop foreign key `fk_prodotto_tipo_prodotto`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `prodotto`  drop column  `tipo_prodotto_oid`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `tipo_prodotto`   drop foreign key `fk_tipo_prodotto_categoria_pro`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `tipo_prodotto`  drop column  `categoria_prodotto_oid`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `indirizzo`   drop foreign key `fk_indirizzo_catena_negozi`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `indirizzo`  drop column  `catena_negozi_oid`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `gestore_catena_utente_registra`   drop foreign key `fk_gestore_catena_utente_reg_2`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `gestore_catena_utente_registra`   drop foreign key `fk_gestore_catena_utente_regis`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  drop table `gestore_catena_utente_registra`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `prenotazione`   drop foreign key `fk_prenotazione_acquisto`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `prenotazione`  drop column  `acquisto_oid`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `negozio`   drop foreign key `fk_negozio_zona`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `negozio`  drop column  `zona_oid`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `indirizzo`   drop foreign key `fk_indirizzo_negozio`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `indirizzo`  drop column  `negozio_oid`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `negozio`   drop foreign key `fk_negozio_categoria_prodotto`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `negozio`  drop column  `categoria_prodotto_oid`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `specifico`   drop foreign key `fk_specifico_negozio`
+[24 nov 2016 12:20:34] DEBUG Executing statement:  alter table `specifico`  drop column  `negozio_oid`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  alter table `specifico`   drop foreign key `fk_specifico_gestore_singolo_n`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  alter table `specifico`  drop column  `gestore_singolo_negozio_oid`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  alter table `prodotto`   drop foreign key `fk_prodotto_produttore`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  alter table `prodotto`  drop column  `produttore_oid`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  alter table `carta_di_credito`   drop foreign key `fk_carta_di_credito_cliente`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  alter table `carta_di_credito`  drop column  `cliente_oid`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  alter table `base`   drop foreign key `fk_base_catena_negozi`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  alter table `base`  drop column  `catena_negozi_oid`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  alter table `prodotto`   drop foreign key `fk_prodotto_categoria_prodotto`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  alter table `prodotto`  drop column  `categoria_prodotto_oid`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  alter table `catalogo_prodotto`   drop foreign key `fk_catalogo_prodotto_prodotto`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  alter table `catalogo_prodotto`   drop foreign key `fk_catalogo_prodotto_catalogo`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  drop table `catalogo_prodotto`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  alter table `negozio_catalogo`   drop foreign key `fk_negozio_catalogo_catalogo`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  alter table `negozio_catalogo`   drop foreign key `fk_negozio_catalogo_negozio`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  drop table `negozio_catalogo`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  alter table `negozio`   drop foreign key `fk_negozio_catena_negozi`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  alter table `negozio`  drop column  `catena_negozi_oid`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  alter table `recensione`   drop foreign key `fk_recensione_prodotto`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  alter table `recensione`  drop column  `prodotto_oid`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  alter table `utente_registrato`   drop foreign key `fk_utente_registrato_indirizzo`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  alter table `utente_registrato`  drop column  `indirizzo_oid`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  alter table `base`   drop foreign key `fk_base_gestore_catena`
+[24 nov 2016 12:20:35] DEBUG Executing statement:  alter table `base`  drop column  `gestore_catena_oid`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `recensione`   drop foreign key `fk_recensione_cliente`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `recensione`  drop column  `cliente_oid`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `recensione`   drop foreign key `fk_recensione_negozio`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `recensione`  drop column  `negozio_oid`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `acquisto`   drop foreign key `fk_acquisto_cliente`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `acquisto`  drop column  `cliente_oid`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `acquisto`   drop foreign key `fk_acquisto_negozio`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `acquisto`  drop column  `negozio_oid`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `acquisto_prodotto`   drop foreign key `fk_acquisto_prodotto_prodotto`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `acquisto_prodotto`   drop foreign key `fk_acquisto_prodotto_acquisto`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  drop table `acquisto_prodotto`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `cliente`   drop foreign key `fk_cliente_prenotazione`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `cliente`  drop column  `prenotazione_oid`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `gestore_singolo_negozio`   drop foreign key `fk_gestore_singolo_negozio_pre`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `gestore_singolo_negozio`  drop column  `prenotazione_oid`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `prenotazione_prodotto`   drop foreign key `fk_prenotazione_prodotto_prodo`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `prenotazione_prodotto`   drop foreign key `fk_prenotazione_prodotto_preno`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  drop table `prenotazione_prodotto`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `prenotazione`   drop foreign key `fk_prenotazione_negozio`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `prenotazione`  drop column  `negozio_oid`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `evento`   drop foreign key `fk_evento_negozio`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `evento`  drop column  `negozio_oid`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `gestore_catena`   drop foreign key `fk_gestore_catena_catena_negoz`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `gestore_catena`  drop column  `catena_negozi_oid`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `user_group`   drop foreign key `fk_user_group_group`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `user_group`   drop foreign key `fk_user_group_utente_registrat`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  drop table `user_group`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `utente_registrato`   drop foreign key `fk_utente_registrato_group`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `utente_registrato`  drop column  `group_oid`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `group_module`   drop foreign key `fk_group_module_module`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `group_module`   drop foreign key `fk_group_module_group`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  drop table `group_module`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `group`   drop foreign key `fk_group_module`
+[24 nov 2016 12:20:36] DEBUG Executing statement:  alter table `group`  drop column  `module_oid`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `catena_negozi`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `cliente`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `categoria_prodotto`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `gestore_singolo_negozio`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `gestore_catena`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `tipo_prodotto`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `zona`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `tipo_evento`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `periodo`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `prenotazione_noleggio_prodotto`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `produttore`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `carta_di_credito`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `sala_prove`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `recensione`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `evento`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `prenotazione`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `acquisto`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `specifico`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `base`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `prodotto`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `catalogo`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `negozio`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `indirizzo`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `utente_registrato`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `module`
+[24 nov 2016 12:20:37] DEBUG Executing statement:  drop table `group`
+[24 nov 2016 12:20:37] DEBUG ================================================================================
+[24 nov 2016 12:20:37] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[24 nov 2016 12:20:37] INFO Database connection closed
+[24 nov 2016 12:20:37] DEBUG Total time: 4555 milliseconds

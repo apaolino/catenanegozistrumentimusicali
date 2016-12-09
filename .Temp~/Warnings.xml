@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Warnings> 
+  <Warning xpath="id('sv4#page11#page14#dau5#ln29#par19')" rootXPath="id('sv4')" key="UNUSED_PASSING_PARAMETER" label="Cognome_PASSING"> 
+    <Message>The passing parameter 'Cognome_PASSING' is declared but never used</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv4#page11#page14#dau5#ln29#par19'</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv4#page11#page14#dau5#ln29#par20')" rootXPath="id('sv4')" key="UNUSED_PASSING_PARAMETER" label="Data nascita_PASSING"> 
+    <Message>The passing parameter 'Data nascita_PASSING' is declared but never used</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv4#page11#page14#dau5#ln29#par20'</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv4#page11#page14#dau5#ln29#par21')" rootXPath="id('sv4')" key="UNUSED_PASSING_PARAMETER" label="Data registrazione_PASSING"> 
+    <Message>The passing parameter 'Data registrazione_PASSING' is declared but never used</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv4#page11#page14#dau5#ln29#par21'</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv4#page11#page14#dau5#ln29#par27')" rootXPath="id('sv4')" key="UNUSED_PASSING_PARAMETER" label="E-mail_PASSING"> 
+    <Message>The passing parameter 'E-mail_PASSING' is declared but never used</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv4#page11#page14#dau5#ln29#par27'</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv4#page11#page14#dau5#ln29#par29')" rootXPath="id('sv4')" key="UNUSED_PASSING_PARAMETER" label="Nome_PASSING"> 
+    <Message>The passing parameter 'Nome_PASSING' is declared but never used</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv4#page11#page14#dau5#ln29#par29'</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv4#page11#page14#dau5#ln29#par31')" rootXPath="id('sv4')" key="UNUSED_PASSING_PARAMETER" label="Numero telefono_PASSING"> 
+    <Message>The passing parameter 'Numero telefono_PASSING' is declared but never used</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv4#page11#page14#dau5#ln29#par31'</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv4#page11#page14#dau5#ln29#par32')" rootXPath="id('sv4')" key="UNUSED_PASSING_PARAMETER" label="Password_PASSING"> 
+    <Message>The passing parameter 'Password_PASSING' is declared but never used</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv4#page11#page14#dau5#ln29#par32'</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv4#page11#page14#dau5#ln29#par33')" rootXPath="id('sv4')" key="UNUSED_PASSING_PARAMETER" label="UserName_PASSING"> 
+    <Message>The passing parameter 'UserName_PASSING' is declared but never used</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv4#page11#page14#dau5#ln29#par33'</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv4#area2#page5#seu1#ln2')" rootXPath="id('sv4')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Flow2"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Flow2'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv4#area3#page17#enu5#ln15#par51')" rootXPath="id('sv4')" key="UNUSED_PASSING_PARAMETER" label="Categoria_PASSING"> 
+    <Message>The passing parameter 'Categoria_PASSING' is declared but never used</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv4#area3#page17#enu5#ln15#par51'</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv4#cru1')" rootXPath="id('sv4')" error="false" label="Crea nuovo articolo" key="NO_OUTGOING_OK_LINKS"> 
+    <Message>No outgoing OK flow(s) for the operation 'Crea nuovo articolo'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#cru1')" rootXPath="id('sv4')" error="false" label="Crea nuovo articolo" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Crea nuovo articolo'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#cru2')" rootXPath="id('sv4')" error="false" label="Inserisci nel catalogo base" key="NO_OUTGOING_OK_LINKS"> 
+    <Message>No outgoing OK flow(s) for the operation 'Inserisci nel catalogo base'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#cru2')" rootXPath="id('sv4')" error="false" label="Inserisci nel catalogo base" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Inserisci nel catalogo base'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#mfu1')" rootXPath="id('sv4')" error="false" label="Aggiorna dati GC" key="NO_OUTGOING_OK_LINKS"> 
+    <Message>No outgoing OK flow(s) for the operation 'Aggiorna dati GC'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#mfu1')" rootXPath="id('sv4')" error="false" label="Aggiorna dati GC" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Aggiorna dati GC'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv4#area2#page5#mciu1')" rootXPath="id('sv4')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lista prodotti"> 
+    <Message>Sorting attribute are unspecified for the component 'Lista prodotti'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#area5#page18#enu6')" rootXPath="id('sv4')" key="MISSING_MANDATORY_OUTPUT_PARAMETER" label="Form6"> 
+    <Message>The mandatory output parameter 'elenco negozi' is not transported along an outgoing flow from the component 'Form6'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#area9#page19#enu3')" rootXPath="id('sv4')" key="MISSING_MANDATORY_OUTPUT_PARAMETER" label="Dati nuovo negozio"> 
+    <Message>The mandatory output parameter 'Data apertura' is not transported along an outgoing flow from the component 'Dati nuovo negozio'</Message> 
+  </Warning>
+  <Warning xpath="id('sv4#area9#page19#enu3')" rootXPath="id('sv4')" key="MISSING_MANDATORY_OUTPUT_PARAMETER" label="Dati nuovo negozio"> 
+    <Message>The mandatory output parameter 'Dimensione' is not transported along an outgoing flow from the component 'Dati nuovo negozio'</Message> 
+  </Warning>
+  <Warning xpath="id('sv4#area9#page19#enu3')" rootXPath="id('sv4')" key="MISSING_MANDATORY_OUTPUT_PARAMETER" label="Dati nuovo negozio"> 
+    <Message>The mandatory output parameter 'E-mail' is not transported along an outgoing flow from the component 'Dati nuovo negozio'</Message> 
+  </Warning>
+  <Warning xpath="id('sv4#area9#page19#enu3')" rootXPath="id('sv4')" key="MISSING_MANDATORY_OUTPUT_PARAMETER" label="Dati nuovo negozio"> 
+    <Message>The mandatory output parameter 'Fax' is not transported along an outgoing flow from the component 'Dati nuovo negozio'</Message> 
+  </Warning>
+  <Warning xpath="id('sv4#area9#page19#enu3')" rootXPath="id('sv4')" key="MISSING_MANDATORY_OUTPUT_PARAMETER" label="Dati nuovo negozio"> 
+    <Message>The mandatory output parameter 'Nome' is not transported along an outgoing flow from the component 'Dati nuovo negozio'</Message> 
+  </Warning>
+  <Warning xpath="id('sv4#area9#page19#enu3')" rootXPath="id('sv4')" key="MISSING_MANDATORY_OUTPUT_PARAMETER" label="Dati nuovo negozio"> 
+    <Message>The mandatory output parameter 'Numero telefono' is not transported along an outgoing flow from the component 'Dati nuovo negozio'</Message> 
+  </Warning> 
+</Warnings>

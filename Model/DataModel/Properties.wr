@@ -1,0 +1,546 @@
+<DataModel xmlns:db="http://www.webratio.com/2006/WebML/Database" xmlns:gr="http://www.webratio.com/2006/WebML/Graph">
+  <Entity id="User" name="Utente Registrato" duration="persistent" gr:x="345" gr:y="160" gr:hideAttributes="false" attributeOrder="userOID userName password User#att20 User#att21 User#att22 User#att54 email User#att29 User#att71" db:database="db1" db:table="utente_registrato">
+    <Attribute name="oid" id="userOID" type="integer" key="true" db:column="oid"/>
+    <Attribute name="UserName" id="userName" type="string" db:column="username"/>
+    <Attribute name="Password" id="password" type="password" db:column="password"/>
+    <Attribute name="E-mail" id="email" type="string" db:column="e_mail"/>
+    <Attribute id="User#att20" name="Nome" type="string" db:column="nome"/>
+    <Attribute id="User#att21" name="Cognome" type="string" db:column="cognome"/>
+    <Attribute id="User#att22" name="Data nascita" type="date" db:column="data_nascita"/>
+    <Attribute id="User#att29" name="Data registrazione" type="date" db:column="data_registrazione"/>
+    <Attribute id="User#att54" name="Numero telefono" type="string" db:column="numero_telefono"/>
+    <Attribute id="User#att71" name="Indirizzo Primario" type="string" derivationQuery="complexImported::Self.rel20#role40(as Var1).ent1#att73 where Var1.ent1#att23 = true" db:table="utente_registrato_indirizzo_pr" storageType="file" db:column="der_attr">
+      <db:JoinColumn attribute="userOID" name="oid"/>
+    </Attribute>
+  </Entity>
+  <Entity id="Group" name="Group" duration="persistent" gr:x="575" gr:y="180" gr:hideAttributes="false" attributeOrder="groupOID groupName" db:database="db1" db:table="group">
+    <Attribute name="oid" id="groupOID" type="integer" key="true" db:column="oid"/>
+    <Attribute name="groupName" id="groupName" type="string" db:column="groupname"/>
+  </Entity>
+  <Entity id="Module" name="Module" duration="persistent" gr:x="800" gr:y="170" gr:hideAttributes="false" attributeOrder="moduleOID moduleID moduleName" db:database="db1" db:table="module">
+    <Attribute name="oid" id="moduleOID" type="integer" key="true" db:column="oid"/>
+    <Attribute name="moduleID" id="moduleID" type="string" db:column="moduleid"/>
+    <Attribute name="moduleName" id="moduleName" type="string" db:column="modulename"/>
+  </Entity>
+  <Relationship id="User2Group_Group2User" name="User_Group" sourceEntity="User" targetEntity="Group" db:database="db1" db:table="user_group">
+    <RelationshipRole1 id="User2Group" name="groups" maxCard="N">
+      <db:JoinColumn attribute="userOID" name="utente_registrato_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="Group2User" name="users" maxCard="N">
+      <db:JoinColumn attribute="groupOID" name="group_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="User2DefaultGroup_DefaultGroup2User" name="User_DefaultGroup" sourceEntity="User" targetEntity="Group" gr:bendpoints="113,42,-112,44" db:database="db1" db:table="utente_registrato">
+    <RelationshipRole1 id="User2DefaultGroup" name="defaultGroup" maxCard="1">
+      <db:JoinColumn attribute="userOID" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="DefaultGroup2User" name="defaultUsers" maxCard="N">
+      <db:JoinColumn attribute="groupOID" name="group_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="Group2DefaultModule_DefaultModule2Group" name="Group_DefaultModule" sourceEntity="Group" targetEntity="Module" db:database="db1" db:table="group">
+    <RelationshipRole1 id="Group2DefaultModule" name="defaultModule" maxCard="1">
+      <db:JoinColumn attribute="groupOID" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="DefaultModule2Group" name="defaultGroups" maxCard="N">
+      <db:JoinColumn attribute="moduleOID" name="module_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="Group2Module_Module2Group" name="Group_Module" sourceEntity="Group" targetEntity="Module" gr:bendpoints="110,41,-115,41" db:database="db1" db:table="group_module">
+    <RelationshipRole1 id="Group2Module" name="modules" maxCard="N">
+      <db:JoinColumn attribute="groupOID" name="group_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="Module2Group" name="groups" maxCard="N">
+      <db:JoinColumn attribute="moduleOID" name="module_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Entity gr:x="165" gr:y="530" id="ent5" name="Gestore Catena" duration="persistent" db:database="db1" db:table="gestore_catena">
+    <Generalization superEntity="User">
+      <db:JoinColumn attribute="userOID" name="utente_registrato_oid"/>
+    </Generalization>
+  </Entity>
+  <Entity gr:x="320" gr:y="530" id="ent6" name="Gestore Singolo Negozio" duration="persistent" db:database="db1" db:table="gestore_singolo_negozio">
+    <Generalization superEntity="User">
+      <db:JoinColumn attribute="userOID" name="utente_registrato_oid"/>
+    </Generalization>
+  </Entity>
+  <Entity gr:x="1210" gr:y="1365" id="ent7" name="Categoria Prodotto" duration="persistent" attributeOrder="ent7#att7 ent7#att36" db:database="db1" db:table="categoria_prodotto">
+    <Attribute id="ent7#att7" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent7#att36" name="Nome" type="string" db:column="nome"/>
+  </Entity>
+  <Entity gr:x="1185" gr:y="280" id="ent8" name="Cliente" duration="persistent" db:database="db1" db:table="cliente">
+    <Generalization superEntity="User" gr:bendpoints="-269,3,551,23;-686,50,134,70">
+      <db:JoinColumn attribute="userOID" name="utente_registrato_oid"/>
+    </Generalization>
+  </Entity>
+  <Entity gr:x="170" gr:y="1045" id="ent9" name="Catena Negozi" duration="persistent" attributeOrder="ent9#att9 ent9#att55 ent9#att56 ent9#att57 ent9#att58" db:database="db1" db:table="catena_negozi">
+    <Attribute id="ent9#att9" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent9#att55" name="Nome" type="string" db:column="nome"/>
+    <Attribute id="ent9#att56" name="Numero telefono" type="string" db:column="numero_telefono"/>
+    <Attribute id="ent9#att57" name="Fax" type="string" db:column="fax"/>
+    <Attribute id="ent9#att58" name="Email" type="string" db:column="email"/>
+  </Entity>
+  <Entity gr:x="425" gr:y="1045" id="ent10" name="Negozio" duration="persistent" attributeOrder="ent10#att10 ent10#att48 ent10#att49 ent10#att50 ent10#att51 ent10#att52 ent10#att53" db:database="db1" db:table="negozio">
+    <Attribute id="ent10#att10" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent10#att48" name="Nome" type="string" db:column="nome"/>
+    <Attribute id="ent10#att49" name="Data apertura" type="date" db:column="data_apertura"/>
+    <Attribute id="ent10#att50" name="Dimensione" type="integer" db:column="dimensione"/>
+    <Attribute id="ent10#att51" name="Numero telefono" type="string" db:column="numero_telefono"/>
+    <Attribute id="ent10#att52" name="Fax" type="string" db:column="fax"/>
+    <Attribute id="ent10#att53" name="Email" type="string" db:column="email"/>
+  </Entity>
+  <Entity gr:x="715" gr:y="1085" id="ent11" name="Catalogo" duration="persistent" attributeOrder="ent11#att11 ent11#att46 ent11#att47" db:database="db1" db:table="catalogo">
+    <Attribute id="ent11#att11" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent11#att46" name="Nome" type="string" db:column="nome"/>
+    <Attribute id="ent11#att47" name="Anno di validit&#224;" type="integer" db:column="anno_di_validita"/>
+  </Entity>
+  <Entity gr:x="1045" gr:y="1060" id="ent12" name="Prodotto" duration="persistent" attributeOrder="ent12#att12 ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45 ent12#att66 ent12#att67 ent12#att68" db:database="db1" db:table="prodotto">
+    <Attribute id="ent12#att12" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent12#att1" name="Nome modello" type="string" db:column="nome_modello"/>
+    <Attribute id="ent12#att41" name="Data produzione" type="date" db:column="data_produzione"/>
+    <Attribute id="ent12#att42" name="Luogo produzione" type="string" db:column="luogo_produzione"/>
+    <Attribute id="ent12#att43" name="Prezzo" type="float" db:column="prezzo"/>
+    <Attribute id="ent12#att44" name="Usato" type="boolean" db:column="usato"/>
+    <Attribute id="ent12#att45" name="Percentuale sconto" type="integer" db:column="percentuale_sconto"/>
+    <Attribute id="ent12#att66" name="Categoria" type="string" derivationQuery="simpleImported::Self.rel25#role49.ent7#att36"/>
+    <Attribute id="ent12#att67" name="Produttore" type="string" derivationQuery="simpleImported::Self.rel29#role58.ent20#att40"/>
+    <Attribute id="ent12#att68" name="Tipo prodotto" type="string" derivationQuery="simpleImported::Self.rel39#role78.ent4#att38"/>
+  </Entity>
+  <Entity gr:x="690" gr:y="1250" id="ent13" name="Catalogo Base" duration="persistent" db:database="db1" db:table="catalogo_base">
+    <Generalization superEntity="ent11">
+      <db:JoinColumn attribute="ent11#att11" name="catalogo_oid"/>
+    </Generalization>
+  </Entity>
+  <Entity gr:x="865" gr:y="1240" id="ent14" name="Catalogo Specifico" duration="persistent" db:database="db1" db:table="catalogo_specifico">
+    <Generalization superEntity="ent11">
+      <db:JoinColumn attribute="ent11#att11" name="catalogo_oid"/>
+    </Generalization>
+  </Entity>
+  <Relationship id="rel1" name="Catena Negozi_Gestore Catena" sourceEntity="ent9" targetEntity="ent5" db:database="db1" db:table="gestore_catena">
+    <RelationshipRole1 id="rel1#role1" name="Catena NegoziToGestore Catena" maxCard="1">
+      <db:JoinColumn attribute="ent9#att9" name="catena_negozi_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel1#role2" name="Gestore CatenaToCatena Negozi" maxCard="1">
+      <db:JoinColumn attribute="userOID" name="utente_registrato_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel2" name="Gestore Catena_Base" sourceEntity="ent5" targetEntity="ent13" gr:bendpoints="-102,126,-546,-550;-99,347,-549,-303;-105,905,-550,230;437,907,-8,232" db:database="db1" db:table="catalogo_base">
+    <RelationshipRole1 id="rel2#role3" name="Gestore CatenaToBase" maxCard="1">
+      <db:JoinColumn attribute="userOID" name="gestore_catena_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel2#role4" name="BaseToGestore Catena" maxCard="1">
+      <db:JoinColumn attribute="ent11#att11" name="catalogo_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel3" name="Gestore Singolo Negozio_Specifico" sourceEntity="ent6" targetEntity="ent14" gr:bendpoints="187,257,-193,-148;447,430,47,-225;443,611,43,-44" db:database="db1" db:table="catalogo_specifico">
+    <RelationshipRole1 id="rel3#role5" name="Gestore Singolo NegozioToSpecifico" maxCard="1">
+      <db:JoinColumn attribute="userOID" name="gestore_singolo_negozio_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel3#role6" name="SpecificoToGestore Singolo Negozio" maxCard="1">
+      <db:JoinColumn attribute="ent11#att11" name="catalogo_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel4" name="Gestore Singolo Negozio_Negozio" sourceEntity="ent6" targetEntity="ent10" db:database="db1" db:table="negozio">
+    <RelationshipRole1 id="rel4#role7" name="Gestore Singolo NegozioToNegozio" maxCard="1">
+      <db:JoinColumn attribute="userOID" name="gestore_singolo_negozio_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel4#role8" name="NegozioToGestore Singolo Negozio" maxCard="1">
+      <db:JoinColumn attribute="ent10#att10" name="oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Entity gr:x="1175" gr:y="570" id="ent15" name="Acquisto" duration="persistent" attributeOrder="ent15#att15 ent15#att30 ent15#att2" db:database="db1" db:table="acquisto">
+    <Attribute id="ent15#att15" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent15#att30" name="Data acquisto" type="time" db:column="data_acquisto"/>
+    <Attribute id="ent15#att2" name="Data evasione" type="time" db:column="data_evasione"/>
+  </Entity>
+  <Entity gr:x="1195" gr:y="730" id="ent16" name="Prenotazione" duration="persistent" attributeOrder="ent16#att16 ent16#att31 ent16#att32" db:database="db1" db:table="prenotazione">
+    <Attribute id="ent16#att16" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent16#att31" name="Data inizio" type="time" db:column="data_inizio"/>
+    <Attribute id="ent16#att32" name="Data fine" type="time" db:column="data_fine"/>
+  </Entity>
+  <Entity gr:x="625" gr:y="505" id="ent17" name="Evento" duration="persistent" attributeOrder="ent17#att17 ent17#att62 ent17#att61 ent17#att63 ent17#att64 ent17#att65" db:database="db1" db:table="evento">
+    <Attribute id="ent17#att17" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent17#att61" name="Data inizio evento" type="date" db:column="data_inizio_evento"/>
+    <Attribute id="ent17#att62" name="Nome evento" type="string" db:column="nome_evento"/>
+    <Attribute id="ent17#att63" name="Data fine evento" type="date" db:column="data_fine_evento"/>
+    <Attribute id="ent17#att64" name="Prezzo" type="float" db:column="prezzo"/>
+    <Attribute id="ent17#att65" name="Posti disponibili" type="integer" db:column="posti_disponibili"/>
+  </Entity>
+  <Entity gr:x="1185" gr:y="875" id="ent18" name="Recensione" duration="persistent" attributeOrder="ent18#att18 ent18#att33 ent18#att34 ent18#att35 ent18#att77" db:database="db1" db:table="recensione">
+    <Attribute id="ent18#att18" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent18#att33" name="Numero stelle" type="integer" db:column="numero_stelle"/>
+    <Attribute id="ent18#att34" name="Recensione" type="text" db:column="recensione"/>
+    <Attribute id="ent18#att35" name="Data" type="time" db:column="data"/>
+    <Attribute id="ent18#att77" name="Tipo" type="string" db:column="tipo"/>
+  </Entity>
+  <Entity gr:x="620" gr:y="705" id="ent19" name="Sala prove" duration="persistent" attributeOrder="ent19#att19 ent19#att59 ent19#att60" db:database="db1" db:table="sala_prove">
+    <Attribute id="ent19#att19" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent19#att59" name="Prezzo orario" type="float" db:column="prezzo_orario"/>
+    <Attribute id="ent19#att60" name="Dimensione stanza" type="integer" db:column="dimensione_stanza"/>
+  </Entity>
+  <Relationship id="rel5" name="Gestore Singolo Negozio_Evento" sourceEntity="ent6" targetEntity="ent17" db:database="db1" db:table="evento">
+    <RelationshipRole1 id="rel5#role9" name="Gestore Singolo NegozioToEvento" maxCard="N">
+      <db:JoinColumn attribute="userOID" name="gestore_singolo_negozio_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel5#role10" name="EventoToGestore Singolo Negozio" maxCard="1">
+      <db:JoinColumn attribute="ent17#att17" name="oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel6" name="Evento_Prenotazione" sourceEntity="ent17" targetEntity="ent16" db:database="db1" db:table="prenotazione">
+    <RelationshipRole1 id="rel6#role11" name="EventoToPrenotazione" maxCard="N">
+      <db:JoinColumn attribute="ent17#att17" name="evento_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel6#role12" name="PrenotazioneToEvento" maxCard="1">
+      <db:JoinColumn attribute="ent16#att16" name="oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel7" name="Sala prove_Negozio" sourceEntity="ent19" targetEntity="ent10" db:database="db1" db:table="negozio">
+    <RelationshipRole1 id="rel7#role13" name="Sala proveToNegozio" maxCard="1">
+      <db:JoinColumn attribute="ent19#att19" name="sala_prove_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel7#role14" name="NegozioToSala prove" maxCard="1">
+      <db:JoinColumn attribute="ent10#att10" name="oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel9" name="Sala prove_Prenotazione" sourceEntity="ent19" targetEntity="ent16" db:database="db1" db:table="prenotazione">
+    <RelationshipRole1 id="rel9#role17" name="Sala proveToPrenotazione" maxCard="N">
+      <db:JoinColumn attribute="ent19#att19" name="sala_prove_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel9#role18" name="PrenotazioneToSala prove" maxCard="1">
+      <db:JoinColumn attribute="ent16#att16" name="oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel10" name="Evento_Negozio" sourceEntity="ent17" targetEntity="ent10" gr:bendpoints="-147,121,53,-429;-151,171,33,-239" db:database="db1" db:table="evento">
+    <RelationshipRole1 id="rel10#role19" name="EventoToNegozio" maxCard="1">
+      <db:JoinColumn attribute="ent17#att17" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel10#role20" name="NegozioToEvento" maxCard="N">
+      <db:JoinColumn attribute="ent10#att10" name="negozio_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel11" name="Prenotazione_Negozio" sourceEntity="ent16" targetEntity="ent10" db:database="db1" db:table="prenotazione">
+    <RelationshipRole1 id="rel11#role21" name="PrenotazioneToNegozio" maxCard="1">
+      <db:JoinColumn attribute="ent16#att16" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel11#role22" name="NegozioToPrenotazione" maxCard="N">
+      <db:JoinColumn attribute="ent10#att10" name="negozio_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel12" name="Prenotazione_Prodotto" sourceEntity="ent21" targetEntity="ent12" gr:bendpoints="-124,239,402,-91" db:database="db1" db:table="prenotazione_prodotto">
+    <RelationshipRole1 id="rel12#role23" name="PrenotazioneToProdotto" maxCard="N">
+      <db:JoinColumn attribute="ent16#att16" name="prenotazione_noleggio_prodotto"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel12#role24" name="ProdottoToPrenotazione" maxCard="N">
+      <db:JoinColumn attribute="ent12#att12" name="prodotto_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel13" name="Prenotazione_Gestore Singolo Negozio" sourceEntity="ent16" targetEntity="ent6" gr:bendpoints="-464,-314,391,-84;-686,-318,169,-88" db:database="db1" db:table="prenotazione">
+    <RelationshipRole1 id="rel13#role25" name="PrenotazioneToGestore Singolo Negozio" maxCard="1">
+      <db:JoinColumn attribute="ent16#att16" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel13#role26" name="Gestore Singolo NegozioToPrenotazione" maxCard="N">
+      <db:JoinColumn attribute="userOID" name="gestore_singolo_negozio_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel14" name="Cliente Registrato_Prenotazione" sourceEntity="ent8" targetEntity="ent16" gr:bendpoints="208,93,153,-392;219,336,164,-149" db:database="db1" db:table="prenotazione">
+    <RelationshipRole1 id="rel14#role27" name="Cliente RegistratoToPrenotazione" maxCard="N">
+      <db:JoinColumn attribute="userOID" name="cliente_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel14#role28" name="PrenotazioneToCliente Registrato" maxCard="1">
+      <db:JoinColumn attribute="ent16#att16" name="oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel15" name="Acquisto_Prodotto" sourceEntity="ent15" targetEntity="ent12" gr:bendpoints="384,0,664,-550;386,552,666,2" db:database="db1" db:table="acquisto_prodotto">
+    <RelationshipRole1 id="rel15#role29" name="AcquistoToProdotto" maxCard="N">
+      <db:JoinColumn attribute="ent15#att15" name="acquisto_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel15#role30" name="ProdottoToAcquisto" maxCard="N">
+      <db:JoinColumn attribute="ent12#att12" name="prodotto_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel16" name="Acquisto_Negozio" sourceEntity="ent15" targetEntity="ent10" db:database="db1" db:table="acquisto">
+    <RelationshipRole1 id="rel16#role31" name="AcquistoToNegozio" maxCard="1">
+      <db:JoinColumn attribute="ent15#att15" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel16#role32" name="NegozioToAcquisto" maxCard="N">
+      <db:JoinColumn attribute="ent10#att10" name="negozio_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel17" name="Cliente Registrato_Acquisto" sourceEntity="ent8" targetEntity="ent15" gr:bendpoints="-82,39,-82,-281;-102,288,-102,-32" db:database="db1" db:table="acquisto">
+    <RelationshipRole1 id="rel17#role33" name="Cliente RegistratoToAcquisto" maxCard="N">
+      <db:JoinColumn attribute="userOID" name="cliente_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel17#role34" name="AcquistoToCliente Registrato" maxCard="1">
+      <db:JoinColumn attribute="ent15#att15" name="oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel18" name="Valutazione_Negozio" sourceEntity="ent18" targetEntity="ent10" gr:bendpoints="-345,43,390,-112;-493,117,262,-73" db:database="db1" db:table="recensione">
+    <RelationshipRole1 id="rel18#role35" name="ValutazioneToNegozio" maxCard="1">
+      <db:JoinColumn attribute="ent18#att18" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel18#role36" name="NegozioToValutazione" maxCard="N">
+      <db:JoinColumn attribute="ent10#att10" name="negozio_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel19" name="Valutazione_Cliente Registrato" sourceEntity="ent18" targetEntity="ent8" gr:bendpoints="420,-2,416,678;408,-680,404,0" db:database="db1" db:table="recensione">
+    <RelationshipRole1 id="rel19#role37" name="ValutazioneToCliente Registrato" maxCard="1">
+      <db:JoinColumn attribute="ent18#att18" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel19#role38" name="Cliente RegistratoToValutazione" maxCard="N">
+      <db:JoinColumn attribute="userOID" name="cliente_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel21" name="Valutazione_Prodotto" sourceEntity="ent18" targetEntity="ent12" db:database="db1" db:table="recensione">
+    <RelationshipRole1 id="rel21#role41" name="ValutazioneToProdotto" maxCard="1">
+      <db:JoinColumn attribute="ent18#att18" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel21#role42" name="ProdottoToValutazione" maxCard="N">
+      <db:JoinColumn attribute="ent12#att12" name="prodotto_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel22" name="Catena Negozi_Negozio" sourceEntity="ent9" targetEntity="ent10" db:database="db1" db:table="negozio">
+    <RelationshipRole1 id="rel22#role43" name="Catena NegoziToNegozio" maxCard="N">
+      <db:JoinColumn attribute="ent9#att9" name="catena_negozi_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel22#role44" name="NegozioToCatena Negozi" maxCard="1">
+      <db:JoinColumn attribute="ent10#att10" name="oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel23" name="Negozio_Catalogo" sourceEntity="ent10" targetEntity="ent11" db:database="db1" db:table="negozio_catalogo">
+    <RelationshipRole1 id="rel23#role45" name="NegozioToCatalogo" maxCard="2">
+      <db:JoinColumn attribute="ent10#att10" name="negozio_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel23#role46" name="CatalogoToNegozio" maxCard="N">
+      <db:JoinColumn attribute="ent11#att11" name="catalogo_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel24" name="Catalogo_Prodotto" sourceEntity="ent11" targetEntity="ent12" db:database="db1" db:table="catalogo_prodotto">
+    <RelationshipRole1 id="rel24#role47" name="CatalogoToProdotto" maxCard="N">
+      <db:JoinColumn attribute="ent11#att11" name="catalogo_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel24#role48" name="ProdottoToCatalogo" maxCard="N">
+      <db:JoinColumn attribute="ent12#att12" name="prodotto_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel25" name="Prodotto_Categoria" sourceEntity="ent12" targetEntity="ent7" db:database="db1" db:table="prodotto">
+    <RelationshipRole1 id="rel25#role49" name="ProdottoToCategoria" maxCard="1">
+      <db:JoinColumn attribute="ent12#att12" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel25#role50" name="CategoriaToProdotto" maxCard="N">
+      <db:JoinColumn attribute="ent7#att7" name="categoria_prodotto_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel26" name="Catena Negozi_Base" sourceEntity="ent9" targetEntity="ent13" gr:bendpoints="-2,110,-422,0" db:database="db1" db:table="catalogo_base">
+    <RelationshipRole1 id="rel26#role51" name="Catena NegoziToBase" maxCard="1">
+      <db:JoinColumn attribute="ent9#att9" name="catena_negozi_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel26#role52" name="BaseToCatena Negozi" maxCard="1">
+      <db:JoinColumn attribute="ent11#att11" name="catalogo_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Entity gr:x="60" gr:y="135" id="ent1" name="Indirizzo" duration="persistent" attributeOrder="ent1#att3 ent1#att4 ent1#att5 ent1#att6 ent1#att8 ent1#att13 ent1#att14 ent1#att23 ent1#att73" db:database="db1" db:table="indirizzo">
+    <Attribute id="ent1#att3" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent1#att4" name="Via" type="string" db:column="via"/>
+    <Attribute id="ent1#att5" name="Numero civico" type="string" db:column="numero_civico"/>
+    <Attribute id="ent1#att6" name="CAP" type="string" db:column="cap"/>
+    <Attribute id="ent1#att8" name="Citt&#224;" type="string" db:column="citta"/>
+    <Attribute id="ent1#att13" name="Provincia" type="string" db:column="provincia"/>
+    <Attribute id="ent1#att14" name="Stato" type="string" db:column="stato"/>
+    <Attribute id="ent1#att23" name="Primario" type="boolean" db:column="primario"/>
+    <Attribute id="ent1#att73" name="Indirizzo" type="string" db:column="indirizzo"/>
+  </Entity>
+  <Relationship id="rel20" name="Indirizzo_User" sourceEntity="ent1" targetEntity="User" db:database="db1" db:table="utente_registrato">
+    <RelationshipRole1 id="rel20#role39" name="IndirizzoToUser" maxCard="N">
+      <db:JoinColumn attribute="ent1#att3" name="indirizzo_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel20#role40" name="UserToIndirizzo" maxCard="1">
+      <db:JoinColumn attribute="userOID" name="oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Entity gr:x="1180" gr:y="425" id="ent2" name="Carta di Credito" duration="persistent" attributeOrder="ent2#att25 ent2#att26 ent2#att27 ent2#att28" db:database="db1" db:table="carta_di_credito">
+    <Attribute id="ent2#att25" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent2#att26" name="Numero" type="integer" db:column="numero"/>
+    <Attribute id="ent2#att27" name="Data scadenza" type="date" db:column="data_scadenza"/>
+    <Attribute id="ent2#att28" name="Intestatario" type="string" db:column="intestatario"/>
+  </Entity>
+  <Relationship id="rel27" name="Cliente Registrato_Carta di Credito" sourceEntity="ent8" targetEntity="ent2" db:database="db1" db:table="carta_di_credito">
+    <RelationshipRole1 id="rel27#role53" name="Cliente RegistratoToCarta di Credito" maxCard="N">
+      <db:JoinColumn attribute="userOID" name="cliente_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel27#role54" name="Carta di CreditoToCliente Registrato" maxCard="1">
+      <db:JoinColumn attribute="ent2#att25" name="oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Entity gr:x="1375" gr:y="1225" id="ent4" name="Tipo prodotto" duration="persistent" attributeOrder="ent4#att37 ent4#att38" db:database="db1" db:table="tipo_prodotto">
+    <Attribute id="ent4#att37" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent4#att38" name="Nome" type="string" db:column="nome"/>
+  </Entity>
+  <Entity gr:x="830" gr:y="1325" id="ent20" name="Produttore" duration="persistent" attributeOrder="ent20#att39 ent20#att40" db:database="db1" db:table="produttore">
+    <Attribute id="ent20#att39" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent20#att40" name="Nome" type="string" db:column="nome"/>
+  </Entity>
+  <Relationship id="rel29" name="Produttore_Prodotto" sourceEntity="ent20" targetEntity="ent12" db:database="db1" db:table="prodotto">
+    <RelationshipRole1 id="rel29#role57" name="ProduttoreToProdotto" maxCard="N">
+      <db:JoinColumn attribute="ent20#att39" name="produttore_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel29#role58" name="ProdottoToProduttore" maxCard="1">
+      <db:JoinColumn attribute="ent12#att12" name="oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel32" name="Negozio_Indirizzo" sourceEntity="ent10" targetEntity="ent1" gr:bendpoints="-205,-423,100,467;-203,-620,102,270" db:database="db1" db:table="negozio">
+    <RelationshipRole1 id="rel32#role63" name="NegozioToIndirizzo" maxCard="1">
+      <db:JoinColumn attribute="ent10#att10" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel32#role64" name="IndirizzoToNegozio" maxCard="N">
+      <db:JoinColumn attribute="ent1#att3" name="indirizzo_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Entity gr:x="1390" gr:y="810" id="ent21" name="Prenotazione Noleggio Prodotto" duration="persistent" attributeOrder="ent21#att24" db:database="db1" db:table="prenotazione_noleggio_prodotto">
+    <Generalization superEntity="ent16">
+      <db:JoinColumn attribute="ent16#att16" name="prenotazione_oid"/>
+    </Generalization>
+    <Attribute id="ent21#att24" name="Cauzione" type="string" db:column="cauzione"/>
+  </Entity>
+  <Relationship id="rel8" name="Negozio_Base" sourceEntity="ent10" targetEntity="ent13" db:database="db1" db:table="negozio">
+    <RelationshipRole1 id="rel8#role15" name="NegozioToBase" maxCard="1">
+      <db:JoinColumn attribute="ent10#att10" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel8#role16" name="BaseToNegozio" maxCard="N">
+      <db:JoinColumn attribute="ent11#att11" name="catalogo_base_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel30" name="Negozio_Specifico" sourceEntity="ent10" targetEntity="ent14" gr:bendpoints="50,121,-245,51;66,145,-229,75;142,142,-153,72;212,142,-83,72" db:database="db1" db:table="catalogo_specifico">
+    <RelationshipRole1 id="rel30#role59" name="NegozioToSpecifico" maxCard="1">
+      <db:JoinColumn attribute="ent10#att10" name="negozio_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel30#role60" name="SpecificoToNegozio" maxCard="1">
+      <db:JoinColumn attribute="ent11#att11" name="catalogo_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Entity gr:x="365" gr:y="1320" id="ent3" name="Zona" duration="persistent" attributeOrder="ent3#att69 ent3#att70" db:database="db1" db:table="zona">
+    <Attribute id="ent3#att69" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent3#att70" name="Provincia" type="string" db:column="provincia"/>
+  </Entity>
+  <Relationship id="rel33" name="Negozio_Zona" sourceEntity="ent10" targetEntity="ent3" db:database="db1" db:table="negozio">
+    <RelationshipRole1 id="rel33#role65" name="NegozioToZona" maxCard="1">
+      <db:JoinColumn attribute="ent10#att10" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel33#role66" name="ZonaToNegozio" maxCard="N">
+      <db:JoinColumn attribute="ent3#att69" name="zona_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel35" name="Gestore Catena_Utente Registrato" sourceEntity="ent5" targetEntity="User" gr:bendpoints="-19,-115,-224,155" db:database="db1" db:table="gestore_catena_utente_registra">
+    <RelationshipRole1 id="rel35#role69" name="Gestore CatenaToUtente Registrato" maxCard="N">
+      <db:JoinColumn attribute="userOID" name="gestore_catena_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel35#role70" name="Utente RegistratoToGestore Catena" maxCard="N">
+      <db:JoinColumn attribute="userOID" name="utente_registrato_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel36" name="Catena Negozi_Indirizzo" sourceEntity="ent9" targetEntity="ent1" gr:bendpoints="-213,-2,-163,868;-214,-873,-164,-3" db:database="db1" db:table="indirizzo">
+    <RelationshipRole1 id="rel36#role71" name="Catena NegoziToIndirizzo" maxCard="1">
+      <db:JoinColumn attribute="ent9#att9" name="catena_negozi_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel36#role72" name="IndirizzoToCatena Negozi" maxCard="1">
+      <db:JoinColumn attribute="ent1#att3" name="oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel34" name="Acquisto_Prenotazione" sourceEntity="ent15" targetEntity="ent16" db:database="db1" db:table="prenotazione">
+    <RelationshipRole1 id="rel34#role67" name="AcquistoToPrenotazione" maxCard="N">
+      <db:JoinColumn attribute="ent15#att15" name="acquisto_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel34#role68" name="PrenotazioneToAcquisto" maxCard="1">
+      <db:JoinColumn attribute="ent16#att16" name="oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel38" name="Categoria Prodotto_Tipo prodotto" sourceEntity="ent7" targetEntity="ent4" db:database="db1" db:table="tipo_prodotto">
+    <RelationshipRole1 id="rel38#role75" name="Categoria ProdottoToTipo prodotto" maxCard="N">
+      <db:JoinColumn attribute="ent7#att7" name="categoria_prodotto_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel38#role76" name="Tipo prodottoToCategoria Prodotto" maxCard="1">
+      <db:JoinColumn attribute="ent4#att37" name="oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel39" name="Tipo prodotto_Prodotto" sourceEntity="ent4" targetEntity="ent12" db:database="db1" db:table="prodotto">
+    <RelationshipRole1 id="rel39#role77" name="Tipo prodottoToProdotto" maxCard="N">
+      <db:JoinColumn attribute="ent4#att37" name="tipo_prodotto_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel39#role78" name="ProdottoToTipo prodotto" maxCard="1">
+      <db:JoinColumn attribute="ent12#att12" name="oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel28" name="Prodotto_Recensione" sourceEntity="ent12" targetEntity="ent18" gr:bendpoints="173,-68,-103,112" db:database="db1" db:table="prodottotorecensione_view">
+    <RelationshipRole1 id="rel28#role55" name="ProdottoToRecensione" maxCard="N" derivationQuery="new::Self TO ent18(as TargetEntity) where TargetEntity.ent18#att33 &gt;= '4'">
+      <db:JoinColumn attribute="ent12#att12" name="s_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel28#role56" name="RecensioneToProdotto" maxCard="1">
+      <db:JoinColumn attribute="ent18#att18" name="t_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel40" name="Negozio_Recensione" sourceEntity="ent10" targetEntity="ent18" gr:bendpoints="351,-135,-385,11;508,-187,-228,-41" db:database="db1" db:table="negoziotorecensione_view">
+    <RelationshipRole1 id="rel40#role79" name="NegozioToRecensione" maxCard="N" derivationQuery="new::Self TO ent18(as TargetEntity) where TargetEntity.ent18#att33 &gt;= '4'">
+      <db:JoinColumn attribute="ent10#att10" name="s_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel40#role80" name="RecensioneToNegozio" maxCard="1">
+      <db:JoinColumn attribute="ent18#att18" name="t_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Entity gr:x="215" gr:y="1285" id="ent23" name="Migliori Negozi" duration="persistent" derivationQuery="derived::ent10(as SuperEntity) where SuperEntity.rel40#role79.ent18#att33 &gt;= '4'" db:database="db1" db:table="migliori_negozi_view">
+    <Generalization superEntity="ent10">
+      <db:JoinColumn attribute="ent10#att10" name="oid"/>
+    </Generalization>
+  </Entity>
+  <Entity gr:x="1000" gr:y="1390" id="ent25" name="Migliori Prodotti" duration="persistent" derivationQuery="derived::ent12(as SuperEntity) where SuperEntity.rel28#role55.ent18#att33 &gt;= '4'" db:database="db1" db:table="migliori_prodotti_view">
+    <Generalization superEntity="ent12">
+      <db:JoinColumn attribute="ent12#att12" name="oid"/>
+    </Generalization>
+  </Entity>
+  <Entity gr:x="695" gr:y="340" id="ent26" name="Tipo Evento" duration="persistent" db:database="db1" db:table="tipo_evento">
+    <Attribute id="ent26#att78" key="true" name="oid" type="integer" db:column="oid"/>
+  </Entity>
+  <Relationship id="rel42" name="Evento_Tipo Evento" sourceEntity="ent17" targetEntity="ent26" db:database="db1" db:table="evento_tipo_evento">
+    <RelationshipRole1 id="rel42#role83" name="EventoToTipo Evento" maxCard="2">
+      <db:JoinColumn attribute="ent17#att17" name="evento_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel42#role84" name="Tipo EventoToEvento" maxCard="N">
+      <db:JoinColumn attribute="ent26#att78" name="tipo_evento_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <db:Database id="db1" name="catenadb_mysql" type="MySQL" username="root" url="jdbc:mysql://localhost/CatenaDB_MySql"/>
+  <Entity gr:x="900" gr:y="405" id="ent22" name="Periodo" duration="persistent" attributeOrder="ent22#att72 ent22#att74" db:database="db1" db:table="periodo">
+    <Attribute id="ent22#att72" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent22#att74" name="Mese" type="string" db:column="mese"/>
+  </Entity>
+  <Relationship id="rel41" name="Evento_Periodo" sourceEntity="ent17" targetEntity="ent22" db:database="db1" db:table="evento">
+    <RelationshipRole1 id="rel41#role81" name="EventoToPeriodo" maxCard="1">
+      <db:JoinColumn attribute="ent17#att17" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel41#role82" name="PeriodoToEvento" maxCard="N">
+      <db:JoinColumn attribute="ent22#att72" name="periodo_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel44" name="Catalogo_Categoria Prodotto" sourceEntity="ent11" targetEntity="ent7" db:database="db1" db:table="catalogo_categoria_prodotto">
+    <RelationshipRole1 id="rel44#role87" name="CatalogoToCategoria Prodotto" maxCard="N">
+      <db:JoinColumn attribute="ent11#att11" name="catalogo_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel44#role88" name="Categoria ProdottoToCatalogo" maxCard="N">
+      <db:JoinColumn attribute="ent7#att7" name="categoria_prodotto_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel31" name="CategoriaProdottoCatalogoBase" db:database="db1" db:table="categoria_prodotto" sourceEntity="ent7" targetEntity="ent13">
+    <RelationshipRole1 id="rel31#role61" name="CategoriaProdottoToCatalogoBase" maxCard="1">
+      <db:JoinColumn attribute="ent7#att7" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel31#role62" name="CatalogoBaseToCategoriaProdotto" maxCard="N">
+      <db:JoinColumn attribute="ent11#att11" name="catalogo_base_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel37" name="CatalogoSpecificoCategoriaProdotto" db:database="db1" db:table="catalogo_specifico" sourceEntity="ent14" targetEntity="ent7" gr:bendpoints="153,65,-197,-80">
+    <RelationshipRole1 id="rel37#role73" name="CatalogoSpecificoToCategoriaProdotto" maxCard="1">
+      <db:JoinColumn attribute="ent11#att11" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel37#role74" name="CategoriaProdottoToCatalogoSpecifico" maxCard="N">
+      <db:JoinColumn attribute="ent7#att7" name="categoria_prodotto_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+</DataModel>

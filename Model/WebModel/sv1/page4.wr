@@ -1,0 +1,137 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="245" gr:y="90" id="sv1#page4" name="Home Visitatore" linkOrder="sv1#page4#ln1 sv1#page4#ln10">
+  <ContentUnits>
+    <EntryUnit gr:x="10" gr:y="80" id="sv1#page4#enu2" name="Login" linkOrder="sv1#page4#enu2#ln5">
+      <Field id="sv1#page4#enu2#fld2" name="Username" type="string" modifiable="true"/>
+      <Field id="sv1#page4#enu2#fld3" name="Password" type="string" modifiable="true"/>
+      <Link id="sv1#page4#enu2#ln5" name="Flow4" to="sv1#lgu3" type="normal" validate="true" gr:bendpoints="-48,-116,107,4">
+        <LinkParameter id="sv1#page4#enu2#ln5#par1" name="Username_Username" source="sv1#page4#enu2#fld2" target="sv1#lgu3.username"/>
+        <LinkParameter id="sv1#page4#enu2#ln5#par2" name="Password_Password" source="sv1#page4#enu2#fld3" target="sv1#lgu3.password"/>
+      </Link>
+    </EntryUnit>
+    <PowerIndexUnit gr:x="0" gr:y="160" id="sv1#page4#pwu2" name="Elenco Negozi" sortable="true" checkable="false" useCountQuery="false" entity="ent10" linkOrder="sv1#page4#pwu2#ln7" displayAttributes="ent10#att48">
+      <Link id="sv1#page4#pwu2#ln7" name="Visualizza Dettagli Negozio" to="sv1#page7#dau3" automaticCoupling="true" type="normal" validate="true"/>
+      <SortAttribute attribute="ent10#att48" order="ascending"/>
+    </PowerIndexUnit>
+    <EventCalendarUnit gr:x="180" gr:y="140" id="sv1#page4#ecu1" name="Calendario Eventi" entityBased="true" entity="ent17" displayAttributes="ent17#att62 rel10#role19.ent10#att48 rel10#role19.rel33#role65.ent3#att70 ent17#att61" dateAttribute="ent17#att61" linkOrder="sv1#page4#ecu1#ln4">
+      <Link id="sv1#page4#ecu1#ln4" name="Flow4" to="sv1#page2#dau2" automaticCoupling="true" type="normal" validate="true"/>
+      <SortAttribute attribute="ent17#att61" order="ascending"/>
+    </EventCalendarUnit>
+    <DataUnit gr:x="115" gr:y="0" id="sv1#page4#dau1" name="Informazioni Catena" entity="ent9" displayAttributes="ent9#att55 ent9#att56 ent9#att57 ent9#att58">
+      <Selector id="sv1#page4#dau1#su1" defaultPolicy="fill" booleanOperator="and"/>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page4#enu2">
+          <layout:Field field="sv1#page4#enu2#fld2"/>
+          <layout:Field field="sv1#page4#enu2#fld3"/>
+          <layout:Link link="sv1#page4#enu2#ln5"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page4#pwu2">
+          <layout:Attribute attribute="ent10#att48"/>
+          <layout:Link link="sv1#page4#pwu2#ln7"/>
+          <layout:Link link="sv1#page4#pwu2ent10#att48"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page4#ecu1">
+          <layout:Link link="sv1#page4#ecu1#ln4"/>
+          <layout:Link link="sv1#page4#ecu1-month-0"/>
+          <layout:Link link="sv1#page4#ecu1-month-1"/>
+          <layout:Link link="sv1#page4#ecu1-month-2"/>
+          <layout:Link link="sv1#page4#ecu1-month-3"/>
+          <layout:Link link="sv1#page4#ecu1-month-4"/>
+          <layout:Link link="sv1#page4#ecu1-month-5"/>
+          <layout:Link link="sv1#page4#ecu1-month-6"/>
+          <layout:Link link="sv1#page4#ecu1-month-7"/>
+          <layout:Link link="sv1#page4#ecu1-month-8"/>
+          <layout:Link link="sv1#page4#ecu1-month-9"/>
+          <layout:Link link="sv1#page4#ecu1-month-10"/>
+          <layout:Link link="sv1#page4#ecu1-month-11"/>
+          <layout:Link link="sv1#page4#ecu1-year"/>
+          <layout:Attribute attribute="ent17#att62"/>
+          <layout:Attribute attribute="rel10#role19.ent10#att48"/>
+          <layout:Attribute attribute="rel10#role19.rel33#role65.ent3#att70"/>
+          <layout:Attribute attribute="ent17#att61"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page4#dau1">
+          <layout:Attribute attribute="ent9#att55"/>
+          <layout:Attribute attribute="ent9#att56"/>
+          <layout:Attribute attribute="ent9#att57"/>
+          <layout:Attribute attribute="ent9#att58"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv1#page4#ln1" name="Flow1" to="sv1#page6#enu1" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv1#page4#ln10" name="Ricerca Avanzata" to="sv1#page9" automaticCoupling="true" type="normal" validate="true"/>
+</Page>

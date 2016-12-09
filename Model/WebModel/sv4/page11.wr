@@ -1,0 +1,291 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="120" gr:y="145" id="sv4#page11" name="Home Page Gestore Catena" linkOrder="sv4#page11#ln21">
+  <ContentUnits/>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv4#page11#page12">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv4#page11#page12#mssu1">
+                  <layout:Link link="sv4#page11#page12#mssu1#ln8"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv4#page11#page13">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv4#page11#page13#mssu3">
+                  <layout:Link link="sv4#page11#page13#mssu3#ln18"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv4#page11#page14">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv4#page11#page14#dau5">
+                  <layout:Link link="sv4#page11#page14#dau5#ln29"/>
+                  <layout:Attribute attribute="userName"/>
+                  <layout:Attribute attribute="password"/>
+                  <layout:Attribute attribute="User#att20"/>
+                  <layout:Attribute attribute="User#att21"/>
+                  <layout:Attribute attribute="User#att22"/>
+                  <layout:Attribute attribute="User#att54"/>
+                  <layout:Attribute attribute="email"/>
+                  <layout:Attribute attribute="User#att29"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv4#page11#page15">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv4#page11#page15#mssu4">
+                  <layout:Link link="sv4#page11#page15#mssu4#ln24"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv4#page11#page15#mssu7">
+                  <layout:Link link="sv4#page11#page15#mssu7#ln26"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv4#page11#page16">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Page gr:x="5" gr:y="50" id="sv4#page11#page12" name="Gestione Prodotti">
+    <ContentUnits>
+      <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page11#page12#mssu1" name="Message1" linkOrder="sv4#page11#page12#mssu1#ln8">
+        <Message xml:space="preserve">Clicca per inserire un nuovo prodotto</Message>
+        <Link id="sv4#page11#page12#mssu1#ln8" name="Flow8" to="sv4#area3#page17" automaticCoupling="true" type="normal" validate="true"/>
+      </MultiMessageUnit>
+    </ContentUnits>
+  </Page>
+  <Link id="sv4#page11#ln21" name="Logout" to="sv4#lou3" automaticCoupling="true" type="normal" validate="true"/>
+  <Page gr:x="0" gr:y="230" id="sv4#page11#page13" name="Gestione Catalogo Base">
+    <ContentUnits>
+      <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page11#page13#mssu3" name="Cliccare per aggiungere articoli al catalogo base" linkOrder="sv4#page11#page13#mssu3#ln18">
+        <Link id="sv4#page11#page13#mssu3#ln18" name="Flow18" to="sv4#area2#page5" automaticCoupling="true" type="normal" validate="true"/>
+        <Message xml:space="preserve">Cliccare per aggiungere articoli al catalogo base</Message>
+      </MultiMessageUnit>
+    </ContentUnits>
+  </Page>
+  <Page gr:x="305" gr:y="0" id="sv4#page11#page14" name="Gestione Dati Utente">
+    <ContentUnits>
+      <SelectorUnit gr:x="0" gr:y="0" id="sv4#page11#page14#seu6" name="Selector6" entity="ent5">
+        <Link id="sv4#page11#page14#seu6#ln27" name="Flow27" to="sv4#page11#page14#dau5" type="transport" validate="true">
+          <LinkParameter id="sv4#page11#page14#seu6#ln27#par18" name="oid_KeyCondition4 [oid]" source="userOIDArray" target="sv4#page11#page14#dau5#su6#kcond4.userOID"/>
+        </Link>
+      </SelectorUnit>
+      <DataUnit gr:x="165" gr:y="0" id="sv4#page11#page14#dau5" name="Dettagli gestore catena" entity="ent5" linkOrder="sv4#page11#page14#dau5#ln29" displayAttributes="userName password User#att20 User#att21 User#att22 User#att54 email User#att29">
+        <Selector id="sv4#page11#page14#dau5#su6" defaultPolicy="fill" booleanOperator="and">
+          <KeyCondition id="sv4#page11#page14#dau5#su6#kcond4" name="KeyCondition4" predicate="in" implied="false"/>
+        </Selector>
+        <Link id="sv4#page11#page14#dau5#ln29" name="Flow29" to="sv4#page21#enu7" type="normal" validate="true">
+          <LinkParameter id="sv4#page11#page14#dau5#ln29#par19" name="Cognome_PASSING" source="data.User#att21" passing="true"/>
+          <LinkParameter id="sv4#page11#page14#dau5#ln29#par20" name="Data nascita_PASSING" source="data.User#att22" passing="true"/>
+          <LinkParameter id="sv4#page11#page14#dau5#ln29#par21" name="Data registrazione_PASSING" source="data.User#att29" passing="true"/>
+          <LinkParameter id="sv4#page11#page14#dau5#ln29#par27" name="E-mail_PASSING" source="data.email" passing="true"/>
+          <LinkParameter id="sv4#page11#page14#dau5#ln29#par29" name="Nome_PASSING" source="data.User#att20" passing="true"/>
+          <LinkParameter id="sv4#page11#page14#dau5#ln29#par31" name="Numero telefono_PASSING" source="data.User#att54" passing="true"/>
+          <LinkParameter id="sv4#page11#page14#dau5#ln29#par32" name="Password_PASSING" source="data.password" passing="true"/>
+          <LinkParameter id="sv4#page11#page14#dau5#ln29#par33" name="UserName_PASSING" source="data.userName" passing="true"/>
+          <LinkParameter id="sv4#page11#page14#dau5#ln29#par10" name="UserName_Username" source="data.userName" target="sv4#page21#enu7#fld15_slot"/>
+          <LinkParameter id="sv4#page11#page14#dau5#ln29#par34" name="Cognome_Cognome" source="data.User#att21" target="sv4#page21#enu7#fld19_slot"/>
+          <LinkParameter id="sv4#page11#page14#dau5#ln29#par35" name="Data nascita_Data nascita" source="data.User#att22" target="sv4#page21#enu7#fld20_slot"/>
+          <LinkParameter id="sv4#page11#page14#dau5#ln29#par36" name="Data registrazione_Data registrazione" source="data.User#att29" target="sv4#page21#enu7#fld21_slot"/>
+          <LinkParameter id="sv4#page11#page14#dau5#ln29#par37" name="E-mail_Email" source="data.email" target="sv4#page21#enu7#fld17_slot"/>
+          <LinkParameter id="sv4#page11#page14#dau5#ln29#par38" name="Nome_Nome" source="data.User#att20" target="sv4#page21#enu7#fld18_slot"/>
+          <LinkParameter id="sv4#page11#page14#dau5#ln29#par39" name="Numero telefono_Numero telefono" source="data.User#att54" target="sv4#page21#enu7#fld22_slot"/>
+          <LinkParameter id="sv4#page11#page14#dau5#ln29#par40" name="Password_Password" source="data.password" target="sv4#page21#enu7#fld16_slot"/>
+          <LinkParameter id="sv4#page11#page14#dau5#ln29#par49" name="oid_PASSING" source="data.userOID" passing="true"/>
+        </Link>
+      </DataUnit>
+    </ContentUnits>
+  </Page>
+  <Page gr:x="460" gr:y="235" id="sv4#page11#page15" name="Gestione Negozi">
+    <ContentUnits>
+      <MultiMessageUnit gr:x="0" gr:y="65" id="sv4#page11#page15#mssu4" name="Modifica negozio" linkOrder="sv4#page11#page15#mssu4#ln24">
+        <Message xml:space="preserve">Gestione dei negozi</Message>
+        <Link id="sv4#page11#page15#mssu4#ln24" name="Flow24" to="sv4#area5#page18" automaticCoupling="true" type="normal" validate="true"/>
+      </MultiMessageUnit>
+      <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page11#page15#mssu7" name="Inserimento negozio" linkOrder="sv4#page11#page15#mssu7#ln26">
+        <Link id="sv4#page11#page15#mssu7#ln26" name="Flow26" to="sv4#area9#page19" automaticCoupling="true" type="normal" validate="true"/>
+        <Message xml:space="preserve">Inserisci un nuovo negozio</Message>
+      </MultiMessageUnit>
+    </ContentUnits>
+  </Page>
+  <Page gr:x="440" gr:y="470" id="sv4#page11#page16" name="Gestione Utenti">
+    <ContentUnits/>
+  </Page>
+</Page>

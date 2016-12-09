@@ -1,0 +1,57 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1055" gr:y="125" id="sv1#page9" name="Ricerca Avanzata" ajaxEnabled="true">
+  <ContentUnits>
+    <EntryUnit gr:x="205" gr:y="0" id="sv1#page9#enu4" name="Ricerca per zona" linkOrder="sv1#page9#enu4#ln11 sv1#page9#enu4#ln6" ajaxEnableExpandedLinks="true">
+      <Link id="sv1#page9#enu4#ln11" name="Flow11" to="sv1#seu4" type="normal" validate="true">
+        <LinkParameter id="sv1#page9#enu4#ln11#par13" name="Zona_RoleCondition1 [oid]" source="sv1#page9#enu4#sfld1" target="sv1#seu4#su5#rcond1.ent3#att69"/>
+      </Link>
+      <SelectionField id="sv1#page9#enu4#sfld1" name="Zona" type="string" ajaxEventEnabled="true" ajaxEventLink="sv1#page9#enu4#ln11"/>
+      <SelectionField id="sv1#page9#enu4#sfld2" name="Negozio" type="string" ajaxEventEnabled="true" ajaxEventLink="sv1#page9#enu4#ln6"/>
+      <Link id="sv1#page9#enu4#ln6" name="Flow6" to="sv1#page7#dau3" type="normal" validate="true" gr:bendpoints="-320,281,915,-129;-1037,282,198,-128">
+        <LinkParameter id="sv1#page9#enu4#ln6#par16" name="Negozio_KeyCondition3 [oid]" source="sv1#page9#enu4#sfld2" target="sv1#page7#dau3#su3#kcond3.ent10#att10"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit gr:x="0" gr:y="0" id="sv1#page9#seu3" name="Seleziona Zona" entity="ent3">
+      <Link id="sv1#page9#seu3#ln12" name="Flow12" to="sv1#page9#enu4" type="transport" validate="true">
+        <LinkParameter id="sv1#page9#seu3#ln12#par7" name="oid_Zona [label]" source="ent3#att70Array" target="sv1#page9#enu4#sfld1_label"/>
+        <LinkParameter id="sv1#page9#seu3#ln12#par15" name="oid_Zona [output]" source="ent3#att69Array" target="sv1#page9#enu4#sfld1_output"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page9#enu4">
+          <layout:Field field="sv1#page9#enu4#sfld1"/>
+          <layout:Field field="sv1#page9#enu4#sfld2"/>
+          <layout:Link link="sv1#page9#enu4#ln11"/>
+          <layout:Link link="sv1#page9#enu4#ln6"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

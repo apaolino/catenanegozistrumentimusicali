@@ -1,0 +1,28 @@
+[07 dic 2016 13:21:02] DEBUG Executing SQL script
+[07 dic 2016 13:21:02] INFO ================================================================================
+[07 dic 2016 13:21:02] INFO onError= 'stop'
+[07 dic 2016 13:21:02] INFO autoCommit= 'false'
+[07 dic 2016 13:21:02] INFO username= 'root'
+[07 dic 2016 13:21:02] INFO outputPath= 'C:\WebRatio\WebRatio Platform 7.2.14\workspace\CatenaNegoziStrumentiMusicali\.Temp~\UpdateSQL.xml'
+[07 dic 2016 13:21:02] INFO outputLogPath= 'C:\WebRatio\WebRatio Platform 7.2.14\workspace\CatenaNegoziStrumentiMusicali\.Temp~\UpdateSQL.xml.log'
+[07 dic 2016 13:21:02] INFO encoding= ''
+[07 dic 2016 13:21:02] INFO driverClass= 'com.mysql.jdbc.Driver'
+[07 dic 2016 13:21:02] INFO sqlScript= 'C:\WebRatio\WebRatio Platform 7.2.14\workspace\CatenaNegoziStrumentiMusicali\.Temp~\UpdateSQL.sql'
+[07 dic 2016 13:21:02] INFO eventSocketPort= '57536'
+[07 dic 2016 13:21:02] INFO statementSeparator= ';'
+[07 dic 2016 13:21:02] INFO derby.system.home= 'C:\WebRatio\WebRatio Platform 7.2.14\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
+[07 dic 2016 13:21:02] INFO password= ''
+[07 dic 2016 13:21:02] INFO url= 'jdbc:mysql://localhost/CatenaDB_MySql'
+[07 dic 2016 13:21:02] INFO ================================================================================
+[07 dic 2016 13:21:02] INFO Connecting to the Database...
+[07 dic 2016 13:21:02] INFO Database connection estabilished
+[07 dic 2016 13:21:02] INFO transaction isolation: 4
+[07 dic 2016 13:21:02] DEBUG ================================================================================
+[07 dic 2016 13:21:02] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Platform 7.2.14\workspace\CatenaNegoziStrumentiMusicali\.Temp~\UpdateSQL.sql
+[07 dic 2016 13:21:02] DEBUG Executing statement:  create table `catalogo_categoria_prodotto` ( `catalogo_oid`  integer not null, `categoria_prodotto_oid`  integer not null, primary key (`catalogo_oid`, `categoria_prodotto_oid`) )
+[07 dic 2016 13:21:02] DEBUG Executing statement:  alter table `catalogo_categoria_prodotto`   add index fk_catalogo_categoria_prodotto (`catalogo_oid`), add constraint fk_catalogo_categoria_prodotto foreign key (`catalogo_oid`) references `catalogo` (`oid`)
+[07 dic 2016 13:21:02] DEBUG Executing statement:  alter table `catalogo_categoria_prodotto`   add index fk_catalogo_categoria_prodot_2 (`categoria_prodotto_oid`), add constraint fk_catalogo_categoria_prodot_2 foreign key (`categoria_prodotto_oid`) references `categoria_prodotto` (`oid`)
+[07 dic 2016 13:21:02] DEBUG ================================================================================
+[07 dic 2016 13:21:02] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[07 dic 2016 13:21:02] INFO Database connection closed
+[07 dic 2016 13:21:02] DEBUG Total time: 601 milliseconds
