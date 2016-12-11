@@ -1,0 +1,47 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1305" gr:y="280" id="sv4#page22" name="Page 22">
+  <ContentUnits>
+    <EntryUnit id="sv4#page22#enu10" name="Modifica indirizzo" gr:x="0" gr:y="0" fieldOrder="sv4#page22#enu10#fld45 sv4#page22#enu10#fld46 sv4#page22#enu10#fld44 sv4#page22#enu10#fld47 sv4#page22#enu10#fld49 sv4#page22#enu10#fld48" linkOrder="sv4#page22#enu10#ln52">
+      <Field id="sv4#page22#enu10#fld44" name="Citt&#224;" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv4#page22#enu10#fld45" name="Via" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv4#page22#enu10#fld46" name="Numero Civico" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv4#page22#enu10#fld47" name="CAP" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv4#page22#enu10#fld48" name="Stato" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv4#page22#enu10#fld49" name="Provincia" type="string" modifiable="true" preloaded="true"/>
+      <Link id="sv4#page22#enu10#ln52" name="Flow52" to="sv4#mfu2" type="normal" validate="true">
+        <LinkParameter id="sv4#page22#enu10#ln52#par227" name="CAP_CAP" source="sv4#page22#enu10#fld47" target="sv4#mfu2.ent1#att6"/>
+        <LinkParameter id="sv4#page22#enu10#ln52#par228" name="Citt&#224;_Citt&#224;" source="sv4#page22#enu10#fld44" target="sv4#mfu2.ent1#att8"/>
+        <LinkParameter id="sv4#page22#enu10#ln52#par229" name="Numero Civico_Numero civico" source="sv4#page22#enu10#fld46" target="sv4#mfu2.ent1#att5"/>
+        <LinkParameter id="sv4#page22#enu10#ln52#par230" name="Provincia_Provincia" source="sv4#page22#enu10#fld49" target="sv4#mfu2.ent1#att13"/>
+        <LinkParameter id="sv4#page22#enu10#ln52#par231" name="Stato_Stato" source="sv4#page22#enu10#fld48" target="sv4#mfu2.ent1#att14"/>
+        <LinkParameter id="sv4#page22#enu10#ln52#par232" name="Via_Via" source="sv4#page22#enu10#fld45" target="sv4#mfu2.ent1#att4"/>
+        <LinkParameter id="sv4#page22#enu10#ln52#par235" name="UserToIndirizzo.oid_PASSING" sourceLinkParameter="sv4#page21#dau7#ln51#par234" passing="true"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page22#enu10">
+          <layout:Field field="sv4#page22#enu10#fld45"/>
+          <layout:Field field="sv4#page22#enu10#fld46"/>
+          <layout:Field field="sv4#page22#enu10#fld44"/>
+          <layout:Field field="sv4#page22#enu10#fld47"/>
+          <layout:Field field="sv4#page22#enu10#fld49"/>
+          <layout:Field field="sv4#page22#enu10#fld48"/>
+          <layout:Link link="sv4#page22#enu10#ln52"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
