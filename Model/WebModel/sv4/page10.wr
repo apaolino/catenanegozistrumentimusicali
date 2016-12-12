@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1455" gr:y="445" id="sv4#page10" name="Operazione eseguita">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1455" gr:y="445" id="sv4#page10" name="Operazione eseguita" linkOrder="sv4#page10#ln22">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page10#mssu8" name="Operazione ok">
       <Message xml:space="preserve">Operazione eseguita con successo</Message>
@@ -22,4 +22,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv4#page10#ln22" name="Visualizza dati" to="sv4#page21" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-256,-33,219,227"/>
 </Page>

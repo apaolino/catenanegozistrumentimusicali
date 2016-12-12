@@ -6,14 +6,14 @@
     <Property name="applicationServer">Tomcat</Property>
     <Property name="cloudDeploy">false</Property>
     <Property name="commonsLibDir">D:\Programmi\Webratio\WebRatio\plugins\com.webratio.commons.libs_7.2.14.201608091213\lib</Property>
-    <Property name="dbConfigPath">C:\Users\Samuel\AppData\Local\Temp\WRDBConfig3327809987134394157.xml</Property>
+    <Property name="dbConfigPath">C:\Users\Samuel\AppData\Local\Temp\WRDBConfig1272777692480723085.xml</Property>
     <Property name="defaultEncoding"></Property>
     <Property name="deployCorePluginDir">D:\Programmi\Webratio\WebRatio\configuration\org.eclipse.osgi\bundles\49\1\.cp</Property>
     <Property name="derbySystemHome">C:\Users\Samuel\Google Drive\Progetto SISR\webratio\.metadata\.plugins\com.webratio.commons.db\derby</Property>
     <Property name="enterpriseProjectDir"></Property>
-    <Property name="eventSocketPort">56367</Property>
+    <Property name="eventSocketPort">56838</Property>
     <Property name="excludedProjects" type="list"></Property>
-    <Property name="generationTime">201612121123</Property>
+    <Property name="generationTime">201612121559</Property>
     <Property name="helpersPluginDir">D:\Programmi\Webratio\WebRatio\plugins\com.webratio.generator.helpers_7.2.14.201608091213</Property>
     <Property name="i18nBundleKeysFile" type="file"></Property>
     <Property name="i18nExtraBundleFile" type="file"></Property>
@@ -24,7 +24,7 @@
     <Property name="phases">All</Property>
     <Property name="projectDir">C:\Users\Samuel\Google Drive\Progetto SISR\webratio\CatenaNegoziStrumentiMusicali</Property>
     <Property name="projectName">CatenaNegoziStrumentiMusicali</Property>
-    <Property name="projectPath">C:\Users\Samuel\AppData\Local\Temp\Project3568389246612571519.wr</Property>
+    <Property name="projectPath">C:\Users\Samuel\AppData\Local\Temp\Project6731034954385892767.wr</Property>
     <Property name="projectType">WEBPROJECT</Property>
     <Property name="rootModuleName"></Property>
     <Property name="uiPluginDir">D:\Programmi\Webratio\WebRatio\plugins\com.webratio.ide.ui_7.2.14.201608091213</Property>
