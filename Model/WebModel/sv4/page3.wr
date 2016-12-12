@@ -18,6 +18,7 @@
         <LinkParameter id="sv4#page3#enu8#ln33#par63" name="Numero telefono_Numero telefono" source="sv4#page3#enu8#fld30" target="sv4#mfu1.User#att54"/>
         <LinkParameter id="sv4#page3#enu8#ln33#par64" name="Password_Password" source="sv4#page3#enu8#fld24" target="sv4#mfu1.password"/>
         <LinkParameter id="sv4#page3#enu8#ln33#par65" name="Username_UserName" source="sv4#page3#enu8#fld23" target="sv4#mfu1.userName"/>
+        <LinkParameter id="sv4#page3#enu8#ln33#par18" name="oid_PASSING_KeyCondition5 [oid]" sourceLinkParameter="sv4#page21#dau6#ln34#par82" target="sv4#mfu1#su10#kcond5.userOID"/>
       </Link>
     </EntryUnit>
   </ContentUnits>
