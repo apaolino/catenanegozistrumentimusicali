@@ -94,7 +94,7 @@
     <Attribute id="ent11#att46" name="Nome" type="string" db:column="nome"/>
     <Attribute id="ent11#att47" name="Anno di validit&#224;" type="integer" db:column="anno_di_validita"/>
   </Entity>
-  <Entity gr:x="1045" gr:y="1060" id="ent12" name="Prodotto" duration="persistent" attributeOrder="ent12#att12 ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45 ent12#att66 ent12#att67 ent12#att68" db:database="db1" db:table="prodotto">
+  <Entity gr:x="1060" gr:y="1110" id="ent12" name="Prodotto" duration="persistent" attributeOrder="ent12#att12 ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45 ent12#att66 ent12#att67 ent12#att68" db:database="db1" db:table="prodotto">
     <Attribute id="ent12#att12" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent12#att1" name="Nome modello" type="string" db:column="nome_modello"/>
     <Attribute id="ent12#att41" name="Data produzione" type="date" db:column="data_produzione"/>
@@ -291,7 +291,7 @@
     </RelationshipRole2>
   </Relationship>
   <Relationship id="rel21" name="Valutazione_Prodotto" sourceEntity="ent18" targetEntity="ent12" db:database="db1" db:table="recensione">
-    <RelationshipRole1 id="rel21#role41" name="ValutazioneToProdotto" maxCard="1">
+    <RelationshipRole1 id="rel21#role41" name="ValutazioneToProdotto" maxCard="N">
       <db:JoinColumn attribute="ent18#att18" name="oid"/>
     </RelationshipRole1>
     <RelationshipRole2 id="rel21#role42" name="ProdottoToValutazione" maxCard="N">

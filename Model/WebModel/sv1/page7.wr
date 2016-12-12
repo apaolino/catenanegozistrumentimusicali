@@ -174,15 +174,13 @@
             <layout:Row>
               <layout:Cell colspan="12">
                 <layout:Unit unitId="sv1#page7#alt1#page1#dau4">
+                  <layout:Attribute attribute="ent12#att67"/>
                   <layout:Attribute attribute="ent12#att1"/>
+                  <layout:Attribute attribute="ent12#att43"/>
                   <layout:Attribute attribute="ent12#att41"/>
                   <layout:Attribute attribute="ent12#att42"/>
-                  <layout:Attribute attribute="ent12#att43"/>
                   <layout:Attribute attribute="ent12#att44"/>
                   <layout:Attribute attribute="ent12#att45"/>
-                  <layout:Attribute attribute="ent12#att66"/>
-                  <layout:Attribute attribute="ent12#att67"/>
-                  <layout:Attribute attribute="ent12#att68"/>
                 </layout:Unit>
               </layout:Cell>
               <layout:Cell/>
@@ -238,7 +236,7 @@
           <HierarchicalIndexLevel id="sv1#page7#alt1#page1#hinu1#hiulvl4" name="Livello TipoProdotto" entity="ent4" role="rel38#role75" displayAttributes="ent4#att38"/>
           <HierarchicalIndexLevel id="sv1#page7#alt1#page1#hinu1#hiulvl5" name="Livello Prodotto" entity="ent12" role="rel25#role50" displayAttributes="ent12#att67 ent12#att1 ent12#att42"/>
         </HierarchicalIndexUnit>
-        <DataUnit gr:x="430" gr:y="0" id="sv1#page7#alt1#page1#dau4" name="Dettaglio Prodotto" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45 ent12#att66 ent12#att67 ent12#att68">
+        <DataUnit gr:x="430" gr:y="0" id="sv1#page7#alt1#page1#dau4" name="Dettaglio Prodotto" entity="ent12" displayAttributes="ent12#att67 ent12#att1 ent12#att43 ent12#att41 ent12#att42 ent12#att44 ent12#att45">
           <Selector id="sv1#page7#alt1#page1#dau4#su8" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv1#page7#alt1#page1#dau4#su8#kcond1" name="KeyCondition1" predicate="in" implied="false"/>
           </Selector>
