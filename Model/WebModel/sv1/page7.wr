@@ -9,6 +9,7 @@
       </Link>
       <Link id="sv1#page7#dau3#ln16" name="Flow16" to="sv1#page7#mdu1" automaticCoupling="true" type="transport" validate="true"/>
       <Link id="sv1#page7#dau3#ln17" name="Flow17" to="sv1#page7#mdu2" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv1#page7#dau3#ln37" name="Flow37" to="sv1#page7#dau5" automaticCoupling="true" type="transport" validate="true"/>
     </DataUnit>
     <IndexUnit gr:x="255" gr:y="0" id="sv1#page7#inu1" name="Scelta Tipo Catalogo" entity="ent11" displayAttributes="ent11#att46" maxResults="2" linkOrder="sv1#page7#inu1#ln9">
       <Selector id="sv1#page7#inu1#su7" defaultPolicy="fill" booleanOperator="and">
@@ -29,9 +30,10 @@
     <MultiDataUnit gr:x="220" gr:y="160" id="sv1#page7#mdu2" name="Recensioni Negozio" entity="ent18" displayAttributes="ent18#att33 ent18#att34 ent18#att35 ent18#att77">
       <SortAttribute attribute="ent18#att33" order="descending"/>
     </MultiDataUnit>
-    <DataUnit gr:x="5" gr:y="285" id="sv1#page7#dau5" name="Dettagli Sala Prove">
+    <DataUnit gr:x="5" gr:y="285" id="sv1#page7#dau5" name="Dettagli Sala Prove" entity="ent19" displayAttributes="ent19#att59 ent19#att60">
       <Selector id="sv1#page7#dau5#su15" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#page7#dau5#su15#kcond4" name="KeyCondition4" predicate="in" implied="false"/>
+        <RelationshipRoleCondition id="sv1#page7#dau5#su15#rcond4" name="RoleCondition4" predicate="in" implied="false" role="rel7#role14"/>
       </Selector>
     </DataUnit>
   </ContentUnits>
@@ -231,7 +233,10 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#page7#dau5"/>
+        <layout:Unit unitId="sv1#page7#dau5">
+          <layout:Attribute attribute="ent19#att59"/>
+          <layout:Attribute attribute="ent19#att60"/>
+        </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
