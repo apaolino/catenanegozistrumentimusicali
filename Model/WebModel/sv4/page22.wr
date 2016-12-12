@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1305" gr:y="280" id="sv4#page22" name="Page 22">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1305" gr:y="280" id="sv4#page22" name="Modifica indirizzo">
   <ContentUnits>
     <EntryUnit id="sv4#page22#enu10" name="Modifica indirizzo" gr:x="0" gr:y="0" fieldOrder="sv4#page22#enu10#fld45 sv4#page22#enu10#fld46 sv4#page22#enu10#fld44 sv4#page22#enu10#fld47 sv4#page22#enu10#fld49 sv4#page22#enu10#fld48" linkOrder="sv4#page22#enu10#ln52">
       <Field id="sv4#page22#enu10#fld44" name="Citt&#224;" type="string" modifiable="true" preloaded="true"/>
@@ -15,6 +15,7 @@
         <LinkParameter id="sv4#page22#enu10#ln52#par231" name="Stato_Stato" source="sv4#page22#enu10#fld48" target="sv4#mfu2.ent1#att14"/>
         <LinkParameter id="sv4#page22#enu10#ln52#par232" name="Via_Via" source="sv4#page22#enu10#fld45" target="sv4#mfu2.ent1#att4"/>
         <LinkParameter id="sv4#page22#enu10#ln52#par235" name="UserToIndirizzo.oid_PASSING" sourceLinkParameter="sv4#page21#dau7#ln51#par234" passing="true"/>
+        <LinkParameter id="sv4#page22#enu10#ln52#par10" name="oid_PASSING_KeyCondition13 [oid]" sourceLinkParameter="sv4#page21#dau7#ln51#par226" target="sv4#mfu2#su18#kcond13.ent1#att3"/>
       </Link>
     </EntryUnit>
   </ContentUnits>

@@ -264,7 +264,7 @@
     <ContentUnits>
       <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page11#page14#mssu5" name="Visualizza dati utente" linkOrder="sv4#page11#page14#mssu5#ln32">
         <Message xml:space="preserve">Cliccare per visualizzare i dati utente</Message>
-        <Link id="sv4#page11#page14#mssu5#ln32" name="Modifica dati" to="sv4#page21#seu8" automaticCoupling="true" type="normal" validate="true"/>
+        <Link id="sv4#page11#page14#mssu5#ln32" name="Visualizza dati" to="sv4#page21#seu8" automaticCoupling="true" type="normal" validate="true"/>
       </MultiMessageUnit>
     </ContentUnits>
   </Page>
