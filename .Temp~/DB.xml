@@ -3,8 +3,8 @@
 <DBMetaData driverMajorVersion="5" driverMinorVersion="1" driverVersion="mysql-connector-java-5.1.31 ( Revision: alexander.soklakov@oracle.com-20140520065950-groqzzbvxprqdmnz )" productVersion="5.5.5-10.1.10-MariaDB" identifierQuoteString="`" transactionLevel="Repeatable read" driverName="MySQL Connector Java" productName="MySQL">
   <Table schema="" ignoreIndexes="false" name="acquisto" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
-    <Column sqlTypeId="92" indexed="unknown" autoIncrement="false" type="TIME" size="8" decimalDigits="0" name="data_acquisto" primaryKey="false" notNull="false"/>
-    <Column sqlTypeId="92" indexed="unknown" autoIncrement="false" type="TIME" size="8" decimalDigits="0" name="data_evasione" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="93" indexed="unknown" autoIncrement="false" type="DATETIME" size="19" decimalDigits="0" name="data_acquisto" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="93" indexed="unknown" autoIncrement="false" type="DATETIME" size="19" decimalDigits="0" name="data_evasione" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="negozio_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="cliente_oid" primaryKey="false" notNull="false"/>
   </Table>
@@ -131,8 +131,8 @@
   </Table>
   <Table schema="" ignoreIndexes="false" name="prenotazione" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
-    <Column sqlTypeId="92" indexed="unknown" autoIncrement="false" type="TIME" size="8" decimalDigits="0" name="data_inizio" primaryKey="false" notNull="false"/>
-    <Column sqlTypeId="92" indexed="unknown" autoIncrement="false" type="TIME" size="8" decimalDigits="0" name="data_fine" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="93" indexed="unknown" autoIncrement="false" type="DATETIME" size="19" decimalDigits="0" name="data_inizio" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="93" indexed="unknown" autoIncrement="false" type="DATETIME" size="19" decimalDigits="0" name="data_fine" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="negozio_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="gestore_singolo_negozio_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="cliente_oid" primaryKey="false" notNull="false"/>
@@ -168,7 +168,7 @@
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="numero_stelle" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="-1" indexed="unknown" autoIncrement="false" type="LONGTEXT" size="2147483647" decimalDigits="0" name="recensione" primaryKey="false" notNull="false"/>
-    <Column sqlTypeId="92" indexed="unknown" autoIncrement="false" type="TIME" size="8" decimalDigits="0" name="data" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="93" indexed="unknown" autoIncrement="false" type="DATETIME" size="19" decimalDigits="0" name="data" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="tipo" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="cliente_oid" primaryKey="false" notNull="false"/>
   </Table>

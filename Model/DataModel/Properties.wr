@@ -150,13 +150,13 @@
   </Relationship>
   <Entity gr:x="1175" gr:y="570" id="ent15" name="Acquisto" duration="persistent" attributeOrder="ent15#att15 ent15#att30 ent15#att2" db:database="db1" db:table="acquisto">
     <Attribute id="ent15#att15" key="true" name="oid" type="integer" db:column="oid"/>
-    <Attribute id="ent15#att30" name="Data acquisto" type="time" db:column="data_acquisto"/>
-    <Attribute id="ent15#att2" name="Data evasione" type="time" db:column="data_evasione"/>
+    <Attribute id="ent15#att30" name="Data acquisto" type="timestamp" db:column="data_acquisto"/>
+    <Attribute id="ent15#att2" name="Data evasione" type="timestamp" db:column="data_evasione"/>
   </Entity>
   <Entity gr:x="1195" gr:y="730" id="ent16" name="Prenotazione" duration="persistent" attributeOrder="ent16#att16 ent16#att31 ent16#att32" db:database="db1" db:table="prenotazione">
     <Attribute id="ent16#att16" key="true" name="oid" type="integer" db:column="oid"/>
-    <Attribute id="ent16#att31" name="Data inizio" type="time" db:column="data_inizio"/>
-    <Attribute id="ent16#att32" name="Data fine" type="time" db:column="data_fine"/>
+    <Attribute id="ent16#att31" name="Data inizio" type="timestamp" db:column="data_inizio"/>
+    <Attribute id="ent16#att32" name="Data fine" type="timestamp" db:column="data_fine"/>
   </Entity>
   <Entity gr:x="625" gr:y="505" id="ent17" name="Evento" duration="persistent" attributeOrder="ent17#att17 ent17#att62 ent17#att61 ent17#att63 ent17#att64 ent17#att65" db:database="db1" db:table="evento">
     <Attribute id="ent17#att17" key="true" name="oid" type="integer" db:column="oid"/>
@@ -170,7 +170,7 @@
     <Attribute id="ent18#att18" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent18#att33" name="Numero stelle" type="integer" db:column="numero_stelle"/>
     <Attribute id="ent18#att34" name="Recensione" type="text" db:column="recensione"/>
-    <Attribute id="ent18#att35" name="Data" type="time" db:column="data"/>
+    <Attribute id="ent18#att35" name="Data" type="timestamp" db:column="data"/>
     <Attribute id="ent18#att77" name="Tipo" type="string" db:column="tipo"/>
   </Entity>
   <Entity gr:x="620" gr:y="705" id="ent19" name="Sala prove" duration="persistent" attributeOrder="ent19#att19 ent19#att59 ent19#att60" db:database="db1" db:table="sala_prove">
