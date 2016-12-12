@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="110" id="sv4#area3#page17" name="Inserimento Prodotto" ajaxEnabled="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv4#area3#page17" name="Inserimento Prodotto" ajaxEnabled="true">
   <ContentUnits>
     <SelectorUnit gr:x="0" gr:y="0" id="sv4#area3#page17#seu5" name="Seleziona Categoria" entity="ent7" distinctAttributes="ent7#att36">
       <Selector id="sv4#area3#page17#seu5#su4" defaultPolicy="fill" booleanOperator="and"/>
@@ -7,7 +7,7 @@
         <LinkParameter id="sv4#area3#page17#seu5#ln14#par6" name="CategoriaProdottoToCatalogoBase.oid_Categoria [output]" source="ent7#att7Array" target="sv4#area3#page17#enu5#sfld3_output"/>
       </Link>
     </SelectorUnit>
-    <EntryUnit gr:x="245" gr:y="5" id="sv4#area3#page17#enu5" name="Nuovo prodotto" linkOrder="sv4#area3#page17#enu5#ln15" fieldOrder="sv4#area3#page17#enu5#sfld3 sv4#area3#page17#enu5#fld6 sv4#area3#page17#enu5#fld7 sv4#area3#page17#enu5#fld8 sv4#area3#page17#enu5#fld9 sv4#area3#page17#enu5#fld10 sv4#area3#page17#enu5#fld11" ajaxEnableExpandedLinks="true">
+    <EntryUnit gr:x="245" gr:y="5" id="sv4#area3#page17#enu5" name="Categoria" linkOrder="sv4#area3#page17#enu5#ln15" fieldOrder="sv4#area3#page17#enu5#sfld3 sv4#area3#page17#enu5#fld6 sv4#area3#page17#enu5#fld7 sv4#area3#page17#enu5#fld8 sv4#area3#page17#enu5#fld9 sv4#area3#page17#enu5#fld10 sv4#area3#page17#enu5#fld11" ajaxEnableExpandedLinks="true">
       <SelectionField id="sv4#area3#page17#enu5#sfld3" name="Categoria" type="string" ajaxEventEnabled="false"/>
       <Field id="sv4#area3#page17#enu5#fld6" name="Nome modello" type="string" modifiable="true"/>
       <Field id="sv4#area3#page17#enu5#fld7" name="Data Produzione" type="date" modifiable="true"/>

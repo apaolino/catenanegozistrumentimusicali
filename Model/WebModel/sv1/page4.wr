@@ -4,7 +4,7 @@
       <Link id="sv1#page4#pwu2#ln7" name="Visualizza Dettagli Negozio" to="sv1#page7#dau3" automaticCoupling="true" type="normal" validate="true"/>
       <SortAttribute attribute="ent10#att48" order="ascending"/>
     </PowerIndexUnit>
-    <EventCalendarUnit gr:x="180" gr:y="140" id="sv1#page4#ecu1" name="Calendario Eventi" entityBased="true" entity="ent17" displayAttributes="ent17#att62 rel10#role19.ent10#att48 rel10#role19.rel33#role65.ent3#att70 ent17#att61" dateAttribute="ent17#att61" linkOrder="sv1#page4#ecu1#ln4">
+    <EventCalendarUnit gr:x="180" gr:y="140" id="sv1#page4#ecu1" name="Calendario Eventi" entityBased="true" entity="ent17" displayAttributes="ent17#att62 rel10#role19.ent10#att48 rel10#role19.rel33#role65.ent3#att70" dateAttribute="ent17#att61" linkOrder="sv1#page4#ecu1#ln4">
       <Link id="sv1#page4#ecu1#ln4" name="Flow4" to="sv1#page2#dau2" automaticCoupling="true" type="normal" validate="true"/>
       <SortAttribute attribute="ent17#att61" order="ascending"/>
     </EventCalendarUnit>
@@ -67,7 +67,6 @@
           <layout:Attribute attribute="ent17#att62"/>
           <layout:Attribute attribute="rel10#role19.ent10#att48"/>
           <layout:Attribute attribute="rel10#role19.rel33#role65.ent3#att70"/>
-          <layout:Attribute attribute="ent17#att61"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

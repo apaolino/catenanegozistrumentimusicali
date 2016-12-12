@@ -29,6 +29,11 @@
     <MultiDataUnit gr:x="220" gr:y="160" id="sv1#page7#mdu2" name="Recensioni Negozio" entity="ent18" displayAttributes="ent18#att33 ent18#att34 ent18#att35 ent18#att77">
       <SortAttribute attribute="ent18#att33" order="descending"/>
     </MultiDataUnit>
+    <DataUnit gr:x="5" gr:y="285" id="sv1#page7#dau5" name="Dettagli Sala Prove">
+      <Selector id="sv1#page7#dau5#su15" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#page7#dau5#su15#kcond4" name="KeyCondition4" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -211,6 +216,22 @@
             </layout:Row>
           </layout:Grid>
         </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page7#dau5"/>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>

@@ -307,7 +307,7 @@
     </RelationshipRole2>
   </Relationship>
   <Relationship id="rel23" name="Negozio_Catalogo" sourceEntity="ent10" targetEntity="ent11" db:database="db1" db:table="negozio_catalogo">
-    <RelationshipRole1 id="rel23#role45" name="NegozioToCatalogo" maxCard="2">
+    <RelationshipRole1 id="rel23#role45" name="NegozioToCatalogo" maxCard="N">
       <db:JoinColumn attribute="ent10#att10" name="negozio_oid"/>
     </RelationshipRole1>
     <RelationshipRole2 id="rel23#role46" name="CatalogoToNegozio" maxCard="N">
@@ -492,7 +492,7 @@
     <Attribute id="ent26#att75" name="Nome Tipologia Evento" type="string" db:column="nome_tipologia_evento"/>
   </Entity>
   <Relationship id="rel42" name="Evento_Tipo Evento" sourceEntity="ent17" targetEntity="ent26" db:database="db1" db:table="evento_tipo_evento">
-    <RelationshipRole1 id="rel42#role83" name="EventoToTipo Evento" maxCard="2">
+    <RelationshipRole1 id="rel42#role83" name="EventoToTipo Evento" maxCard="N">
       <db:JoinColumn attribute="ent17#att17" name="evento_oid"/>
     </RelationshipRole1>
     <RelationshipRole2 id="rel42#role84" name="Tipo EventoToEvento" maxCard="N">
