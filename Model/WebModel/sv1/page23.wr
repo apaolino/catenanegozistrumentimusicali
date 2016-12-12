@@ -1,0 +1,48 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="20" gr:y="10" id="sv1#page23" name="Login">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv1#page23#enu9" name="Login Form" linkOrder="sv1#page23#enu9#ln30">
+      <Field id="sv1#page23#enu9#fld17" name="Username" type="string" modifiable="true"/>
+      <Field id="sv1#page23#enu9#fld18" name="Password" type="password" modifiable="true" hidden="false"/>
+      <Link id="sv1#page23#enu9#ln30" name="Accedi" to="sv1#lgu3" type="normal" validate="true">
+        <LinkParameter id="sv1#page23#enu9#ln30#par21" name="Username_Username" source="sv1#page23#enu9#fld17" target="sv1#lgu3.username"/>
+        <LinkParameter id="sv1#page23#enu9#ln30#par27" name="Password_Password" source="sv1#page23#enu9#fld18" target="sv1#lgu3.password"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page23#enu9">
+          <layout:Link link="sv1#page23#enu9#ln30"/>
+          <layout:Field field="sv1#page23#enu9#fld17"/>
+          <layout:Field field="sv1#page23#enu9#fld18"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

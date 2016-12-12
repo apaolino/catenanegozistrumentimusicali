@@ -64,7 +64,7 @@
       <db:JoinColumn attribute="userOID" name="utente_registrato_oid"/>
     </Generalization>
   </Entity>
-  <Entity gr:x="1210" gr:y="1365" id="ent7" name="Categoria Prodotto" duration="persistent" attributeOrder="ent7#att7 ent7#att36" db:database="db1" db:table="categoria_prodotto">
+  <Entity gr:x="1360" gr:y="1475" id="ent7" name="Categoria Prodotto" duration="persistent" attributeOrder="ent7#att7 ent7#att36" db:database="db1" db:table="categoria_prodotto">
     <Attribute id="ent7#att7" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent7#att36" name="Nome" type="string" db:column="nome"/>
   </Entity>
@@ -94,7 +94,7 @@
     <Attribute id="ent11#att46" name="Nome" type="string" db:column="nome"/>
     <Attribute id="ent11#att47" name="Anno di validit&#224;" type="integer" db:column="anno_di_validita"/>
   </Entity>
-  <Entity gr:x="1060" gr:y="1110" id="ent12" name="Prodotto" duration="persistent" attributeOrder="ent12#att12 ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45 ent12#att66 ent12#att67 ent12#att68" db:database="db1" db:table="prodotto">
+  <Entity gr:x="1230" gr:y="1095" id="ent12" name="Prodotto" duration="persistent" attributeOrder="ent12#att12 ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45 ent12#att66 ent12#att67 ent12#att68" db:database="db1" db:table="prodotto">
     <Attribute id="ent12#att12" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent12#att1" name="Nome modello" type="string" db:column="nome_modello"/>
     <Attribute id="ent12#att41" name="Data produzione" type="date" db:column="data_produzione"/>
@@ -371,7 +371,7 @@
       <db:JoinColumn attribute="ent2#att25" name="oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="1375" gr:y="1225" id="ent4" name="Tipo prodotto" duration="persistent" attributeOrder="ent4#att37 ent4#att38" db:database="db1" db:table="tipo_prodotto">
+  <Entity gr:x="1545" gr:y="1235" id="ent4" name="Tipo prodotto" duration="persistent" attributeOrder="ent4#att37 ent4#att38" db:database="db1" db:table="tipo_prodotto">
     <Attribute id="ent4#att37" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent4#att38" name="Nome" type="string" db:column="nome"/>
   </Entity>
@@ -487,8 +487,9 @@
       <db:JoinColumn attribute="ent12#att12" name="oid"/>
     </Generalization>
   </Entity>
-  <Entity gr:x="695" gr:y="340" id="ent26" name="Tipo Evento" duration="persistent" db:database="db1" db:table="tipo_evento">
+  <Entity gr:x="695" gr:y="340" id="ent26" name="Tipo Evento" duration="persistent" attributeOrder="ent26#att78 ent26#att75" db:database="db1" db:table="tipo_evento">
     <Attribute id="ent26#att78" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent26#att75" name="Nome Tipologia Evento" type="string" db:column="nome_tipologia_evento"/>
   </Entity>
   <Relationship id="rel42" name="Evento_Tipo Evento" sourceEntity="ent17" targetEntity="ent26" db:database="db1" db:table="evento_tipo_evento">
     <RelationshipRole1 id="rel42#role83" name="EventoToTipo Evento" maxCard="2">
@@ -500,7 +501,7 @@
   </Relationship>
   <db:Database id="db1" name="catenadb_mysql" type="MySQL" username="root" url="jdbc:mysql://localhost/CatenaDB_MySql">
   </db:Database>
-  <Entity gr:x="900" gr:y="405" id="ent22" name="Periodo" duration="persistent" attributeOrder="ent22#att72 ent22#att74" db:database="db1" db:table="periodo">
+  <Entity gr:x="955" gr:y="445" id="ent22" name="Periodo" duration="persistent" attributeOrder="ent22#att72 ent22#att74" db:database="db1" db:table="periodo">
     <Attribute id="ent22#att72" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent22#att74" name="Mese" type="string" db:column="mese"/>
   </Entity>
@@ -520,9 +521,9 @@
       <db:JoinColumn attribute="ent7#att7" name="categoria_prodotto_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Relationship id="rel31" name="CategoriaProdottoCatalogoBase" sourceEntity="ent7" targetEntity="ent13" db:database="db1" db:table="categoria_prodotto">
-    <RelationshipRole1 id="rel31#role61" name="CategoriaProdottoToCatalogoBase" maxCard="1">
-      <db:JoinColumn attribute="ent7#att7" name="oid"/>
+  <Relationship id="rel31" name="CategoriaProdottoCatalogoBase" sourceEntity="ent7" targetEntity="ent13" db:database="db1" db:table="categoriaprodottocatalogobase">
+    <RelationshipRole1 id="rel31#role61" name="CategoriaProdottoToCatalogoBase" maxCard="N">
+      <db:JoinColumn attribute="ent7#att7" name="categoria_prodotto_oid"/>
     </RelationshipRole1>
     <RelationshipRole2 id="rel31#role62" name="CatalogoBaseToCategoriaProdotto" maxCard="N">
       <db:JoinColumn attribute="ent11#att11" name="catalogo_base_oid"/>

@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Warnings> 
-  <Warning xpath="id('sv4#page21#seu9#ln45#par181')" rootXPath="id('sv4')" key="UNUSED_PASSING_PARAMETER" label="oid_PASSING"> 
-    <Message>The passing parameter 'oid_PASSING' is declared but never used</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv4#page21#seu9#ln45#par181'</Resolution> 
+  <Warning xpath="id('sv1#page2#dau2#ln19')" rootXPath="id('sv1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="EventoNegozio"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'EventoNegozio'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv1#page7#dau3#ln17')" rootXPath="id('sv1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Flow17"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Flow17'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv1#lgu3')" rootXPath="id('sv1')" error="false" label="Accedi" key="NO_OUTGOING_OK_LINKS"> 
+    <Message>No outgoing OK flow(s) for the operation 'Accedi'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv1#seu4')" rootXPath="id('sv1')" error="false" label="Seleziona Negozio" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Seleziona Negozio'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#page6#enu1')" rootXPath="id('sv1')" key="NO_FIELDS" label="Dati per la registrazione"> 
+    <Message>No fields or flows are specified for the component 'Dati per la registrazione'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#page7#alt1#page1#hinu1#hiulvl5')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Livello Prodotto"> 
+    <Message>Sorting attribute are unspecified for the component 'Livello Prodotto'</Message> 
   </Warning> 
 </Warnings>

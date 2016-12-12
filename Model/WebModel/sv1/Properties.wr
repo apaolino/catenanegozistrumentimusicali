@@ -1,6 +1,6 @@
 <SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="Home Visitatore" homePage="sv1#page4">
   <OperationUnits>
-    <LoginUnit id="sv1#lgu3" name="Accedi" gr:x="20" gr:y="70">
+    <LoginUnit id="sv1#lgu3" name="Accedi" gr:x="-120" gr:y="75">
       <KOLink id="sv1#lgu3#kln1" name="KOFlow1" to="sv1#page8" automaticCoupling="true" gr:bendpoints="42,94,-113,-26"/>
     </LoginUnit>
     <SelectorUnit gr:x="1555" gr:y="145" id="sv1#seu4" name="Seleziona Negozio" entity="ent10">

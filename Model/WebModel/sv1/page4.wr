@@ -1,13 +1,5 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="245" gr:y="90" id="sv1#page4" name="Home Visitatore" linkOrder="sv1#page4#ln1 sv1#page4#ln10">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="245" gr:y="90" id="sv1#page4" name="Home Visitatore" linkOrder="sv1#page4#ln1 sv1#page4#ln10 sv1#page4#ln29">
   <ContentUnits>
-    <EntryUnit gr:x="10" gr:y="80" id="sv1#page4#enu2" name="Login" linkOrder="sv1#page4#enu2#ln5">
-      <Field id="sv1#page4#enu2#fld2" name="Username" type="string" modifiable="true"/>
-      <Field id="sv1#page4#enu2#fld3" name="Password" type="string" modifiable="true"/>
-      <Link id="sv1#page4#enu2#ln5" name="Flow4" to="sv1#lgu3" type="normal" validate="true" gr:bendpoints="-48,-116,107,4">
-        <LinkParameter id="sv1#page4#enu2#ln5#par1" name="Username_Username" source="sv1#page4#enu2#fld2" target="sv1#lgu3.username"/>
-        <LinkParameter id="sv1#page4#enu2#ln5#par2" name="Password_Password" source="sv1#page4#enu2#fld3" target="sv1#lgu3.password"/>
-      </Link>
-    </EntryUnit>
     <PowerIndexUnit gr:x="0" gr:y="160" id="sv1#page4#pwu2" name="Elenco Negozi" sortable="true" checkable="false" useCountQuery="false" entity="ent10" linkOrder="sv1#page4#pwu2#ln7" displayAttributes="ent10#att48">
       <Link id="sv1#page4#pwu2#ln7" name="Visualizza Dettagli Negozio" to="sv1#page7#dau3" automaticCoupling="true" type="normal" validate="true"/>
       <SortAttribute attribute="ent10#att48" order="ascending"/>
@@ -22,13 +14,7 @@
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#page4#enu2">
-          <layout:Field field="sv1#page4#enu2#fld2"/>
-          <layout:Field field="sv1#page4#enu2#fld3"/>
-          <layout:Link link="sv1#page4#enu2#ln5"/>
-        </layout:Unit>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -132,6 +118,7 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Link id="sv1#page4#ln1" name="Flow1" to="sv1#page6#enu1" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv1#page4#ln1" name="Registrazione" to="sv1#page6#enu1" automaticCoupling="true" type="normal" validate="true"/>
   <Link id="sv1#page4#ln10" name="Ricerca Avanzata" to="sv1#page9" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv1#page4#ln29" name="Login" to="sv1#page23" automaticCoupling="true" type="normal" validate="true"/>
 </Page>
