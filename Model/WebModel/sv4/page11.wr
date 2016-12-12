@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="120" gr:y="155" id="sv4#page11" name="Home Page Gestore Catena" linkOrder="sv4#page11#ln21">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="120" gr:y="155" id="sv4#page11" name="Home Page Gestore Catena" linkOrder="sv4#page11#ln21 sv4#page11#ln27">
   <ContentUnits/>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -8,7 +8,7 @@
             <layout:Row>
               <layout:Cell colspan="12">
                 <layout:Unit unitId="sv4#page11#page12#mssu1">
-                  <layout:Link link="sv4#page11#page12#mssu1#ln8"/>
+                  <layout:Link link="sv4#page11#page12#mssu1#ln29"/>
                 </layout:Unit>
               </layout:Cell>
               <layout:Cell/>
@@ -90,44 +90,7 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:SubPage pageId="sv4#page11#page14">
-          <layout:Grid containerType="grid">
-            <layout:Row>
-              <layout:Cell colspan="12"/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-            </layout:Row>
-            <layout:Row>
-              <layout:Cell colspan="12">
-                <layout:Unit unitId="sv4#page11#page14#mssu5">
-                  <layout:Link link="sv4#page11#page14#mssu5#ln32"/>
-                </layout:Unit>
-              </layout:Cell>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-            </layout:Row>
-          </layout:Grid>
-        </layout:SubPage>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -245,9 +208,9 @@
   </layout:Grid>
   <Page gr:x="5" gr:y="40" id="sv4#page11#page12" name="Gestione Prodotti">
     <ContentUnits>
-      <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page11#page12#mssu1" name="Message1" linkOrder="sv4#page11#page12#mssu1#ln8">
-        <Message xml:space="preserve">Clicca per inserire un nuovo prodotto</Message>
-        <Link id="sv4#page11#page12#mssu1#ln8" name="Flow8" to="sv4#area3#page17" automaticCoupling="true" type="normal" validate="true"/>
+      <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page11#page12#mssu1" name="Message1" linkOrder="sv4#page11#page12#mssu1#ln29">
+        <Message xml:space="preserve">Vai all'area di gestione dei prodotti </Message>
+        <Link id="sv4#page11#page12#mssu1#ln29" name="Gestione prodotti" to="sv4#area3" automaticCoupling="true" type="normal" validate="true"/>
       </MultiMessageUnit>
     </ContentUnits>
   </Page>
@@ -257,14 +220,6 @@
       <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page11#page13#mssu3" name="Cliccare per aggiungere articoli al catalogo base" linkOrder="sv4#page11#page13#mssu3#ln18">
         <Link id="sv4#page11#page13#mssu3#ln18" name="Flow18" to="sv4#area2#page5" automaticCoupling="true" type="normal" validate="true"/>
         <Message xml:space="preserve">Cliccare per aggiungere articoli al catalogo base</Message>
-      </MultiMessageUnit>
-    </ContentUnits>
-  </Page>
-  <Page gr:x="415" gr:y="0" id="sv4#page11#page14" name="Gestione Dati Utente">
-    <ContentUnits>
-      <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page11#page14#mssu5" name="Visualizza dati utente" linkOrder="sv4#page11#page14#mssu5#ln32">
-        <Message xml:space="preserve">Cliccare per visualizzare i dati utente</Message>
-        <Link id="sv4#page11#page14#mssu5#ln32" name="Visualizza dati" to="sv4#page21#seu8" automaticCoupling="true" type="normal" validate="true"/>
       </MultiMessageUnit>
     </ContentUnits>
   </Page>
@@ -283,4 +238,5 @@
   <Page gr:x="440" gr:y="460" id="sv4#page11#page16" name="Gestione Utenti">
     <ContentUnits/>
   </Page>
+  <Link id="sv4#page11#ln27" name="Visualizza dati utente" to="sv4#page21#seu8" automaticCoupling="true" type="normal" validate="true"/>
 </Page>
