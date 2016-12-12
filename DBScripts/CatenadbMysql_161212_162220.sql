@@ -436,6 +436,16 @@ alter table `prenotazione`  add column  `acquisto_oid`  integer;
 alter table `prenotazione`   add index fk_prenotazione_acquisto (`acquisto_oid`), add constraint fk_prenotazione_acquisto foreign key (`acquisto_oid`) references `acquisto` (`oid`);
 
 
+-- Gestore Catena_Utente Registrato [rel35]
+create table `gestore_catena_utente_registra` (
+   `gestore_catena_oid`  integer not null,
+   `utente_registrato_oid`  integer not null,
+  primary key (`gestore_catena_oid`, `utente_registrato_oid`)
+);
+alter table `gestore_catena_utente_registra`   add index fk_gestore_catena_utente_regis (`gestore_catena_oid`), add constraint fk_gestore_catena_utente_regis foreign key (`gestore_catena_oid`) references `gestore_catena` (`utente_registrato_oid`);
+alter table `gestore_catena_utente_registra`   add index fk_gestore_catena_utente_reg_2 (`utente_registrato_oid`), add constraint fk_gestore_catena_utente_reg_2 foreign key (`utente_registrato_oid`) references `utente_registrato` (`oid`);
+
+
 -- Catena Negozi_Indirizzo [rel36]
 alter table `indirizzo`  add column  `catena_negozi_oid`  integer;
 alter table `indirizzo`   add index fk_indirizzo_catena_negozi (`catena_negozi_oid`), add constraint fk_indirizzo_catena_negozi foreign key (`catena_negozi_oid`) references `catena_negozi` (`oid`);
@@ -524,7 +534,7 @@ alter table `prenotazione_noleggio_prodotto`   add index fk_prenotazione_noleggi
 
 
 -- GEN FK: Gestore Catena --> Utente Registrato
-alter table `gestore_catena`   add index fk_gestore_catena_utente_regis (`utente_registrato_oid`), add constraint fk_gestore_catena_utente_regis foreign key (`utente_registrato_oid`) references `utente_registrato` (`oid`);
+alter table `gestore_catena`   add index fk_gestore_catena_utente_reg_3 (`utente_registrato_oid`), add constraint fk_gestore_catena_utente_reg_3 foreign key (`utente_registrato_oid`) references `utente_registrato` (`oid`);
 
 
 -- GEN FK: Gestore Singolo Negozio --> Utente Registrato

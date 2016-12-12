@@ -54,12 +54,12 @@
       <db:JoinColumn attribute="moduleOID" name="module_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="165" gr:y="530" id="ent5" name="Gestore Catena" duration="persistent" db:database="db1" db:table="gestore_catena">
+  <Entity gr:x="170" gr:y="555" id="ent5" name="Gestore Catena" duration="persistent" db:database="db1" db:table="gestore_catena">
     <Generalization superEntity="User">
       <db:JoinColumn attribute="userOID" name="utente_registrato_oid"/>
     </Generalization>
   </Entity>
-  <Entity gr:x="320" gr:y="530" id="ent6" name="Gestore Singolo Negozio" duration="persistent" db:database="db1" db:table="gestore_singolo_negozio">
+  <Entity gr:x="375" gr:y="545" id="ent6" name="Gestore Singolo Negozio" duration="persistent" db:database="db1" db:table="gestore_singolo_negozio">
     <Generalization superEntity="User">
       <db:JoinColumn attribute="userOID" name="utente_registrato_oid"/>
     </Generalization>
@@ -274,9 +274,9 @@
       <db:JoinColumn attribute="ent15#att15" name="oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Relationship id="rel18" name="Valutazione_Negozio" sourceEntity="ent18" targetEntity="ent10" gr:bendpoints="-345,43,390,-112;-493,117,262,-73" db:database="db1" db:table="recensione">
-    <RelationshipRole1 id="rel18#role35" name="ValutazioneToNegozio" maxCard="1">
-      <db:JoinColumn attribute="ent18#att18" name="oid"/>
+  <Relationship id="rel18" name="Valutazione_Negozio" sourceEntity="ent18" targetEntity="ent10" gr:bendpoints="-345,43,390,-112;-493,117,262,-73" db:database="db1" db:table="valutazione_negozio">
+    <RelationshipRole1 id="rel18#role35" name="ValutazioneToNegozio" maxCard="N">
+      <db:JoinColumn attribute="ent18#att18" name="recensione_oid"/>
     </RelationshipRole1>
     <RelationshipRole2 id="rel18#role36" name="NegozioToValutazione" maxCard="N">
       <db:JoinColumn attribute="ent10#att10" name="negozio_oid"/>
@@ -290,9 +290,9 @@
       <db:JoinColumn attribute="userOID" name="cliente_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Relationship id="rel21" name="Valutazione_Prodotto" sourceEntity="ent18" targetEntity="ent12" db:database="db1" db:table="recensione">
+  <Relationship id="rel21" name="Valutazione_Prodotto" sourceEntity="ent18" targetEntity="ent12" db:database="db1" db:table="valutazione_prodotto">
     <RelationshipRole1 id="rel21#role41" name="ValutazioneToProdotto" maxCard="N">
-      <db:JoinColumn attribute="ent18#att18" name="oid"/>
+      <db:JoinColumn attribute="ent18#att18" name="recensione_oid"/>
     </RelationshipRole1>
     <RelationshipRole2 id="rel21#role42" name="ProdottoToValutazione" maxCard="N">
       <db:JoinColumn attribute="ent12#att12" name="prodotto_oid"/>
@@ -429,14 +429,6 @@
       <db:JoinColumn attribute="ent3#att69" name="zona_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Relationship id="rel35" name="Gestore Catena_Utente Registrato" sourceEntity="ent5" targetEntity="User" gr:bendpoints="-19,-115,-224,155" db:database="db1" db:table="gestore_catena_utente_registra">
-    <RelationshipRole1 id="rel35#role69" name="Gestore CatenaToUtente Registrato" maxCard="N">
-      <db:JoinColumn attribute="userOID" name="gestore_catena_oid"/>
-    </RelationshipRole1>
-    <RelationshipRole2 id="rel35#role70" name="Utente RegistratoToGestore Catena" maxCard="N">
-      <db:JoinColumn attribute="userOID" name="utente_registrato_oid"/>
-    </RelationshipRole2>
-  </Relationship>
   <Relationship id="rel36" name="Catena Negozi_Indirizzo" sourceEntity="ent9" targetEntity="ent1" gr:bendpoints="-213,-2,-163,868;-214,-873,-164,-3" db:database="db1" db:table="indirizzo">
     <RelationshipRole1 id="rel36#role71" name="Catena NegoziToIndirizzo" maxCard="1">
       <db:JoinColumn attribute="ent9#att9" name="catena_negozi_oid"/>
@@ -473,7 +465,7 @@
     <RelationshipRole1 id="rel28#role55" name="ProdottoToRecensione" maxCard="N" derivationQuery="new::Self TO ent18(as TargetEntity) where TargetEntity.ent18#att33 &gt;= '4'">
       <db:JoinColumn attribute="ent12#att12" name="s_oid"/>
     </RelationshipRole1>
-    <RelationshipRole2 id="rel28#role56" name="RecensioneToProdotto" maxCard="1">
+    <RelationshipRole2 id="rel28#role56" name="RecensioneToProdotto" maxCard="N">
       <db:JoinColumn attribute="ent18#att18" name="t_oid"/>
     </RelationshipRole2>
   </Relationship>
@@ -481,7 +473,7 @@
     <RelationshipRole1 id="rel40#role79" name="NegozioToRecensione" maxCard="N" derivationQuery="new::Self TO ent18(as TargetEntity) where TargetEntity.ent18#att33 &gt;= '4'">
       <db:JoinColumn attribute="ent10#att10" name="s_oid"/>
     </RelationshipRole1>
-    <RelationshipRole2 id="rel40#role80" name="RecensioneToNegozio" maxCard="1">
+    <RelationshipRole2 id="rel40#role80" name="RecensioneToNegozio" maxCard="N">
       <db:JoinColumn attribute="ent18#att18" name="t_oid"/>
     </RelationshipRole2>
   </Relationship>
@@ -506,7 +498,8 @@
       <db:JoinColumn attribute="ent26#att78" name="tipo_evento_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db1" name="catenadb_mysql" type="MySQL" username="root" url="jdbc:mysql://localhost/CatenaDB_MySql"/>
+  <db:Database id="db1" name="catenadb_mysql" type="MySQL" username="root" url="jdbc:mysql://localhost/CatenaDB_MySql">
+  </db:Database>
   <Entity gr:x="900" gr:y="405" id="ent22" name="Periodo" duration="persistent" attributeOrder="ent22#att72 ent22#att74" db:database="db1" db:table="periodo">
     <Attribute id="ent22#att72" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent22#att74" name="Mese" type="string" db:column="mese"/>
@@ -527,7 +520,7 @@
       <db:JoinColumn attribute="ent7#att7" name="categoria_prodotto_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Relationship id="rel31" name="CategoriaProdottoCatalogoBase" db:database="db1" db:table="categoria_prodotto" sourceEntity="ent7" targetEntity="ent13">
+  <Relationship id="rel31" name="CategoriaProdottoCatalogoBase" sourceEntity="ent7" targetEntity="ent13" db:database="db1" db:table="categoria_prodotto">
     <RelationshipRole1 id="rel31#role61" name="CategoriaProdottoToCatalogoBase" maxCard="1">
       <db:JoinColumn attribute="ent7#att7" name="oid"/>
     </RelationshipRole1>
@@ -535,9 +528,9 @@
       <db:JoinColumn attribute="ent11#att11" name="catalogo_base_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Relationship id="rel37" name="CatalogoSpecificoCategoriaProdotto" db:database="db1" db:table="catalogo_specifico" sourceEntity="ent14" targetEntity="ent7" gr:bendpoints="153,65,-197,-80">
+  <Relationship id="rel37" name="CatalogoSpecificoCategoriaProdotto" sourceEntity="ent14" targetEntity="ent7" gr:bendpoints="153,65,-197,-80" db:database="db1" db:table="catalogo_specifico">
     <RelationshipRole1 id="rel37#role73" name="CatalogoSpecificoToCategoriaProdotto" maxCard="1">
-      <db:JoinColumn attribute="ent11#att11" name="oid"/>
+      <db:JoinColumn attribute="ent11#att11" name="catalogo_oid"/>
     </RelationshipRole1>
     <RelationshipRole2 id="rel37#role74" name="CategoriaProdottoToCatalogoSpecifico" maxCard="N">
       <db:JoinColumn attribute="ent7#att7" name="categoria_prodotto_oid"/>
