@@ -3,8 +3,8 @@
     <LogoutUnit gr:x="715" gr:y="-15" id="sv4#lou3" name="Logout" siteView="sv1">
       <KOLink id="sv4#lou3#kln3" name="KOFlow3" to="sv4#page11" automaticCoupling="true" gr:bendpoints="81,83,391,-342"/>
     </LogoutUnit>
-    <CreateUnit gr:x="-355" gr:y="380" id="sv4#cru1" name="Crea nuovo articolo" entity="ent12" skipBlankRecords="false" notBlankAttributes="ent12#att12 ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45" bulk="false">
-      <OKLink id="sv4#cru1#oln1" name="OKFlow1" to="sv4#area3#page17" automaticCoupling="true"/>
+    <CreateUnit gr:x="145" gr:y="-115" id="sv4#cru1" name="Crea nuovo articolo" entity="ent12" skipBlankRecords="false" notBlankAttributes="ent12#att12 ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45" bulk="false">
+      <OKLink id="sv4#cru1#oln11" name="OKFlow3" to="sv4#page27#mssu12" automaticCoupling="true" gr:bendpoints="2,-136,467,-211;-600,-139,-135,-214;-602,69,-137,-6"/>
     </CreateUnit>
     <ModifyUnit gr:x="1565" gr:y="135" id="sv4#mfu1" name="Aggiorna dati GC" entity="User">
       <Selector id="sv4#mfu1#su10" defaultPolicy="fill" booleanOperator="and">
@@ -28,5 +28,14 @@
       <OKLink id="sv4#mfu2#oln4" name="OKFlow4" to="sv4#page10#mssu8" automaticCoupling="true"/>
       <KOLink id="sv4#mfu2#kln4" name="KOFlow4" to="sv4#page20#mssu9" automaticCoupling="true" gr:bendpoints="123,-27,198,238;99,-281,174,-16"/>
     </ModifyUnit>
+    <CreateUnit gr:x="-390" gr:y="415" id="sv4#cru2" name="Crea nuova Categoria" entity="ent7">
+      <OKLink id="sv4#cru2#oln10" name="OKFlow7" to="sv4#page27#mssu12" automaticCoupling="true" gr:bendpoints="-94,-1,-159,454;-42,-380,-107,75;-3,-410,-68,45"/>
+    </CreateUnit>
+    <CreateUnit gr:x="-70" gr:y="420" id="sv4#cru3" name="Crea nuovo produttore" entity="ent20">
+      <OKLink id="sv4#cru3#oln12" name="OKFlow9" to="sv4#page27#mssu12" automaticCoupling="true" gr:bendpoints="-20,53,235,513;-163,55,92,515;-467,54,-212,514;-443,-214,-188,246;-391,-422,-136,38;-354,-446,-99,14"/>
+    </CreateUnit>
+    <CreateUnit gr:x="-240" gr:y="420" id="sv4#cru4" name=" Crea nuovo tipo prodotto" entity="ent4">
+      <OKLink id="sv4#cru4#oln13" name="OKFlow8" to="sv4#page27#mssu12" automaticCoupling="true" gr:bendpoints="-57,50,38,510;-240,43,-145,503;-281,2,-186,462;-278,-73,-183,387;-212,-410,-117,50;-171,-437,-76,23"/>
+    </CreateUnit>
   </OperationUnits>
 </SiteView>
