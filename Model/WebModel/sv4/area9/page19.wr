@@ -1,13 +1,43 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv4#area9#page19" name="Inserimento nuovo negozio">
   <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="0" id="sv4#area9#page19#enu3" name="Dati nuovo negozio">
+    <EntryUnit gr:x="240" gr:y="0" id="sv4#area9#page19#enu3" name="Dati nuovo negozio" fieldOrder="sv4#area9#page19#enu3#fld1 sv4#area9#page19#enu3#fld4 sv4#area9#page19#enu3#fld5 sv4#area9#page19#enu3#fld12 sv4#area9#page19#enu3#fld13 sv4#area9#page19#enu3#fld14 sv4#area9#page19#enu3#sfld7 sv4#area9#page19#enu3#fld34 sv4#area9#page19#enu3#fld35 sv4#area9#page19#enu3#fld32 sv4#area9#page19#enu3#fld33 sv4#area9#page19#enu3#fld37 sv4#area9#page19#enu3#fld36 sv4#area9#page19#enu3#fld38" linkOrder="sv4#area9#page19#enu3#ln44">
       <Field id="sv4#area9#page19#enu3#fld1" name="Nome" type="string" modifiable="true"/>
-      <Field id="sv4#area9#page19#enu3#fld4" name="Fax" type="string" modifiable="true"/>
+      <Field id="sv4#area9#page19#enu3#fld4" name="Fax" type="integer" modifiable="true"/>
       <Field id="sv4#area9#page19#enu3#fld5" name="E-mail" type="string" modifiable="true"/>
-      <Field id="sv4#area9#page19#enu3#fld12" name="Data apertura" type="string" modifiable="true"/>
-      <Field id="sv4#area9#page19#enu3#fld13" name="Dimensione" type="string" modifiable="true"/>
-      <Field id="sv4#area9#page19#enu3#fld14" name="Numero telefono" type="string" modifiable="true"/>
+      <Field id="sv4#area9#page19#enu3#fld12" name="Data apertura" type="date" modifiable="true"/>
+      <Field id="sv4#area9#page19#enu3#fld13" name="Dimensione" type="integer" modifiable="true"/>
+      <Field id="sv4#area9#page19#enu3#fld14" name="Numero telefono" type="integer" modifiable="true"/>
+      <SelectionField id="sv4#area9#page19#enu3#sfld7" name="Gestore negozio" type="string"/>
+      <Field id="sv4#area9#page19#enu3#fld32" name="CAP" type="string" modifiable="true"/>
+      <Field id="sv4#area9#page19#enu3#fld33" name="Citt&#224;" type="string" modifiable="true"/>
+      <Field id="sv4#area9#page19#enu3#fld34" name="Via" type="string" modifiable="true"/>
+      <Field id="sv4#area9#page19#enu3#fld35" name="Numero Civico" type="integer" modifiable="true"/>
+      <Field id="sv4#area9#page19#enu3#fld36" name="Stato" type="string" modifiable="true"/>
+      <Field id="sv4#area9#page19#enu3#fld37" name="Provincia" type="string" modifiable="true"/>
+      <Link id="sv4#area9#page19#enu3#ln44" name="Flow44" to="sv4#cru6" type="normal" validate="true">
+        <LinkParameter id="sv4#area9#page19#enu3#ln44#par47" name="CAP_CAP" source="sv4#area9#page19#enu3#fld32" target="sv4#cru6.ent1#att6"/>
+        <LinkParameter id="sv4#area9#page19#enu3#ln44#par48" name="Citt&#224;_Citt&#224;" source="sv4#area9#page19#enu3#fld33" target="sv4#cru6.ent1#att8"/>
+        <LinkParameter id="sv4#area9#page19#enu3#ln44#par49" name="Numero Civico_Numero civico" source="sv4#area9#page19#enu3#fld35" target="sv4#cru6.ent1#att5"/>
+        <LinkParameter id="sv4#area9#page19#enu3#ln44#par50" name="Provincia_Provincia" source="sv4#area9#page19#enu3#fld37" target="sv4#cru6.ent1#att13"/>
+        <LinkParameter id="sv4#area9#page19#enu3#ln44#par53" name="Stato_Stato" source="sv4#area9#page19#enu3#fld36" target="sv4#cru6.ent1#att14"/>
+        <LinkParameter id="sv4#area9#page19#enu3#ln44#par54" name="Via_Via" source="sv4#area9#page19#enu3#fld34" target="sv4#cru6.ent1#att4"/>
+        <LinkParameter id="sv4#area9#page19#enu3#ln44#par55" name="Data apertura_PASSING" source="sv4#area9#page19#enu3#fld12" passing="true"/>
+        <LinkParameter id="sv4#area9#page19#enu3#ln44#par56" name="Dimensione_PASSING" source="sv4#area9#page19#enu3#fld13" passing="true"/>
+        <LinkParameter id="sv4#area9#page19#enu3#ln44#par85" name="E-mail_PASSING" source="sv4#area9#page19#enu3#fld5" passing="true"/>
+        <LinkParameter id="sv4#area9#page19#enu3#ln44#par86" name="Fax_PASSING" source="sv4#area9#page19#enu3#fld4" passing="true"/>
+        <LinkParameter id="sv4#area9#page19#enu3#ln44#par87" name="Gestore negozio_PASSING" source="sv4#area9#page19#enu3#sfld7" passing="true"/>
+        <LinkParameter id="sv4#area9#page19#enu3#ln44#par88" name="Nome_PASSING" source="sv4#area9#page19#enu3#fld1" passing="true"/>
+        <LinkParameter id="sv4#area9#page19#enu3#ln44#par95" name="Numero telefono_PASSING" source="sv4#area9#page19#enu3#fld14" passing="true"/>
+        <LinkParameter id="sv4#area9#page19#enu3#ln44#par118" name="Primario_Primario" source="sv4#area9#page19#enu3#fld38" target="sv4#cru6.ent1#att23"/>
+      </Link>
+      <Field id="sv4#area9#page19#enu3#fld38" name="Primario" type="boolean" modifiable="true"/>
     </EntryUnit>
+    <SelectorUnit gr:x="0" gr:y="0" id="sv4#area9#page19#seu10" name="Seleziona gestore negozio" entity="ent6">
+      <Link id="sv4#area9#page19#seu10#ln41" name="Flow41" to="sv4#area9#page19#enu3" type="transport" validate="true">
+        <LinkParameter id="sv4#area9#page19#seu10#ln41#par39" name="Nome_Gestore negozio [label]" source="User#att20Array" target="sv4#area9#page19#enu3#sfld7_label"/>
+        <LinkParameter id="sv4#area9#page19#seu10#ln41#par40" name="oid_Gestore negozio [output]" source="userOIDArray" target="sv4#area9#page19#enu3#sfld7_output"/>
+      </Link>
+    </SelectorUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -19,8 +49,31 @@
           <layout:Field field="sv4#area9#page19#enu3#fld12"/>
           <layout:Field field="sv4#area9#page19#enu3#fld13"/>
           <layout:Field field="sv4#area9#page19#enu3#fld14"/>
+          <layout:Field field="sv4#area9#page19#enu3#sfld7"/>
+          <layout:Field field="sv4#area9#page19#enu3#fld34"/>
+          <layout:Field field="sv4#area9#page19#enu3#fld35"/>
+          <layout:Field field="sv4#area9#page19#enu3#fld32"/>
+          <layout:Field field="sv4#area9#page19#enu3#fld33"/>
+          <layout:Field field="sv4#area9#page19#enu3#fld37"/>
+          <layout:Field field="sv4#area9#page19#enu3#fld36"/>
+          <layout:Field field="sv4#area9#page19#enu3#fld38"/>
+          <layout:Link link="sv4#area9#page19#enu3#ln44"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

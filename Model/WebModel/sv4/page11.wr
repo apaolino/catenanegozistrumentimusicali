@@ -147,7 +147,7 @@
             <layout:Row>
               <layout:Cell colspan="12">
                 <layout:Unit unitId="sv4#page11#page15#mssu4">
-                  <layout:Link link="sv4#page11#page15#mssu4#ln24"/>
+                  <layout:Link link="sv4#page11#page15#mssu4#ln47"/>
                 </layout:Unit>
               </layout:Cell>
               <layout:Cell/>
@@ -260,9 +260,9 @@
       </MultiMessageUnit>
     </ContentUnits>
   </Page>
-  <Page gr:x="415" gr:y="0" id="sv4#page11#page14" name="Gestione Dati Utente">
+  <Page gr:x="415" gr:y="0" id="sv4#page11#page14" name="Gestione Dati Personali">
     <ContentUnits>
-      <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page11#page14#mssu5" name="Visualizza dati utente" linkOrder="sv4#page11#page14#mssu5#ln32">
+      <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page11#page14#mssu5" name="Visualizza dati personali" linkOrder="sv4#page11#page14#mssu5#ln32">
         <Message xml:space="preserve">Cliccare per visualizzare i dati utente</Message>
         <Link id="sv4#page11#page14#mssu5#ln32" name="Visualizza dati" to="sv4#page21#seu8" automaticCoupling="true" type="normal" validate="true"/>
       </MultiMessageUnit>
@@ -270,9 +270,9 @@
   </Page>
   <Page gr:x="460" gr:y="225" id="sv4#page11#page15" name="Gestione Negozi">
     <ContentUnits>
-      <MultiMessageUnit gr:x="0" gr:y="65" id="sv4#page11#page15#mssu4" name="Modifica negozio" linkOrder="sv4#page11#page15#mssu4#ln24">
+      <MultiMessageUnit gr:x="0" gr:y="65" id="sv4#page11#page15#mssu4" name="Modifica negozio" linkOrder="sv4#page11#page15#mssu4#ln47">
         <Message xml:space="preserve">Gestione dei negozi</Message>
-        <Link id="sv4#page11#page15#mssu4#ln24" name="Flow24" to="sv4#area5#page18" automaticCoupling="true" type="normal" validate="true"/>
+        <Link id="sv4#page11#page15#mssu4#ln47" name="Flow24" to="sv4#area9#page24" type="normal" automaticCoupling="true" validate="true"/>
       </MultiMessageUnit>
       <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page11#page15#mssu7" name="Inserimento negozio" linkOrder="sv4#page11#page15#mssu7#ln26">
         <Link id="sv4#page11#page15#mssu7#ln26" name="Flow26" to="sv4#area9#page19" automaticCoupling="true" type="normal" validate="true"/>
@@ -280,7 +280,7 @@
       </MultiMessageUnit>
     </ContentUnits>
   </Page>
-  <Page gr:x="440" gr:y="460" id="sv4#page11#page16" name="Gestione Utenti">
+  <Page gr:x="335" gr:y="460" id="sv4#page11#page16" name="Gestione Utenti">
     <ContentUnits/>
   </Page>
 </Page>
