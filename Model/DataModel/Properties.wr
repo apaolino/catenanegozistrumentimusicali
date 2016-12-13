@@ -433,7 +433,7 @@
     <RelationshipRole1 id="rel36#role71" name="Catena NegoziToIndirizzo" maxCard="1">
       <db:JoinColumn attribute="ent9#att9" name="catena_negozi_oid"/>
     </RelationshipRole1>
-    <RelationshipRole2 id="rel36#role72" name="IndirizzoToCatena Negozi" maxCard="1">
+    <RelationshipRole2 id="rel36#role72" name="IndirizzoToCatena Negozi" maxCard="N">
       <db:JoinColumn attribute="ent1#att3" name="oid"/>
     </RelationshipRole2>
   </Relationship>
