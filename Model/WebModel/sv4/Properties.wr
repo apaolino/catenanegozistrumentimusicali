@@ -1,11 +1,8 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4" name="Gestore_Catena" homePage="sv4#page11" landmarks="sv4#area3 sv4#area2 sv4#area5 sv4#area9">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4" name="Gestore_Catena" landmarks="sv4#area2 sv4#area5 sv4#page21 sv4#area9" homePage="sv4#page11">
   <OperationUnits>
     <LogoutUnit gr:x="715" gr:y="-15" id="sv4#lou3" name="Logout" siteView="sv1">
       <KOLink id="sv4#lou3#kln3" name="KOFlow3" to="sv4#page11" automaticCoupling="true" gr:bendpoints="81,83,391,-342"/>
     </LogoutUnit>
-    <CreateUnit gr:x="-355" gr:y="380" id="sv4#cru1" name="Crea nuovo articolo" entity="ent12" skipBlankRecords="false" notBlankAttributes="ent12#att12 ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45" bulk="false">
-      <OKLink id="sv4#cru1#oln1" name="OKFlow1" to="sv4#area3#page17" automaticCoupling="true"/>
-    </CreateUnit>
     <ModifyUnit gr:x="1565" gr:y="135" id="sv4#mfu1" name="Aggiorna dati GC" entity="User">
       <Selector id="sv4#mfu1#su10" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#mfu1#su10#kcond5" name="KeyCondition5" predicate="in" implied="false"/>

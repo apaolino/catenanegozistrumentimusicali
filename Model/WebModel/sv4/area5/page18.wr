@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv4#area5#page18" name="Modifica negozio esistente" ajaxEnabled="false">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="145" id="sv4#area5#page18" name="Modifica negozio esistente" ajaxEnabled="false">
   <ContentUnits>
     <MultiMessageUnit gr:x="5" gr:y="0" id="sv4#area5#page18#mssu6" name="Modifica negozio">
       <Message xml:space="preserve">Selezionare il negozio da modificare</Message>

@@ -1,0 +1,37 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="15" gr:y="0" id="sv4#area5#page24" name="Inserimento nuovo negozio">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv4#area5#page24#enu11" name="Dati nuovo negozio">
+      <Field id="sv4#area5#page24#enu11#fld19" name="Nome" type="string" modifiable="true"/>
+      <Field id="sv4#area5#page24#enu11#fld20" name="Fax" type="string" modifiable="true"/>
+      <Field id="sv4#area5#page24#enu11#fld21" name="E-mail" type="string" modifiable="true"/>
+      <Field id="sv4#area5#page24#enu11#fld22" name="Data apertura" type="string" modifiable="true"/>
+      <Field id="sv4#area5#page24#enu11#fld31" name="Dimensione" type="string" modifiable="true"/>
+      <Field id="sv4#area5#page24#enu11#fld32" name="Numero telefono" type="string" modifiable="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area5#page24#enu11">
+          <layout:Field field="sv4#area5#page24#enu11#fld19"/>
+          <layout:Field field="sv4#area5#page24#enu11#fld20"/>
+          <layout:Field field="sv4#area5#page24#enu11#fld21"/>
+          <layout:Field field="sv4#area5#page24#enu11#fld22"/>
+          <layout:Field field="sv4#area5#page24#enu11#fld31"/>
+          <layout:Field field="sv4#area5#page24#enu11#fld32"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
