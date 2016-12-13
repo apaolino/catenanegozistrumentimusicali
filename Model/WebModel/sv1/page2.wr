@@ -4,7 +4,7 @@
       <Selector id="sv1#page2#dau2#su2" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#page2#dau2#su2#kcond2" name="KeyCondition2" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv1#page2#dau2#ln19" name="EventoNegozio" to="sv1#page7#dau3" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="8,432,663,222;-768,438,-113,228;-774,225,-119,15;-729,228,-74,18"/>
+      <Link id="sv1#page2#dau2#ln19" name="EventoNegozio" to="sv1#page7#dau3" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-193,399,467,194;-773,398,-113,193;-774,225,-119,15;-729,228,-74,18"/>
     </DataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">

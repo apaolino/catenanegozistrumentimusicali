@@ -9,11 +9,11 @@
       </Link>
       <Link id="sv1#page7#dau3#ln16" name="Flow16" to="sv1#page7#mdu1" automaticCoupling="true" type="transport" validate="true"/>
       <Link id="sv1#page7#dau3#ln17" name="Flow17" to="sv1#page7#mdu2" automaticCoupling="true" type="transport" validate="true"/>
-      <Link id="sv1#page7#dau3#ln37" name="Flow37" to="sv1#page7#dau5" type="transport" validate="true">
-        <LinkParameter id="sv1#page7#dau3#ln37#par31" name="oid_RoleCondition5 [oid]" source="data.rel7#role14_ent19#att19" target="sv1#page7#dau5#su15#rcond5.ent10#att10"/>
+      <Link id="sv1#page7#dau3#ln38" name="Flow38" to="sv1#page7#dau8" type="transport" validate="true">
+        <LinkParameter id="sv1#page7#dau3#ln38#par35" name="NegozioToSala prove.oid_KeyCondition10 [oid]" source="data.rel7#role14_ent19#att19" target="sv1#page7#dau8#su16#kcond10.ent19#att19"/>
       </Link>
     </DataUnit>
-    <IndexUnit gr:x="255" gr:y="0" id="sv1#page7#inu1" name="Scelta Tipo Catalogo" entity="ent11" displayAttributes="ent11#att46" maxResults="2" linkOrder="sv1#page7#inu1#ln9">
+    <IndexUnit gr:x="255" gr:y="0" id="sv1#page7#inu1" name="Cataloghi del negozio" entity="ent11" displayAttributes="ent11#att46" maxResults="2" linkOrder="sv1#page7#inu1#ln9">
       <Selector id="sv1#page7#inu1#su7" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#page7#inu1#su7#rcond3" name="RoleCondition3" predicate="in" implied="false" role="rel23#role45"/>
       </Selector>
@@ -23,19 +23,18 @@
         <LinkParameter id="sv1#page7#inu1#ln9#par17" name="oid_RoleCondition7 [oid] [Catalogo Prodotti]" source="data[].ent11#att11" target="sv1#page7#alt1#page1#hinu1#su9#rcond7.ent11#att11"/>
       </Link>
     </IndexUnit>
-    <MultiDataUnit gr:x="0" gr:y="160" id="sv1#page7#mdu1" name="Migliori Recensioni" entity="ent18" displayAttributes="ent18#att33 ent18#att34 ent18#att35 ent18#att77">
+    <MultiDataUnit gr:x="0" gr:y="160" id="sv1#page7#mdu1" name="Migliori Recensioni sul Negozio" entity="ent18" displayAttributes="ent18#att33 ent18#att34 ent18#att35 ent18#att77">
       <Selector id="sv1#page7#mdu1#su6" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#page7#mdu1#su6#rcond2" name="RoleCondition2" predicate="in" implied="false" role="rel40#role79"/>
       </Selector>
       <SortAttribute attribute="ent18#att35" order="descending"/>
     </MultiDataUnit>
-    <MultiDataUnit gr:x="220" gr:y="160" id="sv1#page7#mdu2" name="Recensioni Negozio" entity="ent18" displayAttributes="ent18#att33 ent18#att34 ent18#att35 ent18#att77">
+    <MultiDataUnit gr:x="305" gr:y="155" id="sv1#page7#mdu2" name="Recensioni Negozio" entity="ent18" displayAttributes="ent18#att33 ent18#att34 ent18#att35 ent18#att77">
       <SortAttribute attribute="ent18#att33" order="descending"/>
     </MultiDataUnit>
-    <DataUnit gr:x="5" gr:y="285" id="sv1#page7#dau5" name="Dettagli Sala Prove" entity="ent19" displayAttributes="ent19#att59 ent19#att60">
-      <Selector id="sv1#page7#dau5#su15" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv1#page7#dau5#su15#kcond4" name="KeyCondition4" predicate="in" implied="false"/>
-        <RelationshipRoleCondition id="sv1#page7#dau5#su15#rcond5" name="RoleCondition5" predicate="in" implied="false" role="rel7#role14"/>
+    <DataUnit gr:x="245" gr:y="285" id="sv1#page7#dau8" name="Dettagli Sala Prove" entity="ent19" displayAttributes="ent19#att59 ent19#att60">
+      <Selector id="sv1#page7#dau8#su16" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#page7#dau8#su16#kcond10" name="KeyCondition10" predicate="in" implied="false"/>
       </Selector>
     </DataUnit>
   </ContentUnits>
@@ -235,7 +234,7 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#page7#dau5">
+        <layout:Unit unitId="sv1#page7#dau8">
           <layout:Attribute attribute="ent19#att59"/>
           <layout:Attribute attribute="ent19#att60"/>
         </layout:Unit>

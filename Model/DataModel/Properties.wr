@@ -429,12 +429,12 @@
       <db:JoinColumn attribute="ent3#att69" name="zona_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Relationship id="rel36" name="Catena Negozi_Indirizzo" sourceEntity="ent9" targetEntity="ent1" gr:bendpoints="-213,-2,-163,868;-214,-873,-164,-3" db:database="db1" db:table="indirizzo">
+  <Relationship id="rel36" name="Catena Negozi_Indirizzo" sourceEntity="ent9" targetEntity="ent1" gr:bendpoints="-213,-2,-163,868;-214,-873,-164,-3" db:database="db1" db:table="catena_negozi">
     <RelationshipRole1 id="rel36#role71" name="Catena NegoziToIndirizzo" maxCard="1">
-      <db:JoinColumn attribute="ent9#att9" name="catena_negozi_oid"/>
+      <db:JoinColumn attribute="ent9#att9" name="oid"/>
     </RelationshipRole1>
     <RelationshipRole2 id="rel36#role72" name="IndirizzoToCatena Negozi" maxCard="N">
-      <db:JoinColumn attribute="ent1#att3" name="oid"/>
+      <db:JoinColumn attribute="ent1#att3" name="indirizzo_oid"/>
     </RelationshipRole2>
   </Relationship>
   <Relationship id="rel34" name="Acquisto_Prenotazione" sourceEntity="ent15" targetEntity="ent16" db:database="db1" db:table="prenotazione">
@@ -499,7 +499,8 @@
       <db:JoinColumn attribute="ent26#att78" name="tipo_evento_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db1" name="catenadb_mysql" type="MySQL" username="root" url="jdbc:mysql://localhost/CatenaDB_MySql"/>
+  <db:Database id="db1" name="catenadb_mysql" type="MySQL" username="root" url="jdbc:mysql://localhost/CatenaDB_MySql">
+  </db:Database>
   <Entity gr:x="955" gr:y="445" id="ent22" name="Periodo" duration="persistent" attributeOrder="ent22#att72 ent22#att74" db:database="db1" db:table="periodo">
     <Attribute id="ent22#att72" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent22#att74" name="Mese" type="string" db:column="mese"/>
