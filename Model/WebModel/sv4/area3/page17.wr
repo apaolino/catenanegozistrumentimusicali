@@ -1,13 +1,13 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv4#area3#page17" name="Inserimento Prodotto" ajaxEnabled="true">
   <ContentUnits>
-    <SelectorUnit gr:x="0" gr:y="245" id="sv4#area3#page17#seu5" name="Seleziona Categoria" entity="ent7" distinctAttributes="ent7#att36">
+    <SelectorUnit gr:x="0" gr:y="90" id="sv4#area3#page17#seu5" name="Seleziona Categoria" entity="ent7" distinctAttributes="ent7#att36">
       <Selector id="sv4#area3#page17#seu5#su4" defaultPolicy="fill" booleanOperator="and"/>
       <Link id="sv4#area3#page17#seu5#ln14" name="Flow14" to="sv4#area3#page17#enu5" type="transport" validate="true">
         <LinkParameter id="sv4#area3#page17#seu5#ln14#par4" name="Nome_Categoria [label]" source="ent7#att36Array" target="sv4#area3#page17#enu5#sfld3_label"/>
         <LinkParameter id="sv4#area3#page17#seu5#ln14#par6" name="CategoriaProdottoToCatalogoBase.oid_Categoria [output]" source="ent7#att7Array" target="sv4#area3#page17#enu5#sfld3_output"/>
       </Link>
     </SelectorUnit>
-    <EntryUnit gr:x="245" gr:y="250" id="sv4#area3#page17#enu5" name="Nuovo prodotto" linkOrder="sv4#area3#page17#enu5#ln15" fieldOrder="sv4#area3#page17#enu5#sfld3 sv4#area3#page17#enu5#sfld4 sv4#area3#page17#enu5#sfld6 sv4#area3#page17#enu5#fld6 sv4#area3#page17#enu5#fld7 sv4#area3#page17#enu5#fld8 sv4#area3#page17#enu5#fld9 sv4#area3#page17#enu5#fld10 sv4#area3#page17#enu5#fld11" ajaxEnableExpandedLinks="true">
+    <EntryUnit gr:x="245" gr:y="95" id="sv4#area3#page17#enu5" name="Nuovo prodotto" linkOrder="sv4#area3#page17#enu5#ln15" fieldOrder="sv4#area3#page17#enu5#sfld3 sv4#area3#page17#enu5#sfld4 sv4#area3#page17#enu5#sfld6 sv4#area3#page17#enu5#fld6 sv4#area3#page17#enu5#fld7 sv4#area3#page17#enu5#fld8 sv4#area3#page17#enu5#fld9 sv4#area3#page17#enu5#fld10 sv4#area3#page17#enu5#fld11" ajaxEnableExpandedLinks="true">
       <SelectionField id="sv4#area3#page17#enu5#sfld3" name="Categoria" type="string" ajaxEventEnabled="false"/>
       <Field id="sv4#area3#page17#enu5#fld6" name="Nome modello" type="string" modifiable="true"/>
       <Field id="sv4#area3#page17#enu5#fld7" name="Data Produzione" type="date" modifiable="true"/>
@@ -30,31 +30,31 @@
       <SelectionField id="sv4#area3#page17#enu5#sfld4" name="Produttore" type="string"/>
       <SelectionField id="sv4#area3#page17#enu5#sfld6" name="Tipo prodotto" type="string"/>
     </EntryUnit>
-    <EntryUnit gr:x="0" gr:y="415" id="sv4#area3#page17#enu2" name="Nuova Categoria" linkOrder="sv4#area3#page17#enu2#ln5">
+    <EntryUnit gr:x="5" gr:y="285" id="sv4#area3#page17#enu2" name="Nuova Categoria" linkOrder="sv4#area3#page17#enu2#ln5">
       <Field id="sv4#area3#page17#enu2#fld2" name="Nome categoria (es fiati)" type="string" modifiable="true"/>
       <Link id="sv4#area3#page17#enu2#ln5" name="Flow5" to="sv4#cru2" type="normal" validate="true">
         <LinkParameter id="sv4#area3#page17#enu2#ln5#par1" name="Nome categoria (es fiati)_Nome" source="sv4#area3#page17#enu2#fld2" target="sv4#cru2.ent7#att36"/>
       </Link>
     </EntryUnit>
-    <EntryUnit gr:x="260" gr:y="420" id="sv4#area3#page17#enu7" name="Nuovo Produttore" linkOrder="sv4#area3#page17#enu7#ln27">
+    <EntryUnit gr:x="265" gr:y="290" id="sv4#area3#page17#enu7" name="Nuovo Produttore" linkOrder="sv4#area3#page17#enu7#ln27">
       <Field id="sv4#area3#page17#enu7#fld3" name="Nuovo Produttore (es Fender)" type="string" modifiable="true"/>
       <Link id="sv4#area3#page17#enu7#ln27" name="Flow27" to="sv4#cru3" type="normal" validate="true">
         <LinkParameter id="sv4#area3#page17#enu7#ln27#par2" name="Nuovo Produttore (es Fender)_Nome" source="sv4#area3#page17#enu7#fld3" target="sv4#cru3.ent20#att40"/>
       </Link>
     </EntryUnit>
-    <SelectorUnit gr:x="5" gr:y="155" id="sv4#area3#page17#seu6" name="Seleziona Produttore" entity="ent20">
+    <SelectorUnit gr:x="5" gr:y="0" id="sv4#area3#page17#seu6" name="Seleziona Produttore" entity="ent20">
       <Link id="sv4#area3#page17#seu6#ln36" name="Flow36" to="sv4#area3#page17#enu5" type="transport" validate="true">
         <LinkParameter id="sv4#area3#page17#seu6#ln36#par20" name="Nome_Produttore [label]" source="ent20#att40Array" target="sv4#area3#page17#enu5#sfld4_label"/>
         <LinkParameter id="sv4#area3#page17#seu6#ln36#par28" name="oid_Produttore [output]" source="ent20#att39Array" target="sv4#area3#page17#enu5#sfld4_output"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit gr:x="0" gr:y="330" id="sv4#area3#page17#seu9" name="Seleziona tipo prodotto" entity="ent4">
+    <SelectorUnit gr:x="0" gr:y="175" id="sv4#area3#page17#seu9" name="Seleziona tipo prodotto" entity="ent4">
       <Link id="sv4#area3#page17#seu9#ln38" name="Flow38" to="sv4#area3#page17#enu5" type="transport" validate="true">
         <LinkParameter id="sv4#area3#page17#seu9#ln38#par31" name="Nome_Tipo prodotto [label]" source="ent4#att38Array" target="sv4#area3#page17#enu5#sfld6_label"/>
         <LinkParameter id="sv4#area3#page17#seu9#ln38#par32" name="oid_Tipo prodotto [output]" source="ent4#att37Array" target="sv4#area3#page17#enu5#sfld6_output"/>
       </Link>
     </SelectorUnit>
-    <EntryUnit gr:x="125" gr:y="415" id="sv4#area3#page17#enu11" name="Nuovo tipo prodotto" linkOrder="sv4#area3#page17#enu11#ln39">
+    <EntryUnit gr:x="130" gr:y="285" id="sv4#area3#page17#enu11" name="Nuovo tipo prodotto" linkOrder="sv4#area3#page17#enu11#ln39">
       <Link id="sv4#area3#page17#enu11#ln39" name="Flow39" to="sv4#cru4" type="normal" validate="true">
         <LinkParameter id="sv4#area3#page17#enu11#ln39#par34" name="Nome tipo prodotto (es chitarra elettrica)_Nome" source="sv4#area3#page17#enu11#fld15" target="sv4#cru4.ent4#att38"/>
       </Link>

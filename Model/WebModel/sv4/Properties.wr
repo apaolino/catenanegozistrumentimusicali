@@ -1,4 +1,4 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4" name="Gestore_Catena" homePage="sv4#page11" landmarks="sv4#area3 sv4#area2 sv4#area5 sv4#area9">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4" name="Gestore_Catena" homePage="sv4#page11" landmarks="sv4#area3 sv4#area2 sv4#area9">
   <OperationUnits>
     <LogoutUnit gr:x="715" gr:y="-15" id="sv4#lou3" name="Logout" siteView="sv1">
       <KOLink id="sv4#lou3#kln3" name="KOFlow3" to="sv4#page11" automaticCoupling="true" gr:bendpoints="81,83,391,-342"/>
@@ -36,6 +36,18 @@
     </CreateUnit>
     <CreateUnit gr:x="-240" gr:y="420" id="sv4#cru4" name=" Crea nuovo tipo prodotto" entity="ent4">
       <OKLink id="sv4#cru4#oln13" name="OKFlow8" to="sv4#page27#mssu12" automaticCoupling="true" gr:bendpoints="-57,50,38,510;-240,43,-145,503;-281,2,-186,462;-278,-73,-183,387;-212,-410,-117,50;-171,-437,-76,23"/>
+    </CreateUnit>
+    <CreateUnit gr:x="1620" gr:y="650" id="sv4#cru5" name="Crea nuovo negozio" entity="ent10"/>
+    <CreateUnit gr:x="1440" gr:y="655" id="sv4#cru6" name="Nuovo indirizzo" entity="ent1">
+      <OKLink id="sv4#cru6#oln1" name="OKFlow1" to="sv4#cru5">
+        <LinkParameter id="sv4#cru6#oln1#par111" name="Data apertura_PASSING_Data apertura" sourceLinkParameter="sv4#area9#page19#enu3#ln44#par55" target="sv4#cru5.ent10#att49"/>
+        <LinkParameter id="sv4#cru6#oln1#par112" name="Dimensione_PASSING_Dimensione" sourceLinkParameter="sv4#area9#page19#enu3#ln44#par56" target="sv4#cru5.ent10#att50"/>
+        <LinkParameter id="sv4#cru6#oln1#par113" name="E-mail_PASSING_Email" sourceLinkParameter="sv4#area9#page19#enu3#ln44#par85" target="sv4#cru5.ent10#att53"/>
+        <LinkParameter id="sv4#cru6#oln1#par114" name="Fax_PASSING_Fax" sourceLinkParameter="sv4#area9#page19#enu3#ln44#par86" target="sv4#cru5.ent10#att52"/>
+        <LinkParameter id="sv4#cru6#oln1#par115" name="oid_Indirizzo.oid(NegozioToIndirizzo)" source="ent1#att3Array" target="sv4#cru5.rel32#role63.ent1#att3"/>
+        <LinkParameter id="sv4#cru6#oln1#par116" name="Nome_PASSING_Nome" sourceLinkParameter="sv4#area9#page19#enu3#ln44#par88" target="sv4#cru5.ent10#att48"/>
+        <LinkParameter id="sv4#cru6#oln1#par117" name="Numero telefono_PASSING_Numero telefono" sourceLinkParameter="sv4#area9#page19#enu3#ln44#par95" target="sv4#cru5.ent10#att51"/>
+      </OKLink>
     </CreateUnit>
   </OperationUnits>
 </SiteView>

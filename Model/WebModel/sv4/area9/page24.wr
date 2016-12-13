@@ -1,0 +1,178 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area9#page24" name="Modifica negozio esistente" ajaxEnabled="false" gr:x="0" gr:y="190">
+  <ContentUnits>
+    <MultiMessageUnit id="sv4#area9#page24#mssu13" name="Modifica negozio" gr:x="5" gr:y="0">
+      <Message xml:space="preserve">Selezionare il negozio da modificare</Message>
+    </MultiMessageUnit>
+    <SelectorUnit id="sv4#area9#page24#seu12" name="Componi lista negozi" gr:x="0" gr:y="70" entity="ent10">
+      <Link id="sv4#area9#page24#seu12#ln46" name="Flow25" to="sv4#area9#page24#enu14" type="transport" validate="true">
+        <LinkParameter id="sv4#area9#page24#seu12#ln46#par121" name="Nome_elenco negozi [label]" source="ent10#att48Array" target="sv4#area9#page24#enu14#sfld9_label"/>
+        <LinkParameter id="sv4#area9#page24#seu12#ln46#par122" name="NegozioToCatena Negozi.oid_elenco negozi [output]" source="ent10#att10Array" target="sv4#area9#page24#enu14#sfld9_output"/>
+      </Link>
+    </SelectorUnit>
+    <EntryUnit id="sv4#area9#page24#enu14" name="Seleziona negozio" gr:x="185" gr:y="5" linkOrder="sv4#area9#page24#enu14#ln50">
+      <SelectionField id="sv4#area9#page24#enu14#sfld9" name="elenco negozi" type="string"/>
+      <Link id="sv4#area9#page24#enu14#ln50" name="Flow50" to="sv4#area9#page24#alt2#page25#dau8" type="normal" validate="true">
+        <LinkParameter id="sv4#area9#page24#enu14#ln50#par130" name="elenco negozi_KeyCondition11 [oid]" source="sv4#area9#page24#enu14#sfld9" target="sv4#area9#page24#alt2#page25#dau8#su17#kcond11.ent10#att10"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area9#page24#mssu13"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area9#page24#enu14">
+          <layout:Field field="sv4#area9#page24#enu14#sfld9"/>
+          <layout:Link link="sv4#area9#page24#enu14#ln50"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv4#area9#page24#alt2#page25">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv4#area9#page24#alt2#page25#dau8">
+                  <layout:Attribute attribute="ent10#att48"/>
+                  <layout:Attribute attribute="ent10#att49"/>
+                  <layout:Attribute attribute="ent10#att50"/>
+                  <layout:Attribute attribute="ent10#att51"/>
+                  <layout:Attribute attribute="ent10#att52"/>
+                  <layout:Attribute attribute="ent10#att53"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv4#area9#page24#alt2#page25#dau9">
+                  <layout:Attribute attribute="ent1#att4"/>
+                  <layout:Attribute attribute="ent1#att5"/>
+                  <layout:Attribute attribute="ent1#att6"/>
+                  <layout:Attribute attribute="ent1#att8"/>
+                  <layout:Attribute attribute="ent1#att13"/>
+                  <layout:Attribute attribute="ent1#att14"/>
+                  <layout:Link link="sv4#area9#page24#alt2#page25#dau9#ln57"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative gr:x="260" gr:y="120" id="sv4#area9#page24#alt2" name="Alternative2" defaultPage="sv4#area9#page24#alt2#page25">
+    <Page gr:x="0" gr:y="0" id="sv4#area9#page24#alt2#page25" name="Page 25">
+      <ContentUnits>
+        <DataUnit gr:x="0" gr:y="0" id="sv4#area9#page24#alt2#page25#dau8" name="Dettagli  negozio" entity="ent10" displayAttributes="ent10#att48 ent10#att49 ent10#att50 ent10#att51 ent10#att52 ent10#att53">
+          <Selector id="sv4#area9#page24#alt2#page25#dau8#su17" defaultPolicy="fill" booleanOperator="and">
+            <KeyCondition id="sv4#area9#page24#alt2#page25#dau8#su17#kcond11" name="KeyCondition11" predicate="in" implied="false"/>
+          </Selector>
+          <Link id="sv4#area9#page24#alt2#page25#dau8#ln53" name="Flow53" to="sv4#area9#page24#alt2#page25#dau9" type="transport" validate="true">
+            <LinkParameter id="sv4#area9#page24#alt2#page25#dau8#ln53#par131" name="NegozioToIndirizzo.oid_KeyCondition12 [oid]" source="data.rel32#role63_ent1#att3" target="sv4#area9#page24#alt2#page25#dau9#su19#kcond12.ent1#att3"/>
+            <LinkParameter id="sv4#area9#page24#alt2#page25#dau8#ln53#par132" name="Data apertura_PASSING" source="data.ent10#att49" passing="true"/>
+            <LinkParameter id="sv4#area9#page24#alt2#page25#dau8#ln53#par133" name="Dimensione_PASSING" source="data.ent10#att50" passing="true"/>
+            <LinkParameter id="sv4#area9#page24#alt2#page25#dau8#ln53#par134" name="Email_PASSING" source="data.ent10#att53" passing="true"/>
+            <LinkParameter id="sv4#area9#page24#alt2#page25#dau8#ln53#par135" name="Fax_PASSING" source="data.ent10#att52" passing="true"/>
+            <LinkParameter id="sv4#area9#page24#alt2#page25#dau8#ln53#par136" name="Nome_PASSING" source="data.ent10#att48" passing="true"/>
+            <LinkParameter id="sv4#area9#page24#alt2#page25#dau8#ln53#par137" name="Numero telefono_PASSING" source="data.ent10#att51" passing="true"/>
+            <LinkParameter id="sv4#area9#page24#alt2#page25#dau8#ln53#par138" name="oid_PASSING" source="data.ent10#att10" passing="true"/>
+            <LinkParameter id="sv4#area9#page24#alt2#page25#dau8#ln53#par152" name="NegozioToGestore Singolo Negozio.oid_PASSING" source="data.rel4#role8_userOID" passing="true"/>
+          </Link>
+        </DataUnit>
+        <DataUnit gr:x="0" gr:y="160" id="sv4#area9#page24#alt2#page25#dau9" name="Indirizzo negozio" entity="ent1" displayAttributes="ent1#att4 ent1#att5 ent1#att6 ent1#att8 ent1#att13 ent1#att14" linkOrder="sv4#area9#page24#alt2#page25#dau9#ln57">
+          <Selector id="sv4#area9#page24#alt2#page25#dau9#su19" defaultPolicy="fill" booleanOperator="and">
+            <KeyCondition id="sv4#area9#page24#alt2#page25#dau9#su19#kcond12" name="KeyCondition12" predicate="in" implied="false"/>
+          </Selector>
+          <Link id="sv4#area9#page24#alt2#page25#dau9#ln57" name="Flow57" to="sv4#page26#enu15" type="normal" validate="true">
+            <LinkParameter id="sv4#area9#page24#alt2#page25#dau9#ln57#par139" name="CAP_CAP" source="data.ent1#att6" target="sv4#page26#enu15#fld64_slot"/>
+            <LinkParameter id="sv4#area9#page24#alt2#page25#dau9#ln57#par140" name="Citt&#224;_Citt&#224;" source="data.ent1#att8" target="sv4#page26#enu15#fld68_slot"/>
+            <LinkParameter id="sv4#area9#page24#alt2#page25#dau9#ln57#par141" name="Data apertura_PASSING_Data apertura" sourceLinkParameter="sv4#area9#page24#alt2#page25#dau8#ln53#par132" target="sv4#page26#enu15#fld65_slot"/>
+            <LinkParameter id="sv4#area9#page24#alt2#page25#dau9#ln57#par142" name="Dimensione_PASSING_Dimensione" sourceLinkParameter="sv4#area9#page24#alt2#page25#dau8#ln53#par133" target="sv4#page26#enu15#fld62_slot"/>
+            <LinkParameter id="sv4#area9#page24#alt2#page25#dau9#ln57#par143" name="Email_PASSING_E-mail" sourceLinkParameter="sv4#area9#page24#alt2#page25#dau8#ln53#par134" target="sv4#page26#enu15#fld59_slot"/>
+            <LinkParameter id="sv4#area9#page24#alt2#page25#dau9#ln57#par144" name="Fax_PASSING_Fax" sourceLinkParameter="sv4#area9#page24#alt2#page25#dau8#ln53#par135" target="sv4#page26#enu15#fld69_slot"/>
+            <LinkParameter id="sv4#area9#page24#alt2#page25#dau9#ln57#par145" name="Nome_PASSING_Nome" sourceLinkParameter="sv4#area9#page24#alt2#page25#dau8#ln53#par136" target="sv4#page26#enu15#fld60_slot"/>
+            <LinkParameter id="sv4#area9#page24#alt2#page25#dau9#ln57#par146" name="Numero civico_Numero Civico" source="data.ent1#att5" target="sv4#page26#enu15#fld63_slot"/>
+            <LinkParameter id="sv4#area9#page24#alt2#page25#dau9#ln57#par147" name="Numero telefono_PASSING_Numero telefono" sourceLinkParameter="sv4#area9#page24#alt2#page25#dau8#ln53#par137" target="sv4#page26#enu15#fld67_slot"/>
+            <LinkParameter id="sv4#area9#page24#alt2#page25#dau9#ln57#par148" name="Primario_Primario" source="data.ent1#att23" target="sv4#page26#enu15#fld58_slot"/>
+            <LinkParameter id="sv4#area9#page24#alt2#page25#dau9#ln57#par149" name="Provincia_Provincia" source="data.ent1#att13" target="sv4#page26#enu15#fld61_slot"/>
+            <LinkParameter id="sv4#area9#page24#alt2#page25#dau9#ln57#par150" name="Stato_Stato" source="data.ent1#att14" target="sv4#page26#enu15#fld70_slot"/>
+            <LinkParameter id="sv4#area9#page24#alt2#page25#dau9#ln57#par151" name="Via_Via" source="data.ent1#att4" target="sv4#page26#enu15#fld66_slot"/>
+          </Link>
+        </DataUnit>
+      </ContentUnits>
+    </Page>
+  </Alternative>
+</Page>
