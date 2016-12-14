@@ -120,7 +120,7 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Link id="sv1#page4#ln1" name="Registrazione" to="sv1#page6#enu1" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv1#page4#ln1" name="Registrazione" to="sv1#page6" automaticCoupling="true" type="normal" validate="true"/>
   <Link id="sv1#page4#ln10" name="Ricerca Avanzata" to="sv1#page9" automaticCoupling="true" type="normal" validate="true"/>
   <Link id="sv1#page4#ln29" name="Login" to="sv1#page23" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

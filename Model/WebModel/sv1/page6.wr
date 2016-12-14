@@ -1,12 +1,130 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="685" gr:y="100" id="sv1#page6" name="Registrazione">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="655" gr:y="-535" id="sv1#page6" name="Registrazione al Sistema">
   <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="0" id="sv1#page6#enu1" name="Dati per la registrazione"/>
+    <EntryUnit gr:x="20" gr:y="155" id="sv1#page6#enu1" name="Dati Utente" linkOrder="sv1#page6#enu1#ln39">
+      <Field id="sv1#page6#enu1#fld13" name="Username" type="string" modifiable="true"/>
+      <Field id="sv1#page6#enu1#fld14" name="Password" type="password" modifiable="true"/>
+      <Field id="sv1#page6#enu1#fld15" name="Email" type="string" modifiable="true"/>
+      <Field id="sv1#page6#enu1#fld16" name="Nome" type="string" modifiable="true"/>
+      <Field id="sv1#page6#enu1#fld33" name="Cognome" type="string" modifiable="true"/>
+      <Field id="sv1#page6#enu1#fld34" name="Data Nascita" type="date" modifiable="true"/>
+      <Field id="sv1#page6#enu1#fld35" name="Data Registrazione" type="date" modifiable="true"/>
+      <Field id="sv1#page6#enu1#fld36" name="Numero Telefono" type="string" modifiable="true"/>
+      <Field id="sv1#page6#enu1#fld2" name="Via" type="string" modifiable="true"/>
+      <Field id="sv1#page6#enu1#fld3" name="Numero Civico" type="string" modifiable="true"/>
+      <Field id="sv1#page6#enu1#fld4" name="Cap" type="string" modifiable="true"/>
+      <Field id="sv1#page6#enu1#fld5" name="Citta" type="string" modifiable="true"/>
+      <Field id="sv1#page6#enu1#fld6" name="Provincia" type="string" modifiable="true"/>
+      <Field id="sv1#page6#enu1#fld7" name="Stato" type="string" modifiable="true"/>
+      <Link id="sv1#page6#enu1#ln39" name="Flow39" to="sv1#opg1#cru1" type="normal" validate="true">
+        <LinkParameter id="sv1#page6#enu1#ln39#par37" name="Cap_CAP" source="sv1#page6#enu1#fld4" target="sv1#opg1#cru1.ent1#att6"/>
+        <LinkParameter id="sv1#page6#enu1#ln39#par38" name="Citta_Citt&#224;" source="sv1#page6#enu1#fld5" target="sv1#opg1#cru1.ent1#att8"/>
+        <LinkParameter id="sv1#page6#enu1#ln39#par39" name="Indirizzo per intero_Indirizzo" source="sv1#page6#enu1#fld8" target="sv1#opg1#cru1.ent1#att73"/>
+        <LinkParameter id="sv1#page6#enu1#ln39#par40" name="Numero Civico_Numero civico" source="sv1#page6#enu1#fld3" target="sv1#opg1#cru1.ent1#att5"/>
+        <LinkParameter id="sv1#page6#enu1#ln39#par41" name="Indirizzo Primario?_Primario" source="sv1#page6#enu1#fld9" target="sv1#opg1#cru1.ent1#att23"/>
+        <LinkParameter id="sv1#page6#enu1#ln39#par42" name="Provincia_Provincia" source="sv1#page6#enu1#fld6" target="sv1#opg1#cru1.ent1#att13"/>
+        <LinkParameter id="sv1#page6#enu1#ln39#par43" name="Stato_Stato" source="sv1#page6#enu1#fld7" target="sv1#opg1#cru1.ent1#att14"/>
+        <LinkParameter id="sv1#page6#enu1#ln39#par44" name="Via_Via" source="sv1#page6#enu1#fld2" target="sv1#opg1#cru1.ent1#att4"/>
+        <LinkParameter id="sv1#page6#enu1#ln39#par45" name="Cognome_PASSING" source="sv1#page6#enu1#fld33" passing="true"/>
+        <LinkParameter id="sv1#page6#enu1#ln39#par46" name="Data Nascita_PASSING" source="sv1#page6#enu1#fld34" passing="true"/>
+        <LinkParameter id="sv1#page6#enu1#ln39#par47" name="Data Registrazione_PASSING" source="sv1#page6#enu1#fld35" passing="true"/>
+        <LinkParameter id="sv1#page6#enu1#ln39#par48" name="Email_PASSING" source="sv1#page6#enu1#fld15" passing="true"/>
+        <LinkParameter id="sv1#page6#enu1#ln39#par49" name="Nome_PASSING" source="sv1#page6#enu1#fld16" passing="true"/>
+        <LinkParameter id="sv1#page6#enu1#ln39#par50" name="Numero Telefono_PASSING" source="sv1#page6#enu1#fld36" passing="true"/>
+        <LinkParameter id="sv1#page6#enu1#ln39#par51" name="Password_PASSING" source="sv1#page6#enu1#fld14" passing="true"/>
+        <LinkParameter id="sv1#page6#enu1#ln39#par52" name="Username_PASSING" source="sv1#page6#enu1#fld13" passing="true"/>
+        <LinkParameter id="sv1#page6#enu1#ln39#par90" name="oid_PASSING" sourceLinkParameter="sv1#page6#seu5#ln14#par34" passing="true"/>
+      </Link>
+      <Field id="sv1#page6#enu1#fld8" name="Indirizzo per intero" type="string" modifiable="true"/>
+      <Field id="sv1#page6#enu1#fld9" name="Indirizzo Primario?" type="boolean" modifiable="true"/>
+    </EntryUnit>
+    <SelectorUnit gr:x="0" gr:y="0" id="sv1#page6#seu5" name="Selector5" entity="Group" distinctAttributes="groupOID">
+      <Selector id="sv1#page6#seu5#su4" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv1#page6#seu5#su4#acond1" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" value="Cliente" attributes="groupName"/>
+      </Selector>
+      <Link id="sv1#page6#seu5#ln14" name="Flow14" to="sv1#page6#enu1" type="transport" validate="true">
+        <LinkParameter id="sv1#page6#seu5#ln14#par34" name="oid_PASSING" source="groupOIDArray" passing="true"/>
+      </Link>
+    </SelectorUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#page6#enu1"/>
+        <layout:Unit unitId="sv1#page6#enu1">
+          <layout:Link link="sv1#page6#enu1#ln39"/>
+          <layout:Field field="sv1#page6#enu1#fld13"/>
+          <layout:Field field="sv1#page6#enu1#fld14"/>
+          <layout:Field field="sv1#page6#enu1#fld15"/>
+          <layout:Field field="sv1#page6#enu1#fld16"/>
+          <layout:Field field="sv1#page6#enu1#fld33"/>
+          <layout:Field field="sv1#page6#enu1#fld34"/>
+          <layout:Field field="sv1#page6#enu1#fld35"/>
+          <layout:Field field="sv1#page6#enu1#fld36"/>
+          <layout:Field field="sv1#page6#enu1#fld2"/>
+          <layout:Field field="sv1#page6#enu1#fld3"/>
+          <layout:Field field="sv1#page6#enu1#fld4"/>
+          <layout:Field field="sv1#page6#enu1#fld5"/>
+          <layout:Field field="sv1#page6#enu1#fld6"/>
+          <layout:Field field="sv1#page6#enu1#fld7"/>
+          <layout:Field field="sv1#page6#enu1#fld8"/>
+          <layout:Field field="sv1#page6#enu1#fld9"/>
+        </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

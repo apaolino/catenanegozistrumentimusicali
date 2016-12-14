@@ -13,11 +13,11 @@
       <db:JoinColumn attribute="userOID" name="oid"/>
     </Attribute>
   </Entity>
-  <Entity id="Group" name="Group" duration="persistent" gr:x="575" gr:y="180" gr:hideAttributes="false" attributeOrder="groupOID groupName" db:database="db1" db:table="group">
+  <Entity id="Group" name="Group" duration="persistent" gr:x="625" gr:y="155" gr:hideAttributes="false" attributeOrder="groupOID groupName" db:database="db1" db:table="group">
     <Attribute name="oid" id="groupOID" type="integer" key="true" db:column="oid"/>
     <Attribute name="groupName" id="groupName" type="string" db:column="groupname"/>
   </Entity>
-  <Entity id="Module" name="Module" duration="persistent" gr:x="800" gr:y="170" gr:hideAttributes="false" attributeOrder="moduleOID moduleID moduleName" db:database="db1" db:table="module">
+  <Entity id="Module" name="Module" duration="persistent" gr:x="880" gr:y="155" gr:hideAttributes="false" attributeOrder="moduleOID moduleID moduleName" db:database="db1" db:table="module">
     <Attribute name="oid" id="moduleOID" type="integer" key="true" db:column="oid"/>
     <Attribute name="moduleID" id="moduleID" type="string" db:column="moduleid"/>
     <Attribute name="moduleName" id="moduleName" type="string" db:column="modulename"/>
