@@ -25,5 +25,60 @@
       <OKLink id="sv4#mfu2#oln4" name="OKFlow4" to="sv4#page10#mssu8" automaticCoupling="true"/>
       <KOLink id="sv4#mfu2#kln4" name="KOFlow4" to="sv4#page20#mssu9" automaticCoupling="true" gr:bendpoints="123,-27,198,238;99,-281,174,-16"/>
     </ModifyUnit>
+    <CreateUnit gr:x="1530" gr:y="580" id="sv4#cru1" name="Inserimento indirizzo" entity="ent1">
+      <OKLink id="sv4#cru1#oln6" name="OKFlow6" to="sv4#cru3">
+        <LinkParameter id="sv4#cru1#oln6#par156" name="Dimensione_PASSING_Dimensione stanza" sourceLinkParameter="sv4#area5#page18#enu3#ln8#par154" target="sv4#cru3.ent19#att60"/>
+        <LinkParameter id="sv4#cru1#oln6#par157" name="Prezzo orario_PASSING_Prezzo orario" sourceLinkParameter="sv4#area5#page18#enu3#ln8#par155" target="sv4#cru3.ent19#att59"/>
+        <LinkParameter id="sv4#cru1#oln6#par158" name="Data apertura_PASSING" sourceLinkParameter="sv4#area5#page18#enu3#ln8#par22" passing="true"/>
+        <LinkParameter id="sv4#cru1#oln6#par159" name="Dimensione_PASSING" sourceLinkParameter="sv4#area5#page18#enu3#ln8#par23" passing="true"/>
+        <LinkParameter id="sv4#cru1#oln6#par160" name="E-mail_PASSING" sourceLinkParameter="sv4#area5#page18#enu3#ln8#par24" passing="true"/>
+        <LinkParameter id="sv4#cru1#oln6#par161" name="Fax_PASSING" sourceLinkParameter="sv4#area5#page18#enu3#ln8#par25" passing="true"/>
+        <LinkParameter id="sv4#cru1#oln6#par162" name="Gestore del negozio_PASSING" sourceLinkParameter="sv4#area5#page18#enu3#ln8#par26" passing="true"/>
+        <LinkParameter id="sv4#cru1#oln6#par163" name="Nome_PASSING" sourceLinkParameter="sv4#area5#page18#enu3#ln8#par28" passing="true"/>
+        <LinkParameter id="sv4#cru1#oln6#par164" name="Numero telefono_PASSING" sourceLinkParameter="sv4#area5#page18#enu3#ln8#par39" passing="true"/>
+        <LinkParameter id="sv4#cru1#oln6#par165" name="oid_PASSING" source="ent1#att3Array" passing="true"/>
+        <LinkParameter id="sv4#cru1#oln6#par180" name="Nome catena_PASSING" sourceLinkParameter="sv4#area5#page18#enu3#ln8#par179" passing="true"/>
+      </OKLink>
+    </CreateUnit>
+    <CreateUnit gr:x="1900" gr:y="570" id="sv4#cru2" name="Inserimento negozio" entity="ent10"/>
+    <ModifyUnit gr:x="1555" gr:y="945" id="sv4#mfu3" name="Update dati" entity="ent10">
+      <Selector id="sv4#mfu3#su24" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#mfu3#su24#kcond19" name="KeyCondition19" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv4#mfu3#oln3" name="OKFlow3" to="sv4#mfu4">
+        <LinkParameter id="sv4#mfu3#oln3#par142" name="CAP_PASSING_CAP" sourceLinkParameter="sv4#area5#page18#alt3#page13#enu13#ln48#par135" target="sv4#mfu4.ent1#att6"/>
+        <LinkParameter id="sv4#mfu3#oln3#par143" name="Citt&#224;_PASSING_Citt&#224;" sourceLinkParameter="sv4#area5#page18#alt3#page13#enu13#ln48#par136" target="sv4#mfu4.ent1#att8"/>
+        <LinkParameter id="sv4#mfu3#oln3#par144" name="Numero civico_PASSING_Numero civico" sourceLinkParameter="sv4#area5#page18#alt3#page13#enu13#ln48#par137" target="sv4#mfu4.ent1#att5"/>
+        <LinkParameter id="sv4#mfu3#oln3#par145" name="Primario_PASSING_Primario" sourceLinkParameter="sv4#area5#page18#alt3#page13#enu13#ln48#par138" target="sv4#mfu4.ent1#att23"/>
+        <LinkParameter id="sv4#mfu3#oln3#par146" name="Provincia_PASSING_Provincia" sourceLinkParameter="sv4#area5#page18#alt3#page13#enu13#ln48#par139" target="sv4#mfu4.ent1#att13"/>
+        <LinkParameter id="sv4#mfu3#oln3#par147" name="Stato_PASSING_Stato" sourceLinkParameter="sv4#area5#page18#alt3#page13#enu13#ln48#par140" target="sv4#mfu4.ent1#att14"/>
+        <LinkParameter id="sv4#mfu3#oln3#par148" name="Via_PASSING_Via" sourceLinkParameter="sv4#area5#page18#alt3#page13#enu13#ln48#par141" target="sv4#mfu4.ent1#att4"/>
+        <LinkParameter id="sv4#mfu3#oln3#par152" name="oid_PASSING_KeyCondition20 [oid]" sourceLinkParameter="sv4#area5#page18#alt3#page13#enu13#ln48#par151" target="sv4#mfu4#su25#kcond20.ent1#att3"/>
+      </OKLink>
+    </ModifyUnit>
+    <ModifyUnit gr:x="1725" gr:y="985" id="sv4#mfu4" name="Update indirizzo" entity="ent1">
+      <Selector id="sv4#mfu4#su25" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#mfu4#su25#kcond20" name="KeyCondition20" predicate="in" implied="false"/>
+      </Selector>
+    </ModifyUnit>
+    <DeleteUnit gr:x="1520" gr:y="1300" id="sv4#dlu1" name="Delete1">
+      <Selector id="sv4#dlu1#su26" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#dlu1#su26#kcond21" name="KeyCondition21" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+    <CreateUnit gr:x="1715" gr:y="575" id="sv4#cru3" name="Inserimento sala prove" entity="ent19">
+      <OKLink id="sv4#cru3#oln7" name="OKFlow7" to="sv4#cru2">
+        <LinkParameter id="sv4#cru3#oln7#par166" name="Data apertura_PASSING_Data apertura" sourceLinkParameter="sv4#cru1#oln6#par158" target="sv4#cru2.ent10#att49"/>
+        <LinkParameter id="sv4#cru3#oln7#par167" name="Dimensione_PASSING_Dimensione" sourceLinkParameter="sv4#cru1#oln6#par159" target="sv4#cru2.ent10#att50"/>
+        <LinkParameter id="sv4#cru3#oln7#par168" name="E-mail_PASSING_Email" sourceLinkParameter="sv4#cru1#oln6#par160" target="sv4#cru2.ent10#att53"/>
+        <LinkParameter id="sv4#cru3#oln7#par169" name="Fax_PASSING_Fax" sourceLinkParameter="sv4#cru1#oln6#par161" target="sv4#cru2.ent10#att52"/>
+        <LinkParameter id="sv4#cru3#oln7#par170" name="Nome_PASSING_Nome" sourceLinkParameter="sv4#cru1#oln6#par163" target="sv4#cru2.ent10#att48"/>
+        <LinkParameter id="sv4#cru3#oln7#par171" name="Numero telefono_PASSING_Numero telefono" sourceLinkParameter="sv4#cru1#oln6#par164" target="sv4#cru2.ent10#att51"/>
+        <LinkParameter id="sv4#cru3#oln7#par172" name="oid_Sala prove.oid(NegozioToSala prove)" source="ent19#att19Array" target="sv4#cru2.rel7#role14.ent19#att19"/>
+        <LinkParameter id="sv4#cru3#oln7#par173" name="oid_PASSING_Indirizzo.oid(NegozioToIndirizzo)" sourceLinkParameter="sv4#cru1#oln6#par165" target="sv4#cru2.rel32#role63.ent1#att3"/>
+        <LinkParameter id="sv4#cru3#oln7#par176" name="Gestore del negozio_PASSING_Gestore Singolo Negozio.oid(NegozioToGestore Singolo Negozio)" sourceLinkParameter="sv4#cru1#oln6#par162" target="sv4#cru2.rel4#role8.userOID"/>
+        <LinkParameter id="sv4#cru3#oln7#par181" name="Nome catena_PASSING_Catena Negozi.oid(NegozioToCatena Negozi)" sourceLinkParameter="sv4#cru1#oln6#par180" target="sv4#cru2.rel22#role44.ent9#att9"/>
+      </OKLink>
+    </CreateUnit>
   </OperationUnits>
 </SiteView>
