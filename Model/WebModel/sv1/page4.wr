@@ -1,17 +1,17 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="245" gr:y="90" id="sv1#page4" name="Home Visitatore" linkOrder="sv1#page4#ln1 sv1#page4#ln10 sv1#page4#ln29">
   <ContentUnits>
-    <PowerIndexUnit gr:x="0" gr:y="160" id="sv1#page4#pwu2" name="Elenco Negozi" sortable="true" checkable="false" useCountQuery="false" entity="ent10" linkOrder="sv1#page4#pwu2#ln7" displayAttributes="ent10#att48">
+    <PowerIndexUnit gr:x="0" gr:y="160" id="sv1#page4#pwu2" name="Elenco Negozi Appartenenti alla Catena" sortable="true" checkable="false" useCountQuery="false" entity="ent10" linkOrder="sv1#page4#pwu2#ln7" displayAttributes="ent10#att48">
       <Link id="sv1#page4#pwu2#ln7" name="Visualizza Dettagli Negozio" to="sv1#page7#dau3" type="normal" validate="true">
         <LinkParameter id="sv1#page4#pwu2#ln7#par32" name="oid_KeyCondition3 [oid]" source="data[].ent10#att10" target="sv1#page7#dau3#su3#kcond3.ent10#att10"/>
         <LinkParameter id="sv1#page4#pwu2#ln7#par33" name="oid_PASSING" source="data[].ent10#att10" passing="true"/>
       </Link>
       <SortAttribute attribute="ent10#att48" order="ascending"/>
     </PowerIndexUnit>
-    <EventCalendarUnit gr:x="180" gr:y="140" id="sv1#page4#ecu1" name="Calendario Eventi" entityBased="true" entity="ent17" displayAttributes="ent17#att62 rel10#role19.ent10#att48 rel10#role19.rel33#role65.ent3#att70" dateAttribute="ent17#att61" linkOrder="sv1#page4#ecu1#ln4">
+    <EventCalendarUnit gr:x="365" gr:y="100" id="sv1#page4#ecu1" name="Calendario Eventi Disponibili nei vari Negozi" entityBased="true" entity="ent17" displayAttributes="ent17#att62 rel10#role19.ent10#att48 rel10#role19.rel33#role65.ent3#att70" dateAttribute="ent17#att61" linkOrder="sv1#page4#ecu1#ln4">
       <Link id="sv1#page4#ecu1#ln4" name="Flow4" to="sv1#page2#dau2" automaticCoupling="true" type="normal" validate="true"/>
       <SortAttribute attribute="ent17#att61" order="ascending"/>
     </EventCalendarUnit>
-    <DataUnit gr:x="115" gr:y="0" id="sv1#page4#dau1" name="Informazioni Catena" entity="ent9" displayAttributes="ent9#att55 ent9#att56 ent9#att57 ent9#att58">
+    <DataUnit gr:x="115" gr:y="0" id="sv1#page4#dau1" name="Informazioni sull Catena di Negozi di Strumenti Musicali" entity="ent9" displayAttributes="ent9#att55 ent9#att56 ent9#att57 ent9#att58">
       <Selector id="sv1#page4#dau1#su1" defaultPolicy="fill" booleanOperator="and"/>
     </DataUnit>
   </ContentUnits>

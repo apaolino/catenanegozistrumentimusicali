@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="655" gr:y="-535" id="sv1#page6" name="Registrazione al Sistema">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="415" gr:y="-535" id="sv1#page6" name="Registrazione al Sistema">
   <ContentUnits>
-    <EntryUnit gr:x="20" gr:y="155" id="sv1#page6#enu1" name="Dati Utente" linkOrder="sv1#page6#enu1#ln39">
+    <EntryUnit gr:x="260" gr:y="155" id="sv1#page6#enu1" name="Inserisci i tuoi dati" linkOrder="sv1#page6#enu1#ln39" fieldOrder="sv1#page6#enu1#fld13 sv1#page6#enu1#fld14 sv1#page6#enu1#fld15 sv1#page6#enu1#fld16 sv1#page6#enu1#fld33 sv1#page6#enu1#fld34 sv1#page6#enu1#fld35 sv1#page6#enu1#fld36 sv1#page6#enu1#fld2 sv1#page6#enu1#fld3 sv1#page6#enu1#fld4 sv1#page6#enu1#sfld3 sv1#page6#enu1#fld5 sv1#page6#enu1#fld7 sv1#page6#enu1#fld8 sv1#page6#enu1#fld9">
       <Field id="sv1#page6#enu1#fld13" name="Username" type="string" modifiable="true"/>
       <Field id="sv1#page6#enu1#fld14" name="Password" type="password" modifiable="true"/>
       <Field id="sv1#page6#enu1#fld15" name="Email" type="string" modifiable="true"/>
@@ -13,15 +13,14 @@
       <Field id="sv1#page6#enu1#fld3" name="Numero Civico" type="string" modifiable="true"/>
       <Field id="sv1#page6#enu1#fld4" name="Cap" type="string" modifiable="true"/>
       <Field id="sv1#page6#enu1#fld5" name="Citta" type="string" modifiable="true"/>
-      <Field id="sv1#page6#enu1#fld6" name="Provincia" type="string" modifiable="true"/>
       <Field id="sv1#page6#enu1#fld7" name="Stato" type="string" modifiable="true"/>
-      <Link id="sv1#page6#enu1#ln39" name="Flow39" to="sv1#opg1#cru1" type="normal" validate="true">
+      <Link id="sv1#page6#enu1#ln39" name="Registrati" to="sv1#opg1#cru1" type="normal" validate="true">
         <LinkParameter id="sv1#page6#enu1#ln39#par37" name="Cap_CAP" source="sv1#page6#enu1#fld4" target="sv1#opg1#cru1.ent1#att6"/>
         <LinkParameter id="sv1#page6#enu1#ln39#par38" name="Citta_Citt&#224;" source="sv1#page6#enu1#fld5" target="sv1#opg1#cru1.ent1#att8"/>
         <LinkParameter id="sv1#page6#enu1#ln39#par39" name="Indirizzo per intero_Indirizzo" source="sv1#page6#enu1#fld8" target="sv1#opg1#cru1.ent1#att73"/>
         <LinkParameter id="sv1#page6#enu1#ln39#par40" name="Numero Civico_Numero civico" source="sv1#page6#enu1#fld3" target="sv1#opg1#cru1.ent1#att5"/>
         <LinkParameter id="sv1#page6#enu1#ln39#par41" name="Indirizzo Primario?_Primario" source="sv1#page6#enu1#fld9" target="sv1#opg1#cru1.ent1#att23"/>
-        <LinkParameter id="sv1#page6#enu1#ln39#par42" name="Provincia_Provincia" source="sv1#page6#enu1#fld6" target="sv1#opg1#cru1.ent1#att13"/>
+        <LinkParameter id="sv1#page6#enu1#ln39#par42" name="Provincia_Provincia" source="sv1#page6#enu1#sfld3" target="sv1#opg1#cru1.ent1#att13"/>
         <LinkParameter id="sv1#page6#enu1#ln39#par43" name="Stato_Stato" source="sv1#page6#enu1#fld7" target="sv1#opg1#cru1.ent1#att14"/>
         <LinkParameter id="sv1#page6#enu1#ln39#par44" name="Via_Via" source="sv1#page6#enu1#fld2" target="sv1#opg1#cru1.ent1#att4"/>
         <LinkParameter id="sv1#page6#enu1#ln39#par45" name="Cognome_PASSING" source="sv1#page6#enu1#fld33" passing="true"/>
@@ -36,13 +35,32 @@
       </Link>
       <Field id="sv1#page6#enu1#fld8" name="Indirizzo per intero" type="string" modifiable="true"/>
       <Field id="sv1#page6#enu1#fld9" name="Indirizzo Primario?" type="boolean" modifiable="true"/>
+      <Link id="sv1#page6#enu1#ln41" name="Flow41" to="sv1#opg1#cru2" type="transport" validate="true" gr:bendpoints="262,200,-358,115">
+        <LinkParameter id="sv1#page6#enu1#ln41#par93" name="Cognome_Cognome" source="sv1#page6#enu1#fld33" target="sv1#opg1#cru2.User#att21"/>
+        <LinkParameter id="sv1#page6#enu1#ln41#par94" name="Data Nascita_Data nascita" source="sv1#page6#enu1#fld34" target="sv1#opg1#cru2.User#att22"/>
+        <LinkParameter id="sv1#page6#enu1#ln41#par95" name="Data Registrazione_Data registrazione" source="sv1#page6#enu1#fld35" target="sv1#opg1#cru2.User#att29"/>
+        <LinkParameter id="sv1#page6#enu1#ln41#par96" name="Nome_Nome" source="sv1#page6#enu1#fld16" target="sv1#opg1#cru2.User#att20"/>
+        <LinkParameter id="sv1#page6#enu1#ln41#par97" name="Numero Telefono_Numero telefono" source="sv1#page6#enu1#fld36" target="sv1#opg1#cru2.User#att54"/>
+        <LinkParameter id="sv1#page6#enu1#ln41#par98" name="Password_Password" source="sv1#page6#enu1#fld14" target="sv1#opg1#cru2.password"/>
+        <LinkParameter id="sv1#page6#enu1#ln41#par99" name="Username_UserName" source="sv1#page6#enu1#fld13" target="sv1#opg1#cru2.userName"/>
+        <LinkParameter id="sv1#page6#enu1#ln41#par100" name="oid_PASSING" sourceLinkParameter="sv1#page6#seu5#ln14#par34" passing="true"/>
+        <LinkParameter id="sv1#page6#enu1#ln41#par101" name="Email_E-mail" source="sv1#page6#enu1#fld15" target="sv1#opg1#cru2.email"/>
+        <LinkParameter id="sv1#page6#enu1#ln41#par102" name="oid_PASSING_Group.oid(defaultGroup)" sourceLinkParameter="sv1#page6#seu5#ln14#par34" target="sv1#opg1#cru2.User2DefaultGroup.groupOID"/>
+      </Link>
+      <SelectionField id="sv1#page6#enu1#sfld3" name="Provincia" type="string"/>
     </EntryUnit>
-    <SelectorUnit gr:x="0" gr:y="0" id="sv1#page6#seu5" name="Selector5" entity="Group" distinctAttributes="groupOID">
+    <SelectorUnit gr:x="240" gr:y="0" id="sv1#page6#seu5" name="Selettore Gruppo Cliente" entity="Group" distinctAttributes="groupOID">
       <Selector id="sv1#page6#seu5#su4" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv1#page6#seu5#su4#acond1" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" value="Cliente" attributes="groupName"/>
       </Selector>
       <Link id="sv1#page6#seu5#ln14" name="Flow14" to="sv1#page6#enu1" type="transport" validate="true">
         <LinkParameter id="sv1#page6#seu5#ln14#par34" name="oid_PASSING" source="groupOIDArray" passing="true"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="0" gr:y="140" id="sv1#page6#seu6" name="Selettore Zona provincia" entity="ent3" distinctAttributes="ent3#att70">
+      <Link id="sv1#page6#seu6#ln43" name="Flow43" to="sv1#page6#enu1" type="transport" validate="true">
+        <LinkParameter id="sv1#page6#seu6#ln43#par103" name="Provincia_Provincia [label]" source="ent3#att70Array" target="sv1#page6#enu1#sfld3_label"/>
+        <LinkParameter id="sv1#page6#seu6#ln43#par104" name="Provincia_Provincia [output]" source="ent3#att70Array" target="sv1#page6#enu1#sfld3_output"/>
       </Link>
     </SelectorUnit>
   </ContentUnits>
@@ -62,8 +80,8 @@
           <layout:Field field="sv1#page6#enu1#fld2"/>
           <layout:Field field="sv1#page6#enu1#fld3"/>
           <layout:Field field="sv1#page6#enu1#fld4"/>
+          <layout:Field field="sv1#page6#enu1#sfld3"/>
           <layout:Field field="sv1#page6#enu1#fld5"/>
-          <layout:Field field="sv1#page6#enu1#fld6"/>
           <layout:Field field="sv1#page6#enu1#fld7"/>
           <layout:Field field="sv1#page6#enu1#fld8"/>
           <layout:Field field="sv1#page6#enu1#fld9"/>

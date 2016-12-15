@@ -1,19 +1,11 @@
 <OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1040" gr:y="-335" id="sv1#opg1" name="Inserimento Nuovo Cliente" transaction="true">
   <OperationUnits>
-    <CreateUnit gr:x="0" gr:y="5" id="sv1#opg1#cru1" name="Inserimento Indirizzo" entity="ent1" linkOrder="sv1#opg1#cru1#ln37">
-      <Link id="sv1#opg1#cru1#ln37" name="Flow37" to="sv1#opg1#cru2" type="transport" validate="true">
-        <LinkParameter id="sv1#opg1#cru1#ln37#par53" name="Cognome_PASSING_Cognome" sourceLinkParameter="sv1#page6#enu1#ln39#par45" target="sv1#opg1#cru2.User#att21"/>
-        <LinkParameter id="sv1#opg1#cru1#ln37#par54" name="Data Nascita_PASSING_Data nascita" sourceLinkParameter="sv1#page6#enu1#ln39#par46" target="sv1#opg1#cru2.User#att22"/>
-        <LinkParameter id="sv1#opg1#cru1#ln37#par55" name="Data Registrazione_PASSING_Data registrazione" sourceLinkParameter="sv1#page6#enu1#ln39#par47" target="sv1#opg1#cru2.User#att29"/>
-        <LinkParameter id="sv1#opg1#cru1#ln37#par56" name="Email_PASSING_E-mail" sourceLinkParameter="sv1#page6#enu1#ln39#par48" target="sv1#opg1#cru2.email"/>
-        <LinkParameter id="sv1#opg1#cru1#ln37#par85" name="oid_Indirizzo.oid(UserToIndirizzo)" source="ent1#att3Array" target="sv1#opg1#cru2.rel20#role40.ent1#att3"/>
-        <LinkParameter id="sv1#opg1#cru1#ln37#par86" name="Nome_PASSING_Nome" sourceLinkParameter="sv1#page6#enu1#ln39#par49" target="sv1#opg1#cru2.User#att20"/>
-        <LinkParameter id="sv1#opg1#cru1#ln37#par87" name="Numero Telefono_PASSING_Numero telefono" sourceLinkParameter="sv1#page6#enu1#ln39#par50" target="sv1#opg1#cru2.User#att54"/>
-        <LinkParameter id="sv1#opg1#cru1#ln37#par88" name="Password_PASSING_Password" sourceLinkParameter="sv1#page6#enu1#ln39#par51" target="sv1#opg1#cru2.password"/>
-        <LinkParameter id="sv1#opg1#cru1#ln37#par89" name="Username_PASSING_UserName" sourceLinkParameter="sv1#page6#enu1#ln39#par52" target="sv1#opg1#cru2.userName"/>
-        <LinkParameter id="sv1#opg1#cru1#ln37#par91" name="oid_PASSING_Group.oid(defaultGroup)" sourceLinkParameter="sv1#page6#enu1#ln39#par90" target="sv1#opg1#cru2.User2DefaultGroup.groupOID"/>
-      </Link>
+    <CreateUnit gr:x="0" gr:y="5" id="sv1#opg1#cru1" name="Inserimento Indirizzo" entity="ent1">
+      <OKLink id="sv1#opg1#cru1#oln1" name="OKFlow1" to="sv1#opg1#cru2" automaticCoupling="true"/>
     </CreateUnit>
-    <CreateUnit gr:x="235" gr:y="30" id="sv1#opg1#cru2" name="Create2" entity="User"/>
+    <CreateUnit gr:x="235" gr:y="30" id="sv1#opg1#cru2" name="Inserimento Utente Registrato" entity="User">
+      <OKLink id="sv1#opg1#cru2#oln6" name="OKFlow3" to="sv1#page15#alt5#page17#mssu4" automaticCoupling="true"/>
+      <KOLink id="sv1#opg1#cru2#kln10" name="KOFlow10" to="sv1#page15#alt5#page25#mssu7" automaticCoupling="true"/>
+    </CreateUnit>
   </OperationUnits>
 </OperationGroup>

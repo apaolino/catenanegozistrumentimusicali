@@ -1,0 +1,92 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1640" gr:y="-510" id="sv1#page15" name="Esito Registrazione">
+  <ContentUnits/>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#page15#alt5#page17">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page15#alt5#page17#mssu4">
+                  <layout:Link link="sv1#page15#alt5#page17#mssu4#ln42"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#page15#alt5#page25">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page15#alt5#page25#mssu7"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative id="sv1#page15#alt5" name="Alternative3" gr:x="0" gr:y="0">
+    <Page id="sv1#page15#alt5#page17" name="Successo" gr:x="0" gr:y="0">
+      <ContentUnits>
+        <MultiMessageUnit id="sv1#page15#alt5#page17#mssu4" name="Messaggio Successo" gr:x="0" gr:y="0" linkOrder="sv1#page15#alt5#page17#mssu4#ln42">
+          <Message xml:space="preserve">Registrazione effettuata con successo.</Message>
+          <Link id="sv1#page15#alt5#page17#mssu4#ln42" name="Effettua Login" to="sv1#page23" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="361,3,1996,-427;366,318,2001,-112"/>
+        </MultiMessageUnit>
+      </ContentUnits>
+    </Page>
+    <Page gr:x="0" gr:y="140" id="sv1#page15#alt5#page25" name="Errore">
+      <ContentUnits>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="sv1#page15#alt5#page25#mssu7" name="Messaggio Errore"/>
+      </ContentUnits>
+    </Page>
+  </Alternative>
+</Page>
