@@ -1,4 +1,4 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4" name="Gestore_Catena" landmarks="sv4#area2 sv4#area5 sv4#page21 sv4#area9" homePage="sv4#page11">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4" name="Gestore_Catena" landmarks="sv4#area2 sv4#page21 sv4#area3" homePage="sv4#page11">
   <OperationUnits>
     <LogoutUnit gr:x="715" gr:y="-15" id="sv4#lou3" name="Logout" siteView="sv1">
       <KOLink id="sv4#lou3#kln3" name="KOFlow3" to="sv4#page11" automaticCoupling="true" gr:bendpoints="81,83,391,-342"/>
@@ -10,7 +10,7 @@
       <OKLink id="sv4#mfu1#oln5" name="OKFlow5" to="sv4#page10#mssu8" automaticCoupling="true" gr:bendpoints="78,66,178,-259;78,172,178,-153"/>
       <KOLink id="sv4#mfu1#kln2" name="KOFlow2" to="sv4#page20#mssu9" automaticCoupling="true"/>
     </ModifyUnit>
-    <ConnectUnit gr:x="-25" gr:y="800" id="sv4#cnu1" name="Connect1" relationship="rel24#role47">
+    <ConnectUnit gr:x="45" gr:y="670" id="sv4#cnu1" name="Connect1" relationship="rel24#role47">
       <SourceSelector id="sv4#cnu1#su11" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#cnu1#su11#kcond6" name="KeyCondition6" predicate="in" implied="false"/>
       </SourceSelector>
@@ -24,6 +24,36 @@
       </Selector>
       <OKLink id="sv4#mfu2#oln4" name="OKFlow4" to="sv4#page10#mssu8" automaticCoupling="true"/>
       <KOLink id="sv4#mfu2#kln4" name="KOFlow4" to="sv4#page20#mssu9" automaticCoupling="true" gr:bendpoints="123,-27,198,238;99,-281,174,-16"/>
+    </ModifyUnit>
+    <CreateUnit gr:x="1530" gr:y="580" id="sv4#cru1" name="Inserimento indirizzo" entity="ent1">
+      <OKLink id="sv4#cru1#oln6" name="OKFlow6" to="sv4#cru3">
+        <LinkParameter id="sv4#cru1#oln6#par165" name="oid_PASSING" source="ent1#att3Array" passing="true"/>
+        <LinkParameter id="sv4#cru1#oln6#par53" name="Provincia_PASSING" source="ent1#att13Array" passing="true"/>
+      </OKLink>
+    </CreateUnit>
+    <CreateUnit gr:x="1900" gr:y="570" id="sv4#cru2" name="Inserimento negozio" entity="ent10"/>
+    <CreateUnit gr:x="1715" gr:y="575" id="sv4#cru3" name="Inserimento sala prove" entity="ent19">
+      <OKLink id="sv4#cru3#oln7" name="OKFlow7" to="sv4#cru2">
+        <LinkParameter id="sv4#cru3#oln7#par172" name="oid_Sala prove.oid(NegozioToSala prove)" source="ent19#att19Array" target="sv4#cru2.rel7#role14.ent19#att19"/>
+        <LinkParameter id="sv4#cru3#oln7#par173" name="oid_PASSING_Indirizzo.oid(NegozioToIndirizzo)" sourceLinkParameter="sv4#cru1#oln6#par165" target="sv4#cru2.rel32#role63.ent1#att3"/>
+      </OKLink>
+    </CreateUnit>
+    <ModifyUnit gr:x="940" gr:y="1355" id="sv4#mfu5" name="Aggiorna negozio" entity="ent10">
+      <Selector id="sv4#mfu5#su19" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#mfu5#su19#kcond4" name="KeyCondition4" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv4#mfu5#oln1" name="OKFlow1" to="sv4#mfu6" automaticCoupling="true"/>
+    </ModifyUnit>
+    <ModifyUnit gr:x="1140" gr:y="1450" id="sv4#mfu6" name="Aggiorna indirizzo" entity="ent1">
+      <Selector id="sv4#mfu6#su20" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#mfu6#su20#kcond11" name="KeyCondition11" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv4#mfu6#oln3" name="OKFlow3" to="sv4#mfu7" automaticCoupling="true"/>
+    </ModifyUnit>
+    <ModifyUnit gr:x="1105" gr:y="1260" id="sv4#mfu7" name="Aggiorna sala prove" entity="ent19">
+      <Selector id="sv4#mfu7#su21" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#mfu7#su21#kcond12" name="KeyCondition12" predicate="in" implied="false"/>
+      </Selector>
     </ModifyUnit>
   </OperationUnits>
 </SiteView>
