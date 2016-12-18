@@ -1,0 +1,39 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="1250" id="sv4#area3#page12" name="Elimina Negozio">
+  <ContentUnits>
+    <SelectorUnit gr:x="0" gr:y="5" id="sv4#area3#page12#seu14" name="Selettore Negozi" entity="ent10">
+      <Link id="sv4#area3#page12#seu14#ln62" name="Flow62" to="sv4#area3#page12#pwu1" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <PowerIndexUnit gr:x="225" gr:y="0" id="sv4#area3#page12#pwu1" name="Seleziona Negozio da Eliminare" sortable="true" checkable="false" useCountQuery="false" entity="ent10" displayAttributes="ent10#att48 ent10#att49" linkOrder="sv4#area3#page12#pwu1#ln64">
+      <SortAttribute attribute="ent10#att48" order="ascending"/>
+      <Link id="sv4#area3#page12#pwu1#ln64" name="Flow64" to="sv4#opg5#dlu1" type="normal" validate="true">
+        <LinkParameter id="sv4#area3#page12#pwu1#ln64#par144" name="NegozioToIndirizzo.oid_KeyCondition23 [oid]" source="data[].rel32#role63_ent1#att3" target="sv4#opg5#dlu1#su33#kcond23.ent1#att3"/>
+        <LinkParameter id="sv4#area3#page12#pwu1#ln64#par146" name="NegozioToSala prove.oid_PASSING" source="data[].rel7#role14_ent19#att19" passing="true"/>
+        <LinkParameter id="sv4#area3#page12#pwu1#ln64#par148" name="NegozioToSpecifico.oid_PASSING" source="data[].rel30#role59_ent11#att11" passing="true"/>
+        <LinkParameter id="sv4#area3#page12#pwu1#ln64#par149" name="oid_PASSING" source="data[].ent10#att10" passing="true"/>
+      </Link>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area3#page12#pwu1">
+          <layout:Attribute attribute="ent10#att48"/>
+          <layout:Attribute attribute="ent10#att49"/>
+          <layout:Link link="sv4#area3#page12#pwu1#ln64"/>
+          <layout:Link link="sv4#area3#page12#pwu1ent10#att48"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

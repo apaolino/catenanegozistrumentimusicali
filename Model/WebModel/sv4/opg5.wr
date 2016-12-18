@@ -1,0 +1,79 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="905" gr:y="2075" id="sv4#opg5" name="Transazione Elimina Negozio" transaction="true">
+  <OperationUnits>
+    <DeleteUnit gr:x="140" gr:y="45" id="sv4#opg5#dlu1" name="Delete Indirizzo" entity="ent1">
+      <Selector id="sv4#opg5#dlu1#su33" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#opg5#dlu1#su33#kcond23" name="KeyCondition23" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv4#opg5#dlu1#oln17" name="OKFlow17" to="sv4#opg5#dlu2">
+        <LinkParameter id="sv4#opg5#dlu1#oln17#par147" name="NegozioToSala prove.oid_PASSING_KeyCondition24 [oid]" sourceLinkParameter="sv4#area3#page12#pwu1#ln64#par146" target="sv4#opg5#dlu2#su35#kcond24.ent19#att19"/>
+        <LinkParameter id="sv4#opg5#dlu1#oln17#par150" name="NegozioToSala prove.oid_PASSING" sourceLinkParameter="sv4#area3#page12#pwu1#ln64#par146" passing="true"/>
+        <LinkParameter id="sv4#opg5#dlu1#oln17#par151" name="NegozioToSpecifico.oid_PASSING" sourceLinkParameter="sv4#area3#page12#pwu1#ln64#par148" passing="true"/>
+        <LinkParameter id="sv4#opg5#dlu1#oln17#par152" name="oid_PASSING" sourceLinkParameter="sv4#area3#page12#pwu1#ln64#par149" passing="true"/>
+      </OKLink>
+      <KOLink id="sv4#opg5#dlu1#kln12" name="KOFlow12" to="sv4#page13#alt2#page18#mssu3" automaticCoupling="true"/>
+    </DeleteUnit>
+    <DeleteUnit gr:x="320" gr:y="0" id="sv4#opg5#dlu2" name="Delete Sala Prove" entity="ent19">
+      <Selector id="sv4#opg5#dlu2#su35" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#opg5#dlu2#su35#kcond24" name="KeyCondition24" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv4#opg5#dlu2#kln13" name="KOFlow13" to="sv4#page13#alt2#page18#mssu3" automaticCoupling="true"/>
+      <OKLink id="sv4#opg5#dlu2#oln24" name="OKFlow24" to="sv4#opg5#dcnu1">
+        <LinkParameter id="sv4#opg5#dlu2#oln24#par153" name="oid_PASSING_KeyCondition27 [oid] [Negozio] [Source]" sourceLinkParameter="sv4#opg5#dlu1#oln17#par152" target="sv4#opg5#dcnu1#su38#kcond27.ent10#att10"/>
+        <LinkParameter id="sv4#opg5#dlu2#oln24#par154" name="NegozioToSpecifico.oid_PASSING_KeyCondition28 [oid] [Catalogo] [Target]" sourceLinkParameter="sv4#opg5#dlu1#oln17#par151" target="sv4#opg5#dcnu1#su39#kcond28.ent11#att11"/>
+      </OKLink>
+    </DeleteUnit>
+    <DeleteUnit gr:x="925" gr:y="75" id="sv4#opg5#dlu3" name="Delete Catalogo Specifico" entity="ent14">
+      <Selector id="sv4#opg5#dlu3#su36" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#opg5#dlu3#su36#kcond25" name="KeyCondition25" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv4#opg5#dlu3#oln19" name="OKFlow19" to="sv4#opg5#dlu4">
+        <LinkParameter id="sv4#opg5#dlu3#oln19#par158" name="Target oid [Catalogo]_PASSING_KeyCondition26 [oid]" sourceLinkParameter="sv4#opg5#dcnu1#oln21#par157" target="sv4#opg5#dlu4#su37#kcond26.ent11#att11"/>
+        <LinkParameter id="sv4#opg5#dlu3#oln19#par165" name="Source oid [Negozio]_PASSING" sourceLinkParameter="sv4#opg5#dcnu1#oln21#par164" passing="true"/>
+      </OKLink>
+    </DeleteUnit>
+    <DeleteUnit gr:x="720" gr:y="235" id="sv4#opg5#dlu4" name="Delete Catalogo" entity="ent11">
+      <Selector id="sv4#opg5#dlu4#su37" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#opg5#dlu4#su37#kcond26" name="KeyCondition26" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv4#opg5#dlu4#oln26" name="OKFlow26" to="sv4#opg5#seu15">
+        <LinkParameter id="sv4#opg5#dlu4#oln26#par169" name="Source oid [Negozio]_PASSING_RoleCondition16 [oid]" sourceLinkParameter="sv4#opg5#dlu3#oln19#par165" target="sv4#opg5#seu15#su45#rcond16.ent10#att10"/>
+        <LinkParameter id="sv4#opg5#dlu4#oln26#par171" name="Source oid [Negozio]_PASSING" sourceLinkParameter="sv4#opg5#dlu3#oln19#par165" passing="true"/>
+      </OKLink>
+    </DeleteUnit>
+    <DisconnectUnit gr:x="555" gr:y="60" id="sv4#opg5#dcnu1" name="DIsconnessione Negozio Catalogo" relationship="rel23#role45">
+      <SourceSelector id="sv4#opg5#dcnu1#su38" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#opg5#dcnu1#su38#kcond27" name="KeyCondition27" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv4#opg5#dcnu1#su39" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#opg5#dcnu1#su39#kcond28" name="KeyCondition28" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv4#opg5#dcnu1#oln21" name="OKFlow21" to="sv4#opg5#dlu3">
+        <LinkParameter id="sv4#opg5#dcnu1#oln21#par155" name="Target oid [Catalogo]_KeyCondition25 [oid]" source="targetent11#att11" target="sv4#opg5#dlu3#su36#kcond25.ent11#att11"/>
+        <LinkParameter id="sv4#opg5#dcnu1#oln21#par157" name="Target oid [Catalogo]_PASSING" source="targetent11#att11" passing="true"/>
+        <LinkParameter id="sv4#opg5#dcnu1#oln21#par164" name="Source oid [Negozio]_PASSING" source="sourceent10#att10" passing="true"/>
+      </OKLink>
+    </DisconnectUnit>
+    <DeleteUnit gr:x="220" gr:y="250" id="sv4#opg5#dlu5" name="Delete Eventi Negozio" entity="ent17">
+      <Selector id="sv4#opg5#dlu5#su40" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#opg5#dlu5#su40#kcond29" name="KeyCondition29" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv4#opg5#dlu5#oln29" name="OKFlow29" to="sv4#opg5#dlu8">
+        <LinkParameter id="sv4#opg5#dlu5#oln29#par173" name="Source oid [Negozio]_PASSING_KeyCondition34 [oid]" sourceLinkParameter="sv4#opg5#seu15#oln27#par172" target="sv4#opg5#dlu8#su46#kcond34.ent10#att10"/>
+      </OKLink>
+    </DeleteUnit>
+    <SelectorUnit gr:x="470" gr:y="250" id="sv4#opg5#seu15" name="Selettore Eventi" entity="ent17">
+      <Selector id="sv4#opg5#seu15#su45" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#opg5#seu15#su45#rcond16" name="RoleCondition16" predicate="in" implied="false" role="rel10#role20"/>
+      </Selector>
+      <OKLink id="sv4#opg5#seu15#oln27" name="OKFlow27" to="sv4#opg5#dlu5">
+        <LinkParameter id="sv4#opg5#seu15#oln27#par172" name="Source oid [Negozio]_PASSING" sourceLinkParameter="sv4#opg5#dlu4#oln26#par171" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <DeleteUnit gr:x="0" gr:y="265" id="sv4#opg5#dlu8" name="Delete Negozio" entity="ent10">
+      <Selector id="sv4#opg5#dlu8#su46" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#opg5#dlu8#su46#kcond34" name="KeyCondition34" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv4#opg5#dlu8#oln30" name="OKFlow30" to="sv4#area3#page12#pwu1" automaticCoupling="true"/>
+    </DeleteUnit>
+  </OperationUnits>
+</OperationGroup>

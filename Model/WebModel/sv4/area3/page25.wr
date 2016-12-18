@@ -1,12 +1,12 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="295" id="sv4#area3#page25" name="Modifica Negozio">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="315" id="sv4#area3#page25" name="Modifica Negozio">
   <ContentUnits>
-    <EntryUnit id="sv4#area3#page25#enu11" name="Selettore Negozi" gr:x="190" gr:y="15" linkOrder="sv4#area3#page25#enu11#ln89">
+    <EntryUnit id="sv4#area3#page25#enu11" name="Selettore Negozi" gr:x="270" gr:y="20" linkOrder="sv4#area3#page25#enu11#ln89">
       <SelectionField id="sv4#area3#page25#enu11#sfld15" name="Negozio selezionato" type="string"/>
       <Link id="sv4#area3#page25#enu11#ln89" name="Visualizza e modifica dati" to="sv4#area3#page25#alt6#page26#seu30" type="normal" validate="true">
         <LinkParameter id="sv4#area3#page25#enu11#ln89#par256" name="Selection Field29_KeyCondition21 [oid]" source="sv4#area3#page25#enu11#sfld15" target="sv4#area3#page25#alt6#page26#seu30#su32#kcond21.ent10#att10"/>
       </Link>
     </EntryUnit>
-    <SelectorUnit id="sv4#area3#page25#seu29" name="Seleziona Negozi" gr:x="60" gr:y="0" entity="ent10">
+    <SelectorUnit id="sv4#area3#page25#seu29" name="Seleziona Negozi" gr:x="45" gr:y="0" entity="ent10">
       <Link id="sv4#area3#page25#seu29#ln76" name="Flow111" to="sv4#area3#page25#enu11" type="transport" validate="true">
         <LinkParameter id="sv4#area3#page25#seu29#ln76#par189" name="Nome_Selection Field29 [label]" source="ent10#att48Array" target="sv4#area3#page25#enu11#sfld15_label"/>
         <LinkParameter id="sv4#area3#page25#seu29#ln76#par190" name="oid_Selection Field29 [output]" source="ent10#att10Array" target="sv4#area3#page25#enu11#sfld15_output"/>
@@ -105,7 +105,7 @@
   <Alternative gr:x="0" gr:y="115" id="sv4#area3#page25#alt6" name="Alternative6">
     <Page gr:x="0" gr:y="0" id="sv4#area3#page25#alt6#page26" name="Page 26">
       <ContentUnits>
-        <SelectorUnit gr:x="15" gr:y="0" id="sv4#area3#page25#alt6#page26#seu30" name="Dati negozio selezionato" entity="ent10">
+        <SelectorUnit gr:x="0" gr:y="0" id="sv4#area3#page25#alt6#page26#seu30" name="Dati negozio selezionato" entity="ent10">
           <Selector id="sv4#area3#page25#alt6#page26#seu30#su32" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv4#area3#page25#alt6#page26#seu30#su32#kcond21" name="KeyCondition21" predicate="in" implied="false"/>
           </Selector>
@@ -117,22 +117,22 @@
             <LinkParameter id="sv4#area3#page25#alt6#page26#seu30#ln92#par262" name="Nome_Nome" source="ent10#att48Array" target="sv4#area3#page25#alt6#page26#enu14#fld80_slot"/>
             <LinkParameter id="sv4#area3#page25#alt6#page26#seu30#ln92#par263" name="Numero telefono_Numero di telefono" source="ent10#att51Array" target="sv4#area3#page25#alt6#page26#enu14#fld81_slot"/>
             <LinkParameter id="sv4#area3#page25#alt6#page26#seu30#ln92#par286" name="NegozioToZona.oid_Provincia - Preselection" source="rel33#role65_ent3#att69Array" target="sv4#area3#page25#alt6#page26#enu14#sfld20_presel"/>
+            <LinkParameter id="sv4#area3#page25#alt6#page26#seu30#ln92#par126" name="NegozioToGestore Singolo Negozio.oid_Gestore negozio - Preselection" source="rel4#role8_userOIDArray" target="sv4#area3#page25#alt6#page26#enu14#sfld21_presel"/>
           </Link>
           <Link id="sv4#area3#page25#alt6#page26#seu30#ln93" name="Flow93" to="sv4#area3#page25#alt6#page26#seu31" type="transport" validate="true">
             <LinkParameter id="sv4#area3#page25#alt6#page26#seu30#ln93#par285" name="NegozioToZona.oid_PASSING" source="rel33#role65_ent3#att69Array" passing="true"/>
             <LinkParameter id="sv4#area3#page25#alt6#page26#seu30#ln93#par287" name="oid_RoleCondition11 [oid]" source="ent10#att10Array" target="sv4#area3#page25#alt6#page26#seu31#su34#rcond11.ent10#att10"/>
           </Link>
-          <Link id="sv4#area3#page25#alt6#page26#seu30#ln97" name="Flow97" to="sv4#area3#page25#alt6#page26#seu33" type="transport" validate="true" gr:bendpoints="-86,73,-76,-433;-86,249,-76,-257">
-            <LinkParameter id="sv4#area3#page25#alt6#page26#seu30#ln97#par282" name="NegozioToGestore Singolo Negozio.oid_RoleCondition10 [oid]" source="rel4#role8_userOIDArray" target="sv4#area3#page25#alt6#page26#seu33#su35#kcond23.userOID"/>
-          </Link>
           <Link id="sv4#area3#page25#alt6#page26#seu30#ln8" name="Flow8" to="sv4#area3#page25#alt6#page26#seu5" type="transport" validate="true" gr:bendpoints="-59,89,-149,-301;-59,247,-149,-143">
-            <LinkParameter id="sv4#area3#page25#alt6#page26#seu30#ln8#par2" name="NegozioToSala prove.oid_RoleCondition4 [oid]" source="rel7#role14_ent19#att19Array" target="sv4#area3#page25#alt6#page26#seu5#su15#rcond4.ent10#att10"/>
+            <LinkParameter id="sv4#area3#page25#alt6#page26#seu30#ln8#par124" name="NegozioToSala prove.oid_KeyCondition16 [oid]" source="rel7#role14_ent19#att19Array" target="sv4#area3#page25#alt6#page26#seu5#su15#kcond16.ent19#att19"/>
           </Link>
-          <Link id="sv4#area3#page25#alt6#page26#seu30#ln37" name="Flow37" to="sv4#mfu5" type="transport" validate="true" gr:bendpoints="150,-50,-690,-10;671,-57,-169,-17">
-            <LinkParameter id="sv4#area3#page25#alt6#page26#seu30#ln37#par38" name="oid_KeyCondition4 [oid]" source="ent10#att10Array" target="sv4#mfu5#su19#kcond4.ent10#att10"/>
+          <Link id="sv4#area3#page25#alt6#page26#seu30#ln37" name="Flow37" to="sv4#opg4#mfu4" type="transport" validate="true" gr:bendpoints="182,-66,-808,-86;719,-55,-271,-75">
+            <LinkParameter id="sv4#area3#page25#alt6#page26#seu30#ln37#par38" name="oid_KeyCondition4 [oid]" source="ent10#att10Array" target="sv4#opg4#mfu4#su30#kcond20.ent10#att10"/>
+            <LinkParameter id="sv4#area3#page25#alt6#page26#seu30#ln37#par132" name="NegozioToCatena Negozi.oid_Catena Negozi.oid(NegozioToCatena Negozi)" source="rel22#role44_ent9#att9Array" target="sv4#opg4#mfu4.rel22#role44.ent9#att9"/>
+            <LinkParameter id="sv4#area3#page25#alt6#page26#seu30#ln37#par133" name="NegozioToBase.oid_Catalogo Base.oid(NegozioToBase)" source="rel8#role15_ent11#att11Array" target="sv4#opg4#mfu4.rel8#role15.ent11#att11"/>
           </Link>
         </SelectorUnit>
-        <EntryUnit gr:x="555" gr:y="10" id="sv4#area3#page25#alt6#page26#enu14" name="Modifica Dati Negozio" fieldOrder="sv4#area3#page25#alt6#page26#enu14#fld80 sv4#area3#page25#alt6#page26#enu14#fld70 sv4#area3#page25#alt6#page26#enu14#sfld21 sv4#area3#page25#alt6#page26#enu14#fld82 sv4#area3#page25#alt6#page26#enu14#fld81 sv4#area3#page25#alt6#page26#enu14#fld79 sv4#area3#page25#alt6#page26#enu14#fld72 sv4#area3#page25#alt6#page26#enu14#fld1 sv4#area3#page25#alt6#page26#enu14#fld2 sv4#area3#page25#alt6#page26#enu14#fld75 sv4#area3#page25#alt6#page26#enu14#fld74 sv4#area3#page25#alt6#page26#enu14#fld71 sv4#area3#page25#alt6#page26#enu14#sfld20 sv4#area3#page25#alt6#page26#enu14#fld76 sv4#area3#page25#alt6#page26#enu14#fld78 sv4#area3#page25#alt6#page26#enu14#fld77 sv4#area3#page25#alt6#page26#enu14#fld73" linkOrder="sv4#area3#page25#alt6#page26#enu14#ln26">
+        <EntryUnit gr:x="540" gr:y="10" id="sv4#area3#page25#alt6#page26#enu14" name="Modifica Dati Negozio" fieldOrder="sv4#area3#page25#alt6#page26#enu14#fld80 sv4#area3#page25#alt6#page26#enu14#fld70 sv4#area3#page25#alt6#page26#enu14#sfld21 sv4#area3#page25#alt6#page26#enu14#fld82 sv4#area3#page25#alt6#page26#enu14#fld81 sv4#area3#page25#alt6#page26#enu14#fld79 sv4#area3#page25#alt6#page26#enu14#fld72 sv4#area3#page25#alt6#page26#enu14#fld1 sv4#area3#page25#alt6#page26#enu14#fld2 sv4#area3#page25#alt6#page26#enu14#fld75 sv4#area3#page25#alt6#page26#enu14#fld74 sv4#area3#page25#alt6#page26#enu14#fld71 sv4#area3#page25#alt6#page26#enu14#sfld20 sv4#area3#page25#alt6#page26#enu14#fld76 sv4#area3#page25#alt6#page26#enu14#fld78 sv4#area3#page25#alt6#page26#enu14#fld77 sv4#area3#page25#alt6#page26#enu14#fld73" linkOrder="sv4#area3#page25#alt6#page26#enu14#ln26">
           <Field id="sv4#area3#page25#alt6#page26#enu14#fld70" name="Data di apertura" type="date" modifiable="true" preloaded="true"/>
           <Field id="sv4#area3#page25#alt6#page26#enu14#fld71" name="CAP" type="integer" modifiable="true" preloaded="true"/>
           <Field id="sv4#area3#page25#alt6#page26#enu14#fld72" name="E-mail" type="string" modifiable="true" preloaded="true"/>
@@ -150,36 +150,36 @@
           <Field id="sv4#area3#page25#alt6#page26#enu14#fld82" name="Dimensione" type="integer" modifiable="true" preloaded="true"/>
           <Field id="sv4#area3#page25#alt6#page26#enu14#fld1" name="Grandezza sala prove" type="string" modifiable="true" preloaded="true"/>
           <Field id="sv4#area3#page25#alt6#page26#enu14#fld2" name="Prezzo orario" type="string" modifiable="true" preloaded="true"/>
-          <Link id="sv4#area3#page25#alt6#page26#enu14#ln26" name="Salva modifiche" to="sv4#mfu5" type="normal" validate="true">
-            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln26#par20" name="Data di apertura_Data apertura" source="sv4#area3#page25#alt6#page26#enu14#fld70" target="sv4#mfu5.ent10#att49"/>
-            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln26#par22" name="Dimensione_Dimensione" source="sv4#area3#page25#alt6#page26#enu14#fld82" target="sv4#mfu5.ent10#att50"/>
-            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln26#par23" name="E-mail_Email" source="sv4#area3#page25#alt6#page26#enu14#fld72" target="sv4#mfu5.ent10#att53"/>
-            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln26#par24" name="Fax_Fax" source="sv4#area3#page25#alt6#page26#enu14#fld79" target="sv4#mfu5.ent10#att52"/>
-            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln26#par25" name="Nome_Nome" source="sv4#area3#page25#alt6#page26#enu14#fld80" target="sv4#mfu5.ent10#att48"/>
-            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln26#par26" name="Numero di telefono_Numero telefono" source="sv4#area3#page25#alt6#page26#enu14#fld81" target="sv4#mfu5.ent10#att51"/>
-            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln26#par28" name="Provincia_Zona.oid(NegozioToZona)" source="sv4#area3#page25#alt6#page26#enu14#sfld20" target="sv4#mfu5.rel33#role65.ent3#att69"/>
-            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln26#par36" name="Gestore negozio_Gestore Singolo Negozio.oid(NegozioToGestore Singolo Negozio)" source="sv4#area3#page25#alt6#page26#enu14#sfld21" target="sv4#mfu5.rel4#role8.userOID"/>
+          <Link id="sv4#area3#page25#alt6#page26#enu14#ln26" name="Salva modifiche" to="sv4#opg4#mfu4" type="normal" validate="true">
+            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln26#par20" name="Data di apertura_Data apertura" source="sv4#area3#page25#alt6#page26#enu14#fld70" target="sv4#opg4#mfu4.ent10#att49"/>
+            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln26#par22" name="Dimensione_Dimensione" source="sv4#area3#page25#alt6#page26#enu14#fld82" target="sv4#opg4#mfu4.ent10#att50"/>
+            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln26#par23" name="E-mail_Email" source="sv4#area3#page25#alt6#page26#enu14#fld72" target="sv4#opg4#mfu4.ent10#att53"/>
+            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln26#par24" name="Fax_Fax" source="sv4#area3#page25#alt6#page26#enu14#fld79" target="sv4#opg4#mfu4.ent10#att52"/>
+            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln26#par25" name="Nome_Nome" source="sv4#area3#page25#alt6#page26#enu14#fld80" target="sv4#opg4#mfu4.ent10#att48"/>
+            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln26#par26" name="Numero di telefono_Numero telefono" source="sv4#area3#page25#alt6#page26#enu14#fld81" target="sv4#opg4#mfu4.ent10#att51"/>
+            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln26#par28" name="Provincia_Zona.oid(NegozioToZona)" source="sv4#area3#page25#alt6#page26#enu14#sfld20" target="sv4#opg4#mfu4.rel33#role65.ent3#att69"/>
+            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln26#par36" name="Gestore negozio_Gestore Singolo Negozio.oid(NegozioToGestore Singolo Negozio)" source="sv4#area3#page25#alt6#page26#enu14#sfld21" target="sv4#opg4#mfu4.rel4#role8.userOID"/>
           </Link>
-          <Link id="sv4#area3#page25#alt6#page26#enu14#ln39" name="Flow39" to="sv4#mfu6" type="transport" validate="true">
-            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln39#par39" name="CAP_CAP" source="sv4#area3#page25#alt6#page26#enu14#fld71" target="sv4#mfu6.ent1#att6"/>
-            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln39#par40" name="Citt&#224;_Citt&#224;" source="sv4#area3#page25#alt6#page26#enu14#fld76" target="sv4#mfu6.ent1#att8"/>
-            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln39#par41" name="Indirizzo Intero_Indirizzo" source="sv4#area3#page25#alt6#page26#enu14#fld77" target="sv4#mfu6.ent1#att73"/>
-            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln39#par42" name="Numero civico_Numero civico" source="sv4#area3#page25#alt6#page26#enu14#fld74" target="sv4#mfu6.ent1#att5"/>
-            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln39#par43" name="Primario_Primario" source="sv4#area3#page25#alt6#page26#enu14#fld73" target="sv4#mfu6.ent1#att23"/>
-            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln39#par44" name="Provincia_Provincia" target="sv4#mfu6.ent1#att13" sourceLinkParameter="sv4#area3#page25#alt6#page26#seu32#ln95#par47"/>
-            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln39#par45" name="Stato_Stato" source="sv4#area3#page25#alt6#page26#enu14#fld78" target="sv4#mfu6.ent1#att14"/>
-            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln39#par46" name="Via_Via" source="sv4#area3#page25#alt6#page26#enu14#fld75" target="sv4#mfu6.ent1#att4"/>
+          <Link id="sv4#area3#page25#alt6#page26#enu14#ln39" name="Flow39" to="sv4#opg4#mfu8" type="transport" validate="true">
+            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln39#par39" name="CAP_CAP" source="sv4#area3#page25#alt6#page26#enu14#fld71" target="sv4#opg4#mfu8.ent1#att6"/>
+            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln39#par40" name="Citt&#224;_Citt&#224;" source="sv4#area3#page25#alt6#page26#enu14#fld76" target="sv4#opg4#mfu8.ent1#att8"/>
+            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln39#par41" name="Indirizzo Intero_Indirizzo" source="sv4#area3#page25#alt6#page26#enu14#fld77" target="sv4#opg4#mfu8.ent1#att73"/>
+            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln39#par42" name="Numero civico_Numero civico" source="sv4#area3#page25#alt6#page26#enu14#fld74" target="sv4#opg4#mfu8.ent1#att5"/>
+            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln39#par43" name="Primario_Primario" source="sv4#area3#page25#alt6#page26#enu14#fld73" target="sv4#opg4#mfu8.ent1#att23"/>
+            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln39#par44" name="Provincia_Provincia" target="sv4#opg4#mfu8.ent1#att13" sourceLinkParameter="sv4#area3#page25#alt6#page26#seu32#ln95#par47"/>
+            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln39#par45" name="Stato_Stato" source="sv4#area3#page25#alt6#page26#enu14#fld78" target="sv4#opg4#mfu8.ent1#att14"/>
+            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln39#par46" name="Via_Via" source="sv4#area3#page25#alt6#page26#enu14#fld75" target="sv4#opg4#mfu8.ent1#att4"/>
           </Link>
-          <Link id="sv4#area3#page25#alt6#page26#enu14#ln42" name="Flow42" to="sv4#mfu7" type="transport" validate="true">
-            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln42#par50" name="Grandezza sala prove_Dimensione stanza" source="sv4#area3#page25#alt6#page26#enu14#fld1" target="sv4#mfu7.ent19#att60"/>
-            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln42#par51" name="Prezzo orario_Prezzo orario" source="sv4#area3#page25#alt6#page26#enu14#fld2" target="sv4#mfu7.ent19#att59"/>
+          <Link id="sv4#area3#page25#alt6#page26#enu14#ln42" name="Flow42" to="sv4#opg4#mfu3" type="transport" validate="true">
+            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln42#par50" name="Grandezza sala prove_Dimensione stanza" source="sv4#area3#page25#alt6#page26#enu14#fld1" target="sv4#opg4#mfu3.ent19#att60"/>
+            <LinkParameter id="sv4#area3#page25#alt6#page26#enu14#ln42#par51" name="Prezzo orario_Prezzo orario" source="sv4#area3#page25#alt6#page26#enu14#fld2" target="sv4#opg4#mfu3.ent19#att59"/>
           </Link>
         </EntryUnit>
-        <SelectorUnit gr:x="100" gr:y="140" id="sv4#area3#page25#alt6#page26#seu31" name="Recupera indirizzo" entity="ent1">
+        <SelectorUnit gr:x="105" gr:y="230" id="sv4#area3#page25#alt6#page26#seu31" name="Recupera indirizzo" entity="ent1">
           <Selector id="sv4#area3#page25#alt6#page26#seu31#su34" defaultPolicy="fill" booleanOperator="and">
             <RelationshipRoleCondition id="sv4#area3#page25#alt6#page26#seu31#su34#rcond11" name="RoleCondition11" predicate="in" implied="false" role="rel32#role63"/>
           </Selector>
-          <Link id="sv4#area3#page25#alt6#page26#seu31#ln94" name="Flow94" to="sv4#area3#page25#alt6#page26#enu14" type="transport" validate="true" gr:bendpoints="18,-124,-442,26">
+          <Link id="sv4#area3#page25#alt6#page26#seu31#ln94" name="Flow94" to="sv4#area3#page25#alt6#page26#enu14" type="transport" validate="true">
             <LinkParameter id="sv4#area3#page25#alt6#page26#seu31#ln94#par265" name="CAP_CAP" source="ent1#att6Array" target="sv4#area3#page25#alt6#page26#enu14#fld71_slot"/>
             <LinkParameter id="sv4#area3#page25#alt6#page26#seu31#ln94#par266" name="Citt&#224;_Citt&#224;" source="ent1#att8Array" target="sv4#area3#page25#alt6#page26#enu14#fld76_slot"/>
             <LinkParameter id="sv4#area3#page25#alt6#page26#seu31#ln94#par267" name="Indirizzo_Indirizzo Intero" source="ent1#att73Array" target="sv4#area3#page25#alt6#page26#enu14#fld77_slot"/>
@@ -189,60 +189,37 @@
             <LinkParameter id="sv4#area3#page25#alt6#page26#seu31#ln94#par271" name="Via_Via" source="ent1#att4Array" target="sv4#area3#page25#alt6#page26#enu14#fld75_slot"/>
             <LinkParameter id="sv4#area3#page25#alt6#page26#seu31#ln94#par284" name="oid_Provincia - Preselection" source="ent1#att3Array" target="sv4#area3#page25#alt6#page26#enu14#sfld20_presel"/>
           </Link>
-          <Link id="sv4#area3#page25#alt6#page26#seu31#ln40" name="Flow40" to="sv4#mfu6" type="transport" validate="true" gr:bendpoints="132,184,-834,268;304,212,-662,296">
-            <LinkParameter id="sv4#area3#page25#alt6#page26#seu31#ln40#par48" name="oid_KeyCondition11 [oid]" source="ent1#att3Array" target="sv4#mfu6#su20#kcond11.ent1#att3"/>
+          <Link id="sv4#area3#page25#alt6#page26#seu31#ln40" name="Flow40" to="sv4#opg4#mfu8" type="transport" validate="true" gr:bendpoints="164,130,-946,246;1136,162,6,188">
+            <LinkParameter id="sv4#area3#page25#alt6#page26#seu31#ln40#par48" name="oid_KeyCondition11 [oid]" source="ent1#att3Array" target="sv4#opg4#mfu8#su31#kcond22.ent1#att3"/>
           </Link>
         </SelectorUnit>
-        <SelectorUnit gr:x="235" gr:y="110" id="sv4#area3#page25#alt6#page26#seu32" name="Elenco province" entity="ent3">
-          <Link id="sv4#area3#page25#alt6#page26#seu32#ln95" name="Flow95" to="sv4#area3#page25#alt6#page26#enu14" type="transport" validate="true" gr:bendpoints="17,-57,-317,23">
+        <SelectorUnit gr:x="350" gr:y="210" id="sv4#area3#page25#alt6#page26#seu32" name="Elenco province" entity="ent3">
+          <Link id="sv4#area3#page25#alt6#page26#seu32#ln95" name="Flow95" to="sv4#area3#page25#alt6#page26#enu14" type="transport" validate="true" gr:bendpoints="94,-85,-126,125">
             <LinkParameter id="sv4#area3#page25#alt6#page26#seu32#ln95#par274" name="Provincia_Provincia [label]" source="ent3#att70Array" target="sv4#area3#page25#alt6#page26#enu14#sfld20_label"/>
             <LinkParameter id="sv4#area3#page25#alt6#page26#seu32#ln95#par275" name="oid_Provincia [output]" source="ent3#att69Array" target="sv4#area3#page25#alt6#page26#enu14#sfld20_output"/>
             <LinkParameter id="sv4#area3#page25#alt6#page26#seu32#ln95#par47" name="Provincia_PASSING" source="ent3#att70Array" passing="true"/>
           </Link>
         </SelectorUnit>
-        <SelectorUnit gr:x="0" gr:y="505" id="sv4#area3#page25#alt6#page26#seu33" name="Recupera gestore negozio" entity="ent6">
-          <Selector id="sv4#area3#page25#alt6#page26#seu33#su35" defaultPolicy="fill" booleanOperator="and">
-            <KeyCondition id="sv4#area3#page25#alt6#page26#seu33#su35#kcond23" predicate="in" implied="false" name="RoleCondition10"/>
-          </Selector>
-          <Link id="sv4#area3#page25#alt6#page26#seu33#ln98" name="Flow98" to="sv4#area3#page25#alt6#page26#enu14" type="transport" validate="true" gr:bendpoints="80,-35,-464,481;300,-42,-244,474;603,-22,59,494;596,-452,52,64">
-            <LinkParameter id="sv4#area3#page25#alt6#page26#seu33#ln98#par279" name="oid_Gestore negozio - Preselection" source="userOIDArray" target="sv4#area3#page25#alt6#page26#enu14#sfld21_presel"/>
-          </Link>
-        </SelectorUnit>
-        <SelectorUnit gr:x="180" gr:y="525" id="sv4#area3#page25#alt6#page26#seu34" name="Selettore gestore" entity="ent6">
-          <Link id="sv4#area3#page25#alt6#page26#seu34#ln99" name="Flow99" to="sv4#area3#page25#alt6#page26#enu14" type="transport" validate="true" gr:bendpoints="449,7,79,533;442,-475,72,51">
+        <SelectorUnit gr:x="435" gr:y="555" id="sv4#area3#page25#alt6#page26#seu34" name="Selettore gestore" entity="ent6">
+          <Link id="sv4#area3#page25#alt6#page26#seu34#ln99" name="Flow99" to="sv4#area3#page25#alt6#page26#enu14" type="transport" validate="true" gr:bendpoints="312,-2,202,553;299,-483,189,72">
             <LinkParameter id="sv4#area3#page25#alt6#page26#seu34#ln99#par280" name="Cognome_Gestore negozio [label]" source="User#att21Array" target="sv4#area3#page25#alt6#page26#enu14#sfld21_label"/>
             <LinkParameter id="sv4#area3#page25#alt6#page26#seu34#ln99#par281" name="oid_Gestore negozio [output]" source="userOIDArray" target="sv4#area3#page25#alt6#page26#enu14#sfld21_output"/>
           </Link>
+          <Selector id="sv4#area3#page25#alt6#page26#seu34#su28" defaultPolicy="fill" booleanOperator="and"/>
         </SelectorUnit>
-        <SelectorUnit gr:x="400" gr:y="240" id="sv4#area3#page25#alt6#page26#seu2" name="Seleziona catena" entity="ent9" maxResults="1">
-          <Selector id="sv4#area3#page25#alt6#page26#seu2#su4" defaultPolicy="fill" booleanOperator="and">
-            <AttributesCondition id="sv4#area3#page25#alt6#page26#seu2#su4#acond1" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" attributes="ent9#att9"/>
-          </Selector>
-          <SortAttribute attribute="ent9#att9" order="ascending"/>
-          <Link id="sv4#area3#page25#alt6#page26#seu2#ln27" name="Flow27" to="sv4#mfu5" type="transport" validate="true" gr:bendpoints="320,-162,-156,118">
-            <LinkParameter id="sv4#area3#page25#alt6#page26#seu2#ln27#par31" name="oid_Catena Negozi.oid(NegozioToCatena Negozi)" source="ent9#att9Array" target="sv4#mfu5.rel22#role44.ent9#att9"/>
-          </Link>
-        </SelectorUnit>
-        <SelectorUnit gr:x="110" gr:y="390" id="sv4#area3#page25#alt6#page26#seu5" name="Recupera sala prove" entity="ent19">
+        <SelectorUnit gr:x="45" gr:y="430" id="sv4#area3#page25#alt6#page26#seu5" name="Recupera sala prove" entity="ent19">
           <Selector id="sv4#area3#page25#alt6#page26#seu5#su15" defaultPolicy="fill" booleanOperator="and">
-            <RelationshipRoleCondition id="sv4#area3#page25#alt6#page26#seu5#su15#rcond4" name="RoleCondition4" predicate="in" implied="false" role="rel7#role14"/>
+            <KeyCondition id="sv4#area3#page25#alt6#page26#seu5#su15#kcond16" name="KeyCondition16" predicate="in" implied="false"/>
           </Selector>
           <Link id="sv4#area3#page25#alt6#page26#seu5#ln14" name="Flow14" to="sv4#area3#page25#alt6#page26#enu14" type="transport" validate="true" gr:bendpoints="478,78,34,478;471,-329,27,71">
             <LinkParameter id="sv4#area3#page25#alt6#page26#seu5#ln14#par3" name="Dimensione stanza_Grandezza sala prove" source="ent19#att60Array" target="sv4#area3#page25#alt6#page26#enu14#fld1_slot"/>
             <LinkParameter id="sv4#area3#page25#alt6#page26#seu5#ln14#par4" name="Prezzo orario_Prezzo orario" source="ent19#att59Array" target="sv4#area3#page25#alt6#page26#enu14#fld2_slot"/>
           </Link>
-          <Link id="sv4#area3#page25#alt6#page26#seu5#ln32" name="Flow32" to="sv4#mfu5" type="transport" validate="true" gr:bendpoints="717,9,-33,439">
-            <LinkParameter id="sv4#area3#page25#alt6#page26#seu5#ln32#par37" name="oid_Sala prove.oid(NegozioToSala prove)" source="ent19#att19Array" target="sv4#mfu5.rel7#role14.ent19#att19"/>
+          <Link id="sv4#area3#page25#alt6#page26#seu5#ln32" name="Flow32" to="sv4#opg4#mfu4" type="transport" validate="true" gr:bendpoints="902,-8,-8,362">
+            <LinkParameter id="sv4#area3#page25#alt6#page26#seu5#ln32#par37" name="oid_Sala prove.oid(NegozioToSala prove)" source="ent19#att19Array" target="sv4#opg4#mfu4.rel7#role14.ent19#att19"/>
           </Link>
-          <Link id="sv4#area3#page25#alt6#page26#seu5#ln41" name="Flow41" to="sv4#mfu7" type="transport" validate="true" gr:bendpoints="1006,47,86,571;1133,-304,213,220">
-            <LinkParameter id="sv4#area3#page25#alt6#page26#seu5#ln41#par49" name="oid_KeyCondition12 [oid]" source="ent19#att19Array" target="sv4#mfu7#su21#kcond12.ent19#att19"/>
-          </Link>
-        </SelectorUnit>
-        <SelectorUnit gr:x="400" gr:y="125" id="sv4#area3#page25#alt6#page26#seu6" name="Recupera catalogo base" entity="ent13" maxResults="1">
-          <Selector id="sv4#area3#page25#alt6#page26#seu6#su17" defaultPolicy="fill" booleanOperator="and"/>
-          <SortAttribute attribute="ent11#att47" order="descending"/>
-          <Link id="sv4#area3#page25#alt6#page26#seu6#ln36" name="Flow36" to="sv4#mfu5" type="transport" validate="true">
-            <LinkParameter id="sv4#area3#page25#alt6#page26#seu6#ln36#par34" name="oid_Catalogo Base.oid(NegozioToBase)" source="ent11#att11Array" target="sv4#mfu5.rel8#role15.ent11#att11"/>
+          <Link id="sv4#area3#page25#alt6#page26#seu5#ln41" name="Flow41" to="sv4#opg4#mfu3" type="transport" validate="true" gr:bendpoints="1244,53,158,519;1133,-304,213,220">
+            <LinkParameter id="sv4#area3#page25#alt6#page26#seu5#ln41#par49" name="oid_KeyCondition12 [oid]" source="ent19#att19Array" target="sv4#opg4#mfu3#su29#kcond19.ent19#att19"/>
           </Link>
         </SelectorUnit>
       </ContentUnits>
