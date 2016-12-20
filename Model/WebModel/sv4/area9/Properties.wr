@@ -1,0 +1,7 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-880" gr:y="-290" id="sv4#area9" name="Gestione Prodotti" landmark="true" defaultPage="sv4#area9#page33">
+  <OperationUnits>
+    <CreateUnit gr:x="315" gr:y="0" id="sv4#area9#cru8" name="Salva nuova categoria" entity="ent7">
+      <OKLink id="sv4#area9#cru8#oln3" name="OKFlow3" to="sv4#page11" automaticCoupling="true" gr:bendpoints="743,30,-262,-330"/>
+    </CreateUnit>
+  </OperationUnits>
+</Area>

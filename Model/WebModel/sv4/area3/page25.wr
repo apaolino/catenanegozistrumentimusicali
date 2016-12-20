@@ -102,7 +102,7 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Alternative gr:x="0" gr:y="115" id="sv4#area3#page25#alt6" name="Alternative6">
+  <Alternative gr:x="0" gr:y="115" id="sv4#area3#page25#alt6" name="Alternative6" defaultPage="sv4#area3#page25#alt6#page26">
     <Page gr:x="0" gr:y="0" id="sv4#area3#page25#alt6#page26" name="Page 26">
       <ContentUnits>
         <SelectorUnit gr:x="0" gr:y="0" id="sv4#area3#page25#alt6#page26#seu30" name="Dati negozio selezionato" entity="ent10">

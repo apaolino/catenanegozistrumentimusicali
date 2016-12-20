@@ -1,0 +1,70 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="395" gr:y="200" id="sv4#area9#page33" name="Inserimento nuovo prodotto" ajaxEnabled="true">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="70" id="sv4#area9#page33#enu10" name="Inserimento dati prodotto" linkOrder="sv4#area9#page33#enu10#ln52">
+      <SelectionField id="sv4#area9#page33#enu10#sfld12" name="Categoria" type="string" ajaxEventEnabled="true" ajaxEventLink="sv4#area9#page33#enu10#ln52"/>
+      <SelectionField id="sv4#area9#page33#enu10#sfld13" name="Tipologia Prodotto" type="string"/>
+      <SelectionField id="sv4#area9#page33#enu10#sfld16" name="Produttore" type="string"/>
+      <Link id="sv4#area9#page33#enu10#ln52" name="Flow52" to="sv4#area9#page33#seu20" type="normal" validate="true">
+        <LinkParameter id="sv4#area9#page33#enu10#ln52#par86" name="Categoria_RoleCondition5 [oid]" source="sv4#area9#page33#enu10#sfld12" target="sv4#area9#page33#seu20#su13#rcond5.ent7#att7"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit gr:x="435" gr:y="0" id="sv4#area9#page33#seu19" name="Selettore Categoria" entity="ent7">
+      <Link id="sv4#area9#page33#seu19#ln49" name="Flow49" to="sv4#area9#page33#enu10" type="transport" validate="true">
+        <LinkParameter id="sv4#area9#page33#seu19#ln49#par79" name="Nome_Categoria [label]" source="ent7#att36Array" target="sv4#area9#page33#enu10#sfld12_label"/>
+        <LinkParameter id="sv4#area9#page33#seu19#ln49#par80" name="oid_Categoria [output]" source="ent7#att7Array" target="sv4#area9#page33#enu10#sfld12_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="435" gr:y="145" id="sv4#area9#page33#seu20" name="Selettore Tipo Prodotto" entity="ent4">
+      <Selector id="sv4#area9#page33#seu20#su13" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#area9#page33#seu20#su13#rcond5" name="RoleCondition5" predicate="in" implied="false" role="rel38#role75"/>
+      </Selector>
+      <Link id="sv4#area9#page33#seu20#ln53" name="Flow53" to="sv4#area9#page33#enu10" type="transport" validate="true" gr:bendpoints="-233,2,217,97">
+        <LinkParameter id="sv4#area9#page33#seu20#ln53#par88" name="Nome_Tipologia Prodotto [label]" source="ent4#att38Array" target="sv4#area9#page33#enu10#sfld13_label"/>
+        <LinkParameter id="sv4#area9#page33#seu20#ln53#par91" name="oid_Tipologia Prodotto [output]" source="ent4#att37Array" target="sv4#area9#page33#enu10#sfld13_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="395" gr:y="290" id="sv4#area9#page33#seu21" name="Selettore Produttore" entity="ent20">
+      <Link id="sv4#area9#page33#seu21#ln51" name="Flow51" to="sv4#area9#page33#enu10" type="transport" validate="true">
+        <LinkParameter id="sv4#area9#page33#seu21#ln51#par83" name="Nome_Produttore [label]" source="ent20#att40Array" target="sv4#area9#page33#enu10#sfld16_label"/>
+        <LinkParameter id="sv4#area9#page33#seu21#ln51#par84" name="oid_Produttore [output]" source="ent20#att39Array" target="sv4#area9#page33#enu10#sfld16_output"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area9#page33#enu10">
+          <layout:Field field="sv4#area9#page33#enu10#sfld12"/>
+          <layout:Field field="sv4#area9#page33#enu10#sfld13"/>
+          <layout:Field field="sv4#area9#page33#enu10#sfld16"/>
+          <layout:Link link="sv4#area9#page33#enu10#ln52"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

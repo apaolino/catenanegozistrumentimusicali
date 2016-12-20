@@ -374,7 +374,7 @@
     <Attribute id="ent4#att37" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent4#att38" name="Nome" type="string" db:column="nome"/>
   </Entity>
-  <Entity gr:x="830" gr:y="1325" id="ent20" name="Produttore" duration="persistent" attributeOrder="ent20#att39 ent20#att40" db:database="db1" db:table="produttore">
+  <Entity gr:x="825" gr:y="1370" id="ent20" name="Produttore" duration="persistent" attributeOrder="ent20#att39 ent20#att40" db:database="db1" db:table="produttore">
     <Attribute id="ent20#att39" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent20#att40" name="Nome" type="string" db:column="nome"/>
   </Entity>

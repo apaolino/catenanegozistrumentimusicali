@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-425" gr:y="190" id="sv4#page10" name="Inserisci nuovo produttore">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="320" id="sv4#area9#page31" name="Inserisci nuovo tipo prodotto">
   <ContentUnits/>
   <layout:Grid containerType="grid">
     <layout:Row>
