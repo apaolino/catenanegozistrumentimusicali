@@ -338,13 +338,12 @@
       <db:JoinColumn attribute="ent11#att11" name="catalogo_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="60" gr:y="135" id="ent1" name="Indirizzo" duration="persistent" attributeOrder="ent1#att3 ent1#att4 ent1#att5 ent1#att6 ent1#att8 ent1#att13 ent1#att14 ent1#att23 ent1#att73" db:database="db1" db:table="indirizzo">
+  <Entity gr:x="60" gr:y="135" id="ent1" name="Indirizzo" duration="persistent" attributeOrder="ent1#att3 ent1#att4 ent1#att5 ent1#att6 ent1#att8 ent1#att14 ent1#att23 ent1#att73" db:database="db1" db:table="indirizzo">
     <Attribute id="ent1#att3" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent1#att4" name="Via" type="string" db:column="via"/>
     <Attribute id="ent1#att5" name="Numero civico" type="string" db:column="numero_civico"/>
     <Attribute id="ent1#att6" name="CAP" type="string" db:column="cap"/>
     <Attribute id="ent1#att8" name="Citt&#224;" type="string" db:column="citta"/>
-    <Attribute id="ent1#att13" name="Provincia" type="string" db:column="provincia"/>
     <Attribute id="ent1#att14" name="Stato" type="string" db:column="stato"/>
     <Attribute id="ent1#att23" name="Primario" type="boolean" db:column="primario"/>
     <Attribute id="ent1#att73" name="Indirizzo" type="string" db:column="indirizzo"/>
@@ -499,7 +498,8 @@
       <db:JoinColumn attribute="ent26#att78" name="tipo_evento_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db1" name="catenadb_mysql" type="MySQL" username="root" url="jdbc:mysql://localhost/CatenaDB_MySql"/>
+  <db:Database id="db1" name="catenadb_mysql" type="MySQL" username="root" url="jdbc:mysql://localhost/CatenaDB_MySql">
+  </db:Database>
   <Entity gr:x="955" gr:y="445" id="ent22" name="Periodo" duration="persistent" attributeOrder="ent22#att72 ent22#att74" db:database="db1" db:table="periodo">
     <Attribute id="ent22#att72" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent22#att74" name="Mese" type="string" db:column="mese"/>
@@ -534,6 +534,14 @@
     </RelationshipRole1>
     <RelationshipRole2 id="rel37#role74" name="CategoriaProdottoToCatalogoSpecifico" maxCard="N">
       <db:JoinColumn attribute="ent7#att7" name="categoria_prodotto_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel35" name="Indirizzo_Zona" sourceEntity="ent1" targetEntity="ent3" gr:bendpoints="-112,1134,-392,24" db:database="db1" db:table="indirizzo">
+    <RelationshipRole1 id="rel35#role69" name="IndirizzoToZona" maxCard="1">
+      <db:JoinColumn attribute="ent1#att3" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel35#role70" name="ZonaToIndirizzo" maxCard="N">
+      <db:JoinColumn attribute="ent3#att69" name="zona_oid"/>
     </RelationshipRole2>
   </Relationship>
 </DataModel>

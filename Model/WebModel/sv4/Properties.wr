@@ -3,7 +3,7 @@
     <LogoutUnit gr:x="715" gr:y="-15" id="sv4#lou3" name="Logout" siteView="sv1">
       <KOLink id="sv4#lou3#kln3" name="KOFlow3" to="sv4#page11" automaticCoupling="true" gr:bendpoints="81,83,391,-342"/>
     </LogoutUnit>
-    <ModifyUnit gr:x="1565" gr:y="135" id="sv4#mfu1" name="Aggiorna dati GC" entity="User">
+    <ModifyUnit gr:x="1820" gr:y="130" id="sv4#mfu1" name="Aggiorna dati GC" entity="User">
       <Selector id="sv4#mfu1#su10" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#mfu1#su10#kcond5" name="KeyCondition5" predicate="in" implied="false"/>
       </Selector>
@@ -18,12 +18,12 @@
         <KeyCondition id="sv4#cnu1#su12#kcond7" name="KeyCondition7" predicate="in" implied="false"/>
       </TargetSelector>
     </ConnectUnit>
-    <ModifyUnit gr:x="1540" gr:y="280" id="sv4#mfu2" name="Aggiorna indirizzo" entity="ent1" gr:showAllParts="false">
+    <ModifyUnit gr:x="1795" gr:y="275" id="sv4#mfu2" name="Aggiorna indirizzo" entity="ent1" gr:showAllParts="false">
       <Selector id="sv4#mfu2#su18" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#mfu2#su18#kcond13" name="KeyCondition13" predicate="in" implied="false"/>
       </Selector>
       <OKLink id="sv4#mfu2#oln4" name="OKFlow4" to="sv4#page10#mssu8" automaticCoupling="true"/>
-      <KOLink id="sv4#mfu2#kln4" name="KOFlow4" to="sv4#page20#mssu9" automaticCoupling="true" gr:bendpoints="123,-27,198,238;99,-281,174,-16"/>
+      <KOLink id="sv4#mfu2#kln4" name="KOFlow4" to="sv4#page20#mssu9" automaticCoupling="true" gr:bendpoints="123,-27,198,238;233,-248,479,22"/>
     </ModifyUnit>
   </OperationUnits>
 </SiteView>

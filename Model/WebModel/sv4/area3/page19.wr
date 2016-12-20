@@ -21,6 +21,7 @@
         <LinkParameter id="sv4#area3#page19#enu7#ln69#par163" name="Via_Via" source="sv4#area3#page19#enu7#fld43" target="sv4#opg2#cru6.ent1#att4"/>
         <LinkParameter id="sv4#area3#page19#enu7#ln69#par108" name="Indirizzo per intero_Indirizzo" source="sv4#area3#page19#enu7#fld6" target="sv4#opg2#cru6.ent1#att73"/>
         <LinkParameter id="sv4#area3#page19#enu7#ln69#par109" name="Primario_Primario" source="sv4#area3#page19#enu7#fld54" target="sv4#opg2#cru6.ent1#att23"/>
+        <LinkParameter id="sv4#area3#page19#enu7#ln69#par56" name="Provincia_Zona.oid(IndirizzoToZona)" source="sv4#area3#page19#enu7#sfld14" target="sv4#opg2#cru6.rel35#role69.ent3#att69"/>
       </Link>
       <Field id="sv4#area3#page19#enu7#fld54" name="Primario" type="boolean" modifiable="true" preloaded="false"/>
       <Field id="sv4#area3#page19#enu7#fld55" name="Prezzo orario Sala Prove" type="string" modifiable="true"/>

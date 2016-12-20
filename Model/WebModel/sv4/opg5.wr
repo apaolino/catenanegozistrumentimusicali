@@ -58,7 +58,7 @@
         <KeyCondition id="sv4#opg5#dlu5#su40#kcond29" name="KeyCondition29" predicate="in" implied="false"/>
       </Selector>
       <OKLink id="sv4#opg5#dlu5#oln29" name="OKFlow29" to="sv4#opg5#dlu8">
-        <LinkParameter id="sv4#opg5#dlu5#oln29#par173" name="Source oid [Negozio]_PASSING_KeyCondition34 [oid]" sourceLinkParameter="sv4#opg5#seu15#oln27#par172" target="sv4#opg5#dlu8#su46#kcond34.ent10#att10"/>
+        <LinkParameter id="sv4#opg5#dlu5#oln29#par6" name="Source oid [Negozio]_PASSING_KeyCondition34 [oid]" sourceLinkParameter="sv4#opg5#seu15#oln27#par2" target="sv4#opg5#dlu8#su46#kcond34.ent10#att10"/>
       </OKLink>
     </DeleteUnit>
     <SelectorUnit gr:x="470" gr:y="250" id="sv4#opg5#seu15" name="Selettore Eventi" entity="ent17">
@@ -66,7 +66,8 @@
         <RelationshipRoleCondition id="sv4#opg5#seu15#su45#rcond16" name="RoleCondition16" predicate="in" implied="false" role="rel10#role20"/>
       </Selector>
       <OKLink id="sv4#opg5#seu15#oln27" name="OKFlow27" to="sv4#opg5#dlu5">
-        <LinkParameter id="sv4#opg5#seu15#oln27#par172" name="Source oid [Negozio]_PASSING" sourceLinkParameter="sv4#opg5#dlu4#oln26#par171" passing="true"/>
+        <LinkParameter id="sv4#opg5#seu15#oln27#par1" name="oid_KeyCondition29 [oid]" source="ent17#att17Array" target="sv4#opg5#dlu5#su40#kcond29.ent17#att17"/>
+        <LinkParameter id="sv4#opg5#seu15#oln27#par2" name="Source oid [Negozio]_PASSING" sourceLinkParameter="sv4#opg5#dlu4#oln26#par171" passing="true"/>
       </OKLink>
     </SelectorUnit>
     <DeleteUnit gr:x="0" gr:y="265" id="sv4#opg5#dlu8" name="Delete Negozio" entity="ent10">

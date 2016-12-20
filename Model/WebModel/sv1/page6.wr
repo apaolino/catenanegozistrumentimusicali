@@ -20,7 +20,6 @@
         <LinkParameter id="sv1#page6#enu1#ln39#par39" name="Indirizzo per intero_Indirizzo" source="sv1#page6#enu1#fld8" target="sv1#opg1#cru1.ent1#att73"/>
         <LinkParameter id="sv1#page6#enu1#ln39#par40" name="Numero Civico_Numero civico" source="sv1#page6#enu1#fld3" target="sv1#opg1#cru1.ent1#att5"/>
         <LinkParameter id="sv1#page6#enu1#ln39#par41" name="Indirizzo Primario?_Primario" source="sv1#page6#enu1#fld9" target="sv1#opg1#cru1.ent1#att23"/>
-        <LinkParameter id="sv1#page6#enu1#ln39#par42" name="Provincia_Provincia" source="sv1#page6#enu1#sfld3" target="sv1#opg1#cru1.ent1#att13"/>
         <LinkParameter id="sv1#page6#enu1#ln39#par43" name="Stato_Stato" source="sv1#page6#enu1#fld7" target="sv1#opg1#cru1.ent1#att14"/>
         <LinkParameter id="sv1#page6#enu1#ln39#par44" name="Via_Via" source="sv1#page6#enu1#fld2" target="sv1#opg1#cru1.ent1#att4"/>
         <LinkParameter id="sv1#page6#enu1#ln39#par45" name="Cognome_PASSING" source="sv1#page6#enu1#fld33" passing="true"/>
@@ -32,6 +31,7 @@
         <LinkParameter id="sv1#page6#enu1#ln39#par51" name="Password_PASSING" source="sv1#page6#enu1#fld14" passing="true"/>
         <LinkParameter id="sv1#page6#enu1#ln39#par52" name="Username_PASSING" source="sv1#page6#enu1#fld13" passing="true"/>
         <LinkParameter id="sv1#page6#enu1#ln39#par90" name="oid_PASSING" sourceLinkParameter="sv1#page6#seu5#ln14#par34" passing="true"/>
+        <LinkParameter id="sv1#page6#enu1#ln39#par89" name="Provincia_Zona.oid(IndirizzoToZona)" source="sv1#page6#enu1#sfld3" target="sv1#opg1#cru1.rel35#role69.ent3#att69"/>
       </Link>
       <Field id="sv1#page6#enu1#fld8" name="Indirizzo per intero" type="string" modifiable="true"/>
       <Field id="sv1#page6#enu1#fld9" name="Indirizzo Primario?" type="boolean" modifiable="true"/>

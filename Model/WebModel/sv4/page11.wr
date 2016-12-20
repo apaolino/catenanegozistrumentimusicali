@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="115" gr:y="145" id="sv4#page11" name="Home Page Gestore Catena - Gestione Prodotti" linkOrder="sv4#page11#ln21 sv4#page11#ln18">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="115" gr:y="145" id="sv4#page11" name="Home Page Gestore Catena - Gestione Prodotti" linkOrder="sv4#page11#ln21">
   <ContentUnits/>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -109,5 +109,4 @@
   <Page gr:x="0" gr:y="10" id="sv4#page11#page16" name="Inserimento Nuovo Prodotto">
     <ContentUnits/>
   </Page>
-  <Link id="sv4#page11#ln18" name="Gestione Dati Personali" to="sv4#page21#seu8" type="normal" automaticCoupling="true" validate="true"/>
 </Page>
