@@ -1,0 +1,132 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv4#area5#page24" name="Visualizza Dati" landmark="false">
+  <ContentUnits>
+    <DataUnit id="sv4#area5#page24#dau5" name="Dati gestore catena" gr:x="235" gr:y="0" entity="User" displayAttributes="User#att20 User#att21 User#att22 User#att54 email User#att29 userName password" gr:showAllParts="false">
+      <Selector id="sv4#area5#page24#dau5#su22" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area5#page24#dau5#su22#kcond12" name="KeyCondition4" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv4#area5#page24#dau5#ln79" name="Flow79" to="sv4#area5#page24#dau9" type="transport" validate="true">
+        <LinkParameter id="sv4#area5#page24#dau5#ln79#par312" name="Cognome_PASSING" source="data.User#att21" passing="true"/>
+        <LinkParameter id="sv4#area5#page24#dau5#ln79#par313" name="Data nascita_PASSING" source="data.User#att22" passing="true"/>
+        <LinkParameter id="sv4#area5#page24#dau5#ln79#par314" name="Data registrazione_PASSING" source="data.User#att29" passing="true"/>
+        <LinkParameter id="sv4#area5#page24#dau5#ln79#par315" name="E-mail_PASSING" source="data.email" passing="true"/>
+        <LinkParameter id="sv4#area5#page24#dau5#ln79#par316" name="Indirizzo Primario_PASSING" source="data.User#att71" passing="true"/>
+        <LinkParameter id="sv4#area5#page24#dau5#ln79#par317" name="Nome_PASSING" source="data.User#att20" passing="true"/>
+        <LinkParameter id="sv4#area5#page24#dau5#ln79#par318" name="Numero telefono_PASSING" source="data.User#att54" passing="true"/>
+        <LinkParameter id="sv4#area5#page24#dau5#ln79#par320" name="Password_PASSING" source="data.password" passing="true"/>
+        <LinkParameter id="sv4#area5#page24#dau5#ln79#par321" name="UserName_PASSING" source="data.userName" passing="true"/>
+        <LinkParameter id="sv4#area5#page24#dau5#ln79#par338" name="UserToIndirizzo.oid_KeyCondition9 [oid]" source="data.rel20#role40_ent1#att3" target="sv4#area5#page24#dau9#su23#kcond14.ent1#att3"/>
+        <LinkParameter id="sv4#area5#page24#dau5#ln79#par352" name="oid_PASSING" source="data.userOID" passing="true"/>
+      </Link>
+    </DataUnit>
+    <SelectorUnit id="sv4#area5#page24#seu13" name="Selezione dati utente" gr:x="0" gr:y="30" entity="ent5">
+      <Link id="sv4#area5#page24#seu13#ln54" name="Flow27" to="sv4#area5#page24#dau5" type="transport" validate="true">
+        <LinkParameter id="sv4#area5#page24#seu13#ln54#par141" name="oid_KeyCondition4 [oid]" source="userOIDArray" target="sv4#area5#page24#dau5#su22#kcond12.userOID"/>
+      </Link>
+    </SelectorUnit>
+    <DataUnit gr:x="255" gr:y="190" id="sv4#area5#page24#dau9" name="Dettagli indirizzo" entity="ent1" displayAttributes="ent1#att4 ent1#att5 ent1#att6 ent1#att8 rel35#role69.ent3#att70 ent1#att14 ent1#att23" linkOrder="sv4#area5#page24#dau9#ln72">
+      <Selector id="sv4#area5#page24#dau9#su23" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area5#page24#dau9#su23#kcond14" name="KeyCondition9" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv4#area5#page24#dau9#ln72" name="Modifica dati" to="sv4#area5#page30#enu3" type="normal" validate="true">
+        <LinkParameter id="sv4#area5#page24#dau9#ln72#par254" name="UserName_Username" target="sv4#area5#page30#enu3#fld21_slot" sourceLinkParameter="sv4#area5#page24#dau5#ln79#par321"/>
+        <LinkParameter id="sv4#area5#page24#dau9#ln72#par255" name="Cognome_Cognome" target="sv4#area5#page30#enu3#fld49_slot" sourceLinkParameter="sv4#area5#page24#dau5#ln79#par312"/>
+        <LinkParameter id="sv4#area5#page24#dau9#ln72#par257" name="Data nascita_Data nascita" target="sv4#area5#page30#enu3#fld57_slot" sourceLinkParameter="sv4#area5#page24#dau5#ln79#par313"/>
+        <LinkParameter id="sv4#area5#page24#dau9#ln72#par264" name="Data registrazione_Data registrazione" target="sv4#area5#page30#enu3#fld58_slot" sourceLinkParameter="sv4#area5#page24#dau5#ln79#par314"/>
+        <LinkParameter id="sv4#area5#page24#dau9#ln72#par272" name="E-mail_Email" target="sv4#area5#page30#enu3#fld31_slot" sourceLinkParameter="sv4#area5#page24#dau5#ln79#par315"/>
+        <LinkParameter id="sv4#area5#page24#dau9#ln72#par273" name="Nome_Nome" target="sv4#area5#page30#enu3#fld32_slot" sourceLinkParameter="sv4#area5#page24#dau5#ln79#par317"/>
+        <LinkParameter id="sv4#area5#page24#dau9#ln72#par276" name="Numero telefono_Numero telefono" target="sv4#area5#page30#enu3#fld59_slot" sourceLinkParameter="sv4#area5#page24#dau5#ln79#par318"/>
+        <LinkParameter id="sv4#area5#page24#dau9#ln72#par277" name="Password_Password" target="sv4#area5#page30#enu3#fld22_slot" sourceLinkParameter="sv4#area5#page24#dau5#ln79#par320"/>
+        <LinkParameter id="sv4#area5#page24#dau9#ln72#par322" name="CAP_CAP" source="data.ent1#att6" target="sv4#area5#page30#enu3#fld67_slot"/>
+        <LinkParameter id="sv4#area5#page24#dau9#ln72#par323" name="Citt&#224;_Citt&#224;" source="data.ent1#att8" target="sv4#area5#page30#enu3#fld69_slot"/>
+        <LinkParameter id="sv4#area5#page24#dau9#ln72#par324" name="Indirizzo_Indirizzo completo" source="data.ent1#att73" target="sv4#area5#page30#enu3#fld84_slot"/>
+        <LinkParameter id="sv4#area5#page24#dau9#ln72#par325" name="Numero civico_Numero Civico" source="data.ent1#att5" target="sv4#area5#page30#enu3#fld68_slot"/>
+        <LinkParameter id="sv4#area5#page24#dau9#ln72#par326" name="Primario_Primario" source="data.ent1#att23" target="sv4#area5#page30#enu3#fld83_slot"/>
+        <LinkParameter id="sv4#area5#page24#dau9#ln72#par327" name="IndirizzoToZona.oid_Provincia - Preselection" source="data.rel35#role69_ent3#att69" target="sv4#area5#page30#enu3#sfld7_presel"/>
+        <LinkParameter id="sv4#area5#page24#dau9#ln72#par329" name="Stato_Stato" source="data.ent1#att14" target="sv4#area5#page30#enu3#fld66_slot"/>
+        <LinkParameter id="sv4#area5#page24#dau9#ln72#par330" name="Via_Via" source="data.ent1#att4" target="sv4#area5#page30#enu3#fld65_slot"/>
+        <LinkParameter id="sv4#area5#page24#dau9#ln72#par353" name="oid_PASSING" sourceLinkParameter="sv4#area5#page24#dau5#ln79#par352" passing="true"/>
+        <LinkParameter id="sv4#area5#page24#dau9#ln72#par363" name="oid_PASSING" source="data.ent1#att3" passing="true"/>
+      </Link>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area5#page24#dau5">
+          <layout:Attribute attribute="User#att20"/>
+          <layout:Attribute attribute="User#att21"/>
+          <layout:Attribute attribute="User#att22"/>
+          <layout:Attribute attribute="User#att54"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="User#att29"/>
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="password"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area5#page24#dau9">
+          <layout:Attribute attribute="ent1#att4"/>
+          <layout:Attribute attribute="ent1#att5"/>
+          <layout:Attribute attribute="ent1#att6"/>
+          <layout:Attribute attribute="ent1#att8"/>
+          <layout:Attribute attribute="rel35#role69.ent3#att70"/>
+          <layout:Attribute attribute="ent1#att14"/>
+          <layout:Attribute attribute="ent1#att23"/>
+          <layout:Link link="sv4#area5#page24#dau9#ln72"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
