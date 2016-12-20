@@ -11,5 +11,7 @@
         <KeyCondition id="sv4#cnu1#su12#kcond7" name="KeyCondition7" predicate="in" implied="false"/>
       </TargetSelector>
     </ConnectUnit>
+    <CreateUnit gr:x="-110" gr:y="210" id="sv4#cru3" name="Salva nuovo prodotto" entity="ent12"/>
+    <CreateUnit gr:x="-135" gr:y="55" id="sv4#cru7" name="Salva nuova categoria" entity="ent7"/>
   </OperationUnits>
 </SiteView>
