@@ -1,13 +1,13 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="2225" gr:y="1140" id="sv4#page13" name="Pagina Messaggio Operazione">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#page20" name="Pagina Messaggio Operazione" gr:x="-1365" gr:y="1785">
   <ContentUnits/>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:SubPage pageId="sv4#page13#alt2#page14">
+        <layout:SubPage pageId="sv4#page20#alt3#page29">
           <layout:Grid containerType="grid">
             <layout:Row>
               <layout:Cell colspan="12">
-                <layout:Unit unitId="sv4#page13#alt2#page14#mssu1"/>
+                <layout:Unit unitId="sv4#page20#alt3#page29#mssu9"/>
               </layout:Cell>
               <layout:Cell/>
               <layout:Cell/>
@@ -38,11 +38,11 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:SubPage pageId="sv4#page13#alt2#page18">
+        <layout:SubPage pageId="sv4#page20#alt3#page31">
           <layout:Grid containerType="grid">
             <layout:Row>
               <layout:Cell colspan="12">
-                <layout:Unit unitId="sv4#page13#alt2#page18#mssu3"/>
+                <layout:Unit unitId="sv4#page20#alt3#page31#mssu11"/>
               </layout:Cell>
               <layout:Cell/>
               <layout:Cell/>
@@ -72,12 +72,12 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Alternative gr:x="0" gr:y="0" id="sv4#page13#alt2" name="Alternative2" defaultPage="sv4#page13#alt2#page14">
-    <Page gr:x="0" gr:y="0" id="sv4#page13#alt2#page14" name="Pagina Successo">
+  <Alternative id="sv4#page20#alt3" name="Alternative2" defaultPage="sv4#page20#alt3#page29" gr:x="0" gr:y="0">
+    <Page id="sv4#page20#alt3#page29" name="Pagina Successo" gr:x="0" gr:y="0">
       <ContentUnits>
-        <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page13#alt2#page14#mssu1" name="Messaggio Successo">
+        <MultiMessageUnit id="sv4#page20#alt3#page29#mssu9" name="Messaggio Successo" gr:x="0" gr:y="0">
           <Message xml:space="preserve">Operazione avvenuta con successo
-</Message>        </MultiMessageUnit>      </ContentUnits>    </Page>    <Page gr:x="5" gr:y="140" id="sv4#page13#alt2#page18" name="Pagina Errore">      <ContentUnits>        <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page13#alt2#page18#mssu3" name="Messaggio Errore">          <Message xml:space="preserve">Operazione non eseguita</Message>
+</Message>        </MultiMessageUnit>      </ContentUnits>    </Page>    <Page id="sv4#page20#alt3#page31" name="Pagina Errore" gr:x="5" gr:y="140">      <ContentUnits>        <MultiMessageUnit id="sv4#page20#alt3#page31#mssu11" name="Messaggio Errore" gr:x="0" gr:y="0">          <Message xml:space="preserve">Operazione non eseguita</Message>
         </MultiMessageUnit>
       </ContentUnits>
     </Page>

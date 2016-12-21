@@ -1,9 +1,29 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="10" gr:y="25" id="sv4#area9#page21" name="Inserisci nuova categoria">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="370" id="sv4#area9#page21" name="Inserisci nuova categoria">
   <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="0" id="sv4#area9#page21#enu6" name="Inserisci la nuova categoria" linkOrder="sv4#area9#page21#enu6#ln33">
+    <EntryUnit gr:x="5" gr:y="0" id="sv4#area9#page21#enu6" name="Inserisci la nuova categoria" linkOrder="sv4#area9#page21#enu6#ln33">
       <Field id="sv4#area9#page21#enu6#fld24" name="Nome categoria" type="string" modifiable="true"/>
-      <Link id="sv4#area9#page21#enu6#ln33" name="Flow27" to="sv4#area9#cru8" type="normal" validate="true">
+      <Link id="sv4#area9#page21#enu6#ln33" name="Salva" to="sv4#area9#cru8" type="normal" validate="true">
         <LinkParameter id="sv4#area9#page21#enu6#ln33#par63" name="Nome categoria_Nome" source="sv4#area9#page21#enu6#fld24" target="sv4#area9#cru8.ent7#att36"/>
+      </Link>
+    </EntryUnit>
+    <EntryUnit id="sv4#area9#page21#enu8" name="Inserisci il nuovo produttore" linkOrder="sv4#area9#page21#enu8#ln61" gr:x="0" gr:y="110">
+      <Field id="sv4#area9#page21#enu8#fld27" name="Nome produttore" type="string" modifiable="true"/>
+      <Link id="sv4#area9#page21#enu8#ln61" name="Salva" to="sv4#area9#cru7" type="normal" validate="true">
+        <LinkParameter id="sv4#area9#page21#enu8#ln61#par61" name="Nome produttore_Nome" source="sv4#area9#page21#enu8#fld27" target="sv4#area9#cru7.ent20#att40"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit id="sv4#area9#page21#seu8" name="Selettore categoria" gr:x="240" gr:y="170" entity="ent7">
+      <Link id="sv4#area9#page21#seu8#ln63" name="Flow36" to="sv4#area9#page21#enu12" type="transport" validate="true">
+        <LinkParameter id="sv4#area9#page21#seu8#ln63#par62" name="Nome_Categoria [label]" source="ent7#att36Array" target="sv4#area9#page21#enu12#sfld5_label"/>
+        <LinkParameter id="sv4#area9#page21#seu8#ln63#par64" name="oid_Categoria [output]" source="ent7#att7Array" target="sv4#area9#page21#enu12#sfld5_output"/>
+      </Link>
+    </SelectorUnit>
+    <EntryUnit id="sv4#area9#page21#enu12" name="Inserisci il nuovo tipo di prodotto" linkOrder="sv4#area9#page21#enu12#ln65" gr:x="0" gr:y="215">
+      <Field id="sv4#area9#page21#enu12#fld28" name="Tipo di prodotto" type="string" modifiable="true"/>
+      <SelectionField id="sv4#area9#page21#enu12#sfld5" name="Categoria" type="string"/>
+      <Link id="sv4#area9#page21#enu12#ln65" name="Salva" to="sv4#area9#cru9" type="normal" validate="true">
+        <LinkParameter id="sv4#area9#page21#enu12#ln65#par65" name="Categoria_Categoria Prodotto.oid(Tipo prodottoToCategoria Prodotto)" source="sv4#area9#page21#enu12#sfld5" target="sv4#area9#cru9.rel38#role76.ent7#att7"/>
+        <LinkParameter id="sv4#area9#page21#enu12#ln65#par66" name="Tipo di prodotto_Nome" source="sv4#area9#page21#enu12#fld28" target="sv4#area9#cru9.ent4#att38"/>
       </Link>
     </EntryUnit>
   </ContentUnits>
@@ -13,6 +33,45 @@
         <layout:Unit unitId="sv4#area9#page21#enu6">
           <layout:Field field="sv4#area9#page21#enu6#fld24"/>
           <layout:Link link="sv4#area9#page21#enu6#ln33"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area9#page21#enu8">
+          <layout:Field field="sv4#area9#page21#enu8#fld27"/>
+          <layout:Link link="sv4#area9#page21#enu8#ln61"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area9#page21#enu12">
+          <layout:Field field="sv4#area9#page21#enu12#fld28"/>
+          <layout:Field field="sv4#area9#page21#enu12#sfld5"/>
+          <layout:Link link="sv4#area9#page21#enu12#ln65"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

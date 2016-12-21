@@ -1,0 +1,33 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="465" gr:y="225" id="sv4#area11#page16" name="Elimina utente">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#area11#page16#mssu8" name="Eliminazione utente" linkOrder="sv4#area11#page16#mssu8#ln36 sv4#area11#page16#mssu8#ln44">
+      <Message xml:space="preserve">Sei sicuro di voler eliminare l'utente selezionato dal sistema?</Message>
+      <Link id="sv4#area11#page16#mssu8#ln36" name="Torna alla lista utenti" to="sv4#area11#page10" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-327,17,118,182"/>
+      <Link id="sv4#area11#page16#mssu8#ln44" name="Elimina" to="sv4#opg7#dlu10" type="normal" validate="true">
+        <LinkParameter id="sv4#area11#page16#mssu8#ln44#par74" name="UserToIndirizzo.oid_PASSING_KeyCondition8 [oid]" sourceLinkParameter="sv4#area11#page10#pwu3#ln21#par60" target="sv4#opg7#dlu10#su41#kcond18.ent1#att3"/>
+        <LinkParameter id="sv4#area11#page16#mssu8#ln44#par75" name="oid_PASSING" sourceLinkParameter="sv4#area11#page10#pwu3#ln21#par59" passing="true"/>
+      </Link>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area11#page16#mssu8">
+          <layout:Link link="sv4#area11#page16#mssu8#ln36"/>
+          <layout:Link link="sv4#area11#page16#mssu8#ln44"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

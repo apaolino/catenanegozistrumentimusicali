@@ -1,0 +1,18 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-590" gr:y="1570" id="sv4#opg6" name="Aggiorna dati utente" transaction="true">
+  <OperationUnits>
+    <ModifyUnit id="sv4#opg6#mfu5" name="Aggiorna dati utente" gr:x="0" gr:y="10" entity="User">
+      <Selector id="sv4#opg6#mfu5#su21" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#opg6#mfu5#su21#kcond11" name="KeyCondition8" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv4#opg6#mfu5#oln4" name="OKFlow3" to="sv4#opg6#mfu6" automaticCoupling="true"/>
+      <KOLink id="sv4#opg6#mfu5#kln2" name="KOFlow2" to="sv4#page20#alt3#page31" automaticCoupling="true" gr:bendpoints="-568,23,182,-362;-639,302,111,-83"/>
+    </ModifyUnit>
+    <ModifyUnit id="sv4#opg6#mfu6" name="Aggiorna indirizzo" gr:x="235" gr:y="0" entity="ent1">
+      <Selector id="sv4#opg6#mfu6#su26" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#opg6#mfu6#su26#kcond13" name="KeyCondition9" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv4#opg6#mfu6#oln32" name="OKFlow32" to="sv4#page20#alt3#page29" automaticCoupling="true" gr:bendpoints="-163,-135,812,-390;-1052,-115,-77,-370"/>
+      <KOLink id="sv4#opg6#mfu6#kln4" name="KOFlow4" to="sv4#page20#alt3#page31" automaticCoupling="true" gr:bendpoints="-184,91,796,-304;-802,93,178,-302;-844,366,136,-29"/>
+    </ModifyUnit>
+  </OperationUnits>
+</OperationGroup>

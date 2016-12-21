@@ -1,21 +1,21 @@
 <OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1195" gr:y="850" id="sv4#opg2" name="Transazione Inserimento Nuovo Negozio" transaction="true">
   <OperationUnits>
     <CreateUnit gr:x="275" gr:y="25" id="sv4#opg2#cru4" name="Inserimento sala prove" entity="ent19">
-      <OKLink id="sv4#opg2#cru4#oln10" name="OKFlow7" to="sv4#opg2#cru5">
-        <LinkParameter id="sv4#opg2#cru4#oln10#par8" name="oid_Sala prove.oid(NegozioToSala prove)" source="ent19#att19Array" target="sv4#opg2#cru5.rel7#role14.ent19#att19"/>
-        <LinkParameter id="sv4#opg2#cru4#oln10#par123" name="oid_PASSING_Indirizzo.oid(NegozioToIndirizzo)" sourceLinkParameter="sv4#opg2#cru6#oln11#par122" target="sv4#opg2#cru5.rel32#role63.ent1#att3"/>
-      </OKLink>
       <KOLink id="sv4#opg2#cru4#kln6" name="KOFlow6" to="sv4#page13#alt2#page18#mssu3" automaticCoupling="true"/>
+      <OKLink id="sv4#opg2#cru4#oln31" name="OKFlow31" to="sv4#opg2#cru5">
+        <LinkParameter id="sv4#opg2#cru4#oln31#par71" name="oid_PASSING_Indirizzo.oid(NegozioToIndirizzo)" sourceLinkParameter="sv4#opg2#cru6#oln28#par70" target="sv4#opg2#cru5.rel32#role63.ent1#att3"/>
+        <LinkParameter id="sv4#opg2#cru4#oln31#par72" name="oid_Sala prove.oid(NegozioToSala prove)" source="ent19#att19Array" target="sv4#opg2#cru5.rel7#role14.ent19#att19"/>
+      </OKLink>
     </CreateUnit>
     <CreateUnit gr:x="535" gr:y="25" id="sv4#opg2#cru5" name="Inserimento negozio" entity="ent10">
       <KOLink id="sv4#opg2#cru5#kln7" name="KOFlow7" to="sv4#page13#alt2#page18#mssu3" automaticCoupling="true"/>
       <OKLink id="sv4#opg2#cru5#oln15" name="OKFlow15" to="sv4#page13#alt2#page14#mssu1" automaticCoupling="true" gr:bendpoints="177,-4,-347,-338"/>
     </CreateUnit>
     <CreateUnit gr:x="0" gr:y="20" id="sv4#opg2#cru6" name="Inserimento indirizzo" entity="ent1">
-      <OKLink id="sv4#opg2#cru6#oln11" name="OKFlow6" to="sv4#opg2#cru4">
-        <LinkParameter id="sv4#opg2#cru6#oln11#par122" name="oid_PASSING" source="ent1#att3Array" passing="true"/>
-      </OKLink>
       <KOLink id="sv4#opg2#cru6#kln5" name="KOFlow5" to="sv4#page13#alt2#page18#mssu3" automaticCoupling="true"/>
+      <OKLink id="sv4#opg2#cru6#oln28" name="OKFlow28" to="sv4#opg2#cru4">
+        <LinkParameter id="sv4#opg2#cru6#oln28#par70" name="oid_PASSING" source="ent1#att3Array" passing="true"/>
+      </OKLink>
     </CreateUnit>
   </OperationUnits>
 </OperationGroup>
