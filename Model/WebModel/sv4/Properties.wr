@@ -1,15 +1,17 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4" name="Gestore_Catena" landmarks="sv4#area2 sv4#area3 sv4#area5 sv4#area9" homePage="sv4#area9#page33">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4" name="Gestore_Catena" landmarks="sv4#area2 sv4#area3 sv4#area5 sv4#area9 sv4#area11" homePage="sv4#page11">
   <OperationUnits>
     <LogoutUnit gr:x="715" gr:y="-15" id="sv4#lou3" name="Logout" siteView="sv1" landmark="false">
       <KOLink id="sv4#lou3#kln3" name="KOFlow3" to="sv4#page11" automaticCoupling="true" gr:bendpoints="55,116,260,-194"/>
     </LogoutUnit>
-    <ConnectUnit gr:x="-5" gr:y="630" id="sv4#cnu1" name="Connect1" relationship="rel24#role47">
+    <ConnectUnit gr:x="-10" gr:y="525" id="sv4#cnu1" name="Connect1" relationship="rel24#role47">
       <SourceSelector id="sv4#cnu1#su11" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#cnu1#su11#kcond6" name="KeyCondition6" predicate="in" implied="false"/>
       </SourceSelector>
       <TargetSelector id="sv4#cnu1#su12" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#cnu1#su12#kcond7" name="KeyCondition7" predicate="in" implied="false"/>
       </TargetSelector>
+      <KOLink id="sv4#cnu1#kln21" name="KOFlow21" to="sv4#page36#alt7#page38" automaticCoupling="true"/>
+      <OKLink id="sv4#cnu1#oln35" name="OKFlow35" to="sv4#area2#page5" automaticCoupling="true"/>
     </ConnectUnit>
   </OperationUnits>
 </SiteView>

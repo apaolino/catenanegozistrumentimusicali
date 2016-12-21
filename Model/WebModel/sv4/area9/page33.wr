@@ -1,11 +1,28 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="395" gr:y="200" id="sv4#area9#page33" name="Inserimento nuovo prodotto" ajaxEnabled="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="505" gr:y="555" id="sv4#area9#page33" name="Inserimento nuovo prodotto" ajaxEnabled="true" linkOrder="sv4#area9#page33#ln2">
   <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="70" id="sv4#area9#page33#enu10" name="Inserimento dati prodotto" linkOrder="sv4#area9#page33#enu10#ln52">
+    <EntryUnit gr:x="0" gr:y="70" id="sv4#area9#page33#enu10" name="Inserimento dati prodotto" linkOrder="sv4#area9#page33#enu10#ln52 sv4#area9#page33#enu10#ln5">
       <SelectionField id="sv4#area9#page33#enu10#sfld12" name="Categoria" type="string" ajaxEventEnabled="true" ajaxEventLink="sv4#area9#page33#enu10#ln52"/>
       <SelectionField id="sv4#area9#page33#enu10#sfld13" name="Tipologia Prodotto" type="string"/>
       <SelectionField id="sv4#area9#page33#enu10#sfld16" name="Produttore" type="string"/>
       <Link id="sv4#area9#page33#enu10#ln52" name="Flow52" to="sv4#area9#page33#seu20" type="normal" validate="true">
         <LinkParameter id="sv4#area9#page33#enu10#ln52#par86" name="Categoria_RoleCondition5 [oid]" source="sv4#area9#page33#enu10#sfld12" target="sv4#area9#page33#seu20#su13#rcond5.ent7#att7"/>
+      </Link>
+      <Field id="sv4#area9#page33#enu10#fld10" name="Nome modello" type="string" modifiable="true"/>
+      <Field id="sv4#area9#page33#enu10#fld11" name="Data di produzione" type="date" modifiable="true"/>
+      <Field id="sv4#area9#page33#enu10#fld12" name="Luogo di produzione" type="string" modifiable="true"/>
+      <Field id="sv4#area9#page33#enu10#fld19" name="Prezzo" type="float" modifiable="true"/>
+      <Field id="sv4#area9#page33#enu10#fld20" name="Usato" type="boolean" modifiable="true"/>
+      <Field id="sv4#area9#page33#enu10#fld23" name="Percentuale sconto" type="float" modifiable="true"/>
+      <Link id="sv4#area9#page33#enu10#ln5" name="Salva nuovo prodotto" to="sv4#area9#cru3" type="normal" validate="true">
+        <LinkParameter id="sv4#area9#page33#enu10#ln5#par9" name="Categoria_Categoria Prodotto.oid(ProdottoToCategoria)" source="sv4#area9#page33#enu10#sfld12" target="sv4#area9#cru3.rel25#role49.ent7#att7"/>
+        <LinkParameter id="sv4#area9#page33#enu10#ln5#par10" name="Data di produzione_Data produzione" source="sv4#area9#page33#enu10#fld11" target="sv4#area9#cru3.ent12#att41"/>
+        <LinkParameter id="sv4#area9#page33#enu10#ln5#par18" name="Luogo di produzione_Luogo produzione" source="sv4#area9#page33#enu10#fld12" target="sv4#area9#cru3.ent12#att42"/>
+        <LinkParameter id="sv4#area9#page33#enu10#ln5#par19" name="Nome modello_Nome modello" source="sv4#area9#page33#enu10#fld10" target="sv4#area9#cru3.ent12#att1"/>
+        <LinkParameter id="sv4#area9#page33#enu10#ln5#par29" name="Percentuale sconto_Percentuale sconto" source="sv4#area9#page33#enu10#fld23" target="sv4#area9#cru3.ent12#att45"/>
+        <LinkParameter id="sv4#area9#page33#enu10#ln5#par30" name="Prezzo_Prezzo" source="sv4#area9#page33#enu10#fld19" target="sv4#area9#cru3.ent12#att43"/>
+        <LinkParameter id="sv4#area9#page33#enu10#ln5#par31" name="Produttore_Produttore.oid(ProdottoToProduttore)" source="sv4#area9#page33#enu10#sfld16" target="sv4#area9#cru3.rel29#role58.ent20#att39"/>
+        <LinkParameter id="sv4#area9#page33#enu10#ln5#par53" name="Tipologia Prodotto_Tipo prodotto.oid(ProdottoToTipo prodotto)" source="sv4#area9#page33#enu10#sfld13" target="sv4#area9#cru3.rel39#role78.ent4#att37"/>
+        <LinkParameter id="sv4#area9#page33#enu10#ln5#par54" name="Usato_Usato" source="sv4#area9#page33#enu10#fld20" target="sv4#area9#cru3.ent12#att44"/>
       </Link>
     </EntryUnit>
     <SelectorUnit gr:x="435" gr:y="0" id="sv4#area9#page33#seu19" name="Selettore Categoria" entity="ent7">
@@ -37,7 +54,14 @@
           <layout:Field field="sv4#area9#page33#enu10#sfld12"/>
           <layout:Field field="sv4#area9#page33#enu10#sfld13"/>
           <layout:Field field="sv4#area9#page33#enu10#sfld16"/>
+          <layout:Field field="sv4#area9#page33#enu10#fld10"/>
+          <layout:Field field="sv4#area9#page33#enu10#fld11"/>
+          <layout:Field field="sv4#area9#page33#enu10#fld12"/>
+          <layout:Field field="sv4#area9#page33#enu10#fld19"/>
+          <layout:Field field="sv4#area9#page33#enu10#fld20"/>
+          <layout:Field field="sv4#area9#page33#enu10#fld23"/>
           <layout:Link link="sv4#area9#page33#enu10#ln52"/>
+          <layout:Link link="sv4#area9#page33#enu10#ln5"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -67,4 +91,6 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv4#area9#page33#ln2" name="Modifica/elimina prodotto" to="sv4#area9#page39" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv4#area9#page33#ln15" name="Crea categoria/produttore/tipo prodotto" to="sv4#area9#page21" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="-410,-208,230,12"/>
 </Page>
