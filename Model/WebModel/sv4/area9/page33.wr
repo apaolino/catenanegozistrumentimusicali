@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="505" gr:y="545" id="sv4#area9#page33" name="Inserimento nuovo prodotto" ajaxEnabled="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="505" gr:y="555" id="sv4#area9#page33" name="Inserimento nuovo prodotto" ajaxEnabled="true" linkOrder="sv4#area9#page33#ln2">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="70" id="sv4#area9#page33#enu10" name="Inserimento dati prodotto" linkOrder="sv4#area9#page33#enu10#ln52 sv4#area9#page33#enu10#ln5">
       <SelectionField id="sv4#area9#page33#enu10#sfld12" name="Categoria" type="string" ajaxEventEnabled="true" ajaxEventLink="sv4#area9#page33#enu10#ln52"/>
@@ -91,4 +91,6 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv4#area9#page33#ln2" name="Modifica/elimina prodotto" to="sv4#area9#page39" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv4#area9#page33#ln15" name="Crea categoria/produttore/tipo prodotto" to="sv4#area9#page21" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="-410,-208,230,12"/>
 </Page>

@@ -1,9 +1,9 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="325" gr:y="110" id="sv4#area9#page39" name="Modifica ed elimina prodotti">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="320" gr:y="0" id="sv4#area9#page39" name="Modifica ed elimina prodotti">
   <ContentUnits>
     <SelectorUnit gr:x="0" gr:y="0" id="sv4#area9#page39#seu9" name="Raccolta prodotti" entity="ent12">
       <Link id="sv4#area9#page39#seu9#ln56" name="Flow56" to="sv4#area9#page39#inu2" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <IndexUnit gr:x="145" gr:y="10" id="sv4#area9#page39#inu2" name="Elenco prodotti" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45" linkOrder="sv4#area9#page39#inu2#ln59">
+    <IndexUnit gr:x="145" gr:y="10" id="sv4#area9#page39#inu2" name="Elenco prodotti" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45" linkOrder="sv4#area9#page39#inu2#ln59 sv4#area9#page39#inu2#ln18">
       <Link id="sv4#area9#page39#inu2#ln59" name="Modifica" to="sv4#area9#page40#enu2" type="normal" validate="true">
         <LinkParameter id="sv4#area9#page39#inu2#ln59#par76" name="ProdottoToCategoria.oid_Categoria prodotto - Preselection" source="data[].rel25#role49_ent7#att7" target="sv4#area9#page40#enu2#sfld4_presel"/>
         <LinkParameter id="sv4#area9#page39#inu2#ln59#par77" name="Data produzione_Data produzione" source="data[].ent12#att41" target="sv4#area9#page40#enu2#fld26_slot"/>
@@ -16,6 +16,7 @@
         <LinkParameter id="sv4#area9#page39#inu2#ln59#par156" name="Usato_Usato" source="data[].ent12#att44" target="sv4#area9#page40#enu2#fld44_slot"/>
         <LinkParameter id="sv4#area9#page39#inu2#ln59#par174" name="oid_PASSING" source="data[].ent12#att12" passing="true"/>
       </Link>
+      <Link id="sv4#area9#page39#inu2#ln18" name="Elimina" to="sv4#area9#page3#mssu10" automaticCoupling="true" type="normal" validate="true"/>
     </IndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -29,6 +30,7 @@
           <layout:Attribute attribute="ent12#att44"/>
           <layout:Attribute attribute="ent12#att45"/>
           <layout:Link link="sv4#area9#page39#inu2#ln59"/>
+          <layout:Link link="sv4#area9#page39#inu2#ln18"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

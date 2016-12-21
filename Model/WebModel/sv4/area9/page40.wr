@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="710" gr:y="135" id="sv4#area9#page40" name="Modifica prodotto">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="785" gr:y="280" id="sv4#area9#page40" name="Modifica prodotto">
   <ContentUnits>
     <EntryUnit gr:x="15" gr:y="0" id="sv4#area9#page40#enu2" name="Modifica dati articolo" linkOrder="sv4#area9#page40#enu2#ln80">
       <Field id="sv4#area9#page40#enu2#fld25" name="Nome modello" type="string" modifiable="true" preloaded="true"/>
@@ -10,7 +10,7 @@
       <SelectionField id="sv4#area9#page40#enu2#sfld4" name="Categoria prodotto" type="string"/>
       <SelectionField id="sv4#area9#page40#enu2#sfld8" name="Produttore" type="string"/>
       <SelectionField id="sv4#area9#page40#enu2#sfld9" name="Tipo prodotto" type="string"/>
-      <Link id="sv4#area9#page40#enu2#ln80" name="Flow80" to="sv4#area9#mfu1" type="normal" validate="true">
+      <Link id="sv4#area9#page40#enu2#ln80" name="Modifica" to="sv4#area9#mfu1" type="normal" validate="true">
         <LinkParameter id="sv4#area9#page40#enu2#ln80#par175" name="Categoria prodotto_Categoria Prodotto.oid(ProdottoToCategoria)" source="sv4#area9#page40#enu2#sfld4" target="sv4#area9#mfu1.rel25#role49.ent7#att7"/>
         <LinkParameter id="sv4#area9#page40#enu2#ln80#par176" name="Data produzione_Data produzione" source="sv4#area9#page40#enu2#fld26" target="sv4#area9#mfu1.ent12#att41"/>
         <LinkParameter id="sv4#area9#page40#enu2#ln80#par177" name="oid_PASSING_KeyCondition30 [oid]" sourceLinkParameter="sv4#area9#page39#inu2#ln59#par174" target="sv4#area9#mfu1#su43#kcond30.ent12#att12"/>

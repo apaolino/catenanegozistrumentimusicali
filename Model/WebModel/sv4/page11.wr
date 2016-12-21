@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="340" gr:y="240" id="sv4#page11" name="Home Page Gestore Catena - Gestione Prodotti" linkOrder="sv4#page11#ln24 sv4#page11#ln66 sv4#page11#ln67">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="340" gr:y="240" id="sv4#page11" name="Home Page Gestore Catena - Gestione Prodotti" linkOrder="sv4#page11#ln24 sv4#page11#ln67">
   <ContentUnits>
     <HierarchicalIndexUnit id="sv4#page11#hinu2" name="Catalogo Prodotti" gr:x="0" gr:y="0" sortable="false" entity="ent7" displayAttributes="ent7#att36">
       <Selector id="sv4#page11#hinu2#su10" defaultPolicy="fill" booleanOperator="and"/>
@@ -106,6 +106,5 @@
     </layout:Row>
   </layout:Grid>
   <Link id="sv4#page11#ln24" name="Inserimento nuovo prodotto" to="sv4#area9#page33" automaticCoupling="true" type="normal" validate="true"/>
-  <Link id="sv4#page11#ln66" name="Crea categoria/produttore/tipo prodotto" to="sv4#area9#page21" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-281,-636,1013,-246;-1249,-636,45,-246"/>
   <Link id="sv4#page11#ln67" name="Logout" to="sv4#lou3" automaticCoupling="true" type="normal" validate="true"/>
 </Page>
