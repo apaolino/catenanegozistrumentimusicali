@@ -19,21 +19,27 @@
       <Selector id="sv4#area9#mfu1#su43" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area9#mfu1#su43#kcond30" name="KeyCondition30" predicate="in" implied="false"/>
       </Selector>
-      <OKLink id="sv4#area9#mfu1#oln34" name="OKFlow34" to="sv4#page36#alt7#page37" automaticCoupling="true" gr:bendpoints="-568,-100,642,-525;-1152,-98,58,-523"/>
       <KOLink id="sv4#area9#mfu1#kln22" name="KOFlow22" to="sv4#page36#alt7#page38" automaticCoupling="true" gr:bendpoints="-585,-33,630,-598;-1358,-88,-143,-653;-1378,435,-163,-130"/>
+      <OKLink id="sv4#area9#mfu1#oln33" name="OKFlow33" to="sv4#area9#page39" automaticCoupling="true"/>
     </ModifyUnit>
-    <DeleteUnit gr:x="995" gr:y="15" id="sv4#area9#dlu6" name="Elimina prodotto" entity="ent12">
+    <DeleteUnit gr:x="1055" gr:y="0" id="sv4#area9#dlu6" name="Elimina prodotto" entity="ent12">
       <Selector id="sv4#area9#dlu6#su14" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area9#dlu6#su14#kcond4" name="KeyCondition4" predicate="in" implied="false"/>
       </Selector>
+      <KOLink id="sv4#area9#dlu6#kln23" name="KOFlow23" to="sv4#page36#alt7#page38" automaticCoupling="true" gr:bendpoints="-239,-97,1151,-677;-1157,-93,233,-673"/>
+      <OKLink id="sv4#area9#dlu6#oln25" name="OKFlow25" to="sv4#area9#page39" automaticCoupling="true" gr:bendpoints="-304,-80,346,-100"/>
     </DeleteUnit>
-    <DisconnectUnit gr:x="950" gr:y="150" id="sv4#area9#dcnu2" name="Disconnect2">
+    <DisconnectUnit gr:x="965" gr:y="135" id="sv4#area9#dcnu2" name="Scollega prodotto dai cataloghi" relationship="rel24#role47">
       <SourceSelector id="sv4#area9#dcnu2#su17" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area9#dcnu2#su17#kcond8" name="KeyCondition8" predicate="in" implied="false"/>
       </SourceSelector>
       <TargetSelector id="sv4#area9#dcnu2#su19" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area9#dcnu2#su19#kcond31" name="KeyCondition31" predicate="in" implied="false"/>
       </TargetSelector>
+      <OKLink id="sv4#area9#dcnu2#oln3" name="OKFlow3" to="sv4#area9#dlu6" automaticCoupling="true"/>
     </DisconnectUnit>
+    <SelectorUnit gr:x="775" gr:y="135" id="sv4#area9#seu1" name="Recupero id cataloghi" entity="ent11">
+      <Link id="sv4#area9#seu1#ln66" name="Flow66" to="sv4#area9#dcnu2" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
   </OperationUnits>
 </Area>

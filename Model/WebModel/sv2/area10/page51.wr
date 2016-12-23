@@ -1,0 +1,44 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="60" gr:y="185" id="sv2#area10#page51" name="Modifica recensione">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv2#area10#page51#enu16" name="Modifica la recensione" linkOrder="sv2#area10#page51#enu16#ln121">
+      <Field id="sv2#area10#page51#enu16#fld110" name="Numero stelle" type="integer" modifiable="true" preloaded="true">
+        <VRules/>
+      </Field>
+      <Field id="sv2#area10#page51#enu16#fld111" name="Testo" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv2#area10#page51#enu16#fld112" name="Data" type="date" modifiable="true" preloaded="true"/>
+      <Field id="sv2#area10#page51#enu16#fld113" name="Tipo" type="string" modifiable="true" preloaded="true"/>
+      <Link id="sv2#area10#page51#enu16#ln121" name="Salva" to="sv2#mfu13" type="normal" validate="true">
+        <LinkParameter id="sv2#area10#page51#enu16#ln121#par316" name="ValutazioneToCliente Registrato.oid_PASSING_Cliente.oid(ValutazioneToCliente Registrato)" sourceLinkParameter="sv2#area10#page50#inu6#ln120#par311" target="sv2#mfu13.rel19#role37.userOID"/>
+        <LinkParameter id="sv2#area10#page51#enu16#ln121#par319" name="Data_Data" source="sv2#area10#page51#enu16#fld112" target="sv2#mfu13.ent18#att35"/>
+        <LinkParameter id="sv2#area10#page51#enu16#ln121#par328" name="oid_PASSING_KeyCondition45 [oid]" sourceLinkParameter="sv2#area10#page50#inu6#ln120#par310" target="sv2#mfu13#su64#kcond45.ent18#att18"/>
+        <LinkParameter id="sv2#area10#page51#enu16#ln121#par331" name="Numero stelle_Numero stelle" source="sv2#area10#page51#enu16#fld110" target="sv2#mfu13.ent18#att33"/>
+        <LinkParameter id="sv2#area10#page51#enu16#ln121#par332" name="Testo_Recensione" source="sv2#area10#page51#enu16#fld111" target="sv2#mfu13.ent18#att34"/>
+        <LinkParameter id="sv2#area10#page51#enu16#ln121#par333" name="Tipo_Tipo" source="sv2#area10#page51#enu16#fld113" target="sv2#mfu13.ent18#att77"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area10#page51#enu16">
+          <layout:Field field="sv2#area10#page51#enu16#fld110"/>
+          <layout:Field field="sv2#area10#page51#enu16#fld111"/>
+          <layout:Field field="sv2#area10#page51#enu16#fld112"/>
+          <layout:Field field="sv2#area10#page51#enu16#fld113"/>
+          <layout:Link link="sv2#area10#page51#enu16#ln121"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

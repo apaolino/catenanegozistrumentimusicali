@@ -1,0 +1,68 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="5" id="sv2#area1#page42" name="Gestione dati utente">
+  <ContentUnits>
+    <GetUnit id="sv2#area1#page42#gtu2" name="GetReference" gr:x="0" gr:y="5" contextParameters="UserCtxParam">
+      <Link id="sv2#area1#page42#gtu2#ln111" name="Flow110" to="sv2#area1#page42#dau10" type="transport" automaticCoupling="true" validate="true"/>
+    </GetUnit>
+    <DataUnit id="sv2#area1#page42#dau10" name="Dettagli Cliente" gr:x="145" gr:y="0" entity="User" linkOrder="sv2#area1#page42#dau10#ln85" displayAttributes="userName password User#att20 User#att21 User#att22 User#att54 email User#att29 User#att71">
+      <Selector id="sv2#area1#page42#dau10#su66" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area1#page42#dau10#su66#kcond49" name="KeyCondition48" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area1#page42#dau10#ln85" name="Modifica dati" to="sv2#area1#page43#enu15" type="normal" validate="true">
+        <LinkParameter id="sv2#area1#page42#dau10#ln85#par69" name="Cognome_Cognome" source="data.User#att21" target="sv2#area1#page43#enu15#fld60_slot"/>
+        <LinkParameter id="sv2#area1#page42#dau10#ln85#par150" name="Data nascita_Data di nascita" source="data.User#att22" target="sv2#area1#page43#enu15#fld63_slot"/>
+        <LinkParameter id="sv2#area1#page42#dau10#ln85#par188" name="Data registrazione_Data di registrazione" source="data.User#att29" target="sv2#area1#page43#enu15#fld64_slot"/>
+        <LinkParameter id="sv2#area1#page42#dau10#ln85#par222" name="E-mail_E-mail" source="data.email" target="sv2#area1#page43#enu15#fld100_slot"/>
+        <LinkParameter id="sv2#area1#page42#dau10#ln85#par225" name="Indirizzo Primario_Indirizzo completo" source="data.User#att71" target="sv2#area1#page43#enu15#fld108_slot"/>
+        <LinkParameter id="sv2#area1#page42#dau10#ln85#par226" name="Nome_Nome" source="data.User#att20" target="sv2#area1#page43#enu15#fld48_slot"/>
+        <LinkParameter id="sv2#area1#page42#dau10#ln85#par227" name="Numero telefono_Numero di telefono" source="data.User#att54" target="sv2#area1#page43#enu15#fld101_slot"/>
+        <LinkParameter id="sv2#area1#page42#dau10#ln85#par228" name="Password_Password" source="data.password" target="sv2#area1#page43#enu15#fld62_slot"/>
+        <LinkParameter id="sv2#area1#page42#dau10#ln85#par229" name="UserName_Username" source="data.userName" target="sv2#area1#page43#enu15#fld61_slot"/>
+        <LinkParameter id="sv2#area1#page42#dau10#ln85#par247" name="UserToIndirizzo.oid_PASSING" source="data.rel20#role40_ent1#att3" passing="true"/>
+        <LinkParameter id="sv2#area1#page42#dau10#ln85#par279" name="oid_PASSING" source="data.userOID" passing="true"/>
+      </Link>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area1#page42#dau10">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="password"/>
+          <layout:Attribute attribute="User#att20"/>
+          <layout:Attribute attribute="User#att21"/>
+          <layout:Attribute attribute="User#att22"/>
+          <layout:Attribute attribute="User#att54"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="User#att29"/>
+          <layout:Attribute attribute="User#att71"/>
+          <layout:Link link="sv2#area1#page42#dau10#ln85"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

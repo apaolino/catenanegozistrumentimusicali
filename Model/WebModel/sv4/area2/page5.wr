@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv4#area2#page5" name="Inserimento Prodotto in Catalogo Base" ajaxEnabled="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="30" gr:y="0" id="sv4#area2#page5" name="Inserimento Prodotto in Catalogo Base" ajaxEnabled="true" linkOrder="sv4#area2#page5#ln97 sv4#area2#page5#ln98">
   <ContentUnits>
     <MultiChoiceIndexUnit gr:x="280" gr:y="0" id="sv4#area2#page5#mciu1" name="Lista prodotti" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45 ent12#att66 ent12#att67 ent12#att68" linkOrder="sv4#area2#page5#mciu1#ln23">
       <SortAttribute attribute="ent12#att12" order="descending"/>
@@ -9,7 +9,7 @@
     </MultiChoiceIndexUnit>
     <SelectorUnit gr:x="0" gr:y="140" id="sv4#area2#page5#seu7" name="Recupero Ultimo Catalogo Base" entity="ent13" maxResults="1" distinctAttributes="ent11#att11">
       <SortAttribute attribute="ent11#att47" order="descending"/>
-      <Link id="sv4#area2#page5#seu7#ln28" name="Flow28" to="sv4#cnu1" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv4#area2#page5#seu7#ln28" name="Flow28" to="sv4#cnu1" automaticCoupling="true" type="transport" validate="true" gr:bendpoints="470,-89,-90,161"/>
       <Link id="sv4#area2#page5#seu7#ln81" name="Flow81" to="sv4#area2#page5#mciu1" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
   </ContentUnits>
@@ -56,4 +56,6 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv4#area2#page5#ln97" name="Rimuovi articolo" to="sv4#area2#page32" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv4#area2#page5#ln98" name="Crea nuovo catalogo" to="sv4#area2#page34" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-295,23,-215,-432;-294,231,-214,-224"/>
 </Page>

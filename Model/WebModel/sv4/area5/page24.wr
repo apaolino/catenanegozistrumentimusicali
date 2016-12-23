@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv4#area5#page24" name="Visualizza Dati" landmark="false">
   <ContentUnits>
-    <DataUnit id="sv4#area5#page24#dau5" name="Dati gestore catena" gr:x="235" gr:y="0" entity="User" displayAttributes="User#att20 User#att21 User#att22 User#att54 email User#att29 userName password" gr:showAllParts="false">
+    <DataUnit id="sv4#area5#page24#dau5" name="Dati gestore catena" gr:x="225" gr:y="0" entity="User" displayAttributes="User#att20 User#att21 User#att22 User#att54 email User#att29 userName password" gr:showAllParts="false">
       <Selector id="sv4#area5#page24#dau5#su22" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area5#page24#dau5#su22#kcond12" name="KeyCondition4" predicate="in" implied="false"/>
       </Selector>
@@ -9,7 +9,6 @@
         <LinkParameter id="sv4#area5#page24#dau5#ln79#par313" name="Data nascita_PASSING" source="data.User#att22" passing="true"/>
         <LinkParameter id="sv4#area5#page24#dau5#ln79#par314" name="Data registrazione_PASSING" source="data.User#att29" passing="true"/>
         <LinkParameter id="sv4#area5#page24#dau5#ln79#par315" name="E-mail_PASSING" source="data.email" passing="true"/>
-        <LinkParameter id="sv4#area5#page24#dau5#ln79#par316" name="Indirizzo Primario_PASSING" source="data.User#att71" passing="true"/>
         <LinkParameter id="sv4#area5#page24#dau5#ln79#par317" name="Nome_PASSING" source="data.User#att20" passing="true"/>
         <LinkParameter id="sv4#area5#page24#dau5#ln79#par318" name="Numero telefono_PASSING" source="data.User#att54" passing="true"/>
         <LinkParameter id="sv4#area5#page24#dau5#ln79#par320" name="Password_PASSING" source="data.password" passing="true"/>
@@ -18,12 +17,7 @@
         <LinkParameter id="sv4#area5#page24#dau5#ln79#par352" name="oid_PASSING" source="data.userOID" passing="true"/>
       </Link>
     </DataUnit>
-    <SelectorUnit id="sv4#area5#page24#seu13" name="Selezione dati utente" gr:x="0" gr:y="30" entity="ent5">
-      <Link id="sv4#area5#page24#seu13#ln54" name="Flow27" to="sv4#area5#page24#dau5" type="transport" validate="true">
-        <LinkParameter id="sv4#area5#page24#seu13#ln54#par141" name="oid_KeyCondition4 [oid]" source="userOIDArray" target="sv4#area5#page24#dau5#su22#kcond12.userOID"/>
-      </Link>
-    </SelectorUnit>
-    <DataUnit gr:x="255" gr:y="190" id="sv4#area5#page24#dau9" name="Dettagli indirizzo" entity="ent1" displayAttributes="ent1#att4 ent1#att5 ent1#att6 ent1#att8 rel35#role69.ent3#att70 ent1#att14 ent1#att23" linkOrder="sv4#area5#page24#dau9#ln72">
+    <DataUnit gr:x="245" gr:y="190" id="sv4#area5#page24#dau9" name="Dettagli indirizzo" entity="ent1" displayAttributes="ent1#att4 ent1#att5 ent1#att6 ent1#att8 rel35#role69.ent3#att70 ent1#att14 ent1#att23" linkOrder="sv4#area5#page24#dau9#ln72">
       <Selector id="sv4#area5#page24#dau9#su23" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area5#page24#dau9#su23#kcond14" name="KeyCondition9" predicate="in" implied="false"/>
       </Selector>
@@ -48,6 +42,9 @@
         <LinkParameter id="sv4#area5#page24#dau9#ln72#par363" name="oid_PASSING" source="data.ent1#att3" passing="true"/>
       </Link>
     </DataUnit>
+    <GetUnit gr:x="0" gr:y="25" id="sv4#area5#page24#gtu1" name="Get id" contextParameters="UserCtxParam">
+      <Link id="sv4#area5#page24#gtu1#ln115" name="Flow115" to="sv4#area5#page24#dau5" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>

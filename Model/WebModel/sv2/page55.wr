@@ -1,0 +1,85 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#page55" name="Pagina Messaggio Operazione" gr:x="1855" gr:y="900">
+  <ContentUnits/>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv2#page55#alt9#page56">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv2#page55#alt9#page56#mssu17"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv2#page55#alt9#page57">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv2#page55#alt9#page57#mssu18"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative id="sv2#page55#alt9" name="Alternative2" defaultPage="sv2#page55#alt9#page56" gr:x="0" gr:y="0">
+    <Page id="sv2#page55#alt9#page56" name="Pagina Successo" gr:x="0" gr:y="0">
+      <ContentUnits>
+        <MultiMessageUnit id="sv2#page55#alt9#page56#mssu17" name="Messaggio Successo" gr:x="0" gr:y="0">
+          <Message xml:space="preserve">Prenotazione effettuata
+</Message>        </MultiMessageUnit>      </ContentUnits>    </Page>    <Page id="sv2#page55#alt9#page57" name="Pagina Errore" gr:x="5" gr:y="140">      <ContentUnits>        <MultiMessageUnit id="sv2#page55#alt9#page57#mssu18" name="Messaggio Errore" gr:x="0" gr:y="0">          <Message xml:space="preserve">Prenotazione non effettuata</Message>
+        </MultiMessageUnit>
+      </ContentUnits>
+    </Page>
+  </Alternative>
+</Page>

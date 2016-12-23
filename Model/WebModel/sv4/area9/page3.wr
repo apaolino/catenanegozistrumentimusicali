@@ -1,13 +1,21 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="760" gr:y="0" id="sv4#area9#page3" name="Elimina prodotto">
   <ContentUnits>
-    <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#area9#page3#mssu10" name="Eliminazione prodotto">
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#area9#page3#mssu10" name="Eliminazione prodotto" linkOrder="sv4#area9#page3#mssu10#ln22 sv4#area9#page3#mssu10#ln82">
       <Message xml:space="preserve">Confermi l'eliminazione del prodotto?</Message>
+      <Link id="sv4#area9#page3#mssu10#ln22" name="Elimina" to="sv4#area9#dcnu2" type="normal" validate="true">
+        <LinkParameter id="sv4#area9#page3#mssu10#ln22#par57" name="oid_PASSING_KeyCondition31 [oid] [Prodotto] [Target]" sourceLinkParameter="sv4#area9#page39#inu2#ln18#par8" target="sv4#area9#dcnu2#su19#kcond31.ent12#att12"/>
+      </Link>
+      <Link id="sv4#area9#page3#mssu10#ln55" name="Flow55" to="sv4#area9#dlu6" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv4#area9#page3#mssu10#ln82" name="Torna a elenco prodotti" to="sv4#area9#page39#inu2" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-167,73,148,53"/>
     </MultiMessageUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv4#area9#page3#mssu10"/>
+        <layout:Unit unitId="sv4#area9#page3#mssu10">
+          <layout:Link link="sv4#area9#page3#mssu10#ln22"/>
+          <layout:Link link="sv4#area9#page3#mssu10#ln82"/>
+        </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>

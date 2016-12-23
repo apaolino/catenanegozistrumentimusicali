@@ -16,7 +16,9 @@
         <LinkParameter id="sv4#area9#page39#inu2#ln59#par156" name="Usato_Usato" source="data[].ent12#att44" target="sv4#area9#page40#enu2#fld44_slot"/>
         <LinkParameter id="sv4#area9#page39#inu2#ln59#par174" name="oid_PASSING" source="data[].ent12#att12" passing="true"/>
       </Link>
-      <Link id="sv4#area9#page39#inu2#ln18" name="Elimina" to="sv4#area9#page3#mssu10" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv4#area9#page39#inu2#ln18" name="Elimina" to="sv4#area9#page3#mssu10" type="normal" validate="true">
+        <LinkParameter id="sv4#area9#page39#inu2#ln18#par8" name="oid_PASSING" source="data[].ent12#att12" passing="true"/>
+      </Link>
     </IndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">

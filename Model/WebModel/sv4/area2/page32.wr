@@ -1,0 +1,57 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="30" gr:y="295" id="sv4#area2#page32" name="Rimozione da catalogo base">
+  <ContentUnits>
+    <SelectorUnit gr:x="0" gr:y="0" id="sv4#area2#page32#seu2" name="Catalogo base corrente" entity="ent13" maxResults="1">
+      <Link id="sv4#area2#page32#seu2#ln84" name="Flow83" to="sv4#area2#page32#mciu2" type="transport" validate="true">
+        <LinkParameter id="sv4#area2#page32#seu2#ln84#par67" name="oid_RoleCondition6 [oid]" source="ent11#att11Array" target="sv4#area2#page32#mciu2#su50#rcond10.ent11#att11"/>
+      </Link>
+      <SortAttribute attribute="ent11#att47" order="descending"/>
+      <Link id="sv4#area2#page32#seu2#ln86" name="Flow86" to="sv4#dcnu3" automaticCoupling="true" type="transport" validate="true" gr:bendpoints="260,-95,-340,-75"/>
+    </SelectorUnit>
+    <MultiChoiceIndexUnit id="sv4#area2#page32#mciu2" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45" gr:x="245" gr:y="0" name="Prodotti nel catalogo" linkOrder="sv4#area2#page32#mciu2#ln88">
+      <Selector id="sv4#area2#page32#mciu2#su50" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#area2#page32#mciu2#su50#rcond10" role="rel24#role47" predicate="in" implied="false" name="RoleCondition6"/>
+      </Selector>
+      <Link id="sv4#area2#page32#mciu2#ln88" name="Rimuovi dal catalogo" to="sv4#dcnu3" type="normal" automaticCoupling="true" validate="true"/>
+    </MultiChoiceIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area2#page32#mciu2">
+          <layout:Attribute attribute="ent12#att1"/>
+          <layout:Attribute attribute="ent12#att41"/>
+          <layout:Attribute attribute="ent12#att42"/>
+          <layout:Attribute attribute="ent12#att43"/>
+          <layout:Attribute attribute="ent12#att44"/>
+          <layout:Attribute attribute="ent12#att45"/>
+          <layout:Link link="sv4#area2#page32#mciu2#ln88"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
