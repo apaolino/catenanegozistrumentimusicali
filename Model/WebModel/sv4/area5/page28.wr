@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1205" gr:y="330" id="sv4#area5#page28" name="Operazione eseguita" linkOrder="sv4#area5#page28#ln58">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1195" gr:y="330" id="sv4#area5#page28" name="Operazione eseguita" linkOrder="sv4#area5#page28#ln58">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#area5#page28#mssu6" name="Operazione ok">
       <Message xml:space="preserve">Operazione eseguita con successo</Message>

@@ -1,0 +1,28 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1485" gr:y="920" id="sv2#opg9" name="Operation Group 9" transaction="true">
+  <OperationUnits>
+    <ModifyUnit id="sv2#opg9#mfu2" name="Aggiorna evento" gr:x="205" gr:y="250" entity="ent17">
+      <Selector id="sv2#opg9#mfu2#su47" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#opg9#mfu2#su47#kcond37" name="KeyCondition47" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#opg9#mfu2#oln42" name="OKFlow42" to="sv2#page55#alt9#page56" automaticCoupling="true"/>
+      <KOLink id="sv2#opg9#mfu2#kln28" name="KOFlow28" to="sv2#page55#alt9#page57" automaticCoupling="true"/>
+    </ModifyUnit>
+    <CreateUnit id="sv2#opg9#cru12" name="Aggiungi prenotazione" gr:x="150" gr:y="135" entity="ent16">
+      <OKLink id="sv2#opg9#cru12#oln40" name="OKFlow38" to="sv2#opg9#mathu1" automaticCoupling="true"/>
+      <KOLink id="sv2#opg9#cru12#kln27" name="KOFlow27" to="sv2#page55#alt9#page57" automaticCoupling="true"/>
+    </CreateUnit>
+    <GetUnit id="sv2#opg9#gtu5" name="Get4" gr:x="40" gr:y="0" contextParameters="UserCtxParam">
+      <Link id="sv2#opg9#gtu5#ln54" name="Flow129" to="sv2#opg9#cru12" type="transport" validate="true">
+        <LinkParameter id="sv2#opg9#gtu5#ln54#par230" name="UserCtxParam.oid_Cliente.oid(PrenotazioneToCliente Registrato)" source="sv2#opg9#gtu5.UserCtxParam" target="sv2#opg9#cru12.rel14#role28.userOID"/>
+      </Link>
+    </GetUnit>
+    <MathUnit id="sv2#opg9#mathu1" name="Math2" gr:x="0" gr:y="340" resultType="integer" defaultExpression="a - 1">
+      <MathVariable id="sv2#opg9#mathu1#mathv1" name="a"/>
+      <Link id="sv2#opg9#mathu1#ln91" name="Flow134" to="sv2#opg9#mfu2" type="transport" validate="true">
+        <LinkParameter id="sv2#opg9#mathu1#ln91#par231" name="Result_Posti disponibili" source="result" target="sv2#opg9#mfu2.ent17#att65"/>
+      </Link>
+      <OKLink id="sv2#opg9#mathu1#oln41" name="OKFlow39" to="sv2#opg9#mfu2" automaticCoupling="true" gr:bendpoints="181,32,-184,92"/>
+      <KOLink id="sv2#opg9#mathu1#kln29" name="KOFlow29" to="sv2#page55#alt9#page57#mssu18" automaticCoupling="true" gr:bendpoints="336,48,-194,153"/>
+    </MathUnit>
+  </OperationUnits>
+</OperationGroup>

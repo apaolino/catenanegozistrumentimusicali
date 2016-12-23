@@ -1,0 +1,49 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv2#area8#page52" name="Page 52">
+  <ContentUnits>
+    <EventCalendarUnit gr:x="0" gr:y="0" id="sv2#area8#page52#ecu2" name="Calendario eventi" entityBased="true" entity="ent17" displayAttributes="ent17#att62" dateAttribute="ent17#att61" linkOrder="sv2#area8#page52#ecu2#ln124">
+      <Selector id="sv2#area8#page52#ecu2#su67" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area8#page52#ecu2#su67#rcond15" name="RoleCondition15" predicate="in" implied="false" role="rel10#role20"/>
+      </Selector>
+      <SortAttribute attribute="ent17#att61" order="ascending"/>
+      <Link id="sv2#area8#page52#ecu2#ln124" to="sv2#area8#page53#dau6" type="normal" validate="true">
+        <LinkParameter id="sv2#area8#page52#ecu2#ln124#par334" name="oid_KeyCondition46 [oid]" source="date[].data[].ent17#att17" target="sv2#area8#page53#dau6#su68#kcond46.ent17#att17"/>
+        <LinkParameter id="sv2#area8#page52#ecu2#ln124#par336" name="EventoToNegozio.oid_PASSING" source="date[].data[].rel10#role19_ent10#att10" passing="true"/>
+        <LinkParameter id="sv2#area8#page52#ecu2#ln124#par141" name="oid_PASSING" source="date[].data[].ent17#att17" passing="true"/>
+      </Link>
+    </EventCalendarUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area8#page52#ecu2">
+          <layout:Attribute attribute="ent17#att62"/>
+          <layout:Link link="sv2#area8#page52#ecu2#ln124"/>
+          <layout:Link link="sv2#area8#page52#ecu2-month-0"/>
+          <layout:Link link="sv2#area8#page52#ecu2-month-1"/>
+          <layout:Link link="sv2#area8#page52#ecu2-month-2"/>
+          <layout:Link link="sv2#area8#page52#ecu2-month-3"/>
+          <layout:Link link="sv2#area8#page52#ecu2-month-4"/>
+          <layout:Link link="sv2#area8#page52#ecu2-month-5"/>
+          <layout:Link link="sv2#area8#page52#ecu2-month-6"/>
+          <layout:Link link="sv2#area8#page52#ecu2-month-7"/>
+          <layout:Link link="sv2#area8#page52#ecu2-month-8"/>
+          <layout:Link link="sv2#area8#page52#ecu2-month-9"/>
+          <layout:Link link="sv2#area8#page52#ecu2-month-10"/>
+          <layout:Link link="sv2#area8#page52#ecu2-month-11"/>
+          <layout:Link link="sv2#area8#page52#ecu2-year"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

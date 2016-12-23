@@ -1,0 +1,60 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv2#area10#page50" name="Visualizza recensioni">
+  <ContentUnits>
+    <IndexUnit gr:x="155" gr:y="5" id="sv2#area10#page50#inu6" name="Lista recensioni" entity="ent18" displayAttributes="ent18#att33 ent18#att34 ent18#att35 ent18#att77" linkOrder="sv2#area10#page50#inu6#ln120">
+      <Selector id="sv2#area10#page50#inu6#su63" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area10#page50#inu6#su63#rcond13" predicate="in" implied="false" role="rel19#role38" name="RoleCondition13"/>
+      </Selector>
+      <Link id="sv2#area10#page50#inu6#ln120" name="Modifica" to="sv2#area10#page51#enu16" type="normal" validate="true">
+        <LinkParameter id="sv2#area10#page50#inu6#ln120#par306" name="Data_Data" source="data[].ent18#att35" target="sv2#area10#page51#enu16#fld112_slot"/>
+        <LinkParameter id="sv2#area10#page50#inu6#ln120#par307" name="Numero stelle_Numero stelle" source="data[].ent18#att33" target="sv2#area10#page51#enu16#fld110_slot"/>
+        <LinkParameter id="sv2#area10#page50#inu6#ln120#par308" name="Recensione_Testo" source="data[].ent18#att34" target="sv2#area10#page51#enu16#fld111_slot"/>
+        <LinkParameter id="sv2#area10#page50#inu6#ln120#par309" name="Tipo_Tipo" source="data[].ent18#att77" target="sv2#area10#page51#enu16#fld113_slot"/>
+        <LinkParameter id="sv2#area10#page50#inu6#ln120#par310" name="oid_PASSING" source="data[].ent18#att18" passing="true"/>
+        <LinkParameter id="sv2#area10#page50#inu6#ln120#par311" name="ValutazioneToCliente Registrato.oid_PASSING" source="data[].rel19#role37_userOID" passing="true"/>
+      </Link>
+    </IndexUnit>
+    <GetUnit gr:x="0" gr:y="0" id="sv2#area10#page50#gtu3" name="GetIdCliente" contextParameters="UserCtxParam">
+      <Link id="sv2#area10#page50#gtu3#ln119" name="Flow119" to="sv2#area10#page50#inu6" type="transport" validate="true">
+        <LinkParameter id="sv2#area10#page50#gtu3#ln119#par305" name="UserCtxParam.oid_RoleCondition13 [oid]" source="sv2#area10#page50#gtu3.UserCtxParam" target="sv2#area10#page50#inu6#su63#rcond13.userOID"/>
+      </Link>
+    </GetUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area10#page50#inu6">
+          <layout:Attribute attribute="ent18#att33"/>
+          <layout:Attribute attribute="ent18#att34"/>
+          <layout:Attribute attribute="ent18#att35"/>
+          <layout:Attribute attribute="ent18#att77"/>
+          <layout:Link link="sv2#area10#page50#inu6#ln120"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

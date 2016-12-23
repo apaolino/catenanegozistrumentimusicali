@@ -6,7 +6,6 @@
       </Selector>
       <OKLink id="sv4#opg5#dlu1#oln17" name="OKFlow17" to="sv4#opg5#dlu2">
         <LinkParameter id="sv4#opg5#dlu1#oln17#par147" name="NegozioToSala prove.oid_PASSING_KeyCondition24 [oid]" sourceLinkParameter="sv4#area3#page12#pwu1#ln64#par146" target="sv4#opg5#dlu2#su35#kcond24.ent19#att19"/>
-        <LinkParameter id="sv4#opg5#dlu1#oln17#par150" name="NegozioToSala prove.oid_PASSING" sourceLinkParameter="sv4#area3#page12#pwu1#ln64#par146" passing="true"/>
         <LinkParameter id="sv4#opg5#dlu1#oln17#par151" name="NegozioToSpecifico.oid_PASSING" sourceLinkParameter="sv4#area3#page12#pwu1#ln64#par148" passing="true"/>
         <LinkParameter id="sv4#opg5#dlu1#oln17#par152" name="oid_PASSING" sourceLinkParameter="sv4#area3#page12#pwu1#ln64#par149" passing="true"/>
       </OKLink>

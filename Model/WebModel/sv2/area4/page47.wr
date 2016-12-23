@@ -1,0 +1,89 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv2#area4#page47" name="Cataloghi associati">
+  <ContentUnits>
+    <IndexUnit gr:x="5" gr:y="0" id="sv2#area4#page47#inu4" name="Cataloghi associati" entity="ent11" displayAttributes="ent11#att46 ent11#att47" linkOrder="sv2#area4#page47#inu4#ln118">
+      <Selector id="sv2#area4#page47#inu4#su61" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area4#page47#inu4#su61#rcond4" name="RoleCondition4" predicate="in" implied="false" role="rel23#role45"/>
+      </Selector>
+      <Link id="sv2#area4#page47#inu4#ln118" name="Visualizza prodotti" to="sv2#area4#page47#alt8#page49#inu5" automaticCoupling="true" type="normal" validate="true"/>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area4#page47#inu4">
+          <layout:Attribute attribute="ent11#att46"/>
+          <layout:Attribute attribute="ent11#att47"/>
+          <layout:Link link="sv2#area4#page47#inu4#ln118"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv2#area4#page47#alt8#page49">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv2#area4#page47#alt8#page49#inu5">
+                  <layout:Attribute attribute="ent12#att1"/>
+                  <layout:Attribute attribute="ent12#att41"/>
+                  <layout:Attribute attribute="ent12#att42"/>
+                  <layout:Attribute attribute="ent12#att43"/>
+                  <layout:Attribute attribute="ent12#att44"/>
+                  <layout:Attribute attribute="ent12#att45"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative gr:x="0" gr:y="125" id="sv2#area4#page47#alt8" name="Alternative8" defaultPage="sv2#area4#page47#alt8#page49">
+    <Page gr:x="0" gr:y="0" id="sv2#area4#page47#alt8#page49" name="Page 49">
+      <ContentUnits>
+        <IndexUnit gr:x="0" gr:y="0" id="sv2#area4#page47#alt8#page49#inu5" name="Elenco prodotti" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45">
+          <Selector id="sv2#area4#page47#alt8#page49#inu5#su62" defaultPolicy="fill" booleanOperator="and">
+            <RelationshipRoleCondition id="sv2#area4#page47#alt8#page49#inu5#su62#rcond12" name="RoleCondition12" predicate="in" implied="false" role="rel24#role47"/>
+          </Selector>
+          <SortAttribute attribute="ent12#att66" order="ascending"/>
+          <SortAttribute attribute="ent12#att68" order="ascending"/>
+          <SortAttribute attribute="ent12#att67" order="ascending"/>
+          <SortAttribute attribute="ent12#att1" order="ascending"/>
+        </IndexUnit>
+      </ContentUnits>
+    </Page>
+  </Alternative>
+</Page>

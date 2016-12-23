@@ -120,7 +120,6 @@
             <LinkParameter id="sv4#area3#page25#alt6#page26#seu30#ln92#par126" name="NegozioToGestore Singolo Negozio.oid_Gestore negozio - Preselection" source="rel4#role8_userOIDArray" target="sv4#area3#page25#alt6#page26#enu14#sfld21_presel"/>
           </Link>
           <Link id="sv4#area3#page25#alt6#page26#seu30#ln93" name="Flow93" to="sv4#area3#page25#alt6#page26#seu31" type="transport" validate="true">
-            <LinkParameter id="sv4#area3#page25#alt6#page26#seu30#ln93#par285" name="NegozioToZona.oid_PASSING" source="rel33#role65_ent3#att69Array" passing="true"/>
             <LinkParameter id="sv4#area3#page25#alt6#page26#seu30#ln93#par287" name="oid_RoleCondition11 [oid]" source="ent10#att10Array" target="sv4#area3#page25#alt6#page26#seu31#su34#rcond11.ent10#att10"/>
           </Link>
           <Link id="sv4#area3#page25#alt6#page26#seu30#ln8" name="Flow8" to="sv4#area3#page25#alt6#page26#seu5" type="transport" validate="true" gr:bendpoints="-59,89,-149,-301;-59,247,-149,-143">
@@ -197,7 +196,6 @@
           <Link id="sv4#area3#page25#alt6#page26#seu32#ln95" name="Flow95" to="sv4#area3#page25#alt6#page26#enu14" type="transport" validate="true" gr:bendpoints="94,-85,-126,125">
             <LinkParameter id="sv4#area3#page25#alt6#page26#seu32#ln95#par274" name="Provincia_Provincia [label]" source="ent3#att70Array" target="sv4#area3#page25#alt6#page26#enu14#sfld20_label"/>
             <LinkParameter id="sv4#area3#page25#alt6#page26#seu32#ln95#par275" name="oid_Provincia [output]" source="ent3#att69Array" target="sv4#area3#page25#alt6#page26#enu14#sfld20_output"/>
-            <LinkParameter id="sv4#area3#page25#alt6#page26#seu32#ln95#par47" name="Provincia_PASSING" source="ent3#att70Array" passing="true"/>
           </Link>
         </SelectorUnit>
         <SelectorUnit gr:x="435" gr:y="555" id="sv4#area3#page25#alt6#page26#seu34" name="Selettore gestore" entity="ent6">

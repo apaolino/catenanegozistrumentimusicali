@@ -1,5 +1,23 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2" name="Cliente" landmarks="sv2#area4 sv2#area6 sv2#area7 sv2#area8 sv2#area10 sv2#area1">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2" name="Cliente" landmarks="sv2#area10" homePage="sv2#page41">
   <OperationUnits>
-    <LogoutUnit gr:x="590" gr:y="25" id="sv2#lou1" name="Logout Cliente"/>
+    <LogoutUnit gr:x="500" gr:y="220" id="sv2#lou1" name="Logout Cliente" siteView="sv1">
+      <KOLink id="sv2#lou1#kln24" name="KOFlow24" to="sv2#page41" automaticCoupling="true" gr:bendpoints="-73,141,177,-19"/>
+    </LogoutUnit>
+    <ModifyUnit gr:x="790" gr:y="1400" id="sv2#mfu13" name="Modifica recensione" entity="ent18">
+      <Selector id="sv2#mfu13#su64" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#mfu13#su64#kcond45" name="KeyCondition45" predicate="in" implied="false"/>
+      </Selector>
+    </ModifyUnit>
+    <CreateUnit gr:x="1540" gr:y="340" id="sv2#cru13" name="Aggiungi prenotazione sala prove" entity="ent16"/>
+    <GetUnit gr:x="1505" gr:y="240" id="sv2#gtu7" name="Get7" contextParameters="UserCtxParam" linkOrder="sv2#gtu7#ln129">
+      <Link id="sv2#gtu7#ln129" name="Flow129" to="sv2#cru13" type="transport" validate="true">
+        <LinkParameter id="sv2#gtu7#ln129#par378" name="UserCtxParam.oid_Cliente.oid(PrenotazioneToCliente Registrato)" source="sv2#gtu7.UserCtxParam" target="sv2#cru13.rel14#role28.userOID"/>
+      </Link>
+    </GetUnit>
+    <DeleteUnit gr:x="1430" gr:y="680" id="sv2#dlu7" name="EliminazionePrenotazione" entity="ent16">
+      <Selector id="sv2#dlu7#su65" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#dlu7#su65#kcond38" name="KeyCondition38" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
   </OperationUnits>
 </SiteView>

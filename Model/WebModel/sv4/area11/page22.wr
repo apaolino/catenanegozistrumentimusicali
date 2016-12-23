@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area11#page22" name="Modifica utente" gr:x="435" gr:y="0">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area11#page22" name="Modifica utente" gr:x="430" gr:y="5">
   <ContentUnits>
     <EntryUnit id="sv4#area11#page22#enu5" name="Dati utente" gr:x="0" gr:y="0" fieldOrder="sv4#area11#page22#enu5#fld85 sv4#area11#page22#enu5#fld86 sv4#area11#page22#enu5#fld87 sv4#area11#page22#enu5#fld88 sv4#area11#page22#enu5#fld89 sv4#area11#page22#enu5#fld92 sv4#area11#page22#enu5#fld90 sv4#area11#page22#enu5#fld91 sv4#area11#page22#enu5#fld93 sv4#area11#page22#enu5#fld94 sv4#area11#page22#enu5#fld95 sv4#area11#page22#enu5#fld96 sv4#area11#page22#enu5#sfld6 sv4#area11#page22#enu5#fld97 sv4#area11#page22#enu5#fld99 sv4#area11#page22#enu5#fld98" linkOrder="sv4#area11#page22#enu5#ln47">
       <Field id="sv4#area11#page22#enu5#fld85" name="Nome" type="string" modifiable="true" preloaded="true"/>

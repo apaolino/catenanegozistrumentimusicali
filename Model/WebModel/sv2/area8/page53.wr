@@ -1,0 +1,72 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="175" gr:y="5" id="sv2#area8#page53" name="Page 53">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv2#area8#page53#dau6" name="Dettaglio evento" entity="ent17" displayAttributes="ent17#att62 ent17#att61 ent17#att63 ent17#att64 ent17#att65" linkOrder="sv2#area8#page53#dau6#ln127 sv2#area8#page53#dau6#ln96">
+      <Selector id="sv2#area8#page53#dau6#su68" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area8#page53#dau6#su68#kcond46" name="KeyCondition46" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area8#page53#dau6#ln127" name="Torna agli eventi" to="sv2#area8#page52#ecu2" type="normal" validate="true" gr:bendpoints="-85,-92,85,-87">
+        <LinkParameter id="sv2#area8#page53#dau6#ln127#par337" name="EventoToNegozio.oid_PASSING_RoleCondition15 [oid]" sourceLinkParameter="sv2#area8#page52#ecu2#ln124#par336" target="sv2#area8#page52#ecu2#su67#rcond15.ent10#att10"/>
+      </Link>
+      <Link id="sv2#area8#page53#dau6#ln96" name="Prenota" to="sv2#opg9#cru12" type="normal" validate="true">
+        <LinkParameter id="sv2#area8#page53#dau6#ln96#par232" name="oid_Evento.oid(PrenotazioneToEvento)" source="data.ent17#att17" target="sv2#opg9#cru12.rel6#role12.ent17#att17"/>
+        <LinkParameter id="sv2#area8#page53#dau6#ln96#par233" name="Data fine evento_Data fine" source="data.ent17#att63" target="sv2#opg9#cru12.ent16#att32"/>
+        <LinkParameter id="sv2#area8#page53#dau6#ln96#par234" name="Data inizio evento_Data inizio" source="data.ent17#att61" target="sv2#opg9#cru12.ent16#att31"/>
+        <LinkParameter id="sv2#area8#page53#dau6#ln96#par235" name="EventoToNegozio.oid_PASSING_Negozio.oid(PrenotazioneToNegozio)" sourceLinkParameter="sv2#area8#page52#ecu2#ln124#par336" target="sv2#opg9#cru12.rel11#role21.ent10#att10"/>
+        <LinkParameter id="sv2#area8#page53#dau6#ln96#par236" name="EventoToGestore Singolo Negozio.oid_Gestore Singolo Negozio.oid(PrenotazioneToGestore Singolo Negozio)" source="data.rel5#role10_userOID" target="sv2#opg9#cru12.rel13#role25.userOID"/>
+      </Link>
+      <Link id="sv2#area8#page53#dau6#ln103" name="Flow133" to="sv2#opg9#mathu1" type="transport" validate="true">
+        <LinkParameter id="sv2#area8#page53#dau6#ln103#par237" name="Posti disponibili_Operand2" source="data.ent17#att65" target="sv2#opg9#mathu1#mathv1"/>
+      </Link>
+      <Link id="sv2#area8#page53#dau6#ln104" name="Flow130" to="sv2#opg9#mfu2" type="transport" validate="true">
+        <LinkParameter id="sv2#area8#page53#dau6#ln104#par240" name="Data fine evento_Data fine evento" source="data.ent17#att63" target="sv2#opg9#mfu2.ent17#att63"/>
+        <LinkParameter id="sv2#area8#page53#dau6#ln104#par241" name="Data inizio evento_Data inizio evento" source="data.ent17#att61" target="sv2#opg9#mfu2.ent17#att61"/>
+        <LinkParameter id="sv2#area8#page53#dau6#ln104#par242" name="EventoToGestore Singolo Negozio.oid_Gestore Singolo Negozio.oid(EventoToGestore Singolo Negozio)" source="data.rel5#role10_userOID" target="sv2#opg9#mfu2.rel5#role10.userOID"/>
+        <LinkParameter id="sv2#area8#page53#dau6#ln104#par243" name="oid_KeyCondition47 [oid]" sourceLinkParameter="sv2#area8#page52#ecu2#ln124#par141" target="sv2#opg9#mfu2#su47#kcond37.ent17#att17"/>
+        <LinkParameter id="sv2#area8#page53#dau6#ln104#par244" name="EventoToNegozio.oid_PASSING_Negozio.oid(EventoToNegozio)" sourceLinkParameter="sv2#area8#page52#ecu2#ln124#par336" target="sv2#opg9#mfu2.rel10#role19.ent10#att10"/>
+        <LinkParameter id="sv2#area8#page53#dau6#ln104#par245" name="Nome evento_Nome evento" source="data.ent17#att62" target="sv2#opg9#mfu2.ent17#att62"/>
+        <LinkParameter id="sv2#area8#page53#dau6#ln104#par246" name="EventoToPeriodo.oid_Periodo.oid(EventoToPeriodo)" source="data.rel41#role81_ent22#att72" target="sv2#opg9#mfu2.rel41#role81.ent22#att72"/>
+        <LinkParameter id="sv2#area8#page53#dau6#ln104#par335" name="Prezzo_Prezzo" source="data.ent17#att64" target="sv2#opg9#mfu2.ent17#att64"/>
+      </Link>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area8#page53#dau6">
+          <layout:Attribute attribute="ent17#att62"/>
+          <layout:Attribute attribute="ent17#att61"/>
+          <layout:Attribute attribute="ent17#att63"/>
+          <layout:Attribute attribute="ent17#att64"/>
+          <layout:Attribute attribute="ent17#att65"/>
+          <layout:Link link="sv2#area8#page53#dau6#ln127"/>
+          <layout:Link link="sv2#area8#page53#dau6#ln96"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
