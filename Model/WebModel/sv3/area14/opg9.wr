@@ -1,0 +1,59 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="660" gr:y="210" id="sv3#area14#opg9" name="Inserimento nuovo catalogo specifico" transaction="true">
+  <OperationUnits>
+    <CreateUnit gr:x="185" gr:y="0" id="sv3#area14#opg9#cru11" name="Creazione catalogo specifico" entity="ent14">
+      <OKLink id="sv3#area14#opg9#cru11#oln41" name="OKFlow41" to="sv3#area14#opg9#cnu2">
+        <LinkParameter id="sv3#area14#opg9#cru11#oln41#par334" name="oid_KeyCondition37 [oid] [Catalogo] [Source]" source="ent11#att11Array" target="sv3#area14#opg9#cnu2#su52#kcond37.ent11#att11"/>
+      </OKLink>
+      <KOLink id="sv3#area14#opg9#cru11#kln36" name="KOFlow36" to="sv3#page47#mssu16" automaticCoupling="true"/>
+    </CreateUnit>
+    <GetUnit gr:x="0" gr:y="120" id="sv3#area14#opg9#gtu1" name="Get Dati Utente" contextParameters="UserCtxParam">
+      <Link id="sv3#area14#opg9#gtu1#ln101" name="Flow101" to="sv3#area14#opg9#cru11" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
+    <ConnectUnit gr:x="570" gr:y="10" id="sv3#area14#opg9#cnu2" name="Catalogo to Categoria" relationship="rel44#role87">
+      <SourceSelector id="sv3#area14#opg9#cnu2#su52" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area14#opg9#cnu2#su52#kcond37" name="KeyCondition37" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#area14#opg9#cnu2#su53" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area14#opg9#cnu2#su53#kcond38" name="KeyCondition38" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv3#area14#opg9#cnu2#oln37" name="OKFlow37" to="sv3#area14#opg9#cnu3">
+        <LinkParameter id="sv3#area14#opg9#cnu2#oln37#par390" name="Source oid [Catalogo]_KeyCondition40 [oid] [Catalogo] [Target]" source="sourceent11#att11" target="sv3#area14#opg9#cnu3#su57#kcond40.ent11#att11"/>
+      </OKLink>
+      <KOLink id="sv3#area14#opg9#cnu2#kln35" name="KOFlow35" to="sv3#page47#mssu16" automaticCoupling="true"/>
+    </ConnectUnit>
+    <ConnectUnit gr:x="720" gr:y="190" id="sv3#area14#opg9#cnu3" name="Negozio to Catalogo" relationship="rel23#role45">
+      <SourceSelector id="sv3#area14#opg9#cnu3#su56" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area14#opg9#cnu3#su56#kcond39" name="KeyCondition39" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#area14#opg9#cnu3#su57" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area14#opg9#cnu3#su57#kcond40" name="KeyCondition40" predicate="in" implied="false"/>
+      </TargetSelector>
+      <KOLink id="sv3#area14#opg9#cnu3#kln34" name="KOFlow26" to="sv3#page47" automaticCoupling="true"/>
+      <OKLink id="sv3#area14#opg9#cnu3#oln45" name="OKFlow45" to="sv3#area14#opg9#mfu11">
+        <LinkParameter id="sv3#area14#opg9#cnu3#oln45#par398" name="Target oid [Catalogo]_KeyCondition48 [oid]" source="targetent11#att11" target="sv3#area14#opg9#mfu11#su70#kcond48.ent11#att11"/>
+      </OKLink>
+    </ConnectUnit>
+    <ModifyUnit gr:x="695" gr:y="365" id="sv3#area14#opg9#mfu11" name="Aggiorna Catalogo Specifico" entity="ent14">
+      <Selector id="sv3#area14#opg9#mfu11#su70" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area14#opg9#mfu11#su70#kcond48" name="KeyCondition48" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#area14#opg9#mfu11#oln46" name="OKFlow46" to="sv3#area14#page46" automaticCoupling="true"/>
+    </ModifyUnit>
+    <SelectorUnit gr:x="210" gr:y="310" id="sv3#area14#opg9#seu40" name="Selector40" entity="ent10">
+      <Selector id="sv3#area14#opg9#seu40#su71" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv3#area14#opg9#seu40#su71#acond10" name="AttCondition10" predicate="eq" booleanOperator="or" implied="false" attributes="rel4#role8.userOID"/>
+      </Selector>
+      <Link id="sv3#area14#opg9#seu40#ln141" name="Flow141" to="sv3#area14#opg9#cnu3" type="transport" validate="true">
+        <LinkParameter id="sv3#area14#opg9#seu40#ln141#par401" name="oid_KeyCondition39 [oid] [Negozio] [Source]" source="ent10#att10Array" target="sv3#area14#opg9#cnu3#su56#kcond39.ent10#att10"/>
+      </Link>
+      <Link id="sv3#area14#opg9#seu40#ln142" name="Flow142" to="sv3#area14#opg9#mfu11" type="transport" validate="true">
+        <LinkParameter id="sv3#area14#opg9#seu40#ln142#par402" name="oid_Negozio.oid(SpecificoToNegozio)" source="ent10#att10Array" target="sv3#area14#opg9#mfu11.rel30#role60.ent10#att10"/>
+      </Link>
+    </SelectorUnit>
+    <GetUnit gr:x="40" gr:y="320" id="sv3#area14#opg9#gtu6" name="Get6" contextParameters="UserCtxParam" linkOrder="sv3#area14#opg9#gtu6#ln143">
+      <Link id="sv3#area14#opg9#gtu6#ln143" name="Flow143" to="sv3#area14#opg9#seu40" type="transport" validate="true">
+        <LinkParameter id="sv3#area14#opg9#gtu6#ln143#par404" name="UserCtxParam.oid_AttCondition10" source="sv3#area14#opg9#gtu6.UserCtxParam" target="sv3#area14#opg9#seu40#su71#acond10"/>
+      </Link>
+    </GetUnit>
+  </OperationUnits>
+</OperationGroup>

@@ -1,0 +1,26 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area13#page43" name="Errore" linkOrder="sv3#area13#page43#ln86" gr:x="1215" gr:y="45">
+  <ContentUnits>
+    <MultiMessageUnit id="sv3#area13#page43#mssu13" name="Errore operazione" gr:x="0" gr:y="0">
+      <Message xml:space="preserve">Operazione non eseguita</Message>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area13#page43#mssu13"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv3#area13#page43#ln86" name="Visualizza dati" to="sv3#area13#page44" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="-415,-109,541,-159;-658,-96,298,-146"/>
+</Page>

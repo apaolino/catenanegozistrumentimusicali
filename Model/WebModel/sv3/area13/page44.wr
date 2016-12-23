@@ -1,0 +1,132 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area13#page44" name="Visualizza Dati" landmark="false" gr:x="0" gr:y="0">
+  <ContentUnits>
+    <DataUnit id="sv3#area13#page44#dau6" name="Dati gestore catena" gr:showAllParts="false" gr:x="235" gr:y="0" entity="User" displayAttributes="User#att20 User#att21 User#att22 User#att54 email User#att29 userName password">
+      <Selector id="sv3#area13#page44#dau6#su49" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area13#page44#dau6#su49#kcond35" name="KeyCondition4" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#area13#page44#dau6#ln88" name="Flow79" to="sv3#area13#page44#dau7" type="transport" validate="true">
+        <LinkParameter id="sv3#area13#page44#dau6#ln88#par226" name="Cognome_PASSING" source="data.User#att21" passing="true"/>
+        <LinkParameter id="sv3#area13#page44#dau6#ln88#par227" name="Data nascita_PASSING" source="data.User#att22" passing="true"/>
+        <LinkParameter id="sv3#area13#page44#dau6#ln88#par228" name="Data registrazione_PASSING" source="data.User#att29" passing="true"/>
+        <LinkParameter id="sv3#area13#page44#dau6#ln88#par229" name="E-mail_PASSING" source="data.email" passing="true"/>
+        <LinkParameter id="sv3#area13#page44#dau6#ln88#par230" name="Indirizzo Primario_PASSING" source="data.User#att71" passing="true"/>
+        <LinkParameter id="sv3#area13#page44#dau6#ln88#par231" name="Nome_PASSING" source="data.User#att20" passing="true"/>
+        <LinkParameter id="sv3#area13#page44#dau6#ln88#par232" name="Numero telefono_PASSING" source="data.User#att54" passing="true"/>
+        <LinkParameter id="sv3#area13#page44#dau6#ln88#par233" name="Password_PASSING" source="data.password" passing="true"/>
+        <LinkParameter id="sv3#area13#page44#dau6#ln88#par234" name="UserName_PASSING" source="data.userName" passing="true"/>
+        <LinkParameter id="sv3#area13#page44#dau6#ln88#par235" name="UserToIndirizzo.oid_KeyCondition9 [oid]" source="data.rel20#role40_ent1#att3" target="sv3#area13#page44#dau7#su50#kcond36.ent1#att3"/>
+        <LinkParameter id="sv3#area13#page44#dau6#ln88#par236" name="oid_PASSING" source="data.userOID" passing="true"/>
+      </Link>
+    </DataUnit>
+    <SelectorUnit id="sv3#area13#page44#seu2" name="Selezione dati utente" gr:x="0" gr:y="30" entity="ent6">
+      <Link id="sv3#area13#page44#seu2#ln96" name="Flow27" to="sv3#area13#page44#dau6" type="transport" validate="true">
+        <LinkParameter id="sv3#area13#page44#seu2#ln96#par237" name="oid_KeyCondition4 [oid]" source="userOIDArray" target="sv3#area13#page44#dau6#su49#kcond35.userOID"/>
+      </Link>
+    </SelectorUnit>
+    <DataUnit id="sv3#area13#page44#dau7" name="Dettagli indirizzo" linkOrder="sv3#area13#page44#dau7#ln97" gr:x="255" gr:y="190" entity="ent1" displayAttributes="ent1#att4 ent1#att5 ent1#att6 ent1#att8 rel35#role69.ent3#att70 ent1#att14 ent1#att23">
+      <Selector id="sv3#area13#page44#dau7#su50" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area13#page44#dau7#su50#kcond36" name="KeyCondition9" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#area13#page44#dau7#ln97" name="Modifica dati" to="sv3#area13#page41#enu13" type="normal" validate="true">
+        <LinkParameter id="sv3#area13#page44#dau7#ln97#par238" name="UserName_Username" sourceLinkParameter="sv3#area13#page44#dau6#ln88#par234" target="sv3#area13#page41#enu13#fld46_slot"/>
+        <LinkParameter id="sv3#area13#page44#dau7#ln97#par239" name="Cognome_Cognome" sourceLinkParameter="sv3#area13#page44#dau6#ln88#par226" target="sv3#area13#page41#enu13#fld61_slot"/>
+        <LinkParameter id="sv3#area13#page44#dau7#ln97#par240" name="Data nascita_Data nascita" sourceLinkParameter="sv3#area13#page44#dau6#ln88#par227" target="sv3#area13#page41#enu13#fld62_slot"/>
+        <LinkParameter id="sv3#area13#page44#dau7#ln97#par241" name="Data registrazione_Data registrazione" sourceLinkParameter="sv3#area13#page44#dau6#ln88#par228" target="sv3#area13#page41#enu13#fld63_slot"/>
+        <LinkParameter id="sv3#area13#page44#dau7#ln97#par242" name="E-mail_Email" sourceLinkParameter="sv3#area13#page44#dau6#ln88#par229" target="sv3#area13#page41#enu13#fld48_slot"/>
+        <LinkParameter id="sv3#area13#page44#dau7#ln97#par243" name="Nome_Nome" sourceLinkParameter="sv3#area13#page44#dau6#ln88#par231" target="sv3#area13#page41#enu13#fld60_slot"/>
+        <LinkParameter id="sv3#area13#page44#dau7#ln97#par244" name="Numero telefono_Numero telefono" sourceLinkParameter="sv3#area13#page44#dau6#ln88#par232" target="sv3#area13#page41#enu13#fld64_slot"/>
+        <LinkParameter id="sv3#area13#page44#dau7#ln97#par245" name="Password_Password" sourceLinkParameter="sv3#area13#page44#dau6#ln88#par233" target="sv3#area13#page41#enu13#fld47_slot"/>
+        <LinkParameter id="sv3#area13#page44#dau7#ln97#par246" name="CAP_CAP" source="data.ent1#att6" target="sv3#area13#page41#enu13#fld102_slot"/>
+        <LinkParameter id="sv3#area13#page44#dau7#ln97#par247" name="Citt&#224;_Citt&#224;" source="data.ent1#att8" target="sv3#area13#page41#enu13#fld104_slot"/>
+        <LinkParameter id="sv3#area13#page44#dau7#ln97#par248" name="Indirizzo_Indirizzo completo" source="data.ent1#att73" target="sv3#area13#page41#enu13#fld106_slot"/>
+        <LinkParameter id="sv3#area13#page44#dau7#ln97#par249" name="Numero civico_Numero Civico" source="data.ent1#att5" target="sv3#area13#page41#enu13#fld103_slot"/>
+        <LinkParameter id="sv3#area13#page44#dau7#ln97#par250" name="Primario_Primario" source="data.ent1#att23" target="sv3#area13#page41#enu13#fld105_slot"/>
+        <LinkParameter id="sv3#area13#page44#dau7#ln97#par251" name="IndirizzoToZona.oid_Provincia - Preselection" source="data.rel35#role69_ent3#att69" target="sv3#area13#page41#enu13#sfld10_presel"/>
+        <LinkParameter id="sv3#area13#page44#dau7#ln97#par252" name="Stato_Stato" source="data.ent1#att14" target="sv3#area13#page41#enu13#fld101_slot"/>
+        <LinkParameter id="sv3#area13#page44#dau7#ln97#par253" name="Via_Via" source="data.ent1#att4" target="sv3#area13#page41#enu13#fld100_slot"/>
+        <LinkParameter id="sv3#area13#page44#dau7#ln97#par278" name="oid_PASSING" sourceLinkParameter="sv3#area13#page44#dau6#ln88#par236" passing="true"/>
+        <LinkParameter id="sv3#area13#page44#dau7#ln97#par279" name="oid_PASSING" source="data.ent1#att3" passing="true"/>
+      </Link>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area13#page44#dau6">
+          <layout:Attribute attribute="User#att20"/>
+          <layout:Attribute attribute="User#att21"/>
+          <layout:Attribute attribute="User#att22"/>
+          <layout:Attribute attribute="User#att54"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="User#att29"/>
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="password"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area13#page44#dau7">
+          <layout:Attribute attribute="ent1#att4"/>
+          <layout:Attribute attribute="ent1#att5"/>
+          <layout:Attribute attribute="ent1#att6"/>
+          <layout:Attribute attribute="ent1#att8"/>
+          <layout:Attribute attribute="rel35#role69.ent3#att70"/>
+          <layout:Attribute attribute="ent1#att14"/>
+          <layout:Attribute attribute="ent1#att23"/>
+          <layout:Link link="sv3#area13#page44#dau7#ln97"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

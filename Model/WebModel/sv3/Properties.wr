@@ -1,3 +1,7 @@
-<SiteView id="sv3" name="Gestore Singolo Negozio">
-  <OperationUnits/>
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3" name="Gestore Singolo Negozio" homePage="sv3#page32" landmarks="sv3#area13 sv3#area14">
+  <OperationUnits>
+    <LogoutUnit gr:x="1735" gr:y="70" id="sv3#lou2" name="Logout2" siteView="sv1">
+      <KOLink id="sv3#lou2#kln23" name="KOFlow23" to="sv3#page32" automaticCoupling="true" gr:bendpoints="-116,52,199,-48"/>
+    </LogoutUnit>
+  </OperationUnits>
 </SiteView>

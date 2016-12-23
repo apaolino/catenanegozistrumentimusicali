@@ -1,0 +1,96 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="245" id="sv3#area14#page45" name="Crea nuovo catalogo specifico">
+  <ContentUnits>
+    <EntryUnit gr:x="385" gr:y="75" id="sv3#area14#page45#enu15" name="Dati Nuovo Catalogo" linkOrder="sv3#area14#page45#enu15#ln98">
+      <Field id="sv3#area14#page45#enu15#fld107" name="Nome" type="string" modifiable="true"/>
+      <Field id="sv3#area14#page45#enu15#fld108" name="Anno validit&#224;" type="string" modifiable="true"/>
+      <Link id="sv3#area14#page45#enu15#ln98" name="Crea Catalogo" to="sv3#area14#opg9#cru11" type="normal" validate="true">
+        <LinkParameter id="sv3#area14#page45#enu15#ln98#par331" name="Anno validit&#224;_Anno di validit&#224;" source="sv3#area14#page45#enu15#fld108" target="sv3#area14#opg9#cru11.ent11#att47"/>
+        <LinkParameter id="sv3#area14#page45#enu15#ln98#par332" name="Nome_Nome" source="sv3#area14#page45#enu15#fld107" target="sv3#area14#opg9#cru11.ent11#att46"/>
+        <LinkParameter id="sv3#area14#page45#enu15#ln98#par335" name="Categoria catalogo_Categoria Prodotto.oid(CatalogoSpecificoToCategoriaProdotto)" source="sv3#area14#page45#enu15#sfld17" target="sv3#area14#opg9#cru11.rel37#role73.ent7#att7"/>
+      </Link>
+      <SelectionField id="sv3#area14#page45#enu15#sfld17" name="Categoria catalogo" type="string"/>
+      <Link id="sv3#area14#page45#enu15#ln106" name="Flow106" to="sv3#area14#opg9#cnu2" type="transport" validate="true" gr:bendpoints="199,-196,-676,-146;607,-182,-268,-132">
+        <LinkParameter id="sv3#area14#page45#enu15#ln106#par295" name="Categoria catalogo_KeyCondition38 [oid] [Categoria Prodotto] [Target]" source="sv3#area14#page45#enu15#sfld17" target="sv3#area14#opg9#cnu2#su53#kcond38.ent7#att7"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit gr:x="395" gr:y="165" id="sv3#area14#page45#seu33" name="Selettore Categorie" entity="ent7">
+      <Link id="sv3#area14#page45#seu33#ln104" name="Flow104" to="sv3#area14#page45#enu15" type="transport" validate="true">
+        <LinkParameter id="sv3#area14#page45#seu33#ln104#par291" name="Nome_Categoria catalogo [label]" source="ent7#att36Array" target="sv3#area14#page45#enu15#sfld17_label"/>
+        <LinkParameter id="sv3#area14#page45#seu33#ln104#par292" name="oid_Categoria catalogo [output]" source="ent7#att7Array" target="sv3#area14#page45#enu15#sfld17_output"/>
+      </Link>
+    </SelectorUnit>
+    <MultiMessageUnit gr:x="425" gr:y="0" id="sv3#area14#page45#mssu17" name="Nome Negozio">
+      <Message xml:space="preserve">Nome del negozio gestito dall' utente corrente:  $$NomeHolder$$</Message>
+      <Placeholder id="sv3#area14#page45#mssu17#ph1" name="NomeHolder"/>
+    </MultiMessageUnit>
+    <SelectorUnit gr:x="0" gr:y="130" id="sv3#area14#page45#seu38" name="Selector38" entity="ent10">
+      <Selector id="sv3#area14#page45#seu38#su60" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv3#area14#page45#seu38#su60#acond5" name="AttCondition5" predicate="eq" booleanOperator="or" implied="false" attributes="rel4#role8.userOID"/>
+      </Selector>
+      <Link id="sv3#area14#page45#seu38#ln120" name="Flow120" to="sv3#area14#page45#mssu17" type="transport" validate="true">
+        <LinkParameter id="sv3#area14#page45#seu38#ln120#par306" name="Nome_Placeholder1" target="sv3#area14#page45#mssu17.sv3#area14#page45#mssu17#ph1" source="ent10#att48Array"/>
+      </Link>
+    </SelectorUnit>
+    <GetUnit id="sv3#area14#page45#gtu3" name="Get Dati Utente" gr:x="160" gr:y="0" contextParameters="UserCtxParam">
+      <Link id="sv3#area14#page45#gtu3#ln118" name="Flow116" to="sv3#area14#page46#inu4" type="transport" validate="true">
+        <LinkParameter id="sv3#area14#page45#gtu3#ln118#par304" name="UserCtxParam.oid_AttCondition3" source="sv3#area14#page45#gtu3.UserCtxParam" target="sv3#area14#page46#inu4#su59#acond3"/>
+      </Link>
+      <Link id="sv3#area14#page45#gtu3#ln119" name="Flow119" to="sv3#area14#page45#seu38" type="transport" validate="true">
+        <LinkParameter id="sv3#area14#page45#gtu3#ln119#par308" name="UserCtxParam.oid_AttCondition5" source="sv3#area14#page45#gtu3.UserCtxParam" target="sv3#area14#page45#seu38#su60#acond5"/>
+      </Link>
+    </GetUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area14#page45#enu15">
+          <layout:Field field="sv3#area14#page45#enu15#fld107"/>
+          <layout:Field field="sv3#area14#page45#enu15#fld108"/>
+          <layout:Field field="sv3#area14#page45#enu15#sfld17"/>
+          <layout:Link link="sv3#area14#page45#enu15#ln98"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area14#page45#mssu17"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

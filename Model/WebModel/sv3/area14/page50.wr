@@ -1,0 +1,38 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area14#page50" name="Pagina Conferma" gr:x="645" gr:y="810">
+  <ContentUnits>
+    <MultiMessageUnit id="sv3#area14#page50#mssu20" name="Messaggio conferma eliminazione" linkOrder="sv3#area14#page50#mssu20#ln131 sv3#area14#page50#mssu20#ln132" gr:x="0" gr:y="0">
+      <Message xml:space="preserve">Sei sicuro di voler eliminare il Catalogo Specifico selezionato?</Message>
+      <Link id="sv3#area14#page50#mssu20#ln131" name="Si" to="sv3#area14#opg10#dlu7" type="normal" validate="true">
+        <LinkParameter id="sv3#area14#page50#mssu20#ln131#par377" name="oid_PASSING_KeyCondition41 [oid]" sourceLinkParameter="sv3#area14#page48#pwu4#ln133#par374" target="sv3#area14#opg10#dlu7#su62#kcond41.ent11#att11"/>
+        <LinkParameter id="sv3#area14#page50#mssu20#ln131#par378" name="Anno di validit&#224;_PASSING" sourceLinkParameter="sv3#area14#page48#pwu4#ln133#par371" passing="true"/>
+        <LinkParameter id="sv3#area14#page50#mssu20#ln131#par379" name="CatalogoSpecificoToCategoriaProdotto.oid_PASSING" sourceLinkParameter="sv3#area14#page48#pwu4#ln133#par372" passing="true"/>
+        <LinkParameter id="sv3#area14#page50#mssu20#ln131#par380" name="Nome_PASSING" sourceLinkParameter="sv3#area14#page48#pwu4#ln133#par373" passing="true"/>
+        <LinkParameter id="sv3#area14#page50#mssu20#ln131#par381" name="oid_PASSING" sourceLinkParameter="sv3#area14#page48#pwu4#ln133#par374" passing="true"/>
+        <LinkParameter id="sv3#area14#page50#mssu20#ln131#par382" name="SpecificoToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv3#area14#page48#pwu4#ln133#par375" passing="true"/>
+        <LinkParameter id="sv3#area14#page50#mssu20#ln131#par383" name="SpecificoToNegozio.oid_PASSING" sourceLinkParameter="sv3#area14#page48#pwu4#ln133#par376" passing="true"/>
+      </Link>
+      <Link id="sv3#area14#page50#mssu20#ln132" name="No" to="sv3#area14#page46" type="normal" automaticCoupling="true" validate="true"/>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area14#page50#mssu20">
+          <layout:Link link="sv3#area14#page50#mssu20#ln131"/>
+          <layout:Link link="sv3#area14#page50#mssu20#ln132"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
