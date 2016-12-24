@@ -1,18 +1,29 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area14#page50" name="Pagina Conferma" gr:x="645" gr:y="810">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area14#page50" name="Pagina Conferma" gr:x="145" gr:y="760">
   <ContentUnits>
     <MultiMessageUnit id="sv3#area14#page50#mssu20" name="Messaggio conferma eliminazione" linkOrder="sv3#area14#page50#mssu20#ln131 sv3#area14#page50#mssu20#ln132" gr:x="0" gr:y="0">
       <Message xml:space="preserve">Sei sicuro di voler eliminare il Catalogo Specifico selezionato?</Message>
-      <Link id="sv3#area14#page50#mssu20#ln131" name="Si" to="sv3#area14#opg10#dlu7" type="normal" validate="true">
-        <LinkParameter id="sv3#area14#page50#mssu20#ln131#par377" name="oid_PASSING_KeyCondition41 [oid]" sourceLinkParameter="sv3#area14#page48#pwu4#ln133#par374" target="sv3#area14#opg10#dlu7#su62#kcond41.ent11#att11"/>
-        <LinkParameter id="sv3#area14#page50#mssu20#ln131#par378" name="Anno di validit&#224;_PASSING" sourceLinkParameter="sv3#area14#page48#pwu4#ln133#par371" passing="true"/>
-        <LinkParameter id="sv3#area14#page50#mssu20#ln131#par379" name="CatalogoSpecificoToCategoriaProdotto.oid_PASSING" sourceLinkParameter="sv3#area14#page48#pwu4#ln133#par372" passing="true"/>
-        <LinkParameter id="sv3#area14#page50#mssu20#ln131#par380" name="Nome_PASSING" sourceLinkParameter="sv3#area14#page48#pwu4#ln133#par373" passing="true"/>
-        <LinkParameter id="sv3#area14#page50#mssu20#ln131#par381" name="oid_PASSING" sourceLinkParameter="sv3#area14#page48#pwu4#ln133#par374" passing="true"/>
-        <LinkParameter id="sv3#area14#page50#mssu20#ln131#par382" name="SpecificoToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv3#area14#page48#pwu4#ln133#par375" passing="true"/>
-        <LinkParameter id="sv3#area14#page50#mssu20#ln131#par383" name="SpecificoToNegozio.oid_PASSING" sourceLinkParameter="sv3#area14#page48#pwu4#ln133#par376" passing="true"/>
+      <Link id="sv3#area14#page50#mssu20#ln131" name="Si" to="sv3#area14#opg10#dlu7" type="normal" validate="true" gr:bendpoints="189,-2,-116,-27">
+        <LinkParameter id="sv3#area14#page50#mssu20#ln131#par425" name="oid_PASSING_KeyCondition41 [oid]" sourceLinkParameter="sv3#area14#page46#inu4#ln154#par421" target="sv3#area14#opg10#dlu7#su62#kcond41.ent11#att11"/>
+        <LinkParameter id="sv3#area14#page50#mssu20#ln131#par426" name="CatalogoSpecificoToCategoriaProdotto.oid_PASSING" sourceLinkParameter="sv3#area14#page46#inu4#ln154#par417" passing="true"/>
+        <LinkParameter id="sv3#area14#page50#mssu20#ln131#par427" name="oid_PASSING" sourceLinkParameter="sv3#area14#page46#inu4#ln154#par421" passing="true"/>
+        <LinkParameter id="sv3#area14#page50#mssu20#ln131#par428" name="SpecificoToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv3#area14#page46#inu4#ln154#par419" passing="true"/>
+        <LinkParameter id="sv3#area14#page50#mssu20#ln131#par429" name="SpecificoToNegozio.oid_PASSING" sourceLinkParameter="sv3#area14#page46#inu4#ln154#par420" passing="true"/>
       </Link>
       <Link id="sv3#area14#page50#mssu20#ln132" name="No" to="sv3#area14#page46" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv3#area14#page50#mssu20#ln134" name="Flow134" to="sv3#area14#page50#seu13" type="transport" validate="true">
+        <LinkParameter id="sv3#area14#page50#mssu20#ln134#par422" name="oid_PASSING_RoleCondition19 [oid]" sourceLinkParameter="sv3#area14#page46#inu4#ln154#par421" target="sv3#area14#page50#seu13#su55#rcond19.ent11#att11"/>
+        <LinkParameter id="sv3#area14#page50#mssu20#ln134#par423" name="oid_PASSING" sourceLinkParameter="sv3#area14#page46#inu4#ln154#par421" passing="true"/>
+      </Link>
     </MultiMessageUnit>
+    <SelectorUnit gr:x="0" gr:y="105" id="sv3#area14#page50#seu13" name="Selettore prodotti associati" entity="ent12">
+      <Selector id="sv3#area14#page50#seu13#su55" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area14#page50#seu13#su55#rcond19" name="RoleCondition19" predicate="in" implied="false" role="rel24#role47"/>
+      </Selector>
+      <Link id="sv3#area14#page50#seu13#ln135" name="Flow135" to="sv3#area14#opg10#dcnu5" type="transport" validate="true">
+        <LinkParameter id="sv3#area14#page50#seu13#ln135#par397" name="oid_KeyCondition50 [oid] [Prodotto] [Target]" source="ent12#att12Array" target="sv3#area14#opg10#dcnu5#su69#kcond50.ent12#att12"/>
+        <LinkParameter id="sv3#area14#page50#seu13#ln135#par424" name="oid_PASSING_KeyCondition47 [oid] [Catalogo] [Source]" sourceLinkParameter="sv3#area14#page50#mssu20#ln134#par423" target="sv3#area14#opg10#dcnu5#su58#kcond47.ent11#att11"/>
+      </Link>
+    </SelectorUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -22,6 +33,20 @@
           <layout:Link link="sv3#area14#page50#mssu20#ln132"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

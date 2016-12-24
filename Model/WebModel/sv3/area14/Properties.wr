@@ -1,3 +1,24 @@
 <Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-160" gr:y="650" id="sv3#area14" name="Gestione Catalogo Specifico" landmark="true" defaultPage="sv3#area14#page46">
-  <OperationUnits/>
+  <OperationUnits>
+    <ConnectUnit gr:x="500" gr:y="1145" id="sv3#area14#cnu4" name="Aggiungi Prodotti al Catalogo" relationship="rel24#role47">
+      <SourceSelector id="sv3#area14#cnu4#su73" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area14#cnu4#su73#kcond51" name="KeyCondition51" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#area14#cnu4#su74" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area14#cnu4#su74#kcond52" name="KeyCondition52" predicate="in" implied="false"/>
+      </TargetSelector>
+      <KOLink id="sv3#area14#cnu4#kln30" name="KOFlow30" to="sv3#page47#mssu16" automaticCoupling="true" gr:bendpoints="1184,-5,-91,1040"/>
+      <OKLink id="sv3#area14#cnu4#oln51" name="OKFlow44" to="sv3#area14#page59" automaticCoupling="true"/>
+    </ConnectUnit>
+    <DisconnectUnit gr:x="510" gr:y="1370" id="sv3#area14#dcnu6" name="Disconnect6" relationship="rel24#role47">
+      <SourceSelector id="sv3#area14#dcnu6#su75" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area14#dcnu6#su75#kcond53" name="KeyCondition53" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#area14#dcnu6#su76" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area14#dcnu6#su76#kcond54" name="KeyCondition54" predicate="in" implied="false"/>
+      </TargetSelector>
+      <KOLink id="sv3#area14#dcnu6#kln31" name="KOFlow31" to="sv3#page47#mssu16" automaticCoupling="true" gr:bendpoints="1305,97,-10,1307"/>
+      <OKLink id="sv3#area14#dcnu6#oln50" name="OKFlow47" to="sv3#area14#page59" automaticCoupling="true"/>
+    </DisconnectUnit>
+  </OperationUnits>
 </Area>
