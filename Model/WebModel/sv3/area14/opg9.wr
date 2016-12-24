@@ -37,23 +37,7 @@
       <Selector id="sv3#area14#opg9#mfu11#su70" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area14#opg9#mfu11#su70#kcond48" name="KeyCondition48" predicate="in" implied="false"/>
       </Selector>
-      <OKLink id="sv3#area14#opg9#mfu11#oln46" name="OKFlow46" to="sv3#area14#page46" automaticCoupling="true"/>
+      <OKLink id="sv3#area14#opg9#mfu11#oln46" name="OKFlow46" to="sv3#area14#page46" automaticCoupling="true" gr:bendpoints="-748,-14,217,571"/>
     </ModifyUnit>
-    <SelectorUnit gr:x="210" gr:y="310" id="sv3#area14#opg9#seu40" name="Selector40" entity="ent10">
-      <Selector id="sv3#area14#opg9#seu40#su71" defaultPolicy="fill" booleanOperator="and">
-        <AttributesCondition id="sv3#area14#opg9#seu40#su71#acond10" name="AttCondition10" predicate="eq" booleanOperator="or" implied="false" attributes="rel4#role8.userOID"/>
-      </Selector>
-      <Link id="sv3#area14#opg9#seu40#ln141" name="Flow141" to="sv3#area14#opg9#cnu3" type="transport" validate="true">
-        <LinkParameter id="sv3#area14#opg9#seu40#ln141#par401" name="oid_KeyCondition39 [oid] [Negozio] [Source]" source="ent10#att10Array" target="sv3#area14#opg9#cnu3#su56#kcond39.ent10#att10"/>
-      </Link>
-      <Link id="sv3#area14#opg9#seu40#ln142" name="Flow142" to="sv3#area14#opg9#mfu11" type="transport" validate="true">
-        <LinkParameter id="sv3#area14#opg9#seu40#ln142#par402" name="oid_Negozio.oid(SpecificoToNegozio)" source="ent10#att10Array" target="sv3#area14#opg9#mfu11.rel30#role60.ent10#att10"/>
-      </Link>
-    </SelectorUnit>
-    <GetUnit gr:x="40" gr:y="320" id="sv3#area14#opg9#gtu6" name="Get6" contextParameters="UserCtxParam" linkOrder="sv3#area14#opg9#gtu6#ln143">
-      <Link id="sv3#area14#opg9#gtu6#ln143" name="Flow143" to="sv3#area14#opg9#seu40" type="transport" validate="true">
-        <LinkParameter id="sv3#area14#opg9#gtu6#ln143#par404" name="UserCtxParam.oid_AttCondition10" source="sv3#area14#opg9#gtu6.UserCtxParam" target="sv3#area14#opg9#seu40#su71#acond10"/>
-      </Link>
-    </GetUnit>
   </OperationUnits>
 </OperationGroup>

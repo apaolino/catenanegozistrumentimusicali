@@ -30,6 +30,12 @@
       <Link id="sv3#area14#page45#seu38#ln120" name="Flow120" to="sv3#area14#page45#mssu17" type="transport" validate="true">
         <LinkParameter id="sv3#area14#page45#seu38#ln120#par306" name="Nome_Placeholder1" target="sv3#area14#page45#mssu17.sv3#area14#page45#mssu17#ph1" source="ent10#att48Array"/>
       </Link>
+      <Link id="sv3#area14#page45#seu38#ln107" name="Flow107" to="sv3#area14#opg9#cnu3" type="transport" validate="true">
+        <LinkParameter id="sv3#area14#page45#seu38#ln107#par392" name="oid_KeyCondition39 [oid] [Negozio] [Source]" source="ent10#att10Array" target="sv3#area14#opg9#cnu3#su56#kcond39.ent10#att10"/>
+      </Link>
+      <Link id="sv3#area14#page45#seu38#ln126" name="Flow126" to="sv3#area14#opg9#mfu11" type="transport" validate="true">
+        <LinkParameter id="sv3#area14#page45#seu38#ln126#par393" name="oid_Negozio.oid(SpecificoToNegozio)" source="ent10#att10Array" target="sv3#area14#opg9#mfu11.rel30#role60.ent10#att10"/>
+      </Link>
     </SelectorUnit>
     <GetUnit id="sv3#area14#page45#gtu3" name="Get Dati Utente" gr:x="160" gr:y="0" contextParameters="UserCtxParam">
       <Link id="sv3#area14#page45#gtu3#ln118" name="Flow116" to="sv3#area14#page46#inu4" type="transport" validate="true">

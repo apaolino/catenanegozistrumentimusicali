@@ -1,0 +1,106 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="30" gr:y="1115" id="sv3#area14#page59" name="Popola Catalogo con prodotti">
+  <ContentUnits>
+    <MultiChoiceIndexUnit gr:x="0" gr:y="0" id="sv3#area14#page59#mciu3" name="Aggiungi prodotti non presenti nel catalogo" entity="ent12" displayAttributes="ent12#att67 ent12#att68 ent12#att1 ent12#att41 ent12#att43" linkOrder="sv3#area14#page59#mciu3#ln140">
+      <PreSelector id="sv3#area14#page59#mciu3#su71" booleanOperator="and"/>
+      <Selector id="sv3#area14#page59#mciu3#su72" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area14#page59#mciu3#su72#rcond21" name="RoleCondition21" predicate="in" implied="false" role="rel25#role50"/>
+        <RelationshipRoleCondition id="sv3#area14#page59#mciu3#su72#rcond26" name="RoleCondition26" predicate="notIn" implied="false" role="rel24#role47"/>
+      </Selector>
+      <SortAttribute attribute="ent12#att66" order="ascending"/>
+      <Link id="sv3#area14#page59#mciu3#ln140" name="Aggiungi prodotti" to="sv3#area14#cnu4" type="normal" validate="true">
+        <LinkParameter id="sv3#area14#page59#mciu3#ln140#par401" name="oid_PASSING_KeyCondition51 [oid] [Catalogo] [Source]" sourceLinkParameter="sv3#area14#page46#inu4#ln137#par400" target="sv3#area14#cnu4#su73#kcond51.ent11#att11"/>
+        <LinkParameter id="sv3#area14#page59#mciu3#ln140#par402" name="Checked oid_KeyCondition52 [oid] [Prodotto] [Target]" source="ent12#att12Checked" target="sv3#area14#cnu4#su74#kcond52.ent12#att12"/>
+      </Link>
+      <Link id="sv3#area14#page59#mciu3#ln152" name="Flow152" to="sv3#area14#page59#inu10" type="transport" validate="true">
+        <LinkParameter id="sv3#area14#page59#mciu3#ln152#par414" name="oid_PASSING_RoleCondition22 [oid]" sourceLinkParameter="sv3#area14#page46#inu4#ln137#par400" target="sv3#area14#page59#inu10#su79#rcond27.ent11#att11"/>
+        <LinkParameter id="sv3#area14#page59#mciu3#ln152#par415" name="oid_PASSING" sourceLinkParameter="sv3#area14#page46#inu4#ln137#par400" passing="true"/>
+      </Link>
+    </MultiChoiceIndexUnit>
+    <IndexUnit id="sv3#area14#page59#inu10" name="Prodotti in Catalogo" linkOrder="sv3#area14#page59#inu10#ln151" gr:x="0" gr:y="165" entity="ent12" displayAttributes="ent12#att67 ent12#att68 ent12#att1 ent12#att41 ent12#att43">
+      <Selector id="sv3#area14#page59#inu10#su79" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area14#page59#inu10#su79#rcond27" name="RoleCondition22" predicate="in" implied="false" role="rel24#role47"/>
+      </Selector>
+      <Link id="sv3#area14#page59#inu10#ln151" name="Elimina prodotto" to="sv3#area14#dcnu6" type="normal" validate="true" gr:bendpoints="229,48,-206,58">
+        <LinkParameter id="sv3#area14#page59#inu10#ln151#par412" name="oid_PASSING_KeyCondition53 [oid] [Catalogo] [Source]" sourceLinkParameter="sv3#area14#page59#mciu3#ln152#par415" target="sv3#area14#dcnu6#su75#kcond53.ent11#att11"/>
+        <LinkParameter id="sv3#area14#page59#inu10#ln151#par413" name="Checked oid_KeyCondition54 [oid] [Prodotto] [Target]" source="data[].ent12#att12" target="sv3#area14#dcnu6#su76#kcond54.ent12#att12"/>
+      </Link>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area14#page59#mciu3">
+          <layout:Attribute attribute="ent12#att67"/>
+          <layout:Attribute attribute="ent12#att68"/>
+          <layout:Attribute attribute="ent12#att1"/>
+          <layout:Attribute attribute="ent12#att41"/>
+          <layout:Attribute attribute="ent12#att43"/>
+          <layout:Link link="sv3#area14#page59#mciu3#ln140"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area14#page59#inu10">
+          <layout:Link link="sv3#area14#page59#inu10#ln151"/>
+          <layout:Attribute attribute="ent12#att67"/>
+          <layout:Attribute attribute="ent12#att68"/>
+          <layout:Attribute attribute="ent12#att1"/>
+          <layout:Attribute attribute="ent12#att41"/>
+          <layout:Attribute attribute="ent12#att43"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv3#area14#page59#ln153" name="Torna a lista cataloghi" to="sv3#area14#page46#inu4" type="normal" automaticCoupling="true" validate="true"/>
+</Page>

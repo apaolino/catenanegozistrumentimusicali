@@ -1,14 +1,27 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="215" gr:y="0" id="sv3#area14#page46" name="Cataloghi Specifici del Negozio" linkOrder="sv3#area14#page46#ln117 sv3#area14#page46#ln121">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="215" gr:y="0" id="sv3#area14#page46" name="Cataloghi Specifici del Negozio" linkOrder="sv3#area14#page46#ln117">
   <ContentUnits>
     <GetUnit gr:x="0" gr:y="15" id="sv3#area14#page46#gtu2" name="Get Dati Utente" contextParameters="UserCtxParam">
       <Link id="sv3#area14#page46#gtu2#ln116" name="Flow116" to="sv3#area14#page46#inu4" type="transport" validate="true">
         <LinkParameter id="sv3#area14#page46#gtu2#ln116#par303" name="UserCtxParam.oid_AttCondition3" source="sv3#area14#page46#gtu2.UserCtxParam" target="sv3#area14#page46#inu4#su59#acond3"/>
       </Link>
     </GetUnit>
-    <IndexUnit gr:x="280" gr:y="0" id="sv3#area14#page46#inu4" name="Cataloghi Specifici del Negozio" entity="ent14" displayAttributes="ent11#att46">
+    <IndexUnit gr:x="280" gr:y="0" id="sv3#area14#page46#inu4" name="Cataloghi Specifici del Negozio" entity="ent14" displayAttributes="ent11#att46 rel44#role87.ent7#att36" linkOrder="sv3#area14#page46#inu4#ln137 sv3#area14#page46#inu4#ln154">
       <Selector id="sv3#area14#page46#inu4#su59" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv3#area14#page46#inu4#su59#acond3" name="AttCondition3" predicate="eq" booleanOperator="or" implied="false" attributes="rel3#role6.userOID"/>
       </Selector>
+      <Link id="sv3#area14#page46#inu4#ln137" name="Visualizza/Popola Catalogo" to="sv3#area14#page59#mciu3" type="normal" validate="true" gr:bendpoints="-688,127,-198,-978;-691,857,-201,-248">
+        <LinkParameter id="sv3#area14#page46#inu4#ln137#par399" name="CatalogoSpecificoToCategoriaProdotto.oid_RoleCondition21 [oid]" source="data[].rel37#role73_ent7#att7" target="sv3#area14#page59#mciu3#su72#rcond21.ent7#att7"/>
+        <LinkParameter id="sv3#area14#page46#inu4#ln137#par400" name="oid_PASSING" source="data[].ent11#att11" passing="true"/>
+        <LinkParameter id="sv3#area14#page46#inu4#ln137#par411" name="oid_RoleCondition26 [oid]" source="data[].ent11#att11" target="sv3#area14#page59#mciu3#su72#rcond26.ent11#att11"/>
+      </Link>
+      <Link id="sv3#area14#page46#inu4#ln154" name="Elimina" to="sv3#area14#page50#mssu20" type="normal" validate="true">
+        <LinkParameter id="sv3#area14#page46#inu4#ln154#par416" name="Anno di validit&#224;_PASSING" source="data[].ent11#att47" passing="true"/>
+        <LinkParameter id="sv3#area14#page46#inu4#ln154#par417" name="CatalogoSpecificoToCategoriaProdotto.oid_PASSING" source="data[].rel37#role73_ent7#att7" passing="true"/>
+        <LinkParameter id="sv3#area14#page46#inu4#ln154#par418" name="Nome_PASSING" source="data[].ent11#att46" passing="true"/>
+        <LinkParameter id="sv3#area14#page46#inu4#ln154#par419" name="SpecificoToGestore Singolo Negozio.oid_PASSING" source="data[].rel3#role6_userOID" passing="true"/>
+        <LinkParameter id="sv3#area14#page46#inu4#ln154#par420" name="SpecificoToNegozio.oid_PASSING" source="data[].rel30#role60_ent10#att10" passing="true"/>
+        <LinkParameter id="sv3#area14#page46#inu4#ln154#par421" name="oid_PASSING" source="data[].ent11#att11" passing="true"/>
+      </Link>
     </IndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -16,6 +29,9 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv3#area14#page46#inu4">
           <layout:Attribute attribute="ent11#att46"/>
+          <layout:Attribute attribute="rel44#role87.ent7#att36"/>
+          <layout:Link link="sv3#area14#page46#inu4#ln137"/>
+          <layout:Link link="sv3#area14#page46#inu4#ln154"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -46,5 +62,4 @@
     </layout:Row>
   </layout:Grid>
   <Link id="sv3#area14#page46#ln117" name="Crea Nuovo Catalogo Specifico" to="sv3#area14#page45" automaticCoupling="true" type="normal" validate="true"/>
-  <Link id="sv3#area14#page46#ln121" name="Elimina Catalogo" to="sv3#area14#page48" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-563,136,-173,-429;-555,473,-165,-92"/>
 </Page>
