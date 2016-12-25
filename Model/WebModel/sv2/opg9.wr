@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1985" gr:y="930" id="sv2#opg9" name="Operation Group 9" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1985" gr:y="930" id="sv2#opg9" name="Prenotazione evento" transaction="true">
   <OperationUnits>
     <ModifyUnit id="sv2#opg9#mfu2" name="Aggiorna evento" gr:x="205" gr:y="250" entity="ent17">
       <Selector id="sv2#opg9#mfu2#su47" defaultPolicy="fill" booleanOperator="and">
@@ -11,12 +11,12 @@
       <OKLink id="sv2#opg9#cru12#oln40" name="OKFlow38" to="sv2#opg9#mathu1" automaticCoupling="true"/>
       <KOLink id="sv2#opg9#cru12#kln27" name="KOFlow27" to="sv2#page55#alt9#page57" automaticCoupling="true"/>
     </CreateUnit>
-    <GetUnit id="sv2#opg9#gtu5" name="Get4" gr:x="40" gr:y="0" contextParameters="UserCtxParam">
+    <GetUnit id="sv2#opg9#gtu5" name="GetUID" gr:x="40" gr:y="0" contextParameters="UserCtxParam">
       <Link id="sv2#opg9#gtu5#ln54" name="Flow129" to="sv2#opg9#cru12" type="transport" validate="true">
         <LinkParameter id="sv2#opg9#gtu5#ln54#par230" name="UserCtxParam.oid_Cliente.oid(PrenotazioneToCliente Registrato)" source="sv2#opg9#gtu5.UserCtxParam" target="sv2#opg9#cru12.rel14#role28.userOID"/>
       </Link>
     </GetUnit>
-    <MathUnit id="sv2#opg9#mathu1" name="Math2" gr:x="0" gr:y="340" resultType="integer" defaultExpression="a - 1">
+    <MathUnit id="sv2#opg9#mathu1" name="Calcolo posti disponibili" gr:x="0" gr:y="340" resultType="integer" defaultExpression="a - 1">
       <MathVariable id="sv2#opg9#mathu1#mathv1" name="a"/>
       <Link id="sv2#opg9#mathu1#ln91" name="Flow134" to="sv2#opg9#mfu2" type="transport" validate="true">
         <LinkParameter id="sv2#opg9#mathu1#ln91#par231" name="Result_Posti disponibili" source="result" target="sv2#opg9#mfu2.ent17#att65"/>

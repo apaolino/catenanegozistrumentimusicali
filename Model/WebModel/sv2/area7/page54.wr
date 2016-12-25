@@ -1,11 +1,11 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="345" id="sv2#area7#page54" name="Seleziona prenotazione da eliminare">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="10" gr:y="350" id="sv2#area7#page54" name="Seleziona prenotazione da eliminare">
   <ContentUnits>
-    <GetUnit gr:x="0" gr:y="0" id="sv2#area7#page54#gtu8" name="Get8" contextParameters="UserCtxParam">
+    <GetUnit gr:x="0" gr:y="0" id="sv2#area7#page54#gtu8" name="GetUID" contextParameters="UserCtxParam">
       <Link id="sv2#area7#page54#gtu8#ln138" name="Flow138" to="sv2#area7#page54#inu7" type="transport" validate="true">
         <LinkParameter id="sv2#area7#page54#gtu8#ln138#par387" name="UserCtxParam.oid_user [oid]" source="sv2#area7#page54#gtu8.UserCtxParam" target="sv2#area7#page54#inu7#su57#rcond23.userOID"/>
       </Link>
     </GetUnit>
-    <IndexUnit gr:x="170" gr:y="0" id="sv2#area7#page54#inu7" name="Simple List7" entity="ent16" displayAttributes="ent16#att31 ent16#att32" linkOrder="sv2#area7#page54#inu7#ln139">
+    <IndexUnit gr:x="170" gr:y="0" id="sv2#area7#page54#inu7" name="Lista prenotazioni sala prove" entity="ent16" displayAttributes="ent16#att31 ent16#att32" linkOrder="sv2#area7#page54#inu7#ln139">
       <Selector id="sv2#area7#page54#inu7#su57" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area7#page54#inu7#su57#rcond23" name="user" predicate="in" implied="false" role="rel14#role27"/>
         <RelationshipRoleCondition id="sv2#area7#page54#inu7#su57#rcond25" name="idsala" predicate="in" implied="false" role="rel9#role17"/>
