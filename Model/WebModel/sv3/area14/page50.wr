@@ -9,7 +9,7 @@
         <LinkParameter id="sv3#area14#page50#mssu20#ln131#par428" name="SpecificoToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv3#area14#page46#inu4#ln154#par419" passing="true"/>
         <LinkParameter id="sv3#area14#page50#mssu20#ln131#par429" name="SpecificoToNegozio.oid_PASSING" sourceLinkParameter="sv3#area14#page46#inu4#ln154#par420" passing="true"/>
       </Link>
-      <Link id="sv3#area14#page50#mssu20#ln132" name="No" to="sv3#area14#page46" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv3#area14#page50#mssu20#ln132" name="No" to="sv3#area14#page46" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="312,-266,87,484;325,-577,100,173"/>
       <Link id="sv3#area14#page50#mssu20#ln134" name="Flow134" to="sv3#area14#page50#seu13" type="transport" validate="true">
         <LinkParameter id="sv3#area14#page50#mssu20#ln134#par422" name="oid_PASSING_RoleCondition19 [oid]" sourceLinkParameter="sv3#area14#page46#inu4#ln154#par421" target="sv3#area14#page50#seu13#su55#rcond19.ent11#att11"/>
         <LinkParameter id="sv3#area14#page50#mssu20#ln134#par423" name="oid_PASSING" sourceLinkParameter="sv3#area14#page46#inu4#ln154#par421" passing="true"/>

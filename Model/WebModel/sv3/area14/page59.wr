@@ -102,5 +102,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Link id="sv3#area14#page59#ln153" name="Torna a lista cataloghi" to="sv3#area14#page46#inu4" type="normal" automaticCoupling="true" validate="true"/>
+  <Link id="sv3#area14#page59#ln153" name="Torna a lista cataloghi" to="sv3#area14#page46#inu4" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="-193,-497,-633,688;386,-633,-54,552"/>
 </Page>

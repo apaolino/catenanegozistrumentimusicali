@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="660" gr:y="210" id="sv3#area14#opg9" name="Inserimento nuovo catalogo specifico" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="695" gr:y="210" id="sv3#area14#opg9" name="Inserimento nuovo catalogo specifico" transaction="true">
   <OperationUnits>
     <CreateUnit gr:x="185" gr:y="0" id="sv3#area14#opg9#cru11" name="Creazione catalogo specifico" entity="ent14">
       <OKLink id="sv3#area14#opg9#cru11#oln41" name="OKFlow41" to="sv3#area14#opg9#cnu2">

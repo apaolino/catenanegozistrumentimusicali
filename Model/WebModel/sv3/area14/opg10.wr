@@ -10,7 +10,7 @@
         <LinkParameter id="sv3#area14#opg10#dlu7#oln42#par432" name="oid_PASSING" sourceLinkParameter="sv3#area14#page50#mssu20#ln131#par427" passing="true"/>
         <LinkParameter id="sv3#area14#opg10#dlu7#oln42#par433" name="SpecificoToNegozio.oid_PASSING" sourceLinkParameter="sv3#area14#page50#mssu20#ln131#par429" passing="true"/>
       </OKLink>
-      <KOLink id="sv3#area14#opg10#dlu7#kln39" name="KOFlow39" to="sv3#page47#mssu16" automaticCoupling="true" gr:bendpoints="573,-186,-222,559"/>
+      <KOLink id="sv3#area14#opg10#dlu7#kln39" name="KOFlow39" to="sv3#page47#mssu16" automaticCoupling="true" gr:bendpoints="1058,-120,-237,575"/>
     </DeleteUnit>
     <DisconnectUnit gr:x="240" gr:y="25" id="sv3#area14#opg10#dcnu3" name="Disconnect3" relationship="rel44#role87">
       <SourceSelector id="sv3#area14#opg10#dcnu3#su63" defaultPolicy="fill" booleanOperator="and">
@@ -24,7 +24,7 @@
         <LinkParameter id="sv3#area14#opg10#dcnu3#oln43#par435" name="oid_PASSING_KeyCondition45 [oid] [Catalogo] [Target]" sourceLinkParameter="sv3#area14#opg10#dlu7#oln42#par432" target="sv3#area14#opg10#dcnu4#su66#kcond45.ent11#att11"/>
         <LinkParameter id="sv3#area14#opg10#dcnu3#oln43#par436" name="oid_PASSING" sourceLinkParameter="sv3#area14#opg10#dlu7#oln42#par432" passing="true"/>
       </OKLink>
-      <KOLink id="sv3#area14#opg10#dcnu3#kln38" name="KOFlow38" to="sv3#page47#mssu16" automaticCoupling="true" gr:bendpoints="298,-187,-222,593"/>
+      <KOLink id="sv3#area14#opg10#dcnu3#kln38" name="KOFlow38" to="sv3#page47#mssu16" automaticCoupling="true" gr:bendpoints="785,-112,-235,618"/>
     </DisconnectUnit>
     <DisconnectUnit gr:x="525" gr:y="25" id="sv3#area14#opg10#dcnu4" name="Disconnect4" relationship="rel23#role45">
       <SourceSelector id="sv3#area14#opg10#dcnu4#su65" defaultPolicy="fill" booleanOperator="and">
@@ -33,7 +33,7 @@
       <TargetSelector id="sv3#area14#opg10#dcnu4#su66" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area14#opg10#dcnu4#su66#kcond45" name="KeyCondition45" predicate="in" implied="false"/>
       </TargetSelector>
-      <KOLink id="sv3#area14#opg10#dcnu4#kln37" name="KOFlow37" to="sv3#page47#mssu16" automaticCoupling="true"/>
+      <KOLink id="sv3#area14#opg10#dcnu4#kln37" name="KOFlow37" to="sv3#page47#mssu16" automaticCoupling="true" gr:bendpoints="598,-90,-172,640"/>
       <OKLink id="sv3#area14#opg10#dcnu4#oln38" name="OKFlow38" to="sv3#area14#opg10#dcnu5" gr:bendpoints="-191,141,304,-9">
         <LinkParameter id="sv3#area14#opg10#dcnu4#oln38#par437" name="oid_PASSING_KeyCondition47 [oid] [Catalogo] [Source]" sourceLinkParameter="sv3#area14#opg10#dcnu3#oln43#par436" target="sv3#area14#opg10#dcnu5#su58#kcond47.ent11#att11"/>
       </OKLink>
@@ -45,7 +45,7 @@
       <TargetSelector id="sv3#area14#opg10#dcnu5#su69" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area14#opg10#dcnu5#su69#kcond50" name="KeyCondition50" predicate="in" implied="false"/>
       </TargetSelector>
-      <OKLink id="sv3#area14#opg10#dcnu5#oln39" name="OKFlow39" to="sv3#area14#page46" automaticCoupling="true" gr:bendpoints="758,12,1368,1022;747,-813,1357,197"/>
+      <OKLink id="sv3#area14#opg10#dcnu5#oln39" name="OKFlow39" to="sv3#area14#page46" automaticCoupling="true" gr:bendpoints="1072,-24,1182,936;1049,-848,1159,112"/>
     </DisconnectUnit>
   </OperationUnits>
 </OperationGroup>
