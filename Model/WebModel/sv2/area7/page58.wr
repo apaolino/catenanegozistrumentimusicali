@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="285" gr:y="5" id="sv2#area7#page58" name="Nuova prenotazione">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="405" gr:y="0" id="sv2#area7#page58" name="Nuova prenotazione">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv2#area7#page58#enu17" name="Selezionare data e ora della prenotazione" linkOrder="sv2#area7#page58#enu17#ln125" ajaxEnableExpandedLinks="false">
       <Field id="sv2#area7#page58#enu17#fld106" name="Inizio prenotazione" type="timestamp" modifiable="true" ajaxEventEnabled="false"/>

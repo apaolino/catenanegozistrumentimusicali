@@ -1,0 +1,83 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="5" gr:y="470" id="sv2#area4#page62" name="Seleziona Carta di credito">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="140" gr:y="135" id="sv2#area4#page62#mssu21" name="Nuova carta di credito" linkOrder="sv2#area4#page62#mssu21#ln144">
+      <Message xml:space="preserve">Vuoi inserire una nuova carta?</Message>
+      <Link id="sv2#area4#page62#mssu21#ln144" name="Procedi" to="sv2#area4#page63#enu18" automaticCoupling="true" type="normal" validate="true"/>
+    </MultiMessageUnit>
+    <GetUnit id="sv2#area4#page62#gtu9" name="Get4" gr:x="0" gr:y="15" contextParameters="UserCtxParam">
+      <Link id="sv2#area4#page62#gtu9#ln143" name="Flow143" to="sv2#area4#page62#inu5" type="transport" validate="true">
+        <LinkParameter id="sv2#area4#page62#gtu9#ln143#par386" name="UserCtxParam.oid_RoleCondition22 [oid]" source="sv2#area4#page62#gtu9.UserCtxParam" target="sv2#area4#page62#inu5#su80#rcond22.userOID"/>
+      </Link>
+    </GetUnit>
+    <IndexUnit gr:x="125" gr:y="0" id="sv2#area4#page62#inu5" name="Lista carte di credito" entity="ent2" displayAttributes="ent2#att26 ent2#att27 ent2#att28" linkOrder="sv2#area4#page62#inu5#ln147">
+      <Selector id="sv2#area4#page62#inu5#su80" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area4#page62#inu5#su80#rcond22" name="RoleCondition22" role="rel27#role53" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area4#page62#inu5#ln147" name="Seleziona" to="sv2#cru15" type="normal" validate="true">
+        <LinkParameter id="sv2#area4#page62#inu5#ln147#par409" name="oid_PASSING_Negozio.oid(AcquistoToNegozio)" sourceLinkParameter="sv2#area4#page61#mssu22#ln146#par408" target="sv2#cru15.rel16#role31.ent10#att10"/>
+        <LinkParameter id="sv2#area4#page62#inu5#ln147#par446" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page61#mssu22#ln146#par445" passing="true"/>
+      </Link>
+    </IndexUnit>
+    <TimeUnit id="sv2#area4#page62#tmu3" name="Giorno corrente" gr:x="319" gr:y="177">
+      <Link id="sv2#area4#page62#tmu3#ln159" name="Flow155" to="sv2#cru15" type="transport" validate="true">
+        <LinkParameter id="sv2#area4#page62#tmu3#ln159#par439" name="Current/Input Timestamp_Data acquisto" source="currentTimestamp" target="sv2#cru15.ent15#att30"/>
+        <LinkParameter id="sv2#area4#page62#tmu3#ln159#par440" name="Current/Input Timestamp_Data evasione" source="currentTimestamp" target="sv2#cru15.ent15#att2"/>
+      </Link>
+    </TimeUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area4#page62#mssu21">
+          <layout:Link link="sv2#area4#page62#mssu21#ln144"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area4#page62#inu5">
+          <layout:Attribute attribute="ent2#att26"/>
+          <layout:Attribute attribute="ent2#att27"/>
+          <layout:Attribute attribute="ent2#att28"/>
+          <layout:Link link="sv2#area4#page62#inu5#ln147"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

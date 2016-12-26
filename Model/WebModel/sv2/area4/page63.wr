@@ -1,0 +1,37 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="775" id="sv2#area4#page63" name="Inseirmento dati nuova carta ">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv2#area4#page63#enu18" name="Dati nuova carta" linkOrder="sv2#area4#page63#enu18#ln145">
+      <Field id="sv2#area4#page63#enu18#fld115" name="Numero" type="integer" modifiable="true"/>
+      <Field id="sv2#area4#page63#enu18#fld116" name="Data scadenza" type="date" modifiable="true"/>
+      <Field id="sv2#area4#page63#enu18#fld117" name="Intestatario" type="string" modifiable="true"/>
+      <Link id="sv2#area4#page63#enu18#ln145" name="Salva" to="sv2#cru14" type="normal" validate="true">
+        <LinkParameter id="sv2#area4#page63#enu18#ln145#par379" name="Data scadenza_Data scadenza" source="sv2#area4#page63#enu18#fld116" target="sv2#cru14.ent2#att27"/>
+        <LinkParameter id="sv2#area4#page63#enu18#ln145#par380" name="Intestatario_Intestatario" source="sv2#area4#page63#enu18#fld117" target="sv2#cru14.ent2#att28"/>
+        <LinkParameter id="sv2#area4#page63#enu18#ln145#par381" name="Numero_Numero" source="sv2#area4#page63#enu18#fld115" target="sv2#cru14.ent2#att26"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area4#page63#enu18">
+          <layout:Field field="sv2#area4#page63#enu18#fld115"/>
+          <layout:Field field="sv2#area4#page63#enu18#fld116"/>
+          <layout:Field field="sv2#area4#page63#enu18#fld117"/>
+          <layout:Link link="sv2#area4#page63#enu18#ln145"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
