@@ -1,0 +1,44 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area4#page72" name="Inseirmento dati nuova carta " gr:x="575" gr:y="775">
+  <ContentUnits>
+    <EntryUnit id="sv2#area4#page72#enu21" name="Dati nuova carta" gr:x="0" gr:y="0" linkOrder="sv2#area4#page72#enu21#ln184">
+      <Field id="sv2#area4#page72#enu21#fld124" name="Numero" type="integer" modifiable="true"/>
+      <Field id="sv2#area4#page72#enu21#fld125" name="Data scadenza" type="date" modifiable="true"/>
+      <Field id="sv2#area4#page72#enu21#fld126" name="Intestatario" type="string" modifiable="true"/>
+      <Link id="sv2#area4#page72#enu21#ln184" name="Salva e usa la nuova carta" to="sv2#area4#cru19" type="normal" validate="true">
+        <LinkParameter id="sv2#area4#page72#enu21#ln184#par493" name="Data scadenza_Data scadenza" source="sv2#area4#page72#enu21#fld125" target="sv2#area4#cru19.ent2#att27"/>
+        <LinkParameter id="sv2#area4#page72#enu21#ln184#par494" name="Intestatario_Intestatario" source="sv2#area4#page72#enu21#fld126" target="sv2#area4#cru19.ent2#att28"/>
+        <LinkParameter id="sv2#area4#page72#enu21#ln184#par495" name="Numero_Numero" source="sv2#area4#page72#enu21#fld124" target="sv2#area4#cru19.ent2#att26"/>
+        <LinkParameter id="sv2#area4#page72#enu21#ln184#par456" name="Cauzione versata_PASSING" sourceLinkParameter="sv2#area4#page70#mssu24#ln183#par442" passing="true"/>
+        <LinkParameter id="sv2#area4#page72#enu21#ln184#par457" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page70#mssu24#ln183#par443" passing="true"/>
+        <LinkParameter id="sv2#area4#page72#enu21#ln184#par458" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page70#mssu24#ln183#par446" passing="true"/>
+        <LinkParameter id="sv2#area4#page72#enu21#ln184#par460" name="oid_PASSING" sourceLinkParameter="sv2#area4#page70#mssu24#ln183#par447" passing="true"/>
+        <LinkParameter id="sv2#area4#page72#enu21#ln184#par461" name="Riconsegna prevista_PASSING" sourceLinkParameter="sv2#area4#page70#mssu24#ln183#par448" passing="true"/>
+        <LinkParameter id="sv2#area4#page72#enu21#ln184#par462" name="Ritiro prodotto_PASSING" sourceLinkParameter="sv2#area4#page70#mssu24#ln183#par455" passing="true"/>
+        <LinkParameter id="sv2#area4#page72#enu21#ln184#par479" name="UserCtxParam.oid_PASSING_Cliente.oid(Carta di CreditoToCliente Registrato)" sourceLinkParameter="sv2#area4#page70#mssu24#ln183#par478" target="sv2#area4#cru19.rel27#role54.userOID"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area4#page72#enu21">
+          <layout:Field field="sv2#area4#page72#enu21#fld124"/>
+          <layout:Field field="sv2#area4#page72#enu21#fld125"/>
+          <layout:Field field="sv2#area4#page72#enu21#fld126"/>
+          <layout:Link link="sv2#area4#page72#enu21#ln184"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

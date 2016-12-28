@@ -1,3 +1,26 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-470" gr:y="380" id="sv2#area4" name="Scelta catalogo" landmark="false" defaultPage="sv2#area4#page47">
-  <OperationUnits/>
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-595" gr:y="565" id="sv2#area4" name="Scelta catalogo" landmark="false" defaultPage="sv2#area4#page47">
+  <OperationUnits>
+    <CreateUnit id="sv2#area4#cru19" name="Salva nuova Carta" gr:x="940" gr:y="810" entity="ent2">
+      <OKLink id="sv2#area4#cru19#oln48" name="OKFlow48" to="sv2#opg12#cru22">
+        <LinkParameter id="sv2#area4#cru19#oln48#par463" name="Cauzione versata_PASSING" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par456" passing="true"/>
+        <LinkParameter id="sv2#area4#cru19#oln48#par464" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par457" passing="true"/>
+        <LinkParameter id="sv2#area4#cru19#oln48#par465" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par458" passing="true"/>
+        <LinkParameter id="sv2#area4#cru19#oln48#par466" name="oid_PASSING" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par460" passing="true"/>
+        <LinkParameter id="sv2#area4#cru19#oln48#par467" name="Riconsegna prevista_PASSING" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par461" passing="true"/>
+        <LinkParameter id="sv2#area4#cru19#oln48#par468" name="Ritiro prodotto_PASSING" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par462" passing="true"/>
+        <LinkParameter id="sv2#area4#cru19#oln48#par470" name="Cauzione versata_PASSING_Cauzione" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par456" target="sv2#opg12#cru22.ent21#att24"/>
+        <LinkParameter id="sv2#area4#cru19#oln48#par471" name="Riconsegna prevista_PASSING_Data fine" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par461" target="sv2#opg12#cru22.ent16#att32"/>
+        <LinkParameter id="sv2#area4#cru19#oln48#par472" name="Ritiro prodotto_PASSING_Data inizio" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par462" target="sv2#opg12#cru22.ent16#att31"/>
+        <LinkParameter id="sv2#area4#cru19#oln48#par473" name="NegozioToGestore Singolo Negozio.oid_PASSING_Gestore Singolo Negozio.oid(PrenotazioneToGestore Singolo Negozio)" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par458" target="sv2#opg12#cru22.rel13#role25.userOID"/>
+        <LinkParameter id="sv2#area4#cru19#oln48#par474" name="oid_PASSING_Negozio.oid(PrenotazioneToNegozio)" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par460" target="sv2#opg12#cru22.rel11#role21.ent10#att10"/>
+        <LinkParameter id="sv2#area4#cru19#oln48#par475" name="Checked oid_PASSING_Prodotto.oid(PrenotazioneToProdotto)" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par457" target="sv2#opg12#cru22.rel12#role23.ent12#att12"/>
+      </OKLink>
+    </CreateUnit>
+    <CreateUnit id="sv2#area4#cru16" name="Salva nuova Carta" gr:x="0" gr:y="890" entity="ent2">
+      <OKLink id="sv2#area4#cru16#oln55" name="OKFlow47" to="sv2#opg11#cru15">
+        <LinkParameter id="sv2#area4#cru16#oln55#par521" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page63#enu18#ln161#par526" passing="true"/>
+        <LinkParameter id="sv2#area4#cru16#oln55#par522" name="oid_PASSING_Negozio.oid(AcquistoToNegozio)" sourceLinkParameter="sv2#area4#page63#enu18#ln161#par527" target="sv2#opg11#cru15.rel16#role31.ent10#att10"/>
+      </OKLink>
+    </CreateUnit>
+  </OperationUnits>
 </Area>

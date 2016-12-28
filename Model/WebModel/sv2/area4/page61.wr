@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="280" gr:y="165" id="sv2#area4#page61" name="lista prodotti selezionati">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="490" gr:y="40" id="sv2#area4#page61" name="lista prodotti selezionati">
   <ContentUnits>
     <IndexUnit gr:x="60" gr:y="0" id="sv2#area4#page61#inu8" name="Carrello" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att43">
       <Selector id="sv2#area4#page61#inu8#su82" defaultPolicy="fill" booleanOperator="and">
@@ -7,13 +7,20 @@
       <Link id="sv2#area4#page61#inu8#ln157" name="Flow157" to="sv2#area4#page61#mssu22" type="transport" validate="true">
         <LinkParameter id="sv2#area4#page61#inu8#ln157#par407" name="oid_PASSING" sourceLinkParameter="sv2#area4#page47#alt8#page49#mciu4#ln148#par406" passing="true"/>
         <LinkParameter id="sv2#area4#page61#inu8#ln157#par444" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page47#alt8#page49#mciu4#ln148#par441" passing="true"/>
+        <LinkParameter id="sv2#area4#page61#inu8#ln157#par453" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page47#alt8#page49#mciu4#ln148#par452" passing="true"/>
       </Link>
     </IndexUnit>
-    <MultiMessageUnit gr:x="0" gr:y="140" id="sv2#area4#page61#mssu22" name="Seleziona metodo pagamento" linkOrder="sv2#area4#page61#mssu22#ln146">
-      <Message xml:space="preserve">Seleziona carta di credito</Message>
-      <Link id="sv2#area4#page61#mssu22#ln146" name="Pagamento" to="sv2#area4#page62#inu5" type="normal" validate="true">
+    <MultiMessageUnit gr:x="0" gr:y="140" id="sv2#area4#page61#mssu22" name="Acquista o nolegga i prodotti" linkOrder="sv2#area4#page61#mssu22#ln146 sv2#area4#page61#mssu22#ln167">
+      <Message xml:space="preserve">Procedi con la selezione del metodo di pagamento o inserisci i dati per il noleggio</Message>
+      <Link id="sv2#area4#page61#mssu22#ln146" name="Acquisto" to="sv2#area4#page62#inu5" type="normal" validate="true">
         <LinkParameter id="sv2#area4#page61#mssu22#ln146#par408" name="oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par407" passing="true"/>
         <LinkParameter id="sv2#area4#page61#mssu22#ln146#par445" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par444" passing="true"/>
+        <LinkParameter id="sv2#area4#page61#mssu22#ln146#par459" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par453" passing="true"/>
+      </Link>
+      <Link id="sv2#area4#page61#mssu22#ln167" name="Noleggio" to="sv2#area4#page69#enu19" type="normal" validate="true">
+        <LinkParameter id="sv2#area4#page61#mssu22#ln167#par403" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par444" passing="true"/>
+        <LinkParameter id="sv2#area4#page61#mssu22#ln167#par410" name="oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par407" passing="true"/>
+        <LinkParameter id="sv2#area4#page61#mssu22#ln167#par454" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par453" passing="true"/>
       </Link>
     </MultiMessageUnit>
   </ContentUnits>
@@ -43,6 +50,7 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area4#page61#mssu22">
           <layout:Link link="sv2#area4#page61#mssu22#ln146"/>
+          <layout:Link link="sv2#area4#page61#mssu22#ln167"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

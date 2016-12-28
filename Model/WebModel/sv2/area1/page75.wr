@@ -1,0 +1,48 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="10" gr:y="165" id="sv2#area1#page75" name="Page 75" linkOrder="sv2#area1#page75#ln173">
+  <ContentUnits>
+    <GetUnit gr:x="0" gr:y="5" id="sv2#area1#page75#gtu10" name="GetUID" contextParameters="UserCtxParam">
+      <Link id="sv2#area1#page75#gtu10#ln180" name="Flow180" to="sv2#area1#page75#inu14" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
+    <IndexUnit gr:x="150" gr:y="0" id="sv2#area1#page75#inu14" name="Carte di credito registrate" entity="ent2" displayAttributes="ent2#att26 ent2#att27 ent2#att28" linkOrder="sv2#area1#page75#inu14#ln181">
+      <Link id="sv2#area1#page75#inu14#ln181" name="Elimina" to="sv2#dlu11" automaticCoupling="true" type="normal" validate="true"/>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area1#page75#inu14">
+          <layout:Attribute attribute="ent2#att26"/>
+          <layout:Attribute attribute="ent2#att27"/>
+          <layout:Attribute attribute="ent2#att28"/>
+          <layout:Link link="sv2#area1#page75#inu14#ln181"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv2#area1#page75#ln173" name="Crea nuova carta" to="sv2#area1#page76" automaticCoupling="true" type="normal" validate="true"/>
+</Page>

@@ -1,15 +1,24 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="775" id="sv2#area4#page63" name="Inseirmento dati nuova carta ">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="120" gr:y="770" id="sv2#area4#page63" name="Inseirmento dati nuova carta ">
   <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="0" id="sv2#area4#page63#enu18" name="Dati nuova carta" linkOrder="sv2#area4#page63#enu18#ln145">
+    <EntryUnit gr:x="0" gr:y="0" id="sv2#area4#page63#enu18" name="Dati nuova carta" linkOrder="sv2#area4#page63#enu18#ln161">
       <Field id="sv2#area4#page63#enu18#fld115" name="Numero" type="integer" modifiable="true"/>
       <Field id="sv2#area4#page63#enu18#fld116" name="Data scadenza" type="date" modifiable="true"/>
       <Field id="sv2#area4#page63#enu18#fld117" name="Intestatario" type="string" modifiable="true"/>
-      <Link id="sv2#area4#page63#enu18#ln145" name="Salva" to="sv2#cru14" type="normal" validate="true">
-        <LinkParameter id="sv2#area4#page63#enu18#ln145#par379" name="Data scadenza_Data scadenza" source="sv2#area4#page63#enu18#fld116" target="sv2#cru14.ent2#att27"/>
-        <LinkParameter id="sv2#area4#page63#enu18#ln145#par380" name="Intestatario_Intestatario" source="sv2#area4#page63#enu18#fld117" target="sv2#cru14.ent2#att28"/>
-        <LinkParameter id="sv2#area4#page63#enu18#ln145#par381" name="Numero_Numero" source="sv2#area4#page63#enu18#fld115" target="sv2#cru14.ent2#att26"/>
+      <Link id="sv2#area4#page63#enu18#ln161" name="Salva e acquista" to="sv2#area4#cru16" type="normal" validate="true">
+        <LinkParameter id="sv2#area4#page63#enu18#ln161#par523" name="Data scadenza_Data scadenza" source="sv2#area4#page63#enu18#fld116" target="sv2#area4#cru16.ent2#att27"/>
+        <LinkParameter id="sv2#area4#page63#enu18#ln161#par524" name="Intestatario_Intestatario" source="sv2#area4#page63#enu18#fld117" target="sv2#area4#cru16.ent2#att28"/>
+        <LinkParameter id="sv2#area4#page63#enu18#ln161#par525" name="Numero_Numero" source="sv2#area4#page63#enu18#fld115" target="sv2#area4#cru16.ent2#att26"/>
+        <LinkParameter id="sv2#area4#page63#enu18#ln161#par526" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page62#mssu21#ln144#par482" passing="true"/>
+        <LinkParameter id="sv2#area4#page63#enu18#ln161#par527" name="oid_PASSING" sourceLinkParameter="sv2#area4#page62#mssu21#ln144#par483" passing="true"/>
+        <LinkParameter id="sv2#area4#page63#enu18#ln161#par531" name="UserCtxParam.oid_PASSING_Cliente.oid(Carta di CreditoToCliente Registrato)" sourceLinkParameter="sv2#area4#page62#mssu21#ln144#par530" target="sv2#area4#cru16.rel27#role54.userOID"/>
       </Link>
     </EntryUnit>
+    <TimeUnit id="sv2#area4#page63#tmu4" name="Giorno corrente" gr:x="173" gr:y="56">
+      <Link id="sv2#area4#page63#tmu4#ln166" name="Flow166" to="sv2#opg11#cru15" type="transport" validate="true">
+        <LinkParameter id="sv2#area4#page63#tmu4#ln166#par533" name="Current/Input Timestamp_Data acquisto" source="currentTimestamp" target="sv2#opg11#cru15.ent15#att30"/>
+        <LinkParameter id="sv2#area4#page63#tmu4#ln166#par534" name="Current/Input Timestamp_Data evasione" source="currentTimestamp" target="sv2#opg11#cru15.ent15#att2"/>
+      </Link>
+    </TimeUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -18,7 +27,7 @@
           <layout:Field field="sv2#area4#page63#enu18#fld115"/>
           <layout:Field field="sv2#area4#page63#enu18#fld116"/>
           <layout:Field field="sv2#area4#page63#enu18#fld117"/>
-          <layout:Link link="sv2#area4#page63#enu18#ln145"/>
+          <layout:Link link="sv2#area4#page63#enu18#ln161"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

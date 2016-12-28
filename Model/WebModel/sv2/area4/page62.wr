@@ -1,27 +1,37 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="5" gr:y="470" id="sv2#area4#page62" name="Seleziona Carta di credito">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="55" gr:y="460" id="sv2#area4#page62" name="Seleziona Carta di credito per il pagamento">
   <ContentUnits>
-    <MultiMessageUnit gr:x="140" gr:y="135" id="sv2#area4#page62#mssu21" name="Nuova carta di credito" linkOrder="sv2#area4#page62#mssu21#ln144">
+    <MultiMessageUnit gr:x="160" gr:y="135" id="sv2#area4#page62#mssu21" name="Nuova carta di credito" linkOrder="sv2#area4#page62#mssu21#ln144">
       <Message xml:space="preserve">Vuoi inserire una nuova carta?</Message>
-      <Link id="sv2#area4#page62#mssu21#ln144" name="Procedi" to="sv2#area4#page63#enu18" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv2#area4#page62#mssu21#ln144" name="Procedi" to="sv2#area4#page63#enu18" type="normal" validate="true">
+        <LinkParameter id="sv2#area4#page62#mssu21#ln144#par482" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page62#inu5#ln142#par480" passing="true"/>
+        <LinkParameter id="sv2#area4#page62#mssu21#ln144#par483" name="oid_PASSING" sourceLinkParameter="sv2#area4#page62#inu5#ln142#par481" passing="true"/>
+        <LinkParameter id="sv2#area4#page62#mssu21#ln144#par530" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv2#area4#page62#inu5#ln142#par529" passing="true"/>
+      </Link>
     </MultiMessageUnit>
-    <GetUnit id="sv2#area4#page62#gtu9" name="Get4" gr:x="0" gr:y="15" contextParameters="UserCtxParam">
+    <GetUnit id="sv2#area4#page62#gtu9" name="GetUID" gr:x="0" gr:y="0" contextParameters="UserCtxParam">
       <Link id="sv2#area4#page62#gtu9#ln143" name="Flow143" to="sv2#area4#page62#inu5" type="transport" validate="true">
         <LinkParameter id="sv2#area4#page62#gtu9#ln143#par386" name="UserCtxParam.oid_RoleCondition22 [oid]" source="sv2#area4#page62#gtu9.UserCtxParam" target="sv2#area4#page62#inu5#su80#rcond22.userOID"/>
+        <LinkParameter id="sv2#area4#page62#gtu9#ln143#par528" name="UserCtxParam.oid_PASSING" source="sv2#area4#page62#gtu9.UserCtxParam" passing="true"/>
       </Link>
     </GetUnit>
-    <IndexUnit gr:x="125" gr:y="0" id="sv2#area4#page62#inu5" name="Lista carte di credito" entity="ent2" displayAttributes="ent2#att26 ent2#att27 ent2#att28" linkOrder="sv2#area4#page62#inu5#ln147">
+    <IndexUnit gr:x="145" gr:y="0" id="sv2#area4#page62#inu5" name="Lista carte di credito" entity="ent2" displayAttributes="ent2#att26 ent2#att27 ent2#att28" linkOrder="sv2#area4#page62#inu5#ln188">
       <Selector id="sv2#area4#page62#inu5#su80" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area4#page62#inu5#su80#rcond22" name="RoleCondition22" role="rel27#role53" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv2#area4#page62#inu5#ln147" name="Seleziona" to="sv2#cru15" type="normal" validate="true">
-        <LinkParameter id="sv2#area4#page62#inu5#ln147#par409" name="oid_PASSING_Negozio.oid(AcquistoToNegozio)" sourceLinkParameter="sv2#area4#page61#mssu22#ln146#par408" target="sv2#cru15.rel16#role31.ent10#att10"/>
-        <LinkParameter id="sv2#area4#page62#inu5#ln147#par446" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page61#mssu22#ln146#par445" passing="true"/>
+      <Link id="sv2#area4#page62#inu5#ln188" name="Acquista" to="sv2#opg11#cru21" type="normal" validate="true" gr:bendpoints="225,37,195,-733;231,302,201,-468;227,722,197,-48">
+        <LinkParameter id="sv2#area4#page62#inu5#ln188#par498" name="oid_PASSING_Negozio.oid(AcquistoToNegozio)" sourceLinkParameter="sv2#area4#page61#mssu22#ln146#par408" target="sv2#opg11#cru21.rel16#role31.ent10#att10"/>
+        <LinkParameter id="sv2#area4#page62#inu5#ln188#par499" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page61#mssu22#ln146#par445" passing="true"/>
+      </Link>
+      <Link id="sv2#area4#page62#inu5#ln142" name="Flow142" to="sv2#area4#page62#mssu21" type="transport" validate="true">
+        <LinkParameter id="sv2#area4#page62#inu5#ln142#par480" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page61#mssu22#ln146#par445" passing="true"/>
+        <LinkParameter id="sv2#area4#page62#inu5#ln142#par481" name="oid_PASSING" sourceLinkParameter="sv2#area4#page61#mssu22#ln146#par408" passing="true"/>
+        <LinkParameter id="sv2#area4#page62#inu5#ln142#par529" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv2#area4#page62#gtu9#ln143#par528" passing="true"/>
       </Link>
     </IndexUnit>
-    <TimeUnit id="sv2#area4#page62#tmu3" name="Giorno corrente" gr:x="319" gr:y="177">
-      <Link id="sv2#area4#page62#tmu3#ln159" name="Flow155" to="sv2#cru15" type="transport" validate="true">
-        <LinkParameter id="sv2#area4#page62#tmu3#ln159#par439" name="Current/Input Timestamp_Data acquisto" source="currentTimestamp" target="sv2#cru15.ent15#att30"/>
-        <LinkParameter id="sv2#area4#page62#tmu3#ln159#par440" name="Current/Input Timestamp_Data evasione" source="currentTimestamp" target="sv2#cru15.ent15#att2"/>
+    <TimeUnit id="sv2#area4#page62#tmu3" name="Giorno corrente" gr:x="340" gr:y="180">
+      <Link id="sv2#area4#page62#tmu3#ln189" name="Flow155" to="sv2#opg11#cru21" type="transport" validate="true" gr:bendpoints="186,52,-74,-218">
+        <LinkParameter id="sv2#area4#page62#tmu3#ln189#par500" name="Current/Input Timestamp_Data acquisto" source="currentTimestamp" target="sv2#opg11#cru21.ent15#att30"/>
+        <LinkParameter id="sv2#area4#page62#tmu3#ln189#par501" name="Current/Input Timestamp_Data evasione" source="currentTimestamp" target="sv2#opg11#cru21.ent15#att2"/>
       </Link>
     </TimeUnit>
   </ContentUnits>
@@ -64,7 +74,7 @@
           <layout:Attribute attribute="ent2#att26"/>
           <layout:Attribute attribute="ent2#att27"/>
           <layout:Attribute attribute="ent2#att28"/>
-          <layout:Link link="sv2#area4#page62#inu5#ln147"/>
+          <layout:Link link="sv2#area4#page62#inu5#ln188"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

@@ -1,0 +1,43 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="15" gr:y="0" id="sv2#area1#page76" name="Page 76">
+  <ContentUnits>
+    <GetUnit gr:x="0" gr:y="0" id="sv2#area1#page76#gtu12" name="GetUID" contextParameters="UserCtxParam">
+      <Link id="sv2#area1#page76#gtu12#ln171" name="Flow171" to="sv2#area1#page76#enu20" type="transport" validate="true">
+        <LinkParameter id="sv2#area1#page76#gtu12#ln171#par536" name="UserCtxParam.oid_PASSING" source="sv2#area1#page76#gtu12.UserCtxParam" passing="true"/>
+      </Link>
+    </GetUnit>
+    <EntryUnit id="sv2#area1#page76#enu20" name="Dati nuova carta" gr:x="135" gr:y="10" linkOrder="sv2#area1#page76#enu20#ln172">
+      <Field id="sv2#area1#page76#enu20#fld121" name="Numero" type="integer" modifiable="true"/>
+      <Field id="sv2#area1#page76#enu20#fld122" name="Data scadenza" type="date" modifiable="true"/>
+      <Field id="sv2#area1#page76#enu20#fld123" name="Intestatario" type="string" modifiable="true"/>
+      <Link id="sv2#area1#page76#enu20#ln172" name="Salva nuova carta" to="sv2#cru17" type="normal" validate="true">
+        <LinkParameter id="sv2#area1#page76#enu20#ln172#par537" name="UserCtxParam.oid_PASSING_Cliente.oid(Carta di CreditoToCliente Registrato)" sourceLinkParameter="sv2#area1#page76#gtu12#ln171#par536" target="sv2#cru17.rel27#role54.userOID"/>
+        <LinkParameter id="sv2#area1#page76#enu20#ln172#par538" name="Data scadenza_Data scadenza" source="sv2#area1#page76#enu20#fld122" target="sv2#cru17.ent2#att27"/>
+        <LinkParameter id="sv2#area1#page76#enu20#ln172#par539" name="Intestatario_Intestatario" source="sv2#area1#page76#enu20#fld123" target="sv2#cru17.ent2#att28"/>
+        <LinkParameter id="sv2#area1#page76#enu20#ln172#par540" name="Numero_Numero" source="sv2#area1#page76#enu20#fld121" target="sv2#cru17.ent2#att26"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area1#page76#enu20">
+          <layout:Field field="sv2#area1#page76#enu20#fld121"/>
+          <layout:Field field="sv2#area1#page76#enu20#fld122"/>
+          <layout:Field field="sv2#area1#page76#enu20#fld123"/>
+          <layout:Link link="sv2#area1#page76#enu20#ln172"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

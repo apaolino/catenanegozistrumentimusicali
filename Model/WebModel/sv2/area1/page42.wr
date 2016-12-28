@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="5" id="sv2#area1#page42" name="Gestione dati utente">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="330" id="sv2#area1#page42" name="Gestione dati utente" linkOrder="sv2#area1#page42#ln170">
   <ContentUnits>
-    <GetUnit id="sv2#area1#page42#gtu2" name="GetReference" gr:x="0" gr:y="5" contextParameters="UserCtxParam">
+    <GetUnit id="sv2#area1#page42#gtu2" name="GetUID" gr:x="0" gr:y="5" contextParameters="UserCtxParam">
       <Link id="sv2#area1#page42#gtu2#ln111" name="Flow110" to="sv2#area1#page42#dau10" type="transport" automaticCoupling="true" validate="true"/>
     </GetUnit>
     <DataUnit id="sv2#area1#page42#dau10" name="Dettagli Cliente" gr:x="145" gr:y="0" entity="User" linkOrder="sv2#area1#page42#dau10#ln85" displayAttributes="userName password User#att20 User#att21 User#att22 User#att54 email User#att29 User#att71">
@@ -65,4 +65,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv2#area1#page42#ln170" name="Visualizza carte di credito" to="sv2#area1#page75" automaticCoupling="true" type="normal" validate="true"/>
 </Page>
