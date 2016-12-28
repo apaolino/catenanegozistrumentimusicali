@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv4#area11#page10" name="Lista utenti del sistema">
   <ContentUnits>
-    <PowerIndexUnit gr:x="0" gr:y="0" id="sv4#area11#page10#pwu3" name="Utenti registrati" sortable="true" checkable="false" useCountQuery="false" entity="User" displayAttributes="userName password User#att20 User#att21 User#att22 User#att54 email User#att29 User#att71" linkOrder="sv4#area11#page10#pwu3#ln35 sv4#area11#page10#pwu3#ln21 sv4#area11#page10#pwu3#ln102">
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv4#area11#page10#pwu3" name="Utenti registrati" sortable="true" checkable="false" useCountQuery="false" entity="User" displayAttributes="userName User2DefaultGroup.groupName User#att20 User#att21 User#att22 email User#att29 User#att71" linkOrder="sv4#area11#page10#pwu3#ln35 sv4#area11#page10#pwu3#ln21 sv4#area11#page10#pwu3#ln102">
       <Link id="sv4#area11#page10#pwu3#ln35" name="Modifica" to="sv4#area11#page22#enu5" type="normal" validate="true" gr:bendpoints="206,-60,-194,-45">
         <LinkParameter id="sv4#area11#page10#pwu3#ln35#par134" name="Nome_Nome" source="data[].User#att20" target="sv4#area11#page22#enu5#fld85_slot"/>
         <LinkParameter id="sv4#area11#page10#pwu3#ln35#par135" name="Cognome_Cognome" source="data[].User#att21" target="sv4#area11#page22#enu5#fld86_slot"/>
@@ -20,7 +20,7 @@
         <LinkParameter id="sv4#area11#page10#pwu3#ln21#par59" name="oid_PASSING" source="data[].userOID" passing="true"/>
         <LinkParameter id="sv4#area11#page10#pwu3#ln21#par60" name="UserToIndirizzo.oid_PASSING" source="data[].rel20#role40_ent1#att3" passing="true"/>
       </Link>
-      <Link id="sv4#area11#page10#pwu3#ln102" name="ges. neg." to="sv4#area11#page35#mssu12" type="normal" validate="true">
+      <Link id="sv4#area11#page10#pwu3#ln102" name="Rendi Gestore Negozio" to="sv4#area11#page35#mssu12" type="normal" validate="true">
         <LinkParameter id="sv4#area11#page10#pwu3#ln102#par68" name="oid_PASSING" source="data[].userOID" passing="true"/>
         <LinkParameter id="sv4#area11#page10#pwu3#ln102#par210" name="Cognome_PASSING" source="data[].User#att21" passing="true"/>
         <LinkParameter id="sv4#area11#page10#pwu3#ln102#par211" name="Data nascita_PASSING" source="data[].User#att22" passing="true"/>
@@ -39,18 +39,17 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv4#area11#page10#pwu3">
-          <layout:Attribute attribute="userName"/>
-          <layout:Attribute attribute="password"/>
-          <layout:Attribute attribute="User#att20"/>
-          <layout:Attribute attribute="User#att21"/>
-          <layout:Attribute attribute="User#att22"/>
-          <layout:Attribute attribute="User#att54"/>
-          <layout:Attribute attribute="email"/>
-          <layout:Attribute attribute="User#att29"/>
-          <layout:Attribute attribute="User#att71"/>
           <layout:Link link="sv4#area11#page10#pwu3#ln35"/>
           <layout:Link link="sv4#area11#page10#pwu3#ln21"/>
           <layout:Link link="sv4#area11#page10#pwu3#ln102"/>
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="User2DefaultGroup.groupName"/>
+          <layout:Attribute attribute="User#att20"/>
+          <layout:Attribute attribute="User#att21"/>
+          <layout:Attribute attribute="User#att22"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="User#att29"/>
+          <layout:Attribute attribute="User#att71"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

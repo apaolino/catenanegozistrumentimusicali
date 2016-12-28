@@ -1,9 +1,9 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="320" gr:y="0" id="sv4#area9#page39" name="Modifica ed elimina prodotti">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="270" gr:y="0" id="sv4#area9#page39" name="Modifica ed elimina prodotti">
   <ContentUnits>
     <SelectorUnit gr:x="0" gr:y="0" id="sv4#area9#page39#seu9" name="Raccolta prodotti" entity="ent12">
       <Link id="sv4#area9#page39#seu9#ln56" name="Flow56" to="sv4#area9#page39#inu2" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <IndexUnit gr:x="145" gr:y="10" id="sv4#area9#page39#inu2" name="Elenco prodotti" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45" linkOrder="sv4#area9#page39#inu2#ln59 sv4#area9#page39#inu2#ln18">
+    <IndexUnit gr:x="195" gr:y="10" id="sv4#area9#page39#inu2" name="Elenco prodotti" entity="ent12" displayAttributes="ent12#att66 ent12#att68 ent12#att67 ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45" linkOrder="sv4#area9#page39#inu2#ln59 sv4#area9#page39#inu2#ln18">
       <Link id="sv4#area9#page39#inu2#ln59" name="Modifica" to="sv4#area9#page40#enu2" type="normal" validate="true">
         <LinkParameter id="sv4#area9#page39#inu2#ln59#par76" name="ProdottoToCategoria.oid_Categoria prodotto - Preselection" source="data[].rel25#role49_ent7#att7" target="sv4#area9#page40#enu2#sfld4_presel"/>
         <LinkParameter id="sv4#area9#page39#inu2#ln59#par77" name="Data produzione_Data produzione" source="data[].ent12#att41" target="sv4#area9#page40#enu2#fld26_slot"/>
@@ -19,20 +19,25 @@
       <Link id="sv4#area9#page39#inu2#ln18" name="Elimina" to="sv4#area9#page3#mssu10" type="normal" validate="true">
         <LinkParameter id="sv4#area9#page39#inu2#ln18#par8" name="oid_PASSING" source="data[].ent12#att12" passing="true"/>
       </Link>
+      <SortAttribute attribute="ent12#att66" order="ascending"/>
+      <SortAttribute attribute="ent12#att68" order="ascending"/>
     </IndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv4#area9#page39#inu2">
+          <layout:Link link="sv4#area9#page39#inu2#ln59"/>
+          <layout:Link link="sv4#area9#page39#inu2#ln18"/>
+          <layout:Attribute attribute="ent12#att66"/>
+          <layout:Attribute attribute="ent12#att68"/>
+          <layout:Attribute attribute="ent12#att67"/>
           <layout:Attribute attribute="ent12#att1"/>
           <layout:Attribute attribute="ent12#att41"/>
           <layout:Attribute attribute="ent12#att42"/>
           <layout:Attribute attribute="ent12#att43"/>
           <layout:Attribute attribute="ent12#att44"/>
           <layout:Attribute attribute="ent12#att45"/>
-          <layout:Link link="sv4#area9#page39#inu2#ln59"/>
-          <layout:Link link="sv4#area9#page39#inu2#ln18"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

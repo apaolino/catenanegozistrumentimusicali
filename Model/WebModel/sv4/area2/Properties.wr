@@ -1,3 +1,7 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-1640" gr:y="535" id="sv4#area2" name="Gestione Catalogo Base" landmark="true" defaultPage="sv4#area2#page5">
-  <OperationUnits/>
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-1820" gr:y="485" id="sv4#area2" name="Gestione Catalogo Base" landmark="true" defaultPage="sv4#area2#page5">
+  <OperationUnits>
+    <CreateUnit id="sv4#area2#cru18" name="Create10" gr:x="660" gr:y="835" entity="ent13">
+      <OKLink id="sv4#area2#cru18#oln55" name="OKFlow55" to="sv4#area2#page66#mssu28" automaticCoupling="true"/>
+    </CreateUnit>
+  </OperationUnits>
 </Area>

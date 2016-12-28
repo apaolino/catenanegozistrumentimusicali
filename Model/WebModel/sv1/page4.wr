@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="245" gr:y="90" id="sv1#page4" name="Home Visitatore" linkOrder="sv1#page4#ln1 sv1#page4#ln10 sv1#page4#ln29">
   <ContentUnits>
-    <PowerIndexUnit gr:x="0" gr:y="160" id="sv1#page4#pwu2" name="Elenco Negozi Appartenenti alla Catena" sortable="true" checkable="false" useCountQuery="false" entity="ent10" linkOrder="sv1#page4#pwu2#ln7" displayAttributes="ent10#att48">
+    <PowerIndexUnit gr:x="0" gr:y="160" id="sv1#page4#pwu2" name="Elenco Negozi Appartenenti alla Catena" sortable="true" checkable="false" useCountQuery="false" entity="ent10" linkOrder="sv1#page4#pwu2#ln7" displayAttributes="ent10#att48 rel32#role63.ent1#att73">
       <Link id="sv1#page4#pwu2#ln7" name="Visualizza Dettagli Negozio" to="sv1#page7#dau3" type="normal" validate="true">
         <LinkParameter id="sv1#page4#pwu2#ln7#par32" name="oid_KeyCondition3 [oid]" source="data[].ent10#att10" target="sv1#page7#dau3#su3#kcond3.ent10#att10"/>
         <LinkParameter id="sv1#page4#pwu2#ln7#par33" name="oid_PASSING" source="data[].ent10#att10" passing="true"/>
@@ -33,9 +33,10 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv1#page4#pwu2">
-          <layout:Attribute attribute="ent10#att48"/>
           <layout:Link link="sv1#page4#pwu2#ln7"/>
           <layout:Link link="sv1#page4#pwu2ent10#att48"/>
+          <layout:Attribute attribute="ent10#att48"/>
+          <layout:Attribute attribute="rel32#role63.ent1#att73"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

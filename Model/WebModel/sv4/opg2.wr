@@ -1,21 +1,39 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1195" gr:y="850" id="sv4#opg2" name="Transazione Inserimento Nuovo Negozio" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1195" gr:y="865" id="sv4#opg2" name="Transazione Inserimento Nuovo Negozio" transaction="true">
   <OperationUnits>
-    <CreateUnit gr:x="275" gr:y="25" id="sv4#opg2#cru4" name="Inserimento sala prove" entity="ent19">
+    <CreateUnit gr:x="275" gr:y="10" id="sv4#opg2#cru4" name="Inserimento sala prove" entity="ent19">
       <KOLink id="sv4#opg2#cru4#kln6" name="KOFlow6" to="sv4#page13#alt2#page18#mssu3" automaticCoupling="true"/>
       <OKLink id="sv4#opg2#cru4#oln31" name="OKFlow31" to="sv4#opg2#cru5">
         <LinkParameter id="sv4#opg2#cru4#oln31#par71" name="oid_PASSING_Indirizzo.oid(NegozioToIndirizzo)" sourceLinkParameter="sv4#opg2#cru6#oln28#par70" target="sv4#opg2#cru5.rel32#role63.ent1#att3"/>
         <LinkParameter id="sv4#opg2#cru4#oln31#par72" name="oid_Sala prove.oid(NegozioToSala prove)" source="ent19#att19Array" target="sv4#opg2#cru5.rel7#role14.ent19#att19"/>
       </OKLink>
     </CreateUnit>
-    <CreateUnit gr:x="535" gr:y="25" id="sv4#opg2#cru5" name="Inserimento negozio" entity="ent10">
+    <CreateUnit gr:x="535" gr:y="10" id="sv4#opg2#cru5" name="Inserimento negozio" entity="ent10">
       <KOLink id="sv4#opg2#cru5#kln7" name="KOFlow7" to="sv4#page13#alt2#page18#mssu3" automaticCoupling="true"/>
-      <OKLink id="sv4#opg2#cru5#oln15" name="OKFlow15" to="sv4#page13#alt2#page14#mssu1" automaticCoupling="true" gr:bendpoints="177,-4,-347,-338"/>
+      <OKLink id="sv4#opg2#cru5#oln69" name="OKFlow69" to="sv4#opg2#seu46">
+        <LinkParameter id="sv4#opg2#cru5#oln69#par541" name="oid_PASSING" source="ent10#att10Array" passing="true"/>
+      </OKLink>
     </CreateUnit>
-    <CreateUnit gr:x="0" gr:y="20" id="sv4#opg2#cru6" name="Inserimento indirizzo" entity="ent1">
+    <CreateUnit gr:x="0" gr:y="5" id="sv4#opg2#cru6" name="Inserimento indirizzo" entity="ent1">
       <KOLink id="sv4#opg2#cru6#kln5" name="KOFlow5" to="sv4#page13#alt2#page18#mssu3" automaticCoupling="true"/>
       <OKLink id="sv4#opg2#cru6#oln28" name="OKFlow28" to="sv4#opg2#cru4">
         <LinkParameter id="sv4#opg2#cru6#oln28#par70" name="oid_PASSING" source="ent1#att3Array" passing="true"/>
       </OKLink>
     </CreateUnit>
+    <ConnectUnit gr:x="925" gr:y="0" id="sv4#opg2#cnu12" name="Connect12" relationship="rel23#role45">
+      <SourceSelector id="sv4#opg2#cnu12#su111" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#opg2#cnu12#su111#kcond76" name="KeyCondition76" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv4#opg2#cnu12#su112" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#opg2#cnu12#su112#kcond77" name="KeyCondition77" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv4#opg2#cnu12#oln71" name="OKFlow71" to="sv4#page13#alt2#page14#mssu1" automaticCoupling="true"/>
+    </ConnectUnit>
+    <SelectorUnit gr:x="755" gr:y="15" id="sv4#opg2#seu46" name="Selector46" entity="ent13" maxResults="1">
+      <SortAttribute attribute="ent11#att47" order="descending"/>
+      <OKLink id="sv4#opg2#seu46#oln70" name="OKFlow70" to="sv4#opg2#cnu12">
+        <LinkParameter id="sv4#opg2#seu46#oln70#par542" name="oid_PASSING_KeyCondition76 [oid] [Negozio] [Source]" sourceLinkParameter="sv4#opg2#cru5#oln69#par541" target="sv4#opg2#cnu12#su111#kcond76.ent10#att10"/>
+        <LinkParameter id="sv4#opg2#seu46#oln70#par543" name="oid_KeyCondition77 [oid] [Catalogo] [Target]" source="ent11#att11Array" target="sv4#opg2#cnu12#su112#kcond77.ent11#att11"/>
+      </OKLink>
+    </SelectorUnit>
   </OperationUnits>
 </OperationGroup>

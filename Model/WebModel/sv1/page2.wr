@@ -1,10 +1,12 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1030" gr:y="310" id="sv1#page2" name="Pagina Dettaglio Evento">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="0" id="sv1#page2#dau2" name="Dettagli Evento" entity="ent17" displayAttributes="ent17#att62 ent17#att61 ent17#att63 ent17#att64 ent17#att65 rel10#role19.ent10#att48 rel10#role19.ent10#att51 rel10#role19.ent10#att53 rel10#role19.rel32#role63.ent1#att73" linkOrder="sv1#page2#dau2#ln19">
+    <DataUnit gr:x="0" gr:y="0" id="sv1#page2#dau2" name="Dettagli Evento" entity="ent17" displayAttributes="ent17#att62 ent17#att61 ent17#att63 ent17#att64 ent17#att65 rel10#role19.ent10#att48 rel10#role19.ent10#att51 rel10#role19.ent10#att53 rel10#role19.rel32#role63.ent1#att73" linkOrder="sv1#page2#dau2#ln211">
       <Selector id="sv1#page2#dau2#su2" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#page2#dau2#su2#kcond2" name="KeyCondition2" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv1#page2#dau2#ln19" name="EventoNegozio" to="sv1#page7#dau3" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-193,399,467,194;-773,398,-113,193;-774,225,-119,15;-729,228,-74,18"/>
+      <Link id="sv1#page2#dau2#ln211" name="Dettagli Negozio" to="sv1#page7#dau3" type="normal" validate="true">
+        <LinkParameter id="sv1#page2#dau2#ln211#par505" name="EventoToNegozio.oid_KeyCondition3 [oid]" source="data.rel10#role19_ent10#att10" target="sv1#page7#dau3#su3#kcond3.ent10#att10"/>
+      </Link>
     </DataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -20,7 +22,7 @@
           <layout:Attribute attribute="rel10#role19.ent10#att51"/>
           <layout:Attribute attribute="rel10#role19.ent10#att53"/>
           <layout:Attribute attribute="rel10#role19.rel32#role63.ent1#att73"/>
-          <layout:Link link="sv1#page2#dau2#ln19"/>
+          <layout:Link link="sv1#page2#dau2#ln211"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

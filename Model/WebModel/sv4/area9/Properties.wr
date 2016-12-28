@@ -15,7 +15,7 @@
     <CreateUnit gr:x="60" gr:y="870" id="sv4#area9#cru9" name="Salva tipo prodotto" entity="ent4">
       <OKLink id="sv4#area9#cru9#oln23" name="OKFlow23" to="sv4#page36#alt7#page37" automaticCoupling="true" gr:bendpoints="-194,-80,-4,355"/>
     </CreateUnit>
-    <ModifyUnit gr:x="655" gr:y="290" id="sv4#area9#mfu1" name="Modifica prodotto" entity="ent12">
+    <ModifyUnit gr:x="580" gr:y="255" id="sv4#area9#mfu1" name="Modifica prodotto" entity="ent12">
       <Selector id="sv4#area9#mfu1#su43" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area9#mfu1#su43#kcond30" name="KeyCondition30" predicate="in" implied="false"/>
       </Selector>

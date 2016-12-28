@@ -1,0 +1,67 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#page70" name="Prodotti in catalogo" gr:x="805" gr:y="650" linkOrder="sv1#page70#ln228">
+  <ContentUnits>
+    <IndexUnit id="sv1#page70#inu12" name="Prodotti presenti nel catalogo selezionato" linkOrder="sv1#page70#inu12#ln215" gr:x="0" gr:y="0" entity="ent12" displayAttributes="ent12#att66 ent12#att68 ent12#att67 ent12#att1 ent12#att43">
+      <Selector id="sv1#page70#inu12#su103" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv1#page70#inu12#su103#rcond37" name="RoleCondition36" predicate="in" implied="false" role="rel24#role47"/>
+      </Selector>
+      <Link id="sv1#page70#inu12#ln215" name="Visualizza dettagli" to="sv1#page70#dau12" type="normal" automaticCoupling="true" validate="true"/>
+    </IndexUnit>
+    <DataUnit id="sv1#page70#dau12" name="Dettagli del prodotto" gr:x="390" gr:y="5" entity="ent12" displayAttributes="ent12#att66 ent12#att68 ent12#att67 ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45">
+      <Selector id="sv1#page70#dau12#su104" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#page70#dau12#su104#kcond69" name="KeyCondition68" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page70#inu12">
+          <layout:Attribute attribute="ent12#att66"/>
+          <layout:Attribute attribute="ent12#att68"/>
+          <layout:Attribute attribute="ent12#att67"/>
+          <layout:Attribute attribute="ent12#att1"/>
+          <layout:Attribute attribute="ent12#att43"/>
+          <layout:Link link="sv1#page70#inu12#ln215"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page70#dau12">
+          <layout:Attribute attribute="ent12#att66"/>
+          <layout:Attribute attribute="ent12#att68"/>
+          <layout:Attribute attribute="ent12#att67"/>
+          <layout:Attribute attribute="ent12#att1"/>
+          <layout:Attribute attribute="ent12#att41"/>
+          <layout:Attribute attribute="ent12#att42"/>
+          <layout:Attribute attribute="ent12#att43"/>
+          <layout:Attribute attribute="ent12#att44"/>
+          <layout:Attribute attribute="ent12#att45"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv1#page70#ln228" name="Flow228" to="sv1#page7" automaticCoupling="true" type="normal" validate="true"/>
+</Page>

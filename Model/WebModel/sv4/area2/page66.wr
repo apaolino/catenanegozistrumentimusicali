@@ -1,0 +1,5 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="950" gr:y="1100" id="sv4#area2#page66" name="Pagina successo" linkOrder="sv4#area2#page66#ln197">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#area2#page66#mssu28" name="Messaggio Successo">
+      <Message xml:space="preserve">Catalogo Base creato con successo
+</Message>    </MultiMessageUnit>  </ContentUnits>  <layout:Grid containerType="grid">    <layout:Row>      <layout:Cell colspan="12">        <layout:Unit unitId="sv4#area2#page66#mssu28"/>      </layout:Cell>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>    </layout:Row>  </layout:Grid>  <Link id="sv4#area2#page66#ln197" name="Inserisci prodotto in catalogo" to="sv4#area2#page5" automaticCoupling="true" type="normal" validate="true"/></Page>

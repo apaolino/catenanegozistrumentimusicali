@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-695" gr:y="2230" id="sv4#opg7" name="Elimina utente e indirizzo" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-700" gr:y="2505" id="sv4#opg7" name="Elimina utente e indirizzo" transaction="true">
   <OperationUnits>
     <DeleteUnit id="sv4#opg7#dlu9" name="Elimina utente" gr:x="104" gr:y="28" entity="User">
       <Selector id="sv4#opg7#dlu9#su20" defaultPolicy="fill" booleanOperator="and">
