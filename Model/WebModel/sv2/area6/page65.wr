@@ -1,0 +1,102 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="130" gr:y="45" id="sv2#area6#page65" name="Storico acquisti">
+  <ContentUnits>
+    <GetUnit gr:x="0" gr:y="0" id="sv2#area6#page65#gtu4" name="Get4" contextParameters="UserCtxParam">
+      <Link id="sv2#area6#page65#gtu4#ln155" name="Flow155" to="sv2#area6#page65#inu9" type="transport" validate="true">
+        <LinkParameter id="sv2#area6#page65#gtu4#ln155#par376" name="UserCtxParam.oid_RoleCondition24 [oid]" source="sv2#area6#page65#gtu4.UserCtxParam" target="sv2#area6#page65#inu9#su81#rcond24.userOID"/>
+      </Link>
+    </GetUnit>
+    <IndexUnit gr:x="245" gr:y="0" id="sv2#area6#page65#inu9" name="Storico acquisti" entity="ent15" displayAttributes="ent15#att30 ent15#att2" linkOrder="sv2#area6#page65#inu9#ln156">
+      <Selector id="sv2#area6#page65#inu9#su81" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area6#page65#inu9#su81#rcond24" name="RoleCondition24" predicate="in" implied="false" role="rel17#role33"/>
+      </Selector>
+      <Link id="sv2#area6#page65#inu9#ln156" name="Dettagli" to="sv2#area6#page65#alt10#page66#inu11" automaticCoupling="true" type="normal" validate="true"/>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area6#page65#inu9">
+          <layout:Link link="sv2#area6#page65#inu9#ln156"/>
+          <layout:Attribute attribute="ent15#att30"/>
+          <layout:Attribute attribute="ent15#att2"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv2#area6#page65#alt10#page66">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv2#area6#page65#alt10#page66#inu11">
+                  <layout:Attribute attribute="ent12#att1"/>
+                  <layout:Attribute attribute="ent12#att41"/>
+                  <layout:Attribute attribute="ent12#att42"/>
+                  <layout:Attribute attribute="ent12#att43"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative gr:x="470" gr:y="0" id="sv2#area6#page65#alt10" name="Alternative10" defaultPage="sv2#area6#page65#alt10#page66">
+    <Page gr:x="0" gr:y="0" id="sv2#area6#page65#alt10#page66" name="Elenco prodotti acquistati">
+      <ContentUnits>
+        <IndexUnit gr:x="0" gr:y="0" id="sv2#area6#page65#alt10#page66#inu11" name="Prodotti acquistati" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att43">
+          <Selector id="sv2#area6#page65#alt10#page66#inu11#su86" defaultPolicy="fill" booleanOperator="and">
+            <RelationshipRoleCondition id="sv2#area6#page65#alt10#page66#inu11#su86#rcond29" name="RoleCondition29" predicate="in" implied="false" role="rel15#role29"/>
+          </Selector>
+        </IndexUnit>
+      </ContentUnits>
+    </Page>
+  </Alternative>
+</Page>

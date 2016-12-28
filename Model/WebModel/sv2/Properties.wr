@@ -1,4 +1,4 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2" name="Cliente" landmarks="sv2#area10" homePage="sv2#page41">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2" name="Cliente" landmarks="sv2#area10 sv2#area6" homePage="sv2#page41">
   <OperationUnits>
     <LogoutUnit gr:x="500" gr:y="220" id="sv2#lou1" name="Logout Cliente" siteView="sv1">
       <KOLink id="sv2#lou1#kln24" name="KOFlow24" to="sv2#page41" automaticCoupling="true" gr:bendpoints="-73,141,177,-19"/>
@@ -19,26 +19,11 @@
         <KeyCondition id="sv2#dlu7#su65#kcond38" name="KeyCondition38" predicate="in" implied="false"/>
       </Selector>
     </DeleteUnit>
-    <CreateUnit gr:x="-200" gr:y="1305" id="sv2#cru14" name="Salva nuova Carta" entity="ent2">
-      <OKLink id="sv2#cru14#oln48" name="OKFlow48" to="sv2#area4#page62" automaticCoupling="true"/>
-    </CreateUnit>
-    <GetUnit gr:x="-10" gr:y="1300" id="sv2#gtu6" name="Get6" contextParameters="UserCtxParam" linkOrder="sv2#gtu6#ln141 sv2#gtu6#ln149">
-      <Link id="sv2#gtu6#ln141" name="Flow141" to="sv2#cru14" automaticCoupling="true" type="transport" validate="true"/>
-      <Link id="sv2#gtu6#ln149" name="Flow149" to="sv2#cru15" automaticCoupling="true" type="transport" validate="true"/>
-    </GetUnit>
-    <CreateUnit gr:x="270" gr:y="1090" id="sv2#cru15" name="Nuovo acquisto" entity="ent15">
-      <OKLink id="sv2#cru15#oln52" name="OKFlow52" to="sv2#cnu6">
-        <LinkParameter id="sv2#cru15#oln52#par447" name="Checked oid_PASSING_KeyCondition59 [oid] [Prodotto] [Source]" sourceLinkParameter="sv2#area4#page62#inu5#ln147#par446" target="sv2#cnu6#su84#kcond59.ent12#att12"/>
-        <LinkParameter id="sv2#cru15#oln52#par448" name="oid_KeyCondition60 [oid] [Acquisto] [Target]" source="ent15#att15Array" target="sv2#cnu6#su85#kcond60.ent15#att15"/>
-      </OKLink>
-    </CreateUnit>
-    <ConnectUnit gr:x="225" gr:y="750" id="sv2#cnu6" name="Connect6" relationship="rel15#role30">
-      <SourceSelector id="sv2#cnu6#su84" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv2#cnu6#su84#kcond59" name="KeyCondition59" predicate="in" implied="false"/>
-      </SourceSelector>
-      <TargetSelector id="sv2#cnu6#su85" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv2#cnu6#su85#kcond60" name="KeyCondition60" predicate="in" implied="false"/>
-      </TargetSelector>
-    </ConnectUnit>
+    <DeleteUnit gr:x="910" gr:y="-330" id="sv2#dlu11" name="Elimina carta" entity="ent2">
+      <Selector id="sv2#dlu11#su83" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#dlu11#su83#kcond55" name="KeyCondition55" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+    <CreateUnit gr:x="880" gr:y="-455" id="sv2#cru17" name="Create17" entity="ent2"/>
   </OperationUnits>
 </SiteView>

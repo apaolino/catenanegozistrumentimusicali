@@ -1,0 +1,26 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="580" gr:y="825" id="sv2#opg12" name="Operation Group 12" transaction="true">
+  <OperationUnits>
+    <CreateUnit id="sv2#opg12#cru22" name="Nuovo noleggio" gr:x="85" gr:y="178" entity="ent21">
+      <OKLink id="sv2#opg12#cru22#oln52" name="OKFlow44" to="sv2#opg12#cnu7">
+        <LinkParameter id="sv2#opg12#cru22#oln52#par505" name="oid_KeyCondition58 [oid] [Prenotazione Noleggio Prodotto] [Source]" source="ent16#att16Array" target="sv2#opg12#cnu7#su96#kcond64.ent16#att16"/>
+        <LinkParameter id="sv2#opg12#cru22#oln52#par469" name="Checked oid_PASSING_KeyCondition61 [oid] [Prodotto] [Target]" sourceLinkParameter="sv2#area4#cru19#oln48#par464" target="sv2#opg12#cnu7#su97#kcond65.ent12#att12"/>
+      </OKLink>
+      <KOLink id="sv2#opg12#cru22#kln32" name="KOFlow32" to="sv2#page71#alt12#page74#mssu26" automaticCoupling="true" gr:bendpoints="201,1,126,-734;212,730,137,-5"/>
+    </CreateUnit>
+    <ConnectUnit id="sv2#opg12#cnu7" name="Connect5" gr:x="95" gr:y="378" relationship="rel12#role23">
+      <SourceSelector id="sv2#opg12#cnu7#su96" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#opg12#cnu7#su96#kcond64" name="KeyCondition58" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv2#opg12#cnu7#su97" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#opg12#cnu7#su97#kcond65" name="KeyCondition61" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv2#opg12#cnu7#oln44" name="OKFlow44" to="sv2#page71#alt12#page73#mssu25" automaticCoupling="true"/>
+      <KOLink id="sv2#opg12#cnu7#kln33" name="KOFlow33" to="sv2#page71#alt12#page74#mssu26" automaticCoupling="true" gr:bendpoints="201,-7,116,-527;211,460,126,-60"/>
+    </ConnectUnit>
+    <GetUnit id="sv2#opg12#gtu16" name="Get12" gr:x="85" gr:y="43" contextParameters="UserCtxParam">
+      <Link id="sv2#opg12#gtu16#ln191" name="Flow169" to="sv2#opg12#cru22" type="transport" validate="true">
+        <LinkParameter id="sv2#opg12#gtu16#ln191#par507" name="UserCtxParam.oid_Cliente.oid(PrenotazioneToCliente Registrato)" source="sv2#opg12#gtu16.UserCtxParam" target="sv2#opg12#cru22.rel14#role28.userOID"/>
+      </Link>
+    </GetUnit>
+  </OperationUnits>
+</OperationGroup>

@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="10" gr:y="0" id="sv2#area4#page47" name="Cataloghi associati">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="5" gr:y="0" id="sv2#area4#page47" name="Cataloghi associati">
   <ContentUnits>
     <IndexUnit gr:x="10" gr:y="0" id="sv2#area4#page47#inu4" name="Cataloghi associati" entity="ent11" displayAttributes="ent11#att46 ent11#att47" linkOrder="sv2#area4#page47#inu4#ln118">
       <Selector id="sv2#area4#page47#inu4#su61" defaultPolicy="fill" booleanOperator="and">
@@ -8,6 +8,7 @@
         <LinkParameter id="sv2#area4#page47#inu4#ln118#par404" name="oid_RoleCondition12 [oid]" source="data[].ent11#att11" target="sv2#area4#page47#alt8#page49#mciu4#su77#rcond20.ent11#att11"/>
         <LinkParameter id="sv2#area4#page47#inu4#ln118#par405" name="oid_PASSING" sourceLinkParameter="sv2#page41#inu3#ln116#par394" passing="true"/>
         <LinkParameter id="sv2#area4#page47#inu4#ln118#par450" name="oid_PASSING" source="data[].ent11#att11" passing="true"/>
+        <LinkParameter id="sv2#area4#page47#inu4#ln118#par451" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#page41#inu3#ln116#par449" passing="true"/>
       </Link>
     </IndexUnit>
   </ContentUnits>
@@ -94,7 +95,7 @@
   <Alternative gr:x="0" gr:y="125" id="sv2#area4#page47#alt8" name="Alternative8" defaultPage="sv2#area4#page47#alt8#page49">
     <Page gr:x="0" gr:y="0" id="sv2#area4#page47#alt8#page49" name="Page 49">
       <ContentUnits>
-        <MultiChoiceIndexUnit id="sv2#area4#page47#alt8#page49#mciu4" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45 ent12#att68" gr:x="5" gr:y="0" name="Elenco prodotti" linkOrder="sv2#area4#page47#alt8#page49#mciu4#ln148">
+        <MultiChoiceIndexUnit id="sv2#area4#page47#alt8#page49#mciu4" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45 ent12#att68" gr:x="5" gr:y="0" name="Elenco prodotti - Seleziona i prodotti da acquistare o noleggiare" linkOrder="sv2#area4#page47#alt8#page49#mciu4#ln148">
           <SortAttribute attribute="ent12#att66" order="ascending"/>
           <SortAttribute attribute="ent12#att68" order="ascending"/>
           <SortAttribute attribute="ent12#att67" order="ascending"/>
@@ -106,6 +107,7 @@
             <LinkParameter id="sv2#area4#page47#alt8#page49#mciu4#ln148#par383" name="Checked oid_KeyCondition56 [oid]" source="ent12#att12Checked" target="sv2#area4#page61#inu8#su82#kcond56.ent12#att12"/>
             <LinkParameter id="sv2#area4#page47#alt8#page49#mciu4#ln148#par406" name="oid_PASSING" sourceLinkParameter="sv2#area4#page47#inu4#ln118#par405" passing="true"/>
             <LinkParameter id="sv2#area4#page47#alt8#page49#mciu4#ln148#par441" name="Checked oid_PASSING" source="ent12#att12Checked" passing="true"/>
+            <LinkParameter id="sv2#area4#page47#alt8#page49#mciu4#ln148#par452" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page47#inu4#ln118#par451" passing="true"/>
           </Link>
         </MultiChoiceIndexUnit>
       </ContentUnits>

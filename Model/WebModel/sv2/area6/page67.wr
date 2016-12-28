@@ -1,0 +1,94 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="125" gr:y="320" id="sv2#area6#page67" name="Storico prenotazione eventi">
+  <ContentUnits>
+    <IndexUnit gr:x="255" gr:y="0" id="sv2#area6#page67#inu12" name="Elenco eventi prenotati" entity="ent16" displayAttributes="ent16#att31 ent16#att32" linkOrder="sv2#area6#page67#inu12#ln164">
+      <Selector id="sv2#area6#page67#inu12#su87" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area6#page67#inu12#su87#rcond30" name="RoleCondition30" predicate="in" implied="false" role="rel14#role27"/>
+        <RelationshipRoleCondition id="sv2#area6#page67#inu12#su87#rcond32" name="RoleCondition32" predicate="in" implied="false" role="rel6#role11"/>
+      </Selector>
+      <Link id="sv2#area6#page67#inu12#ln164" name="Dettagli" to="sv2#area6#page67#alt11#page68#dau11" type="normal" validate="true">
+        <LinkParameter id="sv2#area6#page67#inu12#ln164#par384" name="PrenotazioneToEvento.oid_KeyCondition55 [oid]" source="data[].rel6#role12_ent17#att17" target="sv2#area6#page67#alt11#page68#dau11#su89#kcond57.ent17#att17"/>
+      </Link>
+    </IndexUnit>
+    <GetUnit id="sv2#area6#page67#gtu11" name="GetUID" gr:x="0" gr:y="20" contextParameters="UserCtxParam">
+      <Link id="sv2#area6#page67#gtu11#ln162" name="Flow161" to="sv2#area6#page67#inu12" type="transport" validate="true">
+        <LinkParameter id="sv2#area6#page67#gtu11#ln162#par382" name="UserCtxParam.oid_RoleCondition30 [oid]" source="sv2#area6#page67#gtu11.UserCtxParam" target="sv2#area6#page67#inu12#su87#rcond30.userOID"/>
+      </Link>
+    </GetUnit>
+    <SelectorUnit gr:x="10" gr:y="135" id="sv2#area6#page67#seu41" name="Recupero id eventi" entity="ent17">
+      <Link id="sv2#area6#page67#seu41#ln163" name="Flow163" to="sv2#area6#page67#inu12" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area6#page67#inu12">
+          <layout:Attribute attribute="ent16#att31"/>
+          <layout:Attribute attribute="ent16#att32"/>
+          <layout:Link link="sv2#area6#page67#inu12#ln164"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv2#area6#page67#alt11#page68">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv2#area6#page67#alt11#page68#dau11">
+                  <layout:Attribute attribute="ent17#att62"/>
+                  <layout:Attribute attribute="ent17#att61"/>
+                  <layout:Attribute attribute="ent17#att63"/>
+                  <layout:Attribute attribute="ent17#att64"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative gr:x="490" gr:y="10" id="sv2#area6#page67#alt11" name="Alternative11" defaultPage="sv2#area6#page67#alt11#page68">
+    <Page gr:x="0" gr:y="0" id="sv2#area6#page67#alt11#page68" name="Dettagli evento">
+      <ContentUnits>
+        <DataUnit id="sv2#area6#page67#alt11#page68#dau11" entity="ent17" gr:x="0" gr:y="0" name="Simple List13" displayAttributes="ent17#att62 ent17#att61 ent17#att63 ent17#att64">
+          <Selector id="sv2#area6#page67#alt11#page68#dau11#su89" defaultPolicy="fill" booleanOperator="and">
+            <KeyCondition id="sv2#area6#page67#alt11#page68#dau11#su89#kcond57" predicate="in" implied="false" name="KeyCondition55"/>
+          </Selector>
+        </DataUnit>
+      </ContentUnits>
+    </Page>
+  </Alternative>
+</Page>

@@ -1,0 +1,40 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="670" gr:y="365" id="sv2#area4#page69" name="Noleggio">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv2#area4#page69#enu19" name="Dati noleggio" linkOrder="sv2#area4#page69#enu19#ln177">
+      <Field id="sv2#area4#page69#enu19#fld118" name="Ritiro prodotto" type="timestamp" modifiable="true"/>
+      <Field id="sv2#area4#page69#enu19#fld119" name="Riconsegna prevista" type="timestamp" modifiable="true"/>
+      <Field id="sv2#area4#page69#enu19#fld120" name="Cauzione versata" type="string" modifiable="true"/>
+      <Link id="sv2#area4#page69#enu19#ln177" name="Procedi" to="sv2#area4#page70#inu15" type="normal" validate="true">
+        <LinkParameter id="sv2#area4#page69#enu19#ln177#par515" name="Cauzione versata_PASSING" source="sv2#area4#page69#enu19#fld120" passing="true"/>
+        <LinkParameter id="sv2#area4#page69#enu19#ln177#par516" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page61#mssu22#ln167#par403" passing="true"/>
+        <LinkParameter id="sv2#area4#page69#enu19#ln177#par517" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page61#mssu22#ln167#par454" passing="true"/>
+        <LinkParameter id="sv2#area4#page69#enu19#ln177#par518" name="Riconsegna prevista_PASSING" source="sv2#area4#page69#enu19#fld119" passing="true"/>
+        <LinkParameter id="sv2#area4#page69#enu19#ln177#par519" name="Ritiro prodotto_PASSING" source="sv2#area4#page69#enu19#fld118" passing="true"/>
+        <LinkParameter id="sv2#area4#page69#enu19#ln177#par520" name="oid_PASSING" sourceLinkParameter="sv2#area4#page61#mssu22#ln167#par410" passing="true"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area4#page69#enu19">
+          <layout:Field field="sv2#area4#page69#enu19#fld118"/>
+          <layout:Field field="sv2#area4#page69#enu19#fld119"/>
+          <layout:Field field="sv2#area4#page69#enu19#fld120"/>
+          <layout:Link link="sv2#area4#page69#enu19#ln177"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
