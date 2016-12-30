@@ -1,0 +1,110 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="280" gr:y="15" id="sv3#area12#page95" name="Gestione acquisti">
+  <ContentUnits>
+    <IndexUnit gr:x="150" gr:y="0" id="sv3#area12#page95#inu7" name="Acquisti odierni" entity="ent15" displayAttributes="ent15#att30 ent15#att2 rel17#role34.User#att20 rel17#role34.User#att21 count(rel15#role29.ent12#att12)" linkOrder="sv3#area12#page95#inu7#ln222 sv3#area12#page95#inu7#ln231">
+      <Selector id="sv3#area12#page95#inu7#su122" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area12#page95#inu7#su122#rcond42" name="RoleCondition42" predicate="in" implied="false" role="rel16#role32"/>
+        <AttributesCondition id="sv3#area12#page95#inu7#su122#acond12" name="data" predicate="gteq" booleanOperator="or" implied="false" attributes="ent15#att30"/>
+      </Selector>
+      <Link id="sv3#area12#page95#inu7#ln222" name="Elimina" to="sv3#dcnu10" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv3#area12#page95#inu7#ln231" name="Visualizza prodotti ordinati" to="sv3#area12#page95#alt18#page96#inu23" automaticCoupling="true" type="normal" validate="true"/>
+    </IndexUnit>
+    <GetUnit gr:x="0" gr:y="0" id="sv3#area12#page95#gtu23" name="GetUID" contextParameters="UserCtxParam">
+      <Link id="sv3#area12#page95#gtu23#ln133" name="Flow133" to="sv3#area12#page95#seu39" type="transport" validate="true">
+        <LinkParameter id="sv3#area12#page95#gtu23#ln133#par374" name="UserCtxParam.oid_RoleCondition35 [oid]" source="sv3#area12#page95#gtu23.UserCtxParam" target="sv3#area12#page95#seu39#su121#rcond35.userOID"/>
+      </Link>
+    </GetUnit>
+    <SelectorUnit gr:x="0" gr:y="180" id="sv3#area12#page95#seu39" name="Recupero id negozio" entity="ent10">
+      <Selector id="sv3#area12#page95#seu39#su121" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area12#page95#seu39#su121#rcond35" name="RoleCondition35" predicate="in" implied="false" role="rel4#role7"/>
+      </Selector>
+      <Link id="sv3#area12#page95#seu39#ln136" name="Flow136" to="sv3#area12#page95#inu7" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <TimeUnit gr:x="235" gr:y="185" id="sv3#area12#page95#tmu9" name="Current date">
+      <Link id="sv3#area12#page95#tmu9#ln138" name="Flow138" to="sv3#area12#page95#inu7" type="transport" validate="true">
+        <LinkParameter id="sv3#area12#page95#tmu9#ln138#par375" name="Current/Input Date_data" source="currentDate" target="sv3#area12#page95#inu7#su122#acond12"/>
+      </Link>
+    </TimeUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area12#page95#inu7">
+          <layout:Attribute attribute="ent15#att30"/>
+          <layout:Attribute attribute="ent15#att2"/>
+          <layout:Attribute attribute="rel17#role34.User#att20"/>
+          <layout:Attribute attribute="rel17#role34.User#att21"/>
+          <layout:Attribute attribute="count(rel15#role29.ent12#att12)"/>
+          <layout:Link link="sv3#area12#page95#inu7#ln222"/>
+          <layout:Link link="sv3#area12#page95#inu7#ln231"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv3#area12#page95#alt18#page96">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv3#area12#page95#alt18#page96#inu23">
+                  <layout:Attribute attribute="ent12#att1"/>
+                  <layout:Attribute attribute="ent12#att41"/>
+                  <layout:Attribute attribute="ent12#att42"/>
+                  <layout:Attribute attribute="ent12#att43"/>
+                  <layout:Attribute attribute="ent12#att44"/>
+                  <layout:Attribute attribute="ent12#att45"/>
+                  <layout:Attribute attribute="ent12#att66"/>
+                  <layout:Attribute attribute="ent12#att67"/>
+                  <layout:Attribute attribute="ent12#att68"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative gr:x="360" gr:y="80" id="sv3#area12#page95#alt18" name="Alternative18" defaultPage="sv3#area12#page95#alt18#page96">
+    <Page gr:x="0" gr:y="0" id="sv3#area12#page95#alt18#page96" name="Page 96">
+      <ContentUnits>
+        <IndexUnit gr:x="0" gr:y="0" id="sv3#area12#page95#alt18#page96#inu23" name="Prodotti associati" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45 ent12#att66 ent12#att67 ent12#att68">
+          <Selector id="sv3#area12#page95#alt18#page96#inu23#su130" defaultPolicy="fill" booleanOperator="and">
+            <RelationshipRoleCondition id="sv3#area12#page95#alt18#page96#inu23#su130#rcond43" name="RoleCondition43" predicate="in" implied="false" role="rel15#role29"/>
+          </Selector>
+        </IndexUnit>
+      </ContentUnits>
+    </Page>
+  </Alternative>
+</Page>

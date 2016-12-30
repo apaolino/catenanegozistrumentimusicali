@@ -1,0 +1,41 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-1505" gr:y="-815" id="sv2#opg17" name="Eliminazione recensioni" transaction="true">
+  <OperationUnits>
+    <DisconnectUnit id="sv2#opg17#dcnu12" name="Disc_valutazione_prodotto" gr:x="252" gr:y="272" relationship="rel21#role41">
+      <SourceSelector id="sv2#opg17#dcnu12#su134" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#opg17#dcnu12#su134#kcond93" name="KeyCondition91" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv2#opg17#dcnu12#su135" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#opg17#dcnu12#su135#kcond94" name="KeyCondition92" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv2#opg17#dcnu12#oln85" name="OKFlow82" to="sv2#opg17#dlu16" automaticCoupling="true"/>
+      <KOLink id="sv2#opg17#dcnu12#kln46" name="KOFlow46" to="sv2#page92#alt17#page94#mssu35" automaticCoupling="true"/>
+    </DisconnectUnit>
+    <DeleteUnit id="sv2#opg17#dlu16" name="Elimina recensione" gr:x="82" gr:y="92" entity="ent18">
+      <Selector id="sv2#opg17#dlu16#su136" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#opg17#dlu16#su136#kcond95" name="KeyCondition90" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#opg17#dlu16#oln90" name="OKFlow90" to="sv2#page92#alt17#page93#mssu34" automaticCoupling="true"/>
+      <KOLink id="sv2#opg17#dlu16#kln45" name="KOFlow45" to="sv2#page92#alt17#page94#mssu35" automaticCoupling="true"/>
+    </DeleteUnit>
+    <SwitchUnit id="sv2#opg17#switch2" name="switch_prodotto_negozio" gr:x="477" gr:y="192">
+      <Case value="Prodotto"/>
+      <Case value="Negozio"/>
+      <OKLink id="sv2#opg17#switch2#oln86" name="OKFlow83" to="sv2#opg17#dcnu13">
+        <LinkParameter id="sv2#opg17#switch2#oln86#par619" name="oid_PASSING_KeyCondition88 [oid] [Recensione] [Source]" sourceLinkParameter="sv2#area10#page50#inu6#ln234#par622" target="sv2#opg17#dcnu13#su137#kcond96.ent18#att18"/>
+      </OKLink>
+      <OKLink id="sv2#opg17#switch2#oln87" name="OKFlow84" to="sv2#opg17#dcnu12">
+        <LinkParameter id="sv2#opg17#switch2#oln87#par620" name="oid_PASSING_KeyCondition91 [oid] [Recensione] [Source]" sourceLinkParameter="sv2#area10#page50#inu6#ln234#par622" target="sv2#opg17#dcnu12#su134#kcond93.ent18#att18"/>
+      </OKLink>
+    </SwitchUnit>
+    <DisconnectUnit id="sv2#opg17#dcnu13" name="Disc_valutazione_negozio" gr:x="302" gr:y="52" relationship="rel18#role35">
+      <SourceSelector id="sv2#opg17#dcnu13#su137" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#opg17#dcnu13#su137#kcond96" name="KeyCondition88" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv2#opg17#dcnu13#su138" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#opg17#dcnu13#su138#kcond97" name="KeyCondition89" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv2#opg17#dcnu13#oln88" name="OKFlow81" to="sv2#opg17#dlu16" automaticCoupling="true"/>
+      <KOLink id="sv2#opg17#dcnu13#kln44" name="KOFlow44" to="sv2#page92#alt17#page94#mssu35" automaticCoupling="true"/>
+    </DisconnectUnit>
+  </OperationUnits>
+</OperationGroup>

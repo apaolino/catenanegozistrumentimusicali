@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area13#page41" name="Modifica Dati" landmark="false" gr:x="510" gr:y="25">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area13#page41" name="Modifica Dati" landmark="false" gr:x="520" gr:y="25">
   <ContentUnits>
-    <EntryUnit id="sv3#area13#page41#enu13" name="Modifica dati" linkOrder="sv3#area13#page41#enu13#ln66" gr:x="30" gr:y="0" fieldOrder="sv3#area13#page41#enu13#fld46 sv3#area13#page41#enu13#fld47 sv3#area13#page41#enu13#fld48 sv3#area13#page41#enu13#fld60 sv3#area13#page41#enu13#fld61 sv3#area13#page41#enu13#fld62 sv3#area13#page41#enu13#fld63 sv3#area13#page41#enu13#fld64 sv3#area13#page41#enu13#fld100 sv3#area13#page41#enu13#fld103 sv3#area13#page41#enu13#fld102 sv3#area13#page41#enu13#fld104 sv3#area13#page41#enu13#sfld10 sv3#area13#page41#enu13#fld101 sv3#area13#page41#enu13#fld105 sv3#area13#page41#enu13#fld106">
+    <EntryUnit id="sv3#area13#page41#enu13" name="Modifica dati" linkOrder="sv3#area13#page41#enu13#ln66" gr:x="20" gr:y="0" fieldOrder="sv3#area13#page41#enu13#fld46 sv3#area13#page41#enu13#fld47 sv3#area13#page41#enu13#fld48 sv3#area13#page41#enu13#fld60 sv3#area13#page41#enu13#fld61 sv3#area13#page41#enu13#fld62 sv3#area13#page41#enu13#fld63 sv3#area13#page41#enu13#fld64 sv3#area13#page41#enu13#fld100 sv3#area13#page41#enu13#fld103 sv3#area13#page41#enu13#fld102 sv3#area13#page41#enu13#fld104 sv3#area13#page41#enu13#sfld10 sv3#area13#page41#enu13#fld101 sv3#area13#page41#enu13#fld105 sv3#area13#page41#enu13#fld106">
       <Field id="sv3#area13#page41#enu13#fld46" name="Username" type="string" modifiable="true" preloaded="true"/>
       <Field id="sv3#area13#page41#enu13#fld47" name="Password" type="string" modifiable="true" preloaded="true"/>
       <Field id="sv3#area13#page41#enu13#fld48" name="Email" type="string" modifiable="true" preloaded="true"/>
@@ -40,7 +40,7 @@
         <LinkParameter id="sv3#area13#page41#enu13#ln82#par221" name="oid_PASSING_KeyCondition13 [oid]" sourceLinkParameter="sv3#area13#page44#dau7#ln97#par279" target="sv3#area13#opg8#mfu2#su47#kcond32.ent1#att3"/>
       </Link>
     </EntryUnit>
-    <SelectorUnit id="sv3#area13#page41#seu1" name="Selettore Zona" gr:x="0" gr:y="260" entity="ent3">
+    <SelectorUnit id="sv3#area13#page41#seu1" name="Selettore Zona" gr:x="0" gr:y="190" entity="ent3">
       <Link id="sv3#area13#page41#seu1#ln83" name="Flow70" to="sv3#area13#page41#enu13" type="transport" validate="true">
         <LinkParameter id="sv3#area13#page41#seu1#ln83#par222" name="Provincia_Provincia [label]" source="ent3#att70Array" target="sv3#area13#page41#enu13#sfld10_label"/>
         <LinkParameter id="sv3#area13#page41#seu1#ln83#par225" name="oid_Provincia [output]" source="ent3#att69Array" target="sv3#area13#page41#enu13#sfld10_output"/>

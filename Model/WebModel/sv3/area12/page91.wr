@@ -1,0 +1,34 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv3#area12#page91" name="Scegli cosa vuoi gestire">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv3#area12#page91#mssu36" linkOrder="sv3#area12#page91#mssu36#ln218 sv3#area12#page91#mssu36#ln232 sv3#area12#page91#mssu36#ln248 sv3#area12#page91#mssu36#ln253">
+      <Message xml:space="preserve">Clicca sulla categoria da gestire:</Message>
+      <Link id="sv3#area12#page91#mssu36#ln218" name="Acquisti" to="sv3#area12#page95" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv3#area12#page91#mssu36#ln232" name="Prenotazioni sala prove" to="sv3#area12#page97" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="183,290,-367,-165"/>
+      <Link id="sv3#area12#page91#mssu36#ln248" name="Prenotazioni eventi" to="sv3#area12#page99" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="221,600,-384,-145"/>
+      <Link id="sv3#area12#page91#mssu36#ln253" name="Noleggio prodotti" to="sv3#area12#page100" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="73,793,-547,-282"/>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area12#page91#mssu36">
+          <layout:Link link="sv3#area12#page91#mssu36#ln218"/>
+          <layout:Link link="sv3#area12#page91#mssu36#ln232"/>
+          <layout:Link link="sv3#area12#page91#mssu36#ln248"/>
+          <layout:Link link="sv3#area12#page91#mssu36#ln253"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,0 +1,13 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1815" gr:y="220" id="sv2#opg14" name="Operation Group 14" transaction="true">
+  <OperationUnits>
+    <GetUnit id="sv2#opg14#gtu22" name="GetUID" gr:x="46" gr:y="35" contextParameters="UserCtxParam">
+      <Link id="sv2#opg14#gtu22#ln219" name="Flow129" to="sv2#opg14#cru10" type="transport" validate="true">
+        <LinkParameter id="sv2#opg14#gtu22#ln219#par512" name="UserCtxParam.oid_Cliente.oid(PrenotazioneToCliente Registrato)" source="sv2#opg14#gtu22.UserCtxParam" target="sv2#opg14#cru10.rel14#role28.userOID"/>
+      </Link>
+    </GetUnit>
+    <CreateUnit id="sv2#opg14#cru10" name="Aggiungi prenotazione sala prove" gr:x="41" gr:y="170" entity="ent16">
+      <OKLink id="sv2#opg14#cru10#oln58" name="OKFlow58" to="sv2#page87#alt16#page88#mssu32" automaticCoupling="true"/>
+      <KOLink id="sv2#opg14#cru10#kln43" name="KOFlow43" to="sv2#page87#alt16#page89#mssu33" automaticCoupling="true"/>
+    </CreateUnit>
+  </OperationUnits>
+</OperationGroup>

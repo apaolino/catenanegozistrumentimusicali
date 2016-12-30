@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="120" gr:y="770" id="sv2#area4#page63" name="Inseirmento dati nuova carta ">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="135" gr:y="770" id="sv2#area4#page63" name="Inseirmento dati nuova carta ">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv2#area4#page63#enu18" name="Dati nuova carta" linkOrder="sv2#area4#page63#enu18#ln161">
       <Field id="sv2#area4#page63#enu18#fld115" name="Numero" type="integer" modifiable="true"/>
@@ -14,7 +14,7 @@
       </Link>
     </EntryUnit>
     <TimeUnit id="sv2#area4#page63#tmu4" name="Giorno corrente" gr:x="173" gr:y="56">
-      <Link id="sv2#area4#page63#tmu4#ln166" name="Flow166" to="sv2#opg11#cru15" type="transport" validate="true">
+      <Link id="sv2#area4#page63#tmu4#ln166" name="Flow166" to="sv2#opg11#cru15" type="transport" validate="true" gr:bendpoints="-182,157,123,-223">
         <LinkParameter id="sv2#area4#page63#tmu4#ln166#par533" name="Current/Input Timestamp_Data acquisto" source="currentTimestamp" target="sv2#opg11#cru15.ent15#att30"/>
         <LinkParameter id="sv2#area4#page63#tmu4#ln166#par534" name="Current/Input Timestamp_Data evasione" source="currentTimestamp" target="sv2#opg11#cru15.ent15#att2"/>
       </Link>
@@ -30,6 +30,20 @@
           <layout:Link link="sv2#area4#page63#enu18#ln161"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

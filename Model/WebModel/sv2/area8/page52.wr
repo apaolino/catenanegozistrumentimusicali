@@ -1,8 +1,9 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv2#area8#page52" name="Elenco eventi del negozio">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="70" gr:y="0" id="sv2#area8#page52" name="Elenco eventi del negozio">
   <ContentUnits>
-    <EventCalendarUnit gr:x="0" gr:y="0" id="sv2#area8#page52#ecu2" name="Calendario eventi" entityBased="true" entity="ent17" displayAttributes="ent17#att62" dateAttribute="ent17#att61" linkOrder="sv2#area8#page52#ecu2#ln124">
+    <EventCalendarUnit gr:x="0" gr:y="0" id="sv2#area8#page52#ecu2" name="Seleziona evento" entityBased="true" entity="ent17" displayAttributes="ent17#att62" dateAttribute="ent17#att61" linkOrder="sv2#area8#page52#ecu2#ln124">
       <Selector id="sv2#area8#page52#ecu2#su67" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area8#page52#ecu2#su67#rcond15" name="RoleCondition15" predicate="in" implied="false" role="rel10#role20"/>
+        <AttributesCondition id="sv2#area8#page52#ecu2#su67#acond7" name="posti" predicate="gt" booleanOperator="or" implied="false" attributes="ent17#att65" value="0"/>
       </Selector>
       <SortAttribute attribute="ent17#att61" order="ascending"/>
       <Link id="sv2#area8#page52#ecu2#ln124" to="sv2#area8#page53#dau6" type="normal" validate="true">

@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="130" gr:y="45" id="sv2#area6#page65" name="Storico acquisti">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="245" gr:y="0" id="sv2#area6#page65" name="Storico acquisti" linkOrder="sv2#area6#page65#ln190">
   <ContentUnits>
-    <GetUnit gr:x="0" gr:y="0" id="sv2#area6#page65#gtu4" name="Get4" contextParameters="UserCtxParam">
+    <GetUnit gr:x="0" gr:y="0" id="sv2#area6#page65#gtu4" name="GetUID" contextParameters="UserCtxParam">
       <Link id="sv2#area6#page65#gtu4#ln155" name="Flow155" to="sv2#area6#page65#inu9" type="transport" validate="true">
         <LinkParameter id="sv2#area6#page65#gtu4#ln155#par376" name="UserCtxParam.oid_RoleCondition24 [oid]" source="sv2#area6#page65#gtu4.UserCtxParam" target="sv2#area6#page65#inu9#su81#rcond24.userOID"/>
       </Link>
@@ -10,6 +10,7 @@
         <RelationshipRoleCondition id="sv2#area6#page65#inu9#su81#rcond24" name="RoleCondition24" predicate="in" implied="false" role="rel17#role33"/>
       </Selector>
       <Link id="sv2#area6#page65#inu9#ln156" name="Dettagli" to="sv2#area6#page65#alt10#page66#inu11" automaticCoupling="true" type="normal" validate="true"/>
+      <SortAttribute attribute="ent15#att30" order="descending"/>
     </IndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -99,4 +100,5 @@
       </ContentUnits>
     </Page>
   </Alternative>
+  <Link id="sv2#area6#page65#ln190" name="Elimina acquisto (se odierno)" to="sv2#area6#page80" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

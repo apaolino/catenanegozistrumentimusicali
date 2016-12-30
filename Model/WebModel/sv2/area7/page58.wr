@@ -1,14 +1,14 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="405" gr:y="0" id="sv2#area7#page58" name="Nuova prenotazione">
   <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="0" id="sv2#area7#page58#enu17" name="Selezionare data e ora della prenotazione" linkOrder="sv2#area7#page58#enu17#ln125" ajaxEnableExpandedLinks="false">
-      <Field id="sv2#area7#page58#enu17#fld106" name="Inizio prenotazione" type="timestamp" modifiable="true" ajaxEventEnabled="false"/>
-      <Field id="sv2#area7#page58#enu17#fld114" name="Fine prenotazione" type="timestamp" modifiable="true" ajaxEventEnabled="false" ajaxAutocompleteEnabled="false" ajaxAutocompleteDepending="sv2#area7#page58#enu17#fld106"/>
-      <Link id="sv2#area7#page58#enu17#ln125" name="Prenota" to="sv2#cru13" type="normal" validate="true">
-        <LinkParameter id="sv2#area7#page58#enu17#ln125#par365" name="Fine prenotazione_Data fine" source="sv2#area7#page58#enu17#fld114" target="sv2#cru13.ent16#att32"/>
-        <LinkParameter id="sv2#area7#page58#enu17#ln125#par366" name="Inizio prenotazione_Data inizio" source="sv2#area7#page58#enu17#fld106" target="sv2#cru13.ent16#att31"/>
-        <LinkParameter id="sv2#area7#page58#enu17#ln125#par373" name="NegozioToGestore Singolo Negozio.oid_PASSING_Gestore Singolo Negozio.oid(PrenotazioneToGestore Singolo Negozio)" sourceLinkParameter="sv2#area7#page48#mssu19#ln122#par369" target="sv2#cru13.rel13#role25.userOID"/>
-        <LinkParameter id="sv2#area7#page58#enu17#ln125#par374" name="oid_PASSING_Negozio.oid(PrenotazioneToNegozio)" sourceLinkParameter="sv2#area7#page48#mssu19#ln122#par372" target="sv2#cru13.rel11#role21.ent10#att10"/>
-        <LinkParameter id="sv2#area7#page58#enu17#ln125#par375" name="NegozioToSala prove.oid_PASSING_Sala prove.oid(PrenotazioneToSala prove)" sourceLinkParameter="sv2#area7#page48#mssu19#ln122#par370" target="sv2#cru13.rel9#role18.ent19#att19"/>
+    <EntryUnit gr:x="0" gr:y="0" id="sv2#area7#page58#enu17" name="Selezionare data e ora della prenotazione" ajaxEnableExpandedLinks="false" linkOrder="sv2#area7#page58#enu17#ln220">
+      <Field id="sv2#area7#page58#enu17#fld106" name="Inizio prenotazione" type="timestamp" modifiable="true" ajaxEventEnabled="false" ajaxAutocompleteEnabled="false"/>
+      <Field id="sv2#area7#page58#enu17#fld114" name="Fine prenotazione" type="timestamp" modifiable="true" ajaxEventEnabled="false" ajaxAutocompleteEnabled="false" ajaxAutocompleteDepending="sv2#area7#page58#enu17#fld106" ajaxEventIndicator="false"/>
+      <Link id="sv2#area7#page58#enu17#ln220" name="Prenota" to="sv2#opg14#cru10" type="normal" validate="true">
+        <LinkParameter id="sv2#area7#page58#enu17#ln220#par513" name="Fine prenotazione_Data fine" source="sv2#area7#page58#enu17#fld114" target="sv2#opg14#cru10.ent16#att32"/>
+        <LinkParameter id="sv2#area7#page58#enu17#ln220#par514" name="Inizio prenotazione_Data inizio" source="sv2#area7#page58#enu17#fld106" target="sv2#opg14#cru10.ent16#att31"/>
+        <LinkParameter id="sv2#area7#page58#enu17#ln220#par544" name="NegozioToGestore Singolo Negozio.oid_PASSING_Gestore Singolo Negozio.oid(PrenotazioneToGestore Singolo Negozio)" sourceLinkParameter="sv2#area7#page48#mssu19#ln122#par369" target="sv2#opg14#cru10.rel13#role25.userOID"/>
+        <LinkParameter id="sv2#area7#page58#enu17#ln220#par545" name="oid_PASSING_Negozio.oid(PrenotazioneToNegozio)" sourceLinkParameter="sv2#area7#page48#mssu19#ln122#par372" target="sv2#opg14#cru10.rel11#role21.ent10#att10"/>
+        <LinkParameter id="sv2#area7#page58#enu17#ln220#par547" name="NegozioToSala prove.oid_PASSING_Sala prove.oid(PrenotazioneToSala prove)" sourceLinkParameter="sv2#area7#page48#mssu19#ln122#par370" target="sv2#opg14#cru10.rel9#role18.ent19#att19"/>
       </Link>
     </EntryUnit>
   </ContentUnits>
@@ -18,7 +18,7 @@
         <layout:Unit unitId="sv2#area7#page58#enu17">
           <layout:Field field="sv2#area7#page58#enu17#fld106"/>
           <layout:Field field="sv2#area7#page58#enu17#fld114"/>
-          <layout:Link link="sv2#area7#page58#enu17#ln125"/>
+          <layout:Link link="sv2#area7#page58#enu17#ln220"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

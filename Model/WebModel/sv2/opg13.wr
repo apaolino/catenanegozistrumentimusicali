@@ -1,0 +1,49 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-2385" gr:y="1570" id="sv2#opg13" name="Elimina dati prenotazione" transaction="true">
+  <OperationUnits>
+    <SelectorUnit id="sv2#opg13#seu42" name="Seleziona evento" gr:x="170" gr:y="15" entity="ent17">
+      <Selector id="sv2#opg13#seu42#su101" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#opg13#seu42#su101#kcond68" name="KeyCondition60" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#opg13#seu42#oln63" name="OKFlow58" to="sv2#opg13#mathu3">
+        <LinkParameter id="sv2#opg13#seu42#oln63#par559" name="Posti disponibili_c" source="ent17#att65Array" target="sv2#opg13#mathu3#mathv3"/>
+        <LinkParameter id="sv2#opg13#seu42#oln63#par560" name="c +1_Expression" target="sv2#opg13#mathu3.expr" sourceValue="c +1"/>
+        <LinkParameter id="sv2#opg13#seu42#oln63#par561" name="Data fine evento_PASSING" source="ent17#att63Array" passing="true"/>
+        <LinkParameter id="sv2#opg13#seu42#oln63#par562" name="Data inizio evento_PASSING" source="ent17#att61Array" passing="true"/>
+        <LinkParameter id="sv2#opg13#seu42#oln63#par563" name="EventoToGestore Singolo Negozio.oid_PASSING" source="rel5#role10_userOIDArray" passing="true"/>
+        <LinkParameter id="sv2#opg13#seu42#oln63#par564" name="EventoToNegozio.oid_PASSING" source="rel10#role19_ent10#att10Array" passing="true"/>
+        <LinkParameter id="sv2#opg13#seu42#oln63#par565" name="EventoToPeriodo.oid_PASSING" source="rel41#role81_ent22#att72Array" passing="true"/>
+        <LinkParameter id="sv2#opg13#seu42#oln63#par566" name="Nome evento_PASSING" source="ent17#att62Array" passing="true"/>
+        <LinkParameter id="sv2#opg13#seu42#oln63#par567" name="Prezzo_PASSING" source="ent17#att64Array" passing="true"/>
+        <LinkParameter id="sv2#opg13#seu42#oln63#par568" name="oid_PASSING" source="ent17#att17Array" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <MathUnit id="sv2#opg13#mathu3" name="Calcolo posti" gr:x="365" gr:y="20" resultType="float" defaultExpression="c +1">
+      <MathVariable id="sv2#opg13#mathu3#mathv3" name="c"/>
+      <OKLink id="sv2#opg13#mathu3#oln64" name="OKFlow60" to="sv2#opg13#mfu15">
+        <LinkParameter id="sv2#opg13#mathu3#oln64#par569" name="Data fine evento_PASSING_Data fine evento" sourceLinkParameter="sv2#opg13#seu42#oln63#par561" target="sv2#opg13#mfu15.ent17#att63"/>
+        <LinkParameter id="sv2#opg13#mathu3#oln64#par570" name="Data inizio evento_PASSING_Data inizio evento" sourceLinkParameter="sv2#opg13#seu42#oln63#par562" target="sv2#opg13#mfu15.ent17#att61"/>
+        <LinkParameter id="sv2#opg13#mathu3#oln64#par571" name="EventoToGestore Singolo Negozio.oid_PASSING_Gestore Singolo Negozio.oid(EventoToGestore Singolo Negozio)" sourceLinkParameter="sv2#opg13#seu42#oln63#par563" target="sv2#opg13#mfu15.rel5#role10.userOID"/>
+        <LinkParameter id="sv2#opg13#mathu3#oln64#par572" name="EventoToNegozio.oid_PASSING_Negozio.oid(EventoToNegozio)" sourceLinkParameter="sv2#opg13#seu42#oln63#par564" target="sv2#opg13#mfu15.rel10#role19.ent10#att10"/>
+        <LinkParameter id="sv2#opg13#mathu3#oln64#par573" name="Nome evento_PASSING_Nome evento" sourceLinkParameter="sv2#opg13#seu42#oln63#par566" target="sv2#opg13#mfu15.ent17#att62"/>
+        <LinkParameter id="sv2#opg13#mathu3#oln64#par574" name="EventoToPeriodo.oid_PASSING_Periodo.oid(EventoToPeriodo)" sourceLinkParameter="sv2#opg13#seu42#oln63#par565" target="sv2#opg13#mfu15.rel41#role81.ent22#att72"/>
+        <LinkParameter id="sv2#opg13#mathu3#oln64#par575" name="Result_Posti disponibili" source="result" target="sv2#opg13#mfu15.ent17#att65"/>
+        <LinkParameter id="sv2#opg13#mathu3#oln64#par576" name="Prezzo_PASSING_Prezzo" sourceLinkParameter="sv2#opg13#seu42#oln63#par567" target="sv2#opg13#mfu15.ent17#att64"/>
+        <LinkParameter id="sv2#opg13#mathu3#oln64#par577" name="oid_PASSING_KeyCondition59 [oid]" sourceLinkParameter="sv2#opg13#seu42#oln63#par568" target="sv2#opg13#mfu15#su102#kcond70.ent17#att17"/>
+      </OKLink>
+    </MathUnit>
+    <ModifyUnit id="sv2#opg13#mfu15" name="Aggiorna evento" gr:x="500" gr:y="0" entity="ent17">
+      <Selector id="sv2#opg13#mfu15#su102" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#opg13#mfu15#su102#kcond70" name="KeyCondition59" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#opg13#mfu15#oln75" name="OKFlow75" to="sv2#area6#page67" automaticCoupling="true"/>
+    </ModifyUnit>
+    <DeleteUnit id="sv2#opg13#dlu13" name="Elimina prenotazione" gr:x="0" gr:y="15" entity="ent16">
+      <Selector id="sv2#opg13#dlu13#su105" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#opg13#dlu13#su105#kcond71" name="KeyCondition58" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#opg13#dlu13#oln72" name="OKFlow34" to="sv2#opg13#seu42">
+        <LinkParameter id="sv2#opg13#dlu13#oln72#par597" name="PrenotazioneToEvento.oid_PASSING_KeyCondition60 [oid]" sourceLinkParameter="sv2#area6#page82#inu21#ln201#par589" target="sv2#opg13#seu42#su101#kcond68.ent17#att17"/>
+      </OKLink>
+    </DeleteUnit>
+  </OperationUnits>
+</OperationGroup>

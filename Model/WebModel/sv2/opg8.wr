@@ -5,7 +5,7 @@
         <KeyCondition id="sv2#opg8#mfu11#su59#kcond43" name="KeyCondition42" predicate="in" implied="false"/>
       </Selector>
       <KOLink id="sv2#opg8#mfu11#kln26" name="KOFlow26" to="sv2#page44#alt4#page46" automaticCoupling="true"/>
-      <OKLink id="sv2#opg8#mfu11#oln37" name="OKFlow37" to="sv2#area1#page43#enu15" automaticCoupling="true" gr:bendpoints="112,-21,478,114;92,-279,458,-144;-2,-284,364,-149"/>
+      <OKLink id="sv2#opg8#mfu11#oln34" name="OKFlow34" to="sv2#area1#page42" automaticCoupling="true" gr:bendpoints="-184,-198,486,-98;-379,-225,291,-125"/>
     </ModifyUnit>
     <ModifyUnit id="sv2#opg8#mfu12" name="Aggiorna dati" gr:x="0" gr:y="0" entity="User">
       <Selector id="sv2#opg8#mfu12#su60" defaultPolicy="fill" booleanOperator="and">

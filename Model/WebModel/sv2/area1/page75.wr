@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="10" gr:y="165" id="sv2#area1#page75" name="Page 75" linkOrder="sv2#area1#page75#ln173">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="10" gr:y="165" id="sv2#area1#page75" name="Visualizzazione carte di credito" linkOrder="sv2#area1#page75#ln173">
   <ContentUnits>
     <GetUnit gr:x="0" gr:y="5" id="sv2#area1#page75#gtu10" name="GetUID" contextParameters="UserCtxParam">
       <Link id="sv2#area1#page75#gtu10#ln180" name="Flow180" to="sv2#area1#page75#inu14" automaticCoupling="true" type="transport" validate="true"/>

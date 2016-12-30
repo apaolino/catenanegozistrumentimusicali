@@ -1,0 +1,21 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-1275" gr:y="-265" id="sv2#opg16" name="Salva recensione negozio" transaction="true">
+  <OperationUnits>
+    <ConnectUnit id="sv2#opg16#cnu15" name="Valutazione_negozio" gr:x="47" gr:y="39" relationship="rel18#role35">
+      <SourceSelector id="sv2#opg16#cnu15#su127" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#opg16#cnu15#su127#kcond86" name="KeyCondition60" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv2#opg16#cnu15#su128" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#opg16#cnu15#su128#kcond87" name="KeyCondition61" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv2#opg16#cnu15#oln91" name="OKFlow91" to="sv2#page92#alt17#page93#mssu34" automaticCoupling="true"/>
+      <KOLink id="sv2#opg16#cnu15#kln47" name="KOFlow47" to="sv2#page92#alt17#page94#mssu35" automaticCoupling="true"/>
+    </ConnectUnit>
+    <CreateUnit id="sv2#opg16#cru23" name="Nuova recensione negozio" gr:x="282" gr:y="69" entity="ent18">
+      <OKLink id="sv2#opg16#cru23#oln80" name="OKFlow60" to="sv2#opg16#cnu15">
+        <LinkParameter id="sv2#opg16#cru23#oln80#par602" name="oid_KeyCondition60 [oid] [Recensione] [Source]" source="ent18#att18Array" target="sv2#opg16#cnu15#su127#kcond86.ent18#att18"/>
+        <LinkParameter id="sv2#opg16#cru23#oln80#par603" name="oid_PASSING_KeyCondition61 [oid] [Negozio] [Target]" sourceLinkParameter="sv2#area10#page54#enu22#ln226#par610" target="sv2#opg16#cnu15#su128#kcond87.ent10#att10"/>
+      </OKLink>
+      <KOLink id="sv2#opg16#cru23#kln48" name="KOFlow48" to="sv2#page92#alt17#page94#mssu35" automaticCoupling="true"/>
+    </CreateUnit>
+  </OperationUnits>
+</OperationGroup>

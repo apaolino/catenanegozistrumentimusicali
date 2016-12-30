@@ -1,11 +1,11 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-590" gr:y="1640" id="sv2#opg11" name="Operation Group 11" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-590" gr:y="1640" id="sv2#opg11" name="Salvataggio dati nuovo acquisto" transaction="true">
   <OperationUnits>
     <CreateUnit id="sv2#opg11#cru21" name="Nuovo acquisto" gr:x="290" gr:y="255" entity="ent15">
       <OKLink id="sv2#opg11#cru21#oln49" name="OKFlow52" to="sv2#opg11#cnu6">
         <LinkParameter id="sv2#opg11#cru21#oln49#par496" name="Checked oid_PASSING_KeyCondition59 [oid] [Prodotto] [Source]" sourceLinkParameter="sv2#area4#page62#inu5#ln188#par499" target="sv2#opg11#cnu6#su94#kcond62.ent12#att12"/>
         <LinkParameter id="sv2#opg11#cru21#oln49#par497" name="oid_KeyCondition60 [oid] [Acquisto] [Target]" source="ent15#att15Array" target="sv2#opg11#cnu6#su95#kcond63.ent15#att15"/>
       </OKLink>
-      <KOLink id="sv2#opg11#cru21#kln42" name="KOFlow42" to="sv2#page71#alt12#page74#mssu26" automaticCoupling="true"/>
+      <KOLink id="sv2#opg11#cru21#kln42" name="KOFlow42" to="sv2#page79#alt15#page84#mssu31" automaticCoupling="true"/>
     </CreateUnit>
     <GetUnit id="sv2#opg11#gtu15" name="GetUID" gr:x="195" gr:y="0" contextParameters="UserCtxParam">
       <Link id="sv2#opg11#gtu15#ln187" name="Flow149" to="sv2#opg11#cru21" type="transport" automaticCoupling="true" validate="true"/>
@@ -13,22 +13,22 @@
         <LinkParameter id="sv2#opg11#gtu15#ln158#par511" name="UserCtxParam.oid_Cliente.oid(AcquistoToCliente Registrato)" source="sv2#opg11#gtu15.UserCtxParam" target="sv2#opg11#cru15.rel17#role34.userOID"/>
       </Link>
     </GetUnit>
-    <ConnectUnit id="sv2#opg11#cnu6" name="Connect6" gr:x="0" gr:y="300" relationship="rel15#role30">
+    <ConnectUnit id="sv2#opg11#cnu6" name="Acquisto_prodotto" gr:x="0" gr:y="300" relationship="rel15#role30">
       <SourceSelector id="sv2#opg11#cnu6#su94" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#opg11#cnu6#su94#kcond62" name="KeyCondition59" predicate="in" implied="false"/>
       </SourceSelector>
       <TargetSelector id="sv2#opg11#cnu6#su95" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#opg11#cnu6#su95#kcond63" name="KeyCondition60" predicate="in" implied="false"/>
       </TargetSelector>
-      <OKLink id="sv2#opg11#cnu6#oln56" name="OKFlow56" to="sv2#page71#alt12#page73#mssu25" automaticCoupling="true" gr:bendpoints="685,138,-675,493"/>
-      <KOLink id="sv2#opg11#cnu6#kln41" name="KOFlow41" to="sv2#page71#alt12#page74#mssu26" automaticCoupling="true"/>
+      <OKLink id="sv2#opg11#cnu6#oln56" name="OKFlow56" to="sv2#page79#alt15#page81#mssu30" automaticCoupling="true" gr:bendpoints="685,138,-675,493"/>
+      <KOLink id="sv2#opg11#cnu6#kln41" name="KOFlow41" to="sv2#page79#alt15#page84#mssu31" automaticCoupling="true"/>
     </ConnectUnit>
     <CreateUnit id="sv2#opg11#cru15" name="Nuovo acquisto" gr:x="0" gr:y="160" entity="ent15">
       <OKLink id="sv2#opg11#cru15#oln54" name="OKFlow54" to="sv2#opg11#cnu6">
         <LinkParameter id="sv2#opg11#cru15#oln54#par510" name="oid_KeyCondition60 [oid] [Acquisto] [Target]" source="ent15#att15Array" target="sv2#opg11#cnu6#su95#kcond63.ent15#att15"/>
         <LinkParameter id="sv2#opg11#cru15#oln54#par532" name="Checked oid_PASSING_KeyCondition59 [oid] [Prodotto] [Source]" sourceLinkParameter="sv2#area4#cru16#oln55#par521" target="sv2#opg11#cnu6#su94#kcond62.ent12#att12"/>
       </OKLink>
-      <KOLink id="sv2#opg11#cru15#kln40" name="KOFlow40" to="sv2#page71#alt12#page74#mssu26" automaticCoupling="true"/>
+      <KOLink id="sv2#opg11#cru15#kln40" name="KOFlow40" to="sv2#page79#alt15#page84#mssu31" automaticCoupling="true"/>
     </CreateUnit>
   </OperationUnits>
 </OperationGroup>

@@ -1,0 +1,75 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="175" gr:y="495" id="sv2#area10#page90" name="Nuova recensione prodotto">
+  <ContentUnits>
+    <EntryUnit id="sv2#area10#page90#enu24" name="Recensione prodotto" gr:x="10" gr:y="5" linkOrder="sv2#area10#page90#enu24#ln223">
+      <Field id="sv2#area10#page90#enu24#fld131" name="Numero stelle" type="string" modifiable="true"/>
+      <Field id="sv2#area10#page90#enu24#fld132" name="Recensione" type="string" modifiable="true"/>
+      <Link id="sv2#area10#page90#enu24#ln223" name="Salva recensione" to="sv2#opg15#cru20" type="normal" validate="true">
+        <LinkParameter id="sv2#area10#page90#enu24#ln223#par594" name="UserCtxParam.oid_PASSING_Cliente.oid(ValutazioneToCliente Registrato)" sourceLinkParameter="sv2#area10#page90#gtu8#ln179#par555" target="sv2#opg15#cru20.rel19#role37.userOID"/>
+        <LinkParameter id="sv2#area10#page90#enu24#ln223#par595" name="Numero stelle_Numero stelle" source="sv2#area10#page90#enu24#fld131" target="sv2#opg15#cru20.ent18#att33"/>
+        <LinkParameter id="sv2#area10#page90#enu24#ln223#par596" name="Recensione_Recensione" source="sv2#area10#page90#enu24#fld132" target="sv2#opg15#cru20.ent18#att34"/>
+        <LinkParameter id="sv2#area10#page90#enu24#ln223#par599" name="Prodotto_Tipo" target="sv2#opg15#cru20.ent18#att77" sourceValue="Prodotto"/>
+        <LinkParameter id="sv2#area10#page90#enu24#ln223#par600" name="oid (Single Row)_PASSING" sourceLinkParameter="sv2#area4#page47#alt8#page49#mciu4#ln139#par554" passing="true"/>
+      </Link>
+    </EntryUnit>
+    <GetUnit gr:x="195" gr:y="0" id="sv2#area10#page90#gtu8" name="GetUID" contextParameters="UserCtxParam">
+      <Link id="sv2#area10#page90#gtu8#ln179" name="Flow179" to="sv2#area10#page90#enu24" type="transport" validate="true">
+        <LinkParameter id="sv2#area10#page90#gtu8#ln179#par555" name="UserCtxParam.oid_PASSING" source="sv2#area10#page90#gtu8.UserCtxParam" passing="true"/>
+      </Link>
+    </GetUnit>
+    <TimeUnit gr:x="0" gr:y="85" id="sv2#area10#page90#tmu8" name="Data corrente">
+      <Link id="sv2#area10#page90#tmu8#ln224" name="Flow222" to="sv2#opg15#cru20" type="transport" validate="true">
+        <LinkParameter id="sv2#area10#page90#tmu8#ln224#par601" name="Current/Input Date_Data" source="currentDate" target="sv2#opg15#cru20.ent18#att35"/>
+      </Link>
+    </TimeUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area10#page90#enu24">
+          <layout:Field field="sv2#area10#page90#enu24#fld131"/>
+          <layout:Field field="sv2#area10#page90#enu24#fld132"/>
+          <layout:Link link="sv2#area10#page90#enu24#ln223"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,3 +1,21 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-1555" gr:y="465" id="sv2#area6" name="Storico acquisti e prenotazioni" landmark="true" defaultPage="sv2#area6#page64">
-  <OperationUnits/>
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-1670" gr:y="465" id="sv2#area6" name="Storico acquisti e prenotazioni" landmark="false" defaultPage="sv2#area6#page64">
+  <OperationUnits>
+    <DisconnectUnit gr:x="780" gr:y="295" id="sv2#area6#dcnu7" name="Disconnect_acquisto_prodotto" relationship="rel15#role29">
+      <SourceSelector id="sv2#area6#dcnu7#su114" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area6#dcnu7#su114#kcond78" name="KeyCondition78" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv2#area6#dcnu7#su115" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area6#dcnu7#su115#kcond79" name="KeyCondition79" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv2#area6#dcnu7#oln73" name="OKFlow73" to="sv2#area6#dlu14">
+        <LinkParameter id="sv2#area6#dcnu7#oln73#par586" name="oid_PASSING_KeyCondition80 [oid]" sourceLinkParameter="sv2#area6#page80#inu20#ln193#par585" target="sv2#area6#dlu14#su116#kcond80.ent15#att15"/>
+      </OKLink>
+    </DisconnectUnit>
+    <DeleteUnit gr:x="810" gr:y="480" id="sv2#area6#dlu14" name="cancella acquisto" entity="ent15">
+      <Selector id="sv2#area6#dlu14#su116" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area6#dlu14#su116#kcond80" name="KeyCondition80" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#area6#dlu14#oln74" name="OKFlow74" to="sv2#area6#page65" automaticCoupling="true" gr:bendpoints="132,-87,382,318;115,-258,365,147"/>
+    </DeleteUnit>
+  </OperationUnits>
 </Area>

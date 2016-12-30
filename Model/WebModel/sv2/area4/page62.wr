@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="55" gr:y="460" id="sv2#area4#page62" name="Seleziona Carta di credito per il pagamento">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="70" gr:y="460" id="sv2#area4#page62" name="Seleziona Carta di credito per il pagamento">
   <ContentUnits>
     <MultiMessageUnit gr:x="160" gr:y="135" id="sv2#area4#page62#mssu21" name="Nuova carta di credito" linkOrder="sv2#area4#page62#mssu21#ln144">
       <Message xml:space="preserve">Vuoi inserire una nuova carta?</Message>
@@ -18,7 +18,7 @@
       <Selector id="sv2#area4#page62#inu5#su80" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area4#page62#inu5#su80#rcond22" name="RoleCondition22" role="rel27#role53" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv2#area4#page62#inu5#ln188" name="Acquista" to="sv2#opg11#cru21" type="normal" validate="true" gr:bendpoints="225,37,195,-733;231,302,201,-468;227,722,197,-48">
+      <Link id="sv2#area4#page62#inu5#ln188" name="Seleziona e Acquista" to="sv2#opg11#cru21" type="normal" validate="true" gr:bendpoints="225,37,195,-733;231,302,201,-468;227,722,197,-48">
         <LinkParameter id="sv2#area4#page62#inu5#ln188#par498" name="oid_PASSING_Negozio.oid(AcquistoToNegozio)" sourceLinkParameter="sv2#area4#page61#mssu22#ln146#par408" target="sv2#opg11#cru21.rel16#role31.ent10#att10"/>
         <LinkParameter id="sv2#area4#page62#inu5#ln188#par499" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page61#mssu22#ln146#par445" passing="true"/>
       </Link>
