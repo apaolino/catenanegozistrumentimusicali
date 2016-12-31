@@ -1,0 +1,95 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="615" gr:y="0" id="sv3#area15#page108" name="Modifica Evento">
+  <ContentUnits>
+    <EntryUnit id="sv3#area15#page108#enu27" name="Inserisci i dati dell'evento" gr:x="245" gr:y="10" entity="ent17" fieldOrder="sv3#area15#page108#enu27#fld143 sv3#area15#page108#enu27#fld144 sv3#area15#page108#enu27#fld145 sv3#area15#page108#enu27#fld146 sv3#area15#page108#enu27#fld147 sv3#area15#page108#enu27#sfld23 sv3#area15#page108#enu27#sfld24" linkOrder="sv3#area15#page108#enu27#ln282">
+      <Field id="sv3#area15#page108#enu27#fld143" name="Nome Evento" type="string" modifiable="true" preloaded="true" attribute="ent17#att62"/>
+      <Field id="sv3#area15#page108#enu27#fld144" name="Data Inizio" type="date" modifiable="true" preloaded="true" attribute="ent17#att61"/>
+      <Field id="sv3#area15#page108#enu27#fld145" name="Data Fine" type="date" modifiable="true" preloaded="true" attribute="ent17#att63"/>
+      <Field id="sv3#area15#page108#enu27#fld146" name="Prezzo" type="float" modifiable="true" preloaded="true" attribute="ent17#att64"/>
+      <Field id="sv3#area15#page108#enu27#fld147" name="Posti Disponibili" type="integer" modifiable="true" preloaded="true" attribute="ent17#att65"/>
+      <SelectionField id="sv3#area15#page108#enu27#sfld23" name="Periodo" type="string"/>
+      <SelectionField id="sv3#area15#page108#enu27#sfld24" name="Tipo Evento" type="string"/>
+      <Link id="sv3#area15#page108#enu27#ln282" name="Modifica" to="sv3#area15#mfu21" type="normal" validate="true">
+        <LinkParameter id="sv3#area15#page108#enu27#ln282#par723" name="Data Fine_Data fine evento" source="sv3#area15#page108#enu27#fld145" target="sv3#area15#mfu21.ent17#att63"/>
+        <LinkParameter id="sv3#area15#page108#enu27#ln282#par724" name="Data Inizio_Data inizio evento" source="sv3#area15#page108#enu27#fld144" target="sv3#area15#mfu21.ent17#att61"/>
+        <LinkParameter id="sv3#area15#page108#enu27#ln282#par725" name="Key [oid]_KeyCondition61 [oid]" target="sv3#area15#mfu21#su145#kcond61.ent17#att17" sourceLinkParameter="sv3#area15#page108#seu60#ln290#par735"/>
+        <LinkParameter id="sv3#area15#page108#enu27#ln282#par726" name="Nome Evento_Nome evento" source="sv3#area15#page108#enu27#fld143" target="sv3#area15#mfu21.ent17#att62"/>
+        <LinkParameter id="sv3#area15#page108#enu27#ln282#par727" name="Periodo_Periodo.oid(EventoToPeriodo)" source="sv3#area15#page108#enu27#sfld23" target="sv3#area15#mfu21.rel41#role81.ent22#att72"/>
+        <LinkParameter id="sv3#area15#page108#enu27#ln282#par728" name="Posti Disponibili_Posti disponibili" source="sv3#area15#page108#enu27#fld147" target="sv3#area15#mfu21.ent17#att65"/>
+        <LinkParameter id="sv3#area15#page108#enu27#ln282#par729" name="Prezzo_Prezzo" source="sv3#area15#page108#enu27#fld146" target="sv3#area15#mfu21.ent17#att64"/>
+        <LinkParameter id="sv3#area15#page108#enu27#ln282#par730" name="Tipo Evento_Tipo Evento.oid(EventoToTipo Evento)" source="sv3#area15#page108#enu27#sfld24" target="sv3#area15#mfu21.rel42#role83.ent26#att78"/>
+        <LinkParameter id="sv3#area15#page108#enu27#ln282#par733" name="EventoToGestore Singolo Negozio.oid_PASSING_Gestore Singolo Negozio.oid(EventoToGestore Singolo Negozio)" sourceLinkParameter="sv3#area15#page108#seu60#ln290#par731" target="sv3#area15#mfu21.rel5#role10.userOID"/>
+        <LinkParameter id="sv3#area15#page108#enu27#ln282#par734" name="EventoToNegozio.oid_PASSING_Negozio.oid(EventoToNegozio)" sourceLinkParameter="sv3#area15#page108#seu60#ln290#par732" target="sv3#area15#mfu21.rel10#role19.ent10#att10"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit gr:x="365" gr:y="245" id="sv3#area15#page108#seu57" name="Selector57" entity="ent26">
+      <Link id="sv3#area15#page108#seu57#ln286" name="Flow286" to="sv3#area15#page108#enu27" type="transport" validate="true">
+        <LinkParameter id="sv3#area15#page108#seu57#ln286#par701" name="Nome Tipologia Evento_Tipo Evento [label]" source="ent26#att75Array" target="sv3#area15#page108#enu27#sfld24_label"/>
+        <LinkParameter id="sv3#area15#page108#seu57#ln286#par702" name="oid_Tipo Evento [output]" source="ent26#att78Array" target="sv3#area15#page108#enu27#sfld24_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="495" gr:y="210" id="sv3#area15#page108#seu58" name="Selector58" entity="ent22">
+      <Link id="sv3#area15#page108#seu58#ln287" name="Flow287" to="sv3#area15#page108#enu27" type="transport" validate="true">
+        <LinkParameter id="sv3#area15#page108#seu58#ln287#par703" name="Mese_Periodo [label]" source="ent22#att74Array" target="sv3#area15#page108#enu27#sfld23_label"/>
+        <LinkParameter id="sv3#area15#page108#seu58#ln287#par704" name="oid_Periodo [output]" source="ent22#att72Array" target="sv3#area15#page108#enu27#sfld23_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit id="sv3#area15#page108#seu60" name="Selector56" gr:x="0" gr:y="0" entity="ent26">
+      <Selector id="sv3#area15#page108#seu60#su148" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area15#page108#seu60#su148#rcond57" name="RoleCondition55" role="rel42#role83" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#area15#page108#seu60#ln290" name="Flow290" to="sv3#area15#page108#enu27" type="transport" validate="true">
+        <LinkParameter id="sv3#area15#page108#seu60#ln290#par716" name="Data fine evento_PASSING_Data Fine" sourceLinkParameter="sv3#area15#page107#inu25#ln273#par707" target="sv3#area15#page108#enu27#fld145_slot"/>
+        <LinkParameter id="sv3#area15#page108#seu60#ln290#par717" name="Data inizio evento_PASSING_Data Inizio" sourceLinkParameter="sv3#area15#page107#inu25#ln273#par708" target="sv3#area15#page108#enu27#fld144_slot"/>
+        <LinkParameter id="sv3#area15#page108#seu60#ln290#par718" name="Nome evento_PASSING_Nome Evento" sourceLinkParameter="sv3#area15#page107#inu25#ln273#par712" target="sv3#area15#page108#enu27#fld143_slot"/>
+        <LinkParameter id="sv3#area15#page108#seu60#ln290#par719" name="EventoToPeriodo.oid_PASSING_Periodo - Preselection" sourceLinkParameter="sv3#area15#page107#inu25#ln273#par711" target="sv3#area15#page108#enu27#sfld23_presel"/>
+        <LinkParameter id="sv3#area15#page108#seu60#ln290#par720" name="Posti disponibili_PASSING_Posti Disponibili" sourceLinkParameter="sv3#area15#page107#inu25#ln273#par714" target="sv3#area15#page108#enu27#fld147_slot"/>
+        <LinkParameter id="sv3#area15#page108#seu60#ln290#par721" name="Prezzo_PASSING_Prezzo" sourceLinkParameter="sv3#area15#page107#inu25#ln273#par715" target="sv3#area15#page108#enu27#fld146_slot"/>
+        <LinkParameter id="sv3#area15#page108#seu60#ln290#par722" name="oid_Tipo Evento - Preselection" source="ent26#att78Array" target="sv3#area15#page108#enu27#sfld24_presel"/>
+        <LinkParameter id="sv3#area15#page108#seu60#ln290#par731" name="EventoToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv3#area15#page107#inu25#ln273#par709" passing="true"/>
+        <LinkParameter id="sv3#area15#page108#seu60#ln290#par732" name="EventoToNegozio.oid_PASSING" sourceLinkParameter="sv3#area15#page107#inu25#ln273#par710" passing="true"/>
+        <LinkParameter id="sv3#area15#page108#seu60#ln290#par735" name="oid_PASSING" sourceLinkParameter="sv3#area15#page107#inu25#ln273#par713" passing="true"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area15#page108#enu27">
+          <layout:Field field="sv3#area15#page108#enu27#fld143"/>
+          <layout:Field field="sv3#area15#page108#enu27#fld144"/>
+          <layout:Field field="sv3#area15#page108#enu27#fld145"/>
+          <layout:Field field="sv3#area15#page108#enu27#fld146"/>
+          <layout:Field field="sv3#area15#page108#enu27#fld147"/>
+          <layout:Field field="sv3#area15#page108#enu27#sfld23"/>
+          <layout:Field field="sv3#area15#page108#enu27#sfld24"/>
+          <layout:Link link="sv3#area15#page108#enu27#ln282"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

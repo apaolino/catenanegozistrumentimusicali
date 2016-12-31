@@ -1,6 +1,44 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1560" gr:y="265" id="sv3#page32" name="Home Page Gestore Singolo Negozio" linkOrder="sv3#page32#ln22">
-  <ContentUnits/>
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1470" gr:y="255" id="sv3#page32" name="Home Page Gestore Singolo Negozio" linkOrder="sv3#page32#ln22">
+  <ContentUnits>
+    <DataUnit gr:x="95" gr:y="110" id="sv3#page32#dau13" name="Statistiche e Dettagli Negozio" entity="ent10" displayAttributes="ent10#att48 ent10#att49 ent10#att50 ent10#att51 ent10#att52 ent10#att53 count(rel16#role32.ent15#att15) count(rel11#role22.ent16#att16) countDistinct(rel10#role20.ent17#att17) countDistinct(rel23#role45.rel24#role47.ent12#att12)">
+      <Selector id="sv3#page32#dau13#su163" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#page32#dau13#su163#rcond58" name="RoleCondition58" predicate="in" implied="false" role="rel4#role7"/>
+      </Selector>
+    </DataUnit>
+    <GetUnit gr:x="0" gr:y="0" id="sv3#page32#gtu30" name="Get id gestore negozio" contextParameters="UserCtxParam">
+      <Link id="sv3#page32#gtu30#ln295" name="Flow295" to="sv3#page32#dau13" type="transport" validate="true">
+        <LinkParameter id="sv3#page32#gtu30#ln295#par741" name="UserCtxParam.oid_RoleCondition58 [oid]" source="sv3#page32#gtu30.UserCtxParam" target="sv3#page32#dau13#su163#rcond58.userOID"/>
+      </Link>
+    </GetUnit>
+  </ContentUnits>
   <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page32#dau13">
+          <layout:Attribute attribute="ent10#att48"/>
+          <layout:Attribute attribute="ent10#att49"/>
+          <layout:Attribute attribute="ent10#att50"/>
+          <layout:Attribute attribute="ent10#att51"/>
+          <layout:Attribute attribute="ent10#att52"/>
+          <layout:Attribute attribute="ent10#att53"/>
+          <layout:Attribute attribute="count(rel16#role32.ent15#att15)"/>
+          <layout:Attribute attribute="count(rel11#role22.ent16#att16)"/>
+          <layout:Attribute attribute="countDistinct(rel10#role20.ent17#att17)"/>
+          <layout:Attribute attribute="countDistinct(rel23#role45.rel24#role47.ent12#att12)"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12"/>
       <layout:Cell/>

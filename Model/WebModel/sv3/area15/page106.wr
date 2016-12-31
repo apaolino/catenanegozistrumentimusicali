@@ -1,0 +1,92 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="430" id="sv3#area15#page106" name="Creazione nuovo evento">
+  <ContentUnits>
+    <EntryUnit gr:x="5" gr:y="0" id="sv3#area15#page106#enu26" name="Inserisci i dati dell'evento" entity="ent17" fieldOrder="sv3#area15#page106#enu26#fld133 sv3#area15#page106#enu26#fld136 sv3#area15#page106#enu26#fld138 sv3#area15#page106#enu26#fld141 sv3#area15#page106#enu26#fld142 sv3#area15#page106#enu26#sfld19 sv3#area15#page106#enu26#sfld22" linkOrder="sv3#area15#page106#enu26#ln281">
+      <Field id="sv3#area15#page106#enu26#fld133" name="Nome Evento" type="string" modifiable="true" attribute="ent17#att62"/>
+      <Field id="sv3#area15#page106#enu26#fld136" name="Data Inizio" type="date" modifiable="true" attribute="ent17#att61"/>
+      <Field id="sv3#area15#page106#enu26#fld138" name="Data Fine" type="date" modifiable="true" attribute="ent17#att63"/>
+      <Field id="sv3#area15#page106#enu26#fld141" name="Prezzo" type="float" modifiable="true" attribute="ent17#att64"/>
+      <Field id="sv3#area15#page106#enu26#fld142" name="Posti Disponibili" type="integer" modifiable="true" attribute="ent17#att65"/>
+      <SelectionField id="sv3#area15#page106#enu26#sfld19" name="Periodo" type="string" role="rel41#role81"/>
+      <SelectionField id="sv3#area15#page106#enu26#sfld22" name="Tipo Evento" type="string" role="rel42#role83"/>
+      <Link id="sv3#area15#page106#enu26#ln281" name="Flow281" to="sv3#area15#cru14" type="normal" validate="true">
+        <LinkParameter id="sv3#area15#page106#enu26#ln281#par685" name="Data Fine_Data fine evento" source="sv3#area15#page106#enu26#fld138" target="sv3#area15#cru14.ent17#att63"/>
+        <LinkParameter id="sv3#area15#page106#enu26#ln281#par686" name="Data Inizio_Data inizio evento" source="sv3#area15#page106#enu26#fld136" target="sv3#area15#cru14.ent17#att61"/>
+        <LinkParameter id="sv3#area15#page106#enu26#ln281#par687" name="UserCtxParam.oid_PASSING_Gestore Singolo Negozio.oid(EventoToGestore Singolo Negozio)" sourceLinkParameter="sv3#area15#page106#seu55#ln272#par682" target="sv3#area15#cru14.rel5#role10.userOID"/>
+        <LinkParameter id="sv3#area15#page106#enu26#ln281#par688" name="oid_PASSING_Negozio.oid(EventoToNegozio)" sourceLinkParameter="sv3#area15#page106#seu55#ln272#par664" target="sv3#area15#cru14.rel10#role19.ent10#att10"/>
+        <LinkParameter id="sv3#area15#page106#enu26#ln281#par689" name="Nome Evento_Nome evento" source="sv3#area15#page106#enu26#fld133" target="sv3#area15#cru14.ent17#att62"/>
+        <LinkParameter id="sv3#area15#page106#enu26#ln281#par690" name="Periodo_Periodo.oid(EventoToPeriodo)" source="sv3#area15#page106#enu26#sfld19" target="sv3#area15#cru14.rel41#role81.ent22#att72"/>
+        <LinkParameter id="sv3#area15#page106#enu26#ln281#par691" name="Posti Disponibili_Posti disponibili" source="sv3#area15#page106#enu26#fld142" target="sv3#area15#cru14.ent17#att65"/>
+        <LinkParameter id="sv3#area15#page106#enu26#ln281#par692" name="Prezzo_Prezzo" source="sv3#area15#page106#enu26#fld141" target="sv3#area15#cru14.ent17#att64"/>
+        <LinkParameter id="sv3#area15#page106#enu26#ln281#par693" name="Tipo Evento_Tipo Evento.oid(EventoToTipo Evento)" source="sv3#area15#page106#enu26#sfld22" target="sv3#area15#cru14.rel42#role83.ent26#att78"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit gr:x="5" gr:y="115" id="sv3#area15#page106#seu51" name="Selector51" entity="ent22">
+      <Link id="sv3#area15#page106#seu51#ln222" name="Flow222" to="sv3#area15#page106#enu26" type="transport" validate="true">
+        <LinkParameter id="sv3#area15#page106#seu51#ln222#par644" name="Mese_Periodo [label]" source="ent22#att74Array" target="sv3#area15#page106#enu26#sfld19_label"/>
+        <LinkParameter id="sv3#area15#page106#seu51#ln222#par645" name="oid_Periodo [output]" source="ent22#att72Array" target="sv3#area15#page106#enu26#sfld19_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="160" gr:y="140" id="sv3#area15#page106#seu52" name="Selector52" entity="ent26">
+      <Link id="sv3#area15#page106#seu52#ln260" name="Flow260" to="sv3#area15#page106#enu26" type="transport" validate="true">
+        <LinkParameter id="sv3#area15#page106#seu52#ln260#par652" name="Nome Tipologia Evento_Tipo Evento [label]" source="ent26#att75Array" target="sv3#area15#page106#enu26#sfld22_label"/>
+        <LinkParameter id="sv3#area15#page106#seu52#ln260#par653" name="oid_Tipo Evento [output]" source="ent26#att78Array" target="sv3#area15#page106#enu26#sfld22_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit id="sv3#area15#page106#seu55" name="Selector53" gr:x="0" gr:y="245" entity="ent10">
+      <Selector id="sv3#area15#page106#seu55#su124" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area15#page106#seu55#su124#rcond54" name="RoleCondition51" predicate="in" implied="false" role="rel4#role7"/>
+      </Selector>
+      <Link id="sv3#area15#page106#seu55#ln272" name="Flow272" to="sv3#area15#page106#enu26" type="transport" validate="true">
+        <LinkParameter id="sv3#area15#page106#seu55#ln272#par664" name="oid_PASSING" source="ent10#att10Array" passing="true"/>
+        <LinkParameter id="sv3#area15#page106#seu55#ln272#par682" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv3#area15#page106#gtu29#ln280#par681" passing="true"/>
+      </Link>
+    </SelectorUnit>
+    <GetUnit id="sv3#area15#page106#gtu29" name="Get Utente" gr:x="310" gr:y="255" contextParameters="UserCtxParam">
+      <Link id="sv3#area15#page106#gtu29#ln280" name="Flow262" to="sv3#area15#page106#seu55" type="transport" validate="true">
+        <LinkParameter id="sv3#area15#page106#gtu29#ln280#par680" name="UserCtxParam.oid_RoleCondition51 [oid]" source="sv3#area15#page106#gtu29.UserCtxParam" target="sv3#area15#page106#seu55#su124#rcond54.userOID"/>
+        <LinkParameter id="sv3#area15#page106#gtu29#ln280#par681" name="UserCtxParam.oid_PASSING" source="sv3#area15#page106#gtu29.UserCtxParam" passing="true"/>
+      </Link>
+    </GetUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area15#page106#enu26">
+          <layout:Field field="sv3#area15#page106#enu26#fld133"/>
+          <layout:Field field="sv3#area15#page106#enu26#fld136"/>
+          <layout:Field field="sv3#area15#page106#enu26#fld138"/>
+          <layout:Field field="sv3#area15#page106#enu26#fld141"/>
+          <layout:Field field="sv3#area15#page106#enu26#fld142"/>
+          <layout:Field field="sv3#area15#page106#enu26#sfld19"/>
+          <layout:Field field="sv3#area15#page106#enu26#sfld22"/>
+          <layout:Link link="sv3#area15#page106#enu26#ln281"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

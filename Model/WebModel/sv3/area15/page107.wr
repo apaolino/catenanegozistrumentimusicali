@@ -1,0 +1,67 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv3#area15#page107" name="Lista eventi organizzati nel negozio" linkOrder="sv3#area15#page107#ln268">
+  <ContentUnits>
+    <IndexUnit gr:x="0" gr:y="0" id="sv3#area15#page107#inu25" name="Lista Eventi" entity="ent17" displayAttributes="ent17#att62 ent17#att61 ent17#att64 ent17#att65 rel42#role83.ent26#att75" linkOrder="sv3#area15#page107#inu25#ln273 sv3#area15#page107#inu25#ln291">
+      <Selector id="sv3#area15#page107#inu25#su123" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area15#page107#inu25#su123#rcond53" name="RoleCondition53" predicate="in" implied="false" role="rel10#role20"/>
+        <AttributesCondition id="sv3#area15#page107#inu25#su123#acond10" name="AttCondition10" predicate="neq" booleanOperator="or" implied="false" attributes="ent17#att64" value="-1"/>
+      </Selector>
+      <Link id="sv3#area15#page107#inu25#ln273" name="Modifica" to="sv3#area15#page108#seu60" type="normal" validate="true">
+        <LinkParameter id="sv3#area15#page107#inu25#ln273#par706" name="oid_RoleCondition55 [oid]" source="data[].ent17#att17" target="sv3#area15#page108#seu60#su148#rcond57.ent17#att17"/>
+        <LinkParameter id="sv3#area15#page107#inu25#ln273#par707" name="Data fine evento_PASSING" source="data[].ent17#att63" passing="true"/>
+        <LinkParameter id="sv3#area15#page107#inu25#ln273#par708" name="Data inizio evento_PASSING" source="data[].ent17#att61" passing="true"/>
+        <LinkParameter id="sv3#area15#page107#inu25#ln273#par709" name="EventoToGestore Singolo Negozio.oid_PASSING" source="data[].rel5#role10_userOID" passing="true"/>
+        <LinkParameter id="sv3#area15#page107#inu25#ln273#par710" name="EventoToNegozio.oid_PASSING" source="data[].rel10#role19_ent10#att10" passing="true"/>
+        <LinkParameter id="sv3#area15#page107#inu25#ln273#par711" name="EventoToPeriodo.oid_PASSING" source="data[].rel41#role81_ent22#att72" passing="true"/>
+        <LinkParameter id="sv3#area15#page107#inu25#ln273#par712" name="Nome evento_PASSING" source="data[].ent17#att62" passing="true"/>
+        <LinkParameter id="sv3#area15#page107#inu25#ln273#par713" name="oid_PASSING" source="data[].ent17#att17" passing="true"/>
+        <LinkParameter id="sv3#area15#page107#inu25#ln273#par714" name="Posti disponibili_PASSING" source="data[].ent17#att65" passing="true"/>
+        <LinkParameter id="sv3#area15#page107#inu25#ln273#par715" name="Prezzo_PASSING" source="data[].ent17#att64" passing="true"/>
+      </Link>
+      <Link id="sv3#area15#page107#inu25#ln291" name="Annulla evento" to="sv3#area15#page110#mssu40" type="normal" validate="true">
+        <LinkParameter id="sv3#area15#page107#inu25#ln291#par736" name="oid_PASSING" source="data[].ent17#att17" passing="true"/>
+      </Link>
+      <SortAttribute attribute="ent17#att61" order="descending"/>
+      <SortAttribute attribute="ent17#att62" order="ascending"/>
+    </IndexUnit>
+    <SelectorUnit id="sv3#area15#page107#seu54" name="Selector53" gr:x="175" gr:y="145" entity="ent10">
+      <Selector id="sv3#area15#page107#seu54#su14" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area15#page107#seu54#su14#rcond52" name="RoleCondition51" predicate="in" implied="false" role="rel4#role7"/>
+      </Selector>
+      <Link id="sv3#area15#page107#seu54#ln267" name="Flow267" to="sv3#area15#page107#inu25" type="transport" validate="true">
+        <LinkParameter id="sv3#area15#page107#seu54#ln267#par661" name="oid_RoleCondition53 [oid]" source="ent10#att10Array" target="sv3#area15#page107#inu25#su123#rcond53.ent10#att10"/>
+      </Link>
+    </SelectorUnit>
+    <GetUnit id="sv3#area15#page107#gtu28" name="Get Utente" gr:x="5" gr:y="150" contextParameters="UserCtxParam">
+      <Link id="sv3#area15#page107#gtu28#ln266" name="Flow262" to="sv3#area15#page107#seu54" type="transport" validate="true">
+        <LinkParameter id="sv3#area15#page107#gtu28#ln266#par660" name="UserCtxParam.oid_RoleCondition51 [oid]" source="sv3#area15#page107#gtu28.UserCtxParam" target="sv3#area15#page107#seu54#su14#rcond52.userOID"/>
+      </Link>
+    </GetUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area15#page107#inu25">
+          <layout:Attribute attribute="ent17#att62"/>
+          <layout:Attribute attribute="ent17#att61"/>
+          <layout:Attribute attribute="ent17#att64"/>
+          <layout:Attribute attribute="ent17#att65"/>
+          <layout:Attribute attribute="rel42#role83.ent26#att75"/>
+          <layout:Link link="sv3#area15#page107#inu25#ln273"/>
+          <layout:Link link="sv3#area15#page107#inu25#ln291"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv3#area15#page107#ln268" name="Crea nuovo evento" to="sv3#area15#page106#enu26" automaticCoupling="true" type="normal" validate="true"/>
+</Page>

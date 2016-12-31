@@ -1,0 +1,33 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="780" gr:y="500" id="sv3#area15#page110" name="Conferma eliminazione">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv3#area15#page110#mssu40" name="Messaggio richiesta conferma" linkOrder="sv3#area15#page110#mssu40#ln293 sv3#area15#page110#mssu40#ln294">
+      <Message xml:space="preserve">Sei sicuro di voler annullare l'evento?</Message>
+      <Link id="sv3#area15#page110#mssu40#ln293" name="Si" to="sv3#area15#mfu23" type="normal" validate="true">
+        <LinkParameter id="sv3#area15#page110#mssu40#ln293#par739" name="oid_PASSING_KeyCondition90 [oid]" sourceLinkParameter="sv3#area15#page107#inu25#ln291#par736" target="sv3#area15#mfu23#su162#kcond91.ent17#att17"/>
+        <LinkParameter id="sv3#area15#page110#mssu40#ln293#par740" name="-1_Prezzo" target="sv3#area15#mfu23.ent17#att64" sourceValue="-1"/>
+      </Link>
+      <Link id="sv3#area15#page110#mssu40#ln294" name="No" to="sv3#area15#page107#inu25" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-381,-210,389,250"/>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area15#page110#mssu40">
+          <layout:Link link="sv3#area15#page110#mssu40#ln293"/>
+          <layout:Link link="sv3#area15#page110#mssu40#ln294"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
