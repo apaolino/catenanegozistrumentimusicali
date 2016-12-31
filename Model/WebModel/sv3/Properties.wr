@@ -3,59 +3,51 @@
     <LogoutUnit gr:x="1735" gr:y="70" id="sv3#lou2" name="Logout2" siteView="sv1">
       <KOLink id="sv3#lou2#kln23" name="KOFlow23" to="sv3#page32" automaticCoupling="true" gr:bendpoints="-116,52,199,-48"/>
     </LogoutUnit>
-    <DeleteUnit gr:x="3270" gr:y="100" id="sv3#dlu15" name="Elimina acquisto" entity="ent15">
-      <Selector id="sv3#dlu15#su123" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv3#dlu15#su123#kcond60" name="KeyCondition60" predicate="in" implied="false"/>
-      </Selector>
-    </DeleteUnit>
-    <DisconnectUnit gr:x="3030" gr:y="115" id="sv3#dcnu10" name="Disc_acquisto_prodotto" relationship="rel15#role29">
-      <SourceSelector id="sv3#dcnu10#su124" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv3#dcnu10#su124#kcond61" name="KeyCondition61" predicate="in" implied="false"/>
-      </SourceSelector>
-      <TargetSelector id="sv3#dcnu10#su129" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv3#dcnu10#su129#kcond82" name="KeyCondition82" predicate="in" implied="false"/>
-      </TargetSelector>
-      <OKLink id="sv3#dcnu10#oln60" name="OKFlow60" to="sv3#dlu15" automaticCoupling="true"/>
-    </DisconnectUnit>
     <DeleteUnit gr:x="3145" gr:y="420" id="sv3#dlu17" name="Cancella prenotazione sala prove" entity="ent16">
       <Selector id="sv3#dlu17#su133" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#dlu17#su133#kcond83" name="KeyCondition83" predicate="in" implied="false"/>
       </Selector>
+      <OKLink id="sv3#dlu17#oln82" name="OKFlow82" to="sv3#page102#alt20#page103#mssu37" automaticCoupling="true"/>
+      <KOLink id="sv3#dlu17#kln53" name="KOFlow53" to="sv3#page102#alt20#page104#mssu38" automaticCoupling="true"/>
     </DeleteUnit>
     <ModifyUnit gr:x="3070" gr:y="630" id="sv3#mfu14" name="Modifica prenotazione sala prove" entity="ent16">
       <Selector id="sv3#mfu14#su139" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#mfu14#su139#kcond88" name="KeyCondition88" predicate="in" implied="false"/>
       </Selector>
+      <OKLink id="sv3#mfu14#oln83" name="OKFlow83" to="sv3#page102#alt20#page103#mssu37" automaticCoupling="true"/>
+      <KOLink id="sv3#mfu14#kln54" name="KOFlow54" to="sv3#page102#alt20#page104#mssu38" automaticCoupling="true"/>
     </ModifyUnit>
     <DeleteUnit gr:x="3125" gr:y="815" id="sv3#dlu18" name="Elimina prenotazione" entity="ent16">
       <Selector id="sv3#dlu18#su141" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#dlu18#su141#kcond89" name="KeyCondition89" predicate="in" implied="false"/>
       </Selector>
+      <OKLink id="sv3#dlu18#oln84" name="OKFlow84" to="sv3#page102#alt20#page103#mssu37" automaticCoupling="true"/>
+      <KOLink id="sv3#dlu18#kln55" name="KOFlow55" to="sv3#page102#alt20#page104#mssu38" automaticCoupling="true"/>
     </DeleteUnit>
-    <DeleteUnit gr:x="3065" gr:y="1050" id="sv3#dlu19" name="Elimina prenotazione noleggio prodotto" entity="ent21">
-      <Selector id="sv3#dlu19#su145" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv3#dlu19#su145#kcond90" name="KeyCondition90" predicate="in" implied="false"/>
-      </Selector>
-      <OKLink id="sv3#dlu19#oln66" name="OKFlow66" to="sv3#dlu20">
-        <LinkParameter id="sv3#dlu19#oln66#par638" name="Source oid [Prenotazione Noleggio Prodotto]_PASSING_KeyCondition98 [oid]" sourceLinkParameter="sv3#dcnu11#oln62#par637" target="sv3#dlu20#su148#kcond98.ent16#att16"/>
-      </OKLink>
-    </DeleteUnit>
-    <DisconnectUnit gr:x="3040" gr:y="1220" id="sv3#dcnu11" name="Disc_prenotazione_prodotto" relationship="rel12#role23">
-      <SourceSelector id="sv3#dcnu11#su146" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv3#dcnu11#su146#kcond91" name="KeyCondition91" predicate="in" implied="false"/>
+    <DisconnectUnit gr:x="3180" gr:y="160" id="sv3#dcnu16" name="Disc_acquisto_prodotto" relationship="rel15#role29">
+      <SourceSelector id="sv3#dcnu16#su156" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#dcnu16#su156#kcond106" name="KeyCondition106" predicate="in" implied="false"/>
       </SourceSelector>
-      <TargetSelector id="sv3#dcnu11#su147" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv3#dcnu11#su147#kcond92" name="KeyCondition92" predicate="in" implied="false"/>
+      <TargetSelector id="sv3#dcnu16#su157" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#dcnu16#su157#kcond107" name="KeyCondition107" predicate="in" implied="false"/>
       </TargetSelector>
-      <OKLink id="sv3#dcnu11#oln62" name="OKFlow62" to="sv3#dlu19">
-        <LinkParameter id="sv3#dcnu11#oln62#par636" name="Source oid [Prenotazione Noleggio Prodotto]_KeyCondition90 [oid]" source="sourceent16#att16" target="sv3#dlu19#su145#kcond90.ent16#att16"/>
-        <LinkParameter id="sv3#dcnu11#oln62#par637" name="Source oid [Prenotazione Noleggio Prodotto]_PASSING" source="sourceent16#att16" passing="true"/>
-      </OKLink>
     </DisconnectUnit>
-    <DeleteUnit gr:x="3270" gr:y="1155" id="sv3#dlu20" name="Elimina prenotazione" entity="ent16">
-      <Selector id="sv3#dlu20#su148" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv3#dlu20#su148#kcond98" name="KeyCondition98" predicate="in" implied="false"/>
+    <ModifyUnit gr:x="3275" gr:y="1355" id="sv3#mfu16" name="Aggiorna prenotazione" entity="ent16">
+      <Selector id="sv3#mfu16#su158" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#mfu16#su158#kcond108" name="KeyCondition108" predicate="in" implied="false"/>
       </Selector>
-    </DeleteUnit>
+      <OKLink id="sv3#mfu16#oln93" name="OKFlow93" to="sv3#page102#alt20#page103#mssu37" automaticCoupling="true"/>
+      <KOLink id="sv3#mfu16#kln59" name="KOFlow59" to="sv3#page102#alt20#page104#mssu38" automaticCoupling="true"/>
+    </ModifyUnit>
+    <DisconnectUnit gr:x="2820" gr:y="1500" id="sv3#dcnu17" name="Disc_prodotto_prenotazione" relationship="rel12#role24">
+      <SourceSelector id="sv3#dcnu17#su159" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#dcnu17#su159#kcond109" name="KeyCondition109" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#dcnu17#su160" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#dcnu17#su160#kcond110" name="KeyCondition110" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv3#dcnu17#oln94" name="OKFlow94" to="sv3#page102#alt20#page103#mssu37" automaticCoupling="true"/>
+      <KOLink id="sv3#dcnu17#kln60" name="KOFlow60" to="sv3#page102#alt20#page104#mssu38" automaticCoupling="true"/>
+    </DisconnectUnit>
   </OperationUnits>
 </SiteView>

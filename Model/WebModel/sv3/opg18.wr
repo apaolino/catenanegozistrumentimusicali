@@ -1,0 +1,21 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="3670" gr:y="-210" id="sv3#opg18" name="Eiminazione acquisto" transaction="true">
+  <OperationUnits>
+    <DeleteUnit id="sv3#opg18#dlu21" name="Elimina acquisto" gr:x="265" gr:y="10" entity="ent15">
+      <Selector id="sv3#opg18#dlu21#su149" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#opg18#dlu21#su149#kcond99" name="KeyCondition60" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#opg18#dlu21#oln81" name="OKFlow81" to="sv3#page102#alt20#page103#mssu37" automaticCoupling="true" gr:bendpoints="297,110,-8,-325"/>
+      <KOLink id="sv3#opg18#dlu21#kln52" name="KOFlow52" to="sv3#page102#alt20#page104#mssu38" automaticCoupling="true"/>
+    </DeleteUnit>
+    <DisconnectUnit id="sv3#opg18#dcnu14" name="Disc_acquisto_prodotto" gr:x="0" gr:y="0" relationship="rel15#role29">
+      <SourceSelector id="sv3#opg18#dcnu14#su150" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#opg18#dcnu14#su150#kcond100" name="KeyCondition61" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#opg18#dcnu14#su151" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#opg18#dcnu14#su151#kcond101" name="KeyCondition82" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv3#opg18#dcnu14#oln76" name="OKFlow60" to="sv3#opg18#dlu21" automaticCoupling="true"/>
+      <KOLink id="sv3#opg18#dcnu14#kln51" name="KOFlow51" to="sv3#page102#alt20#page104#mssu38" automaticCoupling="true"/>
+    </DisconnectUnit>
+  </OperationUnits>
+</OperationGroup>

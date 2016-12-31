@@ -10,8 +10,8 @@
         <LinkParameter id="sv3#area12#page98#enu25#ln242#par617" name="PrenotazioneToNegozio.oid_PASSING_Negozio.oid(PrenotazioneToNegozio)" sourceLinkParameter="sv3#area12#page97#inu24#ln243#par628" target="sv3#mfu14.rel11#role21.ent10#att10"/>
         <LinkParameter id="sv3#area12#page98#enu25#ln242#par618" name="PrenotazioneToSala prove.oid_PASSING_Sala prove.oid(PrenotazioneToSala prove)" sourceLinkParameter="sv3#area12#page97#inu24#ln243#par629" target="sv3#mfu14.rel9#role18.ent19#att19"/>
       </Link>
-      <Field id="sv3#area12#page98#enu25#fld134" name="Inizio prenotazione" type="string" modifiable="true" preloaded="true"/>
-      <Field id="sv3#area12#page98#enu25#fld135" name="Fine prenotazione" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv3#area12#page98#enu25#fld134" name="Inizio prenotazione" type="timestamp" modifiable="true" preloaded="true"/>
+      <Field id="sv3#area12#page98#enu25#fld135" name="Fine prenotazione" type="timestamp" modifiable="true" preloaded="true"/>
     </EntryUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">

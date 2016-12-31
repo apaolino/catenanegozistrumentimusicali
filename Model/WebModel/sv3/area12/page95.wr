@@ -1,12 +1,15 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="280" gr:y="15" id="sv3#area12#page95" name="Gestione acquisti">
   <ContentUnits>
-    <IndexUnit gr:x="150" gr:y="0" id="sv3#area12#page95#inu7" name="Acquisti odierni" entity="ent15" displayAttributes="ent15#att30 ent15#att2 rel17#role34.User#att20 rel17#role34.User#att21 count(rel15#role29.ent12#att12)" linkOrder="sv3#area12#page95#inu7#ln222 sv3#area12#page95#inu7#ln231">
+    <IndexUnit gr:x="150" gr:y="0" id="sv3#area12#page95#inu7" name="Acquisti odierni" entity="ent15" displayAttributes="ent15#att30 ent15#att2 rel17#role34.User#att20 rel17#role34.User#att21 count(rel15#role29.ent12#att12)" linkOrder="sv3#area12#page95#inu7#ln231 sv3#area12#page95#inu7#ln229">
       <Selector id="sv3#area12#page95#inu7#su122" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area12#page95#inu7#su122#rcond42" name="RoleCondition42" predicate="in" implied="false" role="rel16#role32"/>
         <AttributesCondition id="sv3#area12#page95#inu7#su122#acond12" name="data" predicate="gteq" booleanOperator="or" implied="false" attributes="ent15#att30"/>
       </Selector>
-      <Link id="sv3#area12#page95#inu7#ln222" name="Elimina" to="sv3#dcnu10" automaticCoupling="true" type="normal" validate="true"/>
-      <Link id="sv3#area12#page95#inu7#ln231" name="Visualizza prodotti ordinati" to="sv3#area12#page95#alt18#page96#inu23" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv3#area12#page95#inu7#ln231" name="Visualizza prodotti ordinati" to="sv3#area12#page95#alt18#page96#inu23" type="normal" validate="true">
+        <LinkParameter id="sv3#area12#page95#inu7#ln231#par553" name="oid_RoleCondition43 [oid]" source="data[].ent15#att15" target="sv3#area12#page95#alt18#page96#inu23#su130#rcond43.ent15#att15"/>
+        <LinkParameter id="sv3#area12#page95#inu7#ln231#par556" name="oid_PASSING" source="data[].ent15#att15" passing="true"/>
+      </Link>
+      <Link id="sv3#area12#page95#inu7#ln229" name="Elimina" to="sv3#opg18#dcnu14" type="normal" automaticCoupling="true" validate="true"/>
     </IndexUnit>
     <GetUnit gr:x="0" gr:y="0" id="sv3#area12#page95#gtu23" name="GetUID" contextParameters="UserCtxParam">
       <Link id="sv3#area12#page95#gtu23#ln133" name="Flow133" to="sv3#area12#page95#seu39" type="transport" validate="true">
@@ -34,8 +37,8 @@
           <layout:Attribute attribute="rel17#role34.User#att20"/>
           <layout:Attribute attribute="rel17#role34.User#att21"/>
           <layout:Attribute attribute="count(rel15#role29.ent12#att12)"/>
-          <layout:Link link="sv3#area12#page95#inu7#ln222"/>
           <layout:Link link="sv3#area12#page95#inu7#ln231"/>
+          <layout:Link link="sv3#area12#page95#inu7#ln229"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -66,6 +69,7 @@
                   <layout:Attribute attribute="ent12#att66"/>
                   <layout:Attribute attribute="ent12#att67"/>
                   <layout:Attribute attribute="ent12#att68"/>
+                  <layout:Link link="sv3#area12#page95#alt18#page96#inu23#ln241"/>
                 </layout:Unit>
               </layout:Cell>
               <layout:Cell/>
@@ -99,10 +103,14 @@
   <Alternative gr:x="360" gr:y="80" id="sv3#area12#page95#alt18" name="Alternative18" defaultPage="sv3#area12#page95#alt18#page96">
     <Page gr:x="0" gr:y="0" id="sv3#area12#page95#alt18#page96" name="Page 96">
       <ContentUnits>
-        <IndexUnit gr:x="0" gr:y="0" id="sv3#area12#page95#alt18#page96#inu23" name="Prodotti associati" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45 ent12#att66 ent12#att67 ent12#att68">
+        <IndexUnit gr:x="0" gr:y="0" id="sv3#area12#page95#alt18#page96#inu23" name="Prodotti associati" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45 ent12#att66 ent12#att67 ent12#att68" linkOrder="sv3#area12#page95#alt18#page96#inu23#ln241">
           <Selector id="sv3#area12#page95#alt18#page96#inu23#su130" defaultPolicy="fill" booleanOperator="and">
             <RelationshipRoleCondition id="sv3#area12#page95#alt18#page96#inu23#su130#rcond43" name="RoleCondition43" predicate="in" implied="false" role="rel15#role29"/>
           </Selector>
+          <Link id="sv3#area12#page95#alt18#page96#inu23#ln241" name="Elimina" to="sv3#dcnu16" type="normal" validate="true">
+            <LinkParameter id="sv3#area12#page95#alt18#page96#inu23#ln241#par557" name="oid_PASSING_KeyCondition106 [oid] [Acquisto] [Source]" sourceLinkParameter="sv3#area12#page95#inu7#ln231#par556" target="sv3#dcnu16#su156#kcond106.ent15#att15"/>
+            <LinkParameter id="sv3#area12#page95#alt18#page96#inu23#ln241#par558" name="oid_KeyCondition107 [oid] [Prodotto] [Target]" source="data[].ent12#att12" target="sv3#dcnu16#su157#kcond107.ent12#att12"/>
+          </Link>
         </IndexUnit>
       </ContentUnits>
     </Page>

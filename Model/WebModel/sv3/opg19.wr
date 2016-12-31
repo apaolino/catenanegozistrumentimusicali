@@ -1,0 +1,33 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="3220" gr:y="960" id="sv3#opg19" name="Elimina noleggio" transaction="true">
+  <OperationUnits>
+    <DisconnectUnit id="sv3#opg19#dcnu15" name="Disc_prenotazione_prodotto" gr:x="0" gr:y="125" relationship="rel12#role23">
+      <SourceSelector id="sv3#opg19#dcnu15#su152" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#opg19#dcnu15#su152#kcond102" name="KeyCondition91" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#opg19#dcnu15#su153" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#opg19#dcnu15#su153#kcond103" name="KeyCondition92" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv3#opg19#dcnu15#oln78" name="OKFlow62" to="sv3#opg19#dlu23">
+        <LinkParameter id="sv3#opg19#dcnu15#oln78#par391" name="Source oid [Prenotazione Noleggio Prodotto]_KeyCondition90 [oid]" source="sourceent16#att16" target="sv3#opg19#dlu23#su155#kcond105.ent16#att16"/>
+        <LinkParameter id="sv3#opg19#dcnu15#oln78#par548" name="Source oid [Prenotazione Noleggio Prodotto]_PASSING" source="sourceent16#att16" passing="true"/>
+      </OKLink>
+      <KOLink id="sv3#opg19#dcnu15#kln56" name="KOFlow56" to="sv3#page102#alt20#page104#mssu38" automaticCoupling="true"/>
+    </DisconnectUnit>
+    <DeleteUnit id="sv3#opg19#dlu22" name="Elimina prenotazione" gr:x="325" gr:y="130" entity="ent16">
+      <Selector id="sv3#opg19#dlu22#su154" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#opg19#dlu22#su154#kcond104" name="KeyCondition98" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#opg19#dlu22#oln89" name="OKFlow89" to="sv3#page102#alt20#page103#mssu37" automaticCoupling="true"/>
+      <KOLink id="sv3#opg19#dlu22#kln58" name="KOFlow58" to="sv3#page102#alt20#page104#mssu38" automaticCoupling="true"/>
+    </DeleteUnit>
+    <DeleteUnit id="sv3#opg19#dlu23" name="Elimina prenotazione noleggio prodotto" gr:x="145" gr:y="0" entity="ent21">
+      <Selector id="sv3#opg19#dlu23#su155" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#opg19#dlu23#su155#kcond105" name="KeyCondition90" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#opg19#dlu23#oln79" name="OKFlow66" to="sv3#opg19#dlu22">
+        <LinkParameter id="sv3#opg19#dlu23#oln79#par550" name="Source oid [Prenotazione Noleggio Prodotto]_PASSING_KeyCondition98 [oid]" sourceLinkParameter="sv3#opg19#dcnu15#oln78#par548" target="sv3#opg19#dlu22#su154#kcond104.ent16#att16"/>
+      </OKLink>
+      <KOLink id="sv3#opg19#dlu23#kln57" name="KOFlow57" to="sv3#page102#alt20#page104#mssu38" automaticCoupling="true"/>
+    </DeleteUnit>
+  </OperationUnits>
+</OperationGroup>
