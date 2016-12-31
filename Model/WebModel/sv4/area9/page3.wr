@@ -1,11 +1,13 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="760" gr:y="0" id="sv4#area9#page3" name="Elimina prodotto">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="760" gr:y="10" id="sv4#area9#page3" name="Elimina prodotto">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#area9#page3#mssu10" name="Eliminazione prodotto" linkOrder="sv4#area9#page3#mssu10#ln22 sv4#area9#page3#mssu10#ln82">
-      <Message xml:space="preserve">Confermi l'eliminazione del prodotto?</Message>
-      <Link id="sv4#area9#page3#mssu10#ln22" name="Elimina" to="sv4#area9#dcnu2" type="normal" validate="true">
-        <LinkParameter id="sv4#area9#page3#mssu10#ln22#par57" name="oid_PASSING_KeyCondition31 [oid] [Prodotto] [Target]" sourceLinkParameter="sv4#area9#page39#inu2#ln18#par8" target="sv4#area9#dcnu2#su19#kcond31.ent12#att12"/>
+      <Message xml:space="preserve">L'eliminazione di un prodotto provocher&#224; la sola rimozione dai cataloghi in cui esso &#232; presente. 
+Verranno invece preservati tutti i riferimenti ad esso presenti negli acquisti/prenotazioni/noleggi.
+Confermi l'eliminazione del prodotto?</Message>
+      <Link id="sv4#area9#page3#mssu10#ln22" name="Elimina" to="sv4#area9#mfu16" type="normal" validate="true">
+        <LinkParameter id="sv4#area9#page3#mssu10#ln22#par488" name="oid_PASSING_KeyCondition70 [oid]" sourceLinkParameter="sv4#area9#page39#inu2#ln18#par8" target="sv4#area9#mfu16#su100#kcond70.ent12#att12"/>
+        <LinkParameter id="sv4#area9#page3#mssu10#ln22#par489" name="-1_Prezzo" sourceValue="-1" target="sv4#area9#mfu16.ent12#att43"/>
       </Link>
-      <Link id="sv4#area9#page3#mssu10#ln55" name="Flow55" to="sv4#area9#dlu6" automaticCoupling="true" type="transport" validate="true"/>
       <Link id="sv4#area9#page3#mssu10#ln82" name="Torna a elenco prodotti" to="sv4#area9#page39#inu2" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-167,73,148,53"/>
     </MultiMessageUnit>
   </ContentUnits>

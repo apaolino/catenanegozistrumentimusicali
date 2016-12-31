@@ -27,8 +27,8 @@
     </IndexUnit>
     <MultiDataUnit gr:x="0" gr:y="160" id="sv1#page7#mdu1" name="Migliori Recensioni sul Negozio" entity="ent18" displayAttributes="ent18#att33 ent18#att34 ent18#att35 ent18#att77">
       <Selector id="sv1#page7#mdu1#su6" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv1#page7#mdu1#su6#rcond2" name="RoleCondition2" predicate="in" implied="false" role="rel40#role79"/>
-        <AttributesCondition id="sv1#page7#mdu1#su6#acond6" name="AttCondition6" predicate="gteq" booleanOperator="or" implied="false" attributes="ent18#att33"/>
+        <RelationshipRoleCondition id="sv1#page7#mdu1#su6#rcond2" name="RoleCondition2" predicate="in" implied="false" role="rel18#role36"/>
+        <AttributesCondition id="sv1#page7#mdu1#su6#acond6" name="AttCondition6" predicate="gteq" booleanOperator="or" implied="false" attributes="ent18#att33" value="4"/>
       </Selector>
       <SortAttribute attribute="ent18#att35" order="descending"/>
     </MultiDataUnit>

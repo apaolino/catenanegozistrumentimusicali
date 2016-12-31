@@ -1,0 +1,32 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="650" gr:y="1445" id="sv4#area9#page88" name="Modifica Produttore">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv4#area9#page88#enu33" name="Modifica Produttore" linkOrder="sv4#area9#page88#enu33#ln218">
+      <Field id="sv4#area9#page88#enu33#fld140" name="Produttore" type="string" modifiable="true" preloaded="true"/>
+      <Link id="sv4#area9#page88#enu33#ln218" name="Modifica" to="sv4#area9#mfu19" type="normal" validate="true">
+        <LinkParameter id="sv4#area9#page88#enu33#ln218#par576" name="oid_PASSING_KeyCondition79 [oid]" sourceLinkParameter="sv4#area9#page78#inu20#ln217#par575" target="sv4#area9#mfu19#su106#kcond79.ent20#att39"/>
+        <LinkParameter id="sv4#area9#page88#enu33#ln218#par577" name="Produttore_Nome" source="sv4#area9#page88#enu33#fld140" target="sv4#area9#mfu19.ent20#att40"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area9#page88#enu33">
+          <layout:Field field="sv4#area9#page88#enu33#fld140"/>
+          <layout:Link link="sv4#area9#page88#enu33#ln218"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

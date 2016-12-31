@@ -1,0 +1,20 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-1325" gr:y="2495" id="sv4#opg13" name="Operation Group 13" transaction="true">
+  <OperationUnits>
+    <ModifyUnit id="sv4#opg13#mfu15" name="Update14" gr:x="355" gr:y="0" entity="User">
+      <Selector id="sv4#opg13#mfu15#su84" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#opg13#mfu15#su84#kcond60" name="KeyCondition59" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv4#opg13#mfu15#oln63" name="OKFlow62" to="sv4#page1#mssu30" automaticCoupling="true"/>
+      <KOLink id="sv4#opg13#mfu15#kln46" name="KOFlow45" to="sv4#page20#alt3#page31" automaticCoupling="true"/>
+    </ModifyUnit>
+    <SelectorUnit id="sv4#opg13#seu37" name="Selector23" gr:x="0" gr:y="0" entity="Group">
+      <Selector id="sv4#opg13#seu37#su85" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv4#opg13#seu37#su85#acond7" name="AttCondition2" predicate="eq" booleanOperator="or" implied="false" attributes="groupName" value="Gestore Singolo Negozio"/>
+      </Selector>
+      <OKLink id="sv4#opg13#seu37#oln66" name="OKFlow66" to="sv4#opg13#mfu15">
+        <LinkParameter id="sv4#opg13#seu37#oln66#par485" name="oid_Group.oid(defaultGroup)" source="groupOIDArray" target="sv4#opg13#mfu15.User2DefaultGroup.groupOID"/>
+        <LinkParameter id="sv4#opg13#seu37#oln66#par487" name="oid_PASSING_KeyCondition59 [oid]" sourceLinkParameter="sv4#area11#page35#mssu12#ln145#par484" target="sv4#opg13#mfu15#su84#kcond60.userOID"/>
+      </OKLink>
+    </SelectorUnit>
+  </OperationUnits>
+</OperationGroup>

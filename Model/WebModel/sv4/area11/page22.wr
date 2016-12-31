@@ -20,7 +20,7 @@
       <Field id="sv4#area11#page22#enu5#fld97" name="Stato" type="string" modifiable="true" preloaded="true"/>
       <Field id="sv4#area11#page22#enu5#fld98" name="Primario" type="boolean" modifiable="true" preloaded="true"/>
       <Field id="sv4#area11#page22#enu5#fld99" name="Indirizzo completo" type="string" modifiable="true" preloaded="true"/>
-      <Link id="sv4#area11#page22#enu5#ln47" name="Flow36" to="sv4#opg6#mfu5" type="normal" validate="true">
+      <Link id="sv4#area11#page22#enu5#ln47" name="Modifica" to="sv4#opg6#mfu5" type="normal" validate="true">
         <LinkParameter id="sv4#area11#page22#enu5#ln47#par191" name="Cognome_Cognome" source="sv4#area11#page22#enu5#fld86" target="sv4#opg6#mfu5.User#att21"/>
         <LinkParameter id="sv4#area11#page22#enu5#ln47#par192" name="Data di nascita_Data nascita" source="sv4#area11#page22#enu5#fld87" target="sv4#opg6#mfu5.User#att22"/>
         <LinkParameter id="sv4#area11#page22#enu5#ln47#par193" name="Data registrazione_Data registrazione" source="sv4#area11#page22#enu5#fld88" target="sv4#opg6#mfu5.User#att29"/>

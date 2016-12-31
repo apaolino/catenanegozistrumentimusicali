@@ -1,11 +1,12 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1040" gr:y="-335" id="sv1#opg1" name="Inserimento Nuovo Cliente" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="960" gr:y="-395" id="sv1#opg1" name="Inserimento Nuovo Cliente" transaction="true">
   <OperationUnits>
-    <CreateUnit gr:x="0" gr:y="5" id="sv1#opg1#cru1" name="Inserimento Indirizzo" entity="ent1">
+    <CreateUnit gr:x="0" gr:y="35" id="sv1#opg1#cru1" name="Inserimento Indirizzo" entity="ent1">
       <OKLink id="sv1#opg1#cru1#oln1" name="OKFlow1" to="sv1#opg1#cru2" automaticCoupling="true"/>
+      <KOLink id="sv1#opg1#cru1#kln44" name="KOFlow44" to="sv1#page15#alt5#page25#mssu7" automaticCoupling="true"/>
     </CreateUnit>
-    <CreateUnit gr:x="235" gr:y="30" id="sv1#opg1#cru2" name="Inserimento Utente Registrato" entity="User">
-      <OKLink id="sv1#opg1#cru2#oln6" name="OKFlow3" to="sv1#page15#alt5#page17#mssu4" automaticCoupling="true"/>
+    <CreateUnit gr:x="235" gr:y="10" id="sv1#opg1#cru2" name="Inserimento Utente Registrato" entity="ent8">
       <KOLink id="sv1#opg1#cru2#kln10" name="KOFlow10" to="sv1#page15#alt5#page25#mssu7" automaticCoupling="true"/>
+      <OKLink id="sv1#opg1#cru2#oln60" name="OKFlow60" to="sv1#page15#alt5#page17#mssu4" automaticCoupling="true"/>
     </CreateUnit>
   </OperationUnits>
 </OperationGroup>

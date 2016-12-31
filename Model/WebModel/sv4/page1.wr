@@ -1,0 +1,26 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-1000" gr:y="2670" id="sv4#page1" name="Page 1" linkOrder="sv4#page1#ln75">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page1#mssu30" name="Operazione effettuata con successo">
+      <Message xml:space="preserve">L'utente selezionato &#232; ora di tipo "Gestore Singolo Negozio"</Message>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page1#mssu30"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv4#page1#ln75" name="Lista degli utenti" to="sv4#area11#page10" automaticCoupling="true" type="normal" validate="true"/>
+</Page>

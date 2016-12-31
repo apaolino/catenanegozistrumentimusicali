@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="785" gr:y="280" id="sv4#area9#page40" name="Modifica prodotto" ajaxEnabled="false">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="785" gr:y="290" id="sv4#area9#page40" name="Modifica prodotto" ajaxEnabled="false">
   <ContentUnits>
     <EntryUnit gr:x="15" gr:y="0" id="sv4#area9#page40#enu2" name="Modifica dati articolo" linkOrder="sv4#area9#page40#enu2#ln80" fieldOrder="sv4#area9#page40#enu2#sfld4 sv4#area9#page40#enu2#sfld9 sv4#area9#page40#enu2#sfld8 sv4#area9#page40#enu2#fld25 sv4#area9#page40#enu2#fld26 sv4#area9#page40#enu2#fld29 sv4#area9#page40#enu2#fld30 sv4#area9#page40#enu2#fld44 sv4#area9#page40#enu2#fld45">
       <Field id="sv4#area9#page40#enu2#fld25" name="Nome modello" type="string" modifiable="true" preloaded="true"/>
