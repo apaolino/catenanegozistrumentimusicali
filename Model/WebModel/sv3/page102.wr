@@ -1,0 +1,90 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#page102" name="Pagina Messaggio Operazione" gr:x="3595" gr:y="465">
+  <ContentUnits/>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv3#page102#alt20#page103">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv3#page102#alt20#page103#mssu37">
+                  <layout:Link link="sv3#page102#alt20#page103#mssu37#ln257"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv3#page102#alt20#page104">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv3#page102#alt20#page104#mssu38">
+                  <layout:Link link="sv3#page102#alt20#page104#mssu38#ln258"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative id="sv3#page102#alt20" name="Alternative2" defaultPage="sv3#page102#alt20#page103" gr:x="0" gr:y="0">
+    <Page id="sv3#page102#alt20#page103" name="Pagina Successo" gr:x="0" gr:y="0">
+      <ContentUnits>
+        <MultiMessageUnit id="sv3#page102#alt20#page103#mssu37" name="Messaggio Successo" gr:x="0" gr:y="0" linkOrder="sv3#page102#alt20#page103#mssu37#ln257">
+          <Message xml:space="preserve">Operazione avvenuta con successo
+</Message>          <Link id="sv3#page102#alt20#page103#mssu37#ln257" name="Torna alle ozioni di gestione" to="sv3#area12#page91" automaticCoupling="true" type="normal" validate="true"/>        </MultiMessageUnit>      </ContentUnits>    </Page>    <Page id="sv3#page102#alt20#page104" name="Pagina Errore" gr:x="5" gr:y="140">      <ContentUnits>        <MultiMessageUnit id="sv3#page102#alt20#page104#mssu38" name="Messaggio Errore" gr:x="0" gr:y="0" linkOrder="sv3#page102#alt20#page104#mssu38#ln258">          <Message xml:space="preserve">Operazione non eseguita</Message>
+          <Link id="sv3#page102#alt20#page104#mssu38#ln258" name="Torna alle ozioni di gestione" to="sv3#area12#page91" automaticCoupling="true" type="normal" validate="true"/>
+        </MultiMessageUnit>
+      </ContentUnits>
+    </Page>
+  </Alternative>
+</Page>
