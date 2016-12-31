@@ -22,7 +22,7 @@
         <LinkParameter id="sv2#opg9#mathu1#ln91#par231" name="Result_Posti disponibili" source="result" target="sv2#opg9#mfu2.ent17#att65"/>
       </Link>
       <OKLink id="sv2#opg9#mathu1#oln41" name="OKFlow39" to="sv2#opg9#mfu2" automaticCoupling="true" gr:bendpoints="181,32,-184,92"/>
-      <KOLink id="sv2#opg9#mathu1#kln29" name="KOFlow29" to="sv2#page55#alt9#page57#mssu18" automaticCoupling="true" gr:bendpoints="336,48,-194,153"/>
+      <KOLink id="sv2#opg9#mathu1#kln29" name="KOFlow29" to="sv2#page55#alt9#page57" automaticCoupling="true" gr:bendpoints="336,48,-194,153"/>
     </MathUnit>
   </OperationUnits>
 </OperationGroup>

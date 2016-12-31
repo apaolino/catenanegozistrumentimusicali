@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="5" gr:y="0" id="sv2#area4#page47" name="Cataloghi associati">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="20" gr:y="0" id="sv2#area4#page47" name="Cataloghi associati">
   <ContentUnits>
     <IndexUnit gr:x="10" gr:y="0" id="sv2#area4#page47#inu4" name="Cataloghi associati" entity="ent11" displayAttributes="ent11#att46 ent11#att47" linkOrder="sv2#area4#page47#inu4#ln118">
       <Selector id="sv2#area4#page47#inu4#su61" defaultPolicy="fill" booleanOperator="and">
@@ -47,7 +47,9 @@
                   <layout:Attribute attribute="ent12#att44"/>
                   <layout:Attribute attribute="ent12#att45"/>
                   <layout:Attribute attribute="ent12#att68"/>
+                  <layout:Attribute attribute="rel25#role49.ent7#att36"/>
                   <layout:Link link="sv2#area4#page47#alt8#page49#mciu4#ln148"/>
+                  <layout:Link link="sv2#area4#page47#alt8#page49#mciu4#ln139"/>
                 </layout:Unit>
               </layout:Cell>
               <layout:Cell/>
@@ -95,7 +97,7 @@
   <Alternative gr:x="0" gr:y="125" id="sv2#area4#page47#alt8" name="Alternative8" defaultPage="sv2#area4#page47#alt8#page49">
     <Page gr:x="0" gr:y="0" id="sv2#area4#page47#alt8#page49" name="Page 49">
       <ContentUnits>
-        <MultiChoiceIndexUnit id="sv2#area4#page47#alt8#page49#mciu4" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45 ent12#att68" gr:x="5" gr:y="0" name="Elenco prodotti - Seleziona i prodotti da acquistare o noleggiare" linkOrder="sv2#area4#page47#alt8#page49#mciu4#ln148">
+        <MultiChoiceIndexUnit id="sv2#area4#page47#alt8#page49#mciu4" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45 ent12#att68 rel25#role49.ent7#att36" gr:x="5" gr:y="0" name="Elenco prodotti - Seleziona i prodotti da acquistare o noleggiare" linkOrder="sv2#area4#page47#alt8#page49#mciu4#ln148 sv2#area4#page47#alt8#page49#mciu4#ln139">
           <SortAttribute attribute="ent12#att66" order="ascending"/>
           <SortAttribute attribute="ent12#att68" order="ascending"/>
           <SortAttribute attribute="ent12#att67" order="ascending"/>
@@ -108,6 +110,9 @@
             <LinkParameter id="sv2#area4#page47#alt8#page49#mciu4#ln148#par406" name="oid_PASSING" sourceLinkParameter="sv2#area4#page47#inu4#ln118#par405" passing="true"/>
             <LinkParameter id="sv2#area4#page47#alt8#page49#mciu4#ln148#par441" name="Checked oid_PASSING" source="ent12#att12Checked" passing="true"/>
             <LinkParameter id="sv2#area4#page47#alt8#page49#mciu4#ln148#par452" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page47#inu4#ln118#par451" passing="true"/>
+          </Link>
+          <Link id="sv2#area4#page47#alt8#page49#mciu4#ln139" name="Recensisci" to="sv2#area10#page90#enu24" type="normal" validate="true">
+            <LinkParameter id="sv2#area4#page47#alt8#page49#mciu4#ln139#par554" name="oid (Single Row)_PASSING" source="data[].ent12#att12" passing="true"/>
           </Link>
         </MultiChoiceIndexUnit>
       </ContentUnits>

@@ -1,0 +1,39 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="870" gr:y="465" id="sv3#area12#page98" name="Modifica prenotazione">
+  <ContentUnits>
+    <EntryUnit id="sv3#area12#page98#enu25" name="Modifica prenotazione" linkOrder="sv3#area12#page98#enu25#ln242" gr:x="0" gr:y="0" entity="ent16">
+      <Link id="sv3#area12#page98#enu25#ln242" name="Salva modifiche" to="sv3#mfu14" type="normal" validate="true">
+        <LinkParameter id="sv3#area12#page98#enu25#ln242#par612" name="PrenotazioneToCliente Registrato.oid_PASSING_Cliente.oid(PrenotazioneToCliente Registrato)" sourceLinkParameter="sv3#area12#page97#inu24#ln243#par626" target="sv3#mfu14.rel14#role28.userOID"/>
+        <LinkParameter id="sv3#area12#page98#enu25#ln242#par613" name="Fine prenotazione_Data fine" source="sv3#area12#page98#enu25#fld135" target="sv3#mfu14.ent16#att32"/>
+        <LinkParameter id="sv3#area12#page98#enu25#ln242#par614" name="Inizio prenotazione_Data inizio" source="sv3#area12#page98#enu25#fld134" target="sv3#mfu14.ent16#att31"/>
+        <LinkParameter id="sv3#area12#page98#enu25#ln242#par615" name="PrenotazioneToGestore Singolo Negozio.oid_PASSING_Gestore Singolo Negozio.oid(PrenotazioneToGestore Singolo Negozio)" sourceLinkParameter="sv3#area12#page97#inu24#ln243#par627" target="sv3#mfu14.rel13#role25.userOID"/>
+        <LinkParameter id="sv3#area12#page98#enu25#ln242#par616" name="oid_PASSING_KeyCondition88 [oid]" sourceLinkParameter="sv3#area12#page97#inu24#ln243#par623" target="sv3#mfu14#su139#kcond88.ent16#att16"/>
+        <LinkParameter id="sv3#area12#page98#enu25#ln242#par617" name="PrenotazioneToNegozio.oid_PASSING_Negozio.oid(PrenotazioneToNegozio)" sourceLinkParameter="sv3#area12#page97#inu24#ln243#par628" target="sv3#mfu14.rel11#role21.ent10#att10"/>
+        <LinkParameter id="sv3#area12#page98#enu25#ln242#par618" name="PrenotazioneToSala prove.oid_PASSING_Sala prove.oid(PrenotazioneToSala prove)" sourceLinkParameter="sv3#area12#page97#inu24#ln243#par629" target="sv3#mfu14.rel9#role18.ent19#att19"/>
+      </Link>
+      <Field id="sv3#area12#page98#enu25#fld134" name="Inizio prenotazione" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv3#area12#page98#enu25#fld135" name="Fine prenotazione" type="string" modifiable="true" preloaded="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area12#page98#enu25">
+          <layout:Link link="sv3#area12#page98#enu25#ln242"/>
+          <layout:Field field="sv3#area12#page98#enu25#fld134"/>
+          <layout:Field field="sv3#area12#page98#enu25#fld135"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,20 +1,14 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2" name="Cliente" landmarks="sv2#area10 sv2#area6" homePage="sv2#page41">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2" name="Cliente" landmarks="sv2#area10" homePage="sv2#page41">
   <OperationUnits>
     <LogoutUnit gr:x="500" gr:y="220" id="sv2#lou1" name="Logout Cliente" siteView="sv1">
       <KOLink id="sv2#lou1#kln24" name="KOFlow24" to="sv2#page41" automaticCoupling="true" gr:bendpoints="-73,141,177,-19"/>
     </LogoutUnit>
-    <ModifyUnit gr:x="-100" gr:y="0" id="sv2#mfu13" name="Modifica recensione" entity="ent18">
+    <ModifyUnit gr:x="-80" gr:y="-455" id="sv2#mfu13" name="Modifica recensione" entity="ent18">
       <Selector id="sv2#mfu13#su64" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#mfu13#su64#kcond45" name="KeyCondition45" predicate="in" implied="false"/>
       </Selector>
     </ModifyUnit>
-    <CreateUnit gr:x="1840" gr:y="380" id="sv2#cru13" name="Aggiungi prenotazione sala prove" entity="ent16"/>
-    <GetUnit gr:x="1845" gr:y="245" id="sv2#gtu7" name="GetUID" contextParameters="UserCtxParam">
-      <Link id="sv2#gtu7#ln129" name="Flow129" to="sv2#cru13" type="transport" validate="true">
-        <LinkParameter id="sv2#gtu7#ln129#par378" name="UserCtxParam.oid_Cliente.oid(PrenotazioneToCliente Registrato)" source="sv2#gtu7.UserCtxParam" target="sv2#cru13.rel14#role28.userOID"/>
-      </Link>
-    </GetUnit>
-    <DeleteUnit gr:x="1855" gr:y="640" id="sv2#dlu7" name="EliminazionePrenotazione" entity="ent16">
+    <DeleteUnit gr:x="-615" gr:y="2975" id="sv2#dlu7" name="EliminazionePrenotazione" entity="ent16">
       <Selector id="sv2#dlu7#su65" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#dlu7#su65#kcond38" name="KeyCondition38" predicate="in" implied="false"/>
       </Selector>
@@ -24,6 +18,20 @@
         <KeyCondition id="sv2#dlu11#su83#kcond55" name="KeyCondition55" predicate="in" implied="false"/>
       </Selector>
     </DeleteUnit>
-    <CreateUnit gr:x="880" gr:y="-455" id="sv2#cru17" name="Create17" entity="ent2"/>
+    <CreateUnit gr:x="880" gr:y="-455" id="sv2#cru17" name="Crea carta di credito" entity="ent2"/>
+    <DeleteUnit gr:x="-2250" gr:y="2280" id="sv2#dlu12" name="Elimina prenotazione" entity="ent16">
+      <Selector id="sv2#dlu12#su85" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#dlu12#su85#kcond1" name="KeyCondition1" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+    <DisconnectUnit gr:x="-1910" gr:y="2270" id="sv2#dcnu9" name="Scollega prodotti da prenotazione" relationship="rel12#role23">
+      <SourceSelector id="sv2#dcnu9#su88" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#dcnu9#su88#kcond58" name="KeyCondition58" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv2#dcnu9#su90" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#dcnu9#su90#kcond59" name="KeyCondition59" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv2#dcnu9#oln15" name="OKFlow15" to="sv2#dlu12" automaticCoupling="true"/>
+    </DisconnectUnit>
   </OperationUnits>
 </SiteView>

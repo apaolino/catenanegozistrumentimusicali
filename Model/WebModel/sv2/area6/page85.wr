@@ -1,0 +1,64 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area6#page85" name="Seleziona prenotazione da eliminare" gr:x="155" gr:y="2270">
+  <ContentUnits>
+    <GetUnit id="sv2#area6#page85#gtu13" name="GetUID" gr:x="10" gr:y="0" contextParameters="UserCtxParam">
+      <Link id="sv2#area6#page85#gtu13#ln185" name="Flow138" to="sv2#area6#page85#inu16" type="transport" validate="true">
+        <LinkParameter id="sv2#area6#page85#gtu13#ln185#par489" name="UserCtxParam.oid_user [oid]" source="sv2#area6#page85#gtu13.UserCtxParam" target="sv2#area6#page85#inu16#su8#rcond6.userOID"/>
+      </Link>
+    </GetUnit>
+    <IndexUnit id="sv2#area6#page85#inu16" name="Lista prenotazioni sala prove" linkOrder="sv2#area6#page85#inu16#ln205" gr:x="180" gr:y="0" entity="ent16" displayAttributes="ent16#att31 ent16#att32">
+      <Selector id="sv2#area6#page85#inu16#su8" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area6#page85#inu16#su8#rcond6" name="user" predicate="in" implied="false" role="rel14#role27"/>
+        <RelationshipRoleCondition id="sv2#area6#page85#inu16#su8#rcond23" name="idsala" predicate="in" implied="false" role="rel9#role17"/>
+        <AttributesCondition id="sv2#area6#page85#inu16#su8#acond11" name="data" predicate="gteq" booleanOperator="or" implied="false" attributes="ent16#att31"/>
+      </Selector>
+      <Link id="sv2#area6#page85#inu16#ln205" name="Elimina" to="sv2#dlu7" type="normal" validate="true">
+        <LinkParameter id="sv2#area6#page85#inu16#ln205#par506" name="oid_KeyCondition38 [oid]" source="data[].ent16#att16" target="sv2#dlu7#su65#kcond38.ent16#att16"/>
+      </Link>
+      <SortAttribute attribute="ent16#att31" order="descending"/>
+    </IndexUnit>
+    <SelectorUnit gr:x="0" gr:y="120" id="sv2#area6#page85#seu37" name="Recupera id sala prove" entity="ent19">
+      <Link id="sv2#area6#page85#seu37#ln214" name="Flow214" to="sv2#area6#page85#inu16" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <TimeUnit gr:x="175" gr:y="140" id="sv2#area6#page85#tmu6" name="Timestamp attuale">
+      <Link id="sv2#area6#page85#tmu6#ln217" name="Flow217" to="sv2#area6#page85#inu16" type="transport" validate="true">
+        <LinkParameter id="sv2#area6#page85#tmu6#ln217#par509" name="Current/Input Timestamp_data" source="currentTimestamp" target="sv2#area6#page85#inu16#su8#acond11"/>
+      </Link>
+    </TimeUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area6#page85#inu16">
+          <layout:Attribute attribute="ent16#att31"/>
+          <layout:Attribute attribute="ent16#att32"/>
+          <layout:Link link="sv2#area6#page85#inu16#ln205"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

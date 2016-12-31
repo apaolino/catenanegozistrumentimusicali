@@ -1,0 +1,21 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-1295" gr:y="-25" id="sv2#opg15" name="Salva valutazione prodotto" transaction="true">
+  <OperationUnits>
+    <CreateUnit id="sv2#opg15#cru20" name="Nuova recensione prodotto" gr:x="319" gr:y="50" entity="ent18">
+      <OKLink id="sv2#opg15#cru20#oln77" name="OKFlow66" to="sv2#opg15#cnu14">
+        <LinkParameter id="sv2#opg15#cru20#oln77#par591" name="oid_KeyCondition82 [oid] [Recensione] [Source]" source="ent18#att18Array" target="sv2#opg15#cnu14#su125#kcond84.ent18#att18"/>
+        <LinkParameter id="sv2#opg15#cru20#oln77#par592" name="oid (Single Row)_PASSING_KeyCondition83 [oid] [Prodotto] [Target]" sourceLinkParameter="sv2#area10#page90#enu24#ln223#par600" target="sv2#opg15#cnu14#su126#kcond85.ent12#att12"/>
+      </OKLink>
+      <KOLink id="sv2#opg15#cru20#kln50" name="KOFlow50" to="sv2#page92#alt17#page94#mssu35" automaticCoupling="true"/>
+    </CreateUnit>
+    <ConnectUnit id="sv2#opg15#cnu14" name="Valutazione_prodotto" gr:x="79" gr:y="40" relationship="rel21#role41">
+      <SourceSelector id="sv2#opg15#cnu14#su125" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#opg15#cnu14#su125#kcond84" name="KeyCondition82" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv2#opg15#cnu14#su126" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#opg15#cnu14#su126#kcond85" name="KeyCondition83" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv2#opg15#cnu14#oln92" name="OKFlow92" to="sv2#page92#alt17#page93#mssu34" automaticCoupling="true"/>
+      <KOLink id="sv2#opg15#cnu14#kln49" name="KOFlow49" to="sv2#page92#alt17#page94#mssu35" automaticCoupling="true"/>
+    </ConnectUnit>
+  </OperationUnits>
+</OperationGroup>

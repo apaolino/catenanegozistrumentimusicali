@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="125" gr:y="320" id="sv2#area6#page67" name="Storico prenotazione eventi">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="225" gr:y="675" id="sv2#area6#page67" name="Storico prenotazione eventi" linkOrder="sv2#area6#page67#ln204">
   <ContentUnits>
-    <IndexUnit gr:x="255" gr:y="0" id="sv2#area6#page67#inu12" name="Elenco eventi prenotati" entity="ent16" displayAttributes="ent16#att31 ent16#att32" linkOrder="sv2#area6#page67#inu12#ln164">
+    <IndexUnit gr:x="255" gr:y="0" id="sv2#area6#page67#inu12" name="Elenco eventi prenotati" entity="ent16" displayAttributes="ent16#att31 ent16#att32 rel6#role12.ent17#att62" linkOrder="sv2#area6#page67#inu12#ln164">
       <Selector id="sv2#area6#page67#inu12#su87" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area6#page67#inu12#su87#rcond30" name="RoleCondition30" predicate="in" implied="false" role="rel14#role27"/>
         <RelationshipRoleCondition id="sv2#area6#page67#inu12#su87#rcond32" name="RoleCondition32" predicate="in" implied="false" role="rel6#role11"/>
@@ -8,6 +8,7 @@
       <Link id="sv2#area6#page67#inu12#ln164" name="Dettagli" to="sv2#area6#page67#alt11#page68#dau11" type="normal" validate="true">
         <LinkParameter id="sv2#area6#page67#inu12#ln164#par384" name="PrenotazioneToEvento.oid_KeyCondition55 [oid]" source="data[].rel6#role12_ent17#att17" target="sv2#area6#page67#alt11#page68#dau11#su89#kcond57.ent17#att17"/>
       </Link>
+      <SortAttribute attribute="ent16#att31" order="descending"/>
     </IndexUnit>
     <GetUnit id="sv2#area6#page67#gtu11" name="GetUID" gr:x="0" gr:y="20" contextParameters="UserCtxParam">
       <Link id="sv2#area6#page67#gtu11#ln162" name="Flow161" to="sv2#area6#page67#inu12" type="transport" validate="true">
@@ -22,9 +23,10 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area6#page67#inu12">
+          <layout:Link link="sv2#area6#page67#inu12#ln164"/>
           <layout:Attribute attribute="ent16#att31"/>
           <layout:Attribute attribute="ent16#att32"/>
-          <layout:Link link="sv2#area6#page67#inu12#ln164"/>
+          <layout:Attribute attribute="rel6#role12.ent17#att62"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -83,7 +85,7 @@
   <Alternative gr:x="490" gr:y="10" id="sv2#area6#page67#alt11" name="Alternative11" defaultPage="sv2#area6#page67#alt11#page68">
     <Page gr:x="0" gr:y="0" id="sv2#area6#page67#alt11#page68" name="Dettagli evento">
       <ContentUnits>
-        <DataUnit id="sv2#area6#page67#alt11#page68#dau11" entity="ent17" gr:x="0" gr:y="0" name="Simple List13" displayAttributes="ent17#att62 ent17#att61 ent17#att63 ent17#att64">
+        <DataUnit id="sv2#area6#page67#alt11#page68#dau11" entity="ent17" gr:x="0" gr:y="0" name="Dettagli evento" displayAttributes="ent17#att62 ent17#att61 ent17#att63 ent17#att64">
           <Selector id="sv2#area6#page67#alt11#page68#dau11#su89" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv2#area6#page67#alt11#page68#dau11#su89#kcond57" predicate="in" implied="false" name="KeyCondition55"/>
           </Selector>
@@ -91,4 +93,5 @@
       </ContentUnits>
     </Page>
   </Alternative>
+  <Link id="sv2#area6#page67#ln204" name="Elimina prenotazioni" to="sv2#area6#page82" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

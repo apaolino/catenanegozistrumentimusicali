@@ -1,0 +1,117 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="165" gr:y="1640" id="sv2#area6#page1" name="Elimina prenotazione noleggio">
+  <ContentUnits>
+    <GetUnit id="sv2#area6#page1#gtu17" name="GetUID" gr:x="38" gr:y="47" contextParameters="UserCtxParam">
+      <Link id="sv2#area6#page1#gtu17#ln145" name="Flow9" to="sv2#area6#page1#inu19" type="transport" validate="true">
+        <LinkParameter id="sv2#area6#page1#gtu17#ln145#par168" name="UserCtxParam.oid_RoleCondition7 [oid]" source="sv2#area6#page1#gtu17.UserCtxParam" target="sv2#area6#page1#inu19#su84#rcond28.userOID"/>
+      </Link>
+    </GetUnit>
+    <IndexUnit id="sv2#area6#page1#inu19" name="Elenco noleggi" linkOrder="sv2#area6#page1#inu19#ln147 sv2#area6#page1#inu19#ln169" gr:x="228" gr:y="37" entity="ent21" displayAttributes="ent16#att31 ent16#att32 ent21#att24">
+      <Selector id="sv2#area6#page1#inu19#su84" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area6#page1#inu19#su84#rcond28" name="RoleCondition7" predicate="in" implied="false" role="rel14#role27"/>
+        <AttributesCondition id="sv2#area6#page1#inu19#su84#acond2" name="data" predicate="gt" booleanOperator="or" implied="false" attributes="ent16#att31"/>
+      </Selector>
+      <Link id="sv2#area6#page1#inu19#ln147" name="Visualizza prodotti noleggiati" to="sv2#area6#page1#alt13#page60#inu18" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv2#area6#page1#inu19#ln165" name="Flow165" to="sv2#area6#page1#seu18" type="transport" validate="true">
+        <LinkParameter id="sv2#area6#page1#inu19#ln165#par484" name="oid_RoleCondition33 [oid]" source="data[].ent16#att16" target="sv2#area6#page1#seu18#su99#rcond33.ent16#att16"/>
+      </Link>
+      <Link id="sv2#area6#page1#inu19#ln169" name="Annulla noleggio" to="sv2#dcnu9" type="normal" validate="true" gr:bendpoints="-272,56,388,1">
+        <LinkParameter id="sv2#area6#page1#inu19#ln169#par487" name="oid_KeyCondition58 [oid] [Prenotazione Noleggio Prodotto] [Source]" source="data[].ent16#att16" target="sv2#dcnu9#su88#kcond58.ent16#att16"/>
+        <LinkParameter id="sv2#area6#page1#inu19#ln169#par488" name="oid_PASSING" source="data[].ent16#att16" passing="true"/>
+      </Link>
+      <SortAttribute attribute="ent16#att31" order="descending"/>
+    </IndexUnit>
+    <TimeUnit gr:x="55" gr:y="195" id="sv2#area6#page1#tmu2" name="Data odierna">
+      <Link id="sv2#area6#page1#tmu2#ln149" name="Flow149" to="sv2#area6#page1#inu19" type="transport" validate="true">
+        <LinkParameter id="sv2#area6#page1#tmu2#ln149#par170" name="Current/Input Date_data" source="currentDate" target="sv2#area6#page1#inu19#su84#acond2"/>
+      </Link>
+    </TimeUnit>
+    <SelectorUnit gr:x="325" gr:y="195" id="sv2#area6#page1#seu18" name="Selector18" entity="ent12">
+      <Selector id="sv2#area6#page1#seu18#su99" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area6#page1#seu18#su99#rcond33" name="RoleCondition33" predicate="in" implied="false" role="rel12#role23"/>
+      </Selector>
+      <Link id="sv2#area6#page1#seu18#ln168" name="Flow168" to="sv2#dcnu9" automaticCoupling="true" type="transport" validate="true" gr:bendpoints="-375,57,360,152"/>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Grid containerType="cell">
+          <layout:Row>
+            <layout:Cell>
+              <layout:SubPage pageId="sv2#area6#page1#alt13#page60">
+                <layout:Grid containerType="grid">
+                  <layout:Row>
+                    <layout:Cell colspan="12">
+                      <layout:Unit unitId="sv2#area6#page1#alt13#page60#inu18">
+                        <layout:Attribute attribute="ent12#att1"/>
+                        <layout:Attribute attribute="ent12#att41"/>
+                        <layout:Attribute attribute="ent12#att42"/>
+                        <layout:Attribute attribute="ent12#att66"/>
+                        <layout:Attribute attribute="ent12#att67"/>
+                        <layout:Attribute attribute="ent12#att68"/>
+                      </layout:Unit>
+                    </layout:Cell>
+                    <layout:Cell/>
+                    <layout:Cell/>
+                    <layout:Cell/>
+                    <layout:Cell/>
+                    <layout:Cell/>
+                    <layout:Cell/>
+                    <layout:Cell/>
+                    <layout:Cell/>
+                    <layout:Cell/>
+                    <layout:Cell/>
+                    <layout:Cell/>
+                  </layout:Row>
+                </layout:Grid>
+              </layout:SubPage>
+              <layout:Unit unitId="sv2#area6#page1#inu19">
+                <layout:Attribute attribute="ent16#att31"/>
+                <layout:Attribute attribute="ent16#att32"/>
+                <layout:Attribute attribute="ent21#att24"/>
+                <layout:Link link="sv2#area6#page1#inu19#ln147"/>
+                <layout:Link link="sv2#area6#page1#inu19#ln169"/>
+              </layout:Unit>
+            </layout:Cell>
+          </layout:Row>
+        </layout:Grid>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative id="sv2#area6#page1#alt13" name="Alternative1" defaultPage="sv2#area6#page1#alt13#page60" gr:x="453" gr:y="37">
+    <Page id="sv2#area6#page1#alt13#page60" name="Page 78" gr:x="0" gr:y="0">
+      <ContentUnits>
+        <IndexUnit id="sv2#area6#page1#alt13#page60#inu18" name="Prodotti noleggiati" gr:x="0" gr:y="0" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att66 ent12#att67 ent12#att68">
+          <Selector id="sv2#area6#page1#alt13#page60#inu18#su51" defaultPolicy="fill" booleanOperator="and">
+            <RelationshipRoleCondition id="sv2#area6#page1#alt13#page60#inu18#su51#rcond10" name="RoleCondition12" predicate="in" implied="false" role="rel12#role23"/>
+          </Selector>
+        </IndexUnit>
+      </ContentUnits>
+    </Page>
+  </Alternative>
+</Page>

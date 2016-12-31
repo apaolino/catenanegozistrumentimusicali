@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="15" gr:y="0" id="sv2#area1#page76" name="Page 76">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="15" gr:y="0" id="sv2#area1#page76" name="Creazione nuova carta">
   <ContentUnits>
     <GetUnit gr:x="0" gr:y="0" id="sv2#area1#page76#gtu12" name="GetUID" contextParameters="UserCtxParam">
       <Link id="sv2#area1#page76#gtu12#ln171" name="Flow171" to="sv2#area1#page76#enu20" type="transport" validate="true">

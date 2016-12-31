@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv2#area7#page48" name="Visuallizza prenotazioni">
   <ContentUnits>
-    <EventCalendarUnit gr:x="0" gr:y="0" id="sv2#area7#page48#ecu3" name="Prenotazioni sala prove" entityBased="true" entity="ent16" displayAttributes="ent16#att31 ent16#att32" dateAttribute="ent16#att31">
+    <EventCalendarUnit gr:x="0" gr:y="0" id="sv2#area7#page48#ecu3" name="Prenotazioni gi&#224; effettuate dagli utenti" entityBased="true" entity="ent16" displayAttributes="ent16#att31 ent16#att32" dateAttribute="ent16#att31">
       <Selector id="sv2#area7#page48#ecu3#su54" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area7#page48#ecu3#su54#rcond18" name="RoleCondition18" predicate="in" implied="false" role="rel9#role17"/>
       </Selector>
@@ -9,23 +9,14 @@
         <LinkParameter id="sv2#area7#page48#ecu3#ln117#par367" name="NegozioToSala prove.oid_PASSING" sourceLinkParameter="sv2#page41#inu3#ln106#par340" passing="true"/>
         <LinkParameter id="sv2#area7#page48#ecu3#ln117#par368" name="oid_PASSING" sourceLinkParameter="sv2#page41#inu3#ln106#par341" passing="true"/>
       </Link>
-      <Link id="sv2#area7#page48#ecu3#ln133" name="Flow133" to="sv2#area7#page48#mssu20" type="transport" validate="true">
-        <LinkParameter id="sv2#area7#page48#ecu3#ln133#par389" name="NegozioToSala prove.oid_PASSING" sourceLinkParameter="sv2#page41#inu3#ln106#par340" passing="true"/>
-      </Link>
     </EventCalendarUnit>
-    <MultiMessageUnit gr:x="180" gr:y="170" id="sv2#area7#page48#mssu19" linkOrder="sv2#area7#page48#mssu19#ln122" name="Mess aggiungi prenotazione">
+    <MultiMessageUnit gr:x="180" gr:y="170" id="sv2#area7#page48#mssu19" linkOrder="sv2#area7#page48#mssu19#ln122">
       <Link id="sv2#area7#page48#mssu19#ln122" name="Procedi" to="sv2#area7#page58#enu17" type="normal" validate="true">
         <LinkParameter id="sv2#area7#page48#mssu19#ln122#par369" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area7#page48#ecu3#ln117#par342" passing="true"/>
         <LinkParameter id="sv2#area7#page48#mssu19#ln122#par370" name="NegozioToSala prove.oid_PASSING" sourceLinkParameter="sv2#area7#page48#ecu3#ln117#par367" passing="true"/>
         <LinkParameter id="sv2#area7#page48#mssu19#ln122#par372" name="oid_PASSING" sourceLinkParameter="sv2#area7#page48#ecu3#ln117#par368" passing="true"/>
       </Link>
-      <Message xml:space="preserve">Vuoi prenotare?</Message>
-    </MultiMessageUnit>
-    <MultiMessageUnit gr:x="5" gr:y="190" id="sv2#area7#page48#mssu20" linkOrder="sv2#area7#page48#mssu20#ln136" name="Mess elimina prenotazione">
-      <Message xml:space="preserve">Vuoi eliminare una tua prenotazione?</Message>
-      <Link id="sv2#area7#page48#mssu20#ln136" name="Procedi" to="sv2#area7#page54#inu7" type="normal" validate="true">
-        <LinkParameter id="sv2#area7#page48#mssu20#ln136#par390" name="NegozioToSala prove.oid_PASSING_idsala [oid]" sourceLinkParameter="sv2#area7#page48#ecu3#ln133#par389" target="sv2#area7#page54#inu7#su57#rcond25.ent19#att19"/>
-      </Link>
+      <Message xml:space="preserve">Effettua nuova prenotazione</Message>
     </MultiMessageUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -80,11 +71,7 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:Unit unitId="sv2#area7#page48#mssu20">
-          <layout:Link link="sv2#area7#page48#mssu20#ln136"/>
-        </layout:Unit>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

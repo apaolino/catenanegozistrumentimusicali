@@ -1,0 +1,66 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="360" gr:y="680" id="sv3#area12#page99" name="Gestione prenotazioni eventi">
+  <ContentUnits>
+    <IndexUnit gr:x="335" gr:y="0" id="sv3#area12#page99#inu26" name="Lista delle prenotazioni" entity="ent16" displayAttributes="ent16#att31 ent16#att32 rel6#role12.ent17#att62 rel14#role28.User#att20 rel14#role28.User#att21 rel14#role28.User#att54 rel14#role28.email" linkOrder="sv3#area12#page99#inu26#ln247">
+      <Selector id="sv3#area12#page99#inu26#su140" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area12#page99#inu26#su140#rcond46" name="Gestnegozio" predicate="in" implied="false" role="rel13#role26"/>
+        <RelationshipRoleCondition id="sv3#area12#page99#inu26#su140#rcond47" name="idevento" predicate="in" implied="false" role="rel6#role11"/>
+        <AttributesCondition id="sv3#area12#page99#inu26#su140#acond14" name="data" predicate="gteq" booleanOperator="or" implied="false" attributes="ent16#att31"/>
+      </Selector>
+      <Link id="sv3#area12#page99#inu26#ln247" name="Elimina" to="sv3#dlu18" automaticCoupling="true" type="normal" validate="true"/>
+    </IndexUnit>
+    <GetUnit gr:x="0" gr:y="5" id="sv3#area12#page99#gtu25" name="GetUID" contextParameters="UserCtxParam">
+      <Link id="sv3#area12#page99#gtu25#ln244" name="Flow244" to="sv3#area12#page99#inu26" type="transport" validate="true">
+        <LinkParameter id="sv3#area12#page99#gtu25#ln244#par630" name="UserCtxParam.oid_Gestnegozio [oid]" source="sv3#area12#page99#gtu25.UserCtxParam" target="sv3#area12#page99#inu26#su140#rcond46.userOID"/>
+      </Link>
+    </GetUnit>
+    <SelectorUnit gr:x="20" gr:y="105" id="sv3#area12#page99#seu49" name="Recupera ID eventi" entity="ent17">
+      <Link id="sv3#area12#page99#seu49#ln245" name="Flow245" to="sv3#area12#page99#inu26" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <TimeUnit gr:x="305" gr:y="150" id="sv3#area12#page99#tmu11" name="Current date">
+      <Link id="sv3#area12#page99#tmu11#ln246" name="Flow246" to="sv3#area12#page99#inu26" type="transport" validate="true">
+        <LinkParameter id="sv3#area12#page99#tmu11#ln246#par631" name="Current/Input Date_data" source="currentDate" target="sv3#area12#page99#inu26#su140#acond14"/>
+      </Link>
+    </TimeUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area12#page99#inu26">
+          <layout:Attribute attribute="ent16#att31"/>
+          <layout:Attribute attribute="ent16#att32"/>
+          <layout:Attribute attribute="rel6#role12.ent17#att62"/>
+          <layout:Attribute attribute="rel14#role28.User#att20"/>
+          <layout:Attribute attribute="rel14#role28.User#att21"/>
+          <layout:Attribute attribute="rel14#role28.User#att54"/>
+          <layout:Attribute attribute="rel14#role28.email"/>
+          <layout:Link link="sv3#area12#page99#inu26#ln247"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

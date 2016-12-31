@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv2#area10#page50" name="Visualizza recensioni">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="110" id="sv2#area10#page50" name="Visualizza recensioni">
   <ContentUnits>
-    <IndexUnit gr:x="155" gr:y="5" id="sv2#area10#page50#inu6" name="Lista recensioni" entity="ent18" displayAttributes="ent18#att33 ent18#att34 ent18#att35 ent18#att77" linkOrder="sv2#area10#page50#inu6#ln120">
+    <IndexUnit gr:x="155" gr:y="5" id="sv2#area10#page50#inu6" name="Lista recensioni" entity="ent18" displayAttributes="ent18#att33 ent18#att34 ent18#att35 rel21#role41.ent12#att1 rel18#role35.ent10#att48 ent18#att77" linkOrder="sv2#area10#page50#inu6#ln120 sv2#area10#page50#inu6#ln234">
       <Selector id="sv2#area10#page50#inu6#su63" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area10#page50#inu6#su63#rcond13" predicate="in" implied="false" role="rel19#role38" name="RoleCondition13"/>
       </Selector>
@@ -12,8 +12,13 @@
         <LinkParameter id="sv2#area10#page50#inu6#ln120#par310" name="oid_PASSING" source="data[].ent18#att18" passing="true"/>
         <LinkParameter id="sv2#area10#page50#inu6#ln120#par311" name="ValutazioneToCliente Registrato.oid_PASSING" source="data[].rel19#role37_userOID" passing="true"/>
       </Link>
+      <SortAttribute attribute="ent18#att77" order="ascending"/>
+      <Link id="sv2#area10#page50#inu6#ln234" name="Elimina" to="sv2#opg17#switch2" type="normal" validate="true" gr:bendpoints="-179,-150,216,-85">
+        <LinkParameter id="sv2#area10#page50#inu6#ln234#par621" name="Tipo_Switch" source="data[].ent18#att77" target="sv2#opg17#switch2.switch"/>
+        <LinkParameter id="sv2#area10#page50#inu6#ln234#par622" name="oid_PASSING" source="data[].ent18#att18" passing="true"/>
+      </Link>
     </IndexUnit>
-    <GetUnit gr:x="0" gr:y="0" id="sv2#area10#page50#gtu3" name="GetIdCliente" contextParameters="UserCtxParam">
+    <GetUnit gr:x="0" gr:y="0" id="sv2#area10#page50#gtu3" name="GetUID" contextParameters="UserCtxParam">
       <Link id="sv2#area10#page50#gtu3#ln119" name="Flow119" to="sv2#area10#page50#inu6" type="transport" validate="true">
         <LinkParameter id="sv2#area10#page50#gtu3#ln119#par305" name="UserCtxParam.oid_RoleCondition13 [oid]" source="sv2#area10#page50#gtu3.UserCtxParam" target="sv2#area10#page50#inu6#su63#rcond13.userOID"/>
       </Link>
@@ -26,8 +31,11 @@
           <layout:Attribute attribute="ent18#att33"/>
           <layout:Attribute attribute="ent18#att34"/>
           <layout:Attribute attribute="ent18#att35"/>
+          <layout:Attribute attribute="rel21#role41.ent12#att1"/>
+          <layout:Attribute attribute="rel18#role35.ent10#att48"/>
           <layout:Attribute attribute="ent18#att77"/>
           <layout:Link link="sv2#area10#page50#inu6#ln120"/>
+          <layout:Link link="sv2#area10#page50#inu6#ln234"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

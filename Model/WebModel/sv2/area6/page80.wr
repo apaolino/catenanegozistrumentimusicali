@@ -1,0 +1,68 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="265" gr:y="315" id="sv2#area6#page80" name="Annulla acquisti (solo quelli effettuati in giornata)">
+  <ContentUnits>
+    <IndexUnit id="sv2#area6#page80#inu20" name="Storico acquisti" gr:x="245" gr:y="0" entity="ent15" displayAttributes="ent15#att30 ent15#att2" linkOrder="sv2#area6#page80#inu20#ln193">
+      <Selector id="sv2#area6#page80#inu20#su106" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area6#page80#inu20#su106#rcond36" name="RoleCondition24" predicate="in" implied="false" role="rel17#role33"/>
+        <AttributesCondition id="sv2#area6#page80#inu20#su106#acond9" name="AttCondition9" predicate="gteq" booleanOperator="or" implied="false" attributes="ent15#att30"/>
+      </Selector>
+      <SortAttribute attribute="ent15#att30" order="descending"/>
+      <Link id="sv2#area6#page80#inu20#ln193" name="Elimina" to="sv2#area6#dcnu7" type="normal" validate="true">
+        <LinkParameter id="sv2#area6#page80#inu20#ln193#par584" name="oid_KeyCondition78 [oid] [Acquisto] [Source]" source="data[].ent15#att15" target="sv2#area6#dcnu7#su114#kcond78.ent15#att15"/>
+        <LinkParameter id="sv2#area6#page80#inu20#ln193#par585" name="oid_PASSING" source="data[].ent15#att15" passing="true"/>
+      </Link>
+      <Link id="sv2#area6#page80#inu20#ln194" name="Flow194" to="sv2#area6#page80#seu43" automaticCoupling="true" type="transport" validate="true"/>
+    </IndexUnit>
+    <GetUnit id="sv2#area6#page80#gtu19" name="GetUID" gr:x="0" gr:y="0" contextParameters="UserCtxParam">
+      <Link id="sv2#area6#page80#gtu19#ln186" name="Flow155" to="sv2#area6#page80#inu20" type="transport" validate="true">
+        <LinkParameter id="sv2#area6#page80#gtu19#ln186#par583" name="UserCtxParam.oid_RoleCondition24 [oid]" source="sv2#area6#page80#gtu19.UserCtxParam" target="sv2#area6#page80#inu20#su106#rcond36.userOID"/>
+      </Link>
+    </GetUnit>
+    <SelectorUnit gr:x="255" gr:y="140" id="sv2#area6#page80#seu43" name="Selector43" entity="ent12">
+      <Selector id="sv2#area6#page80#seu43#su117" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area6#page80#seu43#su117#rcond39" name="RoleCondition39" predicate="in" implied="false" role="rel15#role29"/>
+      </Selector>
+      <Link id="sv2#area6#page80#seu43#ln195" name="Flow195" to="sv2#area6#dcnu7" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <TimeUnit gr:x="50" gr:y="175" id="sv2#area6#page80#tmu5" name="Giorno corrente">
+      <Link id="sv2#area6#page80#tmu5#ln174" name="Flow174" to="sv2#area6#page80#inu20" type="transport" validate="true">
+        <LinkParameter id="sv2#area6#page80#tmu5#ln174#par485" name="Current/Input Date_AttCondition9" source="currentDate" target="sv2#area6#page80#inu20#su106#acond9"/>
+      </Link>
+    </TimeUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area6#page80#inu20">
+          <layout:Attribute attribute="ent15#att30"/>
+          <layout:Attribute attribute="ent15#att2"/>
+          <layout:Link link="sv2#area6#page80#inu20#ln193"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

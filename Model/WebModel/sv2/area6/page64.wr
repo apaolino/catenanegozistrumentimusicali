@@ -1,9 +1,11 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv2#area6#page64" name="Page 64">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="5" id="sv2#area6#page64" name="Selezione storico">
   <ContentUnits>
-    <MultiMessageUnit gr:x="0" gr:y="0" id="sv2#area6#page64#mssu23" name="Message23" linkOrder="sv2#area6#page64#mssu23#ln130 sv2#area6#page64#mssu23#ln160">
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv2#area6#page64#mssu23" name="Selezione storico da visualizzare" linkOrder="sv2#area6#page64#mssu23#ln130 sv2#area6#page64#mssu23#ln160 sv2#area6#page64#mssu23#ln19 sv2#area6#page64#mssu23#ln213">
       <Message xml:space="preserve">Visualizzare lo storico:</Message>
       <Link id="sv2#area6#page64#mssu23#ln130" name="Acquisti" to="sv2#area6#page65" automaticCoupling="true" type="normal" validate="true"/>
       <Link id="sv2#area6#page64#mssu23#ln160" name="Eventi prenotati" to="sv2#area6#page67" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="26,266,-384,-124"/>
+      <Link id="sv2#area6#page64#mssu23#ln19" name="Storico noleggi" to="sv2#area6#page77" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="0,703,-455,-327;-10,981,-465,-49;-33,1097,-488,67;97,1087,-358,57"/>
+      <Link id="sv2#area6#page64#mssu23#ln213" name="Prenotazioni sala prove" to="sv2#area6#page86" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-60,1260,-320,-790;-40,1922,-300,-128"/>
     </MultiMessageUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -12,6 +14,8 @@
         <layout:Unit unitId="sv2#area6#page64#mssu23">
           <layout:Link link="sv2#area6#page64#mssu23#ln130"/>
           <layout:Link link="sv2#area6#page64#mssu23#ln160"/>
+          <layout:Link link="sv2#area6#page64#mssu23#ln19"/>
+          <layout:Link link="sv2#area6#page64#mssu23#ln213"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

@@ -1,0 +1,58 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="185" gr:y="2010" id="sv2#area6#page86" name="Storico prenotazioni sala prove" linkOrder="sv2#area6#page86#ln212">
+  <ContentUnits>
+    <GetUnit gr:x="0" gr:y="0" id="sv2#area6#page86#gtu18" name="GetUID" contextParameters="UserCtxParam">
+      <Link id="sv2#area6#page86#gtu18#ln206" name="Flow206" to="sv2#area6#page86#inu22" type="transport" validate="true">
+        <LinkParameter id="sv2#area6#page86#gtu18#ln206#par508" name="UserCtxParam.oid_RoleCondition25 [oid]" source="sv2#area6#page86#gtu18.UserCtxParam" target="sv2#area6#page86#inu22#su100#rcond25.userOID"/>
+      </Link>
+    </GetUnit>
+    <IndexUnit gr:x="145" gr:y="5" id="sv2#area6#page86#inu22" name="Lista prenotazioni sala prove" entity="ent16" displayAttributes="ent16#att31 ent16#att32 rel11#role21.ent10#att48 rel9#role18.ent19#att59 rel9#role18.ent19#att60">
+      <Selector id="sv2#area6#page86#inu22#su100" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area6#page86#inu22#su100#rcond25" name="RoleCondition25" predicate="in" implied="false" role="rel14#role27"/>
+        <RelationshipRoleCondition id="sv2#area6#page86#inu22#su100#rcond31" name="RoleCondition31" predicate="in" implied="false" role="rel9#role17"/>
+      </Selector>
+      <SortAttribute attribute="ent16#att31" order="descending"/>
+    </IndexUnit>
+    <SelectorUnit gr:x="10" gr:y="90" id="sv2#area6#page86#seu23" name="Recuepra id sala prove" entity="ent19">
+      <Link id="sv2#area6#page86#seu23#ln208" name="Flow208" to="sv2#area6#page86#inu22" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area6#page86#inu22">
+          <layout:Attribute attribute="ent16#att31"/>
+          <layout:Attribute attribute="ent16#att32"/>
+          <layout:Attribute attribute="rel11#role21.ent10#att48"/>
+          <layout:Attribute attribute="rel9#role18.ent19#att59"/>
+          <layout:Attribute attribute="rel9#role18.ent19#att60"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv2#area6#page86#ln212" name="Elimina prenotazione" to="sv2#area6#page85" automaticCoupling="true" type="normal" validate="true"/>
+</Page>

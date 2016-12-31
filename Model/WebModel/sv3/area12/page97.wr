@@ -1,0 +1,79 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="375" gr:y="365" id="sv3#area12#page97" name="Gestione prenotazioni sala prove">
+  <ContentUnits>
+    <IndexUnit gr:x="220" gr:y="0" id="sv3#area12#page97#inu24" name="Lista prenotazioni sala prove" entity="ent16" displayAttributes="ent16#att31 ent16#att32 rel14#role28.User#att20 rel14#role28.User#att21 rel14#role28.User#att54 rel14#role28.email" linkOrder="sv3#area12#page97#inu24#ln239 sv3#area12#page97#inu24#ln243">
+      <Selector id="sv3#area12#page97#inu24#su131" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area12#page97#inu24#su131#rcond44" name="RoleCondition44" predicate="in" implied="false" role="rel9#role17"/>
+        <AttributesCondition id="sv3#area12#page97#inu24#su131#acond13" name="AttCondition13" predicate="gteq" booleanOperator="or" implied="false" attributes="ent16#att31"/>
+      </Selector>
+      <Link id="sv3#area12#page97#inu24#ln239" name="Elimina" to="sv3#dlu17" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv3#area12#page97#inu24#ln243" name="Modifica" to="sv3#area12#page98#enu25" type="normal" validate="true">
+        <LinkParameter id="sv3#area12#page97#inu24#ln243#par623" name="oid_PASSING" source="data[].ent16#att16" passing="true"/>
+        <LinkParameter id="sv3#area12#page97#inu24#ln243#par624" name="Data inizio_Fine prenotazione" source="data[].ent16#att31" target="sv3#area12#page98#enu25#fld135_slot"/>
+        <LinkParameter id="sv3#area12#page97#inu24#ln243#par625" name="Data fine_Inizio prenotazione" source="data[].ent16#att32" target="sv3#area12#page98#enu25#fld134_slot"/>
+        <LinkParameter id="sv3#area12#page97#inu24#ln243#par626" name="PrenotazioneToCliente Registrato.oid_PASSING" source="data[].rel14#role28_userOID" passing="true"/>
+        <LinkParameter id="sv3#area12#page97#inu24#ln243#par627" name="PrenotazioneToGestore Singolo Negozio.oid_PASSING" source="data[].rel13#role25_userOID" passing="true"/>
+        <LinkParameter id="sv3#area12#page97#inu24#ln243#par628" name="PrenotazioneToNegozio.oid_PASSING" source="data[].rel11#role21_ent10#att10" passing="true"/>
+        <LinkParameter id="sv3#area12#page97#inu24#ln243#par629" name="PrenotazioneToSala prove.oid_PASSING" source="data[].rel9#role18_ent19#att19" passing="true"/>
+      </Link>
+    </IndexUnit>
+    <GetUnit gr:x="35" gr:y="0" id="sv3#area12#page97#gtu24" name="GetUID" contextParameters="UserCtxParam">
+      <Link id="sv3#area12#page97#gtu24#ln233" name="Flow233" to="sv3#area12#page97#seu48" type="transport" validate="true">
+        <LinkParameter id="sv3#area12#page97#gtu24#ln233#par378" name="UserCtxParam.oid_RoleCondition45 [oid]" source="sv3#area12#page97#gtu24.UserCtxParam" target="sv3#area12#page97#seu48#su132#rcond45.userOID"/>
+      </Link>
+    </GetUnit>
+    <SelectorUnit gr:x="0" gr:y="135" id="sv3#area12#page97#seu48" name="Seleziona negozio associato" entity="ent10">
+      <Link id="sv3#area12#page97#seu48#ln237" name="Flow237" to="sv3#area12#page97#inu24" type="transport" validate="true">
+        <LinkParameter id="sv3#area12#page97#seu48#ln237#par387" name="NegozioToSala prove.oid_RoleCondition44 [oid]" source="rel7#role14_ent19#att19Array" target="sv3#area12#page97#inu24#su131#rcond44.ent19#att19"/>
+      </Link>
+      <Selector id="sv3#area12#page97#seu48#su132" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area12#page97#seu48#su132#rcond45" name="RoleCondition45" predicate="in" implied="false" role="rel4#role7"/>
+      </Selector>
+    </SelectorUnit>
+    <TimeUnit gr:x="300" gr:y="195" id="sv3#area12#page97#tmu10" name="Current timestamp">
+      <Link id="sv3#area12#page97#tmu10#ln238" name="Flow238" to="sv3#area12#page97#inu24" type="transport" validate="true">
+        <LinkParameter id="sv3#area12#page97#tmu10#ln238#par389" name="Current/Input Timestamp_AttCondition13" source="currentTimestamp" target="sv3#area12#page97#inu24#su131#acond13"/>
+      </Link>
+    </TimeUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area12#page97#inu24">
+          <layout:Attribute attribute="ent16#att31"/>
+          <layout:Attribute attribute="ent16#att32"/>
+          <layout:Attribute attribute="rel14#role28.User#att20"/>
+          <layout:Attribute attribute="rel14#role28.User#att21"/>
+          <layout:Attribute attribute="rel14#role28.User#att54"/>
+          <layout:Attribute attribute="rel14#role28.email"/>
+          <layout:Link link="sv3#area12#page97#inu24#ln239"/>
+          <layout:Link link="sv3#area12#page97#inu24#ln243"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
