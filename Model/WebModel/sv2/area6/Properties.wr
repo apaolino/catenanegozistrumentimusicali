@@ -1,4 +1,4 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-1670" gr:y="465" id="sv2#area6" name="Storico acquisti e prenotazioni" landmark="false" defaultPage="sv2#area6#page64">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-2005" gr:y="465" id="sv2#area6" name="Storico acquisti e prenotazioni" landmark="false" defaultPage="sv2#area6#page64">
   <OperationUnits>
     <DisconnectUnit gr:x="780" gr:y="295" id="sv2#area6#dcnu7" name="Disconnect_acquisto_prodotto" relationship="rel15#role29">
       <SourceSelector id="sv2#area6#dcnu7#su114" defaultPolicy="fill" booleanOperator="and">

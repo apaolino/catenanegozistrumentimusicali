@@ -1,0 +1,214 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#page114" name="Ricerca Eventi" gr:x="1565" gr:y="-605">
+  <ContentUnits>
+    <EntryUnit id="sv2#page114#enu30" name="Ricerca Per tipologia di evento" linkOrder="sv2#page114#enu30#ln276" gr:x="155" gr:y="20">
+      <SelectionField id="sv2#page114#enu30#sfld26" name="Tipo di evento" type="string"/>
+      <Link id="sv2#page114#enu30#ln276" name="Cerca" to="sv2#page114#alt22#page116#inu31" type="normal" validate="true">
+        <LinkParameter id="sv2#page114#enu30#ln276#par656" name="Tipo di evento_RoleCondition56 [oid]" source="sv2#page114#enu30#sfld26" target="sv2#page114#alt22#page116#inu31#su161#rcond60.ent26#att78"/>
+      </Link>
+    </EntryUnit>
+    <EntryUnit id="sv2#page114#enu34" name="Ricerca per periodo" linkOrder="sv2#page114#enu34#ln277" gr:x="180" gr:y="155">
+      <SelectionField id="sv2#page114#enu34#sfld27" name="Periodo" type="string"/>
+      <Link id="sv2#page114#enu34#ln277" name="Cerca" to="sv2#page114#alt22#page117#inu32" type="normal" validate="true">
+        <LinkParameter id="sv2#page114#enu34#ln277#par657" name="Periodo_RoleCondition59 [oid]" source="sv2#page114#enu34#sfld27" target="sv2#page114#alt22#page117#inu32#su164#rcond61.ent22#att72"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit id="sv2#page114#seu59" name="Selector53" gr:x="10" gr:y="0" entity="ent26">
+      <Link id="sv2#page114#seu59#ln278" name="Flow261" to="sv2#page114#enu30" type="transport" validate="true">
+        <LinkParameter id="sv2#page114#seu59#ln278#par658" name="Nome Tipologia Evento_Tipo di evento [label]" source="ent26#att75Array" target="sv2#page114#enu30#sfld26_label"/>
+        <LinkParameter id="sv2#page114#seu59#ln278#par659" name="oid_Tipo di evento [output]" source="ent26#att78Array" target="sv2#page114#enu30#sfld26_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit id="sv2#page114#seu61" name="Seleziona periodi" gr:x="0" gr:y="155" entity="ent22">
+      <Link id="sv2#page114#seu61#ln279" name="Flow262" to="sv2#page114#enu34" type="transport" validate="true">
+        <LinkParameter id="sv2#page114#seu61#ln279#par662" name="Mese_Periodo [label]" source="ent22#att74Array" target="sv2#page114#enu34#sfld27_label"/>
+        <LinkParameter id="sv2#page114#seu61#ln279#par663" name="oid_Periodo [output]" source="ent22#att72Array" target="sv2#page114#enu34#sfld27_output"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page114#enu30">
+          <layout:Field field="sv2#page114#enu30#sfld26"/>
+          <layout:Link link="sv2#page114#enu30#ln276"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page114#enu34">
+          <layout:Field field="sv2#page114#enu34#sfld27"/>
+          <layout:Link link="sv2#page114#enu34#ln277"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv2#page114#alt22#page115">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv2#page114#alt22#page116">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv2#page114#alt22#page116#inu31">
+                  <layout:Attribute attribute="ent17#att62"/>
+                  <layout:Attribute attribute="ent17#att61"/>
+                  <layout:Attribute attribute="ent17#att63"/>
+                  <layout:Attribute attribute="ent17#att64"/>
+                  <layout:Attribute attribute="ent17#att65"/>
+                  <layout:Link link="sv2#page114#alt22#page116#inu31#ln284"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv2#page114#alt22#page117">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv2#page114#alt22#page117#inu32">
+                  <layout:Attribute attribute="ent17#att62"/>
+                  <layout:Attribute attribute="ent17#att61"/>
+                  <layout:Attribute attribute="ent17#att63"/>
+                  <layout:Attribute attribute="ent17#att64"/>
+                  <layout:Attribute attribute="ent17#att65"/>
+                  <layout:Link link="sv2#page114#alt22#page117#inu32#ln285"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative id="sv2#page114#alt22" name="Alternative21" defaultPage="sv2#page114#alt22#page115" gr:x="465" gr:y="40">
+    <Page id="sv2#page114#alt22#page115" name="Page 111" gr:x="0" gr:y="0">
+      <ContentUnits/>
+    </Page>
+    <Page id="sv2#page114#alt22#page116" name="Calendario eventi" gr:x="5" gr:y="105">
+      <ContentUnits>
+        <IndexUnit id="sv2#page114#alt22#page116#inu31" name="Lista eventi filtrati per tipologia evento" gr:x="0" gr:y="0" entity="ent17" displayAttributes="ent17#att62 ent17#att61 ent17#att63 ent17#att64 ent17#att65" linkOrder="sv2#page114#alt22#page116#inu31#ln284">
+          <Selector id="sv2#page114#alt22#page116#inu31#su161" defaultPolicy="fill" booleanOperator="and">
+            <RelationshipRoleCondition id="sv2#page114#alt22#page116#inu31#su161#rcond60" name="RoleCondition56" predicate="in" implied="false" role="rel42#role84"/>
+          </Selector>
+          <SortAttribute attribute="ent17#att61" order="descending"/>
+          <SortAttribute attribute="ent17#att62" order="ascending"/>
+          <Link id="sv2#page114#alt22#page116#inu31#ln284" name="Prenota evento" to="sv2#area8#page53#dau6" automaticCoupling="true" type="normal" validate="true"/>
+        </IndexUnit>
+      </ContentUnits>
+    </Page>
+    <Page id="sv2#page114#alt22#page117" name="Calendario eventi" gr:x="5" gr:y="285">
+      <ContentUnits>
+        <IndexUnit id="sv2#page114#alt22#page117#inu32" name="Lista eventi filtrati per periodo scelto" gr:x="0" gr:y="0" entity="ent17" displayAttributes="ent17#att62 ent17#att61 ent17#att63 ent17#att64 ent17#att65" linkOrder="sv2#page114#alt22#page117#inu32#ln285">
+          <Selector id="sv2#page114#alt22#page117#inu32#su164" defaultPolicy="fill" booleanOperator="and">
+            <RelationshipRoleCondition id="sv2#page114#alt22#page117#inu32#su164#rcond61" name="RoleCondition59" predicate="in" implied="false" role="rel41#role82"/>
+          </Selector>
+          <SortAttribute attribute="ent17#att61" order="descending"/>
+          <SortAttribute attribute="ent17#att62" order="ascending"/>
+          <Link id="sv2#page114#alt22#page117#inu32#ln285" name="Prenota Evento" to="sv2#area8#page53#dau6" automaticCoupling="true" type="normal" validate="true"/>
+        </IndexUnit>
+      </ContentUnits>
+    </Page>
+  </Alternative>
+</Page>
