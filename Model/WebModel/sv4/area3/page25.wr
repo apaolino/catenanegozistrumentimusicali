@@ -1,12 +1,12 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="440" id="sv4#area3#page25" name="Modifica Negozio">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="445" id="sv4#area3#page25" name="Modifica Negozio">
   <ContentUnits>
-    <EntryUnit id="sv4#area3#page25#enu11" name="Selettore Negozi" gr:x="270" gr:y="20" linkOrder="sv4#area3#page25#enu11#ln89">
+    <EntryUnit id="sv4#area3#page25#enu11" name="Selettore Negozi" gr:x="280" gr:y="20" linkOrder="sv4#area3#page25#enu11#ln89">
       <SelectionField id="sv4#area3#page25#enu11#sfld15" name="Negozio selezionato" type="string"/>
       <Link id="sv4#area3#page25#enu11#ln89" name="Visualizza e modifica dati" to="sv4#area3#page25#alt6#page26#seu30" type="normal" validate="true">
         <LinkParameter id="sv4#area3#page25#enu11#ln89#par256" name="Selection Field29_KeyCondition21 [oid]" source="sv4#area3#page25#enu11#sfld15" target="sv4#area3#page25#alt6#page26#seu30#su32#kcond21.ent10#att10"/>
       </Link>
     </EntryUnit>
-    <SelectorUnit id="sv4#area3#page25#seu29" name="Seleziona Negozi" gr:x="45" gr:y="0" entity="ent10">
+    <SelectorUnit id="sv4#area3#page25#seu29" name="Seleziona Negozi" gr:x="55" gr:y="0" entity="ent10">
       <Link id="sv4#area3#page25#seu29#ln76" name="Flow111" to="sv4#area3#page25#enu11" type="transport" validate="true">
         <LinkParameter id="sv4#area3#page25#seu29#ln76#par189" name="Nome_Selection Field29 [label]" source="ent10#att48Array" target="sv4#area3#page25#enu11#sfld15_label"/>
         <LinkParameter id="sv4#area3#page25#seu29#ln76#par190" name="oid_Selection Field29 [output]" source="ent10#att10Array" target="sv4#area3#page25#enu11#sfld15_output"/>
@@ -101,9 +101,42 @@
       <layout:Cell/>
       <layout:Cell/>
     </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv4#area3#page25#alt6#page118">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
   </layout:Grid>
-  <Alternative gr:x="0" gr:y="115" id="sv4#area3#page25#alt6" name="Alternative6" defaultPage="sv4#area3#page25#alt6#page26">
-    <Page gr:x="0" gr:y="0" id="sv4#area3#page25#alt6#page26" name="Page 26">
+  <Alternative gr:x="0" gr:y="115" id="sv4#area3#page25#alt6" name="Alternative6" defaultPage="sv4#area3#page25#alt6#page118">
+    <Page gr:x="0" gr:y="110" id="sv4#area3#page25#alt6#page26" name="Page 26">
       <ContentUnits>
         <SelectorUnit gr:x="0" gr:y="0" id="sv4#area3#page25#alt6#page26#seu30" name="Dati negozio selezionato" entity="ent10">
           <Selector id="sv4#area3#page25#alt6#page26#seu30#su32" defaultPolicy="fill" booleanOperator="and">
@@ -221,6 +254,9 @@
           </Link>
         </SelectorUnit>
       </ContentUnits>
+    </Page>
+    <Page gr:x="5" gr:y="0" id="sv4#area3#page25#alt6#page118" name="Page 118">
+      <ContentUnits/>
     </Page>
   </Alternative>
 </Page>

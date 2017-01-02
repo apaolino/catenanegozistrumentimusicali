@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="270" gr:y="10" id="sv4#area9#page39" name="Modifica ed elimina prodotti">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="270" gr:y="55" id="sv4#area9#page39" name="Modifica ed elimina prodotti">
   <ContentUnits>
     <SelectorUnit gr:x="0" gr:y="0" id="sv4#area9#page39#seu9" name="Raccolta prodotti" entity="ent12">
       <Link id="sv4#area9#page39#seu9#ln56" name="Flow56" to="sv4#area9#page39#inu2" automaticCoupling="true" type="transport" validate="true"/>
@@ -19,11 +19,12 @@
       <Link id="sv4#area9#page39#inu2#ln18" name="Elimina" to="sv4#area9#page3#mssu10" type="normal" validate="true">
         <LinkParameter id="sv4#area9#page39#inu2#ln18#par8" name="oid_PASSING" source="data[].ent12#att12" passing="true"/>
       </Link>
-      <SortAttribute attribute="ent12#att66" order="ascending"/>
-      <SortAttribute attribute="ent12#att68" order="ascending"/>
       <Selector id="sv4#area9#page39#inu2#su101" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv4#area9#page39#inu2#su101#acond8" name="AttCondition8" predicate="neq" booleanOperator="or" implied="false" attributes="ent12#att43" value="-1"/>
       </Selector>
+      <SortAttribute attribute="ent12#att12" order="descending"/>
+      <SortAttribute attribute="ent12#att66" order="ascending"/>
+      <SortAttribute attribute="ent12#att68" order="ascending"/>
     </IndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">

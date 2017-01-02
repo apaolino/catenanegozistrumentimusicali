@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="865" gr:y="485" id="sv4#area2#opg12" name="Operation Group 12" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="925" gr:y="485" id="sv4#area2#opg12" name="Operation Group 12" transaction="true">
   <OperationUnits>
     <ConnectUnit id="sv4#area2#opg12#cnu8" name="Associaz. catalogo prodotto" gr:x="230" gr:y="5" relationship="rel24#role47">
       <SourceSelector id="sv4#area2#opg12#cnu8#su92" defaultPolicy="fill" booleanOperator="and">

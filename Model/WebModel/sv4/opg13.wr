@@ -1,20 +1,46 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-1325" gr:y="2495" id="sv4#opg13" name="Operation Group 13" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-1435" gr:y="2500" id="sv4#opg13" name="Operation Group 13" transaction="true">
   <OperationUnits>
-    <ModifyUnit id="sv4#opg13#mfu15" name="Update14" gr:x="355" gr:y="0" entity="User">
-      <Selector id="sv4#opg13#mfu15#su84" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv4#opg13#mfu15#su84#kcond60" name="KeyCondition59" predicate="in" implied="false"/>
-      </Selector>
-      <OKLink id="sv4#opg13#mfu15#oln63" name="OKFlow62" to="sv4#page1#mssu30" automaticCoupling="true"/>
-      <KOLink id="sv4#opg13#mfu15#kln46" name="KOFlow45" to="sv4#page20#alt3#page31" automaticCoupling="true"/>
-    </ModifyUnit>
     <SelectorUnit id="sv4#opg13#seu37" name="Selector23" gr:x="0" gr:y="0" entity="Group">
       <Selector id="sv4#opg13#seu37#su85" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv4#opg13#seu37#su85#acond7" name="AttCondition2" predicate="eq" booleanOperator="or" implied="false" attributes="groupName" value="Gestore Singolo Negozio"/>
       </Selector>
-      <OKLink id="sv4#opg13#seu37#oln66" name="OKFlow66" to="sv4#opg13#mfu15">
-        <LinkParameter id="sv4#opg13#seu37#oln66#par485" name="oid_Group.oid(defaultGroup)" source="groupOIDArray" target="sv4#opg13#mfu15.User2DefaultGroup.groupOID"/>
-        <LinkParameter id="sv4#opg13#seu37#oln66#par487" name="oid_PASSING_KeyCondition59 [oid]" sourceLinkParameter="sv4#area11#page35#mssu12#ln145#par484" target="sv4#opg13#mfu15#su84#kcond60.userOID"/>
+      <OKLink id="sv4#opg13#seu37#oln99" name="OKFlow99" to="sv4#opg13#seu63">
+        <LinkParameter id="sv4#opg13#seu37#oln99#par651" name="oid_PASSING_KeyCondition60 [oid]" sourceLinkParameter="sv4#area11#page35#mssu12#ln145#par484" target="sv4#opg13#seu63#su165#kcond60.userOID"/>
+        <LinkParameter id="sv4#opg13#seu37#oln99#par674" name="oid_PASSING" source="groupOIDArray" passing="true"/>
       </OKLink>
+      <KOLink id="sv4#opg13#seu37#kln61" name="KOFlow61" to="sv4#page20#alt3#page31#mssu11" automaticCoupling="true"/>
+    </SelectorUnit>
+    <CreateUnit gr:x="530" gr:y="15" id="sv4#opg13#cru13" name="Create13" entity="ent6">
+      <OKLink id="sv4#opg13#cru13#oln101" name="OKFlow101" to="sv4#opg13#dlu6">
+        <LinkParameter id="sv4#opg13#cru13#oln101#par677" name="oid_PASSING_KeyCondition4 [oid]" sourceLinkParameter="sv4#opg13#seu63#oln100#par676" target="sv4#opg13#dlu6#su129#kcond4.userOID"/>
+      </OKLink>
+      <KOLink id="sv4#opg13#cru13#kln65" name="KOFlow65" to="sv4#page20#alt3#page31" automaticCoupling="true"/>
+    </CreateUnit>
+    <DeleteUnit gr:x="365" gr:y="125" id="sv4#opg13#dlu6" name="Delete6" entity="User">
+      <Selector id="sv4#opg13#dlu6#su129" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#opg13#dlu6#su129#kcond4" name="KeyCondition4" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv4#opg13#dlu6#oln98" name="OKFlow98" to="sv4#page1#mssu30" automaticCoupling="true"/>
+      <KOLink id="sv4#opg13#dlu6#kln66" name="KOFlow66" to="sv4#page20#alt3#page31#mssu11" automaticCoupling="true"/>
+    </DeleteUnit>
+    <SelectorUnit gr:x="300" gr:y="0" id="sv4#opg13#seu63" name="Selector63" entity="User">
+      <Selector id="sv4#opg13#seu63#su165" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#opg13#seu63#su165#kcond60" name="KeyCondition60" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv4#opg13#seu63#oln100" name="OKFlow100" to="sv4#opg13#cru13">
+        <LinkParameter id="sv4#opg13#seu63#oln100#par665" name="Cognome_Cognome" source="User#att21Array" target="sv4#opg13#cru13.User#att21"/>
+        <LinkParameter id="sv4#opg13#seu63#oln100#par666" name="Data nascita_Data nascita" source="User#att22Array" target="sv4#opg13#cru13.User#att22"/>
+        <LinkParameter id="sv4#opg13#seu63#oln100#par667" name="Data registrazione_Data registrazione" source="User#att29Array" target="sv4#opg13#cru13.User#att29"/>
+        <LinkParameter id="sv4#opg13#seu63#oln100#par668" name="E-mail_E-mail" source="emailArray" target="sv4#opg13#cru13.email"/>
+        <LinkParameter id="sv4#opg13#seu63#oln100#par669" name="UserToIndirizzo.oid_Indirizzo.oid(UserToIndirizzo)" source="rel20#role40_ent1#att3Array" target="sv4#opg13#cru13.rel20#role40.ent1#att3"/>
+        <LinkParameter id="sv4#opg13#seu63#oln100#par670" name="Nome_Nome" source="User#att20Array" target="sv4#opg13#cru13.User#att20"/>
+        <LinkParameter id="sv4#opg13#seu63#oln100#par671" name="Numero telefono_Numero telefono" source="User#att54Array" target="sv4#opg13#cru13.User#att54"/>
+        <LinkParameter id="sv4#opg13#seu63#oln100#par672" name="Password_Password" source="passwordArray" target="sv4#opg13#cru13.password"/>
+        <LinkParameter id="sv4#opg13#seu63#oln100#par673" name="UserName_UserName" source="userNameArray" target="sv4#opg13#cru13.userName"/>
+        <LinkParameter id="sv4#opg13#seu63#oln100#par675" name="oid_PASSING_Group.oid(defaultGroup)" sourceLinkParameter="sv4#opg13#seu37#oln99#par674" target="sv4#opg13#cru13.User2DefaultGroup.groupOID"/>
+        <LinkParameter id="sv4#opg13#seu63#oln100#par676" name="oid_PASSING" source="userOIDArray" passing="true"/>
+      </OKLink>
+      <KOLink id="sv4#opg13#seu63#kln64" name="KOFlow64" to="sv4#page20#alt3#page31" automaticCoupling="true"/>
     </SelectorUnit>
   </OperationUnits>
 </OperationGroup>

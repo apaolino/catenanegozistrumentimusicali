@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="950" gr:y="1100" id="sv4#area2#page66" name="Pagina successo" linkOrder="sv4#area2#page66#ln197">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1010" gr:y="1100" id="sv4#area2#page66" name="Pagina successo" linkOrder="sv4#area2#page66#ln197">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#area2#page66#mssu28" name="Messaggio Successo">
       <Message xml:space="preserve">Catalogo Base creato con successo

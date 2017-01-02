@@ -11,7 +11,7 @@
       <Link id="sv1#page4#ecu1#ln4" name="Flow4" to="sv1#page2#dau2" automaticCoupling="true" type="normal" validate="true"/>
       <SortAttribute attribute="ent17#att61" order="ascending"/>
     </EventCalendarUnit>
-    <DataUnit gr:x="115" gr:y="0" id="sv1#page4#dau1" name="Informazioni sull Catena di Negozi di Strumenti Musicali" entity="ent9" displayAttributes="ent9#att55 ent9#att56 ent9#att57 ent9#att58">
+    <DataUnit gr:x="115" gr:y="0" id="sv1#page4#dau1" name="Informazioni sulla Catena di Negozi di Strumenti Musicali" entity="ent9" displayAttributes="ent9#att55 ent9#att56 ent9#att57 ent9#att58">
       <Selector id="sv1#page4#dau1#su1" defaultPolicy="fill" booleanOperator="and"/>
     </DataUnit>
   </ContentUnits>

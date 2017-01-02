@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="690" gr:y="1080" id="sv4#area9#page86" name="Modifica Categoria">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="690" gr:y="1125" id="sv4#area9#page86" name="Modifica Categoria">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv4#area9#page86#enu31" name="Modifica Categoria" linkOrder="sv4#area9#page86#enu31#ln212">
       <Field id="sv4#area9#page86#enu31#fld137" name="Nome Categoria" type="string" modifiable="true" preloaded="true"/>

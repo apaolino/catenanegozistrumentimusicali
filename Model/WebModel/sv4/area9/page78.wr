@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="55" gr:y="1045" id="sv4#area9#page78" name="Modifica categoria/tipo prodotto/produttore">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="55" gr:y="1090" id="sv4#area9#page78" name="Modifica categoria/tipo prodotto/produttore">
   <ContentUnits>
     <IndexUnit gr:x="0" gr:y="0" id="sv4#area9#page78#inu18" name="Lista Categorie" entity="ent7" displayAttributes="ent7#att36" linkOrder="sv4#area9#page78#inu18#ln208">
       <Link id="sv4#area9#page78#inu18#ln208" name="Modifica" to="sv4#area9#page86#enu31" type="normal" validate="true">

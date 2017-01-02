@@ -1,59 +1,40 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-1035" gr:y="-1255" id="sv4#area9" name="Gestione Prodotti" landmark="true" defaultPage="sv4#area9#page33">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-1035" gr:y="-1310" id="sv4#area9" name="Gestione Prodotti" landmark="true" defaultPage="sv4#area9#page33">
   <OperationUnits>
-    <CreateUnit gr:x="425" gr:y="365" id="sv4#area9#cru8" name="Salva nuova categoria" entity="ent7">
+    <CreateUnit gr:x="425" gr:y="410" id="sv4#area9#cru8" name="Salva nuova categoria" entity="ent7">
       <OKLink id="sv4#area9#cru8#oln20" name="OKFlow20" to="sv4#page36#alt7#page37" automaticCoupling="true" gr:bendpoints="-2,-118,563,-198;-373,-129,192,-209;-627,-103,-62,-183"/>
       <KOLink id="sv4#area9#cru8#kln19" name="KOFlow19" to="sv4#page36#alt7#page38" automaticCoupling="true"/>
     </CreateUnit>
-    <CreateUnit gr:x="345" gr:y="900" id="sv4#area9#cru3" name="Crea nuovo prodotto" entity="ent12">
+    <CreateUnit gr:x="345" gr:y="945" id="sv4#area9#cru3" name="Crea nuovo prodotto" entity="ent12">
       <KOLink id="sv4#area9#cru3#kln20" name="KOFlow20" to="sv4#page36#alt7#page38" automaticCoupling="true"/>
       <OKLink id="sv4#area9#cru3#oln73" name="OKFlow73" to="sv4#area9#page39" automaticCoupling="true"/>
     </CreateUnit>
-    <CreateUnit gr:x="420" gr:y="475" id="sv4#area9#cru7" name="Salva nuovo produttore" entity="ent20">
+    <CreateUnit gr:x="420" gr:y="520" id="sv4#area9#cru7" name="Salva nuovo produttore" entity="ent20">
       <OKLink id="sv4#area9#cru7#oln22" name="OKFlow22" to="sv4#page36#alt7#page37" automaticCoupling="true" gr:bendpoints="-22,-209,538,-189;-319,-217,241,-197;-517,-185,43,-165"/>
       <KOLink id="sv4#area9#cru7#kln18" name="KOFlow18" to="sv4#page36#alt7#page38" automaticCoupling="true"/>
     </CreateUnit>
-    <CreateUnit gr:x="60" gr:y="880" id="sv4#area9#cru9" name="Salva tipo prodotto" entity="ent4">
+    <CreateUnit gr:x="60" gr:y="925" id="sv4#area9#cru9" name="Salva tipo prodotto" entity="ent4">
       <OKLink id="sv4#area9#cru9#oln23" name="OKFlow23" to="sv4#page36#alt7#page37" automaticCoupling="true" gr:bendpoints="-194,-80,-4,355"/>
     </CreateUnit>
-    <ModifyUnit gr:x="580" gr:y="265" id="sv4#area9#mfu1" name="Modifica prodotto" entity="ent12">
+    <ModifyUnit gr:x="580" gr:y="310" id="sv4#area9#mfu1" name="Modifica prodotto" entity="ent12">
       <Selector id="sv4#area9#mfu1#su43" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area9#mfu1#su43#kcond30" name="KeyCondition30" predicate="in" implied="false"/>
       </Selector>
       <KOLink id="sv4#area9#mfu1#kln22" name="KOFlow22" to="sv4#page36#alt7#page38" automaticCoupling="true" gr:bendpoints="-585,-33,630,-598;-1358,-88,-143,-653;-1378,435,-163,-130"/>
       <OKLink id="sv4#area9#mfu1#oln33" name="OKFlow33" to="sv4#area9#page39" automaticCoupling="true"/>
     </ModifyUnit>
-    <DisconnectUnit gr:x="1060" gr:y="140" id="sv4#area9#dcnu2" name="Scollega prodotto dai cataloghi" relationship="rel24#role47">
-      <SourceSelector id="sv4#area9#dcnu2#su17" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv4#area9#dcnu2#su17#kcond8" name="KeyCondition8" predicate="in" implied="false"/>
-      </SourceSelector>
-      <TargetSelector id="sv4#area9#dcnu2#su19" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv4#area9#dcnu2#su19#kcond31" name="KeyCondition31" predicate="in" implied="false"/>
-      </TargetSelector>
-      <OKLink id="sv4#area9#dcnu2#oln74" name="OKFlow74" to="sv4#area9#page39#inu2" automaticCoupling="true"/>
-      <KOLink id="sv4#area9#dcnu2#kln47" name="KOFlow47" to="sv4#page36#alt7#page38#mssu15" automaticCoupling="true" gr:bendpoints="-198,-258,1252,-718;-1327,-245,123,-705"/>
-    </DisconnectUnit>
-    <SelectorUnit gr:x="775" gr:y="145" id="sv4#area9#seu1" name="Recupero id cataloghi" entity="ent11">
-      <Link id="sv4#area9#seu1#ln66" name="Flow66" to="sv4#area9#dcnu2" automaticCoupling="true" type="transport" validate="true"/>
-    </SelectorUnit>
-    <ModifyUnit gr:x="1155" gr:y="0" id="sv4#area9#mfu16" name="Update16" entity="ent12">
-      <Selector id="sv4#area9#mfu16#su100" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv4#area9#mfu16#su100#kcond70" name="KeyCondition70" predicate="in" implied="false"/>
-      </Selector>
-      <OKLink id="sv4#area9#mfu16#oln75" name="OKFlow75" to="sv4#area9#dcnu2" automaticCoupling="true"/>
-    </ModifyUnit>
-    <ModifyUnit gr:x="1030" gr:y="1100" id="sv4#area9#mfu17" name="Update17" entity="ent7">
+    <ModifyUnit gr:x="1030" gr:y="1145" id="sv4#area9#mfu17" name="Update17" entity="ent7">
       <Selector id="sv4#area9#mfu17#su102" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area9#mfu17#su102#kcond71" name="KeyCondition71" predicate="in" implied="false"/>
       </Selector>
       <OKLink id="sv4#area9#mfu17#oln76" name="OKFlow76" to="sv4#area9#page78#inu18" automaticCoupling="true" gr:bendpoints="-264,-114,352,-74"/>
     </ModifyUnit>
-    <ModifyUnit gr:x="1030" gr:y="1260" id="sv4#area9#mfu18" name="Update18" entity="ent4">
+    <ModifyUnit gr:x="1030" gr:y="1305" id="sv4#area9#mfu18" name="Update18" entity="ent4">
       <Selector id="sv4#area9#mfu18#su105" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area9#mfu18#su105#kcond78" name="KeyCondition78" predicate="in" implied="false"/>
       </Selector>
       <OKLink id="sv4#area9#mfu18#oln77" name="OKFlow77" to="sv4#area9#page78#inu19" automaticCoupling="true" gr:bendpoints="-174,-89,412,-69;-422,-89,164,-69"/>
     </ModifyUnit>
-    <ModifyUnit gr:x="1030" gr:y="1420" id="sv4#area9#mfu19" name="Update19" entity="ent20">
+    <ModifyUnit gr:x="1030" gr:y="1465" id="sv4#area9#mfu19" name="Update19" entity="ent20">
       <Selector id="sv4#area9#mfu19#su106" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area9#mfu19#su106#kcond79" name="KeyCondition79" predicate="in" implied="false"/>
       </Selector>

@@ -1,0 +1,72 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="135" gr:y="960" id="sv4#area2#opg20" name="Operation Group 20" transaction="true">
+  <OperationUnits>
+    <CreateUnit id="sv4#area2#opg20#cru24" name="Create10" gr:x="0" gr:y="0" entity="ent13">
+      <OKLink id="sv4#area2#opg20#cru24#oln106" name="OKFlow106" to="sv4#area2#opg20#seu71">
+        <LinkParameter id="sv4#area2#opg20#cru24#oln106#par774" name="oid_PASSING" source="ent11#att11Array" passing="true"/>
+        <LinkParameter id="sv4#area2#opg20#cru24#oln106#par776" name="oid_PASSING" sourceLinkParameter="sv4#area2#page65#mssu27#ln304#par775" passing="true"/>
+      </OKLink>
+    </CreateUnit>
+    <ConnectUnit id="sv4#area2#opg20#cnu5" name="Connect Categoria Catalogo Base" gr:x="195" gr:y="145" relationship="rel31#role61">
+      <SourceSelector id="sv4#area2#opg20#cnu5#su166" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area2#opg20#cnu5#su166#kcond92" name="KeyCondition66" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv4#area2#opg20#cnu5#su167" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area2#opg20#cnu5#su167#kcond98" name="KeyCondition67" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv4#area2#opg20#cnu5#oln96" name="OKFlow61" to="sv4#area2#opg20#seu70">
+        <LinkParameter id="sv4#area2#opg20#cnu5#oln96#par759" name="Target oid [Catalogo Base]_PASSING" source="targetent11#att11" passing="true"/>
+        <LinkParameter id="sv4#area2#opg20#cnu5#oln96#par779" name="oid_PASSING" sourceLinkParameter="sv4#area2#opg20#cnu13#oln97#par778" passing="true"/>
+      </OKLink>
+    </ConnectUnit>
+    <ConnectUnit id="sv4#area2#opg20#cnu13" name="Connessione Categoria Prodotto" gr:x="515" gr:y="135" relationship="rel44#role88">
+      <SourceSelector id="sv4#area2#opg20#cnu13#su169" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area2#opg20#cnu13#su169#kcond111" name="KeyCondition64" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv4#area2#opg20#cnu13#su170" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area2#opg20#cnu13#su170#kcond112" name="KeyCondition65" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv4#area2#opg20#cnu13#oln97" name="OKFlow59" to="sv4#area2#opg20#cnu5">
+        <LinkParameter id="sv4#area2#opg20#cnu13#oln97#par761" name="Source oid [Categoria Prodotto]_KeyCondition66 [oid] [Categoria Prodotto] [Source]" source="sourceent7#att7" target="sv4#area2#opg20#cnu5#su166#kcond92.ent7#att7"/>
+        <LinkParameter id="sv4#area2#opg20#cnu13#oln97#par762" name="oid_PASSING_KeyCondition67 [oid] [Catalogo Base] [Target]" source="targetent11#att11" target="sv4#area2#opg20#cnu5#su167#kcond98.ent11#att11"/>
+        <LinkParameter id="sv4#area2#opg20#cnu13#oln97#par778" name="oid_PASSING" sourceLinkParameter="sv4#area2#opg20#seu71#oln105#par777" passing="true"/>
+      </OKLink>
+    </ConnectUnit>
+    <ConnectUnit id="sv4#area2#opg20#cnu16" name="Connect Negozio catalogo Base nuovo" gr:x="100" gr:y="320" relationship="rel23#role45">
+      <SourceSelector id="sv4#area2#opg20#cnu16#su171" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area2#opg20#cnu16#su171#kcond113" name="KeyCondition72" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv4#area2#opg20#cnu16#su172" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area2#opg20#cnu16#su172#kcond114" name="KeyCondition73" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv4#area2#opg20#cnu16#oln102" name="OKFlow68" to="sv4#area2#opg20#dcnu10">
+        <LinkParameter id="sv4#area2#opg20#cnu16#oln102#par764" name="oid_PASSING_KeyCondition74 [oid] [Negozio] [Source]" sourceLinkParameter="sv4#area2#opg20#seu70#oln104#par768" target="sv4#area2#opg20#dcnu10#su173#kcond115.ent10#att10"/>
+        <LinkParameter id="sv4#area2#opg20#cnu16#oln102#par782" name="oid_PASSING_KeyCondition75 [oid] [Catalogo] [Target]" sourceLinkParameter="sv4#area2#opg20#seu70#oln104#par780" target="sv4#area2#opg20#dcnu10#su174#kcond116.ent11#att11"/>
+      </OKLink>
+    </ConnectUnit>
+    <DisconnectUnit id="sv4#area2#opg20#dcnu10" name="Disconnect Negozi catalogo base vecchio" gr:x="530" gr:y="325" relationship="rel23#role45">
+      <SourceSelector id="sv4#area2#opg20#dcnu10#su173" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area2#opg20#dcnu10#su173#kcond115" name="KeyCondition74" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv4#area2#opg20#dcnu10#su174" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area2#opg20#dcnu10#su174#kcond116" name="KeyCondition75" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv4#area2#opg20#dcnu10#oln103" name="OKFlow67" to="sv4#area2#page66#mssu28" automaticCoupling="true"/>
+    </DisconnectUnit>
+    <SelectorUnit id="sv4#area2#opg20#seu70" name="Selettore negozi" gr:x="0" gr:y="155" entity="ent10">
+      <OKLink id="sv4#area2#opg20#seu70#oln104" name="OKFlow65" to="sv4#area2#opg20#cnu16">
+        <LinkParameter id="sv4#area2#opg20#seu70#oln104#par766" name="oid_KeyCondition72 [oid] [Negozio] [Source]" source="ent10#att10Array" target="sv4#area2#opg20#cnu16#su171#kcond113.ent10#att10"/>
+        <LinkParameter id="sv4#area2#opg20#seu70#oln104#par767" name="Target oid [Catalogo Base]_PASSING_KeyCondition73 [oid] [Catalogo] [Target]" sourceLinkParameter="sv4#area2#opg20#cnu5#oln96#par759" target="sv4#area2#opg20#cnu16#su172#kcond114.ent11#att11"/>
+        <LinkParameter id="sv4#area2#opg20#seu70#oln104#par768" name="oid_PASSING" source="ent10#att10Array" passing="true"/>
+        <LinkParameter id="sv4#area2#opg20#seu70#oln104#par780" name="oid_PASSING" sourceLinkParameter="sv4#area2#opg20#cnu5#oln96#par779" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <SelectorUnit id="sv4#area2#opg20#seu71" name="Selezione Categorie" gr:x="520" gr:y="0" entity="ent7">
+      <OKLink id="sv4#area2#opg20#seu71#oln105" name="OKFlow57" to="sv4#area2#opg20#cnu13">
+        <LinkParameter id="sv4#area2#opg20#seu71#oln105#par770" name="oid_KeyCondition64 [oid] [Categoria Prodotto] [Source]" source="ent7#att7Array" target="sv4#area2#opg20#cnu13#su169#kcond111.ent7#att7"/>
+        <LinkParameter id="sv4#area2#opg20#seu71#oln105#par771" name="Source oid [Catalogo]_PASSING_KeyCondition65 [oid] [Catalogo] [Target]" sourceLinkParameter="sv4#area2#opg20#cru24#oln106#par774" target="sv4#area2#opg20#cnu13#su170#kcond112.ent11#att11"/>
+        <LinkParameter id="sv4#area2#opg20#seu71#oln105#par772" name="oid_PASSING" source="ent7#att7Array" passing="true"/>
+        <LinkParameter id="sv4#area2#opg20#seu71#oln105#par777" name="oid_PASSING" sourceLinkParameter="sv4#area2#opg20#cru24#oln106#par776" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+  </OperationUnits>
+</OperationGroup>

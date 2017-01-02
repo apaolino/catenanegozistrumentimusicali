@@ -1,20 +1,19 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="535" gr:y="510" id="sv4#area2#page65" name="Page 65">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="595" gr:y="510" id="sv4#area2#page65" name="Page 65">
   <ContentUnits>
-    <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#area2#page65#mssu27" name="Conferma importazione prodotti" linkOrder="sv4#area2#page65#mssu27#ln196 sv4#area2#page65#mssu27#ln198">
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#area2#page65#mssu27" name="Conferma importazione prodotti" linkOrder="sv4#area2#page65#mssu27#ln196 sv4#area2#page65#mssu27#ln304">
       <Message xml:space="preserve">Vuoi importare nel nuovo catalogo i prodotti di quello dell'anno precedente?</Message>
       <Link id="sv4#area2#page65#mssu27#ln196" name="Si" to="sv4#area2#opg12#cru16" type="normal" validate="true">
         <LinkParameter id="sv4#area2#page65#mssu27#ln196#par476" name="Anno di validit&#224;_PASSING_Anno di validit&#224;" sourceLinkParameter="sv4#area2#page34#enu13#ln191#par474" target="sv4#area2#opg12#cru16.ent11#att47"/>
         <LinkParameter id="sv4#area2#page65#mssu27#ln196#par477" name="Nome_PASSING_Nome" sourceLinkParameter="sv4#area2#page34#enu13#ln191#par475" target="sv4#area2#opg12#cru16.ent11#att46"/>
-        <LinkParameter id="sv4#area2#page65#mssu27#ln196#par482" name="BaseToCatena Negozi.oid_PASSING_Catena Negozi.oid(BaseToCatena Negozi)" sourceLinkParameter="sv4#area2#page34#enu13#ln191#par480" target="sv4#area2#opg12#cru16.rel26#role52.ent9#att9"/>
-        <LinkParameter id="sv4#area2#page65#mssu27#ln196#par483" name="BaseToGestore Catena.oid_PASSING_Gestore Catena.oid(BaseToGestore Catena)" sourceLinkParameter="sv4#area2#page34#enu13#ln191#par481" target="sv4#area2#opg12#cru16.rel2#role4.userOID"/>
         <LinkParameter id="sv4#area2#page65#mssu27#ln196#par492" name="oid_PASSING" sourceLinkParameter="sv4#area2#page34#enu13#ln191#par491" passing="true"/>
         <LinkParameter id="sv4#area2#page65#mssu27#ln196#par533" name="oid_PASSING" sourceLinkParameter="sv4#area2#page34#enu13#ln191#par532" passing="true"/>
       </Link>
-      <Link id="sv4#area2#page65#mssu27#ln198" name="No" to="sv4#area2#cru18" type="normal" validate="true">
-        <LinkParameter id="sv4#area2#page65#mssu27#ln198#par495" name="BaseToCatena Negozi.oid_PASSING_Catena Negozi.oid(BaseToCatena Negozi)" sourceLinkParameter="sv4#area2#page34#enu13#ln191#par480" target="sv4#area2#cru18.rel26#role52.ent9#att9"/>
-        <LinkParameter id="sv4#area2#page65#mssu27#ln198#par496" name="BaseToGestore Catena.oid_PASSING_Gestore Catena.oid(BaseToGestore Catena)" sourceLinkParameter="sv4#area2#page34#enu13#ln191#par481" target="sv4#area2#cru18.rel2#role4.userOID"/>
-        <LinkParameter id="sv4#area2#page65#mssu27#ln198#par497" name="Anno di validit&#224;_PASSING_Anno di validit&#224;" sourceLinkParameter="sv4#area2#page34#enu13#ln191#par474" target="sv4#area2#cru18.ent11#att47"/>
-        <LinkParameter id="sv4#area2#page65#mssu27#ln198#par498" name="Nome_PASSING_Nome" sourceLinkParameter="sv4#area2#page34#enu13#ln191#par475" target="sv4#area2#cru18.ent11#att46"/>
+      <Link id="sv4#area2#page65#mssu27#ln304" name="No" to="sv4#area2#opg20#cru24" type="normal" validate="true">
+        <LinkParameter id="sv4#area2#page65#mssu27#ln304#par757" name="Anno di validit&#224;_PASSING_Anno di validit&#224;" sourceLinkParameter="sv4#area2#page34#enu13#ln191#par474" target="sv4#area2#opg20#cru24.ent11#att47"/>
+        <LinkParameter id="sv4#area2#page65#mssu27#ln304#par758" name="Nome_PASSING_Nome" sourceLinkParameter="sv4#area2#page34#enu13#ln191#par475" target="sv4#area2#opg20#cru24.ent11#att46"/>
+        <LinkParameter id="sv4#area2#page65#mssu27#ln304#par775" name="oid_PASSING" sourceLinkParameter="sv4#area2#page34#enu13#ln191#par491" passing="true"/>
+        <LinkParameter id="sv4#area2#page65#mssu27#ln304#par787" name="oid_PASSING_Catena Negozi.oid(BaseToCatena Negozi)" sourceLinkParameter="sv4#area2#page34#enu13#ln191#par786" target="sv4#area2#opg20#cru24.rel26#role52.ent9#att9"/>
+        <LinkParameter id="sv4#area2#page65#mssu27#ln304#par788" name="Catena NegoziToGestore Catena.oid_PASSING_Gestore Catena.oid(BaseToGestore Catena)" sourceLinkParameter="sv4#area2#page34#enu13#ln191#par785" target="sv4#area2#opg20#cru24.rel2#role4.userOID"/>
       </Link>
     </MultiMessageUnit>
   </ContentUnits>
@@ -23,7 +22,7 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv4#area2#page65#mssu27">
           <layout:Link link="sv4#area2#page65#mssu27#ln196"/>
-          <layout:Link link="sv4#area2#page65#mssu27#ln198"/>
+          <layout:Link link="sv4#area2#page65#mssu27#ln304"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

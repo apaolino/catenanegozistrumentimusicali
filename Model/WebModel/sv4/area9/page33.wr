@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="555" gr:y="565" id="sv4#area9#page33" name="Inserimento nuovo prodotto" ajaxEnabled="true" linkOrder="sv4#area9#page33#ln2 sv4#area9#page33#ln200">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="555" gr:y="610" id="sv4#area9#page33" name="Inserimento nuovo prodotto" ajaxEnabled="true" linkOrder="sv4#area9#page33#ln2 sv4#area9#page33#ln200">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="70" id="sv4#area9#page33#enu10" name="Inserimento dati prodotto" linkOrder="sv4#area9#page33#enu10#ln52 sv4#area9#page33#enu10#ln5">
       <SelectionField id="sv4#area9#page33#enu10#sfld12" name="Categoria" type="string" ajaxEventEnabled="true" ajaxEventLink="sv4#area9#page33#enu10#ln52"/>

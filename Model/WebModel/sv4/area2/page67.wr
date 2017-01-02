@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1235" gr:y="1085" id="sv4#area2#page67" name="Pagina Errore" linkOrder="sv4#area2#page67#ln210">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1295" gr:y="1085" id="sv4#area2#page67" name="Pagina Errore" linkOrder="sv4#area2#page67#ln210">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#area2#page67#mssu29" name="Message29">
       <Message xml:space="preserve">Creazione catalogo fallita</Message>

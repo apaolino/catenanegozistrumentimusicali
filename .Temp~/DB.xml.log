@@ -1,485 +1,381 @@
-[21 dic 2016 11:34:44] Building database metadata model
-[21 dic 2016 11:34:44] Properties: {partialRefresh=false, processColumnsUsingSelect=, includePrimaryKeys=true, eventSocketClient=com.webratio.commons.net.EventSocketClient@128899a, includeTables=true, username=root, outputLogPath=C:\Users\Samuel\Dropbox\Progetto SISR\webratio\catenanegozistrumentimusicali\.Temp~\DB.xml.log, readIndexes=null, driverClass=com.mysql.jdbc.Driver, includeSynonyms=true, metaDataProviderClass=com.webratio.commons.db.metadata.MySQLMetaDataProvider, outputPath=C:\Users\Samuel\Dropbox\Progetto SISR\webratio\catenanegozistrumentimusicali\.Temp~\DB.xml, schemaRegex=null, readProcedures=null, includeViews=true, derby.system.home=C:\Users\Samuel\Dropbox\Progetto SISR\webratio\.metadata\.plugins\com.webratio.commons.db\derby, url=jdbc:mysql://localhost/CatenaDB_MySql, tableRegex=null, readSQLDefinitions=true, includeForeignKeys=true, retrieveAllNames=false, tablesToRefresh=, eventSocketPort=62098}
-[21 dic 2016 11:34:44] URL: jdbc:mysql://localhost/CatenaDB_MySql
-[21 dic 2016 11:34:44] Product name: MySQL
-[21 dic 2016 11:34:44] Product version: 5.5.5-10.1.16-MariaDB
-[21 dic 2016 11:34:44] Driver name: MySQL Connector Java
-[21 dic 2016 11:34:44] Driver version: mysql-connector-java-5.1.31 ( Revision: alexander.soklakov@oracle.com-20140520065950-groqzzbvxprqdmnz )
-[21 dic 2016 11:34:44] Driver major version: 5
-[21 dic 2016 11:34:44] Driver minor version: 1
-[21 dic 2016 11:34:44] Identifier quote string: 1
-[21 dic 2016 11:34:44] Retrieving schemas
-[21 dic 2016 11:34:44] Retrieving [TABLE, VIEW, SYNONYM] for schema ''
-[21 dic 2016 11:34:44]   Found 'acquisto' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'acquisto_prodotto' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'carta_di_credito' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'catalogo' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'catalogo_base' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'catalogo_categoria_prodotto' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'catalogo_prodotto' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'catalogo_specifico' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'categoria_prodotto' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'categoriaprodottocatalogobase' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'catena_negozi' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'cliente' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'evento' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'evento_tipo_evento' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'gestore_catena' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'gestore_singolo_negozio' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'group' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'group_module' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'indirizzo' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'module' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'negozio' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'negozio_catalogo' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'periodo' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'prenotazione' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'prenotazione_noleggio_prodotto' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'prenotazione_prodotto' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'prodotto' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'produttore' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'recensione' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'sala_prove' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'tipo_evento' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'tipo_prodotto' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'user_group' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'utente_registrato' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'valutazione_negozio' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'valutazione_prodotto' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'zona' [type = TABLE]
-[21 dic 2016 11:34:44]   Found 'migliori_negozi_view' [type = VIEW]
-[21 dic 2016 11:34:44]   Found 'migliori_prodotti_view' [type = VIEW]
-[21 dic 2016 11:34:44]   Found 'negoziotorecensione_view' [type = VIEW]
-[21 dic 2016 11:34:44]   Found 'prodottotorecensione_view' [type = VIEW]
-[21 dic 2016 11:34:44]   Found 'utente_registrato_indirizzo_pr' [type = VIEW]
-[21 dic 2016 11:34:44] Retrieving columns for 'acquisto' [type = TABLE]
-[21 dic 2016 11:34:44]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:44]   Found column: data_acquisto [type = DATETIME][SQL/XOPEN type = 93][size = 19][dec. digits = 0]
-[21 dic 2016 11:34:44]   Found column: data_evasione [type = DATETIME][SQL/XOPEN type = 93][size = 19][dec. digits = 0]
-[21 dic 2016 11:34:44]   Found column: negozio_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:44]   Found column: cliente_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:44] Retrieving primary keys for 'acquisto' [type = TABLE]
-[21 dic 2016 11:34:44]   Found primary key column: oid
-[21 dic 2016 11:34:44] Retrieving columns for 'acquisto_prodotto' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: acquisto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: prodotto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'acquisto_prodotto' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: acquisto_oid
-[21 dic 2016 11:34:45]   Found primary key column: prodotto_oid
-[21 dic 2016 11:34:45] Retrieving columns for 'carta_di_credito' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: numero [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: data_scadenza [type = DATE][SQL/XOPEN type = 91][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: intestatario [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: cliente_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'carta_di_credito' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: oid
-[21 dic 2016 11:34:45] Retrieving columns for 'catalogo' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: nome [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: anno_di_validita [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'catalogo' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: oid
-[21 dic 2016 11:34:45] Retrieving columns for 'catalogo_base' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: catalogo_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: gestore_catena_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: catena_negozi_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'catalogo_base' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: catalogo_oid
-[21 dic 2016 11:34:45] Retrieving columns for 'catalogo_categoria_prodotto' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: catalogo_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: categoria_prodotto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'catalogo_categoria_prodotto' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: catalogo_oid
-[21 dic 2016 11:34:45]   Found primary key column: categoria_prodotto_oid
-[21 dic 2016 11:34:45] Retrieving columns for 'catalogo_prodotto' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: catalogo_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: prodotto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'catalogo_prodotto' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: catalogo_oid
-[21 dic 2016 11:34:45]   Found primary key column: prodotto_oid
-[21 dic 2016 11:34:45] Retrieving columns for 'catalogo_specifico' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: catalogo_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: gestore_singolo_negozio_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: negozio_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: categoria_prodotto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'catalogo_specifico' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: catalogo_oid
-[21 dic 2016 11:34:45] Retrieving columns for 'categoria_prodotto' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: nome [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'categoria_prodotto' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: oid
-[21 dic 2016 11:34:45] Retrieving columns for 'categoriaprodottocatalogobase' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: categoria_prodotto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: catalogo_base_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'categoriaprodottocatalogobase' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: categoria_prodotto_oid
-[21 dic 2016 11:34:45]   Found primary key column: catalogo_base_oid
-[21 dic 2016 11:34:45] Retrieving columns for 'catena_negozi' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: nome [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: numero_telefono [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: fax [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: email [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: indirizzo_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'catena_negozi' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: oid
-[21 dic 2016 11:34:45] Retrieving columns for 'cliente' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: utente_registrato_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'cliente' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: utente_registrato_oid
-[21 dic 2016 11:34:45] Retrieving columns for 'evento' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: data_inizio_evento [type = DATE][SQL/XOPEN type = 91][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: nome_evento [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: data_fine_evento [type = DATE][SQL/XOPEN type = 91][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: prezzo [type = DOUBLE][SQL/XOPEN type = 8][size = 22][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: posti_disponibili [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: negozio_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: periodo_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: gestore_singolo_negozio_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'evento' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: oid
-[21 dic 2016 11:34:45] Retrieving columns for 'evento_tipo_evento' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: evento_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: tipo_evento_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'evento_tipo_evento' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: evento_oid
-[21 dic 2016 11:34:45]   Found primary key column: tipo_evento_oid
-[21 dic 2016 11:34:45] Retrieving columns for 'gestore_catena' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: utente_registrato_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: catena_negozi_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'gestore_catena' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: utente_registrato_oid
-[21 dic 2016 11:34:45] Retrieving columns for 'gestore_singolo_negozio' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: utente_registrato_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'gestore_singolo_negozio' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: utente_registrato_oid
-[21 dic 2016 11:34:45] Retrieving columns for 'group' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: groupname [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: module_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'group' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: oid
-[21 dic 2016 11:34:45] Retrieving columns for 'group_module' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: group_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: module_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'group_module' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: group_oid
-[21 dic 2016 11:34:45]   Found primary key column: module_oid
-[21 dic 2016 11:34:45] Retrieving columns for 'indirizzo' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: via [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: numero_civico [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: cap [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: citta [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: stato [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: primario [type = BIT][SQL/XOPEN type = -7][size = 1][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: indirizzo [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: zona_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'indirizzo' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: oid
-[21 dic 2016 11:34:45] Retrieving columns for 'module' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: moduleid [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: modulename [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'module' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: oid
-[21 dic 2016 11:34:45] Retrieving columns for 'negozio' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: nome [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: data_apertura [type = DATE][SQL/XOPEN type = 91][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: dimensione [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: numero_telefono [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: fax [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: email [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: catena_negozi_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: indirizzo_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: zona_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: gestore_singolo_negozio_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: sala_prove_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: catalogo_base_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'negozio' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: oid
-[21 dic 2016 11:34:45] Retrieving columns for 'negozio_catalogo' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: negozio_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: catalogo_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'negozio_catalogo' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: negozio_oid
-[21 dic 2016 11:34:45]   Found primary key column: catalogo_oid
-[21 dic 2016 11:34:45] Retrieving columns for 'periodo' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: mese [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'periodo' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: oid
-[21 dic 2016 11:34:45] Retrieving columns for 'prenotazione' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: data_inizio [type = DATETIME][SQL/XOPEN type = 93][size = 19][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: data_fine [type = DATETIME][SQL/XOPEN type = 93][size = 19][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: negozio_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: gestore_singolo_negozio_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: cliente_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: acquisto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: evento_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: sala_prove_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'prenotazione' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: oid
-[21 dic 2016 11:34:45] Retrieving columns for 'prenotazione_noleggio_prodotto' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: prenotazione_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: cauzione [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'prenotazione_noleggio_prodotto' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: prenotazione_oid
-[21 dic 2016 11:34:45] Retrieving columns for 'prenotazione_prodotto' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: prenotazione_noleggio_prodotto [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: prodotto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'prenotazione_prodotto' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: prenotazione_noleggio_prodotto
-[21 dic 2016 11:34:45]   Found primary key column: prodotto_oid
-[21 dic 2016 11:34:45] Retrieving columns for 'prodotto' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: nome_modello [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: data_produzione [type = DATE][SQL/XOPEN type = 91][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: luogo_produzione [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: prezzo [type = DOUBLE][SQL/XOPEN type = 8][size = 22][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: usato [type = BIT][SQL/XOPEN type = -7][size = 1][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: percentuale_sconto [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: categoria_prodotto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: produttore_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: tipo_prodotto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'prodotto' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: oid
-[21 dic 2016 11:34:45] Retrieving columns for 'produttore' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: nome [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'produttore' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: oid
-[21 dic 2016 11:34:45] Retrieving columns for 'recensione' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: numero_stelle [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: recensione [type = LONGTEXT][SQL/XOPEN type = -1][size = 2147483647][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: data [type = DATETIME][SQL/XOPEN type = 93][size = 19][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: tipo [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: cliente_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'recensione' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: oid
-[21 dic 2016 11:34:45] Retrieving columns for 'sala_prove' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: prezzo_orario [type = DOUBLE][SQL/XOPEN type = 8][size = 22][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: dimensione_stanza [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'sala_prove' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: oid
-[21 dic 2016 11:34:45] Retrieving columns for 'tipo_evento' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: nome_tipologia_evento [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'tipo_evento' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: oid
-[21 dic 2016 11:34:45] Retrieving columns for 'tipo_prodotto' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: nome [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: categoria_prodotto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'tipo_prodotto' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: oid
-[21 dic 2016 11:34:45] Retrieving columns for 'user_group' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: utente_registrato_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: group_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'user_group' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: utente_registrato_oid
-[21 dic 2016 11:34:45]   Found primary key column: group_oid
-[21 dic 2016 11:34:45] Retrieving columns for 'utente_registrato' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: username [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: password [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: e_mail [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: nome [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: cognome [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: data_nascita [type = DATE][SQL/XOPEN type = 91][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: data_registrazione [type = DATE][SQL/XOPEN type = 91][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: numero_telefono [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: group_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: indirizzo_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'utente_registrato' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: oid
-[21 dic 2016 11:34:45] Retrieving columns for 'valutazione_negozio' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: recensione_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: negozio_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'valutazione_negozio' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: recensione_oid
-[21 dic 2016 11:34:45]   Found primary key column: negozio_oid
-[21 dic 2016 11:34:45] Retrieving columns for 'valutazione_prodotto' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: recensione_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: prodotto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'valutazione_prodotto' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: recensione_oid
-[21 dic 2016 11:34:45]   Found primary key column: prodotto_oid
-[21 dic 2016 11:34:45] Retrieving columns for 'zona' [type = TABLE]
-[21 dic 2016 11:34:45]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: provincia [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'zona' [type = TABLE]
-[21 dic 2016 11:34:45]   Found primary key column: oid
-[21 dic 2016 11:34:45] Retrieving columns for 'migliori_negozi_view' [type = VIEW]
-[21 dic 2016 11:34:45]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'migliori_negozi_view' [type = VIEW]
-[21 dic 2016 11:34:45] Retrieving columns for 'migliori_prodotti_view' [type = VIEW]
-[21 dic 2016 11:34:45]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'migliori_prodotti_view' [type = VIEW]
-[21 dic 2016 11:34:45] Retrieving columns for 'negoziotorecensione_view' [type = VIEW]
-[21 dic 2016 11:34:45]   Found column: s_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: t_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'negoziotorecensione_view' [type = VIEW]
-[21 dic 2016 11:34:45] Retrieving columns for 'prodottotorecensione_view' [type = VIEW]
-[21 dic 2016 11:34:45]   Found column: s_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: t_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'prodottotorecensione_view' [type = VIEW]
-[21 dic 2016 11:34:45] Retrieving columns for 'utente_registrato_indirizzo_pr' [type = VIEW]
-[21 dic 2016 11:34:45]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 dic 2016 11:34:45]   Found column: der_attr [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 dic 2016 11:34:45] Retrieving primary keys for 'utente_registrato_indirizzo_pr' [type = VIEW]
-[21 dic 2016 11:34:45] Retrieving foreign keys for 'acquisto' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column cliente_oid references cliente(utente_registrato_oid)
-[21 dic 2016 11:34:46]   Found foreign key: column negozio_oid references negozio(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'acquisto_prodotto' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column acquisto_oid references acquisto(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column prodotto_oid references prodotto(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'carta_di_credito' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column cliente_oid references cliente(utente_registrato_oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'catalogo' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'catalogo_base' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column catalogo_oid references catalogo(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column catena_negozi_oid references catena_negozi(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column gestore_catena_oid references gestore_catena(utente_registrato_oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'catalogo_categoria_prodotto' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column categoria_prodotto_oid references categoria_prodotto(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column catalogo_oid references catalogo(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'catalogo_prodotto' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column catalogo_oid references catalogo(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column prodotto_oid references prodotto(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'catalogo_specifico' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column catalogo_oid references catalogo(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column categoria_prodotto_oid references categoria_prodotto(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column gestore_singolo_negozio_oid references gestore_singolo_negozio(utente_registrato_oid)
-[21 dic 2016 11:34:46]   Found foreign key: column negozio_oid references negozio(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'categoria_prodotto' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'categoriaprodottocatalogobase' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column catalogo_base_oid references catalogo_base(catalogo_oid)
-[21 dic 2016 11:34:46]   Found foreign key: column categoria_prodotto_oid references categoria_prodotto(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'catena_negozi' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column indirizzo_oid references indirizzo(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'cliente' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column utente_registrato_oid references utente_registrato(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'evento' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column gestore_singolo_negozio_oid references gestore_singolo_negozio(utente_registrato_oid)
-[21 dic 2016 11:34:46]   Found foreign key: column negozio_oid references negozio(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column periodo_oid references periodo(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'evento_tipo_evento' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column evento_oid references evento(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column tipo_evento_oid references tipo_evento(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'gestore_catena' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column catena_negozi_oid references catena_negozi(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column utente_registrato_oid references utente_registrato(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'gestore_singolo_negozio' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column utente_registrato_oid references utente_registrato(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'group' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column module_oid references module(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'group_module' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column group_oid references group(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column module_oid references module(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'indirizzo' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column zona_oid references zona(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'module' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'negozio' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column catalogo_base_oid references catalogo_base(catalogo_oid)
-[21 dic 2016 11:34:46]   Found foreign key: column catena_negozi_oid references catena_negozi(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column gestore_singolo_negozio_oid references gestore_singolo_negozio(utente_registrato_oid)
-[21 dic 2016 11:34:46]   Found foreign key: column indirizzo_oid references indirizzo(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column sala_prove_oid references sala_prove(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column zona_oid references zona(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'negozio_catalogo' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column catalogo_oid references catalogo(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column negozio_oid references negozio(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'periodo' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'prenotazione' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column acquisto_oid references acquisto(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column cliente_oid references cliente(utente_registrato_oid)
-[21 dic 2016 11:34:46]   Found foreign key: column evento_oid references evento(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column gestore_singolo_negozio_oid references gestore_singolo_negozio(utente_registrato_oid)
-[21 dic 2016 11:34:46]   Found foreign key: column negozio_oid references negozio(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column sala_prove_oid references sala_prove(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'prenotazione_noleggio_prodotto' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column prenotazione_oid references prenotazione(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'prenotazione_prodotto' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column prenotazione_noleggio_prodotto references prenotazione_noleggio_prodotto(prenotazione_oid)
-[21 dic 2016 11:34:46]   Found foreign key: column prodotto_oid references prodotto(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'prodotto' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column categoria_prodotto_oid references categoria_prodotto(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column produttore_oid references produttore(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column tipo_prodotto_oid references tipo_prodotto(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'produttore' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'recensione' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column cliente_oid references cliente(utente_registrato_oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'sala_prove' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'tipo_evento' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'tipo_prodotto' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column categoria_prodotto_oid references categoria_prodotto(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'user_group' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column group_oid references group(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column utente_registrato_oid references utente_registrato(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'utente_registrato' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column group_oid references group(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column indirizzo_oid references indirizzo(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'valutazione_negozio' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column negozio_oid references negozio(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column recensione_oid references recensione(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'valutazione_prodotto' [type = TABLE]
-[21 dic 2016 11:34:46]   Found foreign key: column prodotto_oid references prodotto(oid)
-[21 dic 2016 11:34:46]   Found foreign key: column recensione_oid references recensione(oid)
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'zona' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'migliori_negozi_view' [type = VIEW]
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'migliori_prodotti_view' [type = VIEW]
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'negoziotorecensione_view' [type = VIEW]
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'prodottotorecensione_view' [type = VIEW]
-[21 dic 2016 11:34:46] Retrieving foreign keys for 'utente_registrato_indirizzo_pr' [type = VIEW]
-[21 dic 2016 11:34:46] Database metadata retrieved (1200 ms)
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'acquisto' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'acquisto_prodotto' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'carta_di_credito' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'catalogo' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'catalogo_base' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'catalogo_categoria_prodotto' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'catalogo_prodotto' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'catalogo_specifico' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'categoria_prodotto' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'categoriaprodottocatalogobase' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'catena_negozi' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'cliente' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'evento' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'evento_tipo_evento' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'gestore_catena' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'gestore_singolo_negozio' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'group' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'group_module' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'indirizzo' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'module' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'negozio' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'negozio_catalogo' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'periodo' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'prenotazione' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'prenotazione_noleggio_prodotto' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'prenotazione_prodotto' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'prodotto' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'produttore' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'recensione' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'sala_prove' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'tipo_evento' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'tipo_prodotto' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'user_group' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'utente_registrato' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'valutazione_negozio' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'valutazione_prodotto' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'zona' [type = TABLE]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'migliori_negozi_view' [type = VIEW]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'migliori_prodotti_view' [type = VIEW]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'negoziotorecensione_view' [type = VIEW]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'prodottotorecensione_view' [type = VIEW]
-[21 dic 2016 11:34:46] Retrieving auto-increment columns for 'utente_registrato_indirizzo_pr' [type = VIEW]
-[21 dic 2016 11:34:46] Database connection closed
+[01 gen 2017 21:44:15] Building database metadata model
+[01 gen 2017 21:44:15] Properties: {partialRefresh=false, processColumnsUsingSelect=, includePrimaryKeys=true, eventSocketClient=com.webratio.commons.net.EventSocketClient@128899a, includeTables=true, username=root, outputLogPath=C:\Users\Samuel\Dropbox\Progetto SISR\webratio\catenanegozistrumentimusicali\.Temp~\DB.xml.log, readIndexes=null, driverClass=com.mysql.jdbc.Driver, includeSynonyms=true, metaDataProviderClass=com.webratio.commons.db.metadata.MySQLMetaDataProvider, outputPath=C:\Users\Samuel\Dropbox\Progetto SISR\webratio\catenanegozistrumentimusicali\.Temp~\DB.xml, schemaRegex=null, readProcedures=null, includeViews=true, derby.system.home=C:\Users\Samuel\Dropbox\Progetto SISR\webratio\.metadata\.plugins\com.webratio.commons.db\derby, url=jdbc:mysql://localhost/CatenaDB_MySql, tableRegex=null, readSQLDefinitions=true, includeForeignKeys=false, retrieveAllNames=false, tablesToRefresh=, eventSocketPort=57857}
+[01 gen 2017 21:44:15] URL: jdbc:mysql://localhost/CatenaDB_MySql
+[01 gen 2017 21:44:15] Product name: MySQL
+[01 gen 2017 21:44:15] Product version: 5.5.5-10.1.16-MariaDB
+[01 gen 2017 21:44:15] Driver name: MySQL Connector Java
+[01 gen 2017 21:44:15] Driver version: mysql-connector-java-5.1.31 ( Revision: alexander.soklakov@oracle.com-20140520065950-groqzzbvxprqdmnz )
+[01 gen 2017 21:44:15] Driver major version: 5
+[01 gen 2017 21:44:15] Driver minor version: 1
+[01 gen 2017 21:44:15] Identifier quote string: 1
+[01 gen 2017 21:44:15] Retrieving schemas
+[01 gen 2017 21:44:15] Retrieving [TABLE, VIEW, SYNONYM] for schema ''
+[01 gen 2017 21:44:15]   Found 'acquisto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'acquisto_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'carta_di_credito' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'catalogo' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'catalogo_base' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'catalogo_categoria_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'catalogo_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'catalogo_specifico' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'categoria_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'categoriaprodottocatalogobase' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'catena_negozi' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'cliente' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'evento' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'evento_tipo_evento' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'gestore_catena' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'gestore_singolo_negozio' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'group' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'group_module' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'indirizzo' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'module' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'negozio' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'negozio_catalogo' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'periodo' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'prenotazione' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'prenotazione_noleggio_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'prenotazione_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'produttore' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'recensione' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'sala_prove' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'tipo_evento' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'tipo_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'user_group' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'utente_registrato' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'valutazione_negozio' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'valutazione_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'zona' [type = TABLE]
+[01 gen 2017 21:44:15]   Found 'migliori_negozi_view' [type = VIEW]
+[01 gen 2017 21:44:15]   Found 'migliori_prodotti_view' [type = VIEW]
+[01 gen 2017 21:44:15]   Found 'negoziotorecensione_view' [type = VIEW]
+[01 gen 2017 21:44:15]   Found 'prodottotorecensione_view' [type = VIEW]
+[01 gen 2017 21:44:15]   Found 'utente_registrato_indirizzo_pr' [type = VIEW]
+[01 gen 2017 21:44:15] Retrieving columns for 'acquisto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: data_acquisto [type = DATETIME][SQL/XOPEN type = 93][size = 19][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: data_evasione [type = DATETIME][SQL/XOPEN type = 93][size = 19][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: negozio_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: cliente_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'acquisto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: oid
+[01 gen 2017 21:44:15] Retrieving columns for 'acquisto_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: acquisto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: prodotto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'acquisto_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: acquisto_oid
+[01 gen 2017 21:44:15]   Found primary key column: prodotto_oid
+[01 gen 2017 21:44:15] Retrieving columns for 'carta_di_credito' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: numero [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: data_scadenza [type = DATE][SQL/XOPEN type = 91][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: intestatario [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: cliente_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'carta_di_credito' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: oid
+[01 gen 2017 21:44:15] Retrieving columns for 'catalogo' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: nome [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: anno_di_validita [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'catalogo' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: oid
+[01 gen 2017 21:44:15] Retrieving columns for 'catalogo_base' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: catalogo_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: gestore_catena_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: catena_negozi_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'catalogo_base' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: catalogo_oid
+[01 gen 2017 21:44:15] Retrieving columns for 'catalogo_categoria_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: catalogo_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: categoria_prodotto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'catalogo_categoria_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: catalogo_oid
+[01 gen 2017 21:44:15]   Found primary key column: categoria_prodotto_oid
+[01 gen 2017 21:44:15] Retrieving columns for 'catalogo_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: catalogo_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: prodotto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'catalogo_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: catalogo_oid
+[01 gen 2017 21:44:15]   Found primary key column: prodotto_oid
+[01 gen 2017 21:44:15] Retrieving columns for 'catalogo_specifico' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: catalogo_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: gestore_singolo_negozio_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: negozio_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: categoria_prodotto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'catalogo_specifico' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: catalogo_oid
+[01 gen 2017 21:44:15] Retrieving columns for 'categoria_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: nome [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'categoria_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: oid
+[01 gen 2017 21:44:15] Retrieving columns for 'categoriaprodottocatalogobase' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: categoria_prodotto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: catalogo_base_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'categoriaprodottocatalogobase' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: categoria_prodotto_oid
+[01 gen 2017 21:44:15]   Found primary key column: catalogo_base_oid
+[01 gen 2017 21:44:15] Retrieving columns for 'catena_negozi' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: nome [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: numero_telefono [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: fax [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: email [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: indirizzo_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'catena_negozi' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: oid
+[01 gen 2017 21:44:15] Retrieving columns for 'cliente' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: utente_registrato_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'cliente' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: utente_registrato_oid
+[01 gen 2017 21:44:15] Retrieving columns for 'evento' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: data_inizio_evento [type = DATE][SQL/XOPEN type = 91][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: nome_evento [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: data_fine_evento [type = DATE][SQL/XOPEN type = 91][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: prezzo [type = DOUBLE][SQL/XOPEN type = 8][size = 22][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: posti_disponibili [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: negozio_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: periodo_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: gestore_singolo_negozio_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'evento' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: oid
+[01 gen 2017 21:44:15] Retrieving columns for 'evento_tipo_evento' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: evento_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: tipo_evento_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'evento_tipo_evento' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: evento_oid
+[01 gen 2017 21:44:15]   Found primary key column: tipo_evento_oid
+[01 gen 2017 21:44:15] Retrieving columns for 'gestore_catena' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: utente_registrato_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: catena_negozi_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'gestore_catena' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: utente_registrato_oid
+[01 gen 2017 21:44:15] Retrieving columns for 'gestore_singolo_negozio' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: utente_registrato_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'gestore_singolo_negozio' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: utente_registrato_oid
+[01 gen 2017 21:44:15] Retrieving columns for 'group' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: groupname [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: module_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'group' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: oid
+[01 gen 2017 21:44:15] Retrieving columns for 'group_module' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: group_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: module_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'group_module' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: group_oid
+[01 gen 2017 21:44:15]   Found primary key column: module_oid
+[01 gen 2017 21:44:15] Retrieving columns for 'indirizzo' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: via [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: numero_civico [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: cap [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: citta [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: stato [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: primario [type = BIT][SQL/XOPEN type = -7][size = 1][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: indirizzo [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: zona_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'indirizzo' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: oid
+[01 gen 2017 21:44:15] Retrieving columns for 'module' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: moduleid [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: modulename [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'module' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: oid
+[01 gen 2017 21:44:15] Retrieving columns for 'negozio' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: nome [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: data_apertura [type = DATE][SQL/XOPEN type = 91][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: dimensione [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: numero_telefono [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: fax [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: email [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: catena_negozi_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: indirizzo_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: zona_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: gestore_singolo_negozio_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: sala_prove_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: catalogo_base_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'negozio' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: oid
+[01 gen 2017 21:44:15] Retrieving columns for 'negozio_catalogo' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: negozio_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: catalogo_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'negozio_catalogo' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: negozio_oid
+[01 gen 2017 21:44:15]   Found primary key column: catalogo_oid
+[01 gen 2017 21:44:15] Retrieving columns for 'periodo' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: mese [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'periodo' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: oid
+[01 gen 2017 21:44:15] Retrieving columns for 'prenotazione' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: data_inizio [type = DATETIME][SQL/XOPEN type = 93][size = 19][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: data_fine [type = DATETIME][SQL/XOPEN type = 93][size = 19][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: negozio_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: gestore_singolo_negozio_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: cliente_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: acquisto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: evento_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: sala_prove_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'prenotazione' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: oid
+[01 gen 2017 21:44:15] Retrieving columns for 'prenotazione_noleggio_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: prenotazione_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: cauzione [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'prenotazione_noleggio_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: prenotazione_oid
+[01 gen 2017 21:44:15] Retrieving columns for 'prenotazione_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: prenotazione_noleggio_prodotto [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: prodotto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'prenotazione_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: prenotazione_noleggio_prodotto
+[01 gen 2017 21:44:15]   Found primary key column: prodotto_oid
+[01 gen 2017 21:44:15] Retrieving columns for 'prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: nome_modello [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: data_produzione [type = DATE][SQL/XOPEN type = 91][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: luogo_produzione [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: prezzo [type = DOUBLE][SQL/XOPEN type = 8][size = 22][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: usato [type = BIT][SQL/XOPEN type = -7][size = 1][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: percentuale_sconto [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: categoria_prodotto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: produttore_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: tipo_prodotto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: oid
+[01 gen 2017 21:44:15] Retrieving columns for 'produttore' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: nome [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'produttore' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: oid
+[01 gen 2017 21:44:15] Retrieving columns for 'recensione' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: numero_stelle [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: recensione [type = LONGTEXT][SQL/XOPEN type = -1][size = 2147483647][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: data [type = DATETIME][SQL/XOPEN type = 93][size = 19][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: tipo [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: cliente_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'recensione' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: oid
+[01 gen 2017 21:44:15] Retrieving columns for 'sala_prove' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: prezzo_orario [type = DOUBLE][SQL/XOPEN type = 8][size = 22][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: dimensione_stanza [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'sala_prove' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: oid
+[01 gen 2017 21:44:15] Retrieving columns for 'tipo_evento' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: nome_tipologia_evento [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'tipo_evento' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: oid
+[01 gen 2017 21:44:15] Retrieving columns for 'tipo_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: nome [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: categoria_prodotto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'tipo_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: oid
+[01 gen 2017 21:44:15] Retrieving columns for 'user_group' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: utente_registrato_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: group_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'user_group' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: utente_registrato_oid
+[01 gen 2017 21:44:15]   Found primary key column: group_oid
+[01 gen 2017 21:44:15] Retrieving columns for 'utente_registrato' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: username [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: password [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: e_mail [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: nome [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: cognome [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: data_nascita [type = DATE][SQL/XOPEN type = 91][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: data_registrazione [type = DATE][SQL/XOPEN type = 91][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: numero_telefono [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: group_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: indirizzo_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'utente_registrato' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: oid
+[01 gen 2017 21:44:15] Retrieving columns for 'valutazione_negozio' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: recensione_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: negozio_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'valutazione_negozio' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: recensione_oid
+[01 gen 2017 21:44:15]   Found primary key column: negozio_oid
+[01 gen 2017 21:44:15] Retrieving columns for 'valutazione_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: recensione_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: prodotto_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'valutazione_prodotto' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: recensione_oid
+[01 gen 2017 21:44:15]   Found primary key column: prodotto_oid
+[01 gen 2017 21:44:15] Retrieving columns for 'zona' [type = TABLE]
+[01 gen 2017 21:44:15]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:15]   Found column: provincia [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:15] Retrieving primary keys for 'zona' [type = TABLE]
+[01 gen 2017 21:44:15]   Found primary key column: oid
+[01 gen 2017 21:44:15] Retrieving columns for 'migliori_negozi_view' [type = VIEW]
+[01 gen 2017 21:44:16]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:16] Retrieving primary keys for 'migliori_negozi_view' [type = VIEW]
+[01 gen 2017 21:44:16] Retrieving columns for 'migliori_prodotti_view' [type = VIEW]
+[01 gen 2017 21:44:16]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:16] Retrieving primary keys for 'migliori_prodotti_view' [type = VIEW]
+[01 gen 2017 21:44:16] Retrieving columns for 'negoziotorecensione_view' [type = VIEW]
+[01 gen 2017 21:44:16]   Found column: s_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:16]   Found column: t_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:16] Retrieving primary keys for 'negoziotorecensione_view' [type = VIEW]
+[01 gen 2017 21:44:16] Retrieving columns for 'prodottotorecensione_view' [type = VIEW]
+[01 gen 2017 21:44:16]   Found column: s_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:16]   Found column: t_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:16] Retrieving primary keys for 'prodottotorecensione_view' [type = VIEW]
+[01 gen 2017 21:44:16] Retrieving columns for 'utente_registrato_indirizzo_pr' [type = VIEW]
+[01 gen 2017 21:44:16]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[01 gen 2017 21:44:16]   Found column: der_attr [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[01 gen 2017 21:44:16] Retrieving primary keys for 'utente_registrato_indirizzo_pr' [type = VIEW]
+[01 gen 2017 21:44:16] Database metadata retrieved (1324 ms)
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'acquisto' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'acquisto_prodotto' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'carta_di_credito' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'catalogo' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'catalogo_base' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'catalogo_categoria_prodotto' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'catalogo_prodotto' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'catalogo_specifico' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'categoria_prodotto' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'categoriaprodottocatalogobase' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'catena_negozi' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'cliente' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'evento' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'evento_tipo_evento' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'gestore_catena' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'gestore_singolo_negozio' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'group' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'group_module' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'indirizzo' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'module' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'negozio' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'negozio_catalogo' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'periodo' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'prenotazione' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'prenotazione_noleggio_prodotto' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'prenotazione_prodotto' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'prodotto' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'produttore' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'recensione' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'sala_prove' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'tipo_evento' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'tipo_prodotto' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'user_group' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'utente_registrato' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'valutazione_negozio' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'valutazione_prodotto' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'zona' [type = TABLE]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'migliori_negozi_view' [type = VIEW]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'migliori_prodotti_view' [type = VIEW]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'negoziotorecensione_view' [type = VIEW]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'prodottotorecensione_view' [type = VIEW]
+[01 gen 2017 21:44:16] Retrieving auto-increment columns for 'utente_registrato_indirizzo_pr' [type = VIEW]
+[01 gen 2017 21:44:17] Database connection closed

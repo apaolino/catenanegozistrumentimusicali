@@ -1,10 +1,11 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="10" gr:y="0" id="sv4#area2#page5" name="Inserimento Prodotto in Catalogo Base" ajaxEnabled="true" linkOrder="sv4#area2#page5#ln98">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="70" gr:y="0" id="sv4#area2#page5" name="Inserimento Prodotto in Catalogo Base" ajaxEnabled="true" linkOrder="sv4#area2#page5#ln98">
   <ContentUnits>
     <MultiChoiceIndexUnit gr:x="280" gr:y="0" id="sv4#area2#page5#mciu1" name="Lista prodotti" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45 ent12#att66 ent12#att67 ent12#att68" linkOrder="sv4#area2#page5#mciu1#ln23">
       <SortAttribute attribute="ent12#att12" order="descending"/>
       <Link id="sv4#area2#page5#mciu1#ln23" name="Aggiungi al catalogo base" to="sv4#cnu1" automaticCoupling="true" type="normal" validate="true"/>
       <Selector id="sv4#area2#page5#mciu1#su44" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#area2#page5#mciu1#su44#rcond9" name="RoleCondition9" predicate="notIn" implied="false" role="rel24#role47"/>
+        <AttributesCondition id="sv4#area2#page5#mciu1#su44#acond17" name="AttCondition17" predicate="neq" booleanOperator="or" implied="false" attributes="ent12#att43" value="-1"/>
       </Selector>
     </MultiChoiceIndexUnit>
     <SelectorUnit gr:x="0" gr:y="140" id="sv4#area2#page5#seu7" name="Recupero Ultimo Catalogo Base" entity="ent13" maxResults="1" distinctAttributes="ent11#att11">

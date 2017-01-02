@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="620" gr:y="1240" id="sv4#area9#page87" name="Modifica Tipologia Prodotto">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="620" gr:y="1285" id="sv4#area9#page87" name="Modifica Tipologia Prodotto">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv4#area9#page87#enu32" name="Modifica Tipologia Prodotto" linkOrder="sv4#area9#page87#enu32#ln214">
       <Link id="sv4#area9#page87#enu32#ln214" name="Modifica" to="sv4#area9#mfu18" type="normal" validate="true">

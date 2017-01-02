@@ -1,22 +1,22 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="760" gr:y="10" id="sv4#area9#page3" name="Elimina prodotto">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="760" gr:y="55" id="sv4#area9#page3" name="Elimina prodotto">
   <ContentUnits>
-    <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#area9#page3#mssu10" name="Eliminazione prodotto" linkOrder="sv4#area9#page3#mssu10#ln22 sv4#area9#page3#mssu10#ln82">
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#area9#page3#mssu10" name="Eliminazione prodotto" linkOrder="sv4#area9#page3#mssu10#ln82 sv4#area9#page3#mssu10#ln307">
       <Message xml:space="preserve">L'eliminazione di un prodotto provocher&#224; la sola rimozione dai cataloghi in cui esso &#232; presente. 
 Verranno invece preservati tutti i riferimenti ad esso presenti negli acquisti/prenotazioni/noleggi.
 Confermi l'eliminazione del prodotto?</Message>
-      <Link id="sv4#area9#page3#mssu10#ln22" name="Elimina" to="sv4#area9#mfu16" type="normal" validate="true">
-        <LinkParameter id="sv4#area9#page3#mssu10#ln22#par488" name="oid_PASSING_KeyCondition70 [oid]" sourceLinkParameter="sv4#area9#page39#inu2#ln18#par8" target="sv4#area9#mfu16#su100#kcond70.ent12#att12"/>
-        <LinkParameter id="sv4#area9#page3#mssu10#ln22#par489" name="-1_Prezzo" sourceValue="-1" target="sv4#area9#mfu16.ent12#att43"/>
-      </Link>
       <Link id="sv4#area9#page3#mssu10#ln82" name="Torna a elenco prodotti" to="sv4#area9#page39#inu2" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-167,73,148,53"/>
+      <Link id="sv4#area9#page3#mssu10#ln307" name="Elimina" to="sv4#area9#opg21#mfu20" type="normal" validate="true">
+        <LinkParameter id="sv4#area9#page3#mssu10#ln307#par789" name="oid_PASSING_KeyCondition70 [oid]" sourceLinkParameter="sv4#area9#page39#inu2#ln18#par8" target="sv4#area9#opg21#mfu20#su175#kcond117.ent12#att12"/>
+        <LinkParameter id="sv4#area9#page3#mssu10#ln307#par790" name="-1_Prezzo" target="sv4#area9#opg21#mfu20.ent12#att43" sourceValue="-1"/>
+      </Link>
     </MultiMessageUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv4#area9#page3#mssu10">
-          <layout:Link link="sv4#area9#page3#mssu10#ln22"/>
           <layout:Link link="sv4#area9#page3#mssu10#ln82"/>
+          <layout:Link link="sv4#area9#page3#mssu10#ln307"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

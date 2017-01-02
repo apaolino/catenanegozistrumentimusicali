@@ -1,18 +1,18 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="500" id="sv4#area2#page34" name="Nuovo catalogo base">
   <ContentUnits>
-    <EntryUnit gr:x="5" gr:y="0" id="sv4#area2#page34#enu13" name="Inserisci i dati del nuovo catalogo" linkOrder="sv4#area2#page34#enu13#ln191">
+    <EntryUnit gr:x="65" gr:y="0" id="sv4#area2#page34#enu13" name="Inserisci i dati del nuovo catalogo" linkOrder="sv4#area2#page34#enu13#ln191">
       <Field id="sv4#area2#page34#enu13#fld46" name="Nome" type="string" modifiable="true"/>
       <Field id="sv4#area2#page34#enu13#fld47" name="Anno di validit&#224;" type="integer" modifiable="true"/>
       <Link id="sv4#area2#page34#enu13#ln191" name="Crea Catalogo" to="sv4#area2#page65#mssu27" type="normal" validate="true">
         <LinkParameter id="sv4#area2#page34#enu13#ln191#par474" name="Anno di validit&#224;_PASSING" source="sv4#area2#page34#enu13#fld47" passing="true"/>
         <LinkParameter id="sv4#area2#page34#enu13#ln191#par475" name="Nome_PASSING" source="sv4#area2#page34#enu13#fld46" passing="true"/>
-        <LinkParameter id="sv4#area2#page34#enu13#ln191#par480" name="BaseToCatena Negozi.oid_PASSING" sourceLinkParameter="sv4#area2#page34#seu41#ln202#par478" passing="true"/>
-        <LinkParameter id="sv4#area2#page34#enu13#ln191#par481" name="BaseToGestore Catena.oid_PASSING" sourceLinkParameter="sv4#area2#page34#seu41#ln202#par479" passing="true"/>
         <LinkParameter id="sv4#area2#page34#enu13#ln191#par491" name="oid_PASSING" sourceLinkParameter="sv4#area2#page34#seu24#ln209#par490" passing="true"/>
         <LinkParameter id="sv4#area2#page34#enu13#ln191#par532" name="oid_PASSING" sourceLinkParameter="sv4#area2#page34#seu41#ln202#par531" passing="true"/>
+        <LinkParameter id="sv4#area2#page34#enu13#ln191#par785" name="Catena NegoziToGestore Catena.oid_PASSING" sourceLinkParameter="sv4#area2#page34#seu72#ln305#par783" passing="true"/>
+        <LinkParameter id="sv4#area2#page34#enu13#ln191#par786" name="oid_PASSING" sourceLinkParameter="sv4#area2#page34#seu72#ln305#par784" passing="true"/>
       </Link>
     </EntryUnit>
-    <SelectorUnit gr:x="180" gr:y="215" id="sv4#area2#page34#seu24" name="Selector24" entity="ent12">
+    <SelectorUnit gr:x="240" gr:y="215" id="sv4#area2#page34#seu24" name="Selector24" entity="ent12">
       <Selector id="sv4#area2#page34#seu24#su83" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#area2#page34#seu24#su83#rcond29" name="RoleCondition29" predicate="in" implied="false" role="rel24#role47"/>
       </Selector>
@@ -20,13 +20,18 @@
         <LinkParameter id="sv4#area2#page34#seu24#ln209#par490" name="oid_PASSING" source="ent12#att12Array" passing="true"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit gr:x="0" gr:y="280" id="sv4#area2#page34#seu41" name="Selector41" entity="ent13" maxResults="1">
+    <SelectorUnit gr:x="60" gr:y="280" id="sv4#area2#page34#seu41" name="Selector41" entity="ent13" maxResults="1">
       <SortAttribute attribute="ent11#att47" order="descending"/>
       <Link id="sv4#area2#page34#seu41#ln182" name="Flow182" to="sv4#area2#page34#seu24" automaticCoupling="true" type="transport" validate="true"/>
       <Link id="sv4#area2#page34#seu41#ln202" name="Flow202" to="sv4#area2#page34#enu13" type="transport" validate="true">
-        <LinkParameter id="sv4#area2#page34#seu41#ln202#par478" name="BaseToCatena Negozi.oid_PASSING" source="rel26#role52_ent9#att9Array" passing="true"/>
-        <LinkParameter id="sv4#area2#page34#seu41#ln202#par479" name="BaseToGestore Catena.oid_PASSING" source="rel2#role4_userOIDArray" passing="true"/>
         <LinkParameter id="sv4#area2#page34#seu41#ln202#par531" name="oid_PASSING" source="ent11#att11Array" passing="true"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="0" gr:y="110" id="sv4#area2#page34#seu72" name="Selector72" entity="ent9" maxResults="1">
+      <SortAttribute attribute="ent9#att55" order="ascending"/>
+      <Link id="sv4#area2#page34#seu72#ln305" name="Flow305" to="sv4#area2#page34#enu13" type="transport" validate="true">
+        <LinkParameter id="sv4#area2#page34#seu72#ln305#par783" name="Catena NegoziToGestore Catena.oid_PASSING" source="rel1#role1_userOIDArray" passing="true"/>
+        <LinkParameter id="sv4#area2#page34#seu72#ln305#par784" name="oid_PASSING" source="ent9#att9Array" passing="true"/>
       </Link>
     </SelectorUnit>
   </ContentUnits>
