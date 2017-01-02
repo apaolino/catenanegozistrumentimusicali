@@ -7,6 +7,8 @@
       <Selector id="sv2#mfu13#su64" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#mfu13#su64#kcond45" name="KeyCondition45" predicate="in" implied="false"/>
       </Selector>
+      <OKLink id="sv2#mfu13#oln6" name="OKFlow6" to="sv2#page92#alt17#page93#mssu34" automaticCoupling="true"/>
+      <KOLink id="sv2#mfu13#kln68" name="KOFlow68" to="sv2#page92#alt17#page94#mssu35" automaticCoupling="true"/>
     </ModifyUnit>
     <DeleteUnit gr:x="-615" gr:y="2975" id="sv2#dlu7" name="EliminazionePrenotazione" entity="ent16">
       <Selector id="sv2#dlu7#su65" defaultPolicy="fill" booleanOperator="and">
@@ -19,12 +21,12 @@
       </Selector>
     </DeleteUnit>
     <CreateUnit gr:x="880" gr:y="-455" id="sv2#cru17" name="Crea carta di credito" entity="ent2"/>
-    <DeleteUnit gr:x="-2250" gr:y="2280" id="sv2#dlu12" name="Elimina prenotazione" entity="ent16">
+    <DeleteUnit gr:x="-2445" gr:y="2280" id="sv2#dlu12" name="Elimina prenotazione" entity="ent16">
       <Selector id="sv2#dlu12#su85" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#dlu12#su85#kcond1" name="KeyCondition1" predicate="in" implied="false"/>
       </Selector>
     </DeleteUnit>
-    <DisconnectUnit gr:x="-1910" gr:y="2270" id="sv2#dcnu9" name="Scollega prodotti da prenotazione" relationship="rel12#role23">
+    <DisconnectUnit gr:x="-2270" gr:y="2285" id="sv2#dcnu9" name="Scollega prodotti da prenotazione" relationship="rel12#role23">
       <SourceSelector id="sv2#dcnu9#su88" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#dcnu9#su88#kcond58" name="KeyCondition58" predicate="in" implied="false"/>
       </SourceSelector>

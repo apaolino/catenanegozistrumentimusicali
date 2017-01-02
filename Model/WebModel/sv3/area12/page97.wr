@@ -8,8 +8,8 @@
       <Link id="sv3#area12#page97#inu24#ln239" name="Elimina" to="sv3#dlu17" automaticCoupling="true" type="normal" validate="true"/>
       <Link id="sv3#area12#page97#inu24#ln243" name="Modifica" to="sv3#area12#page98#enu25" type="normal" validate="true">
         <LinkParameter id="sv3#area12#page97#inu24#ln243#par623" name="oid_PASSING" source="data[].ent16#att16" passing="true"/>
-        <LinkParameter id="sv3#area12#page97#inu24#ln243#par624" name="Data inizio_Fine prenotazione" source="data[].ent16#att31" target="sv3#area12#page98#enu25#fld135_slot"/>
-        <LinkParameter id="sv3#area12#page97#inu24#ln243#par625" name="Data fine_Inizio prenotazione" source="data[].ent16#att32" target="sv3#area12#page98#enu25#fld134_slot"/>
+        <LinkParameter id="sv3#area12#page97#inu24#ln243#par624" name="Data inizio_Fine prenotazione" source="data[].ent16#att32" target="sv3#area12#page98#enu25#fld135_slot"/>
+        <LinkParameter id="sv3#area12#page97#inu24#ln243#par625" name="Data fine_Inizio prenotazione" source="data[].ent16#att31" target="sv3#area12#page98#enu25#fld134_slot"/>
         <LinkParameter id="sv3#area12#page97#inu24#ln243#par626" name="PrenotazioneToCliente Registrato.oid_PASSING" source="data[].rel14#role28_userOID" passing="true"/>
         <LinkParameter id="sv3#area12#page97#inu24#ln243#par627" name="PrenotazioneToGestore Singolo Negozio.oid_PASSING" source="data[].rel13#role25_userOID" passing="true"/>
         <LinkParameter id="sv3#area12#page97#inu24#ln243#par628" name="PrenotazioneToNegozio.oid_PASSING" source="data[].rel11#role21_ent10#att10" passing="true"/>

@@ -191,6 +191,7 @@
         <IndexUnit gr:x="0" gr:y="0" id="sv1#page109#alt21#page112#inu29" name="Lista eventi filtrati per tipologia evento" entity="ent17" linkOrder="sv1#page109#alt21#page112#inu29#ln271" displayAttributes="ent17#att62 ent17#att61 ent17#att63 ent17#att64 ent17#att65">
           <Selector id="sv1#page109#alt21#page112#inu29#su146" defaultPolicy="fill" booleanOperator="and">
             <RelationshipRoleCondition id="sv1#page109#alt21#page112#inu29#su146#rcond56" name="RoleCondition56" predicate="in" implied="false" role="rel42#role84"/>
+            <AttributesCondition id="sv1#page109#alt21#page112#inu29#su146#acond19" name="AttCondition19" predicate="gt" booleanOperator="or" implied="false" value="-1" attributes="ent17#att64"/>
           </Selector>
           <Link id="sv1#page109#alt21#page112#inu29#ln271" name="Visualizza dettagli" to="sv1#page2#dau2" automaticCoupling="true" type="normal" validate="true"/>
           <SortAttribute attribute="ent17#att61" order="descending"/>
@@ -203,6 +204,7 @@
         <IndexUnit gr:x="0" gr:y="0" id="sv1#page109#alt21#page113#inu30" name="Lista eventi filtrati per periodo scelto" entity="ent17" linkOrder="sv1#page109#alt21#page113#inu30#ln275" displayAttributes="ent17#att62 ent17#att61 ent17#att63 ent17#att64 ent17#att65">
           <Selector id="sv1#page109#alt21#page113#inu30#su147" defaultPolicy="fill" booleanOperator="and">
             <RelationshipRoleCondition id="sv1#page109#alt21#page113#inu30#su147#rcond59" name="RoleCondition59" predicate="in" implied="false" role="rel41#role82"/>
+            <AttributesCondition id="sv1#page109#alt21#page113#inu30#su147#acond20" name="AttCondition20" predicate="gt" booleanOperator="or" implied="false" value="-1" attributes="ent17#att64"/>
           </Selector>
           <Link id="sv1#page109#alt21#page113#inu30#ln275" name="Visualizza dettagli" to="sv1#page2#dau2" automaticCoupling="true" type="normal" validate="true"/>
           <SortAttribute attribute="ent17#att61" order="descending"/>

@@ -1,0 +1,51 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="675" gr:y="730" id="sv2#area4#page122" name="Prodotti scontati">
+  <ContentUnits>
+    <SelectorUnit gr:x="0" gr:y="0" id="sv2#area4#page122#seu65" name="Cataloghi associati" entity="ent11">
+      <Selector id="sv2#area4#page122#seu65#su182" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area4#page122#seu65#su182#rcond63" name="RoleCondition63" predicate="in" implied="false" role="rel23#role45"/>
+      </Selector>
+      <Link id="sv2#area4#page122#seu65#ln296" name="Flow296" to="sv2#area4#page122#mciu2" type="transport" validate="true">
+        <LinkParameter id="sv2#area4#page122#seu65#ln296#par683" name="oid_RoleCondition64 [oid]" source="ent11#att11Array" target="sv2#area4#page122#mciu2#su184#rcond65.ent11#att11"/>
+        <LinkParameter id="sv2#area4#page122#seu65#ln296#par684" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#page41#inu3#ln292#par678" passing="true"/>
+        <LinkParameter id="sv2#area4#page122#seu65#ln296#par694" name="oid_PASSING" sourceLinkParameter="sv2#page41#inu3#ln292#par679" passing="true"/>
+      </Link>
+    </SelectorUnit>
+    <MultiChoiceIndexUnit id="sv2#area4#page122#mciu2" entity="ent12" displayAttributes="ent12#att1 ent12#att45 ent12#att66 ent12#att67 ent12#att68" gr:x="45" gr:y="115" name="Elenco prodotti scontati - seleziona quelli che vuoi acquistare" linkOrder="sv2#area4#page122#mciu2#ln298">
+      <Selector id="sv2#area4#page122#mciu2#su184" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv2#area4#page122#mciu2#su184#acond29" attributes="ent12#att45" predicate="gt" booleanOperator="or" value="0" implied="false" name="AttCondition28"/>
+        <RelationshipRoleCondition id="sv2#area4#page122#mciu2#su184#rcond65" role="rel24#role47" predicate="in" implied="false" name="RoleCondition64"/>
+      </Selector>
+      <Link id="sv2#area4#page122#mciu2#ln298" name="Visualizza carrello" to="sv2#area4#page61#inu8" type="normal" validate="true" gr:bendpoints="-190,-37,0,773">
+        <LinkParameter id="sv2#area4#page122#mciu2#ln298#par695" name="Checked oid_KeyCondition56 [oid]" source="ent12#att12Checked" target="sv2#area4#page61#inu8#su82#kcond56.ent12#att12"/>
+        <LinkParameter id="sv2#area4#page122#mciu2#ln298#par696" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page122#seu65#ln296#par684" passing="true"/>
+        <LinkParameter id="sv2#area4#page122#mciu2#ln298#par697" name="oid_PASSING" sourceLinkParameter="sv2#area4#page122#seu65#ln296#par694" passing="true"/>
+        <LinkParameter id="sv2#area4#page122#mciu2#ln298#par698" name="Checked oid_PASSING" source="ent12#att12Checked" passing="true"/>
+      </Link>
+    </MultiChoiceIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area4#page122#mciu2">
+          <layout:Attribute attribute="ent12#att1"/>
+          <layout:Attribute attribute="ent12#att45"/>
+          <layout:Attribute attribute="ent12#att66"/>
+          <layout:Attribute attribute="ent12#att67"/>
+          <layout:Attribute attribute="ent12#att68"/>
+          <layout:Link link="sv2#area4#page122#mciu2#ln298"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -6,6 +6,8 @@
         <LinkParameter id="sv2#area4#page62#mssu21#ln144#par482" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page62#inu5#ln142#par480" passing="true"/>
         <LinkParameter id="sv2#area4#page62#mssu21#ln144#par483" name="oid_PASSING" sourceLinkParameter="sv2#area4#page62#inu5#ln142#par481" passing="true"/>
         <LinkParameter id="sv2#area4#page62#mssu21#ln144#par530" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv2#area4#page62#inu5#ln142#par529" passing="true"/>
+        <LinkParameter id="sv2#area4#page62#mssu21#ln144#par807" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page62#inu5#ln142#par743" passing="true"/>
+        <LinkParameter id="sv2#area4#page62#mssu21#ln144#par808" name="oid_PASSING" sourceLinkParameter="sv2#area4#page62#inu5#ln142#par744" passing="true"/>
       </Link>
     </MultiMessageUnit>
     <GetUnit id="sv2#area4#page62#gtu9" name="GetUID" gr:x="0" gr:y="0" contextParameters="UserCtxParam">
@@ -21,11 +23,15 @@
       <Link id="sv2#area4#page62#inu5#ln188" name="Seleziona e Acquista" to="sv2#opg11#cru21" type="normal" validate="true" gr:bendpoints="225,37,195,-733;231,302,201,-468;227,722,197,-48">
         <LinkParameter id="sv2#area4#page62#inu5#ln188#par498" name="oid_PASSING_Negozio.oid(AcquistoToNegozio)" sourceLinkParameter="sv2#area4#page61#mssu22#ln146#par408" target="sv2#opg11#cru21.rel16#role31.ent10#att10"/>
         <LinkParameter id="sv2#area4#page62#inu5#ln188#par499" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page61#mssu22#ln146#par445" passing="true"/>
+        <LinkParameter id="sv2#area4#page62#inu5#ln188#par745" name="oid_PASSING_Negozio.oid(AcquistoToNegozio)" sourceLinkParameter="sv2#area4#page61#mssu22#ln146#par742" target="sv2#opg11#cru21.rel16#role31.ent10#att10"/>
+        <LinkParameter id="sv2#area4#page62#inu5#ln188#par746" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page61#mssu22#ln146#par737" passing="true"/>
       </Link>
       <Link id="sv2#area4#page62#inu5#ln142" name="Flow142" to="sv2#area4#page62#mssu21" type="transport" validate="true">
         <LinkParameter id="sv2#area4#page62#inu5#ln142#par480" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page61#mssu22#ln146#par445" passing="true"/>
         <LinkParameter id="sv2#area4#page62#inu5#ln142#par481" name="oid_PASSING" sourceLinkParameter="sv2#area4#page61#mssu22#ln146#par408" passing="true"/>
         <LinkParameter id="sv2#area4#page62#inu5#ln142#par529" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv2#area4#page62#gtu9#ln143#par528" passing="true"/>
+        <LinkParameter id="sv2#area4#page62#inu5#ln142#par743" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page61#mssu22#ln146#par737" passing="true"/>
+        <LinkParameter id="sv2#area4#page62#inu5#ln142#par744" name="oid_PASSING" sourceLinkParameter="sv2#area4#page61#mssu22#ln146#par742" passing="true"/>
       </Link>
     </IndexUnit>
     <TimeUnit id="sv2#area4#page62#tmu3" name="Giorno corrente" gr:x="340" gr:y="180">

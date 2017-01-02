@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1270" gr:y="135" id="sv1#page9" name="Ricerca Avanzata" ajaxEnabled="true" linkOrder="sv1#page9#ln55 sv1#page9#ln269">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1270" gr:y="135" id="sv1#page9" name="Ricerca Avanzata" ajaxEnabled="true" linkOrder="sv1#page9#ln55 sv1#page9#ln269 sv1#page9#ln264">
   <ContentUnits>
     <EntryUnit gr:x="205" gr:y="0" id="sv1#page9#enu4" name="Ricerca negozio per zona" linkOrder="sv1#page9#enu4#ln11 sv1#page9#enu4#ln6" ajaxEnableExpandedLinks="true">
       <Link id="sv1#page9#enu4#ln11" name="Flow11" to="sv1#seu4" type="normal" validate="true">
@@ -6,7 +6,7 @@
       </Link>
       <SelectionField id="sv1#page9#enu4#sfld1" name="Zona" type="string" ajaxEventEnabled="true" ajaxEventLink="sv1#page9#enu4#ln11"/>
       <SelectionField id="sv1#page9#enu4#sfld2" name="Negozio" type="string" ajaxEventEnabled="true" ajaxEventLink="sv1#page9#enu4#ln6"/>
-      <Link id="sv1#page9#enu4#ln6" name="Flow6" to="sv1#page7#dau3" type="normal" validate="true" gr:bendpoints="-320,302,1165,-178;-1037,282,198,-128">
+      <Link id="sv1#page9#enu4#ln6" name="Flow6" to="sv1#page7#dau3" type="normal" validate="true" gr:bendpoints="-205,137,1269,-343;-320,302,1165,-178;-1037,282,198,-128">
         <LinkParameter id="sv1#page9#enu4#ln6#par16" name="Negozio_KeyCondition3 [oid]" source="sv1#page9#enu4#sfld2" target="sv1#page7#dau3#su3#kcond3.ent10#att10"/>
       </Link>
     </EntryUnit>
@@ -56,4 +56,5 @@
   </layout:Grid>
   <Link id="sv1#page9#ln55" name="Ricerca Disponibilit&#224; Prodotti" to="sv1#page34" automaticCoupling="true" type="normal" validate="true"/>
   <Link id="sv1#page9#ln269" name="Ricerca Eventi" to="sv1#page109" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv1#page9#ln264" name="Prodotti scontati" to="sv1#page119" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

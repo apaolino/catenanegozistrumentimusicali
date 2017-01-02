@@ -11,6 +11,8 @@
         <LinkParameter id="sv2#area4#page63#enu18#ln161#par526" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page62#mssu21#ln144#par482" passing="true"/>
         <LinkParameter id="sv2#area4#page63#enu18#ln161#par527" name="oid_PASSING" sourceLinkParameter="sv2#area4#page62#mssu21#ln144#par483" passing="true"/>
         <LinkParameter id="sv2#area4#page63#enu18#ln161#par531" name="UserCtxParam.oid_PASSING_Cliente.oid(Carta di CreditoToCliente Registrato)" sourceLinkParameter="sv2#area4#page62#mssu21#ln144#par530" target="sv2#area4#cru16.rel27#role54.userOID"/>
+        <LinkParameter id="sv2#area4#page63#enu18#ln161#par809" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page62#mssu21#ln144#par807" passing="true"/>
+        <LinkParameter id="sv2#area4#page63#enu18#ln161#par810" name="oid_PASSING" sourceLinkParameter="sv2#area4#page62#mssu21#ln144#par808" passing="true"/>
       </Link>
     </EntryUnit>
     <TimeUnit id="sv2#area4#page63#tmu4" name="Giorno corrente" gr:x="173" gr:y="56">

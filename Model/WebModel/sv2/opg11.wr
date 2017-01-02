@@ -4,6 +4,7 @@
       <OKLink id="sv2#opg11#cru21#oln49" name="OKFlow52" to="sv2#opg11#cnu6">
         <LinkParameter id="sv2#opg11#cru21#oln49#par496" name="Checked oid_PASSING_KeyCondition59 [oid] [Prodotto] [Source]" sourceLinkParameter="sv2#area4#page62#inu5#ln188#par499" target="sv2#opg11#cnu6#su94#kcond62.ent12#att12"/>
         <LinkParameter id="sv2#opg11#cru21#oln49#par497" name="oid_KeyCondition60 [oid] [Acquisto] [Target]" source="ent15#att15Array" target="sv2#opg11#cnu6#su95#kcond63.ent15#att15"/>
+        <LinkParameter id="sv2#opg11#cru21#oln49#par747" name="Checked oid_PASSING_KeyCondition59 [oid] [Prodotto] [Source]" sourceLinkParameter="sv2#area4#page62#inu5#ln188#par746" target="sv2#opg11#cnu6#su94#kcond62.ent12#att12"/>
       </OKLink>
       <KOLink id="sv2#opg11#cru21#kln42" name="KOFlow42" to="sv2#page79#alt15#page84#mssu31" automaticCoupling="true"/>
     </CreateUnit>
@@ -27,6 +28,7 @@
       <OKLink id="sv2#opg11#cru15#oln54" name="OKFlow54" to="sv2#opg11#cnu6">
         <LinkParameter id="sv2#opg11#cru15#oln54#par510" name="oid_KeyCondition60 [oid] [Acquisto] [Target]" source="ent15#att15Array" target="sv2#opg11#cnu6#su95#kcond63.ent15#att15"/>
         <LinkParameter id="sv2#opg11#cru15#oln54#par532" name="Checked oid_PASSING_KeyCondition59 [oid] [Prodotto] [Source]" sourceLinkParameter="sv2#area4#cru16#oln55#par521" target="sv2#opg11#cnu6#su94#kcond62.ent12#att12"/>
+        <LinkParameter id="sv2#opg11#cru15#oln54#par813" name="Checked oid_PASSING_KeyCondition59 [oid] [Prodotto] [Source]" sourceLinkParameter="sv2#area4#cru16#oln55#par812" target="sv2#opg11#cnu6#su94#kcond62.ent12#att12"/>
       </OKLink>
       <KOLink id="sv2#opg11#cru15#kln40" name="KOFlow40" to="sv2#page79#alt15#page84#mssu31" automaticCoupling="true"/>
     </CreateUnit>

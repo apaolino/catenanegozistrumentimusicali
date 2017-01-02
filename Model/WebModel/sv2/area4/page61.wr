@@ -8,6 +8,9 @@
         <LinkParameter id="sv2#area4#page61#inu8#ln157#par407" name="oid_PASSING" sourceLinkParameter="sv2#area4#page47#alt8#page49#mciu4#ln148#par406" passing="true"/>
         <LinkParameter id="sv2#area4#page61#inu8#ln157#par444" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page47#alt8#page49#mciu4#ln148#par441" passing="true"/>
         <LinkParameter id="sv2#area4#page61#inu8#ln157#par453" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page47#alt8#page49#mciu4#ln148#par452" passing="true"/>
+        <LinkParameter id="sv2#area4#page61#inu8#ln157#par699" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page122#mciu2#ln298#par698" passing="true"/>
+        <LinkParameter id="sv2#area4#page61#inu8#ln157#par700" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page122#mciu2#ln298#par696" passing="true"/>
+        <LinkParameter id="sv2#area4#page61#inu8#ln157#par705" name="oid_PASSING" sourceLinkParameter="sv2#area4#page122#mciu2#ln298#par697" passing="true"/>
       </Link>
     </IndexUnit>
     <MultiMessageUnit gr:x="0" gr:y="140" id="sv2#area4#page61#mssu22" name="Acquista o nolegga i prodotti" linkOrder="sv2#area4#page61#mssu22#ln146 sv2#area4#page61#mssu22#ln167">
@@ -16,12 +19,18 @@
         <LinkParameter id="sv2#area4#page61#mssu22#ln146#par408" name="oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par407" passing="true"/>
         <LinkParameter id="sv2#area4#page61#mssu22#ln146#par445" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par444" passing="true"/>
         <LinkParameter id="sv2#area4#page61#mssu22#ln146#par459" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par453" passing="true"/>
+        <LinkParameter id="sv2#area4#page61#mssu22#ln146#par737" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par699" passing="true"/>
+        <LinkParameter id="sv2#area4#page61#mssu22#ln146#par738" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par700" passing="true"/>
+        <LinkParameter id="sv2#area4#page61#mssu22#ln146#par742" name="oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par705" passing="true"/>
       </Link>
       <Link id="sv2#area4#page61#mssu22#ln167" name="Noleggio" to="sv2#area4#page69#enu19" type="normal" validate="true">
         <LinkParameter id="sv2#area4#page61#mssu22#ln167#par403" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par444" passing="true"/>
         <LinkParameter id="sv2#area4#page61#mssu22#ln167#par410" name="oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par407" passing="true"/>
         <LinkParameter id="sv2#area4#page61#mssu22#ln167#par454" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par453" passing="true"/>
         <LinkParameter id="sv2#area4#page61#mssu22#ln167#par17" name="50 &#8364;_Cauzione da versare" sourceValue="50" target="sv2#area4#page69#enu19#fld120_slot"/>
+        <LinkParameter id="sv2#area4#page61#mssu22#ln167#par748" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par699" passing="true"/>
+        <LinkParameter id="sv2#area4#page61#mssu22#ln167#par749" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par700" passing="true"/>
+        <LinkParameter id="sv2#area4#page61#mssu22#ln167#par750" name="oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par705" passing="true"/>
       </Link>
     </MultiMessageUnit>
   </ContentUnits>

@@ -191,6 +191,7 @@
         <IndexUnit id="sv2#page114#alt22#page116#inu31" name="Lista eventi filtrati per tipologia evento" gr:x="0" gr:y="0" entity="ent17" displayAttributes="ent17#att62 ent17#att61 ent17#att63 ent17#att64 ent17#att65" linkOrder="sv2#page114#alt22#page116#inu31#ln284">
           <Selector id="sv2#page114#alt22#page116#inu31#su161" defaultPolicy="fill" booleanOperator="and">
             <RelationshipRoleCondition id="sv2#page114#alt22#page116#inu31#su161#rcond60" name="RoleCondition56" predicate="in" implied="false" role="rel42#role84"/>
+            <AttributesCondition id="sv2#page114#alt22#page116#inu31#su161#acond22" name="AttCondition22" predicate="gt" booleanOperator="or" implied="false" attributes="ent17#att64" value="-1"/>
           </Selector>
           <SortAttribute attribute="ent17#att61" order="descending"/>
           <SortAttribute attribute="ent17#att62" order="ascending"/>
@@ -203,6 +204,7 @@
         <IndexUnit id="sv2#page114#alt22#page117#inu32" name="Lista eventi filtrati per periodo scelto" gr:x="0" gr:y="0" entity="ent17" displayAttributes="ent17#att62 ent17#att61 ent17#att63 ent17#att64 ent17#att65" linkOrder="sv2#page114#alt22#page117#inu32#ln285">
           <Selector id="sv2#page114#alt22#page117#inu32#su164" defaultPolicy="fill" booleanOperator="and">
             <RelationshipRoleCondition id="sv2#page114#alt22#page117#inu32#su164#rcond61" name="RoleCondition59" predicate="in" implied="false" role="rel41#role82"/>
+            <AttributesCondition id="sv2#page114#alt22#page117#inu32#su164#acond23" name="AttCondition23" predicate="eq" booleanOperator="or" implied="false" attributes="ent17#att64" value="-1"/>
           </Selector>
           <SortAttribute attribute="ent17#att61" order="descending"/>
           <SortAttribute attribute="ent17#att62" order="ascending"/>

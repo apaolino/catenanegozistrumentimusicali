@@ -10,6 +10,9 @@
     <EventCalendarUnit gr:x="365" gr:y="100" id="sv1#page4#ecu1" name="Calendario Eventi Disponibili nei vari Negozi" entityBased="true" entity="ent17" displayAttributes="ent17#att62 rel10#role19.ent10#att48 rel10#role19.rel33#role65.ent3#att70" dateAttribute="ent17#att61" linkOrder="sv1#page4#ecu1#ln4">
       <Link id="sv1#page4#ecu1#ln4" name="Flow4" to="sv1#page2#dau2" automaticCoupling="true" type="normal" validate="true"/>
       <SortAttribute attribute="ent17#att61" order="ascending"/>
+      <Selector id="sv1#page4#ecu1#su10" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv1#page4#ecu1#su10#acond16" name="AttCondition16" predicate="gt" booleanOperator="or" implied="false" attributes="ent17#att64" value="-1"/>
+      </Selector>
     </EventCalendarUnit>
     <DataUnit gr:x="115" gr:y="0" id="sv1#page4#dau1" name="Informazioni sulla Catena di Negozi di Strumenti Musicali" entity="ent9" displayAttributes="ent9#att55 ent9#att56 ent9#att57 ent9#att58">
       <Selector id="sv1#page4#dau1#su1" defaultPolicy="fill" booleanOperator="and"/>

@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="505" gr:y="250" id="sv4#page11" name="Home Page Gestore Catena - Gestione Prodotti" linkOrder="sv4#page11#ln24 sv4#page11#ln67">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="0" id="sv4#page11#dau4" name="Statistiche e Informazioni sulla catena" entity="ent9" displayAttributes="ent9#att55 ent9#att56 rel36#role71.ent1#att73 count(rel22#role43.ent10#att10) count(rel26#role51.rel24#role47.ent12#att12) count(rel22#role43.rel16#role32.ent15#att15)">
+    <DataUnit gr:x="0" gr:y="0" id="sv4#page11#dau4" name="Statistiche e Informazioni sulla catena" entity="ent9" displayAttributes="ent9#att55 ent9#att56 rel36#role71.ent1#att73 count(rel22#role43.ent10#att10) count(rel22#role43.rel4#role8.userOID)">
       <Selector id="sv4#page11#dau4#su88" defaultPolicy="fill" booleanOperator="and"/>
     </DataUnit>
     <IndexUnit gr:x="0" gr:y="110" id="sv4#page11#inu16" name="Lista negozi della catena" entity="ent10" linkOrder="sv4#page11#inu16#ln149" displayAttributes="ent10#att48 rel32#role63.ent1#att73">
@@ -15,8 +15,7 @@
           <layout:Attribute attribute="ent9#att56"/>
           <layout:Attribute attribute="rel36#role71.ent1#att73"/>
           <layout:Attribute attribute="count(rel22#role43.ent10#att10)"/>
-          <layout:Attribute attribute="count(rel26#role51.rel24#role47.ent12#att12)"/>
-          <layout:Attribute attribute="count(rel22#role43.rel16#role32.ent15#att15)"/>
+          <layout:Attribute attribute="count(rel22#role43.rel4#role8.userOID)"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

@@ -14,12 +14,20 @@
         <LinkParameter id="sv2#area4#cru19#oln48#par473" name="NegozioToGestore Singolo Negozio.oid_PASSING_Gestore Singolo Negozio.oid(PrenotazioneToGestore Singolo Negozio)" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par458" target="sv2#opg12#cru22.rel13#role25.userOID"/>
         <LinkParameter id="sv2#area4#cru19#oln48#par474" name="oid_PASSING_Negozio.oid(PrenotazioneToNegozio)" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par460" target="sv2#opg12#cru22.rel11#role21.ent10#att10"/>
         <LinkParameter id="sv2#area4#cru19#oln48#par475" name="Checked oid_PASSING_Prodotto.oid(PrenotazioneToProdotto)" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par457" target="sv2#opg12#cru22.rel12#role23.ent12#att12"/>
+        <LinkParameter id="sv2#area4#cru19#oln48#par797" name="NegozioToGestore Singolo Negozio.oid_PASSING_Gestore Singolo Negozio.oid(PrenotazioneToGestore Singolo Negozio)" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par795" target="sv2#opg12#cru22.rel13#role25.userOID"/>
+        <LinkParameter id="sv2#area4#cru19#oln48#par798" name="oid_PASSING_Negozio.oid(PrenotazioneToNegozio)" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par796" target="sv2#opg12#cru22.rel11#role21.ent10#att10"/>
+        <LinkParameter id="sv2#area4#cru19#oln48#par799" name="Checked oid_PASSING_Prodotto.oid(PrenotazioneToProdotto)" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par794" target="sv2#opg12#cru22.rel12#role23.ent12#att12"/>
+        <LinkParameter id="sv2#area4#cru19#oln48#par800" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par794" passing="true"/>
+        <LinkParameter id="sv2#area4#cru19#oln48#par801" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par795" passing="true"/>
+        <LinkParameter id="sv2#area4#cru19#oln48#par802" name="oid_PASSING" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par796" passing="true"/>
       </OKLink>
     </CreateUnit>
     <CreateUnit id="sv2#area4#cru16" name="Salva nuova Carta" gr:x="0" gr:y="895" entity="ent2">
       <OKLink id="sv2#area4#cru16#oln55" name="OKFlow47" to="sv2#opg11#cru15">
         <LinkParameter id="sv2#area4#cru16#oln55#par521" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page63#enu18#ln161#par526" passing="true"/>
         <LinkParameter id="sv2#area4#cru16#oln55#par522" name="oid_PASSING_Negozio.oid(AcquistoToNegozio)" sourceLinkParameter="sv2#area4#page63#enu18#ln161#par527" target="sv2#opg11#cru15.rel16#role31.ent10#att10"/>
+        <LinkParameter id="sv2#area4#cru16#oln55#par811" name="oid_PASSING_Negozio.oid(AcquistoToNegozio)" sourceLinkParameter="sv2#area4#page63#enu18#ln161#par810" target="sv2#opg11#cru15.rel16#role31.ent10#att10"/>
+        <LinkParameter id="sv2#area4#cru16#oln55#par812" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page63#enu18#ln161#par809" passing="true"/>
       </OKLink>
     </CreateUnit>
   </OperationUnits>

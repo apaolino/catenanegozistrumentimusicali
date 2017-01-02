@@ -11,6 +11,9 @@
         <LinkParameter id="sv2#area4#page69#enu19#ln177#par518" name="Riconsegna prevista_PASSING" source="sv2#area4#page69#enu19#fld119" passing="true"/>
         <LinkParameter id="sv2#area4#page69#enu19#ln177#par519" name="Ritiro prodotto_PASSING" source="sv2#area4#page69#enu19#fld118" passing="true"/>
         <LinkParameter id="sv2#area4#page69#enu19#ln177#par520" name="oid_PASSING" sourceLinkParameter="sv2#area4#page61#mssu22#ln167#par410" passing="true"/>
+        <LinkParameter id="sv2#area4#page69#enu19#ln177#par751" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page61#mssu22#ln167#par748" passing="true"/>
+        <LinkParameter id="sv2#area4#page69#enu19#ln177#par755" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page61#mssu22#ln167#par749" passing="true"/>
+        <LinkParameter id="sv2#area4#page69#enu19#ln177#par756" name="oid_PASSING" sourceLinkParameter="sv2#area4#page61#mssu22#ln167#par750" passing="true"/>
       </Link>
     </EntryUnit>
   </ContentUnits>

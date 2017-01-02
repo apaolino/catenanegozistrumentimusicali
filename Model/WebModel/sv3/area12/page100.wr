@@ -5,7 +5,7 @@
         <LinkParameter id="sv3#area12#page100#gtu26#ln250#par633" name="UserCtxParam.oid_RoleCondition48 [oid]" source="sv3#area12#page100#gtu26.UserCtxParam" target="sv3#area12#page100#seu50#su143#rcond48.userOID"/>
       </Link>
     </GetUnit>
-    <IndexUnit gr:x="200" gr:y="0" id="sv3#area12#page100#inu27" name="Lista prenotazioni noleggio prodotti" entity="ent16" displayAttributes="ent16#att31 ent16#att32 rel14#role28.User#att20 rel14#role28.User#att21 rel14#role28.User#att54 rel14#role28.email" linkOrder="sv3#area12#page100#inu27#ln252 sv3#area12#page100#inu27#ln240 sv3#area12#page100#inu27#ln254">
+    <IndexUnit gr:x="200" gr:y="0" id="sv3#area12#page100#inu27" name="Lista prenotazioni noleggio prodotti" entity="ent21" displayAttributes="ent16#att31 ent16#att32 rel14#role28.User#att20 rel14#role28.User#att21 rel14#role28.User#att54 rel14#role28.email" linkOrder="sv3#area12#page100#inu27#ln252 sv3#area12#page100#inu27#ln240 sv3#area12#page100#inu27#ln254">
       <Selector id="sv3#area12#page100#inu27#su142" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv3#area12#page100#inu27#su142#acond15" name="data" predicate="gteq" booleanOperator="or" implied="false" attributes="ent16#att31"/>
         <RelationshipRoleCondition id="sv3#area12#page100#inu27#su142#rcond49" name="RoleCondition49" predicate="in" implied="false" role="rel11#role22"/>

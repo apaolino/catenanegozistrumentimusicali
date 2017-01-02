@@ -8,7 +8,7 @@
       <Field id="sv3#area15#page106#enu26#fld142" name="Posti Disponibili" type="integer" modifiable="true" attribute="ent17#att65"/>
       <SelectionField id="sv3#area15#page106#enu26#sfld19" name="Periodo" type="string" role="rel41#role81"/>
       <SelectionField id="sv3#area15#page106#enu26#sfld22" name="Tipo Evento" type="string" role="rel42#role83"/>
-      <Link id="sv3#area15#page106#enu26#ln281" name="Flow281" to="sv3#area15#cru14" type="normal" validate="true">
+      <Link id="sv3#area15#page106#enu26#ln281" name="Crea evento" to="sv3#area15#cru14" type="normal" validate="true">
         <LinkParameter id="sv3#area15#page106#enu26#ln281#par685" name="Data Fine_Data fine evento" source="sv3#area15#page106#enu26#fld138" target="sv3#area15#cru14.ent17#att63"/>
         <LinkParameter id="sv3#area15#page106#enu26#ln281#par686" name="Data Inizio_Data inizio evento" source="sv3#area15#page106#enu26#fld136" target="sv3#area15#cru14.ent17#att61"/>
         <LinkParameter id="sv3#area15#page106#enu26#ln281#par687" name="UserCtxParam.oid_PASSING_Gestore Singolo Negozio.oid(EventoToGestore Singolo Negozio)" sourceLinkParameter="sv3#area15#page106#seu55#ln272#par682" target="sv3#area15#cru14.rel5#role10.userOID"/>

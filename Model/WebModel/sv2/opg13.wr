@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-2385" gr:y="1570" id="sv2#opg13" name="Elimina dati prenotazione" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-2700" gr:y="1585" id="sv2#opg13" name="Elimina dati prenotazione" transaction="true">
   <OperationUnits>
     <SelectorUnit id="sv2#opg13#seu42" name="Seleziona evento" gr:x="170" gr:y="15" entity="ent17">
       <Selector id="sv2#opg13#seu42#su101" defaultPolicy="fill" booleanOperator="and">

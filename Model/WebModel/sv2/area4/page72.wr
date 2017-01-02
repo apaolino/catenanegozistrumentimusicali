@@ -15,6 +15,9 @@
         <LinkParameter id="sv2#area4#page72#enu21#ln184#par461" name="Riconsegna prevista_PASSING" sourceLinkParameter="sv2#area4#page70#mssu24#ln183#par448" passing="true"/>
         <LinkParameter id="sv2#area4#page72#enu21#ln184#par462" name="Ritiro prodotto_PASSING" sourceLinkParameter="sv2#area4#page70#mssu24#ln183#par455" passing="true"/>
         <LinkParameter id="sv2#area4#page72#enu21#ln184#par479" name="UserCtxParam.oid_PASSING_Cliente.oid(Carta di CreditoToCliente Registrato)" sourceLinkParameter="sv2#area4#page70#mssu24#ln183#par478" target="sv2#area4#cru19.rel27#role54.userOID"/>
+        <LinkParameter id="sv2#area4#page72#enu21#ln184#par794" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page70#mssu24#ln183#par769" passing="true"/>
+        <LinkParameter id="sv2#area4#page72#enu21#ln184#par795" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page70#mssu24#ln183#par773" passing="true"/>
+        <LinkParameter id="sv2#area4#page72#enu21#ln184#par796" name="oid_PASSING" sourceLinkParameter="sv2#area4#page70#mssu24#ln183#par781" passing="true"/>
       </Link>
     </EntryUnit>
   </ContentUnits>
