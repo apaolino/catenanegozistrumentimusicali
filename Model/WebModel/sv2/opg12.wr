@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="730" gr:y="800" id="sv2#opg12" name="Salvataggio dati nuovo noleggio" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="780" gr:y="1045" id="sv2#opg12" name="Salvataggio dati nuovo noleggio" transaction="true">
   <OperationUnits>
     <CreateUnit id="sv2#opg12#cru22" name="Nuovo noleggio" gr:x="85" gr:y="178" entity="ent21">
       <OKLink id="sv2#opg12#cru22#oln52" name="OKFlow44" to="sv2#opg12#cnu7">

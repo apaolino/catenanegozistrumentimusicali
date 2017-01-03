@@ -23,6 +23,7 @@
         <LinkParameter id="sv4#area9#page33#enu10#ln5#par31" name="Produttore_Produttore.oid(ProdottoToProduttore)" source="sv4#area9#page33#enu10#sfld16" target="sv4#area9#cru3.rel29#role58.ent20#att39"/>
         <LinkParameter id="sv4#area9#page33#enu10#ln5#par53" name="Tipologia Prodotto_Tipo prodotto.oid(ProdottoToTipo prodotto)" source="sv4#area9#page33#enu10#sfld13" target="sv4#area9#cru3.rel39#role78.ent4#att37"/>
         <LinkParameter id="sv4#area9#page33#enu10#ln5#par54" name="Usato_Usato" source="sv4#area9#page33#enu10#fld20" target="sv4#area9#cru3.ent12#att44"/>
+        <LinkParameter id="sv4#area9#page33#enu10#ln5#par846" name="0_Eliminato" sourceValue="0" target="sv4#area9#cru3.ent12#att79"/>
       </Link>
     </EntryUnit>
     <SelectorUnit gr:x="435" gr:y="0" id="sv4#area9#page33#seu19" name="Selettore Categoria" entity="ent7">

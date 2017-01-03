@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="165" gr:y="1640" id="sv2#area6#page1" name="Elimina prenotazione noleggio">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="275" gr:y="1640" id="sv2#area6#page1" name="Elimina prenotazione noleggio">
   <ContentUnits>
     <GetUnit id="sv2#area6#page1#gtu17" name="GetUID" gr:x="38" gr:y="47" contextParameters="UserCtxParam">
       <Link id="sv2#area6#page1#gtu17#ln145" name="Flow9" to="sv2#area6#page1#inu19" type="transport" validate="true">

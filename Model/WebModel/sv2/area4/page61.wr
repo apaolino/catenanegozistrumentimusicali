@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="740" gr:y="15" id="sv2#area4#page61" name="lista prodotti selezionati">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="720" gr:y="10" id="sv2#area4#page61" name="lista prodotti selezionati">
   <ContentUnits>
     <IndexUnit gr:x="60" gr:y="0" id="sv2#area4#page61#inu8" name="Carrello" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att43">
       <Selector id="sv2#area4#page61#inu8#su82" defaultPolicy="fill" booleanOperator="and">
@@ -13,7 +13,7 @@
         <LinkParameter id="sv2#area4#page61#inu8#ln157#par705" name="oid_PASSING" sourceLinkParameter="sv2#area4#page122#mciu2#ln298#par697" passing="true"/>
       </Link>
     </IndexUnit>
-    <MultiMessageUnit gr:x="0" gr:y="140" id="sv2#area4#page61#mssu22" name="Acquista o nolegga i prodotti" linkOrder="sv2#area4#page61#mssu22#ln146 sv2#area4#page61#mssu22#ln167">
+    <MultiMessageUnit gr:x="0" gr:y="140" id="sv2#area4#page61#mssu22" name="Acquista/noleggia/prenota i prodotti" linkOrder="sv2#area4#page61#mssu22#ln146 sv2#area4#page61#mssu22#ln167 sv2#area4#page61#mssu22#ln263">
       <Message xml:space="preserve">Procedi con la selezione del metodo di pagamento o inserisci i dati per il noleggio</Message>
       <Link id="sv2#area4#page61#mssu22#ln146" name="Acquisto" to="sv2#area4#page62#inu5" type="normal" validate="true">
         <LinkParameter id="sv2#area4#page61#mssu22#ln146#par408" name="oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par407" passing="true"/>
@@ -32,7 +32,17 @@
         <LinkParameter id="sv2#area4#page61#mssu22#ln167#par749" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par700" passing="true"/>
         <LinkParameter id="sv2#area4#page61#mssu22#ln167#par750" name="oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par705" passing="true"/>
       </Link>
+      <Link id="sv2#area4#page61#mssu22#ln263" name="Prenota" to="sv2#area4#opg22#cru18" type="normal" validate="true">
+        <LinkParameter id="sv2#area4#page61#mssu22#ln263#par836" name="NegozioToGestore Singolo Negozio.oid_PASSING_Gestore Singolo Negozio.oid(PrenotazioneToGestore Singolo Negozio)" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par453" target="sv2#area4#opg22#cru18.rel13#role25.userOID"/>
+        <LinkParameter id="sv2#area4#page61#mssu22#ln263#par837" name="oid_PASSING_Negozio.oid(PrenotazioneToNegozio)" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par407" target="sv2#area4#opg22#cru18.rel11#role21.ent10#att10"/>
+        <LinkParameter id="sv2#area4#page61#mssu22#ln263#par839" name="UserCtxParam.oid_PASSING_Cliente.oid(PrenotazioneToCliente Registrato)" sourceLinkParameter="sv2#area4#page61#gtu31#ln297#par838" target="sv2#area4#opg22#cru18.rel14#role28.userOID"/>
+      </Link>
     </MultiMessageUnit>
+    <GetUnit gr:x="200" gr:y="5" id="sv2#area4#page61#gtu31" name="Get31" contextParameters="UserCtxParam">
+      <Link id="sv2#area4#page61#gtu31#ln297" name="Flow297" to="sv2#area4#page61#mssu22" type="transport" validate="true">
+        <LinkParameter id="sv2#area4#page61#gtu31#ln297#par838" name="UserCtxParam.oid_PASSING" source="sv2#area4#page61#gtu31.UserCtxParam" passing="true"/>
+      </Link>
+    </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -61,8 +71,23 @@
         <layout:Unit unitId="sv2#area4#page61#mssu22">
           <layout:Link link="sv2#area4#page61#mssu22#ln146"/>
           <layout:Link link="sv2#area4#page61#mssu22#ln167"/>
+          <layout:Link link="sv2#area4#page61#mssu22#ln263"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

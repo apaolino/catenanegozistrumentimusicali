@@ -14,6 +14,8 @@
       <Selector id="sv2#dlu7#su65" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#dlu7#su65#kcond38" name="KeyCondition38" predicate="in" implied="false"/>
       </Selector>
+      <KOLink id="sv2#dlu7#kln71" name="KOFlow71" to="sv2#page128#mssu39" automaticCoupling="true"/>
+      <OKLink id="sv2#dlu7#oln113" name="OKFlow113" to="sv2#area6#page85#inu16" automaticCoupling="true" gr:bendpoints="-495,-55,510,85"/>
     </DeleteUnit>
     <DeleteUnit gr:x="910" gr:y="-330" id="sv2#dlu11" name="Elimina carta" entity="ent2">
       <Selector id="sv2#dlu11#su83" defaultPolicy="fill" booleanOperator="and">

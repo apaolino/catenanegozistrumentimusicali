@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="265" gr:y="315" id="sv2#area6#page80" name="Annulla acquisti (solo quelli effettuati in giornata)">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="375" gr:y="315" id="sv2#area6#page80" name="Annulla acquisti (solo quelli effettuati in giornata)">
   <ContentUnits>
     <IndexUnit id="sv2#area6#page80#inu20" name="Storico acquisti" gr:x="245" gr:y="0" entity="ent15" displayAttributes="ent15#att30 ent15#att2" linkOrder="sv2#area6#page80#inu20#ln193">
       <Selector id="sv2#area6#page80#inu20#su106" defaultPolicy="fill" booleanOperator="and">

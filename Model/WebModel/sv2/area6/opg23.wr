@@ -1,0 +1,30 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="565" gr:y="2655" id="sv2#area6#opg23" name="Elimin prenot" transaction="true">
+  <OperationUnits>
+    <DisconnectUnit gr:x="280" gr:y="0" id="sv2#area6#opg23#dcnu18" name="Disconnessione coi prodotti" relationship="rel45#role89">
+      <SourceSelector id="sv2#area6#opg23#dcnu18#su187" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area6#opg23#dcnu18#su187#kcond121" name="KeyCondition121" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv2#area6#opg23#dcnu18#su188" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area6#opg23#dcnu18#su188#kcond122" name="KeyCondition122" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv2#area6#opg23#dcnu18#oln111" name="OKFlow111" to="sv2#area6#opg23#dlu15" automaticCoupling="true"/>
+      <KOLink id="sv2#area6#opg23#dcnu18#kln73" name="KOFlow73" to="sv2#page128#mssu39" automaticCoupling="true"/>
+    </DisconnectUnit>
+    <SelectorUnit gr:x="0" gr:y="15" id="sv2#area6#opg23#seu62" name="Selector62" entity="ent12">
+      <Selector id="sv2#area6#opg23#seu62#su189" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area6#opg23#seu62#su189#rcond64" name="RoleCondition64" predicate="in" implied="false" role="rel45#role89"/>
+      </Selector>
+      <OKLink id="sv2#area6#opg23#seu62#oln107" name="OKFlow107" to="sv2#area6#opg23#dcnu18">
+        <LinkParameter id="sv2#area6#opg23#seu62#oln107#par844" name="oid_PASSING_KeyCondition121 [oid] [Prenotazione] [Source]" sourceLinkParameter="sv2#area6#page124#inu33#ln302#par841" target="sv2#area6#opg23#dcnu18#su187#kcond121.ent16#att16"/>
+        <LinkParameter id="sv2#area6#opg23#seu62#oln107#par845" name="oid_KeyCondition122 [oid] [Prodotto] [Target]" source="ent12#att12Array" target="sv2#area6#opg23#dcnu18#su188#kcond122.ent12#att12"/>
+      </OKLink>
+    </SelectorUnit>
+    <DeleteUnit gr:x="555" gr:y="35" id="sv2#area6#opg23#dlu15" name="Delete15" entity="ent16">
+      <Selector id="sv2#area6#opg23#dlu15#su190" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area6#opg23#dlu15#su190#kcond123" name="KeyCondition123" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#area6#opg23#dlu15#oln112" name="OKFlow112" to="sv2#area6#page124#inu33" automaticCoupling="true"/>
+      <KOLink id="sv2#area6#opg23#dlu15#kln72" name="KOFlow72" to="sv2#page128#mssu39" automaticCoupling="true"/>
+    </DeleteUnit>
+  </OperationUnits>
+</OperationGroup>

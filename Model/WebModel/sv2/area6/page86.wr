@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="185" gr:y="2010" id="sv2#area6#page86" name="Storico prenotazioni sala prove" linkOrder="sv2#area6#page86#ln212">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="295" gr:y="2010" id="sv2#area6#page86" name="Storico prenotazioni sala prove" linkOrder="sv2#area6#page86#ln212">
   <ContentUnits>
     <GetUnit gr:x="0" gr:y="0" id="sv2#area6#page86#gtu18" name="GetUID" contextParameters="UserCtxParam">
       <Link id="sv2#area6#page86#gtu18#ln206" name="Flow206" to="sv2#area6#page86#inu22" type="transport" validate="true">

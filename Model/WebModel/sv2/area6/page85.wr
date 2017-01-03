@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area6#page85" name="Seleziona prenotazione da eliminare" gr:x="155" gr:y="2270">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area6#page85" name="Seleziona prenotazione da eliminare" gr:x="265" gr:y="2270">
   <ContentUnits>
     <GetUnit id="sv2#area6#page85#gtu13" name="GetUID" gr:x="10" gr:y="0" contextParameters="UserCtxParam">
       <Link id="sv2#area6#page85#gtu13#ln185" name="Flow138" to="sv2#area6#page85#inu16" type="transport" validate="true">

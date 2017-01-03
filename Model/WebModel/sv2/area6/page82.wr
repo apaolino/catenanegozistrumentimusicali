@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area6#page82" name="Elimina prenotazione evento" gr:x="220" gr:y="960">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area6#page82" name="Elimina prenotazione evento" gr:x="330" gr:y="960">
   <ContentUnits>
     <SelectorUnit id="sv2#area6#page82#seu47" name="Recupero id eventi" gr:x="10" gr:y="135" entity="ent17">
       <Link id="sv2#area6#page82#seu47#ln199" name="Flow163" to="sv2#area6#page82#inu21" type="transport" validate="true">

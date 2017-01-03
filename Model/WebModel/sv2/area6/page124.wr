@@ -1,0 +1,131 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="2555" id="sv2#area6#page124" name="Storico prenotazioni prodotti">
+  <ContentUnits>
+    <IndexUnit gr:x="175" gr:y="0" id="sv2#area6#page124#inu33" name="Prenotazioni effettuate" entity="ent16" linkOrder="sv2#area6#page124#inu33#ln300 sv2#area6#page124#inu33#ln302" displayAttributes="ent16#att31 count(rel45#role89.ent12#att12)">
+      <Selector id="sv2#area6#page124#inu33#su178" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area6#page124#inu33#su178#rcond8" name="RoleCondition8" predicate="in" implied="false" role="rel14#role27"/>
+        <AttributesCondition id="sv2#area6#page124#inu33#su178#acond24" name="AttCondition24" predicate="eq" booleanOperator="or" implied="false" attributes="rel34#role68.ent15#att15" value="NULL"/>
+        <AttributesCondition id="sv2#area6#page124#inu33#su178#acond25" name="AttCondition25" predicate="eq" booleanOperator="or" implied="false" attributes="rel6#role12.ent17#att17" value="NULL"/>
+        <AttributesCondition id="sv2#area6#page124#inu33#su178#acond28" name="AttCondition28" predicate="eq" booleanOperator="or" implied="false" attributes="rel9#role18.ent19#att19" value="NULL"/>
+      </Selector>
+      <Link id="sv2#area6#page124#inu33#ln300" name="Flow300" to="sv2#area6#page124#alt23#page126#inu34" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv2#area6#page124#inu33#ln302" name="Elimina" to="sv2#area6#opg23#seu62" type="normal" validate="true">
+        <LinkParameter id="sv2#area6#page124#inu33#ln302#par840" name="oid_RoleCondition64 [oid]" source="data[].ent16#att16" target="sv2#area6#opg23#seu62#su189#rcond64.ent16#att16"/>
+        <LinkParameter id="sv2#area6#page124#inu33#ln302#par841" name="oid_PASSING" source="data[].ent16#att16" passing="true"/>
+      </Link>
+    </IndexUnit>
+    <GetUnit gr:x="0" gr:y="0" id="sv2#area6#page124#gtu32" name="Get32" contextParameters="UserCtxParam">
+      <Link id="sv2#area6#page124#gtu32#ln299" name="Flow299" to="sv2#area6#page124#inu33" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area6#page124#inu33">
+          <layout:Attribute attribute="ent16#att31"/>
+          <layout:Attribute attribute="count(rel45#role89.ent12#att12)"/>
+          <layout:Link link="sv2#area6#page124#inu33#ln300"/>
+          <layout:Link link="sv2#area6#page124#inu33#ln302"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv2#area6#page124#alt23#page125">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv2#area6#page124#alt23#page126">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv2#area6#page124#alt23#page126#inu34">
+                  <layout:Attribute attribute="ent12#att66"/>
+                  <layout:Attribute attribute="ent12#att68"/>
+                  <layout:Attribute attribute="ent12#att67"/>
+                  <layout:Attribute attribute="ent12#att1"/>
+                  <layout:Attribute attribute="ent12#att43"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative gr:x="5" gr:y="195" id="sv2#area6#page124#alt23" name="Alternative23" defaultPage="sv2#area6#page124#alt23#page125">
+    <Page gr:x="0" gr:y="0" id="sv2#area6#page124#alt23#page125" name="Page 125">
+      <ContentUnits/>
+    </Page>
+    <Page gr:x="0" gr:y="105" id="sv2#area6#page124#alt23#page126" name="Prodotti prenotati">
+      <ContentUnits>
+        <IndexUnit gr:x="0" gr:y="0" id="sv2#area6#page124#alt23#page126#inu34" name="Prodotti prenotati" entity="ent12" displayAttributes="ent12#att66 ent12#att68 ent12#att67 ent12#att1 ent12#att43">
+          <Selector id="sv2#area6#page124#alt23#page126#inu34#su183" defaultPolicy="fill" booleanOperator="and">
+            <RelationshipRoleCondition id="sv2#area6#page124#alt23#page126#inu34#su183#rcond51" name="RoleCondition51" predicate="in" implied="false" role="rel45#role89"/>
+          </Selector>
+        </IndexUnit>
+      </ContentUnits>
+    </Page>
+  </Alternative>
+</Page>
