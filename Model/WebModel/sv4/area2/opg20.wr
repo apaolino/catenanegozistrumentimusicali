@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="135" gr:y="960" id="sv4#area2#opg20" name="Operation Group 20" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="35" gr:y="970" id="sv4#area2#opg20" name="Operation Group 20" transaction="true">
   <OperationUnits>
     <CreateUnit id="sv4#area2#opg20#cru24" name="Create10" gr:x="0" gr:y="0" entity="ent13">
       <OKLink id="sv4#area2#opg20#cru24#oln106" name="OKFlow106" to="sv4#area2#opg20#seu71">

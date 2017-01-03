@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.webml.org/webservices/wsdl/products">
+  <xsd:complexType name="productType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="Prodotto">
+        <xsd:complexType>
+	  <xsd:sequence>
+	  		<xsd:element minOccurs="1" maxOccurs="1" name="oid" type="xsd:int"/>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Nome modello" type="xsd:string"/>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Data produzione" type="xsd:date"/>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Luogo produzione" type="xsd:string"/>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Prezzo" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Usato" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Percentuale sconto" type="xsd:integer"/>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Categoria" type="xsd:string"/>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Tipo prodotto" type="xsd:string"/>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Produttore" type="xsd:string"/>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Eliminato" type="xsd:boolean"/>
+	  </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

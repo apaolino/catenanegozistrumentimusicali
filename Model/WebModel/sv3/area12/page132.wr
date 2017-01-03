@@ -1,0 +1,33 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area12#page132" name="Elimina conferma prenotazione" gr:x="1255" gr:y="35">
+  <ContentUnits>
+    <MultiMessageUnit id="sv3#area12#page132#mssu42" name="Messaggio conferma" linkOrder="sv3#area12#page132#mssu42#ln315 sv3#area12#page132#mssu42#ln316" gr:x="0" gr:y="0">
+      <Link id="sv3#area12#page132#mssu42#ln315" name="Si" to="sv3#opg24#seu67" type="normal" validate="true">
+        <LinkParameter id="sv3#area12#page132#mssu42#ln315#par821" name="oid_PASSING" sourceLinkParameter="sv3#area12#page123#inu35#ln317#par822" passing="true"/>
+        <LinkParameter id="sv3#area12#page132#mssu42#ln315#par829" name="oid_PASSING_RoleCondition69 [oid]" sourceLinkParameter="sv3#area12#page123#inu35#ln317#par822" target="sv3#opg24#seu67#su193#rcond69.ent16#att16"/>
+      </Link>
+      <Link id="sv3#area12#page132#mssu42#ln316" name="No" to="sv3#area12#page123#inu35" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="-321,15,394,15"/>
+      <Message xml:space="preserve">Vuoi eliminare la prenotazione selezionata?</Message>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area12#page132#mssu42">
+          <layout:Link link="sv3#area12#page132#mssu42#ln315"/>
+          <layout:Link link="sv3#area12#page132#mssu42#ln316"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

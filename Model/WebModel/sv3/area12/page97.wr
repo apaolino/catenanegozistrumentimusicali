@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="375" gr:y="365" id="sv3#area12#page97" name="Gestione prenotazioni sala prove">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="375" gr:y="820" id="sv3#area12#page97" name="Gestione prenotazioni sala prove">
   <ContentUnits>
     <IndexUnit gr:x="220" gr:y="0" id="sv3#area12#page97#inu24" name="Lista prenotazioni sala prove" entity="ent16" displayAttributes="ent16#att31 ent16#att32 rel14#role28.User#att20 rel14#role28.User#att21 rel14#role28.User#att54 rel14#role28.email" linkOrder="sv3#area12#page97#inu24#ln239 sv3#area12#page97#inu24#ln243">
       <Selector id="sv3#area12#page97#inu24#su131" defaultPolicy="fill" booleanOperator="and">

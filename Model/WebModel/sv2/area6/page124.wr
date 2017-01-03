@@ -12,6 +12,7 @@
         <LinkParameter id="sv2#area6#page124#inu33#ln302#par840" name="oid_RoleCondition64 [oid]" source="data[].ent16#att16" target="sv2#area6#opg23#seu62#su189#rcond64.ent16#att16"/>
         <LinkParameter id="sv2#area6#page124#inu33#ln302#par841" name="oid_PASSING" source="data[].ent16#att16" passing="true"/>
       </Link>
+      <SortAttribute attribute="ent16#att31" order="descending"/>
     </IndexUnit>
     <GetUnit gr:x="0" gr:y="0" id="sv2#area6#page124#gtu32" name="Get32" contextParameters="UserCtxParam">
       <Link id="sv2#area6#page124#gtu32#ln299" name="Flow299" to="sv2#area6#page124#inu33" type="transport" validate="true">

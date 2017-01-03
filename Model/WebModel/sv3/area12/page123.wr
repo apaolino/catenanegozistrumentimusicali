@@ -1,0 +1,162 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="145" gr:y="0" id="sv3#area12#page123" name="Gestione Prenotazioni">
+  <ContentUnits>
+    <IndexUnit gr:x="315" gr:y="10" id="sv3#area12#page123#inu35" name="Lista prenotazioni effettuate nel negozio" entity="ent16" linkOrder="sv3#area12#page123#inu35#ln259 sv3#area12#page123#inu35#ln317" displayAttributes="ent16#att31 rel14#role28.User#att21 rel14#role28.email count(rel45#role89.ent12#att12) sum(rel45#role89.ent12#att43)">
+      <Selector id="sv3#area12#page123#inu35#su185" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area12#page123#inu35#su185#rcond66" name="RoleCondition66" predicate="in" implied="false" role="rel11#role22"/>
+        <AttributesCondition id="sv3#area12#page123#inu35#su185#acond30" name="AttCondition30" predicate="null" booleanOperator="or" implied="false" attributes="rel34#role68.ent15#att15"/>
+        <AttributesCondition id="sv3#area12#page123#inu35#su185#acond31" name="AttCondition31" predicate="null" booleanOperator="or" implied="false" attributes="rel6#role12.ent17#att17"/>
+        <AttributesCondition id="sv3#area12#page123#inu35#su185#acond32" name="AttCondition32" predicate="null" booleanOperator="or" implied="false" attributes="rel9#role18.ent19#att19"/>
+      </Selector>
+      <Link id="sv3#area12#page123#inu35#ln259" name="Visualizza prodotti prenotati" to="sv3#area12#page123#alt25#page129#inu36" type="normal" validate="true">
+        <LinkParameter id="sv3#area12#page123#inu35#ln259#par336" name="oid_PASSING" source="data[].ent16#att16" passing="true"/>
+        <LinkParameter id="sv3#area12#page123#inu35#ln259#par819" name="oid_RoleCondition68 [oid]" source="data[].ent16#att16" target="sv3#area12#page123#alt25#page129#inu36#su197#rcond68.ent16#att16"/>
+      </Link>
+      <Link id="sv3#area12#page123#inu35#ln317" name="Elimina" to="sv3#area12#page132#mssu42" type="normal" validate="true">
+        <LinkParameter id="sv3#area12#page123#inu35#ln317#par822" name="oid_PASSING" source="data[].ent16#att16" passing="true"/>
+      </Link>
+    </IndexUnit>
+    <GetUnit gr:x="0" gr:y="60" id="sv3#area12#page123#gtu27" name="Get27" contextParameters="UserCtxParam">
+      <Link id="sv3#area12#page123#gtu27#ln46" name="Flow46" to="sv3#area12#page123#seu66" type="transport" validate="true">
+        <LinkParameter id="sv3#area12#page123#gtu27#ln46#par141" name="UserCtxParam.oid_RoleCondition67 [oid]" source="sv3#area12#page123#gtu27.UserCtxParam" target="sv3#area12#page123#seu66#su186#rcond67.userOID"/>
+      </Link>
+    </GetUnit>
+    <SelectorUnit gr:x="45" gr:y="200" id="sv3#area12#page123#seu66" name="Negozio associato al gestore" entity="ent10">
+      <Link id="sv3#area12#page123#seu66#ln103" name="Flow103" to="sv3#area12#page123#inu35" automaticCoupling="true" type="transport" validate="true"/>
+      <Selector id="sv3#area12#page123#seu66#su186" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area12#page123#seu66#su186#rcond67" name="RoleCondition67" predicate="in" implied="false" role="rel4#role7"/>
+      </Selector>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area12#page123#inu35">
+          <layout:Attribute attribute="ent16#att31"/>
+          <layout:Attribute attribute="rel14#role28.User#att21"/>
+          <layout:Attribute attribute="rel14#role28.email"/>
+          <layout:Attribute attribute="count(rel45#role89.ent12#att12)"/>
+          <layout:Attribute attribute="sum(rel45#role89.ent12#att43)"/>
+          <layout:Link link="sv3#area12#page123#inu35#ln259"/>
+          <layout:Link link="sv3#area12#page123#inu35#ln317"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv3#area12#page123#alt25#page127">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv3#area12#page123#alt25#page129">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv3#area12#page123#alt25#page129#inu36">
+                  <layout:Attribute attribute="ent12#att66"/>
+                  <layout:Attribute attribute="ent12#att67"/>
+                  <layout:Attribute attribute="ent12#att1"/>
+                  <layout:Attribute attribute="ent12#att43"/>
+                  <layout:Link link="sv3#area12#page123#alt25#page129#inu36#ln301"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative gr:x="755" gr:y="0" id="sv3#area12#page123#alt25" name="Alternative25" defaultPage="sv3#area12#page123#alt25#page127">
+    <Page gr:x="0" gr:y="0" id="sv3#area12#page123#alt25#page127" name="Page 127">
+      <ContentUnits/>
+    </Page>
+    <Page gr:x="0" gr:y="105" id="sv3#area12#page123#alt25#page129" name="Rimuovi prodotti prenotati">
+      <ContentUnits>
+        <IndexUnit gr:x="0" gr:y="0" id="sv3#area12#page123#alt25#page129#inu36" name="Prodotti prenotati" entity="ent12" displayAttributes="ent12#att66 ent12#att67 ent12#att1 ent12#att43" linkOrder="sv3#area12#page123#alt25#page129#inu36#ln301">
+          <Link id="sv3#area12#page123#alt25#page129#inu36#ln301" name="Rimuovi dalla prenotazione" to="sv3#dcnu2" type="normal" validate="true">
+            <LinkParameter id="sv3#area12#page123#alt25#page129#inu36#ln301#par337" name="oid_KeyCondition120 [oid] [Prodotto] [Target]" source="data[].ent12#att12" target="sv3#dcnu2#su192#kcond120.ent12#att12"/>
+            <LinkParameter id="sv3#area12#page123#alt25#page129#inu36#ln301#par740" name="oid_PASSING_KeyCondition82 [oid] [Prenotazione] [Source]" sourceLinkParameter="sv3#area12#page123#inu35#ln259#par336" target="sv3#dcnu2#su191#kcond82.ent16#att16"/>
+          </Link>
+          <Selector id="sv3#area12#page123#alt25#page129#inu36#su197" defaultPolicy="fill" booleanOperator="and">
+            <RelationshipRoleCondition id="sv3#area12#page123#alt25#page129#inu36#su197#rcond68" name="RoleCondition68" predicate="in" implied="false" role="rel45#role89"/>
+          </Selector>
+        </IndexUnit>
+      </ContentUnits>
+    </Page>
+  </Alternative>
+</Page>

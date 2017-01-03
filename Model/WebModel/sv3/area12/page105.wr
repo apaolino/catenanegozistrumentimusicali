@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="990" gr:y="1145" id="sv3#area12#page105" name="Modifica dati prenotazione">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="990" gr:y="1600" id="sv3#area12#page105" name="Modifica dati prenotazione">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv3#area12#page105#enu23" name="Inserisci le modifiche" linkOrder="sv3#area12#page105#enu23#ln255">
       <Field id="sv3#area12#page105#enu23#fld129" name="Data ritiro" type="timestamp" modifiable="true" preloaded="true"/>

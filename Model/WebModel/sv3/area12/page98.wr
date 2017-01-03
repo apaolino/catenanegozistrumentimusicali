@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="870" gr:y="465" id="sv3#area12#page98" name="Modifica prenotazione">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="870" gr:y="920" id="sv3#area12#page98" name="Modifica prenotazione">
   <ContentUnits>
     <EntryUnit id="sv3#area12#page98#enu25" name="Modifica prenotazione" linkOrder="sv3#area12#page98#enu25#ln242" gr:x="0" gr:y="0" entity="ent16">
       <Link id="sv3#area12#page98#enu25#ln242" name="Salva modifiche" to="sv3#mfu14" type="normal" validate="true">

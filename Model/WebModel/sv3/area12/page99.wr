@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="360" gr:y="680" id="sv3#area12#page99" name="Gestione prenotazioni eventi">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="360" gr:y="1135" id="sv3#area12#page99" name="Gestione prenotazioni eventi">
   <ContentUnits>
     <IndexUnit gr:x="335" gr:y="0" id="sv3#area12#page99#inu26" name="Lista delle prenotazioni" entity="ent16" displayAttributes="ent16#att31 ent16#att32 rel6#role12.ent17#att62 rel14#role28.User#att20 rel14#role28.User#att21 rel14#role28.User#att54 rel14#role28.email" linkOrder="sv3#area12#page99#inu26#ln247">
       <Selector id="sv3#area12#page99#inu26#su140" defaultPolicy="fill" booleanOperator="and">

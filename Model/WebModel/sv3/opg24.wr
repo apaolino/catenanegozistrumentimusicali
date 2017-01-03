@@ -1,0 +1,30 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="3555" gr:y="-375" id="sv3#opg24" name="Elimina prenotazione" transaction="true">
+  <OperationUnits>
+    <SelectorUnit gr:x="0" gr:y="0" id="sv3#opg24#seu67" name="Prodotti nella prenotazione" entity="ent12">
+      <Selector id="sv3#opg24#seu67#su193" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#opg24#seu67#su193#rcond69" name="RoleCondition69" predicate="in" implied="false" role="rel45#role89"/>
+      </Selector>
+      <OKLink id="sv3#opg24#seu67#oln66" name="OKFlow66" to="sv3#opg24#dcnu19">
+        <LinkParameter id="sv3#opg24#seu67#oln66#par818" name="oid_KeyCondition126 [oid] [Prodotto] [Target]" source="ent12#att12Array" target="sv3#opg24#dcnu19#su195#kcond126.ent12#att12"/>
+        <LinkParameter id="sv3#opg24#seu67#oln66#par830" name="oid_PASSING_KeyCondition125 [oid] [Prenotazione] [Source]" sourceLinkParameter="sv3#area12#page132#mssu42#ln315#par821" target="sv3#opg24#dcnu19#su194#kcond125.ent16#att16"/>
+      </OKLink>
+    </SelectorUnit>
+    <DisconnectUnit gr:x="280" gr:y="5" id="sv3#opg24#dcnu19" name="Disconnect19" relationship="rel45#role89">
+      <SourceSelector id="sv3#opg24#dcnu19#su194" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#opg24#dcnu19#su194#kcond125" name="KeyCondition125" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#opg24#dcnu19#su195" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#opg24#dcnu19#su195#kcond126" name="KeyCondition126" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv3#opg24#dcnu19#oln118" name="OKFlow118" to="sv3#opg24#dlu19" automaticCoupling="true"/>
+      <KOLink id="sv3#opg24#dcnu19#kln77" name="KOFlow77" to="sv3#page102#alt20#page104#mssu38" automaticCoupling="true"/>
+    </DisconnectUnit>
+    <DeleteUnit gr:x="520" gr:y="40" id="sv3#opg24#dlu19" name="Delete19" entity="ent16">
+      <Selector id="sv3#opg24#dlu19#su196" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#opg24#dlu19#su196#kcond127" name="KeyCondition127" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#opg24#dlu19#oln119" name="OKFlow119" to="sv3#area12#page123#inu35" automaticCoupling="true" gr:bendpoints="-714,-207,866,-207"/>
+      <KOLink id="sv3#opg24#dlu19#kln76" name="KOFlow76" to="sv3#page102#alt20#page104#mssu38" automaticCoupling="true"/>
+    </DeleteUnit>
+  </OperationUnits>
+</OperationGroup>

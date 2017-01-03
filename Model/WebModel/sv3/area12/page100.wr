@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="205" gr:y="965" id="sv3#area12#page100" name="Gestione prenotazioni noleggi">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="205" gr:y="1420" id="sv3#area12#page100" name="Gestione prenotazioni noleggi">
   <ContentUnits>
     <GetUnit gr:x="20" gr:y="0" id="sv3#area12#page100#gtu26" name="GetUID" contextParameters="UserCtxParam">
       <Link id="sv3#area12#page100#gtu26#ln250" name="Flow250" to="sv3#area12#page100#seu50" type="transport" validate="true">
@@ -112,7 +112,7 @@
   <Alternative gr:x="420" gr:y="130" id="sv3#area12#page100#alt19" name="Alternative19" defaultPage="sv3#area12#page100#alt19#page101">
     <Page gr:x="0" gr:y="0" id="sv3#area12#page100#alt19#page101" name="Page 101">
       <ContentUnits>
-        <IndexUnit gr:x="0" gr:y="0" id="sv3#area12#page100#alt19#page101#inu28" name="Simple List28" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att66 ent12#att67 ent12#att68" linkOrder="sv3#area12#page100#alt19#page101#inu28#ln256">
+        <IndexUnit gr:x="0" gr:y="0" id="sv3#area12#page100#alt19#page101#inu28" name="Prodotti noleggiati" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att66 ent12#att67 ent12#att68" linkOrder="sv3#area12#page100#alt19#page101#inu28#ln256">
           <Selector id="sv3#area12#page100#alt19#page101#inu28#su144" defaultPolicy="fill" booleanOperator="and">
             <RelationshipRoleCondition id="sv3#area12#page100#alt19#page101#inu28#su144#rcond50" name="RoleCondition50" predicate="in" implied="false" role="rel12#role23"/>
           </Selector>

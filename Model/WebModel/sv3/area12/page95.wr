@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="295" gr:y="5" id="sv3#area12#page95" name="Gestione acquisti">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="295" gr:y="460" id="sv3#area12#page95" name="Gestione acquisti">
   <ContentUnits>
     <IndexUnit gr:x="150" gr:y="0" id="sv3#area12#page95#inu7" name="Acquisti odierni" entity="ent15" displayAttributes="ent15#att30 ent15#att2 rel17#role34.User#att20 rel17#role34.User#att21 count(rel15#role29.ent12#att12)" linkOrder="sv3#area12#page95#inu7#ln231 sv3#area12#page95#inu7#ln229">
       <Selector id="sv3#area12#page95#inu7#su122" defaultPolicy="fill" booleanOperator="and">
