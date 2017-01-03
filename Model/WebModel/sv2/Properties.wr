@@ -21,8 +21,11 @@
       <Selector id="sv2#dlu11#su83" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#dlu11#su83#kcond55" name="KeyCondition55" predicate="in" implied="false"/>
       </Selector>
+      <OKLink id="sv2#dlu11#oln115" name="OKFlow115" to="sv2#area1#page75#inu14" automaticCoupling="true" gr:bendpoints="-244,49,286,-26"/>
     </DeleteUnit>
-    <CreateUnit gr:x="880" gr:y="-455" id="sv2#cru17" name="Crea carta di credito" entity="ent2"/>
+    <CreateUnit gr:x="880" gr:y="-455" id="sv2#cru17" name="Crea carta di credito" entity="ent2">
+      <OKLink id="sv2#cru17#oln114" name="OKFlow114" to="sv2#area1#page75#inu14" automaticCoupling="true"/>
+    </CreateUnit>
     <DeleteUnit gr:x="-2445" gr:y="2280" id="sv2#dlu12" name="Elimina prenotazione" entity="ent16">
       <Selector id="sv2#dlu12#su85" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#dlu12#su85#kcond1" name="KeyCondition1" predicate="in" implied="false"/>

@@ -1,0 +1,5 @@
+<Port xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="380" gr:y="365" id="wsv1#port2" name="Port">
+  <OperationUnits>
+    <SolicitUnit id="wsv1#port2#slu2" name="getAllProducts" invocationStyle="SOAP" requestMethod="POST"/>
+  </OperationUnits>
+</Port>
