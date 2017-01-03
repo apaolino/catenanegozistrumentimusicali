@@ -15,7 +15,7 @@
         <AttributesCondition id="sv2#area4#page122#mciu2#su184#acond29" attributes="ent12#att45" predicate="gt" booleanOperator="or" value="0" implied="false" name="AttCondition28"/>
         <RelationshipRoleCondition id="sv2#area4#page122#mciu2#su184#rcond65" role="rel24#role47" predicate="in" implied="false" name="RoleCondition64"/>
       </Selector>
-      <Link id="sv2#area4#page122#mciu2#ln298" name="Visualizza carrello" to="sv2#area4#page61#inu8" type="normal" validate="true" gr:bendpoints="-190,-37,0,773">
+      <Link id="sv2#area4#page122#mciu2#ln298" name="Visualizza carrello" to="sv2#area4#page61#inu8" type="normal" validate="true" gr:bendpoints="-190,-37,0,773;-269,-44,-189,841;-260,-530,-180,355;-232,-779,-152,106">
         <LinkParameter id="sv2#area4#page122#mciu2#ln298#par695" name="Checked oid_KeyCondition56 [oid]" source="ent12#att12Checked" target="sv2#area4#page61#inu8#su82#kcond56.ent12#att12"/>
         <LinkParameter id="sv2#area4#page122#mciu2#ln298#par696" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page122#seu65#ln296#par684" passing="true"/>
         <LinkParameter id="sv2#area4#page122#mciu2#ln298#par697" name="oid_PASSING" sourceLinkParameter="sv2#area4#page122#seu65#ln296#par694" passing="true"/>

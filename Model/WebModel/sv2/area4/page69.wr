@@ -1,10 +1,10 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1065" gr:y="75" id="sv2#area4#page69" name="Noleggio">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1110" gr:y="20" id="sv2#area4#page69" name="Noleggio">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv2#area4#page69#enu19" name="Dati noleggio" linkOrder="sv2#area4#page69#enu19#ln177">
       <Field id="sv2#area4#page69#enu19#fld118" name="Ritiro prodotto" type="timestamp" modifiable="true"/>
       <Field id="sv2#area4#page69#enu19#fld119" name="Riconsegna prevista" type="timestamp" modifiable="true" preloaded="false"/>
       <Field id="sv2#area4#page69#enu19#fld120" name="Cauzione da versare" type="string" modifiable="false" preloaded="true"/>
-      <Link id="sv2#area4#page69#enu19#ln177" name="Procedi" to="sv2#area4#page70#inu15" type="normal" validate="true">
+      <Link id="sv2#area4#page69#enu19#ln177" name="Procedi" to="sv2#area4#page70#inu15" type="normal" validate="true" gr:bendpoints="-42,206,118,-154">
         <LinkParameter id="sv2#area4#page69#enu19#ln177#par515" name="Cauzione versata_PASSING" source="sv2#area4#page69#enu19#fld120" passing="true"/>
         <LinkParameter id="sv2#area4#page69#enu19#ln177#par516" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page61#mssu22#ln167#par403" passing="true"/>
         <LinkParameter id="sv2#area4#page69#enu19#ln177#par517" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page61#mssu22#ln167#par454" passing="true"/>

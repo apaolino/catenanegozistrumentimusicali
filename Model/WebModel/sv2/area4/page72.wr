@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area4#page72" name="Inseirmento dati nuova carta " gr:x="660" gr:y="585">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area4#page72" name="Inseirmento dati nuova carta " gr:x="660" gr:y="615">
   <ContentUnits>
     <EntryUnit id="sv2#area4#page72#enu21" name="Dati nuova carta" gr:x="0" gr:y="0" linkOrder="sv2#area4#page72#enu21#ln184">
       <Field id="sv2#area4#page72#enu21#fld124" name="Numero" type="string" modifiable="true">

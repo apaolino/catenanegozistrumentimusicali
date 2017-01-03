@@ -1,23 +1,23 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="305" gr:y="365" id="sv2#page41" name="Home cliente" linkOrder="sv2#page41#ln108 sv2#page41#ln109 sv2#page41#ln128 sv2#page41#ln283">
   <ContentUnits>
     <IndexUnit gr:x="0" gr:y="0" id="sv2#page41#inu3" name="Lista dei negozi della catena" entity="ent10" displayAttributes="ent10#att48 rel30#role59.rel44#role87.ent7#att36 ent10#att49 ent10#att50 ent10#att51 ent10#att53" linkOrder="sv2#page41#inu3#ln116 sv2#page41#inu3#ln123 sv2#page41#inu3#ln106 sv2#page41#inu3#ln125 sv2#page41#inu3#ln292">
-      <Link id="sv2#page41#inu3#ln116" name="Lista cataloghi" to="sv2#area4#page47#inu4" type="normal" validate="true">
+      <Link id="sv2#page41#inu3#ln116" name="Lista cataloghi" to="sv2#area4#page47#inu4" type="normal" validate="true" gr:bendpoints="-518,58,372,-187">
         <LinkParameter id="sv2#page41#inu3#ln116#par388" name="oid_RoleCondition4 [oid]" source="data[].ent10#att10" target="sv2#area4#page47#inu4#su61#rcond4.ent10#att10"/>
         <LinkParameter id="sv2#page41#inu3#ln116#par394" name="oid_PASSING" source="data[].ent10#att10" passing="true"/>
         <LinkParameter id="sv2#page41#inu3#ln116#par449" name="NegozioToGestore Singolo Negozio.oid_PASSING" source="data[].rel4#role8_userOID" passing="true"/>
       </Link>
-      <Link id="sv2#page41#inu3#ln123" name="Eventi" to="sv2#area8#page52#ecu2" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv2#page41#inu3#ln123" name="Eventi" to="sv2#area8#page52#ecu2" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="792,61,-173,-614"/>
       <Link id="sv2#page41#inu3#ln106" name="Sala prove" to="sv2#area7#page48#ecu3" type="normal" validate="true">
         <LinkParameter id="sv2#page41#inu3#ln106#par351" name="NegozioToSala prove.oid_RoleCondition18 [oid]" source="data[].rel7#role14_ent19#att19" target="sv2#area7#page48#ecu3#su54#rcond18.ent19#att19"/>
         <LinkParameter id="sv2#page41#inu3#ln106#par339" name="NegozioToGestore Singolo Negozio.oid_PASSING" source="data[].rel4#role8_userOID" passing="true"/>
         <LinkParameter id="sv2#page41#inu3#ln106#par340" name="NegozioToSala prove.oid_PASSING" source="data[].rel7#role14_ent19#att19" passing="true"/>
         <LinkParameter id="sv2#page41#inu3#ln106#par341" name="oid_PASSING" source="data[].ent10#att10" passing="true"/>
       </Link>
-      <Link id="sv2#page41#inu3#ln125" name="Recensisci negozio" to="sv2#area10#page54#enu22" type="normal" validate="true" gr:bendpoints="-188,-95,662,555;-348,-644,502,6">
+      <Link id="sv2#page41#inu3#ln125" name="Recensisci negozio" to="sv2#area10#page54#enu22" type="normal" validate="true" gr:bendpoints="-463,-285,232,370;-482,-660,213,-5">
         <LinkParameter id="sv2#page41#inu3#ln125#par365" name="Negozio_Tipo" sourceValue="Negozio" target="sv2#area10#page54#enu22#fld130_slot"/>
         <LinkParameter id="sv2#page41#inu3#ln125#par366" name="oid_PASSING" source="data[].ent10#att10" passing="true"/>
       </Link>
-      <Link id="sv2#page41#inu3#ln292" name="Prodotti scontati" to="sv2#area4#page122#seu65" type="normal" validate="true" gr:bendpoints="-237,473,3,-462;-354,823,-114,-112">
+      <Link id="sv2#page41#inu3#ln292" name="Prodotti scontati" to="sv2#area4#page122#seu65" type="normal" validate="true" gr:bendpoints="-365,128,-120,-847;-385,652,-140,-323;-384,916,-139,-59">
         <LinkParameter id="sv2#page41#inu3#ln292#par648" name="oid_RoleCondition63 [oid]" source="data[].ent10#att10" target="sv2#area4#page122#seu65#su182#rcond63.ent10#att10"/>
         <LinkParameter id="sv2#page41#inu3#ln292#par678" name="NegozioToGestore Singolo Negozio.oid_PASSING" source="data[].rel4#role8_userOID" passing="true"/>
         <LinkParameter id="sv2#page41#inu3#ln292#par679" name="oid_PASSING" source="data[].ent10#att10" passing="true"/>
@@ -70,6 +70,6 @@
   </layout:Grid>
   <Link id="sv2#page41#ln108" name="Logout" to="sv2#lou1" automaticCoupling="true" type="normal" validate="true"/>
   <Link id="sv2#page41#ln109" name="Dati utente" to="sv2#area1" automaticCoupling="true" type="normal" validate="true"/>
-  <Link id="sv2#page41#ln128" name="Storico acquisti/prenotazioni" to="sv2#area6" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-845,-34,575,-294"/>
+  <Link id="sv2#page41#ln128" name="Storico acquisti/prenotazioni" to="sv2#area6" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-428,1,1447,-1619;-1099,93,776,-1527;-1175,105,700,-1515;-1208,113,667,-1507"/>
   <Link id="sv2#page41#ln283" name="Ricerca Eventi" to="sv2#page114" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

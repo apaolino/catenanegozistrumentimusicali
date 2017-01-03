@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="295" gr:y="460" id="sv3#area12#page95" name="Gestione acquisti">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="325" gr:y="420" id="sv3#area12#page95" name="Gestione acquisti">
   <ContentUnits>
     <IndexUnit gr:x="150" gr:y="0" id="sv3#area12#page95#inu7" name="Acquisti odierni" entity="ent15" displayAttributes="ent15#att30 ent15#att2 rel17#role34.User#att20 rel17#role34.User#att21 count(rel15#role29.ent12#att12)" linkOrder="sv3#area12#page95#inu7#ln231 sv3#area12#page95#inu7#ln229">
       <Selector id="sv3#area12#page95#inu7#su122" defaultPolicy="fill" booleanOperator="and">
@@ -107,7 +107,7 @@
           <Selector id="sv3#area12#page95#alt18#page96#inu23#su130" defaultPolicy="fill" booleanOperator="and">
             <RelationshipRoleCondition id="sv3#area12#page95#alt18#page96#inu23#su130#rcond43" name="RoleCondition43" predicate="in" implied="false" role="rel15#role29"/>
           </Selector>
-          <Link id="sv3#area12#page95#alt18#page96#inu23#ln241" name="Elimina" to="sv3#dcnu16" type="normal" validate="true">
+          <Link id="sv3#area12#page95#alt18#page96#inu23#ln241" name="Elimina" to="sv3#dcnu16" type="normal" validate="true" gr:bendpoints="253,-100,-281,-40">
             <LinkParameter id="sv3#area12#page95#alt18#page96#inu23#ln241#par557" name="oid_PASSING_KeyCondition106 [oid] [Acquisto] [Source]" sourceLinkParameter="sv3#area12#page95#inu7#ln231#par556" target="sv3#dcnu16#su156#kcond106.ent15#att15"/>
             <LinkParameter id="sv3#area12#page95#alt18#page96#inu23#ln241#par558" name="oid_KeyCondition107 [oid] [Prodotto] [Target]" source="data[].ent12#att12" target="sv3#dcnu16#su157#kcond107.ent12#att12"/>
           </Link>
