@@ -18,6 +18,7 @@
         <LinkParameter id="sv3#area15#page106#enu26#ln281#par691" name="Posti Disponibili_Posti disponibili" source="sv3#area15#page106#enu26#fld142" target="sv3#area15#cru14.ent17#att65"/>
         <LinkParameter id="sv3#area15#page106#enu26#ln281#par692" name="Prezzo_Prezzo" source="sv3#area15#page106#enu26#fld141" target="sv3#area15#cru14.ent17#att64"/>
         <LinkParameter id="sv3#area15#page106#enu26#ln281#par693" name="Tipo Evento_Tipo Evento.oid(EventoToTipo Evento)" source="sv3#area15#page106#enu26#sfld22" target="sv3#area15#cru14.rel42#role83.ent26#att78"/>
+        <LinkParameter id="sv3#area15#page106#enu26#ln281#par847" name="0_Annullato" sourceValue="0" target="sv3#area15#cru14.ent17#att76"/>
       </Link>
     </EntryUnit>
     <SelectorUnit gr:x="5" gr:y="115" id="sv3#area15#page106#seu51" name="Selector51" entity="ent22">
