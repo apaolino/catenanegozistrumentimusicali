@@ -73,12 +73,13 @@
       <db:JoinColumn attribute="userOID" name="utente_registrato_oid"/>
     </Generalization>
   </Entity>
-  <Entity gr:x="150" gr:y="1125" id="ent9" name="Catena Negozi" duration="persistent" attributeOrder="ent9#att9 ent9#att55 ent9#att56 ent9#att57 ent9#att58" db:database="db1" db:table="catena_negozi">
+  <Entity gr:x="120" gr:y="1115" id="ent9" name="Catena Negozi" duration="persistent" attributeOrder="ent9#att9 ent9#att55 ent9#att56 ent9#att57 ent9#att58 ent9#att13" db:database="db1" db:table="catena_negozi">
     <Attribute id="ent9#att9" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent9#att55" name="Nome" type="string" db:column="nome"/>
     <Attribute id="ent9#att56" name="Numero telefono" type="string" db:column="numero_telefono"/>
     <Attribute id="ent9#att57" name="Fax" type="string" db:column="fax"/>
     <Attribute id="ent9#att58" name="Email" type="string" db:column="email"/>
+    <Attribute id="ent9#att13" name="Descrizione" type="text" db:column="descrizione"/>
   </Entity>
   <Entity gr:x="405" gr:y="1125" id="ent10" name="Negozio" duration="persistent" attributeOrder="ent10#att10 ent10#att48 ent10#att49 ent10#att50 ent10#att51 ent10#att52 ent10#att53" db:database="db1" db:table="negozio">
     <Attribute id="ent10#att10" key="true" name="oid" type="integer" db:column="oid"/>
@@ -94,7 +95,7 @@
     <Attribute id="ent11#att46" name="Nome" type="string" db:column="nome"/>
     <Attribute id="ent11#att47" name="Anno di validit&#224;" type="integer" db:column="anno_di_validita"/>
   </Entity>
-  <Entity gr:x="1230" gr:y="1095" id="ent12" name="Prodotto" duration="persistent" attributeOrder="ent12#att12 ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45 ent12#att66 ent12#att67 ent12#att68" db:database="db1" db:table="prodotto">
+  <Entity gr:x="1230" gr:y="1095" id="ent12" name="Prodotto" duration="persistent" attributeOrder="ent12#att12 ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45 ent12#att66 ent12#att67 ent12#att68 ent12#att79" db:database="db1" db:table="prodotto">
     <Attribute id="ent12#att12" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent12#att1" name="Nome modello" type="string" db:column="nome_modello"/>
     <Attribute id="ent12#att41" name="Data produzione" type="date" db:column="data_produzione"/>
@@ -105,6 +106,7 @@
     <Attribute id="ent12#att66" name="Categoria" type="string" derivationQuery="simpleImported::Self.rel25#role49.ent7#att36"/>
     <Attribute id="ent12#att67" name="Produttore" type="string" derivationQuery="simpleImported::Self.rel29#role58.ent20#att40"/>
     <Attribute id="ent12#att68" name="Tipo prodotto" type="string" derivationQuery="simpleImported::Self.rel39#role78.ent4#att38"/>
+    <Attribute id="ent12#att79" name="Eliminato" type="boolean" db:column="eliminato"/>
   </Entity>
   <Entity gr:x="730" gr:y="1335" id="ent13" name="Catalogo Base" duration="persistent" db:database="db1" db:table="catalogo_base">
     <Generalization superEntity="ent11">
@@ -158,13 +160,14 @@
     <Attribute id="ent16#att31" name="Data inizio" type="timestamp" db:column="data_inizio"/>
     <Attribute id="ent16#att32" name="Data fine" type="timestamp" db:column="data_fine"/>
   </Entity>
-  <Entity gr:x="685" gr:y="590" id="ent17" name="Evento" duration="persistent" attributeOrder="ent17#att17 ent17#att62 ent17#att61 ent17#att63 ent17#att64 ent17#att65" db:database="db1" db:table="evento">
+  <Entity gr:x="685" gr:y="590" id="ent17" name="Evento" duration="persistent" attributeOrder="ent17#att17 ent17#att62 ent17#att61 ent17#att63 ent17#att64 ent17#att65 ent17#att76" db:database="db1" db:table="evento">
     <Attribute id="ent17#att17" key="true" name="oid" type="integer" db:column="oid"/>
-    <Attribute id="ent17#att61" name="Data inizio evento" type="date" db:column="data_inizio_evento"/>
+    <Attribute id="ent17#att61" name="Data inizio evento" type="timestamp" db:column="data_inizio_evento"/>
     <Attribute id="ent17#att62" name="Nome evento" type="string" db:column="nome_evento"/>
-    <Attribute id="ent17#att63" name="Data fine evento" type="date" db:column="data_fine_evento"/>
+    <Attribute id="ent17#att63" name="Data fine evento" type="timestamp" db:column="data_fine_evento"/>
     <Attribute id="ent17#att64" name="Prezzo" type="float" db:column="prezzo"/>
     <Attribute id="ent17#att65" name="Posti disponibili" type="integer" db:column="posti_disponibili"/>
+    <Attribute id="ent17#att76" name="Annullato" type="boolean" db:column="annullato"/>
   </Entity>
   <Entity gr:x="1465" gr:y="840" id="ent18" name="Recensione" duration="persistent" attributeOrder="ent18#att18 ent18#att33 ent18#att34 ent18#att35 ent18#att77" db:database="db1" db:table="recensione">
     <Attribute id="ent18#att18" key="true" name="oid" type="integer" db:column="oid"/>
@@ -226,7 +229,7 @@
       <db:JoinColumn attribute="ent10#att10" name="negozio_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Relationship id="rel12" name="Prenotazione_Prodotto" sourceEntity="ent21" targetEntity="ent12" gr:bendpoints="-124,239,402,-91" db:database="db1" db:table="prenotazione_prodotto">
+  <Relationship id="rel12" name="PrenotazioneNoleggio_Prodotto" sourceEntity="ent21" targetEntity="ent12" gr:bendpoints="-124,239,402,-91" db:database="db1" db:table="prenotazionenoleggio_prodotto">
     <RelationshipRole1 id="rel12#role23" name="PrenotazioneToProdotto" maxCard="N">
       <db:JoinColumn attribute="ent16#att16" name="prenotazione_noleggio_prodotto"/>
     </RelationshipRole1>
@@ -358,11 +361,11 @@
   </Relationship>
   <Entity gr:x="1460" gr:y="390" id="ent2" name="Carta di Credito" duration="persistent" attributeOrder="ent2#att25 ent2#att26 ent2#att27 ent2#att28" db:database="db1" db:table="carta_di_credito">
     <Attribute id="ent2#att25" key="true" name="oid" type="integer" db:column="oid"/>
-    <Attribute id="ent2#att26" name="Numero" type="integer" db:column="numero"/>
+    <Attribute id="ent2#att26" name="Numero" type="string" db:column="numero"/>
     <Attribute id="ent2#att27" name="Data scadenza" type="date" db:column="data_scadenza"/>
     <Attribute id="ent2#att28" name="Intestatario" type="string" db:column="intestatario"/>
   </Entity>
-  <Relationship id="rel27" name="Cliente Registrato_Carta di Credito" sourceEntity="ent8" targetEntity="ent2" db:database="db1" db:table="carta_di_credito" gr:bendpoints="125,92,-210,-68">
+  <Relationship id="rel27" name="Cliente Registrato_Carta di Credito" sourceEntity="ent8" targetEntity="ent2" gr:bendpoints="125,92,-210,-68" db:database="db1" db:table="carta_di_credito">
     <RelationshipRole1 id="rel27#role53" name="Cliente RegistratoToCarta di Credito" maxCard="N">
       <db:JoinColumn attribute="userOID" name="cliente_oid"/>
     </RelationshipRole1>
@@ -498,7 +501,8 @@
       <db:JoinColumn attribute="ent26#att78" name="tipo_evento_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db1" name="catenadb_mysql" type="MySQL" username="root" url="jdbc:mysql://localhost/CatenaDB_MySql"/>
+  <db:Database id="db1" name="catenadb_mysql" type="MySQL" username="root" url="jdbc:mysql://localhost/CatenaDB_MySql">
+  </db:Database>
   <Entity gr:x="980" gr:y="515" id="ent22" name="Periodo" duration="persistent" attributeOrder="ent22#att72 ent22#att74" db:database="db1" db:table="periodo">
     <Attribute id="ent22#att72" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent22#att74" name="Mese" type="string" db:column="mese"/>
@@ -511,7 +515,7 @@
       <db:JoinColumn attribute="ent22#att72" name="periodo_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Relationship id="rel44" name="Catalogo_Categoria Prodotto" sourceEntity="ent11" targetEntity="ent7" db:database="db1" db:table="catalogo_categoria_prodotto" gr:bendpoints="208,81,-337,-234;272,143,-273,-172">
+  <Relationship id="rel44" name="Catalogo_Categoria Prodotto" sourceEntity="ent11" targetEntity="ent7" gr:bendpoints="208,81,-337,-234;272,143,-273,-172" db:database="db1" db:table="catalogo_categoria_prodotto">
     <RelationshipRole1 id="rel44#role87" name="CatalogoToCategoria Prodotto" maxCard="N">
       <db:JoinColumn attribute="ent11#att11" name="catalogo_oid"/>
     </RelationshipRole1>
@@ -541,6 +545,14 @@
     </RelationshipRole1>
     <RelationshipRole2 id="rel35#role70" name="ZonaToIndirizzo" maxCard="N">
       <db:JoinColumn attribute="ent3#att69" name="zona_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel45" name="Prenotazione_Prodotto" sourceEntity="ent16" targetEntity="ent12" gr:bendpoints="-155,103,75,-387" db:database="db1" db:table="prenotazione_prodotto">
+    <RelationshipRole1 id="rel45#role89" name="PrenotazioneToProdotto_2" maxCard="N">
+      <db:JoinColumn attribute="ent16#att16" name="prenotazione_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel45#role90" name="ProdottoToPrenotazione_2" maxCard="N">
+      <db:JoinColumn attribute="ent12#att12" name="prodotto_oid"/>
     </RelationshipRole2>
   </Relationship>
 </DataModel>

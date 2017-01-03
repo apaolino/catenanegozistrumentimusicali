@@ -9,8 +9,6 @@
       <SortAttribute attribute="ent17#att61" order="ascending"/>
       <Link id="sv2#area8#page52#ecu2#ln124" to="sv2#area8#page53#dau6" type="normal" validate="true">
         <LinkParameter id="sv2#area8#page52#ecu2#ln124#par334" name="oid_KeyCondition46 [oid]" source="date[].data[].ent17#att17" target="sv2#area8#page53#dau6#su68#kcond46.ent17#att17"/>
-        <LinkParameter id="sv2#area8#page52#ecu2#ln124#par336" name="EventoToNegozio.oid_PASSING" source="date[].data[].rel10#role19_ent10#att10" passing="true"/>
-        <LinkParameter id="sv2#area8#page52#ecu2#ln124#par141" name="oid_PASSING" source="date[].data[].ent17#att17" passing="true"/>
       </Link>
     </EventCalendarUnit>
   </ContentUnits>

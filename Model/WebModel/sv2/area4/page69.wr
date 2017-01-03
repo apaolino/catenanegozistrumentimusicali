@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="880" gr:y="60" id="sv2#area4#page69" name="Noleggio">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1045" gr:y="40" id="sv2#area4#page69" name="Noleggio">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv2#area4#page69#enu19" name="Dati noleggio" linkOrder="sv2#area4#page69#enu19#ln177">
       <Field id="sv2#area4#page69#enu19#fld118" name="Ritiro prodotto" type="timestamp" modifiable="true"/>

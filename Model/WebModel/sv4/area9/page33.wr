@@ -51,17 +51,17 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv4#area9#page33#enu10">
-          <layout:Field field="sv4#area9#page33#enu10#sfld12"/>
-          <layout:Field field="sv4#area9#page33#enu10#sfld13"/>
-          <layout:Field field="sv4#area9#page33#enu10#sfld16"/>
+          <layout:Link link="sv4#area9#page33#enu10#ln52"/>
+          <layout:Link link="sv4#area9#page33#enu10#ln5"/>
           <layout:Field field="sv4#area9#page33#enu10#fld10"/>
           <layout:Field field="sv4#area9#page33#enu10#fld11"/>
           <layout:Field field="sv4#area9#page33#enu10#fld12"/>
           <layout:Field field="sv4#area9#page33#enu10#fld19"/>
           <layout:Field field="sv4#area9#page33#enu10#fld20"/>
           <layout:Field field="sv4#area9#page33#enu10#fld23"/>
-          <layout:Link link="sv4#area9#page33#enu10#ln52"/>
-          <layout:Link link="sv4#area9#page33#enu10#ln5"/>
+          <layout:Field field="sv4#area9#page33#enu10#sfld12"/>
+          <layout:Field field="sv4#area9#page33#enu10#sfld13"/>
+          <layout:Field field="sv4#area9#page33#enu10#sfld16"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

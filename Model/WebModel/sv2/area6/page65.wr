@@ -5,7 +5,7 @@
         <LinkParameter id="sv2#area6#page65#gtu4#ln155#par376" name="UserCtxParam.oid_RoleCondition24 [oid]" source="sv2#area6#page65#gtu4.UserCtxParam" target="sv2#area6#page65#inu9#su81#rcond24.userOID"/>
       </Link>
     </GetUnit>
-    <IndexUnit gr:x="245" gr:y="0" id="sv2#area6#page65#inu9" name="Storico acquisti" entity="ent15" displayAttributes="ent15#att30 ent15#att2" linkOrder="sv2#area6#page65#inu9#ln156">
+    <IndexUnit gr:x="245" gr:y="0" id="sv2#area6#page65#inu9" name="Storico acquisti" entity="ent15" displayAttributes="ent15#att30 count(rel15#role29.ent12#att12) sum(rel15#role29.ent12#att43)" linkOrder="sv2#area6#page65#inu9#ln156">
       <Selector id="sv2#area6#page65#inu9#su81" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area6#page65#inu9#su81#rcond24" name="RoleCondition24" predicate="in" implied="false" role="rel17#role33"/>
       </Selector>
@@ -19,7 +19,8 @@
         <layout:Unit unitId="sv2#area6#page65#inu9">
           <layout:Link link="sv2#area6#page65#inu9#ln156"/>
           <layout:Attribute attribute="ent15#att30"/>
-          <layout:Attribute attribute="ent15#att2"/>
+          <layout:Attribute attribute="count(rel15#role29.ent12#att12)"/>
+          <layout:Attribute attribute="sum(rel15#role29.ent12#att43)"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

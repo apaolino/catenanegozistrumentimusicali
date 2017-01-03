@@ -195,7 +195,9 @@
           </Selector>
           <SortAttribute attribute="ent17#att61" order="descending"/>
           <SortAttribute attribute="ent17#att62" order="ascending"/>
-          <Link id="sv2#page114#alt22#page116#inu31#ln284" name="Prenota evento" to="sv2#area8#page53#dau6" automaticCoupling="true" type="normal" validate="true"/>
+          <Link id="sv2#page114#alt22#page116#inu31#ln284" name="Prenota evento" to="sv2#area8#page53#dau6" type="normal" validate="true">
+            <LinkParameter id="sv2#page114#alt22#page116#inu31#ln284#par106" name="oid_KeyCondition46 [oid]" source="data[].ent17#att17" target="sv2#area8#page53#dau6#su68#kcond46.ent17#att17"/>
+          </Link>
         </IndexUnit>
       </ContentUnits>
     </Page>
@@ -208,7 +210,9 @@
           </Selector>
           <SortAttribute attribute="ent17#att61" order="descending"/>
           <SortAttribute attribute="ent17#att62" order="ascending"/>
-          <Link id="sv2#page114#alt22#page117#inu32#ln285" name="Prenota Evento" to="sv2#area8#page53#dau6" automaticCoupling="true" type="normal" validate="true"/>
+          <Link id="sv2#page114#alt22#page117#inu32#ln285" name="Prenota Evento" to="sv2#area8#page53#dau6" type="normal" validate="true">
+            <LinkParameter id="sv2#page114#alt22#page117#inu32#ln285#par815" name="oid_KeyCondition46 [oid]" source="data[].ent17#att17" target="sv2#area8#page53#dau6#su68#kcond46.ent17#att17"/>
+          </Link>
         </IndexUnit>
       </ContentUnits>
     </Page>

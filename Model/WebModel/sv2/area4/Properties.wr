@@ -1,6 +1,6 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-610" gr:y="565" id="sv2#area4" name="Scelta catalogo" landmark="false" defaultPage="sv2#area4#page47">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-615" gr:y="565" id="sv2#area4" name="Scelta catalogo" landmark="false" defaultPage="sv2#area4#page47">
   <OperationUnits>
-    <CreateUnit id="sv2#area4#cru19" name="Salva nuova Carta" gr:x="945" gr:y="565" entity="ent2">
+    <CreateUnit id="sv2#area4#cru19" name="Salva nuova Carta" gr:x="950" gr:y="565" entity="ent2">
       <OKLink id="sv2#area4#cru19#oln48" name="OKFlow48" to="sv2#opg12#cru22">
         <LinkParameter id="sv2#area4#cru19#oln48#par463" name="Cauzione versata_PASSING" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par456" passing="true"/>
         <LinkParameter id="sv2#area4#cru19#oln48#par464" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par457" passing="true"/>
@@ -22,7 +22,7 @@
         <LinkParameter id="sv2#area4#cru19#oln48#par802" name="oid_PASSING" sourceLinkParameter="sv2#area4#page72#enu21#ln184#par796" passing="true"/>
       </OKLink>
     </CreateUnit>
-    <CreateUnit id="sv2#area4#cru16" name="Salva nuova Carta" gr:x="0" gr:y="895" entity="ent2">
+    <CreateUnit id="sv2#area4#cru16" name="Salva nuova Carta" gr:x="0" gr:y="915" entity="ent2">
       <OKLink id="sv2#area4#cru16#oln55" name="OKFlow47" to="sv2#opg11#cru15">
         <LinkParameter id="sv2#area4#cru16#oln55#par521" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page63#enu18#ln161#par526" passing="true"/>
         <LinkParameter id="sv2#area4#cru16#oln55#par522" name="oid_PASSING_Negozio.oid(AcquistoToNegozio)" sourceLinkParameter="sv2#area4#page63#enu18#ln161#par527" target="sv2#opg11#cru15.rel16#role31.ent10#att10"/>

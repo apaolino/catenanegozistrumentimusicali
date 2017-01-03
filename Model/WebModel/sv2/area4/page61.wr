@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="505" gr:y="40" id="sv2#area4#page61" name="lista prodotti selezionati">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="740" gr:y="15" id="sv2#area4#page61" name="lista prodotti selezionati">
   <ContentUnits>
     <IndexUnit gr:x="60" gr:y="0" id="sv2#area4#page61#inu8" name="Carrello" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att43">
       <Selector id="sv2#area4#page61#inu8#su82" defaultPolicy="fill" booleanOperator="and">

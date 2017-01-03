@@ -1,7 +1,11 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="135" gr:y="770" id="sv2#area4#page63" name="Inseirmento dati nuova carta ">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="140" gr:y="770" id="sv2#area4#page63" name="Inseirmento dati nuova carta ">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv2#area4#page63#enu18" name="Dati nuova carta" linkOrder="sv2#area4#page63#enu18#ln161">
-      <Field id="sv2#area4#page63#enu18#fld115" name="Numero" type="integer" modifiable="true"/>
+      <Field id="sv2#area4#page63#enu18#fld115" name="Numero" type="integer" modifiable="true">
+        <VRules>
+          <ValueLengthValidationRule id="sv2#area4#page63#enu18#fld115#vl1" name="Value Length1" predicate="max" value="9" errorMessage="Inserisci massimo 9 cifre"/>
+        </VRules>
+      </Field>
       <Field id="sv2#area4#page63#enu18#fld116" name="Data scadenza" type="date" modifiable="true"/>
       <Field id="sv2#area4#page63#enu18#fld117" name="Intestatario" type="string" modifiable="true"/>
       <Link id="sv2#area4#page63#enu18#ln161" name="Salva e acquista" to="sv2#area4#cru16" type="normal" validate="true">

@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1985" gr:y="930" id="sv2#opg9" name="Prenotazione evento" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1945" gr:y="910" id="sv2#opg9" name="Prenotazione evento" transaction="true">
   <OperationUnits>
     <ModifyUnit id="sv2#opg9#mfu2" name="Aggiorna evento" gr:x="205" gr:y="250" entity="ent17">
       <Selector id="sv2#opg9#mfu2#su47" defaultPolicy="fill" booleanOperator="and">
@@ -8,7 +8,10 @@
       <KOLink id="sv2#opg9#mfu2#kln28" name="KOFlow28" to="sv2#page55#alt9#page57" automaticCoupling="true"/>
     </ModifyUnit>
     <CreateUnit id="sv2#opg9#cru12" name="Aggiungi prenotazione" gr:x="150" gr:y="135" entity="ent16">
-      <OKLink id="sv2#opg9#cru12#oln40" name="OKFlow38" to="sv2#opg9#mathu1" automaticCoupling="true"/>
+      <OKLink id="sv2#opg9#cru12#oln40" name="OKFlow38" to="sv2#opg9#mathu1">
+        <LinkParameter id="sv2#opg9#cru12#oln40#par826" name="Posti disponibili_PASSING_a" sourceLinkParameter="sv2#area8#page53#dau6#ln96#par825" target="sv2#opg9#mathu1#mathv1"/>
+        <LinkParameter id="sv2#opg9#cru12#oln40#par827" name="oid_PASSING" sourceLinkParameter="sv2#area8#page53#dau6#ln96#par824" passing="true"/>
+      </OKLink>
       <KOLink id="sv2#opg9#cru12#kln27" name="KOFlow27" to="sv2#page55#alt9#page57" automaticCoupling="true"/>
     </CreateUnit>
     <GetUnit id="sv2#opg9#gtu5" name="GetUID" gr:x="40" gr:y="0" contextParameters="UserCtxParam">
@@ -16,13 +19,19 @@
         <LinkParameter id="sv2#opg9#gtu5#ln54#par230" name="UserCtxParam.oid_Cliente.oid(PrenotazioneToCliente Registrato)" source="sv2#opg9#gtu5.UserCtxParam" target="sv2#opg9#cru12.rel14#role28.userOID"/>
       </Link>
     </GetUnit>
-    <MathUnit id="sv2#opg9#mathu1" name="Calcolo posti disponibili" gr:x="0" gr:y="340" resultType="integer" defaultExpression="a - 1">
+    <MathUnit id="sv2#opg9#mathu1" name="Calcolo posti disponibili" gr:x="0" gr:y="435" resultType="integer" defaultExpression="a - 1">
       <MathVariable id="sv2#opg9#mathu1#mathv1" name="a"/>
-      <Link id="sv2#opg9#mathu1#ln91" name="Flow134" to="sv2#opg9#mfu2" type="transport" validate="true">
-        <LinkParameter id="sv2#opg9#mathu1#ln91#par231" name="Result_Posti disponibili" source="result" target="sv2#opg9#mfu2.ent17#att65"/>
-      </Link>
-      <OKLink id="sv2#opg9#mathu1#oln41" name="OKFlow39" to="sv2#opg9#mfu2" automaticCoupling="true" gr:bendpoints="181,32,-184,92"/>
+      <OKLink id="sv2#opg9#mathu1#oln41" name="OKFlow39" to="sv2#opg9#mfu2" gr:bendpoints="187,-42,12,133">
+        <LinkParameter id="sv2#opg9#mathu1#oln41#par823" name="Result_Posti disponibili" source="result" target="sv2#opg9#mfu2.ent17#att65"/>
+        <LinkParameter id="sv2#opg9#mathu1#oln41#par828" name="oid_PASSING_KeyCondition47 [oid]" sourceLinkParameter="sv2#opg9#cru12#oln40#par827" target="sv2#opg9#mfu2#su47#kcond37.ent17#att17"/>
+      </OKLink>
       <KOLink id="sv2#opg9#mathu1#kln29" name="KOFlow29" to="sv2#page55#alt9#page57" automaticCoupling="true" gr:bendpoints="336,48,-194,153"/>
     </MathUnit>
+    <TimeUnit gr:x="265" gr:y="20" id="sv2#opg9#tmu13" name="Time13" linkOrder="sv2#opg9#tmu13#ln46">
+      <Link id="sv2#opg9#tmu13#ln46" name="Flow46" to="sv2#opg9#cru12" type="transport" validate="true">
+        <LinkParameter id="sv2#opg9#tmu13#ln46#par829" name="Current/Input Timestamp_Data inizio" source="currentTimestamp" target="sv2#opg9#cru12.ent16#att31"/>
+        <LinkParameter id="sv2#opg9#tmu13#ln46#par830" name="Current/Input Timestamp_Data fine" source="currentTimestamp" target="sv2#opg9#cru12.ent16#att32"/>
+      </Link>
+    </TimeUnit>
   </OperationUnits>
 </OperationGroup>

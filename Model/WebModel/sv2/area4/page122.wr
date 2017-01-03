@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="675" gr:y="730" id="sv2#area4#page122" name="Prodotti scontati">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="680" gr:y="730" id="sv2#area4#page122" name="Prodotti scontati">
   <ContentUnits>
     <SelectorUnit gr:x="0" gr:y="0" id="sv2#area4#page122#seu65" name="Cataloghi associati" entity="ent11">
       <Selector id="sv2#area4#page122#seu65#su182" defaultPolicy="fill" booleanOperator="and">
@@ -10,7 +10,7 @@
         <LinkParameter id="sv2#area4#page122#seu65#ln296#par694" name="oid_PASSING" sourceLinkParameter="sv2#page41#inu3#ln292#par679" passing="true"/>
       </Link>
     </SelectorUnit>
-    <MultiChoiceIndexUnit id="sv2#area4#page122#mciu2" entity="ent12" displayAttributes="ent12#att1 ent12#att45 ent12#att66 ent12#att67 ent12#att68" gr:x="45" gr:y="115" name="Elenco prodotti scontati - seleziona quelli che vuoi acquistare" linkOrder="sv2#area4#page122#mciu2#ln298">
+    <MultiChoiceIndexUnit id="sv2#area4#page122#mciu2" entity="ent12" displayAttributes="ent12#att66 ent12#att68 ent12#att67 ent12#att1 ent12#att45 ent12#att43 ent12#att44" gr:x="45" gr:y="115" name="Elenco prodotti scontati - seleziona quelli che vuoi acquistare" linkOrder="sv2#area4#page122#mciu2#ln298">
       <Selector id="sv2#area4#page122#mciu2#su184" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv2#area4#page122#mciu2#su184#acond29" attributes="ent12#att45" predicate="gt" booleanOperator="or" value="0" implied="false" name="AttCondition28"/>
         <RelationshipRoleCondition id="sv2#area4#page122#mciu2#su184#rcond65" role="rel24#role47" predicate="in" implied="false" name="RoleCondition64"/>
@@ -27,12 +27,14 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area4#page122#mciu2">
+          <layout:Link link="sv2#area4#page122#mciu2#ln298"/>
+          <layout:Attribute attribute="ent12#att66"/>
+          <layout:Attribute attribute="ent12#att68"/>
+          <layout:Attribute attribute="ent12#att67"/>
           <layout:Attribute attribute="ent12#att1"/>
           <layout:Attribute attribute="ent12#att45"/>
-          <layout:Attribute attribute="ent12#att66"/>
-          <layout:Attribute attribute="ent12#att67"/>
-          <layout:Attribute attribute="ent12#att68"/>
-          <layout:Link link="sv2#area4#page122#mciu2#ln298"/>
+          <layout:Attribute attribute="ent12#att43"/>
+          <layout:Attribute attribute="ent12#att44"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

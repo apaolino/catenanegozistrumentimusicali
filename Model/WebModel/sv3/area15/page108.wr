@@ -2,8 +2,8 @@
   <ContentUnits>
     <EntryUnit id="sv3#area15#page108#enu27" name="Inserisci i dati dell'evento" gr:x="245" gr:y="10" entity="ent17" fieldOrder="sv3#area15#page108#enu27#fld143 sv3#area15#page108#enu27#fld144 sv3#area15#page108#enu27#fld145 sv3#area15#page108#enu27#fld146 sv3#area15#page108#enu27#fld147 sv3#area15#page108#enu27#sfld23 sv3#area15#page108#enu27#sfld24" linkOrder="sv3#area15#page108#enu27#ln282">
       <Field id="sv3#area15#page108#enu27#fld143" name="Nome Evento" type="string" modifiable="true" preloaded="true" attribute="ent17#att62"/>
-      <Field id="sv3#area15#page108#enu27#fld144" name="Data Inizio" type="date" modifiable="true" preloaded="true" attribute="ent17#att61"/>
-      <Field id="sv3#area15#page108#enu27#fld145" name="Data Fine" type="date" modifiable="true" preloaded="true" attribute="ent17#att63"/>
+      <Field id="sv3#area15#page108#enu27#fld144" name="Data Inizio" type="timestamp" modifiable="true" preloaded="true" attribute="ent17#att61"/>
+      <Field id="sv3#area15#page108#enu27#fld145" name="Data Fine" type="timestamp" modifiable="true" preloaded="true" attribute="ent17#att63"/>
       <Field id="sv3#area15#page108#enu27#fld146" name="Prezzo" type="float" modifiable="true" preloaded="true" attribute="ent17#att64"/>
       <Field id="sv3#area15#page108#enu27#fld147" name="Posti Disponibili" type="integer" modifiable="true" preloaded="true" attribute="ent17#att65"/>
       <SelectionField id="sv3#area15#page108#enu27#sfld23" name="Periodo" type="string"/>

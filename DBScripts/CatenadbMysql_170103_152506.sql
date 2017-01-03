@@ -289,14 +289,14 @@ alter table `prenotazione`  add column  `negozio_oid`  integer;
 alter table `prenotazione`   add index fk_prenotazione_negozio (`negozio_oid`), add constraint fk_prenotazione_negozio foreign key (`negozio_oid`) references `negozio` (`oid`);
 
 
--- PrenotazioneNoleggio_Prodotto [rel12]
-create table `prenotazionenoleggio_prodotto` (
+-- Prenotazione_Prodotto [rel12]
+create table `prenotazione_prodotto` (
    `prenotazione_noleggio_prodotto`  integer not null,
    `prodotto_oid`  integer not null,
   primary key (`prenotazione_noleggio_prodotto`, `prodotto_oid`)
 );
-alter table `prenotazionenoleggio_prodotto`   add index fk_prenotazionenoleggio_prod_2 (`prenotazione_noleggio_prodotto`), add constraint fk_prenotazionenoleggio_prod_2 foreign key (`prenotazione_noleggio_prodotto`) references `prenotazione_noleggio_prodotto` (`prenotazione_oid`);
-alter table `prenotazionenoleggio_prodotto`   add index fk_prenotazionenoleggio_prodot (`prodotto_oid`), add constraint fk_prenotazionenoleggio_prodot foreign key (`prodotto_oid`) references `prodotto` (`oid`);
+alter table `prenotazione_prodotto`   add index fk_prenotazione_prodotto_preno (`prenotazione_noleggio_prodotto`), add constraint fk_prenotazione_prodotto_preno foreign key (`prenotazione_noleggio_prodotto`) references `prenotazione_noleggio_prodotto` (`prenotazione_oid`);
+alter table `prenotazione_prodotto`   add index fk_prenotazione_prodotto_prodo (`prodotto_oid`), add constraint fk_prenotazione_prodotto_prodo foreign key (`prodotto_oid`) references `prodotto` (`oid`);
 
 
 -- Prenotazione_Gestore Singolo Negozio [rel13]
@@ -425,8 +425,8 @@ create table `categoriaprodottocatalogobase` (
    `catalogo_base_oid`  integer not null,
   primary key (`categoria_prodotto_oid`, `catalogo_base_oid`)
 );
-alter table `categoriaprodottocatalogobase`   add index fk_categoriaprodottocatalogoba (`categoria_prodotto_oid`), add constraint fk_categoriaprodottocatalogoba foreign key (`categoria_prodotto_oid`) references `categoria_prodotto` (`oid`);
-alter table `categoriaprodottocatalogobase`   add index fk_categoriaprodottocatalogo_2 (`catalogo_base_oid`), add constraint fk_categoriaprodottocatalogo_2 foreign key (`catalogo_base_oid`) references `catalogo_base` (`catalogo_oid`);
+alter table `categoriaprodottocatalogobase`   add index fk_categoriaprodottocatalogo_2 (`categoria_prodotto_oid`), add constraint fk_categoriaprodottocatalogo_2 foreign key (`categoria_prodotto_oid`) references `categoria_prodotto` (`oid`);
+alter table `categoriaprodottocatalogobase`   add index fk_categoriaprodottocatalogoba (`catalogo_base_oid`), add constraint fk_categoriaprodottocatalogoba foreign key (`catalogo_base_oid`) references `catalogo_base` (`catalogo_oid`);
 
 
 -- Negozio_Indirizzo [rel32]
@@ -499,14 +499,14 @@ alter table `catalogo_categoria_prodotto`   add index fk_catalogo_categoria_prod
 alter table `catalogo_categoria_prodotto`   add index fk_catalogo_categoria_prodot_2 (`categoria_prodotto_oid`), add constraint fk_catalogo_categoria_prodot_2 foreign key (`categoria_prodotto_oid`) references `categoria_prodotto` (`oid`);
 
 
--- Prenotazione_Prodotto [rel45]
-create table `prenotazione_prodotto` (
+-- Prenotazione_Prodotto_2 [rel45]
+create table `prenotazione_prodotto_2` (
    `prenotazione_oid`  integer not null,
    `prodotto_oid`  integer not null,
   primary key (`prenotazione_oid`, `prodotto_oid`)
 );
-alter table `prenotazione_prodotto`   add index fk_prenotazione_prodotto_preno (`prenotazione_oid`), add constraint fk_prenotazione_prodotto_preno foreign key (`prenotazione_oid`) references `prenotazione` (`oid`);
-alter table `prenotazione_prodotto`   add index fk_prenotazione_prodotto_prodo (`prodotto_oid`), add constraint fk_prenotazione_prodotto_prodo foreign key (`prodotto_oid`) references `prodotto` (`oid`);
+alter table `prenotazione_prodotto_2`   add index fk_prenotazione_prodotto_2_pre (`prenotazione_oid`), add constraint fk_prenotazione_prodotto_2_pre foreign key (`prenotazione_oid`) references `prenotazione` (`oid`);
+alter table `prenotazione_prodotto_2`   add index fk_prenotazione_prodotto_2_pro (`prodotto_oid`), add constraint fk_prenotazione_prodotto_2_pro foreign key (`prodotto_oid`) references `prodotto` (`oid`);
 
 
 -- Gestore Singolo Negozio_Evento [rel5]
