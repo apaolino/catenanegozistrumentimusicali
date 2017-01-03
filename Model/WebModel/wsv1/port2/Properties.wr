@@ -1,5 +1,8 @@
-<Port xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="380" gr:y="365" id="wsv1#port2" name="Port">
+<Port xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="345" gr:y="150" id="wsv1#port2" name="Port" soapBindingStyle="documentLiteral">
   <OperationUnits>
-    <SolicitUnit id="wsv1#port2#slu2" name="getAllProducts" invocationStyle="SOAP" requestMethod="POST"/>
+    <SolicitUnit id="wsv1#port2#slu2" name="getAllProducts" invocationStyle="SOAP" requestMethod="POST">
+      <OKLink id="wsv1#port2#slu2#oln116" name="OKFlow116" to="wsv1#port2#xou2" automaticCoupling="true"/>
+    </SolicitUnit>
+    <XMLOutUnit gr:x="195" gr:y="5" id="wsv1#port2#xou2" name="XML Exctract" oldDocStyle="false"/>
   </OperationUnits>
 </Port>

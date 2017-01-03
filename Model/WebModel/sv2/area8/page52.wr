@@ -4,7 +4,7 @@
       <Selector id="sv2#area8#page52#ecu2#su67" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area8#page52#ecu2#su67#rcond15" name="RoleCondition15" predicate="in" implied="false" role="rel10#role20"/>
         <AttributesCondition id="sv2#area8#page52#ecu2#su67#acond7" name="posti" predicate="gt" booleanOperator="or" implied="false" attributes="ent17#att65" value="0"/>
-        <AttributesCondition id="sv2#area8#page52#ecu2#su67#acond21" name="AttCondition21" predicate="gt" booleanOperator="or" implied="false" attributes="ent17#att64" value="-1"/>
+        <AttributesCondition id="sv2#area8#page52#ecu2#su67#acond21" name="AttCondition21" predicate="neq" booleanOperator="or" implied="false" attributes="ent17#att76" value="1"/>
       </Selector>
       <SortAttribute attribute="ent17#att61" order="ascending"/>
       <Link id="sv2#area8#page52#ecu2#ln124" to="sv2#area8#page53#dau6" type="normal" validate="true">
