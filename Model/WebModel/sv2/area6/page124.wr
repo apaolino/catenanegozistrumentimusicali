@@ -7,14 +7,16 @@
         <AttributesCondition id="sv2#area6#page124#inu33#su178#acond25" name="AttCondition25" predicate="null" booleanOperator="or" implied="false" attributes="rel6#role12.ent17#att17"/>
         <AttributesCondition id="sv2#area6#page124#inu33#su178#acond28" name="AttCondition28" predicate="null" booleanOperator="or" implied="false" attributes="rel9#role18.ent19#att19"/>
       </Selector>
-      <Link id="sv2#area6#page124#inu33#ln300" name="Flow300" to="sv2#area6#page124#alt23#page126#inu34" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv2#area6#page124#inu33#ln300" name="Visualizza prodotti" to="sv2#area6#page124#alt23#page126#inu34" automaticCoupling="true" type="normal" validate="true"/>
       <Link id="sv2#area6#page124#inu33#ln302" name="Elimina" to="sv2#area6#opg23#seu62" type="normal" validate="true">
         <LinkParameter id="sv2#area6#page124#inu33#ln302#par840" name="oid_RoleCondition64 [oid]" source="data[].ent16#att16" target="sv2#area6#opg23#seu62#su189#rcond64.ent16#att16"/>
         <LinkParameter id="sv2#area6#page124#inu33#ln302#par841" name="oid_PASSING" source="data[].ent16#att16" passing="true"/>
       </Link>
     </IndexUnit>
     <GetUnit gr:x="0" gr:y="0" id="sv2#area6#page124#gtu32" name="Get32" contextParameters="UserCtxParam">
-      <Link id="sv2#area6#page124#gtu32#ln299" name="Flow299" to="sv2#area6#page124#inu33" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv2#area6#page124#gtu32#ln299" name="Flow299" to="sv2#area6#page124#inu33" type="transport" validate="true">
+        <LinkParameter id="sv2#area6#page124#gtu32#ln299#par107" name="UserCtxParam.oid_RoleCondition8 [oid]" source="sv2#area6#page124#gtu32.UserCtxParam" target="sv2#area6#page124#inu33#su178#rcond8.userOID"/>
+      </Link>
     </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">

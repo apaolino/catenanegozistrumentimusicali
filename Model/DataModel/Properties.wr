@@ -501,8 +501,7 @@
       <db:JoinColumn attribute="ent26#att78" name="tipo_evento_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db1" name="catenadb_mysql" type="MySQL" username="root" url="jdbc:mysql://localhost/CatenaDB_MySql">
-  </db:Database>
+  <db:Database id="db1" name="catenadb_mysql" type="MySQL" username="root" url="jdbc:mysql://localhost/CatenaDB_MySql"/>
   <Entity gr:x="980" gr:y="515" id="ent22" name="Periodo" duration="persistent" attributeOrder="ent22#att72 ent22#att74" db:database="db1" db:table="periodo">
     <Attribute id="ent22#att72" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent22#att74" name="Mese" type="string" db:column="mese"/>
