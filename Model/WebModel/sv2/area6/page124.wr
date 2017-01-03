@@ -3,9 +3,9 @@
     <IndexUnit gr:x="175" gr:y="0" id="sv2#area6#page124#inu33" name="Prenotazioni effettuate" entity="ent16" linkOrder="sv2#area6#page124#inu33#ln300 sv2#area6#page124#inu33#ln302" displayAttributes="ent16#att31 count(rel45#role89.ent12#att12)">
       <Selector id="sv2#area6#page124#inu33#su178" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area6#page124#inu33#su178#rcond8" name="RoleCondition8" predicate="in" implied="false" role="rel14#role27"/>
-        <AttributesCondition id="sv2#area6#page124#inu33#su178#acond24" name="AttCondition24" predicate="eq" booleanOperator="or" implied="false" attributes="rel34#role68.ent15#att15" value="NULL"/>
-        <AttributesCondition id="sv2#area6#page124#inu33#su178#acond25" name="AttCondition25" predicate="eq" booleanOperator="or" implied="false" attributes="rel6#role12.ent17#att17" value="NULL"/>
-        <AttributesCondition id="sv2#area6#page124#inu33#su178#acond28" name="AttCondition28" predicate="eq" booleanOperator="or" implied="false" attributes="rel9#role18.ent19#att19" value="NULL"/>
+        <AttributesCondition id="sv2#area6#page124#inu33#su178#acond24" name="AttCondition24" predicate="null" booleanOperator="or" implied="false" attributes="rel34#role68.ent15#att15"/>
+        <AttributesCondition id="sv2#area6#page124#inu33#su178#acond25" name="AttCondition25" predicate="null" booleanOperator="or" implied="false" attributes="rel6#role12.ent17#att17"/>
+        <AttributesCondition id="sv2#area6#page124#inu33#su178#acond28" name="AttCondition28" predicate="null" booleanOperator="or" implied="false" attributes="rel9#role18.ent19#att19"/>
       </Selector>
       <Link id="sv2#area6#page124#inu33#ln300" name="Flow300" to="sv2#area6#page124#alt23#page126#inu34" automaticCoupling="true" type="normal" validate="true"/>
       <Link id="sv2#area6#page124#inu33#ln302" name="Elimina" to="sv2#area6#opg23#seu62" type="normal" validate="true">
