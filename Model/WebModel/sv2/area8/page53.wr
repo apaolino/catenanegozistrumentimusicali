@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="345" gr:y="5" id="sv2#area8#page53" name="Dettagli dell'evento">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="345" gr:y="0" id="sv2#area8#page53" name="Dettagli dell'evento">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="0" id="sv2#area8#page53#dau6" name="Dettaglio evento" entity="ent17" displayAttributes="ent17#att62 ent17#att61 ent17#att63 ent17#att64 ent17#att65" linkOrder="sv2#area8#page53#dau6#ln127 sv2#area8#page53#dau6#ln96">
+    <DataUnit gr:x="0" gr:y="100" id="sv2#area8#page53#dau6" name="Dettaglio evento" entity="ent17" displayAttributes="ent17#att62 ent17#att61 ent17#att63 ent17#att64 ent17#att65" linkOrder="sv2#area8#page53#dau6#ln127 sv2#area8#page53#dau6#ln96">
       <Selector id="sv2#area8#page53#dau6#su68" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area8#page53#dau6#su68#kcond46" name="KeyCondition46" predicate="in" implied="false"/>
       </Selector>
@@ -13,6 +13,12 @@
         <LinkParameter id="sv2#area8#page53#dau6#ln96#par825" name="Posti disponibili_PASSING" source="data.ent17#att65" passing="true"/>
       </Link>
     </DataUnit>
+    <TimeUnit gr:x="15" gr:y="0" id="sv2#area8#page53#tmu17" name="Time17">
+      <Link id="sv2#area8#page53#tmu17#ln311" name="Flow311" to="sv2#opg9#cru12" type="transport" validate="true">
+        <LinkParameter id="sv2#area8#page53#tmu17#ln311#par848" name="Current/Input Timestamp_Data fine" source="currentTimestamp" target="sv2#opg9#cru12.ent16#att32"/>
+        <LinkParameter id="sv2#area8#page53#tmu17#ln311#par849" name="Current/Input Timestamp_Data inizio" source="currentTimestamp" target="sv2#opg9#cru12.ent16#att31"/>
+      </Link>
+    </TimeUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>

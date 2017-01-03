@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv2#area8#page52" name="Elenco eventi del negozio">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="95" id="sv2#area8#page52" name="Elenco eventi del negozio">
   <ContentUnits>
     <EventCalendarUnit gr:x="0" gr:y="0" id="sv2#area8#page52#ecu2" name="Seleziona evento" entityBased="true" entity="ent17" displayAttributes="ent17#att62" dateAttribute="ent17#att61" linkOrder="sv2#area8#page52#ecu2#ln124">
       <Selector id="sv2#area8#page52#ecu2#su67" defaultPolicy="fill" booleanOperator="and">

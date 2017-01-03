@@ -27,11 +27,5 @@
       </OKLink>
       <KOLink id="sv2#opg9#mathu1#kln29" name="KOFlow29" to="sv2#page55#alt9#page57" automaticCoupling="true" gr:bendpoints="336,48,-194,153"/>
     </MathUnit>
-    <TimeUnit gr:x="265" gr:y="20" id="sv2#opg9#tmu13" name="Time13" linkOrder="sv2#opg9#tmu13#ln46">
-      <Link id="sv2#opg9#tmu13#ln46" name="Flow46" to="sv2#opg9#cru12" type="transport" validate="true">
-        <LinkParameter id="sv2#opg9#tmu13#ln46#par829" name="Current/Input Timestamp_Data inizio" source="currentTimestamp" target="sv2#opg9#cru12.ent16#att31"/>
-        <LinkParameter id="sv2#opg9#tmu13#ln46#par830" name="Current/Input Timestamp_Data fine" source="currentTimestamp" target="sv2#opg9#cru12.ent16#att32"/>
-      </Link>
-    </TimeUnit>
   </OperationUnits>
 </OperationGroup>
