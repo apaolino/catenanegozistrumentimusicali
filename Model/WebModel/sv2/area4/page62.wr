@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="75" gr:y="460" id="sv2#area4#page62" name="Seleziona Carta di credito per il pagamento">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="75" gr:y="495" id="sv2#area4#page62" name="Seleziona Carta di credito per il pagamento">
   <ContentUnits>
     <MultiMessageUnit gr:x="160" gr:y="135" id="sv2#area4#page62#mssu21" name="Nuova carta di credito" linkOrder="sv2#area4#page62#mssu21#ln144">
       <Message xml:space="preserve">Vuoi inserire una nuova carta?</Message>

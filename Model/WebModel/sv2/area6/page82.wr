@@ -8,7 +8,7 @@
         <AttributesCondition id="sv2#area6#page82#seu47#su120#acond8" name="data" predicate="gteq" booleanOperator="or" implied="false" attributes="ent17#att61"/>
       </Selector>
     </SelectorUnit>
-    <IndexUnit id="sv2#area6#page82#inu21" name="Elenco eventi prenotati" linkOrder="sv2#area6#page82#inu21#ln200 sv2#area6#page82#inu21#ln201" gr:x="255" gr:y="0" entity="ent16" displayAttributes="ent16#att31 ent16#att32 rel6#role12.ent17#att62">
+    <IndexUnit id="sv2#area6#page82#inu21" name="Elenco eventi prenotati" linkOrder="sv2#area6#page82#inu21#ln200 sv2#area6#page82#inu21#ln201" gr:x="255" gr:y="0" entity="ent16" displayAttributes="ent16#att31 rel6#role12.ent17#att62">
       <Selector id="sv2#area6#page82#inu21#su118" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area6#page82#inu21#su118#rcond40" name="RoleCondition30" predicate="in" implied="false" role="rel14#role27"/>
         <RelationshipRoleCondition id="sv2#area6#page82#inu21#su118#rcond41" name="RoleCondition32" predicate="in" implied="false" role="rel6#role11"/>
@@ -40,7 +40,6 @@
           <layout:Link link="sv2#area6#page82#inu21#ln200"/>
           <layout:Link link="sv2#area6#page82#inu21#ln201"/>
           <layout:Attribute attribute="ent16#att31"/>
-          <layout:Attribute attribute="ent16#att32"/>
           <layout:Attribute attribute="rel6#role12.ent17#att62"/>
         </layout:Unit>
       </layout:Cell>

@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="680" gr:y="730" id="sv2#area4#page122" name="Prodotti scontati">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="680" gr:y="765" id="sv2#area4#page122" name="Prodotti scontati">
   <ContentUnits>
     <SelectorUnit gr:x="0" gr:y="0" id="sv2#area4#page122#seu65" name="Cataloghi associati" entity="ent11">
       <Selector id="sv2#area4#page122#seu65#su182" defaultPolicy="fill" booleanOperator="and">

@@ -1,24 +1,21 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1250" gr:y="5" id="sv2#area4#opg22" name="Prenotazione acquisto" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1335" gr:y="40" id="sv2#area4#opg22" name="Prenotazione acquisto" transaction="true">
   <OperationUnits>
-    <CreateUnit gr:x="135" gr:y="5" id="sv2#area4#opg22#cru18" name="Create18" entity="ent16">
-      <OKLink id="sv2#area4#opg22#cru18#oln62" name="OKFlow62" to="sv2#area4#opg22#cnu17" automaticCoupling="true"/>
+    <CreateUnit gr:x="0" gr:y="5" id="sv2#area4#opg22#cru18" name="Create18" entity="ent16">
+      <OKLink id="sv2#area4#opg22#cru18#oln62" name="OKFlow62" to="sv2#area4#opg22#cnu17">
+        <LinkParameter id="sv2#area4#opg22#cru18#oln62#par853" name="Checked oid_PASSING_KeyCondition31 [oid] [Prodotto] [Target]" sourceLinkParameter="sv2#area4#page61#mssu22#ln263#par852" target="sv2#area4#opg22#cnu17#su19#kcond31.ent12#att12"/>
+        <LinkParameter id="sv2#area4#opg22#cru18#oln62#par854" name="oid_KeyCondition8 [oid] [Prenotazione] [Source]" source="ent16#att16Array" target="sv2#area4#opg22#cnu17#su17#kcond8.ent16#att16"/>
+      </OKLink>
       <KOLink id="sv2#area4#opg22#cru18#kln70" name="KOFlow70" to="sv2#page55#alt9#page57#mssu18" automaticCoupling="true"/>
     </CreateUnit>
-    <TimeUnit gr:x="0" gr:y="10" id="sv2#area4#opg22#tmu16" name="Time16" linkOrder="sv2#area4#opg22#tmu16#ln259">
-      <Link id="sv2#area4#opg22#tmu16#ln259" name="Flow259" to="sv2#area4#opg22#cru18" type="transport" validate="true">
-        <LinkParameter id="sv2#area4#opg22#tmu16#ln259#par834" name="Current/Input Timestamp_Data fine" source="currentTimestamp" target="sv2#area4#opg22#cru18.ent16#att32"/>
-        <LinkParameter id="sv2#area4#opg22#tmu16#ln259#par835" name="Current/Input Timestamp_Data inizio" source="currentTimestamp" target="sv2#area4#opg22#cru18.ent16#att31"/>
-      </Link>
-    </TimeUnit>
-    <ConnectUnit gr:x="330" gr:y="0" id="sv2#area4#opg22#cnu17" name="Connect17" relationship="rel45#role89">
+    <ConnectUnit gr:x="245" gr:y="0" id="sv2#area4#opg22#cnu17" name="Connect17" relationship="rel45#role89">
       <SourceSelector id="sv2#area4#opg22#cnu17#su17" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area4#opg22#cnu17#su17#kcond8" name="KeyCondition8" predicate="in" implied="false"/>
       </SourceSelector>
       <TargetSelector id="sv2#area4#opg22#cnu17#su19" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area4#opg22#cnu17#su19#kcond31" name="KeyCondition31" predicate="in" implied="false"/>
       </TargetSelector>
-      <OKLink id="sv2#area4#opg22#cnu17#oln66" name="OKFlow66" to="sv2#page55#alt9#page56#mssu17" automaticCoupling="true"/>
       <KOLink id="sv2#area4#opg22#cnu17#kln69" name="KOFlow69" to="sv2#page55#alt9#page57#mssu18" automaticCoupling="true"/>
+      <OKLink id="sv2#area4#opg22#cnu17#oln117" name="OKFlow117" to="sv2#area6#page124" automaticCoupling="true"/>
     </ConnectUnit>
   </OperationUnits>
 </OperationGroup>

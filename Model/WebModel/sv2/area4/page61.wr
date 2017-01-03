@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="720" gr:y="10" id="sv2#area4#page61" name="lista prodotti selezionati">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="720" gr:y="0" id="sv2#area4#page61" name="lista prodotti selezionati">
   <ContentUnits>
     <IndexUnit gr:x="60" gr:y="0" id="sv2#area4#page61#inu8" name="Carrello" entity="ent12" displayAttributes="ent12#att1 ent12#att41 ent12#att42 ent12#att43">
       <Selector id="sv2#area4#page61#inu8#su82" defaultPolicy="fill" booleanOperator="and">
@@ -36,6 +36,7 @@
         <LinkParameter id="sv2#area4#page61#mssu22#ln263#par836" name="NegozioToGestore Singolo Negozio.oid_PASSING_Gestore Singolo Negozio.oid(PrenotazioneToGestore Singolo Negozio)" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par453" target="sv2#area4#opg22#cru18.rel13#role25.userOID"/>
         <LinkParameter id="sv2#area4#page61#mssu22#ln263#par837" name="oid_PASSING_Negozio.oid(PrenotazioneToNegozio)" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par407" target="sv2#area4#opg22#cru18.rel11#role21.ent10#att10"/>
         <LinkParameter id="sv2#area4#page61#mssu22#ln263#par839" name="UserCtxParam.oid_PASSING_Cliente.oid(PrenotazioneToCliente Registrato)" sourceLinkParameter="sv2#area4#page61#gtu31#ln297#par838" target="sv2#area4#opg22#cru18.rel14#role28.userOID"/>
+        <LinkParameter id="sv2#area4#page61#mssu22#ln263#par852" name="Checked oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par444" passing="true"/>
       </Link>
     </MultiMessageUnit>
     <GetUnit gr:x="200" gr:y="5" id="sv2#area4#page61#gtu31" name="Get31" contextParameters="UserCtxParam">
@@ -43,6 +44,12 @@
         <LinkParameter id="sv2#area4#page61#gtu31#ln297#par838" name="UserCtxParam.oid_PASSING" source="sv2#area4#page61#gtu31.UserCtxParam" passing="true"/>
       </Link>
     </GetUnit>
+    <TimeUnit id="sv2#area4#page61#tmu18" name="Time16" gr:x="260" gr:y="205">
+      <Link id="sv2#area4#page61#tmu18#ln312" name="Flow259" to="sv2#area4#opg22#cru18" type="transport" validate="true">
+        <LinkParameter id="sv2#area4#page61#tmu18#ln312#par850" name="Current/Input Timestamp_Data fine" source="currentTimestamp" target="sv2#area4#opg22#cru18.ent16#att32"/>
+        <LinkParameter id="sv2#area4#page61#tmu18#ln312#par851" name="Current/Input Timestamp_Data inizio" source="currentTimestamp" target="sv2#area4#opg22#cru18.ent16#att31"/>
+      </Link>
+    </TimeUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>

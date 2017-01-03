@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="25" gr:y="0" id="sv2#area4#page47" name="Cataloghi associati">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="25" gr:y="35" id="sv2#area4#page47" name="Cataloghi associati">
   <ContentUnits>
     <IndexUnit gr:x="10" gr:y="0" id="sv2#area4#page47#inu4" name="Cataloghi associati" entity="ent11" displayAttributes="ent11#att46 ent11#att47" linkOrder="sv2#area4#page47#inu4#ln118">
       <Selector id="sv2#area4#page47#inu4#su61" defaultPolicy="fill" booleanOperator="and">
