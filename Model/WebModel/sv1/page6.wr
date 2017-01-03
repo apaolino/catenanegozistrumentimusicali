@@ -1,13 +1,13 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="415" gr:y="-535" id="sv1#page6" name="Registrazione al Sistema">
   <ContentUnits>
-    <EntryUnit gr:x="260" gr:y="155" id="sv1#page6#enu1" name="Inserisci i tuoi dati" linkOrder="sv1#page6#enu1#ln39" fieldOrder="sv1#page6#enu1#fld13 sv1#page6#enu1#fld14 sv1#page6#enu1#fld15 sv1#page6#enu1#fld16 sv1#page6#enu1#fld33 sv1#page6#enu1#fld34 sv1#page6#enu1#fld35 sv1#page6#enu1#fld36 sv1#page6#enu1#fld2 sv1#page6#enu1#fld3 sv1#page6#enu1#fld4 sv1#page6#enu1#sfld3 sv1#page6#enu1#fld5 sv1#page6#enu1#fld7 sv1#page6#enu1#fld8 sv1#page6#enu1#fld9">
+    <EntryUnit gr:x="260" gr:y="155" id="sv1#page6#enu1" name="Inserisci i tuoi dati" linkOrder="sv1#page6#enu1#ln39" fieldOrder="sv1#page6#enu1#fld13 sv1#page6#enu1#fld14 sv1#page6#enu1#fld15 sv1#page6#enu1#fld16 sv1#page6#enu1#fld33 sv1#page6#enu1#fld34 sv1#page6#enu1#fld36 sv1#page6#enu1#fld2 sv1#page6#enu1#fld3 sv1#page6#enu1#fld4 sv1#page6#enu1#sfld3 sv1#page6#enu1#fld5 sv1#page6#enu1#fld7 sv1#page6#enu1#fld8 sv1#page6#enu1#fld9">
       <Field id="sv1#page6#enu1#fld13" name="Username" type="string" modifiable="true"/>
       <Field id="sv1#page6#enu1#fld14" name="Password" type="password" modifiable="true"/>
       <Field id="sv1#page6#enu1#fld15" name="Email" type="string" modifiable="true"/>
       <Field id="sv1#page6#enu1#fld16" name="Nome" type="string" modifiable="true"/>
       <Field id="sv1#page6#enu1#fld33" name="Cognome" type="string" modifiable="true"/>
       <Field id="sv1#page6#enu1#fld34" name="Data Nascita" type="date" modifiable="true"/>
-      <Field id="sv1#page6#enu1#fld35" name="Data Registrazione" type="date" modifiable="true"/>
+      <Field id="sv1#page6#enu1#fld35" name="Data Registrazione" type="date" modifiable="false" hidden="true" preloaded="true"/>
       <Field id="sv1#page6#enu1#fld36" name="Numero Telefono" type="string" modifiable="true"/>
       <Field id="sv1#page6#enu1#fld2" name="Via" type="string" modifiable="true"/>
       <Field id="sv1#page6#enu1#fld3" name="Numero Civico" type="string" modifiable="true"/>
@@ -63,6 +63,11 @@
         <LinkParameter id="sv1#page6#seu6#ln43#par104" name="Provincia_Provincia [output]" source="ent3#att70Array" target="sv1#page6#enu1#sfld3_output"/>
       </Link>
     </SelectorUnit>
+    <TimeUnit gr:x="115" gr:y="30" id="sv1#page6#tmu15" name="Time15">
+      <Link id="sv1#page6#tmu15#ln198" name="Flow198" to="sv1#page6#enu1" type="transport" validate="true">
+        <LinkParameter id="sv1#page6#tmu15#ln198#par833" name="Current/Input Date_Data Registrazione" source="currentDate" target="sv1#page6#enu1#fld35_slot"/>
+      </Link>
+    </TimeUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -75,7 +80,6 @@
           <layout:Field field="sv1#page6#enu1#fld16"/>
           <layout:Field field="sv1#page6#enu1#fld33"/>
           <layout:Field field="sv1#page6#enu1#fld34"/>
-          <layout:Field field="sv1#page6#enu1#fld35"/>
           <layout:Field field="sv1#page6#enu1#fld36"/>
           <layout:Field field="sv1#page6#enu1#fld2"/>
           <layout:Field field="sv1#page6#enu1#fld3"/>
