@@ -16,9 +16,9 @@
     <SelectorUnit gr:x="20" gr:y="105" id="sv3#area12#page99#seu49" name="Recupera ID eventi" entity="ent17">
       <Link id="sv3#area12#page99#seu49#ln245" name="Flow245" to="sv3#area12#page99#inu26" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <TimeUnit gr:x="305" gr:y="150" id="sv3#area12#page99#tmu11" name="Current date">
+    <TimeUnit gr:x="275" gr:y="190" id="sv3#area12#page99#tmu11" name="Current date">
       <Link id="sv3#area12#page99#tmu11#ln246" name="Flow246" to="sv3#area12#page99#inu26" type="transport" validate="true">
-        <LinkParameter id="sv3#area12#page99#tmu11#ln246#par631" name="Current/Input Date_data" source="currentDate" target="sv3#area12#page99#inu26#su140#acond14"/>
+        <LinkParameter id="sv3#area12#page99#tmu11#ln246#par631" name="Current/Input Date_data" source="currentTimestamp" target="sv3#area12#page99#inu26#su140#acond14"/>
       </Link>
     </TimeUnit>
   </ContentUnits>

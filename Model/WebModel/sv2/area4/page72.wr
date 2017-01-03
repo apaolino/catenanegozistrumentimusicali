@@ -1,9 +1,9 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area4#page72" name="Inseirmento dati nuova carta " gr:x="660" gr:y="550">
   <ContentUnits>
     <EntryUnit id="sv2#area4#page72#enu21" name="Dati nuova carta" gr:x="0" gr:y="0" linkOrder="sv2#area4#page72#enu21#ln184">
-      <Field id="sv2#area4#page72#enu21#fld124" name="Numero" type="integer" modifiable="true">
+      <Field id="sv2#area4#page72#enu21#fld124" name="Numero" type="string" modifiable="true">
         <VRules>
-          <ValueLengthValidationRule id="sv2#area4#page72#enu21#fld124#vl2" name="Value Length2" predicate="max" value="9" errorMessage="Inserisci massimo 9 cifre"/>
+          <ValueLengthValidationRule id="sv2#area4#page72#enu21#fld124#vl4" name="Value Length4" predicate="max" value="16"/>
         </VRules>
       </Field>
       <Field id="sv2#area4#page72#enu21#fld125" name="Data scadenza" type="date" modifiable="true"/>

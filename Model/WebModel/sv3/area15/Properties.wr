@@ -11,7 +11,7 @@
       <OKLink id="sv3#area15#mfu21#oln25" name="OKFlow25" to="sv3#area15#page107#inu25" automaticCoupling="true" gr:bendpoints="-147,118,783,108"/>
       <KOLink id="sv3#area15#mfu21#kln63" name="KOFlow63" to="sv3#page47#mssu16" automaticCoupling="true"/>
     </ModifyUnit>
-    <ModifyUnit id="sv3#area15#mfu23" name="Aggiorno prezzo" gr:x="1175" gr:y="505" entity="ent17">
+    <ModifyUnit id="sv3#area15#mfu23" name="Aggiorno Evento annullato" gr:x="1175" gr:y="505" entity="ent17">
       <Selector id="sv3#area15#mfu23#su162" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area15#mfu23#su162#kcond91" name="KeyCondition90" predicate="in" implied="false"/>
       </Selector>

@@ -5,7 +5,7 @@
       <Selector id="sv3#area14#page59#mciu3#su72" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area14#page59#mciu3#su72#rcond21" name="RoleCondition21" predicate="in" implied="false" role="rel25#role50"/>
         <RelationshipRoleCondition id="sv3#area14#page59#mciu3#su72#rcond26" name="RoleCondition26" predicate="notIn" implied="false" role="rel24#role47"/>
-        <AttributesCondition id="sv3#area14#page59#mciu3#su72#acond18" name="AttCondition18" predicate="neq" booleanOperator="or" implied="false" attributes="ent12#att43" value="-1"/>
+        <AttributesCondition id="sv3#area14#page59#mciu3#su72#acond18" name="AttCondition18" predicate="neq" booleanOperator="or" implied="false" attributes="ent12#att79" value="1"/>
       </Selector>
       <SortAttribute attribute="ent12#att66" order="ascending"/>
       <Link id="sv3#area14#page59#mciu3#ln140" name="Aggiungi prodotti" to="sv3#area14#cnu4" type="normal" validate="true">

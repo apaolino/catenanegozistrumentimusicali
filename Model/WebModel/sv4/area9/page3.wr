@@ -7,7 +7,7 @@ Confermi l'eliminazione del prodotto?</Message>
       <Link id="sv4#area9#page3#mssu10#ln82" name="Torna a elenco prodotti" to="sv4#area9#page39#inu2" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-167,73,148,53"/>
       <Link id="sv4#area9#page3#mssu10#ln307" name="Elimina" to="sv4#area9#opg21#mfu20" type="normal" validate="true">
         <LinkParameter id="sv4#area9#page3#mssu10#ln307#par789" name="oid_PASSING_KeyCondition70 [oid]" sourceLinkParameter="sv4#area9#page39#inu2#ln18#par8" target="sv4#area9#opg21#mfu20#su175#kcond117.ent12#att12"/>
-        <LinkParameter id="sv4#area9#page3#mssu10#ln307#par790" name="-1_Prezzo" target="sv4#area9#opg21#mfu20.ent12#att43" sourceValue="-1"/>
+        <LinkParameter id="sv4#area9#page3#mssu10#ln307#par832" name="1_Eliminato" sourceValue="1" target="sv4#area9#opg21#mfu20.ent12#att79"/>
       </Link>
     </MultiMessageUnit>
   </ContentUnits>

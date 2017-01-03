@@ -4,7 +4,7 @@
       <Message xml:space="preserve">Sei sicuro di voler annullare l'evento?</Message>
       <Link id="sv3#area15#page110#mssu40#ln293" name="Si" to="sv3#area15#mfu23" type="normal" validate="true">
         <LinkParameter id="sv3#area15#page110#mssu40#ln293#par739" name="oid_PASSING_KeyCondition90 [oid]" sourceLinkParameter="sv3#area15#page107#inu25#ln291#par736" target="sv3#area15#mfu23#su162#kcond91.ent17#att17"/>
-        <LinkParameter id="sv3#area15#page110#mssu40#ln293#par740" name="-1_Prezzo" target="sv3#area15#mfu23.ent17#att64" sourceValue="-1"/>
+        <LinkParameter id="sv3#area15#page110#mssu40#ln293#par831" name="1_Annullato" sourceValue="1" target="sv3#area15#mfu23.ent17#att76"/>
       </Link>
       <Link id="sv3#area15#page110#mssu40#ln294" name="No" to="sv3#area15#page107#inu25" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-381,-210,389,250"/>
     </MultiMessageUnit>

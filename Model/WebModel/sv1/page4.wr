@@ -14,7 +14,7 @@
         <AttributesCondition id="sv1#page4#ecu1#su10#acond16" name="AttCondition16" predicate="gt" booleanOperator="or" implied="false" attributes="ent17#att64" value="-1"/>
       </Selector>
     </EventCalendarUnit>
-    <DataUnit gr:x="115" gr:y="0" id="sv1#page4#dau1" name="Informazioni sulla Catena di Negozi di Strumenti Musicali" entity="ent9" displayAttributes="ent9#att55 ent9#att56 ent9#att57 ent9#att58">
+    <DataUnit gr:x="115" gr:y="0" id="sv1#page4#dau1" name="Informazioni sulla Catena di Negozi di Strumenti Musicali" entity="ent9" displayAttributes="ent9#att55 ent9#att56 ent9#att57 ent9#att58 ent9#att13">
       <Selector id="sv1#page4#dau1#su1" defaultPolicy="fill" booleanOperator="and"/>
     </DataUnit>
   </ContentUnits>
@@ -96,6 +96,7 @@
           <layout:Attribute attribute="ent9#att56"/>
           <layout:Attribute attribute="ent9#att57"/>
           <layout:Attribute attribute="ent9#att58"/>
+          <layout:Attribute attribute="ent9#att13"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

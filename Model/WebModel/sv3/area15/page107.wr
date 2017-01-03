@@ -3,7 +3,7 @@
     <IndexUnit gr:x="0" gr:y="0" id="sv3#area15#page107#inu25" name="Lista Eventi" entity="ent17" displayAttributes="ent17#att62 ent17#att61 ent17#att64 ent17#att65 rel42#role83.ent26#att75" linkOrder="sv3#area15#page107#inu25#ln273 sv3#area15#page107#inu25#ln291">
       <Selector id="sv3#area15#page107#inu25#su123" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area15#page107#inu25#su123#rcond53" name="RoleCondition53" predicate="in" implied="false" role="rel10#role20"/>
-        <AttributesCondition id="sv3#area15#page107#inu25#su123#acond10" name="AttCondition10" predicate="neq" booleanOperator="or" implied="false" attributes="ent17#att64" value="-1"/>
+        <AttributesCondition id="sv3#area15#page107#inu25#su123#acond10" name="AttCondition10" predicate="neq" booleanOperator="or" implied="false" attributes="ent17#att76" value="1"/>
       </Selector>
       <Link id="sv3#area15#page107#inu25#ln273" name="Modifica" to="sv3#area15#page108#seu60" type="normal" validate="true">
         <LinkParameter id="sv3#area15#page107#inu25#ln273#par706" name="oid_RoleCondition55 [oid]" source="data[].ent17#att17" target="sv3#area15#page108#seu60#su148#rcond57.ent17#att17"/>

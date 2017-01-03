@@ -5,7 +5,7 @@
       <Link id="sv4#area2#page5#mciu1#ln23" name="Aggiungi al catalogo base" to="sv4#cnu1" automaticCoupling="true" type="normal" validate="true"/>
       <Selector id="sv4#area2#page5#mciu1#su44" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#area2#page5#mciu1#su44#rcond9" name="RoleCondition9" predicate="notIn" implied="false" role="rel24#role47"/>
-        <AttributesCondition id="sv4#area2#page5#mciu1#su44#acond17" name="AttCondition17" predicate="neq" booleanOperator="or" implied="false" attributes="ent12#att43" value="-1"/>
+        <AttributesCondition id="sv4#area2#page5#mciu1#su44#acond17" name="AttCondition17" predicate="neq" booleanOperator="or" implied="false" attributes="ent12#att79" value="1"/>
       </Selector>
     </MultiChoiceIndexUnit>
     <SelectorUnit gr:x="0" gr:y="140" id="sv4#area2#page5#seu7" name="Recupero Ultimo Catalogo Base" entity="ent13" maxResults="1" distinctAttributes="ent11#att11">
