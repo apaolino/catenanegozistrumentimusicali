@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="435" gr:y="95" id="sv1#page4" name="Home Visitatore" linkOrder="sv1#page4#ln1 sv1#page4#ln10 sv1#page4#ln29">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="435" gr:y="95" id="sv1#page4" name="Home Visitatore" linkOrder="sv1#page4#ln1 sv1#page4#ln10 sv1#page4#ln29 sv1#page4#ln318">
   <ContentUnits>
     <PowerIndexUnit gr:x="0" gr:y="160" id="sv1#page4#pwu2" name="Elenco Negozi Appartenenti alla Catena" sortable="true" checkable="false" useCountQuery="false" entity="ent10" linkOrder="sv1#page4#pwu2#ln7" displayAttributes="ent10#att48 rel30#role59.rel44#role87.ent7#att36 rel32#role63.ent1#att73">
       <Link id="sv1#page4#pwu2#ln7" name="Visualizza Dettagli Negozio" to="sv1#page7#dau3" type="normal" validate="true">
@@ -129,4 +129,5 @@
   <Link id="sv1#page4#ln1" name="Registrazione" to="sv1#page6" automaticCoupling="true" type="normal" validate="true"/>
   <Link id="sv1#page4#ln10" name="Ricerca Avanzata" to="sv1#page9" automaticCoupling="true" type="normal" validate="true"/>
   <Link id="sv1#page4#ln29" name="Login" to="sv1#page23" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv1#page4#ln318" name="Servizio Prodotti" to="sv1#rru1" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

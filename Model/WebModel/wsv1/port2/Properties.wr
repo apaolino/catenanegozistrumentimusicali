@@ -1,6 +1,6 @@
-<Port xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="305" gr:y="130" id="wsv1#port2" name="Port" soapBindingStyle="documentLiteral">
+<Port xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="305" gr:y="125" id="wsv1#port2" name="Port" soapBindingStyle="documentLiteral">
   <OperationUnits>
-    <SolicitUnit id="wsv1#port2#slu2" name="Seleziona Prodotti" invocationStyle="SOAP" requestMethod="POST" gr:x="0" gr:y="20">
+    <SolicitUnit id="wsv1#port2#slu2" name="Seleziona Prodotti" invocationStyle="SOAP" requestMethod="POST" gr:x="0" gr:y="25">
       <OKLink id="wsv1#port2#slu2#oln116" name="OKFlow116" to="wsv1#port2#xou2">
         <LinkParameter id="wsv1#port2#slu2#oln116#par855" name="Usato_AttCondition33" source="map(wsv1#port2#slu2#slp1)" target="wsv1#port2#xou2#xoe1#su198#acond33"/>
       </OKLink>
@@ -9,7 +9,7 @@
       </KOLink>
       <RequestBodyParameter id="wsv1#port2#slu2#slp1" name="Usato" minCard="1" maxCard="1" xsdType="{http://www.w3.org/2001/XMLSchema}boolean[SimpleType]"/>
     </SolicitUnit>
-    <XMLOutUnit gr:x="235" gr:y="25" id="wsv1#port2#xou2" name="XML Exctract" oldDocStyle="false">
+    <XMLOutUnit gr:x="235" gr:y="0" id="wsv1#port2#xou2" name="XML Exctract" oldDocStyle="false">
       <XMLOutEntity id="wsv1#port2#xou2#xoe1" name="Prodotti" useNames="true" entity="ent12" exportedAttributes="ent12#att12 ent12#att1 ent12#att41 ent12#att42 ent12#att43 ent12#att44 ent12#att45 ent12#att66 ent12#att67 ent12#att68 ent12#att79">
         <SortAttribute attribute="ent12#att66" order="ascending"/>
         <SortAttribute attribute="ent12#att68" order="ascending"/>
@@ -24,12 +24,12 @@
         <LinkParameter id="wsv1#port2#xou2#kln79#par842" name="Error Message_Fault Message" source="errorMessage" target="wsv1#port2#eru1.faultMessage"/>
       </KOLink>
     </XMLOutUnit>
-    <ResponseUnit gr:x="450" gr:y="0" id="wsv1#port2#rsu2" name="Response Prodotti " contentType="XML" statusCode="200">
+    <ResponseUnit gr:x="450" gr:y="5" id="wsv1#port2#rsu2" name="Response Prodotti " contentType="XML" statusCode="200">
       <ResponseBodyParameter id="wsv1#port2#rsu2#rsp1" name="BodyParameter1" minCard="1" maxCard="1" xsdProvider="xsdp1" xsdType="{http://www.webml.org/webservices/wsdl/products}productType[ComplexType]"/>
       <KOLink id="wsv1#port2#rsu2#kln80" name="KOFlow80" to="wsv1#port2#eru1">
         <LinkParameter id="wsv1#port2#rsu2#kln80#par843" name="Error Message_Fault Message" source="errorMessage" target="wsv1#port2#eru1.faultMessage"/>
       </KOLink>
     </ResponseUnit>
-    <ErrorResponseUnit gr:x="175" gr:y="145" id="wsv1#port2#eru1" name="Error Response1" contentType="XML" statusCode="500"/>
+    <ErrorResponseUnit gr:x="175" gr:y="150" id="wsv1#port2#eru1" name="Error Response1" contentType="XML" statusCode="500"/>
   </OperationUnits>
 </Port>

@@ -6,5 +6,6 @@
     <XsdProvider id="xsdp1" name="XSD Provider 1">
       <XsdResource id="xsdp1#xsdr1" name="ProdottoSchema" file="WebContent/WEB-INF/descr/ProdottoSchema.xsd"/>
     </XsdProvider>
+    <WebServiceProvider id="wsp1" name="Catena_Prodotti"/>
   </ServiceDataProviders>
 </WebProject>

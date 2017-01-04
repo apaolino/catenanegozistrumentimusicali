@@ -13,5 +13,6 @@
       </Selector>
     </SelectorUnit>
     <SetUnit gr:x="-230" gr:y="660" id="sv1#stu5" name="Set5" contextParameters="ctx2"/>
+    <RequestResponseUnit gr:x="1350" gr:y="-45" id="sv1#rru1" name="Estra Info Prodotti" soapVersion="1.1" inputType="none"/>
   </OperationUnits>
 </SiteView>
