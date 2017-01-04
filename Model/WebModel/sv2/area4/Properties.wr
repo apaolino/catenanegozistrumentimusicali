@@ -1,4 +1,4 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-615" gr:y="530" id="sv2#area4" name="Scelta catalogo" landmark="false" defaultPage="sv2#area4#page47">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-615" gr:y="530" id="sv2#area4" name="Prenotazione/Acquisto/Noleggio" landmark="false" defaultPage="sv2#area4#page47">
   <OperationUnits>
     <CreateUnit id="sv2#area4#cru19" name="Salva nuova Carta" gr:x="945" gr:y="635" entity="ent2">
       <OKLink id="sv2#area4#cru19#oln48" name="OKFlow48" to="sv2#opg12#cru22">

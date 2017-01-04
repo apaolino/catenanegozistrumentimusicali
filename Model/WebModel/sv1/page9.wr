@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1270" gr:y="135" id="sv1#page9" name="Ricerca Avanzata" ajaxEnabled="true" linkOrder="sv1#page9#ln55 sv1#page9#ln269 sv1#page9#ln264">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1270" gr:y="135" id="sv1#page9" name="Ricerca Avanzata" ajaxEnabled="true" linkOrder="sv1#page9#ln55 sv1#page9#ln269 sv1#page9#ln264" landmark="true">
   <ContentUnits>
     <EntryUnit gr:x="205" gr:y="0" id="sv1#page9#enu4" name="Ricerca negozio per zona" linkOrder="sv1#page9#enu4#ln11 sv1#page9#enu4#ln6" ajaxEnableExpandedLinks="true">
       <Link id="sv1#page9#enu4#ln11" name="Flow11" to="sv1#seu4" type="normal" validate="true">

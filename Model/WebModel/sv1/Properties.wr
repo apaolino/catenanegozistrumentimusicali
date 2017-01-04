@@ -1,4 +1,4 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="Home Visitatore" homePage="sv1#page4" landmarks="sv1#page23">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="Home Visitatore" homePage="sv1#page4" landmarks="sv1#page23 sv1#page6 sv1#page9">
   <OperationUnits>
     <LoginUnit id="sv1#lgu3" name="Accedi" gr:x="-120" gr:y="75">
       <KOLink id="sv1#lgu3#kln1" name="KOFlow1" to="sv1#page8" automaticCoupling="true"/>
@@ -13,6 +13,6 @@
       </Selector>
     </SelectorUnit>
     <SetUnit gr:x="-230" gr:y="660" id="sv1#stu5" name="Set5" contextParameters="ctx2"/>
-    <RequestResponseUnit gr:x="1350" gr:y="-45" id="sv1#rru1" name="Estra Info Prodotti" soapVersion="1.1" inputType="none"/>
+    <RequestResponseUnit gr:x="1350" gr:y="-45" id="sv1#rru1" name="Estrai Info Prodotti" soapVersion="1.1" inputType="none"/>
   </OperationUnits>
 </SiteView>
