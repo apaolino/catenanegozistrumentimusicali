@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1815" gr:y="220" id="sv2#opg14" name="Operation Group 14" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="2060" gr:y="190" id="sv2#opg14" name="Operation Group 14" transaction="true">
   <OperationUnits>
     <GetUnit id="sv2#opg14#gtu22" name="GetUID" gr:x="46" gr:y="35" contextParameters="UserCtxParam">
       <Link id="sv2#opg14#gtu22#ln219" name="Flow129" to="sv2#opg14#cru10" type="transport" validate="true">

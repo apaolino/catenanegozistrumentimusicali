@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#page79" name="Operazione acquisto" gr:x="170" gr:y="1700">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#page79" name="Operazione acquisto" gr:x="175" gr:y="1840">
   <ContentUnits/>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -79,7 +79,7 @@
       <ContentUnits>
         <MultiMessageUnit id="sv2#page79#alt15#page81#mssu30" name="Messaggio Successo" gr:x="0" gr:y="0" linkOrder="sv2#page79#alt15#page81#mssu30#ln3">
           <Message xml:space="preserve">Acquisto effettuato</Message>
-          <Link id="sv2#page79#alt15#page81#mssu30#ln3" name="Vai allo storico acquisti" to="sv2#area6#page65" automaticCoupling="true" type="normal" validate="true"/>
+          <Link id="sv2#page79#alt15#page81#mssu30#ln3" name="Vai allo storico acquisti" to="sv2#area6#page65" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="1,-257,1661,1093;-1039,-300,621,1050;-1042,-1242,618,108"/>
         </MultiMessageUnit>
       </ContentUnits>
     </Page>

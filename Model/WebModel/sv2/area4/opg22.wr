@@ -15,7 +15,7 @@
         <KeyCondition id="sv2#area4#opg22#cnu17#su19#kcond31" name="KeyCondition31" predicate="in" implied="false"/>
       </TargetSelector>
       <KOLink id="sv2#area4#opg22#cnu17#kln69" name="KOFlow69" to="sv2#page55#alt9#page57#mssu18" automaticCoupling="true"/>
-      <OKLink id="sv2#area4#opg22#cnu17#oln117" name="OKFlow117" to="sv2#area6#page124" automaticCoupling="true"/>
+      <OKLink id="sv2#area4#opg22#cnu17#oln117" name="OKFlow117" to="sv2#area6#page124" automaticCoupling="true" gr:bendpoints="-405,277,2560,-2363;-405,757,2560,-1883;-560,1576,2405,-1064;-1280,2751,1685,111"/>
     </ConnectUnit>
   </OperationUnits>
 </OperationGroup>

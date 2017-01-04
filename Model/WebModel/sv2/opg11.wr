@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-590" gr:y="1640" id="sv2#opg11" name="Salvataggio dati nuovo acquisto" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-590" gr:y="1710" id="sv2#opg11" name="Salvataggio dati nuovo acquisto" transaction="true">
   <OperationUnits>
     <CreateUnit id="sv2#opg11#cru21" name="Nuovo acquisto" gr:x="290" gr:y="255" entity="ent15">
       <OKLink id="sv2#opg11#cru21#oln49" name="OKFlow52" to="sv2#opg11#cnu6">
@@ -21,7 +21,7 @@
       <TargetSelector id="sv2#opg11#cnu6#su95" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#opg11#cnu6#su95#kcond63" name="KeyCondition60" predicate="in" implied="false"/>
       </TargetSelector>
-      <OKLink id="sv2#opg11#cnu6#oln56" name="OKFlow56" to="sv2#page79#alt15#page81#mssu30" automaticCoupling="true" gr:bendpoints="685,138,-675,493"/>
+      <OKLink id="sv2#opg11#cnu6#oln56" name="OKFlow56" to="sv2#page79#alt15#page81#mssu30" automaticCoupling="true" gr:bendpoints="397,151,-398,276"/>
       <KOLink id="sv2#opg11#cnu6#kln41" name="KOFlow41" to="sv2#page79#alt15#page84#mssu31" automaticCoupling="true"/>
     </ConnectUnit>
     <CreateUnit id="sv2#opg11#cru15" name="Nuovo acquisto" gr:x="0" gr:y="160" entity="ent15">
@@ -30,7 +30,7 @@
         <LinkParameter id="sv2#opg11#cru15#oln54#par532" name="Checked oid_PASSING_KeyCondition59 [oid] [Prodotto] [Source]" sourceLinkParameter="sv2#area4#cru16#oln55#par521" target="sv2#opg11#cnu6#su94#kcond62.ent12#att12"/>
         <LinkParameter id="sv2#opg11#cru15#oln54#par813" name="Checked oid_PASSING_KeyCondition59 [oid] [Prodotto] [Source]" sourceLinkParameter="sv2#area4#cru16#oln55#par812" target="sv2#opg11#cnu6#su94#kcond62.ent12#att12"/>
       </OKLink>
-      <KOLink id="sv2#opg11#cru15#kln40" name="KOFlow40" to="sv2#page79#alt15#page84#mssu31" automaticCoupling="true"/>
+      <KOLink id="sv2#opg11#cru15#kln40" name="KOFlow40" to="sv2#page79#alt15#page84#mssu31" automaticCoupling="true" gr:bendpoints="460,-12,-340,-182"/>
     </CreateUnit>
   </OperationUnits>
 </OperationGroup>

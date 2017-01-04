@@ -111,7 +111,7 @@
             <LinkParameter id="sv2#area4#page47#alt8#page49#mciu4#ln148#par441" name="Checked oid_PASSING" source="ent12#att12Checked" passing="true"/>
             <LinkParameter id="sv2#area4#page47#alt8#page49#mciu4#ln148#par452" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page47#inu4#ln118#par451" passing="true"/>
           </Link>
-          <Link id="sv2#area4#page47#alt8#page49#mciu4#ln139" name="Recensisci" to="sv2#area10#page90#enu24" type="normal" validate="true">
+          <Link id="sv2#area4#page47#alt8#page49#mciu4#ln139" name="Recensisci" to="sv2#area10#page90#enu24" type="normal" validate="true" gr:bendpoints="-29,-728,101,172">
             <LinkParameter id="sv2#area4#page47#alt8#page49#mciu4#ln139#par554" name="oid (Single Row)_PASSING" source="data[].ent12#att12" passing="true"/>
           </Link>
         </MultiChoiceIndexUnit>

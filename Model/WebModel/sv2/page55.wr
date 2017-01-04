@@ -79,7 +79,7 @@
       <ContentUnits>
         <MultiMessageUnit id="sv2#page55#alt9#page56#mssu17" name="Messaggio Successo" gr:x="0" gr:y="0" linkOrder="sv2#page55#alt9#page56#mssu17#ln159">
           <Message xml:space="preserve">Prenotazione effettuata
-</Message>          <Link id="sv2#page55#alt9#page56#mssu17#ln159" name="Vai allo storico eventi prenotati" to="sv2#area6#page67" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-1615,365,1925,100"/>        </MultiMessageUnit>      </ContentUnits>    </Page>    <Page id="sv2#page55#alt9#page57" name="Pagina Errore" gr:x="5" gr:y="140">      <ContentUnits>        <MultiMessageUnit id="sv2#page55#alt9#page57#mssu18" name="Messaggio Errore" gr:x="0" gr:y="0">          <Message xml:space="preserve">Prenotazione non effettuata</Message>
+</Message>          <Link id="sv2#page55#alt9#page56#mssu17#ln159" name="Vai allo storico eventi prenotati" to="sv2#area6#page67" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-1050,662,2825,397;-3155,600,720,335"/>        </MultiMessageUnit>      </ContentUnits>    </Page>    <Page id="sv2#page55#alt9#page57" name="Pagina Errore" gr:x="5" gr:y="140">      <ContentUnits>        <MultiMessageUnit id="sv2#page55#alt9#page57#mssu18" name="Messaggio Errore" gr:x="0" gr:y="0">          <Message xml:space="preserve">Prenotazione non effettuata</Message>
         </MultiMessageUnit>
       </ContentUnits>
     </Page>

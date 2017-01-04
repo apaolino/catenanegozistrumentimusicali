@@ -17,7 +17,7 @@
         <KeyCondition id="sv3#opg24#dcnu19#su195#kcond126" name="KeyCondition126" predicate="in" implied="false"/>
       </TargetSelector>
       <OKLink id="sv3#opg24#dcnu19#oln118" name="OKFlow118" to="sv3#opg24#dlu19" automaticCoupling="true"/>
-      <KOLink id="sv3#opg24#dcnu19#kln77" name="KOFlow77" to="sv3#page102#alt20#page104#mssu38" automaticCoupling="true"/>
+      <KOLink id="sv3#opg24#dcnu19#kln77" name="KOFlow77" to="sv3#page102#alt20#page104#mssu38" automaticCoupling="true" gr:bendpoints="161,549,385,-471"/>
     </DisconnectUnit>
     <DeleteUnit gr:x="520" gr:y="40" id="sv3#opg24#dlu19" name="Delete19" entity="ent16">
       <Selector id="sv3#opg24#dlu19#su196" defaultPolicy="fill" booleanOperator="and">

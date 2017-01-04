@@ -32,7 +32,7 @@
         <LinkParameter id="sv2#area4#page61#mssu22#ln167#par749" name="NegozioToGestore Singolo Negozio.oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par700" passing="true"/>
         <LinkParameter id="sv2#area4#page61#mssu22#ln167#par750" name="oid_PASSING" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par705" passing="true"/>
       </Link>
-      <Link id="sv2#area4#page61#mssu22#ln263" name="Prenota" to="sv2#area4#opg22#cru18" type="normal" validate="true">
+      <Link id="sv2#area4#page61#mssu22#ln263" name="Prenota" to="sv2#area4#opg22#cru18" type="normal" validate="true" gr:bendpoints="333,-9,-222,76">
         <LinkParameter id="sv2#area4#page61#mssu22#ln263#par836" name="NegozioToGestore Singolo Negozio.oid_PASSING_Gestore Singolo Negozio.oid(PrenotazioneToGestore Singolo Negozio)" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par453" target="sv2#area4#opg22#cru18.rel13#role25.userOID"/>
         <LinkParameter id="sv2#area4#page61#mssu22#ln263#par837" name="oid_PASSING_Negozio.oid(PrenotazioneToNegozio)" sourceLinkParameter="sv2#area4#page61#inu8#ln157#par407" target="sv2#area4#opg22#cru18.rel11#role21.ent10#att10"/>
         <LinkParameter id="sv2#area4#page61#mssu22#ln263#par839" name="UserCtxParam.oid_PASSING_Cliente.oid(PrenotazioneToCliente Registrato)" sourceLinkParameter="sv2#area4#page61#gtu31#ln297#par838" target="sv2#area4#opg22#cru18.rel14#role28.userOID"/>
@@ -45,7 +45,7 @@
       </Link>
     </GetUnit>
     <TimeUnit id="sv2#area4#page61#tmu18" name="Time16" gr:x="260" gr:y="205">
-      <Link id="sv2#area4#page61#tmu18#ln312" name="Flow259" to="sv2#area4#opg22#cru18" type="transport" validate="true">
+      <Link id="sv2#area4#page61#tmu18#ln312" name="Flow259" to="sv2#area4#opg22#cru18" type="transport" validate="true" gr:bendpoints="201,-24,-169,126">
         <LinkParameter id="sv2#area4#page61#tmu18#ln312#par850" name="Current/Input Timestamp_Data fine" source="currentTimestamp" target="sv2#area4#opg22#cru18.ent16#att32"/>
         <LinkParameter id="sv2#area4#page61#tmu18#ln312#par851" name="Current/Input Timestamp_Data inizio" source="currentTimestamp" target="sv2#area4#opg22#cru18.ent16#att31"/>
       </Link>

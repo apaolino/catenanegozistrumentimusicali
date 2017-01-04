@@ -31,7 +31,7 @@
       <TargetSelector id="sv3#dcnu16#su157" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#dcnu16#su157#kcond107" name="KeyCondition107" predicate="in" implied="false"/>
       </TargetSelector>
-      <OKLink id="sv3#dcnu16#oln8" name="OKFlow8" to="sv3#area12#page95#alt18#page96#inu23" automaticCoupling="true" gr:bendpoints="-295,74,280,-41"/>
+      <OKLink id="sv3#dcnu16#oln8" name="OKFlow8" to="sv3#area12#page95#alt18#page96#inu23" automaticCoupling="true" gr:bendpoints="-258,84,276,24"/>
       <KOLink id="sv3#dcnu16#kln74" name="KOFlow74" to="sv3#page102#alt20#page104#mssu38" automaticCoupling="true"/>
     </DisconnectUnit>
     <ModifyUnit gr:x="3275" gr:y="1355" id="sv3#mfu16" name="Aggiorna prenotazione" entity="ent21">
@@ -59,7 +59,7 @@
         <KeyCondition id="sv3#dcnu2#su192#kcond120" name="KeyCondition120" predicate="in" implied="false"/>
       </TargetSelector>
       <OKLink id="sv3#dcnu2#oln9" name="OKFlow9" to="sv3#area12#page123#alt25#page129#inu36" automaticCoupling="true" gr:bendpoints="-218,20,192,10"/>
-      <KOLink id="sv3#dcnu2#kln75" name="KOFlow75" to="sv3#page102#alt20#page104#mssu38" automaticCoupling="true"/>
+      <KOLink id="sv3#dcnu2#kln75" name="KOFlow75" to="sv3#page102#alt20#page104#mssu38" automaticCoupling="true" gr:bendpoints="-52,425,-243,-431"/>
     </DisconnectUnit>
   </OperationUnits>
 </SiteView>

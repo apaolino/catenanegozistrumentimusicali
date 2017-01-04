@@ -1,6 +1,6 @@
 <SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4" name="Gestore_Catena" landmarks="sv4#area2 sv4#area3 sv4#area5 sv4#area9 sv4#area11" homePage="sv4#page11">
   <OperationUnits>
-    <LogoutUnit gr:x="715" gr:y="-15" id="sv4#lou3" name="Logout" siteView="sv1" landmark="false">
+    <LogoutUnit gr:x="1065" gr:y="20" id="sv4#lou3" name="Logout" siteView="sv1" landmark="false">
       <KOLink id="sv4#lou3#kln3" name="KOFlow3" to="sv4#page11" automaticCoupling="true" gr:bendpoints="55,116,260,-194"/>
     </LogoutUnit>
     <ConnectUnit gr:x="-990" gr:y="580" id="sv4#cnu1" name="Collega a catalogo base" relationship="rel24#role47">
