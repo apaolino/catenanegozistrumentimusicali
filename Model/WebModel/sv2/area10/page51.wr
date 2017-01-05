@@ -1,7 +1,7 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="430" gr:y="145" id="sv2#area10#page51" name="Modifica recensione">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv2#area10#page51#enu16" name="Modifica la recensione" linkOrder="sv2#area10#page51#enu16#ln121">
-      <Field id="sv2#area10#page51#enu16#fld110" name="Numero stelle" type="integer" modifiable="true" preloaded="true">
+      <Field id="sv2#area10#page51#enu16#fld110" name="Numero stelle (da 1 a 5)" type="integer" modifiable="true" preloaded="true">
         <VRules/>
       </Field>
       <Field id="sv2#area10#page51#enu16#fld111" name="Testo" type="string" modifiable="true" preloaded="true"/>

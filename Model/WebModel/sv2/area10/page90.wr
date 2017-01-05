@@ -1,7 +1,7 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="175" gr:y="495" id="sv2#area10#page90" name="Nuova recensione prodotto">
   <ContentUnits>
     <EntryUnit id="sv2#area10#page90#enu24" name="Recensione prodotto" gr:x="10" gr:y="5" linkOrder="sv2#area10#page90#enu24#ln223">
-      <Field id="sv2#area10#page90#enu24#fld131" name="Numero stelle" type="string" modifiable="true"/>
+      <Field id="sv2#area10#page90#enu24#fld131" name="Numero stelle (da 1 a 5)" type="string" modifiable="true"/>
       <Field id="sv2#area10#page90#enu24#fld132" name="Recensione" type="string" modifiable="true"/>
       <Link id="sv2#area10#page90#enu24#ln223" name="Salva recensione" to="sv2#opg15#cru20" type="normal" validate="true">
         <LinkParameter id="sv2#area10#page90#enu24#ln223#par594" name="UserCtxParam.oid_PASSING_Cliente.oid(ValutazioneToCliente Registrato)" sourceLinkParameter="sv2#area10#page90#gtu8#ln179#par555" target="sv2#opg15#cru20.rel19#role37.userOID"/>
