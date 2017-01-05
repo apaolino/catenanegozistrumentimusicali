@@ -3,7 +3,7 @@
     <DataUnit gr:x="0" gr:y="0" id="sv4#page11#dau4" name="Statistiche e Informazioni sulla catena" entity="ent9" displayAttributes="ent9#att55 ent9#att56 rel36#role71.ent1#att73 countDistinct(rel22#role43.ent10#att10) countDistinct(rel22#role43.rel16#role32.ent15#att15) countDistinct(rel22#role43.rel11#role22.ent16#att16) avg(rel22#role43.rel16#role32.rel15#role29.ent12#att43) countDistinct(rel22#role43.rel10#role20.ent17#att17)">
       <Selector id="sv4#page11#dau4#su88" defaultPolicy="fill" booleanOperator="and"/>
     </DataUnit>
-    <IndexUnit gr:x="0" gr:y="110" id="sv4#page11#inu16" name="Lista negozi della catena" entity="ent10" linkOrder="sv4#page11#inu16#ln149" displayAttributes="ent10#att48 rel32#role63.ent1#att73">
+    <IndexUnit gr:x="0" gr:y="110" id="sv4#page11#inu16" name="Lista negozi della catena" entity="ent10" linkOrder="sv4#page11#inu16#ln149" displayAttributes="ent10#att48 rel30#role59.rel44#role87.ent7#att36 rel32#role63.ent1#att73">
       <Link id="sv4#page11#inu16#ln149" name="Visualizza prodotti del negozio" to="sv4#page77#seu39" automaticCoupling="true" type="normal" validate="true"/>
     </IndexUnit>
   </ContentUnits>
@@ -38,6 +38,7 @@
         <layout:Unit unitId="sv4#page11#inu16">
           <layout:Link link="sv4#page11#inu16#ln149"/>
           <layout:Attribute attribute="ent10#att48"/>
+          <layout:Attribute attribute="rel30#role59.rel44#role87.ent7#att36"/>
           <layout:Attribute attribute="rel32#role63.ent1#att73"/>
         </layout:Unit>
       </layout:Cell>

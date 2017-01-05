@@ -1,20 +1,91 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-700" gr:y="2505" id="sv4#opg7" name="Elimina utente e indirizzo" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-550" gr:y="2540" id="sv4#opg7" name="Elimina utente e indirizzo" transaction="true">
   <OperationUnits>
-    <DeleteUnit id="sv4#opg7#dlu9" name="Elimina utente" gr:x="104" gr:y="28" entity="User">
-      <Selector id="sv4#opg7#dlu9#su20" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv4#opg7#dlu9#su20#kcond9" name="KeyCondition4" predicate="in" implied="false"/>
-      </Selector>
-      <OKLink id="sv4#opg7#dlu9#oln10" name="OKFlow5" to="sv4#page20#alt3#page29" automaticCoupling="true" gr:bendpoints="-872,-3,-132,432;-873,-417,-133,18"/>
-      <KOLink id="sv4#opg7#dlu9#kln14" name="KOFlow14" to="sv4#page20#alt3#page31" automaticCoupling="true" gr:bendpoints="-747,-42,-2,253"/>
-    </DeleteUnit>
-    <DeleteUnit id="sv4#opg7#dlu10" name="Elimina indirizzo" gr:x="334" gr:y="33" entity="ent1">
-      <Selector id="sv4#opg7#dlu10#su41" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv4#opg7#dlu10#su41#kcond18" name="KeyCondition8" predicate="in" implied="false"/>
-      </Selector>
-      <OKLink id="sv4#opg7#dlu10#oln11" name="OKFlow3" to="sv4#opg7#dlu9">
-        <LinkParameter id="sv4#opg7#dlu10#oln11#par73" name="oid_PASSING_KeyCondition4 [oid]" sourceLinkParameter="sv4#area11#page16#mssu8#ln44#par75" target="sv4#opg7#dlu9#su20#kcond9.userOID"/>
+    <DisconnectUnit gr:x="580" gr:y="0" id="sv4#opg7#dcnu20" name="Disconnect20" relationship="rel15#role29">
+      <SourceSelector id="sv4#opg7#dcnu20#su203" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#opg7#dcnu20#su203#kcond130" name="KeyCondition130" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv4#opg7#dcnu20#su204" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#opg7#dcnu20#su204#rcond75" name="RoleCondition75" predicate="in" implied="false" role="rel15#role29"/>
+      </TargetSelector>
+      <OKLink id="sv4#opg7#dcnu20#oln130" name="OKFlow130" to="sv4#opg7#dlu25">
+        <LinkParameter id="sv4#opg7#dcnu20#oln130#par864" name="Source oid [Acquisto]_KeyCondition132 [oid]" source="sourceent15#att15" target="sv4#opg7#dlu25#su206#kcond132.ent15#att15"/>
+        <LinkParameter id="sv4#opg7#dcnu20#oln130#par875" name="oid_PASSING" sourceLinkParameter="sv4#opg7#seu73#oln129#par874" passing="true"/>
       </OKLink>
-      <KOLink id="sv4#opg7#dlu10#kln15" name="KOFlow15" to="sv4#page20#alt3#page31" automaticCoupling="true" gr:bendpoints="-199,-158,771,142;-924,-163,46,137"/>
+    </DisconnectUnit>
+    <SelectorUnit gr:x="255" gr:y="25" id="sv4#opg7#seu73" name="Selector73" entity="ent15">
+      <Selector id="sv4#opg7#seu73#su205" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#opg7#seu73#su205#rcond74" name="RoleCondition74" predicate="in" implied="false" role="rel17#role33"/>
+      </Selector>
+      <OKLink id="sv4#opg7#seu73#oln129" name="OKFlow129" to="sv4#opg7#dcnu20">
+        <LinkParameter id="sv4#opg7#seu73#oln129#par861" name="oid_KeyCondition130 [oid] [Acquisto] [Source]" source="ent15#att15Array" target="sv4#opg7#dcnu20#su203#kcond130.ent15#att15"/>
+        <LinkParameter id="sv4#opg7#seu73#oln129#par862" name="oid_RoleCondition75 [oid] [Acquisto] [Target]" source="ent15#att15Array" target="sv4#opg7#dcnu20#su204#rcond75.ent15#att15"/>
+        <LinkParameter id="sv4#opg7#seu73#oln129#par874" name="oid_PASSING" sourceLinkParameter="sv4#area11#page16#mssu8#ln313#par872" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <DeleteUnit gr:x="870" gr:y="10" id="sv4#opg7#dlu25" name="Delete25" entity="ent15">
+      <Selector id="sv4#opg7#dlu25#su206" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#opg7#dlu25#su206#kcond132" name="KeyCondition132" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv4#opg7#dlu25#oln131" name="OKFlow131" to="sv4#opg7#seu75">
+        <LinkParameter id="sv4#opg7#dlu25#oln131#par876" name="oid_PASSING_RoleCondition76 [oid]" sourceLinkParameter="sv4#opg7#dcnu20#oln130#par875" target="sv4#opg7#seu75#su207#rcond76.userOID"/>
+        <LinkParameter id="sv4#opg7#dlu25#oln131#par877" name="oid_PASSING" sourceLinkParameter="sv4#opg7#dcnu20#oln130#par875" passing="true"/>
+      </OKLink>
+    </DeleteUnit>
+    <SelectorUnit gr:x="1025" gr:y="35" id="sv4#opg7#seu75" name="Selector75" entity="ent16">
+      <Selector id="sv4#opg7#seu75#su207" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#opg7#seu75#su207#rcond76" name="RoleCondition76" predicate="in" implied="false" role="rel14#role27"/>
+      </Selector>
+      <OKLink id="sv4#opg7#seu75#oln132" name="OKFlow132" to="sv4#opg7#dcnu21">
+        <LinkParameter id="sv4#opg7#seu75#oln132#par878" name="oid_KeyCondition133 [oid] [Prenotazione] [Source]" source="ent16#att16Array" target="sv4#opg7#dcnu21#su208#kcond133.ent16#att16"/>
+        <LinkParameter id="sv4#opg7#seu75#oln132#par879" name="oid_RoleCondition77 [oid] [Prenotazione] [Target]" source="ent16#att16Array" target="sv4#opg7#dcnu21#su209#rcond77.ent16#att16"/>
+        <LinkParameter id="sv4#opg7#seu75#oln132#par880" name="oid_PASSING" sourceLinkParameter="sv4#opg7#dlu25#oln131#par877" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <DisconnectUnit gr:x="1060" gr:y="170" id="sv4#opg7#dcnu21" name="Disconnect21" relationship="rel45#role89">
+      <SourceSelector id="sv4#opg7#dcnu21#su208" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#opg7#dcnu21#su208#kcond133" name="KeyCondition133" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv4#opg7#dcnu21#su209" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#opg7#dcnu21#su209#rcond77" name="RoleCondition77" predicate="in" implied="false" role="rel45#role89"/>
+      </TargetSelector>
+      <OKLink id="sv4#opg7#dcnu21#oln133" name="OKFlow133" to="sv4#opg7#dlu26">
+        <LinkParameter id="sv4#opg7#dcnu21#oln133#par881" name="Source oid [Prenotazione]_KeyCondition135 [oid]" source="sourceent16#att16" target="sv4#opg7#dlu26#su210#kcond135.ent16#att16"/>
+        <LinkParameter id="sv4#opg7#dcnu21#oln133#par882" name="oid_PASSING" sourceLinkParameter="sv4#opg7#seu75#oln132#par880" passing="true"/>
+      </OKLink>
+    </DisconnectUnit>
+    <DeleteUnit gr:x="820" gr:y="195" id="sv4#opg7#dlu26" name="Delete26" entity="ent16">
+      <Selector id="sv4#opg7#dlu26#su210" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#opg7#dlu26#su210#kcond135" name="KeyCondition135" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv4#opg7#dlu26#oln139" name="OKFlow139" to="sv4#opg7#dlu30">
+        <LinkParameter id="sv4#opg7#dlu26#oln139#par888" name="oid_PASSING_RoleCondition72 [oid]" sourceLinkParameter="sv4#opg7#dcnu21#oln133#par882" target="sv4#opg7#dlu30#su214#rcond80.userOID"/>
+        <LinkParameter id="sv4#opg7#dlu26#oln139#par889" name="oid_PASSING" sourceLinkParameter="sv4#opg7#dcnu21#oln133#par882" passing="true"/>
+      </OKLink>
+    </DeleteUnit>
+    <DeleteUnit id="sv4#opg7#dlu27" name="Elimina indirizzo" gr:x="230" gr:y="180" entity="ent1">
+      <Selector id="sv4#opg7#dlu27#su211" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#opg7#dlu27#su211#rcond79" name="RoleCondition79" predicate="in" implied="false" role="rel20#role40"/>
+      </Selector>
+      <OKLink id="sv4#opg7#dlu27#oln135" name="OKFlow3" to="sv4#opg7#dlu28">
+        <LinkParameter id="sv4#opg7#dlu27#oln135#par892" name="oid_PASSING_KeyCondition4 [oid]" sourceLinkParameter="sv4#opg7#dlu30#oln140#par891" target="sv4#opg7#dlu28#su212#kcond137.userOID"/>
+      </OKLink>
+      <KOLink id="sv4#opg7#dlu27#kln86" name="KOFlow15" to="sv4#page20#alt3#page31" automaticCoupling="true" gr:bendpoints="-199,-158,771,142;-924,-163,46,137"/>
+    </DeleteUnit>
+    <DeleteUnit id="sv4#opg7#dlu28" name="Elimina utente" gr:x="0" gr:y="175" entity="User">
+      <Selector id="sv4#opg7#dlu28#su212" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#opg7#dlu28#su212#kcond137" name="KeyCondition4" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv4#opg7#dlu28#kln87" name="KOFlow85" to="sv4#page20#alt3#page31#mssu11" automaticCoupling="true"/>
+      <OKLink id="sv4#opg7#dlu28#oln141" name="OKFlow141" to="sv4#page20#alt3#page29#mssu9" automaticCoupling="true"/>
+    </DeleteUnit>
+    <DeleteUnit id="sv4#opg7#dlu30" name="Delete20" gr:x="455" gr:y="170" entity="ent2">
+      <Selector id="sv4#opg7#dlu30#su214" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#opg7#dlu30#su214#rcond80" name="RoleCondition72" role="rel27#role53" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv4#opg7#dlu30#oln140" name="OKFlow140" to="sv4#opg7#dlu27">
+        <LinkParameter id="sv4#opg7#dlu30#oln140#par890" name="oid_PASSING_RoleCondition79 [oid]" sourceLinkParameter="sv4#opg7#dlu26#oln139#par889" target="sv4#opg7#dlu27#su211#rcond79.userOID"/>
+        <LinkParameter id="sv4#opg7#dlu30#oln140#par891" name="oid_PASSING" sourceLinkParameter="sv4#opg7#dlu26#oln139#par889" passing="true"/>
+      </OKLink>
     </DeleteUnit>
   </OperationUnits>
 </OperationGroup>

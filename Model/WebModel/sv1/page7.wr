@@ -25,14 +25,14 @@
         <LinkParameter id="sv1#page7#inu1#ln216#par546" name="oid_RoleCondition36 [oid]" source="data[].ent11#att11" target="sv1#page70#inu12#su103#rcond37.ent11#att11"/>
       </Link>
     </IndexUnit>
-    <MultiDataUnit gr:x="0" gr:y="160" id="sv1#page7#mdu1" name="Migliori Recensioni sul Negozio" entity="ent18" displayAttributes="ent18#att33 ent18#att34 ent18#att35 ent18#att77">
+    <MultiDataUnit gr:x="0" gr:y="160" id="sv1#page7#mdu1" name="Migliori Recensioni sul Negozio" entity="ent18" displayAttributes="ent18#att33 ent18#att34 ent18#att35 ent18#att77 rel19#role37.userName">
       <Selector id="sv1#page7#mdu1#su6" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#page7#mdu1#su6#rcond2" name="RoleCondition2" predicate="in" implied="false" role="rel18#role36"/>
         <AttributesCondition id="sv1#page7#mdu1#su6#acond6" name="AttCondition6" predicate="gteq" booleanOperator="or" implied="false" attributes="ent18#att33" value="4"/>
       </Selector>
       <SortAttribute attribute="ent18#att35" order="descending"/>
     </MultiDataUnit>
-    <MultiDataUnit gr:x="310" gr:y="135" id="sv1#page7#mdu2" name="Recensioni Negozio" entity="ent18" displayAttributes="ent18#att33 ent18#att34 ent18#att35 ent18#att77">
+    <MultiDataUnit gr:x="310" gr:y="135" id="sv1#page7#mdu2" name="Recensioni Negozio" entity="ent18" displayAttributes="ent18#att33 ent18#att34 ent18#att35 ent18#att77 rel19#role37.userName">
       <SortAttribute attribute="ent18#att33" order="descending"/>
       <Selector id="sv1#page7#mdu2#su113" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#page7#mdu2#su113#rcond38" name="RoleCondition38" predicate="in" implied="false" role="rel18#role36"/>
@@ -128,6 +128,7 @@
           <layout:Attribute attribute="ent18#att34"/>
           <layout:Attribute attribute="ent18#att35"/>
           <layout:Attribute attribute="ent18#att77"/>
+          <layout:Attribute attribute="rel19#role37.userName"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -149,6 +150,7 @@
           <layout:Attribute attribute="ent18#att34"/>
           <layout:Attribute attribute="ent18#att35"/>
           <layout:Attribute attribute="ent18#att77"/>
+          <layout:Attribute attribute="rel19#role37.userName"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

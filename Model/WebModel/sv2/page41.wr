@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="305" gr:y="365" id="sv2#page41" name="Home cliente" linkOrder="sv2#page41#ln108 sv2#page41#ln109 sv2#page41#ln128 sv2#page41#ln283">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="155" gr:y="225" id="sv2#page41" name="Home cliente" linkOrder="sv2#page41#ln108 sv2#page41#ln109 sv2#page41#ln128 sv2#page41#ln283">
   <ContentUnits>
-    <IndexUnit gr:x="0" gr:y="0" id="sv2#page41#inu3" name="Lista dei negozi della catena" entity="ent10" displayAttributes="ent10#att48 rel30#role59.rel44#role87.ent7#att36 ent10#att49 ent10#att50 ent10#att51 ent10#att53" linkOrder="sv2#page41#inu3#ln116 sv2#page41#inu3#ln123 sv2#page41#inu3#ln106 sv2#page41#inu3#ln125 sv2#page41#inu3#ln292">
+    <IndexUnit gr:x="5" gr:y="0" id="sv2#page41#inu3" name="Lista dei negozi della catena" entity="ent10" displayAttributes="ent10#att48 rel30#role59.rel44#role87.ent7#att36 ent10#att49 ent10#att50 ent10#att51 ent10#att53" linkOrder="sv2#page41#inu3#ln116 sv2#page41#inu3#ln123 sv2#page41#inu3#ln106 sv2#page41#inu3#ln125 sv2#page41#inu3#ln292">
       <Link id="sv2#page41#inu3#ln116" name="Lista cataloghi" to="sv2#area4#page47#inu4" type="normal" validate="true" gr:bendpoints="-518,58,372,-187">
         <LinkParameter id="sv2#page41#inu3#ln116#par388" name="oid_RoleCondition4 [oid]" source="data[].ent10#att10" target="sv2#area4#page47#inu4#su61#rcond4.ent10#att10"/>
         <LinkParameter id="sv2#page41#inu3#ln116#par394" name="oid_PASSING" source="data[].ent10#att10" passing="true"/>
@@ -23,6 +23,11 @@
         <LinkParameter id="sv2#page41#inu3#ln292#par679" name="oid_PASSING" source="data[].ent10#att10" passing="true"/>
       </Link>
     </IndexUnit>
+    <DataUnit gr:x="0" gr:y="100" id="sv2#page41#dau15" name="Dati utente" entity="User" displayAttributes="userName User#att20 User#att21">
+      <Selector id="sv2#page41#dau15#su199" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#page41#dau15#su199#kcond124" name="KeyCondition124" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -54,7 +59,13 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12"/>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page41#dau15">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="User#att20"/>
+          <layout:Attribute attribute="User#att21"/>
+        </layout:Unit>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

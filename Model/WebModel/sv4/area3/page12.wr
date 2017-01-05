@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="10" gr:y="1485" id="sv4#area3#page12" name="Elimina Negozio">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="140" gr:y="1495" id="sv4#area3#page12" name="Elimina Negozio">
   <ContentUnits>
     <SelectorUnit gr:x="0" gr:y="5" id="sv4#area3#page12#seu14" name="Selettore Negozi" entity="ent10">
       <Link id="sv4#area3#page12#seu14#ln62" name="Flow62" to="sv4#area3#page12#pwu1" automaticCoupling="true" type="transport" validate="true"/>

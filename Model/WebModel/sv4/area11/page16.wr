@@ -1,11 +1,11 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="630" gr:y="240" id="sv4#area11#page16" name="Elimina utente">
   <ContentUnits>
-    <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#area11#page16#mssu8" name="Eliminazione utente" linkOrder="sv4#area11#page16#mssu8#ln36 sv4#area11#page16#mssu8#ln44">
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#area11#page16#mssu8" name="Eliminazione utente" linkOrder="sv4#area11#page16#mssu8#ln36 sv4#area11#page16#mssu8#ln313">
       <Message xml:space="preserve">Sei sicuro di voler eliminare l'utente selezionato dal sistema?</Message>
       <Link id="sv4#area11#page16#mssu8#ln36" name="Torna alla lista utenti" to="sv4#area11#page10" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-308,-60,302,170;-329,-165,281,65"/>
-      <Link id="sv4#area11#page16#mssu8#ln44" name="Elimina" to="sv4#opg7#dlu10" type="normal" validate="true">
-        <LinkParameter id="sv4#area11#page16#mssu8#ln44#par74" name="UserToIndirizzo.oid_PASSING_KeyCondition8 [oid]" sourceLinkParameter="sv4#area11#page10#pwu3#ln21#par60" target="sv4#opg7#dlu10#su41#kcond18.ent1#att3"/>
-        <LinkParameter id="sv4#area11#page16#mssu8#ln44#par75" name="oid_PASSING" sourceLinkParameter="sv4#area11#page10#pwu3#ln21#par59" passing="true"/>
+      <Link id="sv4#area11#page16#mssu8#ln313" name="Elimina" to="sv4#opg7#seu73" type="normal" validate="true">
+        <LinkParameter id="sv4#area11#page16#mssu8#ln313#par872" name="oid_PASSING" sourceLinkParameter="sv4#area11#page10#pwu3#ln21#par59" passing="true"/>
+        <LinkParameter id="sv4#area11#page16#mssu8#ln313#par873" name="oid_PASSING_RoleCondition74 [oid]" sourceLinkParameter="sv4#area11#page10#pwu3#ln21#par59" target="sv4#opg7#seu73#su205#rcond74.userOID"/>
       </Link>
     </MultiMessageUnit>
   </ContentUnits>
@@ -14,7 +14,7 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv4#area11#page16#mssu8">
           <layout:Link link="sv4#area11#page16#mssu8#ln36"/>
-          <layout:Link link="sv4#area11#page16#mssu8#ln44"/>
+          <layout:Link link="sv4#area11#page16#mssu8#ln313"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

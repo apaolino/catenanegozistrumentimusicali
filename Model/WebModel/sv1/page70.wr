@@ -10,7 +10,13 @@
       <Selector id="sv1#page70#dau12#su104" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#page70#dau12#su104#kcond69" name="KeyCondition68" predicate="in" implied="false"/>
       </Selector>
+      <Link id="sv1#page70#dau12#ln319" name="Visualizza Recensioni" to="sv1#page70#mdu3" automaticCoupling="true" type="transport" validate="true"/>
     </DataUnit>
+    <MultiDataUnit gr:x="385" gr:y="135" id="sv1#page70#mdu3" name="Recensioni" entity="ent18" displayAttributes="ent18#att33 ent18#att34 rel19#role37.userName">
+      <Selector id="sv1#page70#mdu3#su215" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv1#page70#mdu3#su215#rcond81" name="RoleCondition81" predicate="in" implied="false" role="rel21#role42"/>
+      </Selector>
+    </MultiDataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -48,6 +54,26 @@
           <layout:Attribute attribute="ent12#att43"/>
           <layout:Attribute attribute="ent12#att44"/>
           <layout:Attribute attribute="ent12#att45"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page70#mdu3">
+          <layout:Attribute attribute="ent18#att33"/>
+          <layout:Attribute attribute="ent18#att34"/>
+          <layout:Attribute attribute="rel19#role37.userName"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

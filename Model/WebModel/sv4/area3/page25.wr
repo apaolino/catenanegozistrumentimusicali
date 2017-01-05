@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="445" id="sv4#area3#page25" name="Modifica Negozio">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="130" gr:y="455" id="sv4#area3#page25" name="Modifica Negozio">
   <ContentUnits>
     <EntryUnit id="sv4#area3#page25#enu11" name="Selettore Negozi" gr:x="280" gr:y="20" linkOrder="sv4#area3#page25#enu11#ln89">
       <SelectionField id="sv4#area3#page25#enu11#sfld15" name="Negozio selezionato" type="string"/>
